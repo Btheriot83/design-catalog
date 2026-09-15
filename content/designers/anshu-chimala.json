@@ -1,0 +1,38 @@
+{
+  "slug": "anshu-chimala",
+  "name": "Anshu Chimala",
+  "status": "complete",
+  "role": "Former Apple eng/design leadership · YC founder · AI design educator",
+  "bio": "Anshu Chimala led software engineering and design teams at Apple for about 12 years, focusing on research and prototyping for future AI products. A YC founder, he posts AI design tutorials and demos on X and writes deeper craft notes on Substack. His guest essay in Lenny’s Newsletter (Sep 2026) maps an end-to-end process for tapping AI’s hidden creativity—loosely inspired by the Double Diamond, reimagined for a team of AI agents: Discover, Define, Deliver.",
+  "links": [
+    { "label": "Substack", "url": "https://substack.com/@anshuc" },
+    { "label": "Lenny’s Newsletter guest post", "url": "https://www.lennysnewsletter.com/p/how-to-turn-your-ai-into-a-world" }
+  ],
+  "techniqueSlugs": [
+    "seed-strings",
+    "ambitious-prompts",
+    "critic-subagents",
+    "image-generation",
+    "video-motion",
+    "cut-elements",
+    "remove-ai-tells",
+    "hand-rewrite-copy"
+  ],
+  "stages": [
+    {
+      "id": "Discover",
+      "title": "Discover",
+      "summary": "Explore beyond average slop—vary directions and write bold, ambitious briefs before going deep."
+    },
+    {
+      "id": "Define",
+      "title": "Define",
+      "summary": "Push past familiar patterns. Chain models, critics, images, and motion until the design has an individual identity."
+    },
+    {
+      "id": "Deliver",
+      "title": "Deliver",
+      "summary": "Polish with restraint: cut clutter, kill AI tells, and rewrite the words that matter by hand."
+    }
+  ]
+}

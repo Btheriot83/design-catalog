@@ -1,0 +1,14 @@
+{
+  "slug": "david-kossnick",
+  "name": "David Kossnick",
+  "status": "stub",
+  "role": "Designer framework — TC-EBC / Figma",
+  "bio": "Candidate catalog entry. David Kossnick’s designer framework for better AI prompts (Figma blog / TC-EBC lineage) is stubbed here pending a full technique catalog.",
+  "links": [
+    {
+      "label": "Figma blog: designer framework for better AI prompts",
+      "url": "https://www.figma.com/blog/designer-framework-for-better-ai-prompts/"
+    }
+  ],
+  "techniqueSlugs": []
+}

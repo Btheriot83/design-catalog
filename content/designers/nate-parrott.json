@@ -1,0 +1,14 @@
+{
+  "slug": "nate-parrott",
+  "name": "Nate Parrott",
+  "status": "stub",
+  "role": "Product designer — Claude Design",
+  "bio": "Candidate catalog entry. Nate Parrott’s public writing on exploring ideas with Claude Design before building is queued for a full technique unpack in a later release.",
+  "links": [
+    {
+      "label": "Claude blog: exploring ideas before building",
+      "url": "https://claude.com/blog/how-the-product-designer-who-built-claude-design-uses-it-to-explore-ideas-before-building-them"
+    }
+  ],
+  "techniqueSlugs": []
+}

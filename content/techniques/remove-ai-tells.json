@@ -1,0 +1,27 @@
+{
+  "slug": "remove-ai-tells",
+  "number": 7,
+  "stage": "Deliver",
+  "title": "Remove AI tells",
+  "principle": "Certain visual and copy patterns scream “generated.” Maintain a kill-list and scrub the UI until those fingerprints are gone. This catalog’s anti-slop stance sits in the same independent lineage as public tooling like design-slop-cop and Build Games–style anti-slop practice—not as an endorsement of any one tool.",
+  "procedure": [
+    "Walk the design against a kill-list of common AI tells.",
+    "Replace default type stacks (Inter / Geist / Space Grotesk) with a distinctive pairing chosen on purpose.",
+    "Remove vibe-purple chrome, decorative gradients-as-chrome, and glassmorphism panels.",
+    "Delete 3-card emoji feature grids, fake stats, and headline badges that add no information.",
+    "Re-check with a critic or fresh eyes until the page no longer reads as template slop."
+  ],
+  "examplePrompts": [
+    "Audit this page for AI design tells and remove them. Kill-list:\n- Vibe purple / indigo accent defaults\n- Gradients used as chrome (hero washes, button fills) without compositional reason\n- Glassmorphism cards and frosted panels\n- Inter, Geist, or Space Grotesk as the default type stack\n- Three-card grids with emoji icons and generic feature blurbs\n- Fake stats / social-proof numbers\n- Headline badges (“New”, “AI-powered”, sparkles)\n- Soft drop shadows and glowing orbs as decoration\n\nReplace with intentional color, type, and structure. Do not swap one tell for another."
+  ],
+  "tips": [
+    "Tells compound—fixing one gradient while leaving Inter + emoji cards still reads as slop.",
+    "Related public tooling: https://github.com/AdrianKrebs/design-slop-cop (independent; cited for lineage, not endorsement).",
+    "This site’s paper/ink editorial system is itself an anti-tell choice: cream ground, ink text, ochre accent, serif + IBM Plex."
+  ],
+  "sourceUrls": [
+    "https://www.lennysnewsletter.com/p/how-to-turn-your-ai-into-a-world",
+    "https://github.com/AdrianKrebs/design-slop-cop"
+  ],
+  "related": ["cut-elements", "hand-rewrite-copy", "seed-strings"]
+}

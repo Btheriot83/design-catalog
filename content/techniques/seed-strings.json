@@ -1,0 +1,24 @@
+{
+  "slug": "seed-strings",
+  "number": 1,
+  "stage": "Discover",
+  "title": "Use seed strings to inject variety",
+  "principle": "Models can’t truly act random—they predict the most likely token. Bring randomness from outside the model. Sakana AI’s String Seed of Thought: generate a long random alphanumeric string, then derive creative direction from subpatterns in that string so every run lands somewhere new.",
+  "procedure": [
+    "Ask the agent to generate a long, random alphanumeric string via a shell script (outside the model’s token priors).",
+    "Have it define creative direction—color, layout, typography—from that string, looking past the surface for subpatterns, special numbers, or other sparks.",
+    "Instruct it to bring that direction to life with judgment, and never reveal the string in the UI—it’s inspiration only."
+  ],
+  "examplePrompts": [
+    "I want you to build me a landing page for my productivity app.\n\nFollow this procedure:\n\n1. Generate a long, random alphanumeric string using a shell script.\n2. Define the creative direction (color scheme, layout, typography, etc.) based on the string. Look beyond the surface for subpatterns, special numbers, anything that inspires you.\n3. Use your judgment to bring this direction to life and make it look great.\n\nDon't reveal the string in the design. It's only for your inspiration."
+  ],
+  "tips": [
+    "Asking for “something unique” or “completely at random” still yields the same fake-random patterns (pottery metaphors, identical structures).",
+    "Default unseeded runs collapse to purplish gradients, text-left / graphic-right SaaS layouts.",
+    "Seeded runs produce one-of-a-kind schemes—no two runs match."
+  ],
+  "sourceUrls": [
+    "https://www.lennysnewsletter.com/p/how-to-turn-your-ai-into-a-world"
+  ],
+  "related": ["ambitious-prompts", "remove-ai-tells"]
+}

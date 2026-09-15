@@ -1,0 +1,38 @@
+[
+  {
+    "title": "How to turn your AI into a world-class designer",
+    "url": "https://www.lennysnewsletter.com/p/how-to-turn-your-ai-into-a-world",
+    "kind": "Primary essay",
+    "note": "Anshu Chimala guest post in Lenny’s Newsletter, Sep 2026. Primary source for the eight techniques catalogued here."
+  },
+  {
+    "title": "Anshu Chimala on Substack",
+    "url": "https://substack.com/@anshuc",
+    "kind": "Author presence",
+    "note": "Public profile / newsletter home. This catalog does not invent or summarize unpublished Substack posts."
+  },
+  {
+    "title": "Sakana AI — String Seed of Thought",
+    "url": "https://sakana.ai/",
+    "kind": "Referenced method",
+    "note": "Cited by Anshu as the inspiration for seed-string variety injection."
+  },
+  {
+    "title": "design-slop-cop",
+    "url": "https://github.com/AdrianKrebs/design-slop-cop",
+    "kind": "Related tooling",
+    "note": "Independent public tooling for spotting design slop. Cited alongside remove-ai-tells; not an Anshu project."
+  },
+  {
+    "title": "How the product designer who built Claude Design uses it to explore ideas before building them",
+    "url": "https://claude.com/blog/how-the-product-designer-who-built-claude-design-uses-it-to-explore-ideas-before-building-them",
+    "kind": "Next candidate",
+    "note": "Nate Parrott — stubbed designer entry."
+  },
+  {
+    "title": "A designer framework for better AI prompts",
+    "url": "https://www.figma.com/blog/designer-framework-for-better-ai-prompts/",
+    "kind": "Next candidate",
+    "note": "David Kossnick / TC-EBC lineage — stubbed designer entry."
+  }
+]
