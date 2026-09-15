@@ -15,10 +15,12 @@
   "tips": [
     "Asking for “something unique” or “completely at random” still yields the same fake-random patterns (pottery metaphors, identical structures).",
     "Default unseeded runs collapse to purplish gradients, text-left / graphic-right SaaS layouts.",
-    "Seeded runs produce one-of-a-kind schemes—no two runs match."
+    "Seeded runs produce one-of-a-kind schemes—no two runs match.",
+    "Sakana’s SSoT (https://sakana.ai/ssot/) generates entropy inside the prompt; Anshu’s catalog recipe prefers external shell entropy so the model cannot fake the seed."
   ],
   "sourceUrls": [
-    "https://www.lennysnewsletter.com/p/how-to-turn-your-ai-into-a-world"
+    "https://www.lennysnewsletter.com/p/how-to-turn-your-ai-into-a-world",
+    "https://sakana.ai/ssot/"
   ],
   "related": [
     "ambitious-prompts",

@@ -32,11 +32,18 @@
     {
       "title": "Comment-box dictation",
       "body": "Nate: click the element and speak—with dictation on, comment-box speech appears as typed, grounding the edit. Cite: Anthropic blog."
+    },
+    {
+      "title": "Scavenger-hunt prose vs selection",
+      "before": "“The blue button in the third card under the pricing section—make it quieter.”",
+      "after": "Select the button → comment → speak: “Quieter: secondary weight, drop the glow.”",
+      "body": "Nate: click and speak with dictation so the edit is grounded on the exact target. Cite: Anthropic blog."
     }
   ],
   "antiPatterns": [
     "Long written element-identification paragraphs.",
-    "Prompting micro-nudge edits that should be direct."
+    "Prompting micro-nudge edits that should be direct.",
+    "Describing the element’s location in a paragraph when selection exists."
   ],
   "checklist": [
     "Dictation enabled.",

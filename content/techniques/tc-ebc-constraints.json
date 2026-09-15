@@ -44,15 +44,23 @@
     {
       "title": "Revision discipline",
       "body": "Figma blog pro tip: teach an LLM TC-EBC and use it to refine revision prompts; put do-not-adjust rules in Constraints. Cite: Figma blog."
+    },
+    {
+      "title": "Revision without rails",
+      "before": "“Make it better” on a second pass — model restyles everything you liked.",
+      "after": "Constraints: Do not change the headline, palette, or primary CTA label. Only tighten spacing and secondary copy.",
+      "body": "Greg: put do-not-adjust rules in Constraints so revision passes don’t thrash locked decisions. Cite: Figma blog / TC-EBC repo."
     }
   ],
   "antiPatterns": [
     "No length/platform/tone rails.",
-    "Revision prompts that omit what must stay untouched."
+    "Revision prompts that omit what must stay untouched.",
+    "Revision prompts with no do-not-touch list."
   ],
   "checklist": [
     "Guardrails are measurable where possible.",
     "Revisions name do-not-touch items.",
-    "Tone anchors are explicit if brand matters."
+    "Tone anchors are explicit if brand matters.",
+    "Constraints name what must stay fixed."
   ]
 }

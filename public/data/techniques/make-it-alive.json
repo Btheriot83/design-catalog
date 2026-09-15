@@ -19,10 +19,12 @@
     "Example from his work: Claude Design intro animation—built a video editor in the tool, then used it to make the animation.",
     "Other named experiments: subway-times app with adjustable animation physics; Instagram-style color sliders/presets instead of describing colors in words.",
     "Claude Design is for early ideation, collaboration, and buy-in; Claude Code is for shipping production software—they round-trip.",
-    "Product motion craft (free recipes): https://transitions.dev/ — wire texts-reveal, number-pop-in, tabs-sliding, card-tilt, success-check into real chrome; prefer-reduced-motion off; Pro needs Brandon's yes."
+    "Product motion craft (free recipes by Jakub Antalik): https://transitions.dev/ — texts-reveal, number-pop-in, tabs-sliding, card-tilt, success-check; honor prefers-reduced-motion; Quiet Folio ink, no Pro shimmer."
   ],
   "sourceUrls": [
-    "https://claude.com/blog/how-the-product-designer-who-built-claude-design-uses-it-to-explore-ideas-before-building-them"
+    "https://claude.com/blog/how-the-product-designer-who-built-claude-design-uses-it-to-explore-ideas-before-building-them",
+    "https://www.youtube.com/watch?v=ZfytHvgHybA",
+    "https://transitions.dev/"
   ],
   "related": [
     "ten-options-then-remix",
@@ -34,16 +36,22 @@
     {
       "title": "Intro animation via bespoke editor; subway physics; color sliders",
       "body": "Nate: Claude Design intro animation—built a video editor in-tool, then used it. Also: subway-times app with adjustable animation physics; Instagram-style color sliders instead of describing colors in words. Cite: Anthropic blog. Bret Victor’s Stop Drawing Dead Fish as the north star."
+    },
+    {
+      "title": "Stop Drawing Dead Fish → living canvas",
+      "body": "Bret Victor (SF SIGGRAPH 2012 talk): computer art tools should embrace living behavior by default—simulation + performance, not static dead drawings. Nate cites this as the craft north star for Claude Design prototypes that are playable, self-editing, or tool-inside-tool. Cite: YouTube talk; Anthropic blog."
     }
   ],
   "antiPatterns": [
     "Static mocks when interaction is the point.",
-    "Forcing Claude Design to do production software work that belongs in Claude Code."
+    "Forcing Claude Design to do production software work that belongs in Claude Code.",
+    "Shipping a PDF-like mock when the idea is a mechanic users need to feel."
   ],
   "checklist": [
     "Artifact does something live.",
     "Medium matches the idea (HTML playground).",
-    "Production handoff path is clear when it’s time to build."
+    "Production handoff path is clear when it’s time to build.",
+    "Bret Victor bar checked: would this still be dead if you removed the animation layer?"
   ],
   "promptWhy": [
     "Explicit “don’t deliver a static mock” forces interaction.",

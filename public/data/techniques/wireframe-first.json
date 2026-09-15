@@ -31,11 +31,16 @@
     {
       "title": "Daily bread-and-butter wireframes",
       "body": "Nate uses Claude Design daily for wireframing early ideas and generating many flow versions for feedback—structure before visuals. Cite: Anthropic blog."
+    },
+    {
+      "title": "Structure before skin",
+      "body": "Nate: wireframe structure first so layout decisions aren’t entangled with look; then specify look / system from assets. Cite: Anthropic blog."
     }
   ],
   "antiPatterns": [
     "Jumping to polished visuals while structure is still mush.",
-    "Letting early aesthetic defaults lock the layout."
+    "Letting early aesthetic defaults lock the layout.",
+    "Asking for high-fidelity chrome before the information hierarchy is set."
   ],
   "checklist": [
     "Wireframe-only constraint stated.",
@@ -48,6 +53,7 @@
   "pairsWellWith": [
     "ten-options-then-remix",
     "thinking-before-prompt",
-    "tc-ebc-elements"
+    "tc-ebc-elements",
+    "specify-the-look"
   ]
 }

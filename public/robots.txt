@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Allow: /data/
+Allow: /schema/
+Allow: /llms.txt
+Allow: /llms-full.txt
+Allow: /api/
+
+Sitemap: https://design-catalog-three.vercel.app/sitemap.xml

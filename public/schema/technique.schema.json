@@ -1,0 +1,72 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://design-catalog-three.vercel.app/schema/technique.schema.json",
+  "title": "DesignCatalogTechnique",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "slug",
+    "number",
+    "stage",
+    "title",
+    "principle",
+    "procedure",
+    "examplePrompts",
+    "tips",
+    "sourceUrls",
+    "related"
+  ],
+  "properties": {
+    "slug": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+    "number": { "type": "integer", "minimum": 1 },
+    "stage": { "type": "string", "enum": ["Discover", "Define", "Deliver"] },
+    "title": { "type": "string", "minLength": 1 },
+    "principle": { "type": "string", "minLength": 1 },
+    "procedure": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 1
+    },
+    "examplePrompts": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 1
+    },
+    "promptWhy": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Parallel to examplePrompts — why each prompt works"
+    },
+    "tips": { "type": "array", "items": { "type": "string" } },
+    "sourceUrls": {
+      "type": "array",
+      "items": { "type": "string", "format": "uri" },
+      "minItems": 1
+    },
+    "related": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Related technique slugs"
+    },
+    "pairsWellWith": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "workedExamples": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["title", "body"],
+        "properties": {
+          "title": { "type": "string" },
+          "body": { "type": "string" },
+          "before": { "type": "string" },
+          "after": { "type": "string" }
+        }
+      }
+    },
+    "antiPatterns": { "type": "array", "items": { "type": "string" } },
+    "checklist": { "type": "array", "items": { "type": "string" } }
+  }
+}

@@ -31,6 +31,10 @@ export function Footer() {
             Guide
           </Link>
           {" · "}
+          <Link href="/agents" className="hover:text-ink">
+            Agents
+          </Link>
+          {" · "}
           <Link href="/about" className="hover:text-ink">
             About
           </Link>

@@ -34,7 +34,8 @@
   ],
   "pairsWellWith": [
     "thinking-before-prompt",
-    "ambitious-prompts"
+    "ambitious-prompts",
+    "tc-ebc-constraints"
   ],
   "workedExamples": [
     {
@@ -42,11 +43,18 @@
       "before": "Please build a new app that allows home cooks to take a picture of their pantry… Remember allergies… Thanks!",
       "after": "Task: Build an AI-powered meal suggestion app using pantry/fridge photo inputs (+ rest of TC-EBC).",
       "body": "Figma blog before/after: unstructured polite prompt → bland near-wireframe; TC-EBC → richer scaffolding. Cite: Figma blog / Greg Huntoon."
+    },
+    {
+      "title": "Feature copy: Task as deliverable type",
+      "before": "Please write some nice copy for this feature when you get a chance. Thanks!",
+      "after": "Task: Write a short product feature description.",
+      "body": "Greg’s Figma post pairs Task clarity with Context/Elements/Behavior/Constraints; the Task line alone kills polite ambiguity. Cite: Figma blog."
     }
   ],
   "antiPatterns": [
     "Leading with please/thanks and burying the ask.",
-    "Multiple competing tasks in one line."
+    "Multiple competing tasks in one line.",
+    "Task line that is actually three features."
   ],
   "checklist": [
     "One clear Task line.",

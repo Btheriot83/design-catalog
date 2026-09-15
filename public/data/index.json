@@ -2,10 +2,10 @@
   "name": "Design Catalog",
   "description": "Letterpress study desk of AI design techniques (Anshu Chimala, Nate Parrott, Greg Huntoon). Public sources only; no endorsement.",
   "baseUrl": "https://design-catalog-three.vercel.app",
-  "lastUpdated": "2026-09-15T07:29:45.142Z",
+  "lastUpdated": "2026-09-15T07:31:43.536Z",
   "techniqueCount": 24,
   "designerCount": 4,
-  "sourceCount": 8,
+  "sourceCount": 9,
   "stages": [
     {
       "id": "Discover",

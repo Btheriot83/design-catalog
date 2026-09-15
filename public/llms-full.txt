@@ -1,0 +1,55 @@
+# Design Catalog — full agent briefing
+
+Base: https://design-catalog-three.vercel.app
+Generated static JSON under /data/ (regenerated on npm run build).
+
+## Purpose
+
+Machine-readable + human-readable catalog of public AI design craft notes so agents can:
+
+- Escape SaaS-landing / “vibe purple” priors (seed strings, ambitious briefs, anti-tells)
+- Structure prompts (TC-EBC; thinking before prompt)
+- Run critic loops on screenshots
+- Enrich with image/video/motion and “make it alive”
+- Deliver with cut + kill-list + hand-rewritten copy
+
+Quiet Folio visual system: paper #FAF9F7 · ink #221C24 · studioInk #6F6470 · hairline #E8E3E8. No AI chrome.
+
+## Fetch order
+
+1. GET /data/index.json — overview, routes, anshuMapping, canonicalApps
+2. Filter techniques by stage or slug list
+3. GET /data/techniques/{slug}.json for procedure, examplePrompts, promptWhy, checklist, antiPatterns, pairsWellWith, workedExamples
+4. GET /data/prompts.json when you need a flattened prompt library
+5. Cite /data/sources.json; never invent paywalled quotes
+
+## Anshu 1–8 ↔ Build Games Phase A
+
+| # | Slug | Stage | Artifact |
+|---|------|-------|----------|
+| 1 | seed-strings | Discover | docs/DISCOVER.md |
+| 2 | ambitious-prompts | Discover | docs/DISCOVER.md |
+| 3 | critic-subagents | Define | docs/DEFINE.md |
+| 4 | image-generation | Define | docs/DEFINE.md |
+| 5 | video-motion | Define | docs/DEFINE.md |
+| 6 | cut-elements | Deliver | docs/DELIVER.md |
+| 7 | remove-ai-tells | Deliver | docs/DELIVER.md |
+| 8 | hand-rewrite-copy | Deliver | docs/DELIVER.md |
+
+## Tileboard (chore-app) path
+
+- Live candidate: https://buildgames-tody.vercel.app
+- Original: https://todyapp.com/
+- Process: full Anshu 1–8 reseed, then ≤25 beat-the-original loops with spottable ~3s deltas
+- Catalog: /compare · /prompts · /techniques · /designers/anshu-chimala
+
+## Related public tooling (citations only)
+
+- Sakana AI String Seed of Thought: https://sakana.ai/ssot/
+- design-slop-cop (Adrian Krebs): https://github.com/AdrianKrebs/design-slop-cop
+- Bret Victor — Stop Drawing Dead Fish: https://www.youtube.com/watch?v=ZfytHvgHybA
+- Transitions.dev (Jakub Antalik): https://transitions.dev/
+
+## Disclaimer
+
+No endorsement. Public sources only. Do not invent unpublished Substack posts or paywalled Lenny quotes.

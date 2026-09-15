@@ -2,7 +2,28 @@
 
 A letterpress study desk of AI design techniques—mostly from **Anshu Chimala** (Discover → Define → Deliver, Sep 2026 Lenny’s Newsletter essay), with **partial** catalogs of **Nate Parrott**’s Claude Design practices and **Greg Huntoon**’s TC-EBC prompt framework. Public sources only; no endorsement.
 
-See `docs/REDESIGN.md` and `docs/CRITIC_LOOP.md`.
+**Live:** https://design-catalog-three.vercel.app
+
+## For agents (start here)
+
+Do **not** scrape HTML. Fetch static JSON:
+
+| Surface | URL |
+|---------|-----|
+| Index | https://design-catalog-three.vercel.app/data/index.json |
+| Techniques | …/data/techniques.json · …/data/techniques/{slug}.json |
+| Designers | …/data/designers.json · …/data/designers/{slug}.json |
+| Prompts | …/data/prompts.json |
+| Sources | …/data/sources.json |
+| Schemas | …/schema/technique.schema.json · designer.schema.json |
+| llms.txt | https://design-catalog-three.vercel.app/llms.txt |
+| Agent guide | [docs/FOR_AGENTS.md](docs/FOR_AGENTS.md) (also [GitHub raw](https://raw.githubusercontent.com/Btheriot83/design-catalog/main/docs/FOR_AGENTS.md)) |
+
+Human page: [/agents](https://design-catalog-three.vercel.app/agents). Field guide: [/compare](https://design-catalog-three.vercel.app/compare).
+
+**Workflow:** (a) fetch index → (b) pick technique by stage/job → (c) copy prompts → (d) run Discover→Define→Deliver with `DISCOVER.md` / `DEFINE.md` / `DELIVER.md`.
+
+**Build Games / Anshu 1–8** and **Tileboard** (chore-app) canonical URLs are in `docs/FOR_AGENTS.md` and `data/index.json` → `anshuMapping` / `canonicalApps`.
 
 ## Stack
 
@@ -16,18 +37,21 @@ See `docs/REDESIGN.md` and `docs/CRITIC_LOOP.md`.
 
 ```bash
 npm install
+npm run generate:data   # writes public/data/*.json
 npm run dev
 ```
 
 ## Build
 
 ```bash
-npm run build
+npm run build   # runs prebuild → generate:data, then next build
 ```
 
 ## Content
 
 Typed JSON under `content/` — designers, techniques, sources. Do not invent unpublished Substack posts or paywalled quotes. No endorsement implied by any citation.
+
+Also see `docs/REDESIGN.md` and `docs/CRITIC_LOOP.md`.
 
 ## Disclaimer
 

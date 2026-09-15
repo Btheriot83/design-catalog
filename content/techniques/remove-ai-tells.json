@@ -37,6 +37,10 @@
     {
       "title": "Quiet Folio as anti-tell",
       "body": "This site: plum-cast paper, monochrome chrome, serif + IBM Plex, letterpress numerals—no accent rainbow. Crafted plain instead of template docs."
+    },
+    {
+      "title": "design-slop-cop as kill-list cousin",
+      "body": "Independent public tooling (Adrian Krebs, GitHub) flags deterministic slop patterns overlapping this kill-list—vibe purple, glass, gradient chrome, emoji feature grids. Use as a second pass after taste, not a substitute for it. Cite: github.com/AdrianKrebs/design-slop-cop; no endorsement."
     }
   ],
   "antiPatterns": [

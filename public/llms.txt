@@ -1,0 +1,38 @@
+# Design Catalog
+
+> Letterpress study desk of AI design techniques — mostly Anshu Chimala (Discover → Define → Deliver), with partial catalogs of Nate Parrott (Claude Design) and Greg Huntoon (TC-EBC). Public sources only. No endorsement.
+
+Base URL: https://design-catalog-three.vercel.app
+Repo: https://github.com/Btheriot83/design-catalog
+
+## For agents (prefer these over HTML scraping)
+
+- Index: https://design-catalog-three.vercel.app/data/index.json
+- All techniques: https://design-catalog-three.vercel.app/data/techniques.json
+- One technique: https://design-catalog-three.vercel.app/data/techniques/{slug}.json
+- Designers: https://design-catalog-three.vercel.app/data/designers.json
+- Prompts library: https://design-catalog-three.vercel.app/data/prompts.json
+- Sources: https://design-catalog-three.vercel.app/data/sources.json
+- Schemas: https://design-catalog-three.vercel.app/schema/technique.schema.json · designer.schema.json
+- Full agent guide: https://raw.githubusercontent.com/Btheriot83/design-catalog/main/docs/FOR_AGENTS.md
+- This file (full): https://design-catalog-three.vercel.app/llms-full.txt
+
+Optional API aliases (same JSON; prefer /data/ for CDN cache):
+- /api/index · /api/techniques · /api/designers · /api/prompts · /api/sources
+
+## Key human routes
+
+- /techniques · /prompts · /compare (field guide) · /designers · /sources · /agents · /about · /motion
+
+## How to use (short)
+
+1. Fetch /data/index.json
+2. Pick technique(s) by stage or Anshu 1–8 mapping in the index
+3. Copy prompts from /data/prompts.json or technique JSON
+4. Run Discover → Define → Deliver; write docs/DISCOVER.md, DEFINE.md, DELIVER.md
+
+Canonical improvement path (Tileboard / chore-app): see index.canonicalApps.tileboard and docs/FOR_AGENTS.md.
+
+## Disclaimer
+
+Independent project. Citations do not imply affiliation or endorsement.

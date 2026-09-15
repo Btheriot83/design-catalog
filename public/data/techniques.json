@@ -16,10 +16,12 @@
     "tips": [
       "Asking for “something unique” or “completely at random” still yields the same fake-random patterns (pottery metaphors, identical structures).",
       "Default unseeded runs collapse to purplish gradients, text-left / graphic-right SaaS layouts.",
-      "Seeded runs produce one-of-a-kind schemes—no two runs match."
+      "Seeded runs produce one-of-a-kind schemes—no two runs match.",
+      "Sakana’s SSoT (https://sakana.ai/ssot/) generates entropy inside the prompt; Anshu’s catalog recipe prefers external shell entropy so the model cannot fake the seed."
     ],
     "sourceUrls": [
-      "https://www.lennysnewsletter.com/p/how-to-turn-your-ai-into-a-world"
+      "https://www.lennysnewsletter.com/p/how-to-turn-your-ai-into-a-world",
+      "https://sakana.ai/ssot/"
     ],
     "related": [
       "ambitious-prompts",
@@ -290,10 +292,11 @@
       "Matted loops beat CSS animation for caustics, refraction, and physical motion.",
       "Scroll-scrubbed keyframe transitions make users want to keep reading.",
       "Model quality changes fast—aggregators reduce integration churn.",
-      "Product motion craft (free recipes): https://transitions.dev/ — wire texts-reveal, number-pop-in, tabs-sliding, card-tilt, success-check into real chrome; prefer-reduced-motion off; Pro needs Brandon's yes."
+      "Product motion craft (free recipes by Jakub Antalik): https://transitions.dev/ — supplement to Technique 5 imagery/video, not a substitute; honor prefers-reduced-motion; no Pro shimmer without approval."
     ],
     "sourceUrls": [
-      "https://www.lennysnewsletter.com/p/how-to-turn-your-ai-into-a-world"
+      "https://www.lennysnewsletter.com/p/how-to-turn-your-ai-into-a-world",
+      "https://transitions.dev/"
     ],
     "related": [
       "image-generation",
@@ -434,6 +437,10 @@
       {
         "title": "Quiet Folio as anti-tell",
         "body": "This site: plum-cast paper, monochrome chrome, serif + IBM Plex, letterpress numerals—no accent rainbow. Crafted plain instead of template docs."
+      },
+      {
+        "title": "design-slop-cop as kill-list cousin",
+        "body": "Independent public tooling (Adrian Krebs, GitHub) flags deterministic slop patterns overlapping this kill-list—vibe purple, glass, gradient chrome, emoji feature grids. Use as a second pass after taste, not a substitute for it. Cite: github.com/AdrianKrebs/design-slop-cop; no endorsement."
       }
     ],
     "antiPatterns": [
@@ -820,11 +827,18 @@
       {
         "title": "Comment-box dictation",
         "body": "Nate: click the element and speak—with dictation on, comment-box speech appears as typed, grounding the edit. Cite: Anthropic blog."
+      },
+      {
+        "title": "Scavenger-hunt prose vs selection",
+        "before": "“The blue button in the third card under the pricing section—make it quieter.”",
+        "after": "Select the button → comment → speak: “Quieter: secondary weight, drop the glow.”",
+        "body": "Nate: click and speak with dictation so the edit is grounded on the exact target. Cite: Anthropic blog."
       }
     ],
     "antiPatterns": [
       "Long written element-identification paragraphs.",
-      "Prompting micro-nudge edits that should be direct."
+      "Prompting micro-nudge edits that should be direct.",
+      "Describing the element’s location in a paragraph when selection exists."
     ],
     "checklist": [
       "Dictation enabled.",
@@ -873,11 +887,16 @@
       {
         "title": "Daily bread-and-butter wireframes",
         "body": "Nate uses Claude Design daily for wireframing early ideas and generating many flow versions for feedback—structure before visuals. Cite: Anthropic blog."
+      },
+      {
+        "title": "Structure before skin",
+        "body": "Nate: wireframe structure first so layout decisions aren’t entangled with look; then specify look / system from assets. Cite: Anthropic blog."
       }
     ],
     "antiPatterns": [
       "Jumping to polished visuals while structure is still mush.",
-      "Letting early aesthetic defaults lock the layout."
+      "Letting early aesthetic defaults lock the layout.",
+      "Asking for high-fidelity chrome before the information hierarchy is set."
     ],
     "checklist": [
       "Wireframe-only constraint stated.",
@@ -890,7 +909,8 @@
     "pairsWellWith": [
       "ten-options-then-remix",
       "thinking-before-prompt",
-      "tc-ebc-elements"
+      "tc-ebc-elements",
+      "specify-the-look"
     ]
   },
   {
@@ -927,16 +947,24 @@
       {
         "title": "Tokens vs eyeballs",
         "body": "Nate: direct edits use no tokens; small sizing/alignment calls are better eyeballed than prompted. Cite: Anthropic blog."
+      },
+      {
+        "title": "Prompt thrash vs canvas nudge",
+        "before": "Ten prompts to move a label 4px and recolor a secondary line.",
+        "after": "One canvas session: rearrange / resize / recolor; reserve the next prompt for a structural change.",
+        "body": "From Nate’s Claude Design post: direct edits cost no tokens; micro-layout is better eyeballed. Cite: Anthropic blog."
       }
     ],
     "antiPatterns": [
       "Prompting every micro-tweak.",
-      "Skipping direct tools that already exist on the canvas."
+      "Skipping direct tools that already exist on the canvas.",
+      "Using the model as a 4px nudge engine."
     ],
     "checklist": [
       "Last-pixel work done by hand.",
       "Prompts reserved for real changes.",
-      "Token spend on polish near zero."
+      "Token spend on polish near zero.",
+      "Structural prompts only after canvas pass."
     ],
     "promptWhy": [
       "Meta-instruction to prefer canvas tools prevents expensive micro-prompt loops."
@@ -1033,16 +1061,22 @@
       {
         "title": "Queue while it works",
         "body": "Nate: you don’t have to wait for a finished result—queue multiple messages or keep talking mid-turn. Cite: Anthropic blog."
+      },
+      {
+        "title": "Don’t wait on every turn",
+        "body": "Nate: keep collaborating—sketch, gather references, edit other surfaces—while the model works, instead of blocking on each response. Cite: Anthropic blog."
       }
     ],
     "antiPatterns": [
       "Blocking on every completion before thinking the next ask.",
-      "Parallelism without a brief (busy, not intentional)."
+      "Parallelism without a brief (busy, not intentional).",
+      "Serializing all human work behind each model turn."
     ],
     "checklist": [
       "Follow-ups queued when known.",
       "Brief still front-loaded.",
-      "Flow uninterrupted by optional idle waits."
+      "Flow uninterrupted by optional idle waits.",
+      "Parallel human work identified while the model runs."
     ],
     "promptWhy": [
       "Queued variant ask keeps momentum without abandoning the in-flight turn."
@@ -1074,10 +1108,12 @@
       "Example from his work: Claude Design intro animation—built a video editor in the tool, then used it to make the animation.",
       "Other named experiments: subway-times app with adjustable animation physics; Instagram-style color sliders/presets instead of describing colors in words.",
       "Claude Design is for early ideation, collaboration, and buy-in; Claude Code is for shipping production software—they round-trip.",
-      "Product motion craft (free recipes): https://transitions.dev/ — wire texts-reveal, number-pop-in, tabs-sliding, card-tilt, success-check into real chrome; prefer-reduced-motion off; Pro needs Brandon's yes."
+      "Product motion craft (free recipes by Jakub Antalik): https://transitions.dev/ — texts-reveal, number-pop-in, tabs-sliding, card-tilt, success-check; honor prefers-reduced-motion; Quiet Folio ink, no Pro shimmer."
     ],
     "sourceUrls": [
-      "https://claude.com/blog/how-the-product-designer-who-built-claude-design-uses-it-to-explore-ideas-before-building-them"
+      "https://claude.com/blog/how-the-product-designer-who-built-claude-design-uses-it-to-explore-ideas-before-building-them",
+      "https://www.youtube.com/watch?v=ZfytHvgHybA",
+      "https://transitions.dev/"
     ],
     "related": [
       "ten-options-then-remix",
@@ -1089,16 +1125,22 @@
       {
         "title": "Intro animation via bespoke editor; subway physics; color sliders",
         "body": "Nate: Claude Design intro animation—built a video editor in-tool, then used it. Also: subway-times app with adjustable animation physics; Instagram-style color sliders instead of describing colors in words. Cite: Anthropic blog. Bret Victor’s Stop Drawing Dead Fish as the north star."
+      },
+      {
+        "title": "Stop Drawing Dead Fish → living canvas",
+        "body": "Bret Victor (SF SIGGRAPH 2012 talk): computer art tools should embrace living behavior by default—simulation + performance, not static dead drawings. Nate cites this as the craft north star for Claude Design prototypes that are playable, self-editing, or tool-inside-tool. Cite: YouTube talk; Anthropic blog."
       }
     ],
     "antiPatterns": [
       "Static mocks when interaction is the point.",
-      "Forcing Claude Design to do production software work that belongs in Claude Code."
+      "Forcing Claude Design to do production software work that belongs in Claude Code.",
+      "Shipping a PDF-like mock when the idea is a mechanic users need to feel."
     ],
     "checklist": [
       "Artifact does something live.",
       "Medium matches the idea (HTML playground).",
-      "Production handoff path is clear when it’s time to build."
+      "Production handoff path is clear when it’s time to build.",
+      "Bret Victor bar checked: would this still be dead if you removed the animation layer?"
     ],
     "promptWhy": [
       "Explicit “don’t deliver a static mock” forces interaction.",
@@ -1146,7 +1188,8 @@
     ],
     "pairsWellWith": [
       "thinking-before-prompt",
-      "ambitious-prompts"
+      "ambitious-prompts",
+      "tc-ebc-constraints"
     ],
     "workedExamples": [
       {
@@ -1154,11 +1197,18 @@
         "before": "Please build a new app that allows home cooks to take a picture of their pantry… Remember allergies… Thanks!",
         "after": "Task: Build an AI-powered meal suggestion app using pantry/fridge photo inputs (+ rest of TC-EBC).",
         "body": "Figma blog before/after: unstructured polite prompt → bland near-wireframe; TC-EBC → richer scaffolding. Cite: Figma blog / Greg Huntoon."
+      },
+      {
+        "title": "Feature copy: Task as deliverable type",
+        "before": "Please write some nice copy for this feature when you get a chance. Thanks!",
+        "after": "Task: Write a short product feature description.",
+        "body": "Greg’s Figma post pairs Task clarity with Context/Elements/Behavior/Constraints; the Task line alone kills polite ambiguity. Cite: Figma blog."
       }
     ],
     "antiPatterns": [
       "Leading with please/thanks and burying the ask.",
-      "Multiple competing tasks in one line."
+      "Multiple competing tasks in one line.",
+      "Task line that is actually three features."
     ],
     "checklist": [
       "One clear Task line.",
@@ -1375,16 +1425,24 @@
       {
         "title": "Revision discipline",
         "body": "Figma blog pro tip: teach an LLM TC-EBC and use it to refine revision prompts; put do-not-adjust rules in Constraints. Cite: Figma blog."
+      },
+      {
+        "title": "Revision without rails",
+        "before": "“Make it better” on a second pass — model restyles everything you liked.",
+        "after": "Constraints: Do not change the headline, palette, or primary CTA label. Only tighten spacing and secondary copy.",
+        "body": "Greg: put do-not-adjust rules in Constraints so revision passes don’t thrash locked decisions. Cite: Figma blog / TC-EBC repo."
       }
     ],
     "antiPatterns": [
       "No length/platform/tone rails.",
-      "Revision prompts that omit what must stay untouched."
+      "Revision prompts that omit what must stay untouched.",
+      "Revision prompts with no do-not-touch list."
     ],
     "checklist": [
       "Guardrails are measurable where possible.",
       "Revisions name do-not-touch items.",
-      "Tone anchors are explicit if brand matters."
+      "Tone anchors are explicit if brand matters.",
+      "Constraints name what must stay fixed."
     ]
   }
 ]

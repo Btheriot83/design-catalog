@@ -32,16 +32,24 @@
     {
       "title": "Tokens vs eyeballs",
       "body": "Nate: direct edits use no tokens; small sizing/alignment calls are better eyeballed than prompted. Cite: Anthropic blog."
+    },
+    {
+      "title": "Prompt thrash vs canvas nudge",
+      "before": "Ten prompts to move a label 4px and recolor a secondary line.",
+      "after": "One canvas session: rearrange / resize / recolor; reserve the next prompt for a structural change.",
+      "body": "From Nate’s Claude Design post: direct edits cost no tokens; micro-layout is better eyeballed. Cite: Anthropic blog."
     }
   ],
   "antiPatterns": [
     "Prompting every micro-tweak.",
-    "Skipping direct tools that already exist on the canvas."
+    "Skipping direct tools that already exist on the canvas.",
+    "Using the model as a 4px nudge engine."
   ],
   "checklist": [
     "Last-pixel work done by hand.",
     "Prompts reserved for real changes.",
-    "Token spend on polish near zero."
+    "Token spend on polish near zero.",
+    "Structural prompts only after canvas pass."
   ],
   "promptWhy": [
     "Meta-instruction to prefer canvas tools prevents expensive micro-prompt loops."

@@ -31,16 +31,22 @@
     {
       "title": "Queue while it works",
       "body": "Nate: you don’t have to wait for a finished result—queue multiple messages or keep talking mid-turn. Cite: Anthropic blog."
+    },
+    {
+      "title": "Don’t wait on every turn",
+      "body": "Nate: keep collaborating—sketch, gather references, edit other surfaces—while the model works, instead of blocking on each response. Cite: Anthropic blog."
     }
   ],
   "antiPatterns": [
     "Blocking on every completion before thinking the next ask.",
-    "Parallelism without a brief (busy, not intentional)."
+    "Parallelism without a brief (busy, not intentional).",
+    "Serializing all human work behind each model turn."
   ],
   "checklist": [
     "Follow-ups queued when known.",
     "Brief still front-loaded.",
-    "Flow uninterrupted by optional idle waits."
+    "Flow uninterrupted by optional idle waits.",
+    "Parallel human work identified while the model runs."
   ],
   "promptWhy": [
     "Queued variant ask keeps momentum without abandoning the in-flight turn."

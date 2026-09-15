@@ -19,10 +19,11 @@
     "Matted loops beat CSS animation for caustics, refraction, and physical motion.",
     "Scroll-scrubbed keyframe transitions make users want to keep reading.",
     "Model quality changes fast—aggregators reduce integration churn.",
-    "Product motion craft (free recipes): https://transitions.dev/ — wire texts-reveal, number-pop-in, tabs-sliding, card-tilt, success-check into real chrome; prefer-reduced-motion off; Pro needs Brandon's yes."
+    "Product motion craft (free recipes by Jakub Antalik): https://transitions.dev/ — supplement to Technique 5 imagery/video, not a substitute; honor prefers-reduced-motion; no Pro shimmer without approval."
   ],
   "sourceUrls": [
-    "https://www.lennysnewsletter.com/p/how-to-turn-your-ai-into-a-world"
+    "https://www.lennysnewsletter.com/p/how-to-turn-your-ai-into-a-world",
+    "https://transitions.dev/"
   ],
   "related": [
     "image-generation",

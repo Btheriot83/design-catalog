@@ -182,6 +182,85 @@ export default function ComparePage() {
         </ul>
       </section>
 
+      <section className="mb-12">
+        <h2 className="font-serif text-2xl text-ink">Agent checklist</h2>
+        <hr className="rule-double mt-4 mb-5 max-w-[10rem]" />
+        <p className="mb-4 font-sans text-sm leading-relaxed text-studio-ink">
+          Prefer{" "}
+          <Link href="/agents" className="text-ink underline decoration-hairline">
+            /agents
+          </Link>{" "}
+          and{" "}
+          <a
+            href="/data/index.json"
+            className="font-mono text-xs text-ink underline decoration-hairline"
+          >
+            /data/index.json
+          </a>{" "}
+          over HTML. Run Anshu 1–8 once per app; write these artifacts:
+        </p>
+        <ul className="space-y-4 font-sans text-sm leading-relaxed text-studio-ink">
+          <li>
+            <span className="text-ink font-medium">Inputs</span> — job sentence, refuse-list
+            (default aesthetics, fake stats, purple chrome), stage lane,{" "}
+            <a href="/data/prompts.json" className="font-mono text-xs text-ink underline decoration-hairline">
+              prompts.json
+            </a>{" "}
+            filtered to that stage.
+          </li>
+          <li>
+            <span className="text-ink font-medium">Outputs / artifacts</span>
+            <ul className="mt-2 space-y-2 pl-4">
+              <li>
+                ☐{" "}
+                <code className="font-mono text-xs text-ink">docs/DISCOVER.md</code> — seed +
+                briefs + feel notes (techniques 1–2)
+              </li>
+              <li>
+                ☐{" "}
+                <code className="font-mono text-xs text-ink">docs/DEFINE.md</code> — critic log,
+                image/video assets (techniques 3–5)
+              </li>
+              <li>
+                ☐{" "}
+                <code className="font-mono text-xs text-ink">docs/DELIVER.md</code> — cut list,
+                kill-list, copy before/after (techniques 6–8)
+              </li>
+            </ul>
+          </li>
+          <li>
+            <span className="text-ink font-medium">Tileboard path</span> —{" "}
+            <a
+              href="https://buildgames-tody.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-ink underline decoration-hairline"
+            >
+              buildgames-tody.vercel.app
+            </a>{" "}
+            vs{" "}
+            <a
+              href="https://todyapp.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-ink underline decoration-hairline"
+            >
+              todyapp.com
+            </a>
+            : full Anshu reseed, then ≤25 beat loops. Details in{" "}
+            <a
+              href="https://raw.githubusercontent.com/Btheriot83/design-catalog/main/docs/FOR_AGENTS.md"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-ink underline decoration-hairline"
+            >
+              FOR_AGENTS.md
+            </a>
+            .
+          </li>
+        </ul>
+      </section>
+
       <aside className="border border-hairline bg-ghost/80 p-5">
         <p className="eyebrow text-ink">Bar we’re chasing</p>
         <p className="mt-3 font-sans text-sm leading-relaxed text-studio-ink">

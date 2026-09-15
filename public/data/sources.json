@@ -17,16 +17,16 @@
   },
   {
     "title": "Sakana AI — String Seed of Thought",
-    "url": "https://sakana.ai/",
+    "url": "https://sakana.ai/ssot/",
     "kind": "Referenced method",
-    "note": "Cited by Anshu as inspiration for seed-string variety injection.",
-    "coverage": "Method reference; not a full technique reprint."
+    "note": "Sakana AI — String Seed of Thought (SSoT). Cited by Anshu as inspiration for seed-string variety injection; also useful as distribution-faithful diversity prompting. No endorsement.",
+    "coverage": "Method reference (https://sakana.ai/ssot/); not a full technique reprint. Anshu’s catalog adaptation uses external shell entropy rather than in-model string generation."
   },
   {
     "title": "design-slop-cop",
     "url": "https://github.com/AdrianKrebs/design-slop-cop",
     "kind": "Related tooling",
-    "note": "Independent public tooling for spotting design slop. Cited alongside remove-ai-tells; not an Anshu project.",
+    "note": "Adrian Krebs — independent public tooling for spotting design slop. Cited alongside remove-ai-tells / Build Games anti-slop practice; not a full designer entry (tooling depth only). No endorsement.",
     "coverage": "Lineage citation only—no endorsement."
   },
   {
@@ -59,5 +59,13 @@
     "kind": "Motion craft",
     "note": "Jakub Antalik. Free copy-paste transition recipes used for Quiet Folio motion (texts-reveal, number-pop-in, tabs-sliding, restrained card-tilt, success-check, skeleton-reveal). No Pro recipes.",
     "coverage": "Cited as product motion craft (free recipes) for Quiet Folio chrome. Adapted to ink craft tokens; prefers-reduced-motion honored. No endorsement."
+  },
+  {
+    "title": "Bret Victor — Stop Drawing Dead Fish",
+    "url": "https://www.youtube.com/watch?v=ZfytHvgHybA",
+    "kind": "Craft citation",
+    "note": "Public talk cited by Nate Parrott as the north star for “make it alive”: everything we draw should be alive by default. No endorsement.",
+    "coverage": "Talk citation only — used on make-it-alive; not a full technique catalog.",
+    "designerSlug": "nate-parrott"
   }
 ]
