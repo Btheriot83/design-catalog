@@ -2,12 +2,16 @@
   "slug": "katie-dill",
   "name": "Katie Dill",
   "status": "directory",
-  "role": "Head of Design · Stripe",
+  "role": "Head of Design \u00b7 Stripe",
   "bio": "Katie Dill is Head of Design at Stripe. Public career notes include prior VP of Design at Lyft and design leadership at Airbnb, plus earlier frog design work. Profiles describe building high-performing design teams and sweating product details at scale.",
   "links": [
     {
       "label": "LinkedIn",
       "url": "https://www.linkedin.com/in/katie-dill-79168b3"
+    },
+    {
+      "label": "X",
+      "url": "https://x.com/lil_dill"
     }
   ],
   "techniqueSlugs": [],

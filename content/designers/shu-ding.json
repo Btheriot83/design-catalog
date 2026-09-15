@@ -2,7 +2,7 @@
   "slug": "shu-ding",
   "name": "Shu Ding",
   "status": "directory",
-  "role": "Designer & developer · Vercel · Next.js / v0",
+  "role": "Designer & developer \u00b7 Vercel \u00b7 Next.js / v0",
   "bio": "Shu Ding is a designer and developer at Vercel. Public bio covers work on the Vercel platform, Next.js, AI SDK, and v0, after earlier algorithm competitions, web design, Microsoft engineering, and a CS degree from Fudan University. Interests span creative coding, game design, and HCI.",
   "links": [
     {
@@ -12,6 +12,10 @@
     {
       "label": "GitHub",
       "url": "https://github.com/shuding"
+    },
+    {
+      "label": "X",
+      "url": "https://x.com/shuding"
     }
   ],
   "techniqueSlugs": [],

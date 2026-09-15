@@ -2,7 +2,7 @@
   "slug": "cap-watkins",
   "name": "Cap Watkins",
   "status": "directory",
-  "role": "Platform Design Director · QuickBooks",
+  "role": "Platform Design Director \u00b7 QuickBooks",
   "bio": "Cap Watkins is Platform Design Director for QuickBooks at Intuit. Public bio lists prior Head of Product Design at Lattice, CXO at Primary, VP of Design at BuzzFeed, and design roles at Etsy and Amazon. His site notes human-written content and a focus on design leadership craft.",
   "links": [
     {
@@ -12,12 +12,16 @@
     {
       "label": "GitHub",
       "url": "https://github.com/capwatkins"
+    },
+    {
+      "label": "X",
+      "url": "https://x.com/cap"
     }
   ],
   "techniqueSlugs": [],
   "highlights": [
     "QuickBooks Platform Design Director; prior Lattice and BuzzFeed.",
     "Public writing on design systems and designer-engineer craft.",
-    "Site explicitly human-authored—anti-slop posture."
+    "Site explicitly human-authored\u2014anti-slop posture."
   ]
 }

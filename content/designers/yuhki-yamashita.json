@@ -2,8 +2,8 @@
   "slug": "yuhki-yamashita",
   "name": "Yuhki Yamashita",
   "status": "directory",
-  "role": "Product leader · formerly CPO · Figma",
-  "bio": "Yuhki Yamashita served as Chief Product Officer at Figma, shaping product direction during a major growth period. Public LinkedIn notes mark the close of a multi-year Figma chapter in 2026. Directory entry credits public product-leadership craft around design tools—not an ongoing role claim beyond published sources.",
+  "role": "Product leader \u00b7 formerly CPO \u00b7 Figma",
+  "bio": "Yuhki Yamashita served as Chief Product Officer at Figma, shaping product direction during a major growth period. Public LinkedIn notes mark the close of a multi-year Figma chapter in 2026. Directory entry credits public product-leadership craft around design tools\u2014not an ongoing role claim beyond published sources.",
   "links": [
     {
       "label": "LinkedIn",
@@ -12,6 +12,10 @@
     {
       "label": "GitHub",
       "url": "https://github.com/yuhki"
+    },
+    {
+      "label": "X",
+      "url": "https://x.com/yuhkiyam"
     }
   ],
   "techniqueSlugs": [],

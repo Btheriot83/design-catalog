@@ -2,8 +2,8 @@
   "slug": "maxime-heckel",
   "name": "Maxime Heckel",
   "status": "directory",
-  "role": "Frontend engineer · shaders · craft writing",
-  "bio": "Maxime Heckel is a New York–based frontend engineer whose public site and blog cover web development, shaders, and real-time 3D. Writing aims to document the articles he wished he had while learning visual craft on the web. Portfolio emphasizes well-designed, fast, delightful experiences refined against evolving taste.",
+  "role": "Frontend engineer \u00b7 shaders \u00b7 craft writing",
+  "bio": "Maxime Heckel is a New York\u2013based frontend engineer whose public site and blog cover web development, shaders, and real-time 3D. Writing aims to document the articles he wished he had while learning visual craft on the web. Portfolio emphasizes well-designed, fast, delightful experiences refined against evolving taste.",
   "links": [
     {
       "label": "Site",
@@ -12,6 +12,10 @@
     {
       "label": "Blog",
       "url": "https://blog.maximeheckel.com/"
+    },
+    {
+      "label": "X",
+      "url": "https://x.com/MaximeHeckel"
     }
   ],
   "techniqueSlugs": [],
