@@ -1,0 +1,27 @@
+{
+  "slug": "meng-to",
+  "name": "Meng To",
+  "status": "directory",
+  "role": "Founder · Design+Code · designer/educator",
+  "bio": "Meng To is a designer and teacher in Singapore who founded Design+Code, teaching designers to code and developers to design. Public materials describe tens of thousands of paid customers and courses spanning design and implementation. His personal site also documents sketchbook work and AI-era education experiments around DesignCode.",
+  "links": [
+    {
+      "label": "Site",
+      "url": "https://mengto.com/"
+    },
+    {
+      "label": "Design+Code",
+      "url": "https://designcode.io/"
+    },
+    {
+      "label": "X",
+      "url": "https://x.com/MengTo"
+    }
+  ],
+  "techniqueSlugs": [],
+  "highlights": [
+    "Founder of Design+Code education platform.",
+    "Public stance: craft education stays relevant amid AI slop.",
+    "Personal site pairs product teaching with observational drawing."
+  ]
+}

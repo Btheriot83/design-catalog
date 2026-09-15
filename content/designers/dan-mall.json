@@ -1,0 +1,23 @@
+{
+  "slug": "dan-mall",
+  "name": "Dan Mall",
+  "status": "directory",
+  "role": "Design educator · systems · danmall.com",
+  "bio": "Dan Mall is a design educator and systems practitioner publishing at danmall.com / Dan Mall Teaches. Public work covers design systems, product design leadership, and teaching designers to ship better organizational craft. Long-running independent practice with courses and writing.",
+  "links": [
+    {
+      "label": "Site",
+      "url": "https://danmall.com/"
+    },
+    {
+      "label": "X",
+      "url": "https://x.com/danmall"
+    }
+  ],
+  "techniqueSlugs": [],
+  "highlights": [
+    "Dan Mall Teaches: systems and product design education.",
+    "Public emphasis on design systems that teams can actually run.",
+    "Independent practice spanning consulting and courses."
+  ]
+}

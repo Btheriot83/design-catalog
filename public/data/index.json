@@ -2,9 +2,9 @@
   "name": "Design Catalog",
   "description": "Letterpress study desk of AI design techniques (Anshu Chimala, Nate Parrott, Greg Huntoon). Public sources only; no endorsement.",
   "baseUrl": "https://design-catalog-three.vercel.app",
-  "lastUpdated": "2026-09-15T07:31:43.536Z",
+  "lastUpdated": "2026-09-15T18:27:10.062Z",
   "techniqueCount": 24,
-  "designerCount": 4,
+  "designerCount": 50,
   "sourceCount": 9,
   "stages": [
     {
@@ -74,6 +74,374 @@
       "techniqueCount": 11,
       "url": "https://design-catalog-three.vercel.app/designers/nate-parrott",
       "json": "https://design-catalog-three.vercel.app/data/designers/nate-parrott.json"
+    },
+    {
+      "slug": "adam-argyle",
+      "name": "Adam Argyle",
+      "status": "directory",
+      "techniqueCount": 0,
+      "url": "https://design-catalog-three.vercel.app/designers/adam-argyle",
+      "json": "https://design-catalog-three.vercel.app/data/designers/adam-argyle.json"
+    },
+    {
+      "slug": "adam-wathan",
+      "name": "Adam Wathan",
+      "status": "directory",
+      "techniqueCount": 0,
+      "url": "https://design-catalog-three.vercel.app/designers/adam-wathan",
+      "json": "https://design-catalog-three.vercel.app/data/designers/adam-wathan.json"
+    },
+    {
+      "slug": "ahmad-shadeed",
+      "name": "Ahmad Shadeed",
+      "status": "directory",
+      "techniqueCount": 0,
+      "url": "https://design-catalog-three.vercel.app/designers/ahmad-shadeed",
+      "json": "https://design-catalog-three.vercel.app/data/designers/ahmad-shadeed.json"
+    },
+    {
+      "slug": "amelia-wattenberger",
+      "name": "Amelia Wattenberger",
+      "status": "directory",
+      "techniqueCount": 0,
+      "url": "https://design-catalog-three.vercel.app/designers/amelia-wattenberger",
+      "json": "https://design-catalog-three.vercel.app/data/designers/amelia-wattenberger.json"
+    },
+    {
+      "slug": "andy-matuschak",
+      "name": "Andy Matuschak",
+      "status": "directory",
+      "techniqueCount": 0,
+      "url": "https://design-catalog-three.vercel.app/designers/andy-matuschak",
+      "json": "https://design-catalog-three.vercel.app/data/designers/andy-matuschak.json"
+    },
+    {
+      "slug": "brad-frost",
+      "name": "Brad Frost",
+      "status": "directory",
+      "techniqueCount": 0,
+      "url": "https://design-catalog-three.vercel.app/designers/brad-frost",
+      "json": "https://design-catalog-three.vercel.app/data/designers/brad-frost.json"
+    },
+    {
+      "slug": "bret-victor",
+      "name": "Bret Victor",
+      "status": "directory",
+      "techniqueCount": 0,
+      "url": "https://design-catalog-three.vercel.app/designers/bret-victor",
+      "json": "https://design-catalog-three.vercel.app/data/designers/bret-victor.json"
+    },
+    {
+      "slug": "brian-lovin",
+      "name": "Brian Lovin",
+      "status": "directory",
+      "techniqueCount": 0,
+      "url": "https://design-catalog-three.vercel.app/designers/brian-lovin",
+      "json": "https://design-catalog-three.vercel.app/data/designers/brian-lovin.json"
+    },
+    {
+      "slug": "cap-watkins",
+      "name": "Cap Watkins",
+      "status": "directory",
+      "techniqueCount": 0,
+      "url": "https://design-catalog-three.vercel.app/designers/cap-watkins",
+      "json": "https://design-catalog-three.vercel.app/data/designers/cap-watkins.json"
+    },
+    {
+      "slug": "cassie-evans",
+      "name": "Cassie Evans",
+      "status": "directory",
+      "techniqueCount": 0,
+      "url": "https://design-catalog-three.vercel.app/designers/cassie-evans",
+      "json": "https://design-catalog-three.vercel.app/data/designers/cassie-evans.json"
+    },
+    {
+      "slug": "craig-mod",
+      "name": "Craig Mod",
+      "status": "directory",
+      "techniqueCount": 0,
+      "url": "https://design-catalog-three.vercel.app/designers/craig-mod",
+      "json": "https://design-catalog-three.vercel.app/data/designers/craig-mod.json"
+    },
+    {
+      "slug": "dan-mall",
+      "name": "Dan Mall",
+      "status": "directory",
+      "techniqueCount": 0,
+      "url": "https://design-catalog-three.vercel.app/designers/dan-mall",
+      "json": "https://design-catalog-three.vercel.app/data/designers/dan-mall.json"
+    },
+    {
+      "slug": "david-hoang",
+      "name": "David Hoang",
+      "status": "directory",
+      "techniqueCount": 0,
+      "url": "https://design-catalog-three.vercel.app/designers/david-hoang",
+      "json": "https://design-catalog-three.vercel.app/data/designers/david-hoang.json"
+    },
+    {
+      "slug": "don-norman",
+      "name": "Don Norman",
+      "status": "directory",
+      "techniqueCount": 0,
+      "url": "https://design-catalog-three.vercel.app/designers/don-norman",
+      "json": "https://design-catalog-three.vercel.app/data/designers/don-norman.json"
+    },
+    {
+      "slug": "emil-kowalski",
+      "name": "Emil Kowalski",
+      "status": "directory",
+      "techniqueCount": 0,
+      "url": "https://design-catalog-three.vercel.app/designers/emil-kowalski",
+      "json": "https://design-catalog-three.vercel.app/data/designers/emil-kowalski.json"
+    },
+    {
+      "slug": "erika-hall",
+      "name": "Erika Hall",
+      "status": "directory",
+      "techniqueCount": 0,
+      "url": "https://design-catalog-three.vercel.app/designers/erika-hall",
+      "json": "https://design-catalog-three.vercel.app/data/designers/erika-hall.json"
+    },
+    {
+      "slug": "frank-chimero",
+      "name": "Frank Chimero",
+      "status": "directory",
+      "techniqueCount": 0,
+      "url": "https://design-catalog-three.vercel.app/designers/frank-chimero",
+      "json": "https://design-catalog-three.vercel.app/data/designers/frank-chimero.json"
+    },
+    {
+      "slug": "imran-chaudhri",
+      "name": "Imran Chaudhri",
+      "status": "directory",
+      "techniqueCount": 0,
+      "url": "https://design-catalog-three.vercel.app/designers/imran-chaudhri",
+      "json": "https://design-catalog-three.vercel.app/data/designers/imran-chaudhri.json"
+    },
+    {
+      "slug": "jakub-antalik",
+      "name": "Jakub Antalik",
+      "status": "directory",
+      "techniqueCount": 0,
+      "url": "https://design-catalog-three.vercel.app/designers/jakub-antalik",
+      "json": "https://design-catalog-three.vercel.app/data/designers/jakub-antalik.json"
+    },
+    {
+      "slug": "jason-yuan",
+      "name": "Jason Yuan",
+      "status": "directory",
+      "techniqueCount": 0,
+      "url": "https://design-catalog-three.vercel.app/designers/jason-yuan",
+      "json": "https://design-catalog-three.vercel.app/data/designers/jason-yuan.json"
+    },
+    {
+      "slug": "jessica-hische",
+      "name": "Jessica Hische",
+      "status": "directory",
+      "techniqueCount": 0,
+      "url": "https://design-catalog-three.vercel.app/designers/jessica-hische",
+      "json": "https://design-catalog-three.vercel.app/data/designers/jessica-hische.json"
+    },
+    {
+      "slug": "jonnie-hallman",
+      "name": "Jonnie Hallman",
+      "status": "directory",
+      "techniqueCount": 0,
+      "url": "https://design-catalog-three.vercel.app/designers/jonnie-hallman",
+      "json": "https://design-catalog-three.vercel.app/data/designers/jonnie-hallman.json"
+    },
+    {
+      "slug": "josh-w-comeau",
+      "name": "Josh W. Comeau",
+      "status": "directory",
+      "techniqueCount": 0,
+      "url": "https://design-catalog-three.vercel.app/designers/josh-w-comeau",
+      "json": "https://design-catalog-three.vercel.app/data/designers/josh-w-comeau.json"
+    },
+    {
+      "slug": "julie-zhuo",
+      "name": "Julie Zhuo",
+      "status": "directory",
+      "techniqueCount": 0,
+      "url": "https://design-catalog-three.vercel.app/designers/julie-zhuo",
+      "json": "https://design-catalog-three.vercel.app/data/designers/julie-zhuo.json"
+    },
+    {
+      "slug": "karri-saarinen",
+      "name": "Karri Saarinen",
+      "status": "directory",
+      "techniqueCount": 0,
+      "url": "https://design-catalog-three.vercel.app/designers/karri-saarinen",
+      "json": "https://design-catalog-three.vercel.app/data/designers/karri-saarinen.json"
+    },
+    {
+      "slug": "katie-dill",
+      "name": "Katie Dill",
+      "status": "directory",
+      "techniqueCount": 0,
+      "url": "https://design-catalog-three.vercel.app/designers/katie-dill",
+      "json": "https://design-catalog-three.vercel.app/data/designers/katie-dill.json"
+    },
+    {
+      "slug": "kenya-hara",
+      "name": "Kenya Hara",
+      "status": "directory",
+      "techniqueCount": 0,
+      "url": "https://design-catalog-three.vercel.app/designers/kenya-hara",
+      "json": "https://design-catalog-three.vercel.app/data/designers/kenya-hara.json"
+    },
+    {
+      "slug": "khoi-vinh",
+      "name": "Khoi Vinh",
+      "status": "directory",
+      "techniqueCount": 0,
+      "url": "https://design-catalog-three.vercel.app/designers/khoi-vinh",
+      "json": "https://design-catalog-three.vercel.app/data/designers/khoi-vinh.json"
+    },
+    {
+      "slug": "linda-dong",
+      "name": "Linda Dong",
+      "status": "directory",
+      "techniqueCount": 0,
+      "url": "https://design-catalog-three.vercel.app/designers/linda-dong",
+      "json": "https://design-catalog-three.vercel.app/data/designers/linda-dong.json"
+    },
+    {
+      "slug": "linus-lee",
+      "name": "Linus Lee",
+      "status": "directory",
+      "techniqueCount": 0,
+      "url": "https://design-catalog-three.vercel.app/designers/linus-lee",
+      "json": "https://design-catalog-three.vercel.app/data/designers/linus-lee.json"
+    },
+    {
+      "slug": "luke-wroblewski",
+      "name": "Luke Wroblewski",
+      "status": "directory",
+      "techniqueCount": 0,
+      "url": "https://design-catalog-three.vercel.app/designers/luke-wroblewski",
+      "json": "https://design-catalog-three.vercel.app/data/designers/luke-wroblewski.json"
+    },
+    {
+      "slug": "maggie-appleton",
+      "name": "Maggie Appleton",
+      "status": "directory",
+      "techniqueCount": 0,
+      "url": "https://design-catalog-three.vercel.app/designers/maggie-appleton",
+      "json": "https://design-catalog-three.vercel.app/data/designers/maggie-appleton.json"
+    },
+    {
+      "slug": "maxime-heckel",
+      "name": "Maxime Heckel",
+      "status": "directory",
+      "techniqueCount": 0,
+      "url": "https://design-catalog-three.vercel.app/designers/maxime-heckel",
+      "json": "https://design-catalog-three.vercel.app/data/designers/maxime-heckel.json"
+    },
+    {
+      "slug": "meng-to",
+      "name": "Meng To",
+      "status": "directory",
+      "techniqueCount": 0,
+      "url": "https://design-catalog-three.vercel.app/designers/meng-to",
+      "json": "https://design-catalog-three.vercel.app/data/designers/meng-to.json"
+    },
+    {
+      "slug": "naz-hamid",
+      "name": "Naz Hamid",
+      "status": "directory",
+      "techniqueCount": 0,
+      "url": "https://design-catalog-three.vercel.app/designers/naz-hamid",
+      "json": "https://design-catalog-three.vercel.app/data/designers/naz-hamid.json"
+    },
+    {
+      "slug": "noah-levin",
+      "name": "Noah Levin",
+      "status": "directory",
+      "techniqueCount": 0,
+      "url": "https://design-catalog-three.vercel.app/designers/noah-levin",
+      "json": "https://design-catalog-three.vercel.app/data/designers/noah-levin.json"
+    },
+    {
+      "slug": "pablo-stanley",
+      "name": "Pablo Stanley",
+      "status": "directory",
+      "techniqueCount": 0,
+      "url": "https://design-catalog-three.vercel.app/designers/pablo-stanley",
+      "json": "https://design-catalog-three.vercel.app/data/designers/pablo-stanley.json"
+    },
+    {
+      "slug": "paco-coursey",
+      "name": "Paco Coursey",
+      "status": "directory",
+      "techniqueCount": 0,
+      "url": "https://design-catalog-three.vercel.app/designers/paco-coursey",
+      "json": "https://design-catalog-three.vercel.app/data/designers/paco-coursey.json"
+    },
+    {
+      "slug": "rasmus-andersson",
+      "name": "Rasmus Andersson",
+      "status": "directory",
+      "techniqueCount": 0,
+      "url": "https://design-catalog-three.vercel.app/designers/rasmus-andersson",
+      "json": "https://design-catalog-three.vercel.app/data/designers/rasmus-andersson.json"
+    },
+    {
+      "slug": "rauno-freiberg",
+      "name": "Rauno Freiberg",
+      "status": "directory",
+      "techniqueCount": 0,
+      "url": "https://design-catalog-three.vercel.app/designers/rauno-freiberg",
+      "json": "https://design-catalog-three.vercel.app/data/designers/rauno-freiberg.json"
+    },
+    {
+      "slug": "robin-rendle",
+      "name": "Robin Rendle",
+      "status": "directory",
+      "techniqueCount": 0,
+      "url": "https://design-catalog-three.vercel.app/designers/robin-rendle",
+      "json": "https://design-catalog-three.vercel.app/data/designers/robin-rendle.json"
+    },
+    {
+      "slug": "ryan-singer",
+      "name": "Ryan Singer",
+      "status": "directory",
+      "techniqueCount": 0,
+      "url": "https://design-catalog-three.vercel.app/designers/ryan-singer",
+      "json": "https://design-catalog-three.vercel.app/data/designers/ryan-singer.json"
+    },
+    {
+      "slug": "shu-ding",
+      "name": "Shu Ding",
+      "status": "directory",
+      "techniqueCount": 0,
+      "url": "https://design-catalog-three.vercel.app/designers/shu-ding",
+      "json": "https://design-catalog-three.vercel.app/data/designers/shu-ding.json"
+    },
+    {
+      "slug": "steve-schoger",
+      "name": "Steve Schoger",
+      "status": "directory",
+      "techniqueCount": 0,
+      "url": "https://design-catalog-three.vercel.app/designers/steve-schoger",
+      "json": "https://design-catalog-three.vercel.app/data/designers/steve-schoger.json"
+    },
+    {
+      "slug": "tobias-van-schneider",
+      "name": "Tobias van Schneider",
+      "status": "directory",
+      "techniqueCount": 0,
+      "url": "https://design-catalog-three.vercel.app/designers/tobias-van-schneider",
+      "json": "https://design-catalog-three.vercel.app/data/designers/tobias-van-schneider.json"
+    },
+    {
+      "slug": "yuhki-yamashita",
+      "name": "Yuhki Yamashita",
+      "status": "directory",
+      "techniqueCount": 0,
+      "url": "https://design-catalog-three.vercel.app/designers/yuhki-yamashita",
+      "json": "https://design-catalog-three.vercel.app/data/designers/yuhki-yamashita.json"
     },
     {
       "slug": "brandon-theriot",

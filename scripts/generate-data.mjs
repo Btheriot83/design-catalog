@@ -30,7 +30,7 @@ function loadTechniques() {
     .sort((a, b) => a.number - b.number);
 }
 
-const statusRank = { complete: 0, partial: 1, stub: 2, curator: 3 };
+const statusRank = { complete: 0, partial: 1, directory: 2, stub: 3, curator: 4 };
 
 function loadDesigners() {
   const dir = join(contentRoot, "designers");

@@ -1,0 +1,27 @@
+{
+  "slug": "cassie-evans",
+  "name": "Cassie Evans",
+  "status": "directory",
+  "role": "GSAP · SVG & UI motion educator",
+  "bio": "Cassie Evans works on GSAP (GreenSock) as a Staff Developer Relations Engineer & Product Manager under Webflow’s umbrella in public listings. She is known for teaching SVG and UI interaction craft—often described as GSAP’s “fairy codemother.” Public workshops and demos emphasize expressive motion with technical clarity.",
+  "links": [
+    {
+      "label": "LinkedIn",
+      "url": "https://www.linkedin.com/in/cassie-codes"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/Cassie-codes"
+    },
+    {
+      "label": "GSAP",
+      "url": "https://gsap.com/"
+    }
+  ],
+  "techniqueSlugs": [],
+  "highlights": [
+    "GSAP educator focused on SVG and UI interactions.",
+    "Public workshops and demos for expressive, precise motion.",
+    "Staff DevRel/PM role listed publicly via Webflow/GSAP."
+  ]
+}

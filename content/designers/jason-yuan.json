@@ -1,0 +1,23 @@
+{
+  "slug": "jason-yuan",
+  "name": "Jason Yuan",
+  "status": "directory",
+  "role": "Interface designer · Mercury OS · ex-Apple",
+  "bio": "Jason Yuan designs interfaces—the metaphors that humanize them and the systems that scale them. Public portfolio covers MercuryOS prototypes, kinetic type for Klim Type Foundry, and work at Apple’s Marcom UX and Human Interface teams. He studied theatre at Northwestern and graphic design at RISD; recent public work includes MakeSpace and Hivemind.",
+  "links": [
+    {
+      "label": "Site",
+      "url": "https://jasonyuan.design/"
+    },
+    {
+      "label": "LinkedIn",
+      "url": "https://www.linkedin.com/in/jasonyuandesign"
+    }
+  ],
+  "techniqueSlugs": [],
+  "highlights": [
+    "Public MercuryOS and Apple Marcom/HIG craft history.",
+    "Portfolio spans kinetic type, OS metaphors, and social software.",
+    "Emphasizes taste as distillation of many public no’s."
+  ]
+}

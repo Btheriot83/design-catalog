@@ -1,0 +1,27 @@
+{
+  "slug": "brian-lovin",
+  "name": "Brian Lovin",
+  "status": "directory",
+  "role": "Product designer · Notion · Staff Design",
+  "bio": "Brian Lovin is a software designer in San Francisco currently making AI products at Notion. He co-founded Campsite, designed GitHub Mobile after Spectrum’s acquisition, and earlier designed payments at Facebook and was first product designer at Buffer. He co-hosted Design Details for years and created Staff Design, an interview project on IC career paths.",
+  "links": [
+    {
+      "label": "Site",
+      "url": "https://brianlovin.com/"
+    },
+    {
+      "label": "X",
+      "url": "https://x.com/brian_lovin"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/brianlovin"
+    }
+  ],
+  "techniqueSlugs": [],
+  "highlights": [
+    "Designing AI products at Notion; prior Campsite, GitHub Mobile, Spectrum.",
+    "Created Staff Design and long-running Design Details podcast co-host.",
+    "Public site briOS collects writing, app dissections, and curated sites."
+  ]
+}

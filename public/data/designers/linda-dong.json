@@ -1,0 +1,27 @@
+{
+  "slug": "linda-dong",
+  "name": "Linda Dong",
+  "status": "directory",
+  "role": "Design Evangelist · Apple",
+  "bio": "Linda Dong is a Design Evangelist at Apple. Public materials credit her with Apple Design Resources (including Figma/Sketch kits) and talks on principles of great design alongside Apple Developer Relations. Earlier Apple work included conceptual UI on a small prototyping team spanning iOS, Mac, and Apple TV.",
+  "links": [
+    {
+      "label": "X",
+      "url": "https://x.com/lindadong"
+    },
+    {
+      "label": "Apple Design Resources",
+      "url": "https://developer.apple.com/design/resources/"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/lindadong"
+    }
+  ],
+  "techniqueSlugs": [],
+  "highlights": [
+    "Apple Design Evangelist; ships public design kits and HIG principles talks.",
+    "Prior Apple prototyping work across platforms.",
+    "Public posts announce design resources for developers."
+  ]
+}

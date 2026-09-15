@@ -14,20 +14,23 @@ export function DesignerEntry({
   stagesTitle: string;
 }) {
   const isBuilder = designer.status === "curator";
+  const isDirectory = designer.status === "directory";
 
   return (
     <div>
       <div className="mb-3 flex flex-wrap items-center gap-3">
         <StatusChip status={designer.status} />
-        {!isBuilder ? (
+        {isBuilder ? (
+          <span className="eyebrow">Credits · catalog</span>
+        ) : isDirectory ? (
+          <span className="eyebrow">Directory · credits</span>
+        ) : (
           <>
             <span className="folio-num text-3xl text-ink/40">
               {String(techniques.length).padStart(2, "0")}
             </span>
             <span className="eyebrow">techniques</span>
           </>
-        ) : (
-          <span className="eyebrow">Credits · catalog</span>
         )}
       </div>
       <PageHeader title={designer.name} description={designer.role} />
@@ -55,6 +58,12 @@ export function DesignerEntry({
               ))}
             </ul>
           </nav>
+        ) : null}
+        {isDirectory ? (
+          <p className="text-sm text-faint">
+            Public sources only. Linking does not imply affiliation,
+            sponsorship, or endorsement.
+          </p>
         ) : null}
       </div>
 
@@ -116,7 +125,14 @@ export function DesignerEntry({
           <p className="font-sans text-sm leading-relaxed text-studio-ink">
             No techniques authored here—this entry credits the person who
             assembles the catalog. Source craft lives under Anshu, Nate, and
-            Greg.
+            Greg; the wider directory points outward to public craft voices.
+          </p>
+        </section>
+      ) : isDirectory ? (
+        <section className="border-t border-hairline pt-8">
+          <p className="font-sans text-sm leading-relaxed text-studio-ink">
+            Directory credit only—no techniques catalogued under this name yet.
+            Follow outbound links for their public work.
           </p>
         </section>
       ) : null}

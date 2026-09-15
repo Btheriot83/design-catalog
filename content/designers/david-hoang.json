@@ -1,0 +1,23 @@
+{
+  "slug": "david-hoang",
+  "name": "David Hoang",
+  "status": "directory",
+  "role": "VP of Design · Atlassian · Rovo & AI",
+  "bio": "David Hoang is VP of Design for Rovo & AI (and related ecosystem work) at Atlassian. Public bio lists prior design leadership at Replit and Webflow and Head of Product Design at One Medical. He publishes Proof of Concept, a newsletter on design leadership, building, and experiments.",
+  "links": [
+    {
+      "label": "X",
+      "url": "https://x.com/davidhoang"
+    },
+    {
+      "label": "LinkedIn",
+      "url": "https://www.linkedin.com/in/dhoang2"
+    }
+  ],
+  "techniqueSlugs": [],
+  "highlights": [
+    "Leads design for Atlassian Rovo & AI initiatives.",
+    "Alum: Replit, Webflow, One Medical design leadership.",
+    "Proof of Concept newsletter for design GMs."
+  ]
+}

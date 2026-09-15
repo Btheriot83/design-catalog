@@ -1,0 +1,23 @@
+{
+  "slug": "frank-chimero",
+  "name": "Frank Chimero",
+  "status": "directory",
+  "role": "Designer · writer · The Shape of Design",
+  "bio": "Frank Chimero is a New York–based designer with a long public practice across brand, product, and creative direction. He co-founded Abstract and wrote, illustrated, and published The Shape of Design (2012). Essays and lectures are widely assigned in design classrooms; current studio work is listed on frankchimero.com and studiofrank.co.",
+  "links": [
+    {
+      "label": "Site",
+      "url": "https://frankchimero.com/"
+    },
+    {
+      "label": "Studio",
+      "url": "https://studiofrank.co/"
+    }
+  ],
+  "techniqueSlugs": [],
+  "highlights": [
+    "Author of The Shape of Design; co-founder of Abstract.",
+    "Public essays treated as foundational web-design texts.",
+    "Studio practice spans brand and product direction."
+  ]
+}

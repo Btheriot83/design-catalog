@@ -1,0 +1,23 @@
+{
+  "slug": "pablo-stanley",
+  "name": "Pablo Stanley",
+  "status": "directory",
+  "role": "Designer · Vercel v0 · illustration systems",
+  "bio": "Pablo Stanley designs at Vercel on v0 after co-founding Lummi (acquired by Udemy) and Blush. Public career includes InVision design advocacy and co-founding design at Carbon Health. He is widely known for open illustration libraries such as Avataaars, Humaaans, Open Peeps, and Open Doodles.",
+  "links": [
+    {
+      "label": "Site",
+      "url": "https://pablostanley.com/"
+    },
+    {
+      "label": "LinkedIn",
+      "url": "https://www.linkedin.com/in/pablostanley1"
+    }
+  ],
+  "techniqueSlugs": [],
+  "highlights": [
+    "Design at Vercel v0; prior Lummi and Blush co-founder.",
+    "Open illustration systems used across products.",
+    "Teaches UI craft publicly via courses and Substack."
+  ]
+}

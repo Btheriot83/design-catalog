@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     template: "%s · Design Catalog",
   },
   description:
-    "A letterpress study desk of AI design techniques—Anshu Chimala, Nate Parrott, Greg Huntoon. Public sources only; no endorsement.",
+    "Craft / anti-slop designer directory and AI design technique desk. Public sources only; no endorsement.",
 };
 
 export default function RootLayout({

@@ -1,0 +1,27 @@
+{
+  "slug": "linus-lee",
+  "name": "Linus Lee",
+  "status": "directory",
+  "role": "Researcher · tools for thought · thesephist",
+  "bio": "Linus Lee publishes as thesephist.com, documenting research and advising on AI interpretability interfaces. Public bio lists prior Research Engineer work at Notion, Researcher in Residence at Betaworks, and earlier roles at Replit and related labs. Most active publicly as @thesephist on X and GitHub.",
+  "links": [
+    {
+      "label": "Site",
+      "url": "https://thesephist.com/"
+    },
+    {
+      "label": "X",
+      "url": "https://x.com/thesephist"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/thesephist"
+    }
+  ],
+  "techniqueSlugs": [],
+  "highlights": [
+    "Public tools-for-thought and AI interface research writing.",
+    "Prior Notion, Betaworks, Replit research/engineering roles.",
+    "Active as @thesephist across X and GitHub."
+  ]
+}

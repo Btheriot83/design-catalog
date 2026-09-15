@@ -1,0 +1,23 @@
+{
+  "slug": "brad-frost",
+  "name": "Brad Frost",
+  "status": "directory",
+  "role": "Design systems · Atomic Design",
+  "bio": "Brad Frost is a designer and consultant known for Atomic Design and long-form public writing at bradfrost.com. Work focuses on design systems, pattern libraries, and collaborative front-end craft between designers and engineers. Speaks widely on scaling interface quality without chaos.",
+  "links": [
+    {
+      "label": "Site",
+      "url": "https://bradfrost.com/"
+    },
+    {
+      "label": "X",
+      "url": "https://x.com/brad_frost"
+    }
+  ],
+  "techniqueSlugs": [],
+  "highlights": [
+    "Author of Atomic Design; design-systems consultant.",
+    "Public writing on pattern libraries and collaborative craft.",
+    "Advocate for systematic interface quality."
+  ]
+}

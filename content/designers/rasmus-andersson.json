@@ -1,0 +1,31 @@
+{
+  "slug": "rasmus-andersson",
+  "name": "Rasmus Andersson",
+  "status": "directory",
+  "role": "Designer & engineer · Inter · rsms.me",
+  "bio": "Rasmus Andersson is a Swedish designer and engineer in San Francisco publishing at rsms.me. Public work includes the Inter typeface and past roles spanning Figma, Facebook, and early Spotify. He frames software as a medium for expression across fonts, tools, and small art projects.",
+  "links": [
+    {
+      "label": "Site",
+      "url": "https://rsms.me/"
+    },
+    {
+      "label": "About",
+      "url": "https://rsms.me/about/"
+    },
+    {
+      "label": "X",
+      "url": "https://x.com/rsms"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/rsms"
+    }
+  ],
+  "techniqueSlugs": [],
+  "highlights": [
+    "Creator of Inter; public design-engineering practice.",
+    "Past Figma, Facebook, founding-era Spotify craft.",
+    "rsms.me documents fonts, tools, and software-as-medium."
+  ]
+}

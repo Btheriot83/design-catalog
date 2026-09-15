@@ -1,0 +1,23 @@
+{
+  "slug": "erika-hall",
+  "name": "Erika Hall",
+  "status": "directory",
+  "role": "Co-founder · Mule Design · research craft",
+  "bio": "Erika Hall is co-founder of Mule Design Studio and author of Just Enough Research. Public work argues for grounded research, clear writing, and skepticism toward empty process theater. She writes and speaks on making digital products that respect users’ time and intelligence.",
+  "links": [
+    {
+      "label": "Mule Design",
+      "url": "https://muledesign.com/"
+    },
+    {
+      "label": "X",
+      "url": "https://x.com/mulegirl"
+    }
+  ],
+  "techniqueSlugs": [],
+  "highlights": [
+    "Author of Just Enough Research; Mule Design co-founder.",
+    "Public critique of empty UX theater and research theater.",
+    "Craft stance: clear writing and evidence over slides."
+  ]
+}

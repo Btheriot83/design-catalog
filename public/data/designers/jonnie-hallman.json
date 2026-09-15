@@ -1,0 +1,27 @@
+{
+  "slug": "jonnie-hallman",
+  "name": "Jonnie Hallman",
+  "status": "directory",
+  "role": "Indie design engineer · destroytoday · ex-Stripe",
+  "bio": "Jonnie Hallman (@destroytoday) is an independent design engineer in Brooklyn/New York, formerly at Stripe. His site destroytoday.com showcases landing pages and microsites as a craft focus and publishes process writing. Public GitHub and site document years of indie design-engineering work.",
+  "links": [
+    {
+      "label": "Site",
+      "url": "https://destroytoday.com/"
+    },
+    {
+      "label": "X",
+      "url": "https://x.com/destroytoday"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/destroytoday"
+    }
+  ],
+  "techniqueSlugs": [],
+  "highlights": [
+    "Indie design engineer; ex-Stripe; Brooklyn practice.",
+    "Public focus on polished landing pages and microsites.",
+    "Process writing at destroytoday.com."
+  ]
+}

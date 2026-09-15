@@ -1,0 +1,23 @@
+{
+  "slug": "robin-rendle",
+  "name": "Robin Rendle",
+  "status": "directory",
+  "role": "Designer · Apple · writing on systems",
+  "bio": "Robin Rendle is a designer currently at Apple per public LinkedIn. He maintains robinrendle.com and is known in the web community for writing on design systems, typography, and the culture of making websites carefully. Directory entry uses public career and site presence only.",
+  "links": [
+    {
+      "label": "Site",
+      "url": "https://robinrendle.com/"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/robinrendle"
+    }
+  ],
+  "techniqueSlugs": [],
+  "highlights": [
+    "Public writing on design systems and web craft.",
+    "Personal site and GitHub document ongoing practice.",
+    "Listed as Apple designer from public LinkedIn only."
+  ]
+}

@@ -11,8 +11,9 @@ function readJson<T>(path: string): T {
 const statusRank: Record<Designer["status"], number> = {
   complete: 0,
   partial: 1,
-  stub: 2,
-  curator: 3,
+  directory: 2,
+  stub: 3,
+  curator: 4,
 };
 
 export function getAllTechniques(): Technique[] {

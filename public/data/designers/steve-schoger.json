@@ -1,0 +1,27 @@
+{
+  "slug": "steve-schoger",
+  "name": "Steve Schoger",
+  "status": "directory",
+  "role": "Visual designer · Refactoring UI",
+  "bio": "Steve Schoger is a Canadian visual designer known for sharing UI tips publicly and for Refactoring UI, the book and video course made with Adam Wathan. His site describes teaching web design through specific, actionable tactics and refactoring UIs in public. Work centers on practical visual craft rather than theory-only critique.",
+  "links": [
+    {
+      "label": "Site",
+      "url": "https://www.steveschoger.com/"
+    },
+    {
+      "label": "Refactoring UI",
+      "url": "https://refactoringui.com/"
+    },
+    {
+      "label": "X",
+      "url": "https://x.com/steveschoger"
+    }
+  ],
+  "techniqueSlugs": [],
+  "highlights": [
+    "Co-author of Refactoring UI with Adam Wathan.",
+    "Known for public UI tips and refactor videos.",
+    "Site frames design advice for builders shipping interfaces."
+  ]
+}

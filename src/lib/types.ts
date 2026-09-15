@@ -27,10 +27,17 @@ export interface Technique {
   checklist?: string[];
 }
 
+export type DesignerStatus =
+  | "complete"
+  | "partial"
+  | "stub"
+  | "curator"
+  | "directory";
+
 export interface Designer {
   slug: string;
   name: string;
-  status: "complete" | "partial" | "stub" | "curator";
+  status: DesignerStatus;
   role: string;
   bio: string;
   links: { label: string; url: string }[];

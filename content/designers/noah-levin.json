@@ -1,0 +1,27 @@
+{
+  "slug": "noah-levin",
+  "name": "Noah Levin",
+  "status": "directory",
+  "role": "VP of Product Design · Figma",
+  "bio": "Noah Levin is VP of Product Design at Figma. Public writing covers how Figma built its design team, career levels, and design process. Personal site and CV document a product-design career focused on tools that help people make better things.",
+  "links": [
+    {
+      "label": "CV / site",
+      "url": "https://cv.nlevin.com/"
+    },
+    {
+      "label": "X",
+      "url": "https://x.com/nlevin"
+    },
+    {
+      "label": "Figma",
+      "url": "https://www.figma.com/@nlevin"
+    }
+  ],
+  "techniqueSlugs": [],
+  "highlights": [
+    "VP of Product Design at Figma.",
+    "Public essays on Figma design process and career levels.",
+    "Focus on tools and teams for better making."
+  ]
+}

@@ -1,6 +1,6 @@
 # Design Catalog
 
-A letterpress study desk of AI design techniques—mostly from **Anshu Chimala** (Discover → Define → Deliver, Sep 2026 Lenny’s Newsletter essay), with **partial** catalogs of **Nate Parrott**’s Claude Design practices and **Greg Huntoon**’s TC-EBC prompt framework. Public sources only; no endorsement.
+A craft / anti-slop **designer directory** plus a letterpress study desk of AI design techniques—mostly from **Anshu Chimala** (Discover → Define → Deliver), with **partial** catalogs of **Nate Parrott**’s Claude Design practices and **Greg Huntoon**’s TC-EBC prompt framework. Public sources only; no endorsement.
 
 **Live:** https://design-catalog-three.vercel.app
 
@@ -19,7 +19,7 @@ Do **not** scrape HTML. Fetch static JSON:
 | llms.txt | https://design-catalog-three.vercel.app/llms.txt |
 | Agent guide | [docs/FOR_AGENTS.md](docs/FOR_AGENTS.md) (also [GitHub raw](https://raw.githubusercontent.com/Btheriot83/design-catalog/main/docs/FOR_AGENTS.md)) |
 
-Human page: [/agents](https://design-catalog-three.vercel.app/agents). Field guide: [/compare](https://design-catalog-three.vercel.app/compare).
+Human page: [/agents](https://design-catalog-three.vercel.app/agents). Directory: [/designers](https://design-catalog-three.vercel.app/designers). Field guide: [/compare](https://design-catalog-three.vercel.app/compare).
 
 **Workflow:** (a) fetch index → (b) pick technique by stage/job → (c) copy prompts → (d) run Discover→Define→Deliver with `DISCOVER.md` / `DEFINE.md` / `DELIVER.md`.
 
@@ -49,7 +49,7 @@ npm run build   # runs prebuild → generate:data, then next build
 
 ## Content
 
-Typed JSON under `content/` — designers, techniques, sources. Do not invent unpublished Substack posts or paywalled quotes. No endorsement implied by any citation.
+Typed JSON under `content/` — designers (technique authors + directory credits), techniques, sources. Do not invent unpublished Substack posts or paywalled quotes. No endorsement implied by any citation.
 
 Also see `docs/REDESIGN.md` and `docs/CRITIC_LOOP.md`.
 

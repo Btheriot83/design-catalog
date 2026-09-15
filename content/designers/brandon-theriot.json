@@ -2,8 +2,8 @@
   "slug": "brandon-theriot",
   "name": "Brandon Theriot",
   "status": "curator",
-  "role": "Built and maintains this catalog",
-  "bio": "Independent study desk of published design principles and prompts. Brandon assembles public sources into this browsable site—no endorsement by the authors. Personal site link coming; for now GitHub hosts the repos.",
+  "role": "Curator & builder of this catalog",
+  "bio": "Independent study desk of published design principles, prompts, and a public craft directory. Brandon assembles public sources into this browsable site—curator and builder, not an endorsed spokesperson for anyone listed. Personal site link coming; for now GitHub hosts the repos.",
   "links": [
     { "label": "GitHub", "url": "https://github.com/Btheriot83" },
     { "label": "This catalog repo", "url": "https://github.com/Btheriot83/design-catalog" },
@@ -11,8 +11,8 @@
   ],
   "techniqueSlugs": [],
   "highlights": [
-    "Curates public craft notes into a Quiet Folio reading desk.",
-    "Also ships Hook Farm corpus site under Btheriot83.",
+    "Curates public craft notes into a Quiet Folio reading desk and designer directory.",
+    "Status: curator/builder—assembles credits and outbound links, invents nothing unpublished.",
     "Personal page link TBD — placeholder ready."
   ]
 }

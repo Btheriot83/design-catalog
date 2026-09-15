@@ -10,7 +10,7 @@
     "name": { "type": "string" },
     "status": {
       "type": "string",
-      "enum": ["complete", "partial", "stub", "curator"]
+      "enum": ["complete", "partial", "stub", "curator", "directory"]
     },
     "role": { "type": "string" },
     "bio": { "type": "string" },

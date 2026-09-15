@@ -1,0 +1,27 @@
+{
+  "slug": "karri-saarinen",
+  "name": "Karri Saarinen",
+  "status": "directory",
+  "role": "Co-founder & CEO · Linear · design systems",
+  "bio": "Karri Saarinen is co-founder and CEO of Linear. He was Principal Designer and design-systems lead at Airbnb, created founding design at Coinbase, and co-founded YC-backed Kippt and Rails Girls. Public interviews emphasize craft and focus in product building. From Finland; lives in California.",
+  "links": [
+    {
+      "label": "Site",
+      "url": "https://karrisaarinen.com/"
+    },
+    {
+      "label": "Linear",
+      "url": "https://linear.app/"
+    },
+    {
+      "label": "X",
+      "url": "https://x.com/karrisaarinen"
+    }
+  ],
+  "techniqueSlugs": [],
+  "highlights": [
+    "Co-founder/CEO of Linear; craft-first product ethos.",
+    "Prior Airbnb design systems and Coinbase founding design.",
+    "Public site lists Linear, Kippt, and Rails Girls history."
+  ]
+}

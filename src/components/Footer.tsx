@@ -5,7 +5,7 @@ export function Footer() {
     <footer className="mt-auto border-t border-hairline">
       <div className="mx-auto flex max-w-3xl flex-col gap-3 px-5 py-10 sm:flex-row sm:items-baseline sm:justify-between sm:px-8">
         <p className="font-sans text-sm text-studio-ink">
-          Catalogued sources · Built by{" "}
+          Craft / anti-slop directory · Built by{" "}
           <Link
             href="/designers/brandon-theriot"
             className="text-ink underline decoration-hairline hover:decoration-ink"
@@ -23,12 +23,12 @@ export function Footer() {
           </a>
         </p>
         <p className="font-sans text-sm text-studio-ink">
-          <Link href="/sources" className="hover:text-ink">
-            Sources
+          <Link href="/designers" className="hover:text-ink">
+            Directory
           </Link>
           {" · "}
-          <Link href="/compare" className="hover:text-ink">
-            Guide
+          <Link href="/sources" className="hover:text-ink">
+            Sources
           </Link>
           {" · "}
           <Link href="/agents" className="hover:text-ink">

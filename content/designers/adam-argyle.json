@@ -1,0 +1,19 @@
+{
+  "slug": "adam-argyle",
+  "name": "Adam Argyle",
+  "status": "directory",
+  "role": "Design engineer · CSS/UI · nerdy.dev",
+  "bio": "Adam Argyle publishes design-engineering notes, CSS experiments, talks, and tools at nerdy.dev. Public materials identify him as a former Google Chrome/CSS advocate who continues teaching modern CSS and UI systems independently. Content spans defensive layout thinking and show-notes style craft posts.",
+  "links": [
+    {
+      "label": "Site",
+      "url": "https://nerdy.dev/"
+    }
+  ],
+  "techniqueSlugs": [],
+  "highlights": [
+    "nerdy.dev: CSS, UI, talks, and design-engineering notes.",
+    "Ex-Google CSS/UI education voice; still publishing publicly.",
+    "Emphasizes modern CSS as craft infrastructure."
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "slug": "naz-hamid",
+  "name": "Naz Hamid",
+  "status": "directory",
+  "role": "Designer · Weightshift · Aphera",
+  "bio": "Naz Hamid is a San Francisco–based designer, photographer, and writer. He founded the design studio Weightshift (clients spanning Abstract, Dropbox, Intercom, and others), helped build design at VSCO, and co-founded Aphera, a Mac photo editor. Public essays on nazhamid.com argue for human craft against AI particle-board aesthetics.",
+  "links": [
+    {
+      "label": "Site",
+      "url": "https://nazhamid.com/"
+    },
+    {
+      "label": "Weightshift",
+      "url": "https://weightshift.com/"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/nazhamid"
+    }
+  ],
+  "techniqueSlugs": [],
+  "highlights": [
+    "Founder of Weightshift; co-founder of Aphera.",
+    "Prior VSCO design leadership and long client craft practice.",
+    "Public essays: Craft Is Not Culture, Real Wood, The Drawing Hand."
+  ]
+}

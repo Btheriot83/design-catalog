@@ -12,7 +12,7 @@ export default function AboutPage() {
       <PageHeader
         eyebrow="Colophon"
         title="About this desk"
-        description="A letterpress reading room for AI design craft—Quiet Folio, not a SaaS landing."
+        description="A craft / anti-slop designer directory and letterpress technique desk—Quiet Folio, not a SaaS landing."
       />
       <div className="space-y-5 font-sans text-base leading-relaxed text-studio-ink">
         <p>
@@ -43,6 +43,19 @@ export default function AboutPage() {
           contributes a partial TC-EBC set from the Figma blog (an earlier stub
           mis-named David Kossnick; authorship corrected). We do not invent
           unpublished posts.
+        </p>
+        <p>
+          The{" "}
+          <Link
+            href="/designers"
+            className="text-ink underline decoration-hairline hover:decoration-ink"
+          >
+            designers directory
+          </Link>{" "}
+          expands beyond technique authors into ~50 public craft voices—bios and
+          outbound links from public sources only. Status{" "}
+          <span className="text-ink">directory</span> means credits without a
+          technique set yet. No endorsement.
         </p>
         <p>
           Visual direction applies the catalog to itself: seed-string Quiet
