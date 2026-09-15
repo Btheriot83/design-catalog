@@ -40,6 +40,23 @@ export default async function TechniquePage({ params }: Props) {
   const designer = getDesignerForTechnique(technique.slug);
   const num = String(technique.number).padStart(2, "0");
 
+  const hasPrompts = technique.examplePrompts.length > 0;
+  const hasExamples =
+    !!technique.workedExamples && technique.workedExamples.length > 0;
+  const hasChecklist =
+    !!technique.checklist && technique.checklist.length > 0;
+  const hasAnti =
+    !!technique.antiPatterns && technique.antiPatterns.length > 0;
+  const hasTips = technique.tips.length > 0;
+  const hasSources = technique.sourceUrls.length > 0;
+
+  const jumpLinks = [
+    { href: "#procedure", label: "Procedure", show: technique.procedure.length > 0 },
+    { href: "#prompts", label: "Example prompts", show: hasPrompts },
+    { href: "#worked-examples", label: "Worked examples", show: hasExamples },
+    { href: "#checklist", label: "Checklist", show: hasChecklist },
+  ].filter((l) => l.show);
+
   return (
     <article>
       <div className="mb-8 flex flex-wrap items-end justify-between gap-4">
@@ -65,7 +82,30 @@ export default async function TechniquePage({ params }: Props) {
         <p className="pull-principle t-stagger-line t-stagger-line--2">{technique.principle}</p>
       </TextsReveal>
 
-      <section className="mt-14">
+      {jumpLinks.length > 0 ? (
+        <nav
+          aria-label="On this page"
+          className="mt-8 flex flex-wrap items-center gap-x-1 gap-y-1 font-sans text-[12px] tracking-wide text-studio-ink sm:text-[13px]"
+        >
+          {jumpLinks.map((l, i) => (
+            <span key={l.href} className="inline-flex items-center gap-x-1">
+              {i > 0 ? (
+                <span className="mx-1.5 text-faint" aria-hidden>
+                  ·
+                </span>
+              ) : null}
+              <a
+                href={l.href}
+                className="text-studio-ink underline decoration-hairline underline-offset-[4px] hover:text-ink hover:decoration-ink"
+              >
+                {l.label}
+              </a>
+            </span>
+          ))}
+        </nav>
+      ) : null}
+
+      <section id="procedure" className="mt-14 scroll-mt-24">
         <h2 className="eyebrow mb-5 text-ink">Procedure</h2>
         <ol className="space-y-5 border-t border-ink pt-6">
           {technique.procedure.map((step, i) => (
@@ -79,26 +119,28 @@ export default async function TechniquePage({ params }: Props) {
         </ol>
       </section>
 
-      <section className="mt-14">
-        <h2 className="eyebrow mb-5 text-ink">Example prompts</h2>
-        <div className="space-y-4">
-          {technique.examplePrompts.map((p, i) => (
-            <PromptBlock
-              key={i}
-              label={`Prompt ${i + 1}`}
-              why={technique.promptWhy?.[i]}
-            >
-              {p}
-            </PromptBlock>
-          ))}
-        </div>
-      </section>
+      {hasPrompts ? (
+        <section id="prompts" className="mt-14 scroll-mt-24">
+          <h2 className="eyebrow mb-5 text-ink">Example prompts</h2>
+          <div className="space-y-4">
+            {technique.examplePrompts.map((p, i) => (
+              <PromptBlock
+                key={i}
+                label={`Prompt ${i + 1}`}
+                why={technique.promptWhy?.[i]}
+              >
+                {p}
+              </PromptBlock>
+            ))}
+          </div>
+        </section>
+      ) : null}
 
-      {technique.workedExamples && technique.workedExamples.length > 0 ? (
-        <section className="mt-14">
+      {hasExamples ? (
+        <section id="worked-examples" className="mt-14 scroll-mt-24">
           <h2 className="eyebrow mb-5 text-ink">Worked examples</h2>
           <div className="space-y-6">
-            {technique.workedExamples.map((ex, i) => (
+            {technique.workedExamples!.map((ex, i) => (
               <div
                 key={i}
                 className="border border-hairline bg-card p-5 press-shadow sm:p-6"
@@ -129,11 +171,14 @@ export default async function TechniquePage({ params }: Props) {
         </section>
       ) : null}
 
-      {technique.checklist && technique.checklist.length > 0 ? (
-        <section className="mt-14">
-          <h2 className="eyebrow mb-5 text-ink">Done when</h2>
+      {hasChecklist ? (
+        <section id="checklist" className="mt-14 scroll-mt-24">
+          <h2 className="eyebrow mb-1 text-ink">Checklist</h2>
+          <p className="mb-5 font-sans text-xs tracking-wide text-faint">
+            Done when
+          </p>
           <ul className="space-y-3 border-t border-hairline pt-5">
-            {technique.checklist.map((c, i) => (
+            {technique.checklist!.map((c, i) => (
               <li
                 key={i}
                 className="flex gap-3 font-sans text-sm leading-relaxed text-ink"
@@ -146,11 +191,11 @@ export default async function TechniquePage({ params }: Props) {
         </section>
       ) : null}
 
-      {technique.antiPatterns && technique.antiPatterns.length > 0 ? (
-        <section className="mt-14">
+      {hasAnti ? (
+        <section id="anti-patterns" className="mt-14 scroll-mt-24">
           <h2 className="eyebrow mb-5 text-ink">If you skip this</h2>
           <ul className="space-y-3 bg-ghost/80 px-5 py-5">
-            {technique.antiPatterns.map((a, i) => (
+            {technique.antiPatterns!.map((a, i) => (
               <li
                 key={i}
                 className="flex gap-3 font-sans text-sm leading-relaxed text-studio-ink"
@@ -163,38 +208,42 @@ export default async function TechniquePage({ params }: Props) {
         </section>
       ) : null}
 
-      <section className="mt-14">
-        <h2 className="eyebrow mb-4 text-ink">Tips</h2>
-        <ul className="space-y-2.5 font-sans text-sm leading-relaxed text-faint">
-          {technique.tips.map((tip, i) => (
-            <li key={i} className="flex gap-3">
-              <span>·</span>
-              <span>{tip}</span>
-            </li>
-          ))}
-        </ul>
-      </section>
+      {hasTips ? (
+        <section id="tips" className="mt-14 scroll-mt-24">
+          <h2 className="eyebrow mb-4 text-ink">Tips</h2>
+          <ul className="space-y-2.5 font-sans text-sm leading-relaxed text-faint">
+            {technique.tips.map((tip, i) => (
+              <li key={i} className="flex gap-3">
+                <span>·</span>
+                <span>{tip}</span>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ) : null}
 
-      <section className="mt-14 border-t border-ink pt-8">
-        <h2 className="eyebrow mb-4 text-ink">Sources</h2>
-        <ul className="space-y-2 font-sans text-sm">
-          {technique.sourceUrls.map((url) => (
-            <li key={url}>
-              <a
-                href={url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="break-all text-studio-ink underline decoration-hairline hover:text-ink hover:decoration-ink"
-              >
-                {url}
-              </a>
-            </li>
-          ))}
-        </ul>
-      </section>
+      {hasSources ? (
+        <section id="sources" className="mt-14 scroll-mt-24 border-t border-ink pt-8">
+          <h2 className="eyebrow mb-4 text-ink">Sources</h2>
+          <ul className="space-y-2 font-sans text-sm">
+            {technique.sourceUrls.map((url) => (
+              <li key={url}>
+                <a
+                  href={url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="break-all text-studio-ink underline decoration-hairline hover:text-ink hover:decoration-ink"
+                >
+                  {url}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ) : null}
 
       {pairs.length > 0 ? (
-        <section className="mt-10">
+        <section id="pairs" className="mt-10 scroll-mt-24">
           <h2 className="eyebrow mb-3 text-ink">Pairs well with</h2>
           <ul className="space-y-2 font-sans text-sm">
             {pairs.map(
@@ -218,7 +267,7 @@ export default async function TechniquePage({ params }: Props) {
       ) : null}
 
       {related.length > 0 ? (
-        <section className="mt-10">
+        <section id="related" className="mt-10 scroll-mt-24">
           <h2 className="eyebrow mb-3 text-ink">Related</h2>
           <ul className="space-y-2 font-sans text-sm">
             {related.map(
@@ -244,6 +293,10 @@ export default async function TechniquePage({ params }: Props) {
       <p className="mt-14 font-sans text-sm text-faint">
         <Link href="/techniques" className="hover:text-ink">
           ← Technique index
+        </Link>
+        {" · "}
+        <Link href="/examples" className="hover:text-ink">
+          Examples & checklists
         </Link>
         {designer ? (
           <>

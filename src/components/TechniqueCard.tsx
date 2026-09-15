@@ -13,6 +13,16 @@ export function TechniqueCard({
   tilt?: boolean;
 }) {
   const num = String(technique.number).padStart(2, "0");
+  const exampleCount = technique.workedExamples?.length ?? 0;
+  const hasChecklist = (technique.checklist?.length ?? 0) > 0;
+  const metaParts: string[] = [];
+  if (exampleCount > 0) {
+    metaParts.push(
+      `${exampleCount} example${exampleCount === 1 ? "" : "s"}`,
+    );
+  }
+  if (hasChecklist) metaParts.push("checklist");
+
   const body = (
     <Link
       href={`/techniques/${technique.slug}`}
@@ -36,6 +46,11 @@ export function TechniqueCard({
         <p className="mt-2 max-w-xl font-sans text-sm leading-relaxed text-studio-ink line-clamp-2">
           {technique.principle}
         </p>
+        {metaParts.length > 0 ? (
+          <p className="mt-2.5 font-sans text-[11px] tracking-wide text-faint">
+            {metaParts.join(" · ")}
+          </p>
+        ) : null}
       </div>
     </Link>
   );

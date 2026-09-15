@@ -1,3 +1,4 @@
+import type { ReactNode } from "react";
 import { TextsReveal } from "./TextsReveal";
 
 export function PageHeader({
@@ -6,7 +7,7 @@ export function PageHeader({
   eyebrow,
 }: {
   title: string;
-  description?: string;
+  description?: ReactNode;
   eyebrow?: string;
 }) {
   return (

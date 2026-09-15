@@ -104,6 +104,12 @@ export default function HomePage() {
           >
             Prompt library
           </Link>
+          <Link
+            href="/examples"
+            className="inline-block border border-ink/25 bg-card px-4 py-2.5 font-sans text-sm text-ink press-shadow hover:border-ink"
+          >
+            Examples &amp; checklists
+          </Link>
         </p>
         <p className="mt-4 font-sans text-sm text-studio-ink">
           Technique authors on desk:{" "}
@@ -135,6 +141,10 @@ export default function HomePage() {
           Full checklist in the{" "}
           <Link href="/compare" className="text-ink underline decoration-hairline">
             field guide
+          </Link>
+          . For worked examples and done-when lists, see{" "}
+          <Link href="/examples" className="text-ink underline decoration-hairline">
+            Examples
           </Link>
           .
         </p>

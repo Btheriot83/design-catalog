@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { DesignerFilter } from "@/components/DesignerFilter";
 import { PageHeader } from "@/components/PageHeader";
 import { StageFilter } from "@/components/StageFilter";
@@ -55,7 +56,19 @@ export default async function TechniquesPage({ searchParams }: Props) {
       <PageHeader
         eyebrow="Index"
         title="Technique index"
-        description={`${techniques.length} technique${techniques.length === 1 ? "" : "s"}${filter ? ` in ${filter}` : ""}${designer ? ` · ${designer.name}` : ""}—procedures, prompts, worked examples, and checklists.`}
+        description={
+          <>
+            {`${techniques.length} technique${techniques.length === 1 ? "" : "s"}${filter ? ` in ${filter}` : ""}${designer ? ` · ${designer.name}` : ""}—procedures, prompts, worked examples, and checklists.`}{" "}
+            Browse{" "}
+            <Link
+              href="/examples"
+              className="text-ink underline decoration-hairline hover:decoration-ink"
+            >
+              all worked examples &amp; checklists
+            </Link>
+            .
+          </>
+        }
       />
       <StageFilter current={filter ?? "All"} designer={designer?.slug} />
       <DesignerFilter
