@@ -116,9 +116,23 @@
 | Example prompts | ~40 | **83** |
 | Guides pages | `/compare` only | `/guides`, anti-slop-desk, motion-craft + compare stack |
 | Partial designers | 2 (+1 complete) | + Rauno, Emil, Maggie, Schoger, Bret, Frank, Jakub |
-| SHA | `4cdfef5` | _(filled after push)_ |
+| SHA | `4cdfef5` | **`8f046b9`** |
 
 ## What still loses to Lenny
 1. Image-led worked examples / motion stills  
 2. Interactive demos in-essay  
 3. Paywalled Deliver (tells/hand-rewrite) verbatim depth — we keep honest condensations only  
+
+
+---
+
+## Success report (loop 10 complete)
+
+- **SHA:** `8f046b9` (from `4cdfef5`; no force-push)
+- **Techniques:** 36 (was ~24)
+- **Example prompts:** 83 (was ~40)
+- **New guides/pages:** `/guides`, `/guides/anti-slop-desk`, `/guides/motion-craft`; `/compare` craft stack; nav Guides
+- **GAUNTLET path:** `docs/GAUNTLET.md`
+- **Honest score vs bar:** **7.0 / 10** — local technique structure often matches `seed-strings` / `critic-subagents`; Lenny still wins
+- **What still loses to Lenny:** image-led worked examples, interactive demos, paywalled Deliver verbatim depth
+- **Out of scope honored:** no hook-farm-site / viral-corpus / AZMDR touches
