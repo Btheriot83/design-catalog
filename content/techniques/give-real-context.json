@@ -5,9 +5,9 @@
   "title": "Give Claude your real context",
   "principle": "If you’re designing a feature for an existing app or website, connect GitHub so Claude can fetch your components and existing screens and use them as a starting point—with a few tries it can recreate existing designs with pretty high fidelity. Web search and MCP connections work in Claude Design too when the design depends on outside information.",
   "procedure": [
-    "For work on an existing product, connect GitHub so Claude can see real components and screens.",
-    "Use those as the starting point instead of inventing a parallel UI system.",
-    "When the design needs outside facts, use web search or MCP connections.",
+    "Connect GitHub so Claude can fetch real components and screens.",
+    "Start from those—not a parallel invented UI system.",
+    "Use web search / MCP when the design needs outside facts.",
     "Iterate a few times to raise fidelity against the real product."
   ],
   "examplePrompts": [
@@ -21,5 +21,33 @@
   "sourceUrls": [
     "https://claude.com/blog/how-the-product-designer-who-built-claude-design-uses-it-to-explore-ideas-before-building-them"
   ],
-  "related": ["design-system-from-assets", "specify-the-look", "wireframe-first"]
+  "related": [
+    "design-system-from-assets",
+    "specify-the-look",
+    "wireframe-first",
+    "tc-ebc-context"
+  ],
+  "workedExamples": [
+    {
+      "title": "GitHub-connected fidelity",
+      "body": "Nate: connect GitHub; Claude fetches components/screens and can recreate existing designs with pretty high fidelity after a few tries. Web search and MCP work too. Cite: Anthropic blog."
+    }
+  ],
+  "antiPatterns": [
+    "Designing a feature in a vacuum beside the real app.",
+    "Describing the design system in prose instead of linking sources of truth."
+  ],
+  "checklist": [
+    "Real repo/components in context.",
+    "Outside facts fetched when needed.",
+    "Fidelity checked against production UI."
+  ],
+  "promptWhy": [
+    "Repo-as-context beats describing your design system from memory."
+  ],
+  "pairsWellWith": [
+    "design-system-from-assets",
+    "tc-ebc-context",
+    "specify-the-look"
+  ]
 }

@@ -10,8 +10,9 @@ export default function AboutPage() {
   return (
     <div className="max-w-xl">
       <PageHeader
+        eyebrow="Colophon"
         title="About this desk"
-        description="A quiet reading room for AI design craft—not a SaaS landing, not a vibe deck."
+        description="A letterpress reading room for AI design craft—Quiet Folio, not a SaaS landing."
       />
       <div className="space-y-5 font-sans text-base leading-relaxed text-studio-ink">
         <p>
@@ -34,29 +35,36 @@ export default function AboutPage() {
           </Link>{" "}
           appears as a partial catalog from one public Claude Design post.{" "}
           <Link
-            href="/designers"
+            href="/designers/greg-huntoon"
             className="text-ink underline decoration-hairline hover:decoration-ink"
           >
-            David Kossnick
+            Greg Huntoon
           </Link>{" "}
-          stays a stub until there is a public source worth cataloging. We do
-          not invent unpublished posts.
+          contributes a partial TC-EBC set from the Figma blog (an earlier stub
+          mis-named David Kossnick; authorship corrected). We do not invent
+          unpublished posts.
         </p>
         <p>
-          This site is not affiliated with Anshu, Nate, Lenny’s Newsletter,
-          Apple, YC, fal.ai, Sakana AI, Anthropic, Figma, or any cited tool.
-          See{" "}
+          Visual direction applies the catalog to itself: seed-string Quiet
+          Folio, cut chrome, hand-rewritten hero, critic loops. See{" "}
+          <Link
+            href="/compare"
+            className="text-ink underline decoration-hairline hover:decoration-ink"
+          >
+            Field guide
+          </Link>{" "}
+          and{" "}
           <Link
             href="/sources"
             className="text-ink underline decoration-hairline hover:decoration-ink"
           >
             Sources
-          </Link>{" "}
-          for the disclaimer.
+          </Link>
+          .
         </p>
         <p className="text-faint">
           Built for Brandon Theriot · Next.js App Router · TypeScript ·
-          Tailwind · Source Serif 4 + IBM Plex Sans.
+          Tailwind · Source Serif 4 + IBM Plex Sans · paper grain + ink mark.
         </p>
       </div>
     </div>

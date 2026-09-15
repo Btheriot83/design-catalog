@@ -19,7 +19,14 @@ export function CopyButton({ text }: { text: string }) {
     <button
       type="button"
       onClick={onCopy}
-      className="border border-hairline bg-card px-2.5 py-1 font-sans text-[11px] uppercase tracking-[0.12em] text-studio-ink hover:border-ink hover:text-ink"
+      onKeyDown={(e) => {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          void onCopy();
+        }
+      }}
+      aria-label={copied ? "Copied" : "Copy prompt"}
+      className="border border-hairline bg-card px-2.5 py-1 font-sans text-[11px] uppercase tracking-[0.16em] text-studio-ink hover:border-ink hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink"
     >
       {copied ? "Copied" : "Copy"}
     </button>

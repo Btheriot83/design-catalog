@@ -19,10 +19,11 @@ export default function DesignersPage() {
   return (
     <div>
       <PageHeader
+        eyebrow="People"
         title="Designers"
-        description="Complete entries ship full technique sets. Partial catalogs one public source so far. Stubs mark next candidates—public sources only."
+        description="Complete entries ship full technique sets. Partial catalogs one public source so far. Counts and highlights on each entry."
       />
-      <ul className="divide-y divide-hairline border-t border-hairline">
+      <ul className="divide-y divide-hairline border-t border-ink">
         {designers.map((d) => (
           <li key={d.slug} className="py-8">
             <div className="flex flex-wrap items-baseline justify-between gap-3">
@@ -38,12 +39,24 @@ export default function DesignersPage() {
                   d.name
                 )}
               </h2>
-              <StatusChip status={d.status} />
+              <div className="flex items-center gap-3">
+                <span className="folio-num text-2xl text-ink/50">
+                  {String(d.techniqueSlugs.length).padStart(2, "0")}
+                </span>
+                <StatusChip status={d.status} />
+              </div>
             </div>
             <p className="mt-1 font-sans text-sm text-studio-ink">{d.role}</p>
             <p className="mt-3 max-w-xl font-sans text-sm leading-relaxed text-studio-ink">
               {d.bio}
             </p>
+            {d.highlights && d.highlights.length > 0 ? (
+              <ul className="mt-4 max-w-xl space-y-1.5 border-l border-hairline pl-4 font-sans text-sm text-studio-ink">
+                {d.highlights.slice(0, 3).map((h) => (
+                  <li key={h}>{h}</li>
+                ))}
+              </ul>
+            ) : null}
             <ul className="mt-4 flex flex-wrap gap-x-4 gap-y-2 font-sans text-sm">
               {d.links.map((l) => (
                 <li key={l.url}>

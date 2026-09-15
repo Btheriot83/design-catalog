@@ -23,5 +23,42 @@
   "sourceUrls": [
     "https://www.lennysnewsletter.com/p/how-to-turn-your-ai-into-a-world"
   ],
-  "related": ["video-motion", "remove-ai-tells", "critic-subagents"]
+  "related": [
+    "video-motion",
+    "remove-ai-tells",
+    "critic-subagents"
+  ],
+  "workedExamples": [
+    {
+      "title": "Plain seeded page → image-enriched",
+      "before": "Code-only gradients, shapes, patterns.",
+      "after": "Agent instructed to add personality via image gen (+ shaders/3D), verify frame-by-frame.",
+      "body": "Lenny shows before/after on prior designs: images signal more than surface CSS effort and reduce “obviously AI” reads. Cite: Lenny."
+    },
+    {
+      "title": "Key hygiene",
+      "body": "Separate spend-capped API key; gitignored .env.agents; never ship keys. Codex CLI can bill a ChatGPT subscription instead of an API key when available. Paraphrase: Lenny."
+    }
+  ],
+  "antiPatterns": [
+    "Relying on CSS blobs/gradients as the only “visual interest.”",
+    "Pasting long-lived production API keys into chat without spend limits.",
+    "Skipping browser frame-by-frame verification after generation."
+  ],
+  "checklist": [
+    "Agent was explicitly told to use image generation (built-in tools are underused otherwise).",
+    "Keys live in gitignored local config, not in product code.",
+    "Result checked in the browser, not only in the file tree.",
+    "Images + effects serve the aesthetic—not random stock decoration."
+  ],
+  "promptWhy": [
+    "Explicit image-gen ask + local-only key + browser verify overrides the code-only default.",
+    "Makes key hygiene a first-class agent instruction so secrets don’t ship.",
+    "Subscription-billed Codex path avoids scattering extra API keys when you already pay for ChatGPT."
+  ],
+  "pairsWellWith": [
+    "video-motion",
+    "remove-ai-tells",
+    "critic-subagents"
+  ]
 }

@@ -5,8 +5,14 @@
   "role": "Former Apple eng/design leadership · YC founder · AI design educator",
   "bio": "Anshu Chimala led software engineering and design teams at Apple for about 12 years, focusing on research and prototyping for future AI products. A YC founder, he posts AI design tutorials and demos on X and writes deeper craft notes on Substack. His guest essay in Lenny’s Newsletter (Sep 2026) maps an end-to-end process for tapping AI’s hidden creativity—loosely inspired by the Double Diamond, reimagined for a team of AI agents: Discover, Define, Deliver.",
   "links": [
-    { "label": "Substack", "url": "https://substack.com/@anshuc" },
-    { "label": "Lenny’s Newsletter guest post", "url": "https://www.lennysnewsletter.com/p/how-to-turn-your-ai-into-a-world" }
+    {
+      "label": "Substack",
+      "url": "https://substack.com/@anshuc"
+    },
+    {
+      "label": "Lenny’s Newsletter guest post",
+      "url": "https://www.lennysnewsletter.com/p/how-to-turn-your-ai-into-a-world"
+    }
   ],
   "techniqueSlugs": [
     "seed-strings",
@@ -34,5 +40,11 @@
       "title": "Deliver",
       "summary": "Polish with restraint: cut clutter, kill AI tells, and rewrite the words that matter by hand."
     }
+  ],
+  "highlights": [
+    "Eight techniques · Discover → Define → Deliver for a team of agents.",
+    "Seed strings + ambitious briefs to escape SaaS-landing priors.",
+    "Critic subagents, image/video enrichment, then subtractive Deliver polish.",
+    "Primary source: Lenny’s Newsletter guest essay (Sep 2026); techniques 7–8 deeper detail paywalled."
   ]
 }

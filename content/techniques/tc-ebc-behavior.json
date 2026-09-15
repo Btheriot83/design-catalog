@@ -1,0 +1,53 @@
+{
+  "slug": "tc-ebc-behavior",
+  "number": 23,
+  "stage": "Define",
+  "title": "TC-EBC · Behavior",
+  "principle": "Behavior states how users interact and how the system responds. Without it, you get static mock chrome. With it, flows and implications (speed, trust, filters) show up in the first build.",
+  "procedure": [
+    "Describe the primary user→system loop in one tight line.",
+    "Name filters, states, or implications the UI must express.",
+    "Keep verbs observable (uploads, scans, filters, suggests).",
+    "For copy, say what the body should imply (speed, trust)—not just “be exciting.”"
+  ],
+  "examplePrompts": [
+    "Behavior: User uploads photos; app scans inventory, filters by diet prefs, suggests recipes",
+    "Behavior: Body should imply speed, simplicity, and trust."
+  ],
+  "promptWhy": [
+    "End-to-end loop makes the prototype interactive instead of a poster.",
+    "Implied qualities guide tone without vague “exciting” adjectives."
+  ],
+  "tips": [
+    "Revision prompts: spell what must not change in Constraints; Behavior can state the new interaction.",
+    "Partial catalog—no endorsement."
+  ],
+  "sourceUrls": [
+    "https://www.figma.com/blog/designer-framework-for-better-ai-prompts/",
+    "https://github.com/greghuntoon-figma/tc-ebc"
+  ],
+  "related": [
+    "tc-ebc-elements",
+    "make-it-alive",
+    "tc-ebc-constraints"
+  ],
+  "pairsWellWith": [
+    "make-it-alive",
+    "point-and-talk"
+  ],
+  "workedExamples": [
+    {
+      "title": "Upload→scan→filter→suggest",
+      "body": "Behavior line in the pantry TC-EBC prompt is what turns a static recipe collage into a usable flow. Cite: Figma blog."
+    }
+  ],
+  "antiPatterns": [
+    "Static element lists with no interaction story.",
+    "Mood adjectives instead of observable behavior."
+  ],
+  "checklist": [
+    "Primary loop is stated.",
+    "Verbs are observable.",
+    "Implications are specific when copy is the artifact."
+  ]
+}

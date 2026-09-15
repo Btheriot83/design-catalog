@@ -8,6 +8,10 @@
   --ink: #221C24;
   --studio-ink: #6F6470;
   --faint: #9A8F9B;
+  --rule: #D9D2D9;
+  /* Weight, not glow: short hard offset */
+  --shadow-card: 2px 3px 0 rgba(34, 28, 36, 0.08), 0 1px 0 rgba(34, 28, 36, 0.04);
+  --shadow-press: 1px 1px 0 rgba(34, 28, 36, 0.06);
 }
 
 @theme inline {
@@ -18,6 +22,7 @@
   --color-ink: #221C24;
   --color-studio-ink: #6F6470;
   --color-faint: #9A8F9B;
+  --color-rule: #D9D2D9;
   --font-sans: var(--font-ibm-plex);
   --font-serif: var(--font-source-serif);
   --font-mono: var(--font-ibm-plex-mono);
@@ -28,9 +33,26 @@ html {
 }
 
 body {
-  background: var(--paper);
+  background-color: var(--paper);
+  background-image: url("/paper-grain.png");
+  background-repeat: repeat;
+  background-size: 220px 220px;
   color: var(--ink);
   font-family: var(--font-ibm-plex), "IBM Plex Sans", system-ui, sans-serif;
+}
+
+body::before {
+  content: "";
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  background: color-mix(in srgb, var(--paper) 68%, transparent);
+}
+
+body > * {
+  position: relative;
+  z-index: 1;
 }
 
 ::selection {
@@ -40,4 +62,59 @@ body {
 
 a {
   text-underline-offset: 3px;
+}
+
+.eyebrow {
+  font-family: var(--font-ibm-plex), "IBM Plex Sans", system-ui, sans-serif;
+  font-size: 0.625rem;
+  font-weight: 500;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--faint);
+}
+
+.folio-num {
+  font-family: var(--font-source-serif), "Source Serif 4", Georgia, serif;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.045em;
+  line-height: 0.85;
+  color: var(--ink);
+}
+
+.pull-principle {
+  font-family: var(--font-source-serif), "Source Serif 4", Georgia, serif;
+  font-size: 1.375rem;
+  line-height: 1.45;
+  color: var(--ink);
+  border-left: 2px solid var(--ink);
+  padding-left: 1.35rem;
+  margin-top: 2.25rem;
+  max-width: 36rem;
+}
+
+@media (min-width: 640px) {
+  .pull-principle {
+    font-size: 1.625rem;
+  }
+}
+
+.rule-double {
+  border: none;
+  height: 0;
+  border-top: 1.5px solid var(--ink);
+  border-bottom: 1px solid var(--hairline);
+  padding-bottom: 3px;
+  margin: 0;
+}
+
+.index-card {
+  background: var(--card);
+  border: 1px solid var(--ink);
+  border-color: color-mix(in srgb, var(--ink) 22%, var(--hairline));
+  box-shadow: var(--shadow-card);
+}
+
+.press-shadow {
+  box-shadow: var(--shadow-press);
 }

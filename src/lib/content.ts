@@ -60,14 +60,18 @@ export function getTechniquesByStage() {
 }
 
 export function getAllExamplePrompts() {
-  return getAllTechniques().flatMap((t) =>
-    t.examplePrompts.map((prompt, i) => ({
+  return getAllTechniques().flatMap((t) => {
+    const designer = getDesignerForTechnique(t.slug);
+    return t.examplePrompts.map((prompt, i) => ({
       techniqueSlug: t.slug,
       techniqueTitle: t.title,
       techniqueNumber: t.number,
       stage: t.stage,
       index: i + 1,
       prompt,
-    })),
-  );
+      why: t.promptWhy?.[i],
+      designerSlug: designer?.slug,
+      designerName: designer?.name,
+    }));
+  });
 }

@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 const links = [
   { href: "/techniques", label: "Techniques" },
   { href: "/prompts", label: "Prompts" },
+  { href: "/compare", label: "Guide" },
   { href: "/designers", label: "Designers" },
   { href: "/sources", label: "Sources" },
   { href: "/about", label: "About" },
@@ -15,7 +16,7 @@ export function NavLinks() {
   const pathname = usePathname();
 
   return (
-    <nav className="flex flex-wrap justify-end gap-x-5 gap-y-2 font-sans text-sm">
+    <nav className="flex flex-wrap justify-end gap-x-3.5 gap-y-1.5 font-sans text-[12px] tracking-wide sm:gap-x-4 sm:text-[13px]">
       {links.map((l) => {
         const active =
           pathname === l.href || pathname.startsWith(l.href + "/");
@@ -25,7 +26,7 @@ export function NavLinks() {
             href={l.href}
             className={
               active
-                ? "font-medium text-ink underline decoration-ink underline-offset-[6px]"
+                ? "font-medium text-ink underline decoration-ink underline-offset-[5px]"
                 : "text-studio-ink hover:text-ink"
             }
           >

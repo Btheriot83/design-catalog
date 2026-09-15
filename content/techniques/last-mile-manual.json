@@ -5,10 +5,10 @@
   "title": "Make the last mile manual",
   "principle": "Use direct editing tools—rearrange, delete, edit text, resize, change colors—for final touches instead of prompting for them. Direct edits use no tokens, and small calls like sizing and alignment are better eyeballed anyway.",
   "procedure": [
-    "Get the design close enough with prompts.",
-    "Switch to direct editing for rearrange, delete, text edits, resize, and color tweaks.",
-    "Eyeball sizing and alignment rather than prompting micro-adjustments.",
-    "Reserve new prompts for structural or conceptual changes, not last-pixel polish."
+    "Prompt until the design is close.",
+    "Switch to direct editing: rearrange, delete, text, resize, color.",
+    "Eyeball sizing/alignment—don’t spend tokens on 4px nudges.",
+    "Reserve new prompts for structural/conceptual changes."
   ],
   "examplePrompts": [
     "(Prefer direct edits over a prompt for this class of change)\nDo not prompt: nudge this 4px, recolor that label, delete this spacer.\nUse rearrange / delete / edit text / resize / change colors on the canvas instead."
@@ -21,5 +21,34 @@
   "sourceUrls": [
     "https://claude.com/blog/how-the-product-designer-who-built-claude-design-uses-it-to-explore-ideas-before-building-them"
   ],
-  "related": ["point-and-talk", "keep-working-alongside", "design-system-from-assets"]
+  "related": [
+    "point-and-talk",
+    "keep-working-alongside",
+    "design-system-from-assets",
+    "hand-rewrite-copy",
+    "cut-elements"
+  ],
+  "workedExamples": [
+    {
+      "title": "Tokens vs eyeballs",
+      "body": "Nate: direct edits use no tokens; small sizing/alignment calls are better eyeballed than prompted. Cite: Anthropic blog."
+    }
+  ],
+  "antiPatterns": [
+    "Prompting every micro-tweak.",
+    "Skipping direct tools that already exist on the canvas."
+  ],
+  "checklist": [
+    "Last-pixel work done by hand.",
+    "Prompts reserved for real changes.",
+    "Token spend on polish near zero."
+  ],
+  "promptWhy": [
+    "Meta-instruction to prefer canvas tools prevents expensive micro-prompt loops."
+  ],
+  "pairsWellWith": [
+    "point-and-talk",
+    "hand-rewrite-copy",
+    "cut-elements"
+  ]
 }

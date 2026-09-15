@@ -5,10 +5,10 @@
   "title": "Turn recurring work into a design system",
   "principle": "Upload brand files and assets—logos, slide decks, screenshots, typography specs, and anything else you reuse—and Claude will analyze them and generate a design system. Each artifact afterward starts from your choices rather than a blank slate. Claude Design isn’t built for logo generation; bring logos and assets you already have.",
   "procedure": [
-    "Gather reusable brand materials: logos, decks, screenshots, typography specs, colors, and other assets.",
-    "Upload them and ask Claude to analyze them into a design system.",
-    "Start new artifacts from that system instead of a blank canvas.",
-    "For logos and established marks, bring existing files—don’t ask the model to invent them."
+    "Gather logos, decks, screenshots, type specs, colors.",
+    "Upload and ask Claude to analyze them into a reusable design system.",
+    "Start new artifacts from that system.",
+    "Bring existing marks—don’t ask Claude Design to invent logos (no image model for that)."
   ],
   "examplePrompts": [
     "I uploaded our brand files (logo, typography specs, slide deck, product screenshots). Analyze them and generate a design system I can reuse: fonts, colors, spacing, component patterns, and do’s/don’ts.\n\nEvery new artifact in this project should start from that system—not a blank aesthetic."
@@ -21,5 +21,33 @@
   "sourceUrls": [
     "https://claude.com/blog/how-the-product-designer-who-built-claude-design-uses-it-to-explore-ideas-before-building-them"
   ],
-  "related": ["specify-the-look", "give-real-context", "last-mile-manual"]
+  "related": [
+    "specify-the-look",
+    "give-real-context",
+    "last-mile-manual",
+    "tc-ebc-constraints"
+  ],
+  "workedExamples": [
+    {
+      "title": "Anthropic brand distilled into prompts",
+      "body": "Nate spent time distilling Anthropic fonts, colors, assets, and principles into prompts so tool output stayed brand-compliant—then shared the internal prototype. Cite: Anthropic blog."
+    }
+  ],
+  "antiPatterns": [
+    "Blank-slate aesthetics every artifact.",
+    "Asking Claude Design to invent the logo."
+  ],
+  "checklist": [
+    "Assets uploaded.",
+    "System documented (type, color, spacing, do/don’t).",
+    "New work starts from the system."
+  ],
+  "promptWhy": [
+    "Asset analysis → system turns each prompt into a continuation of brand choices."
+  ],
+  "pairsWellWith": [
+    "specify-the-look",
+    "give-real-context",
+    "tc-ebc-constraints"
+  ]
 }

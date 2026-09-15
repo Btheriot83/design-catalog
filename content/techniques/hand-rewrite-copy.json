@@ -21,5 +21,40 @@
   "sourceUrls": [
     "https://www.lennysnewsletter.com/p/how-to-turn-your-ai-into-a-world"
   ],
-  "related": ["remove-ai-tells", "cut-elements"]
+  "related": [
+    "remove-ai-tells",
+    "cut-elements",
+    "last-mile-manual"
+  ],
+  "workedExamples": [
+    {
+      "title": "Hero rewrite on this desk",
+      "before": "How to turn AI into a world-class designer",
+      "after": "Techniques for getting past average AI design",
+      "body": "docs/REDESIGN.md — hand rewrite as Technique 8 practice. Deeper Lenny examples for technique 8 are paywalled in the free preview; we don’t invent quotes."
+    },
+    {
+      "title": "Protect strings from “helpful” regen",
+      "body": "Wire hand-written name line, empty state, CTA, errors, onboarding exactly; TODO rather than inventing marketing blurbs on later turns."
+    }
+  ],
+  "antiPatterns": [
+    "Asking the model to “make the copy sound more human.”",
+    "Letting later agent turns regenerate hero/CTA wording.",
+    "Polished generic claims instead of specific lived detail."
+  ],
+  "checklist": [
+    "High-leverage strings listed (tagline, empty, CTA, errors, onboarding).",
+    "Each rewritten by a human with opinion and specificity.",
+    "Agent instructed not to alter those strings.",
+    "Spot-checked after later passes for regenerated blurbs."
+  ],
+  "promptWhy": [
+    "Exact-string wiring + TODO fallback stops the model from re-AI-ing the voice."
+  ],
+  "pairsWellWith": [
+    "remove-ai-tells",
+    "cut-elements",
+    "last-mile-manual"
+  ]
 }

@@ -21,5 +21,42 @@
   "sourceUrls": [
     "https://www.lennysnewsletter.com/p/how-to-turn-your-ai-into-a-world"
   ],
-  "related": ["remove-ai-tells", "hand-rewrite-copy", "critic-subagents"]
+  "related": [
+    "remove-ai-tells",
+    "hand-rewrite-copy",
+    "critic-subagents",
+    "last-mile-manual"
+  ],
+  "workedExamples": [
+    {
+      "title": "Calorie tracker cut story",
+      "before": "Asked for clean minimalism; still got pink glows, random text highlights, redundant labels beside food images, custom controls worse than native iOS.",
+      "after": "Image-centric grid; gradients/glows/containers gone; Apple-native components; tighter type—opinionated, quieter, clearer.",
+      "body": "Primary Deliver case in the Lenny essay. Models won’t delete riskily without an explicit push. Cite: Lenny."
+    },
+    {
+      "title": "This desk’s cut list",
+      "body": "Ochre accents, marketing stage strips, dual CTA rows, badge-above-H1 removed in the App Desk pass—restraint as the taste bet. See docs/REDESIGN.md."
+    }
+  ],
+  "antiPatterns": [
+    "Asking for “minimal” once, then accepting the still-decorated result.",
+    "Adding explanatory labels when imagery already communicates.",
+    "Custom controls that look worse than platform natives."
+  ],
+  "checklist": [
+    "Every element has a job for the user’s task—or it’s gone.",
+    "No glow/gradient chrome without compositional reason.",
+    "Native/system controls preferred where custom is weaker.",
+    "A second pass asked specifically for deletion, not addition."
+  ],
+  "promptWhy": [
+    "Bullet deletion asks (grid, kill glows, native iOS) force subtractive edits models avoid by default."
+  ],
+  "pairsWellWith": [
+    "remove-ai-tells",
+    "hand-rewrite-copy",
+    "critic-subagents",
+    "last-mile-manual"
+  ]
 }

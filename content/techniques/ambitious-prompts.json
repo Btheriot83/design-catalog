@@ -26,5 +26,49 @@
   "sourceUrls": [
     "https://www.lennysnewsletter.com/p/how-to-turn-your-ai-into-a-world"
   ],
-  "related": ["seed-strings", "critic-subagents"]
+  "related": [
+    "seed-strings",
+    "critic-subagents",
+    "ten-options-then-remix"
+  ],
+  "workedExamples": [
+    {
+      "title": "Pixel-art / isometric / asymmetric briefs",
+      "body": "Lenny shows three ambitious productivity-landing briefs (bold pixel-art game stills; isometric living 3D city of feature-neighborhoods; radically asymmetric dissonant type). Specific wild vision beats “nice modern landing page.” Cite: Lenny URL."
+    },
+    {
+      "title": "Industrial Control Panel taste loop",
+      "before": "AI lists broad design-language ideas.",
+      "after": "Human feel notes (“tactile, not cartoony; texture over gray gradients”) → sharpened direction → agent-written POC prompt.",
+      "body": "Uniqueness comes from steering, not from pasting AI ideas straight back into AI. Cite: Lenny."
+    },
+    {
+      "title": "“This might not work” as a signal",
+      "body": "Anshu: if you think there’s no way this will work, you’re often on the right track—save failing prompts and retest on newer models. Paraphrase; cite Lenny."
+    }
+  ],
+  "antiPatterns": [
+    "Pasting AI-generated idea lists back into AI unchanged—anyone else gets the same average.",
+    "Stopping at the first “safe” brief that sounds professional.",
+    "Skipping the human taste notes between brainstorm and build prompt."
+  ],
+  "checklist": [
+    "Brief names a concrete inspiration (game, interior, installation) and how it shapes UI.",
+    "You wrote feel notes before asking AI to sharpen.",
+    "Build prompt is concise enough for an agent POC.",
+    "At least one idea felt slightly dangerous / “might not work.”"
+  ],
+  "promptWhy": [
+    "Concrete motif + “still function as a landing page” constrains wildness into a usable artifact.",
+    "Isometric city metaphor forces feature→place mapping instead of generic feature cards.",
+    "Explicit rule-breaking + “still look good” invites risk without pure chaos.",
+    "Broad/short list keeps brainstorm from collapsing into one polished average idea.",
+    "Human feel notes are the uniqueness; the model only sharpens them.",
+    "Separates taste work from implementation—agent gets a buildable brief, not a vibe."
+  ],
+  "pairsWellWith": [
+    "seed-strings",
+    "critic-subagents",
+    "ten-options-then-remix"
+  ]
 }

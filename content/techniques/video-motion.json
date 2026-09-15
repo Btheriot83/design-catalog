@@ -23,5 +23,41 @@
   "sourceUrls": [
     "https://www.lennysnewsletter.com/p/how-to-turn-your-ai-into-a-world"
   ],
-  "related": ["image-generation", "cut-elements"]
+  "related": [
+    "image-generation",
+    "cut-elements",
+    "make-it-alive"
+  ],
+  "workedExamples": [
+    {
+      "title": "Crystal splinter loop (matted UI layer)",
+      "before": "Static image on the page.",
+      "after": "Looping glass crystal that splinters/spins; rendered over page colors then matted—caustics and refraction CSS can’t fake.",
+      "body": "Public Lenny example using fal.ai for video gen + matting. Cite: Lenny."
+    },
+    {
+      "title": "Suitcase scroll-scrub transitions",
+      "body": "Demo page: suitcase floats → lands/opens → contents fall in; each state seeded from the prior clip’s last frame; scrubbed on scroll. One-prompt build in the essay. Cite: Lenny."
+    }
+  ],
+  "antiPatterns": [
+    "Dropping a rectangular MP4 with black bars into the layout (reads as embedded video, not UI).",
+    "CSS-only motion when the aesthetic needs physical refraction/physics.",
+    "Hard-wiring one video vendor when an aggregator would let the agent pick a current model."
+  ],
+  "checklist": [
+    "Animated graphic is matted (or chroma-keyed) so it layers as UI, not a player chrome.",
+    "Transitions share continuity (last frame seeds next clip) when scrubbing.",
+    "API key is local-only; agent chose an appropriate recent model.",
+    "Motion serves reading/engagement—not decorative autoplay noise."
+  ],
+  "promptWhy": [
+    "Bake-refraction-then-matte recipe produces UI-layer glass, not a floating video rectangle.",
+    "Keyframe→video→seed-next + scroll scrub turns product states into a tangible story."
+  ],
+  "pairsWellWith": [
+    "image-generation",
+    "make-it-alive",
+    "cut-elements"
+  ]
 }

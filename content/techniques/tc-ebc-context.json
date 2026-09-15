@@ -1,0 +1,56 @@
+{
+  "slug": "tc-ebc-context",
+  "number": 21,
+  "stage": "Discover",
+  "title": "TC-EBC · Context",
+  "principle": "Context frames why and for whom. It prevents drift. Ask what context the model needs to succeed—then remove everything else. Elegance is subtraction.",
+  "procedure": [
+    "Add a Context line: audience, setting, and job-to-be-done.",
+    "Include only facts that change the output if omitted.",
+    "Drop narrative fluff that forces the model to decipher meaning.",
+    "For revisions, keep Context stable unless the audience actually changed."
+  ],
+  "examplePrompts": [
+    "Context: Home cooking assistant for households with dietary restrictions",
+    "Context: For a new “One-Click Export” feature in a design tool."
+  ],
+  "promptWhy": [
+    "Audience + dietary restrictions steer filtering behavior without a novel’s worth of backstory.",
+    "Product + feature name anchors tone and domain for copy or UI."
+  ],
+  "tips": [
+    "Context engineering (Anthropic’s term, cited in the Figma piece): curate what the model sees.",
+    "In Figma Make, structured frames beat screenshots when you have them.",
+    "Partial catalog—no endorsement."
+  ],
+  "sourceUrls": [
+    "https://www.figma.com/blog/designer-framework-for-better-ai-prompts/",
+    "https://github.com/greghuntoon-figma/tc-ebc"
+  ],
+  "related": [
+    "tc-ebc-task",
+    "give-real-context",
+    "tc-ebc-constraints"
+  ],
+  "pairsWellWith": [
+    "give-real-context",
+    "thinking-before-prompt"
+  ],
+  "workedExamples": [
+    {
+      "title": "Feature copy with domain context",
+      "before": "Write a description… Keep it simple but also exciting. Maybe like how Apple does it?",
+      "after": "Context: For a new One-Click Export feature in a design tool (+ Elements/Behavior/Constraints).",
+      "body": "Figma blog contrast: vague Apple-ish ask vs TC-EBC. Cite: Figma blog."
+    }
+  ],
+  "antiPatterns": [
+    "Novel-length backstory.",
+    "Omitting who it’s for so the model invents an audience."
+  ],
+  "checklist": [
+    "Why/for whom is one tight line.",
+    "Every clause earns its tokens.",
+    "Stable across revision prompts unless audience changed."
+  ]
+}

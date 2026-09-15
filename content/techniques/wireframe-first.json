@@ -5,9 +5,9 @@
   "title": "Wireframe first when fidelity doesn’t matter",
   "principle": "Asking for wireframes is much faster, and it keeps Claude focused on higher-level structure instead of visuals. Use this to try many different ideas quickly before committing to look-and-feel.",
   "procedure": [
-    "When you’re exploring structure—not polish—explicitly ask for wireframes.",
+    "When fidelity doesn’t matter, explicitly ask for wireframes only.",
     "Compare multiple structural directions quickly.",
-    "Lock a structure before requesting high-fidelity visuals.",
+    "Lock structure before high-fidelity visuals.",
     "Escalate fidelity only after hierarchy and flow feel right."
   ],
   "examplePrompts": [
@@ -21,5 +21,33 @@
   "sourceUrls": [
     "https://claude.com/blog/how-the-product-designer-who-built-claude-design-uses-it-to-explore-ideas-before-building-them"
   ],
-  "related": ["ten-options-then-remix", "thinking-before-prompt", "specify-the-look"]
+  "related": [
+    "ten-options-then-remix",
+    "thinking-before-prompt",
+    "specify-the-look",
+    "tc-ebc-elements"
+  ],
+  "workedExamples": [
+    {
+      "title": "Daily bread-and-butter wireframes",
+      "body": "Nate uses Claude Design daily for wireframing early ideas and generating many flow versions for feedback—structure before visuals. Cite: Anthropic blog."
+    }
+  ],
+  "antiPatterns": [
+    "Jumping to polished visuals while structure is still mush.",
+    "Letting early aesthetic defaults lock the layout."
+  ],
+  "checklist": [
+    "Wireframe-only constraint stated.",
+    "Multiple structures compared.",
+    "Fidelity escalated on purpose."
+  ],
+  "promptWhy": [
+    "Gray-box constraint keeps the model on hierarchy, not favorite aesthetics."
+  ],
+  "pairsWellWith": [
+    "ten-options-then-remix",
+    "thinking-before-prompt",
+    "tc-ebc-elements"
+  ]
 }

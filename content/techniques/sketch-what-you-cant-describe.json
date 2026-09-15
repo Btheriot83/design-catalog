@@ -5,10 +5,10 @@
   "title": "Sketch what you can’t describe",
   "principle": "If you have a layout in your head and no words for it, draw it on paper and upload a photo. Visual intent that resists language still transfers when Claude can see the sketch.",
   "procedure": [
-    "When words fail, sketch the layout on paper (rough is fine).",
-    "Photograph or scan the sketch and upload it.",
-    "Ask Claude to interpret the sketch as structure—not to “pretty it up” into a different layout.",
-    "Iterate with pointed follow-ups once the structure matches."
+    "When layout is clear in your head but not in words, draw it on paper.",
+    "Photograph and upload the sketch.",
+    "Ask Claude to recreate structure/hierarchy/proportions—not invent a new composition.",
+    "Gate structural changes behind a question."
   ],
   "examplePrompts": [
     "I uploaded a photo of a paper sketch. Recreate this layout structure in HTML—same regions, hierarchy, and proportions. Do not invent a different composition. Ask before changing the structure."
@@ -21,5 +21,32 @@
   "sourceUrls": [
     "https://claude.com/blog/how-the-product-designer-who-built-claude-design-uses-it-to-explore-ideas-before-building-them"
   ],
-  "related": ["wireframe-first", "point-and-talk", "thinking-before-prompt"]
+  "related": [
+    "wireframe-first",
+    "point-and-talk",
+    "thinking-before-prompt"
+  ],
+  "workedExamples": [
+    {
+      "title": "Paper photo as brief",
+      "body": "Nate: if you have a layout in your head and no words for it, draw on paper and upload a photo. Cite: Anthropic blog."
+    }
+  ],
+  "antiPatterns": [
+    "Paragraphs of spatial scavenger-hunt prose.",
+    "Letting the model “improve” the composition unasked."
+  ],
+  "checklist": [
+    "Sketch uploaded.",
+    "Prompt protects structure.",
+    "Changes require ask-first."
+  ],
+  "promptWhy": [
+    "Photo + “do not invent a different composition” makes the sketch authoritative."
+  ],
+  "pairsWellWith": [
+    "wireframe-first",
+    "point-and-talk",
+    "thinking-before-prompt"
+  ]
 }

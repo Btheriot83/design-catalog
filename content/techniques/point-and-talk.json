@@ -5,10 +5,11 @@
   "title": "Point and talk",
   "principle": "Instead of writing a paragraph identifying which element you mean, click on it and speak. With dictation enabled, select “comment,” click into the comment box, and your words appear as if you typed—grounding edits in the exact UI target.",
   "procedure": [
-    "Enable dictation on your device.",
-    "Select the element, choose comment, and click into the comment box.",
-    "Speak the change you want for that specific element.",
-    "Prefer this over long written descriptions of “the blue button in the third card.”"
+    "Enable device dictation.",
+    "Select the element, open comment, click into the box.",
+    "Speak the change for that exact target.",
+    "Prefer this over written “the blue button in the third card” scavenger hunts.",
+    "Combine with last-mile direct edits for pixel tweaks."
   ],
   "examplePrompts": [
     "(Spoken into a comment on the selected element)\nMake this tighter: reduce padding, keep the label, drop the secondary line."
@@ -21,5 +22,33 @@
   "sourceUrls": [
     "https://claude.com/blog/how-the-product-designer-who-built-claude-design-uses-it-to-explore-ideas-before-building-them"
   ],
-  "related": ["last-mile-manual", "keep-working-alongside", "sketch-what-you-cant-describe"]
+  "related": [
+    "last-mile-manual",
+    "keep-working-alongside",
+    "sketch-what-you-cant-describe",
+    "cut-elements"
+  ],
+  "workedExamples": [
+    {
+      "title": "Comment-box dictation",
+      "body": "Nate: click the element and speak—with dictation on, comment-box speech appears as typed, grounding the edit. Cite: Anthropic blog."
+    }
+  ],
+  "antiPatterns": [
+    "Long written element-identification paragraphs.",
+    "Prompting micro-nudge edits that should be direct."
+  ],
+  "checklist": [
+    "Dictation enabled.",
+    "Element selected before speaking.",
+    "Change is local to the selection."
+  ],
+  "promptWhy": [
+    "Selection replaces ambiguous spatial language."
+  ],
+  "pairsWellWith": [
+    "last-mile-manual",
+    "keep-working-alongside",
+    "cut-elements"
+  ]
 }
