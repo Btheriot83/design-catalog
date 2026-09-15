@@ -1,7 +1,7 @@
 {
   "slug": "jakub-antalik",
   "name": "Jakub Antalik",
-  "status": "directory",
+  "status": "partial",
   "role": "Product designer/engineer · transitions.dev",
   "bio": "Jakub Antalik is a product designer and engineer focused on motion and craft. He previously worked at Frame.io (acquired by Adobe), Intercom, and as a Design Lead at 0x.org. He publishes transitions.dev, a free collection of essential UI transitions for web apps that can be copied as CSS/React or used as coding-agent skills. This catalog’s motion lab adapts free recipes from that project; Pro recipes were not used.",
   "links": [
@@ -22,10 +22,12 @@
       "url": "https://github.com/jakubantalik/transitions.dev"
     }
   ],
-  "techniqueSlugs": [],
+  "techniqueSlugs": [
+    "transition-recipes-as-skills"
+  ],
   "highlights": [
     "Author of free transitions.dev UI motion recipes used by this site’s motion lab.",
-    "Prior craft roles at Frame.io, Intercom, and 0x.org.",
-    "Public personal site lists motion components and agent-ready skills."
+    "Catalogued transition-recipes-as-skills for agent-ready motion.",
+    "Prior craft roles at Frame.io, Intercom, and 0x.org."
   ]
 }

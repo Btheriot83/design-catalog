@@ -58,7 +58,7 @@ export default async function TechniquesPage({ searchParams }: Props) {
         title="Technique index"
         description={
           <>
-            {`${techniques.length} technique${techniques.length === 1 ? "" : "s"}${filter ? ` in ${filter}` : ""}${designer ? ` · ${designer.name}` : ""}—procedures, prompts, worked examples, and checklists.`}{" "}
+            {`${techniques.length} technique${techniques.length === 1 ? "" : "s"}${filter ? ` in ${filter}` : ""}${designer ? ` · ${designer.name}` : ""}—procedures, prompts (+ why), worked examples, checklists. Filter by stage or craft author; see Guides for stacking order.`}{" "}
             Browse{" "}
             <Link
               href="/examples"

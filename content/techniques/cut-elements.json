@@ -11,7 +11,8 @@
     "Ask the agent explicitly to simplify layout, remove gradients/glows, and aim for true minimalism."
   ],
   "examplePrompts": [
-    "Dial this calorie tracker back:\n\n- Simplify the layout into an image-centric grid\n- Get rid of gradients, glows, and unnecessary containers\n- Aim for a truly minimalist aesthetic that feels Apple-native\n- Prefer built-in iOS components over custom buttons and text fields that look worse\n- Remove extra labels and empty space where the food images already communicate the content"
+    "Dial this calorie tracker back:\n\n- Simplify the layout into an image-centric grid\n- Get rid of gradients, glows, and unnecessary containers\n- Aim for a truly minimalist aesthetic that feels Apple-native\n- Prefer built-in iOS components over custom buttons and text fields that look worse\n- Remove extra labels and empty space where the food images already communicate the content",
+    "Cut pass with job sentences: for every visible block, write one job. Delete any block without a job. Do not replace cuts with a new 3-card feature grid."
   ],
   "tips": [
     "Even when you ask for “clean, minimalist,” models still add pink glows, random color highlights, extra labels, and bad custom controls.",
@@ -51,7 +52,8 @@
     "A second pass asked specifically for deletion, not addition."
   ],
   "promptWhy": [
-    "Bullet deletion asks (grid, kill glows, native iOS) force subtractive edits models avoid by default."
+    "Bullet deletion asks (grid, kill glows, native iOS) force subtractive edits models avoid by default.",
+    "Job sentences make cutting mechanical; ban on replacement grid stops whack-a-mole slop."
   ],
   "pairsWellWith": [
     "remove-ai-tells",

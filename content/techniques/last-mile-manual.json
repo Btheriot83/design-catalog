@@ -11,7 +11,8 @@
     "Reserve new prompts for structural/conceptual changes."
   ],
   "examplePrompts": [
-    "(Prefer direct edits over a prompt for this class of change)\nDo not prompt: nudge this 4px, recolor that label, delete this spacer.\nUse rearrange / delete / edit text / resize / change colors on the canvas instead."
+    "(Prefer direct edits over a prompt for this class of change)\nDo not prompt: nudge this 4px, recolor that label, delete this spacer.\nUse rearrange / delete / edit text / resize / change colors on the canvas instead.",
+    "Stop generating. List the last-mile fixes I should do by hand (pixel nudges, copy locks, asset crops). Do not spend tokens on ±2px prompt thrash."
   ],
   "tips": [
     "Direct edits cost no tokens.",
@@ -38,6 +39,12 @@
       "before": "Ten prompts to move a label 4px and recolor a secondary line.",
       "after": "One canvas session: rearrange / resize / recolor; reserve the next prompt for a structural change.",
       "body": "From Nate’s Claude Design post: direct edits cost no tokens; micro-layout is better eyeballed. Cite: Anthropic blog."
+    },
+    {
+      "title": "Pixel thrash",
+      "before": "Twelve prompts to move a button 2px.",
+      "after": "Agent lists hand fixes; human finishes in the editor.",
+      "body": "Nate: last mile is often manual. Cite Anthropic blog."
     }
   ],
   "antiPatterns": [
@@ -52,7 +59,8 @@
     "Structural prompts only after canvas pass."
   ],
   "promptWhy": [
-    "Meta-instruction to prefer canvas tools prevents expensive micro-prompt loops."
+    "Meta-instruction to prefer canvas tools prevents expensive micro-prompt loops.",
+    "Named handoff prevents endless micro-prompt loops Nate warns about."
   ],
   "pairsWellWith": [
     "point-and-talk",

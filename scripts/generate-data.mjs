@@ -65,7 +65,7 @@ const stages = ["Discover", "Define", "Deliver"];
 const index = {
   name: "Design Catalog",
   description:
-    "Letterpress study desk of AI design techniques (Anshu Chimala, Nate Parrott, Greg Huntoon). Public sources only; no endorsement.",
+    "Letterpress study desk of AI design techniques (Anshu, Nate, Greg + craft directory voices). Public sources only; no endorsement.",
   baseUrl,
   lastUpdated,
   techniqueCount: techniques.length,

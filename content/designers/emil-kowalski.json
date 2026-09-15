@@ -1,7 +1,7 @@
 {
   "slug": "emil-kowalski",
   "name": "Emil Kowalski",
-  "status": "directory",
+  "status": "partial",
   "role": "Design engineer · Linear · animations.dev",
   "bio": "Emil Kowalski is a design engineer on Linear’s web team, previously on Vercel’s design team. He created Sonner (toast) and Vaul (drawer) for React, and teaches web animation theory and implementation through animations.dev. His public writing covers taste, friction, and when not to animate.",
   "links": [
@@ -22,10 +22,13 @@
       "url": "https://github.com/emilkowalski"
     }
   ],
-  "techniqueSlugs": [],
+  "techniqueSlugs": [
+    "purposeful-motion",
+    "animation-restraint"
+  ],
   "highlights": [
     "Design engineer at Linear; previously Vercel design team.",
-    "Creator of Sonner and Vaul; course at animations.dev.",
-    "Public essays on taste, judgement, and practical animation tips."
+    "Catalogued techniques from public essays on purposeful motion and animation restraint.",
+    "Creator of Sonner and Vaul; course at animations.dev (course depth not reprinted here)."
   ]
 }

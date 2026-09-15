@@ -1,0 +1,70 @@
+{
+  "slug": "designing-depth",
+  "number": 25,
+  "stage": "Define",
+  "title": "Design depth into flat frames",
+  "principle": "Interfaces are flat canvases pretending to be rooms. Rauno Freiberg’s Designing Depth argues you convey story and dimensionality the way film does: dirty the frame with layered foreground/background, blur backdrops to drop Z-axis, choreograph motion so layers read as stacked surfaces—not decorative chrome.",
+  "procedure": [
+    "Name the focal subject and the ambient layers that should sit in front of / behind it (props, out-of-focus objects, offset frames).",
+    "Lower non-focal surfaces on the Z-axis with blur, dim, or fade-to-infinite edges—especially when an overlay claims focus.",
+    "When revealing overlays, decide which backdrop layers stay interactive vs must de-emphasize (blur/dim signals not actionable).",
+    "Prefer reusing primary subjects as depth cues (e.g. offset browser frames that also communicate product abundance) over gimmick decorations.",
+    "Verify with a screenshot critic: does the composition feel layered, or still like stickers on a flat board?"
+  ],
+  "examplePrompts": [
+    "Audit this UI for flatness. Apply Designing Depth (Rauno Freiberg):\n1) Identify focal subject vs ambient foreground/background layers.\n2) Blur or dim backdrops when overlays open so Z-axis reads correctly.\n3) Add one intentional dirty-frame cue (offset surface, soft edge fade, out-of-focus prop) that also communicates product meaning—not ornament.\n4) Do not add purple chrome, glassmorphism, or decorative orbs.\nReturn: before/after notes + the CSS/structure changes.",
+    "This modal feels pasted on. Recompose so the backdrop clearly sits behind: dim + slight blur the page, keep only the modal actionable, fade the modal bottom edge if content continues. Cite depth-of-field intent in a one-line comment."
+  ],
+  "promptWhy": [
+    "Forces the model to treat depth as composition (focal vs ambient) instead of dumping glass/shadow chrome.",
+    "Names the affordance signal (backdrop not actionable) so dim/blur is not decorative."
+  ],
+  "tips": [
+    "Film parallel: dirtying the frame with foreground obstruction carries emotion a pristine head-on shot lacks.",
+    "Blurred backdrops on overlays mimic natural depth of field and prevent false affordance on the page behind.",
+    "Depth cues should reinforce product story (abundance of previews, stacked layers)—not random decoration.",
+    "Public essay: https://rauno.me/craft/depth — paraphrase only; no endorsement."
+  ],
+  "sourceUrls": [
+    "https://rauno.me/craft/depth",
+    "https://rauno.me/craft"
+  ],
+  "related": [
+    "stagger-choreograph-motion",
+    "make-it-alive",
+    "remove-ai-tells",
+    "video-motion"
+  ],
+  "pairsWellWith": [
+    "stagger-choreograph-motion",
+    "critic-subagents",
+    "cut-elements"
+  ],
+  "workedExamples": [
+    {
+      "title": "Marketing frame that fell flat",
+      "before": "Browser frame + overlays dropped on a page with no Z separation—surfaces read as a sloppy afterthought.",
+      "after": "Inner background blurred (lowered on Z), bottom edge faded to feel infinite; offset frames and soft props reuse the primary subjects to show abundance.",
+      "body": "From Rauno’s Designing Depth (public, July 2024): depth comes from layered composition and meaningful reuse of subjects, not stickers. Cite: rauno.me/craft/depth."
+    },
+    {
+      "title": "Overlay without false affordance",
+      "body": "iOS-style context menus dim/blur the Home Screen so only the menu feels actionable. Skipping de-emphasis signals the whole backdrop is still interactive—which is wrong. Apply the same rule to web modals and drawers."
+    },
+    {
+      "title": "Quiet Folio restraint",
+      "body": "On this paper/ink desk, depth is hairline rules, folio numerals, and restrained motion—not frosted glass. Depth is not glassmorphism."
+    }
+  ],
+  "antiPatterns": [
+    "Adding glassmorphism / glow orbs and calling it depth.",
+    "Blur that does not change affordance (backdrop still looks clickable).",
+    "Decorative layers that do not communicate product meaning."
+  ],
+  "checklist": [
+    "Focal vs ambient layers named in the brief or PR.",
+    "Overlays de-emphasize backdrop (dim/blur) when backdrop is not actionable.",
+    "At least one depth cue reuses a primary subject, not a random ornament.",
+    "Screenshot critic no longer tags the layout as flat stickers."
+  ]
+}

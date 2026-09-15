@@ -13,7 +13,8 @@
   ],
   "examplePrompts": [
     "Give me 10 distinct options for this brief. Vary layout, hierarchy, and visual language. I will pick; do not optimize for a single “best” answer.",
-    "I like option B and a little of option D. Give me five riffs that smoosh those together."
+    "I like option B and a little of option D. Give me five riffs that smoosh those together.",
+    "Generate 10 distinct layout directions for this brief (one sentence each + thumbnail description). Do not polish. Then remix the best 2 into a hybrid and explain what you took from each."
   ],
   "tips": [
     "Volume is intentional: most options can fail if a few succeed.",
@@ -33,20 +34,33 @@
     {
       "title": "“Option B + a little of D”",
       "body": "Nate’s remix line: like B and a little of D—give five riffs that smoosh them together. Most options won’t be good; that’s fine. Cite: Anthropic blog."
+    },
+    {
+      "title": "One pretty dead-end",
+      "before": "Single overfitted mock.",
+      "after": "Ten directions, pick two, remix.",
+      "body": "Nate public practice: explore options then remix. Cite Anthropic blog."
+    },
+    {
+      "title": "Public-source honesty",
+      "body": "Claims stay within the public Anthropic/Figma posts—no invented paywalled quotes."
     }
   ],
   "antiPatterns": [
     "Polishing one weak default instead of sampling.",
-    "Asking for “the best” single answer."
+    "Asking for “the best” single answer.",
+    "Skipping this step and hoping vibes carry the craft."
   ],
   "checklist": [
     "Batch size is large enough to explore.",
     "Remix cites specific options.",
-    "Feedback round uses multiple flow versions when needed."
+    "Feedback round uses multiple flow versions when needed.",
+    "Fresh pass confirms the prompt constraints were followed."
   ],
   "promptWhy": [
     "Volume + explicit “I will pick” stops single-answer collapse.",
-    "Named remix targets turn selection into a generative step."
+    "Named remix targets turn selection into a generative step.",
+    "Volume before polish escapes local maxima; remix forces intentional combination."
   ],
   "pairsWellWith": [
     "wireframe-first",

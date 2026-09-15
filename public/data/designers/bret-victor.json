@@ -1,7 +1,7 @@
 {
   "slug": "bret-victor",
   "name": "Bret Victor",
-  "status": "directory",
+  "status": "partial",
   "role": "Interface researcher · Dynamicland · worrydream",
   "bio": "Bret Victor publishes at worrydream.com. He led the team that founded Dynamicland and invented Realtalk, a self-hosted spatial computing system. Previously at Apple he designed early iPad UI concepts and helped establish future-interfaces prototyping. Public talks include Inventing on Principle and Stop Drawing Dead Fish—widely cited against lifeless interface demos.",
   "links": [
@@ -14,10 +14,12 @@
       "url": "https://worrydream.com/cv/"
     }
   ],
-  "techniqueSlugs": [],
+  "techniqueSlugs": [
+    "alive-by-default"
+  ],
   "highlights": [
     "Dynamicland / Realtalk; prior Apple future-interfaces work.",
-    "Public talks: Inventing on Principle; Stop Drawing Dead Fish.",
+    "Catalogued alive-by-default from Stop Drawing Dead Fish (public talk).",
     "Essays: Ladder of Abstraction; Learnable Programming."
   ]
 }

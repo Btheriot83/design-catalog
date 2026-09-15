@@ -349,7 +349,8 @@
       "Ask the agent explicitly to simplify layout, remove gradients/glows, and aim for true minimalism."
     ],
     "examplePrompts": [
-      "Dial this calorie tracker back:\n\n- Simplify the layout into an image-centric grid\n- Get rid of gradients, glows, and unnecessary containers\n- Aim for a truly minimalist aesthetic that feels Apple-native\n- Prefer built-in iOS components over custom buttons and text fields that look worse\n- Remove extra labels and empty space where the food images already communicate the content"
+      "Dial this calorie tracker back:\n\n- Simplify the layout into an image-centric grid\n- Get rid of gradients, glows, and unnecessary containers\n- Aim for a truly minimalist aesthetic that feels Apple-native\n- Prefer built-in iOS components over custom buttons and text fields that look worse\n- Remove extra labels and empty space where the food images already communicate the content",
+      "Cut pass with job sentences: for every visible block, write one job. Delete any block without a job. Do not replace cuts with a new 3-card feature grid."
     ],
     "tips": [
       "Even when you ask for “clean, minimalist,” models still add pink glows, random color highlights, extra labels, and bad custom controls.",
@@ -389,7 +390,8 @@
       "A second pass asked specifically for deletion, not addition."
     ],
     "promptWhy": [
-      "Bullet deletion asks (grid, kill glows, native iOS) force subtractive edits models avoid by default."
+      "Bullet deletion asks (grid, kill glows, native iOS) force subtractive edits models avoid by default.",
+      "Job sentences make cutting mechanical; ban on replacement grid stops whack-a-mole slop."
     ],
     "pairsWellWith": [
       "remove-ai-tells",
@@ -412,7 +414,8 @@
       "Re-check with a critic or fresh eyes until the page no longer reads as template slop."
     ],
     "examplePrompts": [
-      "Audit this page for AI design tells and remove them. Kill-list:\n- Vibe purple / indigo accent defaults\n- Gradients used as chrome (hero washes, button fills) without compositional reason\n- Glassmorphism cards and frosted panels\n- Inter, Geist, or Space Grotesk as the default type stack\n- Three-card grids with emoji icons and generic feature blurbs\n- Fake stats / social-proof numbers\n- Headline badges (“New”, “AI-powered”, sparkles)\n- Soft drop shadows and glowing orbs as decoration\n\nReplace with intentional color, type, and structure. Do not swap one tell for another."
+      "Audit this page for AI design tells and remove them. Kill-list:\n- Vibe purple / indigo accent defaults\n- Gradients used as chrome (hero washes, button fills) without compositional reason\n- Glassmorphism cards and frosted panels\n- Inter, Geist, or Space Grotesk as the default type stack\n- Three-card grids with emoji icons and generic feature blurbs\n- Fake stats / social-proof numbers\n- Headline badges (“New”, “AI-powered”, sparkles)\n- Soft drop shadows and glowing orbs as decoration\n\nReplace with intentional color, type, and structure. Do not swap one tell for another.",
+      "Second pass: compare this page to Quiet Folio tokens (paper #FAF9F7, ink #221C24, hairline #E8E3E8, Source Serif + IBM Plex). List remaining tells that fight that desk. Fix them without introducing new chrome."
     ],
     "tips": [
       "Tells compound—fixing one gradient while leaving Inter + emoji cards still reads as slop.",
@@ -455,7 +458,8 @@
       "Fresh critic or human pass no longer tags it as template slop."
     ],
     "promptWhy": [
-      "An explicit kill-list beats “make it less AI”—models need named fingerprints to delete."
+      "An explicit kill-list beats “make it less AI”—models need named fingerprints to delete.",
+      "Concrete token bar beats abstract less-AI on the second pass."
     ],
     "pairsWellWith": [
       "cut-elements",
@@ -477,12 +481,15 @@
       "Spot-check that no regenerated marketing blurbs reappear on later passes."
     ],
     "examplePrompts": [
-      "Do not rewrite these strings. Wire them exactly as written:\n\n- Name line: <your hand-written line>\n- Empty state: <your hand-written empty state>\n- Primary CTA: <your hand-written CTA>\n- Error: <your hand-written error>\n- Onboarding step 1–n: <your hand-written steps>\n\nIf you need more UI copy, leave a TODO comment rather than inventing marketing language."
+      "Do not rewrite these strings. Wire them exactly as written:\n\n- Name line: <your hand-written line>\n- Empty state: <your hand-written empty state>\n- Primary CTA: <your hand-written CTA>\n- Error: <your hand-written error>\n- Onboarding step 1–n: <your hand-written steps>\n\nIf you need more UI copy, leave a TODO comment rather than inventing marketing language.",
+      "Protect these hand-written strings under LOCKED_COPY. Future agents may restyle but must not rewrite locked lines without asking:\n---\n{paste}\n---"
     ],
     "tips": [
       "Copy is where AI tells linger after the visuals look intentional.",
       "Specific lived detail beats polished generic claims.",
-      "Protect hand-written strings from “helpful” regenerations in later agent turns."
+      "Protect hand-written strings from “helpful” regenerations in later agent turns.",
+      "Keep Quiet Folio paper/ink if applying on this desk—no purple chrome.",
+      "Lenny technique 8 is named at the paywall—this catalog keeps editorial condensation only."
     ],
     "sourceUrls": [
       "https://www.lennysnewsletter.com/p/how-to-turn-your-ai-into-a-world"
@@ -502,6 +509,10 @@
       {
         "title": "Protect strings from “helpful” regen",
         "body": "Wire hand-written name line, empty state, CTA, errors, onboarding exactly; TODO rather than inventing marketing blurbs on later turns."
+      },
+      {
+        "title": "Public-source honesty",
+        "body": "Claims stay within public blog/talk paraphrase—no invented paywalled quotes."
       }
     ],
     "antiPatterns": [
@@ -516,7 +527,8 @@
       "Spot-checked after later passes for regenerated blurbs."
     ],
     "promptWhy": [
-      "Exact-string wiring + TODO fallback stops the model from re-AI-ing the voice."
+      "Exact-string wiring + TODO fallback stops the model from re-AI-ing the voice.",
+      "Explicit lock block prevents later agents from regenerating voice."
     ],
     "pairsWellWith": [
       "remove-ai-tells",
@@ -538,7 +550,8 @@
       "Revisit the brief when a remix drifts—update the written intent instead of vibes-chasing."
     ],
     "examplePrompts": [
-      "Before designing anything: here is the full brief I wrote offline.\n\nGoal: <what this artifact must communicate>\nAudience: <who sees it>\nConstraints: <brand, format, time, fidelity>\nMust include: <flows, screens, or beats>\nMust avoid: <defaults or aesthetics I do not want>\n\nExecute this vision. Do not invent a different concept."
+      "Before designing anything: here is the full brief I wrote offline.\n\nGoal: <what this artifact must communicate>\nAudience: <who sees it>\nConstraints: <brand, format, time, fidelity>\nMust include: <flows, screens, or beats>\nMust avoid: <defaults or aesthetics I do not want>\n\nExecute this vision. Do not invent a different concept.",
+      "Before any UI generation: write (1) user job, (2) refuse-list, (3) success look in 5 bullets, (4) which technique lane. Show me that plan and wait for OK."
     ],
     "tips": [
       "Nate: “I spend a lot of time writing prompts before I design.”",
@@ -558,19 +571,32 @@
       {
         "title": "Couch / walk brief → exact vision",
         "body": "Nate: spend a lot of time writing prompts before designing; dictate, Notes-from-the-couch, or walk transcripts so Claude executes the vision when you sit down—not a blank-canvas improvisation. Cite: Anthropic Claude blog."
+      },
+      {
+        "title": "Prompt-first thrash",
+        "before": "Jump straight into generate; thrash for an hour.",
+        "after": "Plan gate then one ambitious prompt.",
+        "body": "Nate: think before you prompt. Cite Anthropic blog."
+      },
+      {
+        "title": "Public-source honesty",
+        "body": "Claims stay within the public Anthropic/Figma posts—no invented paywalled quotes."
       }
     ],
     "antiPatterns": [
       "Opening the tool and prompting with no written intent.",
-      "Using the first empty generation as a substitute for a brief."
+      "Using the first empty generation as a substitute for a brief.",
+      "Skipping this step and hoping vibes carry the craft."
     ],
     "checklist": [
       "Brief exists before visuals.",
       "Constraints and must-avoids are explicit.",
-      "Capture method doesn’t matter—completeness does."
+      "Capture method doesn’t matter—completeness does.",
+      "Fresh pass confirms the prompt constraints were followed."
     ],
     "promptWhy": [
-      "Front-loaded brief blocks the model from inventing a different concept."
+      "Front-loaded brief blocks the model from inventing a different concept.",
+      "Offline thinking prevents the first token stream from locking a bad prior."
     ],
     "pairsWellWith": [
       "specify-the-look",
@@ -591,12 +617,15 @@
       "Re-check outputs for drift back to favorite model aesthetics."
     ],
     "examplePrompts": [
-      "Do not use your default aesthetic. Use these constraints:\n\nFonts: <primary / secondary>\nColors: <background, text, accent>\nMood references: I uploaded a moodboard—match its typography weight, contrast, and spacing feel.\n\nPropose 3 font-and-color pairings that fit, then wait for me to pick before designing screens."
+      "Do not use your default aesthetic. Use these constraints:\n\nFonts: <primary / secondary>\nColors: <background, text, accent>\nMood references: I uploaded a moodboard—match its typography weight, contrast, and spacing feel.\n\nPropose 3 font-and-color pairings that fit, then wait for me to pick before designing screens.",
+      "Lock look from these three reference screenshots. Extract: type pairing, radius, density, chroma limits. Write a 6-bullet look spec and refuse any purple/glow defaults. Apply to the current draft."
     ],
     "tips": [
       "Undirected Claude lands on recognizable favorite aesthetics; specify look early.",
       "Moodboards and explicit type/color beat vague “make it nice” asks.",
-      "Brainstorm pairings, then choose—don’t skip the selection step."
+      "Brainstorm pairings, then choose—don’t skip the selection step.",
+      "Keep Quiet Folio paper/ink if applying on this desk—no purple chrome.",
+      "Reference screenshots beat adjective stacks (premium, clean, modern)."
     ],
     "sourceUrls": [
       "https://claude.com/blog/how-the-product-designer-who-built-claude-design-uses-it-to-explore-ideas-before-building-them"
@@ -612,19 +641,32 @@
       {
         "title": "Head off favorite aesthetics",
         "body": "Nate: left undirected, Claude picks recognizable favorite aesthetics. Specify fonts/colors, moodboard, or iterate pairings until one feels right. Cite: Anthropic blog."
+      },
+      {
+        "title": "Vibe word vs look spec",
+        "before": "Make it premium and minimal.",
+        "after": "Spec: Source Serif + IBM Plex, 0 radius, hairline borders, paper #FAF9F7, ink #221C24, no chroma accents.",
+        "body": "Nate lineage: specify the look with concrete references. Paraphrase of public Anthropic post practices."
+      },
+      {
+        "title": "Quiet Folio as locked look",
+        "body": "This desk tokens are themselves a specify-the-look artifact—seeded once, reused everywhere."
       }
     ],
     "antiPatterns": [
       "“Make it nice / modern / clean” with no type or color.",
-      "Accepting the first pairing without a selection step."
+      "Accepting the first pairing without a selection step.",
+      "Adjective-only aesthetic briefs."
     ],
     "checklist": [
       "Fonts named or moodboard attached.",
       "A human picked the pairing.",
-      "Later artifacts reuse it."
+      "Later artifacts reuse it.",
+      "Look spec bullets exist and are checked against the draft."
     ],
     "promptWhy": [
-      "Explicit type/color + choose-before-build prevents default aesthetic lock-in."
+      "Explicit type/color + choose-before-build prevents default aesthetic lock-in.",
+      "Extraction to spec to apply beats make-it-like-Linear vibes."
     ],
     "pairsWellWith": [
       "design-system-from-assets",
@@ -645,7 +687,8 @@
       "Bring existing marks—don’t ask Claude Design to invent logos (no image model for that)."
     ],
     "examplePrompts": [
-      "I uploaded our brand files (logo, typography specs, slide deck, product screenshots). Analyze them and generate a design system I can reuse: fonts, colors, spacing, component patterns, and do’s/don’ts.\n\nEvery new artifact in this project should start from that system—not a blank aesthetic."
+      "I uploaded our brand files (logo, typography specs, slide deck, product screenshots). Analyze them and generate a design system I can reuse: fonts, colors, spacing, component patterns, and do’s/don’ts.\n\nEvery new artifact in this project should start from that system—not a blank aesthetic.",
+      "Here are logo/color/type assets. Derive a minimal token set (colors, radii, type roles, spacing). Build the screen only from those tokens—no inventing a parallel palette."
     ],
     "tips": [
       "Nate distilled Anthropic’s fonts, colors, assets, and principles into prompts so outputs stayed brand-compliant.",
@@ -665,19 +708,32 @@
       {
         "title": "Anthropic brand distilled into prompts",
         "body": "Nate spent time distilling Anthropic fonts, colors, assets, and principles into prompts so tool output stayed brand-compliant—then shared the internal prototype. Cite: Anthropic blog."
+      },
+      {
+        "title": "Invented brand",
+        "before": "Agent invents coral/indigo beside the real logo.",
+        "after": "Tokens extracted from assets; UI uses only those.",
+        "body": "Nate: design system from assets. Cite Anthropic blog."
+      },
+      {
+        "title": "Public-source honesty",
+        "body": "Claims stay within the public Anthropic/Figma posts—no invented paywalled quotes."
       }
     ],
     "antiPatterns": [
       "Blank-slate aesthetics every artifact.",
-      "Asking Claude Design to invent the logo."
+      "Asking Claude Design to invent the logo.",
+      "Skipping this step and hoping vibes carry the craft."
     ],
     "checklist": [
       "Assets uploaded.",
       "System documented (type, color, spacing, do/don’t).",
-      "New work starts from the system."
+      "New work starts from the system.",
+      "Fresh pass confirms the prompt constraints were followed."
     ],
     "promptWhy": [
-      "Asset analysis → system turns each prompt into a continuation of brand choices."
+      "Asset analysis → system turns each prompt into a continuation of brand choices.",
+      "Assets-as-source-of-truth stops hallucinated brand systems."
     ],
     "pairsWellWith": [
       "specify-the-look",
@@ -700,7 +756,8 @@
     ],
     "examplePrompts": [
       "Give me 10 distinct options for this brief. Vary layout, hierarchy, and visual language. I will pick; do not optimize for a single “best” answer.",
-      "I like option B and a little of option D. Give me five riffs that smoosh those together."
+      "I like option B and a little of option D. Give me five riffs that smoosh those together.",
+      "Generate 10 distinct layout directions for this brief (one sentence each + thumbnail description). Do not polish. Then remix the best 2 into a hybrid and explain what you took from each."
     ],
     "tips": [
       "Volume is intentional: most options can fail if a few succeed.",
@@ -720,20 +777,33 @@
       {
         "title": "“Option B + a little of D”",
         "body": "Nate’s remix line: like B and a little of D—give five riffs that smoosh them together. Most options won’t be good; that’s fine. Cite: Anthropic blog."
+      },
+      {
+        "title": "One pretty dead-end",
+        "before": "Single overfitted mock.",
+        "after": "Ten directions, pick two, remix.",
+        "body": "Nate public practice: explore options then remix. Cite Anthropic blog."
+      },
+      {
+        "title": "Public-source honesty",
+        "body": "Claims stay within the public Anthropic/Figma posts—no invented paywalled quotes."
       }
     ],
     "antiPatterns": [
       "Polishing one weak default instead of sampling.",
-      "Asking for “the best” single answer."
+      "Asking for “the best” single answer.",
+      "Skipping this step and hoping vibes carry the craft."
     ],
     "checklist": [
       "Batch size is large enough to explore.",
       "Remix cites specific options.",
-      "Feedback round uses multiple flow versions when needed."
+      "Feedback round uses multiple flow versions when needed.",
+      "Fresh pass confirms the prompt constraints were followed."
     ],
     "promptWhy": [
       "Volume + explicit “I will pick” stops single-answer collapse.",
-      "Named remix targets turn selection into a generative step."
+      "Named remix targets turn selection into a generative step.",
+      "Volume before polish escapes local maxima; remix forces intentional combination."
     ],
     "pairsWellWith": [
       "wireframe-first",
@@ -748,18 +818,22 @@
     "title": "Sketch what you can’t describe",
     "principle": "If you have a layout in your head and no words for it, draw it on paper and upload a photo. Visual intent that resists language still transfers when Claude can see the sketch.",
     "procedure": [
-      "When layout is clear in your head but not in words, draw it on paper.",
-      "Photograph and upload the sketch.",
-      "Ask Claude to recreate structure/hierarchy/proportions—not invent a new composition.",
-      "Gate structural changes behind a question."
+      "When layout is clear in your head but not in words, draw it on paper (boxes + labels are enough).",
+      "Photograph in even light; crop to the sketch; upload.",
+      "Ask the model to recreate structure/hierarchy/proportions—not invent a new composition.",
+      "Gate structural changes behind a question; allow only spacing/type polish without asking.",
+      "If the recreation drifts, point-and-talk with a markup on the sketch photo rather than rewriting prose."
     ],
     "examplePrompts": [
-      "I uploaded a photo of a paper sketch. Recreate this layout structure in HTML—same regions, hierarchy, and proportions. Do not invent a different composition. Ask before changing the structure."
+      "I uploaded a photo of a paper sketch. Recreate this layout structure in HTML—same regions, hierarchy, and proportions. Do not invent a different composition. Ask before changing the structure.",
+      "Here is a second photo of the same sketch with red arrows. Keep regions A/B/C exactly; only adjust the gutter between A and B to match the arrow note. Ask before any other structural change."
     ],
     "tips": [
       "Use this when you can picture the layout but can’t name it.",
       "The sketch is the brief; the prompt should protect that structure.",
-      "Pairs well with wireframe-first when fidelity still doesn’t matter."
+      "Pairs well with wireframe-first when fidelity still doesn’t matter.",
+      "Keep Quiet Folio paper/ink if applying on this desk—no purple chrome.",
+      "Even box-and-arrow paper beats spatial scavenger-hunt prose."
     ],
     "sourceUrls": [
       "https://claude.com/blog/how-the-product-designer-who-built-claude-design-uses-it-to-explore-ideas-before-building-them"
@@ -773,19 +847,32 @@
       {
         "title": "Paper photo as brief",
         "body": "Nate: if you have a layout in your head and no words for it, draw on paper and upload a photo. Cite: Anthropic blog."
+      },
+      {
+        "title": "Words fail, boxes win",
+        "before": "Three paragraphs describing a sidebarish nav with a hero that kind of overlaps.",
+        "after": "Paper boxes uploaded; HTML regions match proportions; model asks before changing structure.",
+        "body": "Nate Anthropic blog: draw what you cannot describe, upload the photo. Cite public post."
+      },
+      {
+        "title": "Failure: improve the composition",
+        "body": "If the prompt invites invention, the sketch becomes moodboarding and you lose the mental model you already had."
       }
     ],
     "antiPatterns": [
       "Paragraphs of spatial scavenger-hunt prose.",
-      "Letting the model “improve” the composition unasked."
+      "Letting the model “improve” the composition unasked.",
+      "Uploading a scribble with no region labels and expecting perfect IA."
     ],
     "checklist": [
       "Sketch uploaded.",
       "Prompt protects structure.",
-      "Changes require ask-first."
+      "Changes require ask-first.",
+      "Drift fixed via markup, not a full rewrite."
     ],
     "promptWhy": [
-      "Photo + “do not invent a different composition” makes the sketch authoritative."
+      "Photo + “do not invent a different composition” makes the sketch authoritative.",
+      "Markup-on-sketch keeps authority with the drawing when the first pass drifts."
     ],
     "pairsWellWith": [
       "wireframe-first",
@@ -807,7 +894,8 @@
       "Combine with last-mile direct edits for pixel tweaks."
     ],
     "examplePrompts": [
-      "(Spoken into a comment on the selected element)\nMake this tighter: reduce padding, keep the label, drop the secondary line."
+      "(Spoken into a comment on the selected element)\nMake this tighter: reduce padding, keep the label, drop the secondary line.",
+      "I attached a screenshot with a red box around [region]. Only modify that region: [instruction]. Leave everything outside the box untouched. Confirm the box bounds before editing."
     ],
     "tips": [
       "Requires device dictation plus the comment affordance in Claude Design.",
@@ -833,6 +921,12 @@
         "before": "“The blue button in the third card under the pricing section—make it quieter.”",
         "after": "Select the button → comment → speak: “Quieter: secondary weight, drop the glow.”",
         "body": "Nate: click and speak with dictation so the edit is grounded on the exact target. Cite: Anthropic blog."
+      },
+      {
+        "title": "Prose scavenger hunt",
+        "before": "Three paragraphs describing which card.",
+        "after": "Red box + one instruction.",
+        "body": "Nate: point and talk. Cite Anthropic blog."
       }
     ],
     "antiPatterns": [
@@ -843,10 +937,12 @@
     "checklist": [
       "Dictation enabled.",
       "Element selected before speaking.",
-      "Change is local to the selection."
+      "Change is local to the selection.",
+      "Fresh pass confirms the prompt constraints were followed."
     ],
     "promptWhy": [
-      "Selection replaces ambiguous spatial language."
+      "Selection replaces ambiguous spatial language.",
+      "Spatial selection beats long spatial prose and protects the rest of the composition."
     ],
     "pairsWellWith": [
       "last-mile-manual",
@@ -867,12 +963,14 @@
       "Escalate fidelity only after hierarchy and flow feel right."
     ],
     "examplePrompts": [
-      "Wireframe only—no visual styling. Gray boxes, labels, and hierarchy. Give me 5 structural alternatives for this flow so I can compare layout ideas quickly."
+      "Wireframe only—no visual styling. Gray boxes, labels, and hierarchy. Give me 5 structural alternatives for this flow so I can compare layout ideas quickly.",
+      "Build a greyscale wireframe only—no brand color, no imagery, no polish. Same IA and hierarchy as the brief. Stop and show me before any visual pass."
     ],
     "tips": [
       "Speed comes from skipping premature visual decisions.",
       "Structure-first prevents Claude from locking onto a favorite aesthetic early.",
-      "Nate uses Claude Design daily for wireframing early ideas and generating many flow versions for feedback."
+      "Nate uses Claude Design daily for wireframing early ideas and generating many flow versions for feedback.",
+      "Pairs with sketch-what-you-cant-describe when you already have paper boxes."
     ],
     "sourceUrls": [
       "https://claude.com/blog/how-the-product-designer-who-built-claude-design-uses-it-to-explore-ideas-before-building-them"
@@ -891,6 +989,12 @@
       {
         "title": "Structure before skin",
         "body": "Nate: wireframe structure first so layout decisions aren’t entangled with look; then specify look / system from assets. Cite: Anthropic blog."
+      },
+      {
+        "title": "Color too early",
+        "before": "First pass is a purple SaaS landing.",
+        "after": "Greyscale regions + labels first; color only after approval.",
+        "body": "Nate: wireframe first when fidelity does not matter yet. Cite Anthropic blog."
       }
     ],
     "antiPatterns": [
@@ -901,10 +1005,12 @@
     "checklist": [
       "Wireframe-only constraint stated.",
       "Multiple structures compared.",
-      "Fidelity escalated on purpose."
+      "Fidelity escalated on purpose.",
+      "Fresh pass confirms the prompt constraints were followed."
     ],
     "promptWhy": [
-      "Gray-box constraint keeps the model on hierarchy, not favorite aesthetics."
+      "Gray-box constraint keeps the model on hierarchy, not favorite aesthetics.",
+      "Greyscale gate stops the model from burning tokens on chrome before structure is right."
     ],
     "pairsWellWith": [
       "ten-options-then-remix",
@@ -926,7 +1032,8 @@
       "Reserve new prompts for structural/conceptual changes."
     ],
     "examplePrompts": [
-      "(Prefer direct edits over a prompt for this class of change)\nDo not prompt: nudge this 4px, recolor that label, delete this spacer.\nUse rearrange / delete / edit text / resize / change colors on the canvas instead."
+      "(Prefer direct edits over a prompt for this class of change)\nDo not prompt: nudge this 4px, recolor that label, delete this spacer.\nUse rearrange / delete / edit text / resize / change colors on the canvas instead.",
+      "Stop generating. List the last-mile fixes I should do by hand (pixel nudges, copy locks, asset crops). Do not spend tokens on ±2px prompt thrash."
     ],
     "tips": [
       "Direct edits cost no tokens.",
@@ -953,6 +1060,12 @@
         "before": "Ten prompts to move a label 4px and recolor a secondary line.",
         "after": "One canvas session: rearrange / resize / recolor; reserve the next prompt for a structural change.",
         "body": "From Nate’s Claude Design post: direct edits cost no tokens; micro-layout is better eyeballed. Cite: Anthropic blog."
+      },
+      {
+        "title": "Pixel thrash",
+        "before": "Twelve prompts to move a button 2px.",
+        "after": "Agent lists hand fixes; human finishes in the editor.",
+        "body": "Nate: last mile is often manual. Cite Anthropic blog."
       }
     ],
     "antiPatterns": [
@@ -967,7 +1080,8 @@
       "Structural prompts only after canvas pass."
     ],
     "promptWhy": [
-      "Meta-instruction to prefer canvas tools prevents expensive micro-prompt loops."
+      "Meta-instruction to prefer canvas tools prevents expensive micro-prompt loops.",
+      "Named handoff prevents endless micro-prompt loops Nate warns about."
     ],
     "pairsWellWith": [
       "point-and-talk",
@@ -982,13 +1096,15 @@
     "title": "Give Claude your real context",
     "principle": "If you’re designing a feature for an existing app or website, connect GitHub so Claude can fetch your components and existing screens and use them as a starting point—with a few tries it can recreate existing designs with pretty high fidelity. Web search and MCP connections work in Claude Design too when the design depends on outside information.",
     "procedure": [
-      "Connect GitHub so Claude can fetch real components and screens.",
-      "Start from those—not a parallel invented UI system.",
-      "Use web search / MCP when the design needs outside facts.",
-      "Iterate a few times to raise fidelity against the real product."
+      "Connect the real repo (GitHub) or paste the component paths that matter.",
+      "Point at existing screens/routes for the feature area before asking for net-new UI.",
+      "Require the model to name which components it will reuse.",
+      "Use web search / MCP when the design depends on outside facts (pricing, regs, sports data).",
+      "Iterate a few times comparing against production screenshots—not against memory."
     ],
     "examplePrompts": [
-      "I connected our GitHub repo. Pull the relevant components and existing screens for <feature area>. Redesign <flow> starting from those real patterns—match our component vocabulary before proposing net-new UI."
+      "I connected our GitHub repo. Pull the relevant components and existing screens for <feature area>. Redesign <flow> starting from those real patterns—match our component vocabulary before proposing net-new UI.",
+      "Open these production screenshots + the components listed in <paths>. List mismatches between the redesign draft and our real patterns. Prefer reuse over invention; propose at most one net-new component with justification."
     ],
     "tips": [
       "Real components beat imagined design systems when shipping into an existing app.",
@@ -1008,19 +1124,32 @@
       {
         "title": "GitHub-connected fidelity",
         "body": "Nate: connect GitHub; Claude fetches components/screens and can recreate existing designs with pretty high fidelity after a few tries. Web search and MCP work too. Cite: Anthropic blog."
+      },
+      {
+        "title": "Parallel UI system",
+        "before": "Agent invents a new Button API beside the design system.",
+        "after": "GitHub-connected pass reuses existing Button/Input; only the flow is new.",
+        "body": "Nate: connect GitHub so Claude fetches components/screens; high fidelity after a few tries. Cite Anthropic blog."
+      },
+      {
+        "title": "MCP for outside facts",
+        "body": "When the UI depends on live outside info, web search/MCP is first-class in Claude Design—do not hardcode stale facts into the mock."
       }
     ],
     "antiPatterns": [
       "Designing a feature in a vacuum beside the real app.",
-      "Describing the design system in prose instead of linking sources of truth."
+      "Describing the design system in prose instead of linking sources of truth.",
+      "One-shot redesign with no production comparison."
     ],
     "checklist": [
       "Real repo/components in context.",
       "Outside facts fetched when needed.",
-      "Fidelity checked against production UI."
+      "Fidelity checked against production UI.",
+      "Reuse list written before net-new components."
     ],
     "promptWhy": [
-      "Repo-as-context beats describing your design system from memory."
+      "Repo-as-context beats describing your design system from memory.",
+      "Screenshot+path audit catches parallel invented systems early."
     ],
     "pairsWellWith": [
       "design-system-from-assets",
@@ -1041,7 +1170,8 @@
       "Stay in flow—idle waiting between turns is optional."
     ],
     "examplePrompts": [
-      "(Queued while a prior turn is still running)\nWhile you finish that: also prepare a second variant with denser type and no hero illustration. I’ll pick after both land."
+      "(Queued while a prior turn is still running)\nWhile you finish that: also prepare a second variant with denser type and no hero illustration. I’ll pick after both land.",
+      "Stay in the canvas with me. I will point at regions; you only change what I indicate. After each change, wait—do not autonomously restyle the whole page."
     ],
     "tips": [
       "Idle waiting between turns is optional, not required.",
@@ -1065,6 +1195,12 @@
       {
         "title": "Don’t wait on every turn",
         "body": "Nate: keep collaborating—sketch, gather references, edit other surfaces—while the model works, instead of blocking on each response. Cite: Anthropic blog."
+      },
+      {
+        "title": "One-shot drift",
+        "before": "Leave for coffee; return to a different product.",
+        "after": "Point-and-change turns with waits between.",
+        "body": "Nate: keep working alongside Claude Design. Cite Anthropic blog."
       }
     ],
     "antiPatterns": [
@@ -1079,7 +1215,8 @@
       "Parallel human work identified while the model runs."
     ],
     "promptWhy": [
-      "Queued variant ask keeps momentum without abandoning the in-flight turn."
+      "Queued variant ask keeps momentum without abandoning the in-flight turn.",
+      "Alongside mode keeps human taste in the loop instead of one-shot regeneration."
     ],
     "pairsWellWith": [
       "thinking-before-prompt",
@@ -1166,11 +1303,13 @@
     ],
     "examplePrompts": [
       "Task: Build an AI-powered meal suggestion app using pantry/fridge photo inputs",
-      "Task: Write a short product feature description."
+      "Task: Write a short product feature description.",
+      "Task: Redesign the empty pantry state so a first-time user knows to photograph their fridge within 10 seconds of landing—without a carousel or confetti."
     ],
     "promptWhy": [
       "Leads with the artifact and input modality—nothing buried in pleasantries.",
-      "Names the deliverable type up front so Elements/Behavior can stay short."
+      "Names the deliverable type up front so Elements/Behavior can stay short.",
+      "Specific outcome + explicit refuse beats Redesign the empty state."
     ],
     "tips": [
       "Greg Huntoon (Figma blog): tools don’t require empathy—they require clarity.",
@@ -1203,6 +1342,12 @@
         "before": "Please write some nice copy for this feature when you get a chance. Thanks!",
         "after": "Task: Write a short product feature description.",
         "body": "Greg’s Figma post pairs Task clarity with Context/Elements/Behavior/Constraints; the Task line alone kills polite ambiguity. Cite: Figma blog."
+      },
+      {
+        "title": "Task mush",
+        "before": "Improve the empty state.",
+        "after": "Photograph fridge in 10s; no carousel/confetti.",
+        "body": "Greg TC-EBC Task is the verb+outcome. Cite Figma blog."
       }
     ],
     "antiPatterns": [
@@ -1213,7 +1358,8 @@
     "checklist": [
       "One clear Task line.",
       "No politeness padding.",
-      "Artifact type is obvious."
+      "Artifact type is obvious.",
+      "Fresh pass confirms the prompt constraints were followed."
     ]
   },
   {
@@ -1230,16 +1376,20 @@
     ],
     "examplePrompts": [
       "Context: Home cooking assistant for households with dietary restrictions",
-      "Context: For a new “One-Click Export” feature in a design tool."
+      "Context: For a new “One-Click Export” feature in a design tool.",
+      "Context: Mobile-first pantry app for two adults meal-planning Sunday nights; fridge photo is the primary input; dark kitchen lighting."
     ],
     "promptWhy": [
       "Audience + dietary restrictions steer filtering behavior without a novel’s worth of backstory.",
-      "Product + feature name anchors tone and domain for copy or UI."
+      "Product + feature name anchors tone and domain for copy or UI.",
+      "Specific users/setting change layout and photo treatment immediately."
     ],
     "tips": [
       "Context engineering (Anthropic’s term, cited in the Figma piece): curate what the model sees.",
       "In Figma Make, structured frames beat screenshots when you have them.",
-      "Partial catalog—no endorsement."
+      "Partial catalog—no endorsement.",
+      "Keep Quiet Folio paper/ink if applying on this desk—no purple chrome.",
+      "Context should name user, setting, and input modality—not just the product category."
     ],
     "sourceUrls": [
       "https://www.figma.com/blog/designer-framework-for-better-ai-prompts/",
@@ -1260,16 +1410,28 @@
         "before": "Write a description… Keep it simple but also exciting. Maybe like how Apple does it?",
         "after": "Context: For a new One-Click Export feature in a design tool (+ Elements/Behavior/Constraints).",
         "body": "Figma blog contrast: vague Apple-ish ask vs TC-EBC. Cite: Figma blog."
+      },
+      {
+        "title": "Generic vs kitchen context",
+        "before": "A recipe app.",
+        "after": "Sunday planners, fridge-photo input, dim kitchen—UI prioritizes upload and missing ingredients.",
+        "body": "Context in TC-EBC is mise-en-place for the prompt. Cite Figma blog."
+      },
+      {
+        "title": "Public-source honesty",
+        "body": "Claims stay within public blog/talk paraphrase—no invented paywalled quotes."
       }
     ],
     "antiPatterns": [
       "Novel-length backstory.",
-      "Omitting who it’s for so the model invents an audience."
+      "Omitting who it’s for so the model invents an audience.",
+      "Omitting this TC-EBC slot and hoping Task alone carries the build."
     ],
     "checklist": [
       "Why/for whom is one tight line.",
       "Every clause earns its tokens.",
-      "Stable across revision prompts unless audience changed."
+      "Stable across revision prompts unless audience changed.",
+      "Example prompt includes observable detail, not adjectives only."
     ]
   },
   {
@@ -1286,16 +1448,20 @@
     ],
     "examplePrompts": [
       "Elements: Camera input, pantry scanner, dietary settings form, meal suggestions list, recipe cards",
-      "Elements: Headline (max 7 words), subheadline, single-sentence body copy."
+      "Elements: Headline (max 7 words), subheadline, single-sentence body copy.",
+      "Elements: Search field, filter chips (diet), recipe cards (photo, time, missing-ingredient count), primary Cook tonight button. No testimonial slider."
     ],
     "promptWhy": [
       "Inventory removes “what screens exist?” ambiguity.",
-      "Part-level copy elements force structure instead of a blob of marketing prose."
+      "Part-level copy elements force structure instead of a blob of marketing prose.",
+      "Named elements + explicit exclusions beat modern dashboard."
     ],
     "tips": [
       "TC-EBC README: each line as short as possible; only what the model must know.",
       "Pairs with wireframe-first when you’re still exploring structure.",
-      "Partial catalog—no endorsement."
+      "Partial catalog—no endorsement.",
+      "Keep Quiet Folio paper/ink if applying on this desk—no purple chrome.",
+      "Exclusions (No X) are as important as inclusions in Elements."
     ],
     "sourceUrls": [
       "https://www.figma.com/blog/designer-framework-for-better-ai-prompts/",
@@ -1314,16 +1480,26 @@
       {
         "title": "Pantry app element inventory",
         "body": "Camera, scanner, dietary form, suggestions list, recipe cards—enough for Figma Make to scaffold a real information architecture. Cite: Figma blog."
+      },
+      {
+        "title": "Exclusion as element craft",
+        "body": "Listing what must not appear (testimonial slider) is Elements hygiene—stops default SaaS modules. Cite Figma TC-EBC post."
+      },
+      {
+        "title": "Public-source honesty",
+        "body": "Claims stay within public blog/talk paraphrase—no invented paywalled quotes."
       }
     ],
     "antiPatterns": [
       "Embedding visual style essays inside Elements.",
-      "Omitting key screens so the model invents a different IA."
+      "Omitting key screens so the model invents a different IA.",
+      "Omitting this TC-EBC slot and hoping Task alone carries the build."
     ],
     "checklist": [
       "Elements are countable UI/copy parts.",
       "List is short.",
-      "Style lives under Constraints, not here."
+      "Style lives under Constraints, not here.",
+      "Example prompt includes observable detail, not adjectives only."
     ]
   },
   {
@@ -1340,15 +1516,19 @@
     ],
     "examplePrompts": [
       "Behavior: User uploads photos; app scans inventory, filters by diet prefs, suggests recipes",
-      "Behavior: Body should imply speed, simplicity, and trust."
+      "Behavior: Body should imply speed, simplicity, and trust.",
+      "Behavior: On each keystroke in search, results filter within 100ms with no enter animation; empty state explains how to add a pantry item."
     ],
     "promptWhy": [
       "End-to-end loop makes the prototype interactive instead of a poster.",
-      "Implied qualities guide tone without vague “exciting” adjectives."
+      "Implied qualities guide tone without vague “exciting” adjectives.",
+      "Concrete timing + empty-state behavior prevents poster UIs."
     ],
     "tips": [
       "Revision prompts: spell what must not change in Constraints; Behavior can state the new interaction.",
-      "Partial catalog—no endorsement."
+      "Partial catalog—no endorsement.",
+      "Keep Quiet Folio paper/ink if applying on this desk—no purple chrome.",
+      "Partial catalog—pair all five TC-EBC slots in one prompt for best results."
     ],
     "sourceUrls": [
       "https://www.figma.com/blog/designer-framework-for-better-ai-prompts/",
@@ -1367,16 +1547,28 @@
       {
         "title": "Upload→scan→filter→suggest",
         "body": "Behavior line in the pantry TC-EBC prompt is what turns a static recipe collage into a usable flow. Cite: Figma blog."
+      },
+      {
+        "title": "Copy behavior vs product behavior",
+        "before": "Make it feel fast.",
+        "after": "Filter on keystroke; no animation; empty state teaches add.",
+        "body": "Greg Figma blog: Behavior covers interaction loops and implications. Cite public post."
+      },
+      {
+        "title": "Public-source honesty",
+        "body": "Claims stay within public blog/talk paraphrase—no invented paywalled quotes."
       }
     ],
     "antiPatterns": [
       "Static element lists with no interaction story.",
-      "Mood adjectives instead of observable behavior."
+      "Mood adjectives instead of observable behavior.",
+      "Omitting this TC-EBC slot and hoping Task alone carries the build."
     ],
     "checklist": [
       "Primary loop is stated.",
       "Verbs are observable.",
-      "Implications are specific when copy is the artifact."
+      "Implications are specific when copy is the artifact.",
+      "Example prompt includes observable detail, not adjectives only."
     ]
   },
   {
@@ -1394,12 +1586,14 @@
     "examplePrompts": [
       "Constraints: Mobile-first, iOS/Android, accessible UI, supports multiple household profiles",
       "Constraints: No jargon. Match the brand tone of Duolingo or Notion. Total length: under 200 characters.",
-      "Full TC-EBC skeleton:\nTask: <what you’re building>\nContext: <why / for whom>\nElements: <UI or copy parts>\nBehavior: <user↔system loop>\nConstraints: <guardrails; for revisions, what not to change>"
+      "Full TC-EBC skeleton:\nTask: <what you’re building>\nContext: <why / for whom>\nElements: <UI or copy parts>\nBehavior: <user↔system loop>\nConstraints: <guardrails; for revisions, what not to change>",
+      "Constraints: Do not change the navigation IA, token names, or primary button component API. You may restyle empty-state illustration and microcopy only."
     ],
     "promptWhy": [
       "Platform + a11y + multi-profile prevents desktop-only fantasy apps.",
       "Measurable length + named tone anchors beat “simple but exciting.”",
-      "Skeleton keeps every prompt scannable and complete."
+      "Skeleton keeps every prompt scannable and complete.",
+      "Named untouchables make revisions safe—Greg revision note."
     ],
     "tips": [
       "Huntoon: for revision prompts, always add directions in Constraints about what not to adjust.",
@@ -1431,6 +1625,12 @@
         "before": "“Make it better” on a second pass — model restyles everything you liked.",
         "after": "Constraints: Do not change the headline, palette, or primary CTA label. Only tighten spacing and secondary copy.",
         "body": "Greg: put do-not-adjust rules in Constraints so revision passes don’t thrash locked decisions. Cite: Figma blog / TC-EBC repo."
+      },
+      {
+        "title": "Revision without constraints",
+        "before": "Agent rewrites the whole app shell.",
+        "after": "Only empty-state art+copy move.",
+        "body": "Constraints = what must not change. Cite Figma blog + tc-ebc repo."
       }
     ],
     "antiPatterns": [
@@ -1443,6 +1643,889 @@
       "Revisions name do-not-touch items.",
       "Tone anchors are explicit if brand matters.",
       "Constraints name what must stay fixed."
+    ]
+  },
+  {
+    "slug": "designing-depth",
+    "number": 25,
+    "stage": "Define",
+    "title": "Design depth into flat frames",
+    "principle": "Interfaces are flat canvases pretending to be rooms. Rauno Freiberg’s Designing Depth argues you convey story and dimensionality the way film does: dirty the frame with layered foreground/background, blur backdrops to drop Z-axis, choreograph motion so layers read as stacked surfaces—not decorative chrome.",
+    "procedure": [
+      "Name the focal subject and the ambient layers that should sit in front of / behind it (props, out-of-focus objects, offset frames).",
+      "Lower non-focal surfaces on the Z-axis with blur, dim, or fade-to-infinite edges—especially when an overlay claims focus.",
+      "When revealing overlays, decide which backdrop layers stay interactive vs must de-emphasize (blur/dim signals not actionable).",
+      "Prefer reusing primary subjects as depth cues (e.g. offset browser frames that also communicate product abundance) over gimmick decorations.",
+      "Verify with a screenshot critic: does the composition feel layered, or still like stickers on a flat board?"
+    ],
+    "examplePrompts": [
+      "Audit this UI for flatness. Apply Designing Depth (Rauno Freiberg):\n1) Identify focal subject vs ambient foreground/background layers.\n2) Blur or dim backdrops when overlays open so Z-axis reads correctly.\n3) Add one intentional dirty-frame cue (offset surface, soft edge fade, out-of-focus prop) that also communicates product meaning—not ornament.\n4) Do not add purple chrome, glassmorphism, or decorative orbs.\nReturn: before/after notes + the CSS/structure changes.",
+      "This modal feels pasted on. Recompose so the backdrop clearly sits behind: dim + slight blur the page, keep only the modal actionable, fade the modal bottom edge if content continues. Cite depth-of-field intent in a one-line comment."
+    ],
+    "promptWhy": [
+      "Forces the model to treat depth as composition (focal vs ambient) instead of dumping glass/shadow chrome.",
+      "Names the affordance signal (backdrop not actionable) so dim/blur is not decorative."
+    ],
+    "tips": [
+      "Film parallel: dirtying the frame with foreground obstruction carries emotion a pristine head-on shot lacks.",
+      "Blurred backdrops on overlays mimic natural depth of field and prevent false affordance on the page behind.",
+      "Depth cues should reinforce product story (abundance of previews, stacked layers)—not random decoration.",
+      "Public essay: https://rauno.me/craft/depth — paraphrase only; no endorsement."
+    ],
+    "sourceUrls": [
+      "https://rauno.me/craft/depth",
+      "https://rauno.me/craft"
+    ],
+    "related": [
+      "stagger-choreograph-motion",
+      "make-it-alive",
+      "remove-ai-tells",
+      "video-motion"
+    ],
+    "pairsWellWith": [
+      "stagger-choreograph-motion",
+      "critic-subagents",
+      "cut-elements"
+    ],
+    "workedExamples": [
+      {
+        "title": "Marketing frame that fell flat",
+        "before": "Browser frame + overlays dropped on a page with no Z separation—surfaces read as a sloppy afterthought.",
+        "after": "Inner background blurred (lowered on Z), bottom edge faded to feel infinite; offset frames and soft props reuse the primary subjects to show abundance.",
+        "body": "From Rauno’s Designing Depth (public, July 2024): depth comes from layered composition and meaningful reuse of subjects, not stickers. Cite: rauno.me/craft/depth."
+      },
+      {
+        "title": "Overlay without false affordance",
+        "body": "iOS-style context menus dim/blur the Home Screen so only the menu feels actionable. Skipping de-emphasis signals the whole backdrop is still interactive—which is wrong. Apply the same rule to web modals and drawers."
+      },
+      {
+        "title": "Quiet Folio restraint",
+        "body": "On this paper/ink desk, depth is hairline rules, folio numerals, and restrained motion—not frosted glass. Depth is not glassmorphism."
+      }
+    ],
+    "antiPatterns": [
+      "Adding glassmorphism / glow orbs and calling it depth.",
+      "Blur that does not change affordance (backdrop still looks clickable).",
+      "Decorative layers that do not communicate product meaning."
+    ],
+    "checklist": [
+      "Focal vs ambient layers named in the brief or PR.",
+      "Overlays de-emphasize backdrop (dim/blur) when backdrop is not actionable.",
+      "At least one depth cue reuses a primary subject, not a random ornament.",
+      "Screenshot critic no longer tags the layout as flat stickers."
+    ]
+  },
+  {
+    "slug": "stagger-choreograph-motion",
+    "number": 26,
+    "stage": "Define",
+    "title": "Stagger and choreograph motion like nature",
+    "principle": "Nature rarely moves in perfect synchrony—schools of fish and flocks of birds have slight timing differences. Rauno Freiberg’s Designing Depth extends this to UI: choreograph discrete states over a gesture, stagger sibling reveals, and reverse choreography based on where the trigger sits so motion teaches layering instead of feeling like a single keyframed pop.",
+    "procedure": [
+      "Deconstruct the interaction into discrete states tied to the gesture (not one monolithic keyframe).",
+      "Prioritize motion near the trigger location first so the interface feels like it heard the user.",
+      "Stagger sibling items that look alike (grids, icon rows) with slight delays—enough to read as depth, not enough to feel slow.",
+      "When the same overlay can open from different triggers, reverse or retune choreography to match each origin.",
+      "Honor prefers-reduced-motion: collapse stagger to opacity-only or instant."
+    ],
+    "examplePrompts": [
+      "Rewrite this enter animation as a choreographed sequence (Rauno / Designing Depth):\n- List 3–4 discrete states tied to the user gesture.\n- Stagger sibling cards ≤40ms apart so the grid does not pop as one slab.\n- Start motion nearest the click/focus origin.\n- Keep total under ~300ms; transform+opacity only.\n- Add prefers-reduced-motion fallback (opacity only or none).\nExplain each state’s job in one line.",
+      "This list fades in all at once and feels fake. Stagger item opacity/translate like a flock takeoff—subtle, nature-timed—without making the page feel slower. Return CSS/WAAPI timings."
+    ],
+    "promptWhy": [
+      "Discrete states + origin-first motion stops the model from shipping one generic fade-in keyframe.",
+      "Named stagger budget and reduced-motion keep craft from becoming sluggish decoration."
+    ],
+    "tips": [
+      "OpenAI-style staggered grid fades add depth without feeling slower—users can tell what updated.",
+      "iPhone unlock staggers Home Screen apps to make a swipe feel three-dimensional.",
+      "iPad Dock sliding away vs blurring with Control Centre communicates different layer metaphors—match motion to affordance.",
+      "Cite: https://rauno.me/craft/depth — public essay."
+    ],
+    "sourceUrls": [
+      "https://rauno.me/craft/depth",
+      "https://rauno.me/craft"
+    ],
+    "related": [
+      "designing-depth",
+      "video-motion",
+      "make-it-alive",
+      "purposeful-motion"
+    ],
+    "pairsWellWith": [
+      "designing-depth",
+      "animation-restraint",
+      "transition-recipes-as-skills"
+    ],
+    "workedExamples": [
+      {
+        "title": "Home Screen swipe vs Search tap",
+        "before": "Same overlay always plays one canned keyframe regardless of how you opened it.",
+        "after": "Swipe-down prioritizes top-of-screen feedback then suggestions; tap-Search reverses—input morphs first near the footer trigger, suggestions slightly delayed.",
+        "body": "Rauno documents iOS Search choreography differing by gesture origin. Choreography teaches where attention should go. Cite: rauno.me/craft/depth."
+      },
+      {
+        "title": "Staggered grid load",
+        "body": "Sibling cards that appear in perfect sync feel synthetic. Slight stagger (inspired by natural flocks / OpenAI grid examples in the essay) clarifies how many items arrived and adds motion depth without adding wait."
+      },
+      {
+        "title": "Failure: stagger as delay tax",
+        "body": "If staggered reveals push perceived wait past ~300ms or block keyboard-driven actions, delete the stagger. Depth never outranks responsiveness."
+      }
+    ],
+    "antiPatterns": [
+      "One keyframed pop for every enter, ignoring gesture origin.",
+      "Long cascading delays that make the UI feel laggy.",
+      "Ignoring prefers-reduced-motion."
+    ],
+    "checklist": [
+      "Interaction broken into named states, not one blob animation.",
+      "Motion starts near the trigger.",
+      "Sibling stagger is subtle and timed under a responsive budget.",
+      "Reduced-motion path verified."
+    ]
+  },
+  {
+    "slug": "purposeful-motion",
+    "number": 27,
+    "stage": "Define",
+    "title": "Give every animation a purpose",
+    "principle": "Emil Kowalski’s Great Animations / You Don’t Need Animations thesis: motion must earn its place—explain a feature, signal state change, keep spatial consistency, or (rarely) delight on low-frequency surfaces. Frequency of use, perception of speed (ease-out, usually under 300ms), transform+opacity performance, interruptibility, and prefers-reduced-motion decide whether motion helps or burns trust.",
+    "procedure": [
+      "Write the purpose in one sentence before coding motion (explain / state-change / spatial continuity / rare delight).",
+      "Estimate frequency: daily-driver controls and keyboard actions default to no animation.",
+      "Prefer ease-out and durations under ~300ms for UI; reserve slower/elegant easing for cohesive low-frequency moments (e.g. Sonner-like toast personality).",
+      "Animate transform and opacity only; prefer CSS transitions (interruptible) over one-shot keyframes for dynamic UI.",
+      "Add prefers-reduced-motion fallback; review the next day with fresh eyes or a critic screenshot."
+    ],
+    "examplePrompts": [
+      "Review every animation in this UI against Emil Kowalski’s purposeful-motion bar:\nFor each motion, answer: purpose? frequency? duration/easing? transform+opacity only? interruptible? reduced-motion?\nDelete any motion that fails purpose or fires on high-frequency/keyboard paths.\nKeep total UI transitions ≤300ms with ease-out unless you justify a cohesive exception.\nReturn a kill-list + kept motions with one-line purposes.",
+      "Add enter/exit to this toast. Requirements: spatial consistency (same direction in and out), CSS transition not keyframe, ease that matches the component personality, prefers-reduced-motion → opacity only. Explain purpose in one line."
+    ],
+    "promptWhy": [
+      "Checklist forces delete-first review instead of ‘make it smoother’ which usually adds lag.",
+      "Toast brief encodes Sonner-style principles (spatial continuity, transitions, personality) without copying proprietary code."
+    ],
+    "tips": [
+      "Faster spinner can feel like harder work even when load time is identical—perception matters.",
+      "Tooltip pattern: delay first open; subsequent sibling tooltips open with no delay/animation.",
+      "Never animate keyboard-initiated actions repeated hundreds of times a day (Raycast example).",
+      "Public: https://emilkowal.ski/ui/great-animations and https://emilkowal.ski/ui/you-dont-need-animations — no endorsement."
+    ],
+    "sourceUrls": [
+      "https://emilkowal.ski/ui/great-animations",
+      "https://emilkowal.ski/ui/you-dont-need-animations",
+      "https://emilkowal.ski/"
+    ],
+    "related": [
+      "animation-restraint",
+      "stagger-choreograph-motion",
+      "video-motion",
+      "make-it-alive"
+    ],
+    "pairsWellWith": [
+      "animation-restraint",
+      "transition-recipes-as-skills",
+      "critic-subagents"
+    ],
+    "workedExamples": [
+      {
+        "title": "Marketing explain vs daily chrome",
+        "before": "Same 400ms ease-in fade on marketing hero and on every command-palette keystroke.",
+        "after": "Keep purposeful explain-motion on marketing; strip palette/keyboard motion entirely; UI chrome ≤300ms ease-out.",
+        "body": "Emil: purpose + frequency first. Linear marketing animation that teaches a feature can justify motion; Raycast-like daily tools should not animate open. Cite public essays on emilkowal.ski."
+      },
+      {
+        "title": "Toast spatial consistency",
+        "body": "Sonner-style enter/exit from the same direction makes swipe-to-dismiss intuitive. Purpose is continuity, not decoration. Prefer transitions so rapid toasts interrupt cleanly."
+      },
+      {
+        "title": "Performance trap",
+        "body": "Animating layout properties or main-thread springs while the page loads drops frames. Stick to transform/opacity; hardware-accelerated CSS/WAAPI when the main thread is busy (Emil’s Vercel tab example paraphrased)."
+      }
+    ],
+    "antiPatterns": [
+      "Animating everything that mounts.",
+      "ease-in dropdowns that feel sluggish at the moment of response.",
+      "Keyframes on rapidly retargeted UI (toasts, toggles) that restart from zero."
+    ],
+    "checklist": [
+      "Every kept animation has a written purpose.",
+      "High-frequency and keyboard paths are animation-free.",
+      "Durations generally ≤300ms with responsive easing.",
+      "transform/opacity only; reduced-motion path present.",
+      "Fresh-eyes or critic pass done."
+    ]
+  },
+  {
+    "slug": "animation-restraint",
+    "number": 28,
+    "stage": "Deliver",
+    "title": "Default to no animation",
+    "principle": "The best animation is often no animation. Emil Kowalski’s You Don’t Need Animations: when users open a tool with a clear goal hundreds of times a day, delight becomes friction. Frequency of use is the deciding variable—hover flair, list selection, and keyboard navigation usually lose to instant response. Ship restraint on purpose.",
+    "procedure": [
+      "List surfaces by daily frequency (power tools, lists, shortcuts vs rare feedback, onboarding, marketing).",
+      "Delete motion on high-frequency and keyboard-driven paths by default.",
+      "Keep motion only where purpose is clear and frequency is low enough that delight won’t sour.",
+      "If unsure, A/B with yourself: toggle J/K style open with and without motion—pick the one that still feels good after twenty reps.",
+      "Document the ‘no motion’ decisions so the next agent doesn’t ‘polish’ them back in."
+    ],
+    "examplePrompts": [
+      "Apply animation restraint (Emil Kowalski — You Don’t Need Animations):\n1) Rank every animated element by how often a power user will see it per day.\n2) Remove animations from anything likely >20×/day and from all keyboard-initiated actions.\n3) Keep at most 1–2 low-frequency delight motions if they have a purpose.\n4) Do not replace deleted motion with slower ‘elegant’ fades.\nReturn a before/after inventory.",
+      "This command palette animates on open and on highlight move. Strip both. Make highlight follow keys instantly. Justify any remaining motion in one sentence or delete it."
+    ],
+    "promptWhy": [
+      "Frequency ranking makes delete decisions mechanical instead of taste-argumentative.",
+      "Palette example targets the classic AI failure: decorative motion on a workhorse control."
+    ],
+    "tips": [
+      "Raycast opens with no animation—and that is the optimal daily experience.",
+      "Rare morphing feedback widgets can delight; the same morph every hour becomes annoyance.",
+      "Restraint pairs with remove-ai-tells: motion-as-chrome is an AI tell.",
+      "Public essay: https://emilkowal.ski/ui/you-dont-need-animations"
+    ],
+    "sourceUrls": [
+      "https://emilkowal.ski/ui/you-dont-need-animations",
+      "https://emilkowal.ski/ui/great-animations",
+      "https://emilkowal.ski/"
+    ],
+    "related": [
+      "purposeful-motion",
+      "remove-ai-tells",
+      "cut-elements",
+      "last-mile-manual"
+    ],
+    "pairsWellWith": [
+      "purposeful-motion",
+      "remove-ai-tells",
+      "critic-subagents"
+    ],
+    "workedExamples": [
+      {
+        "title": "Command palette vs marketing hero",
+        "before": "Both use 300ms fades because ‘polish’.",
+        "after": "Palette: instant. Hero explain-motion: kept with a purpose sentence.",
+        "body": "Emil contrasts daily tools (no animation) with purposeful marketing motion. Frequency splits the decision. Cite: emilkowal.ski/ui/you-dont-need-animations."
+      },
+      {
+        "title": "List highlight lag",
+        "body": "Arrow-key list selection with animated highlight feels delayed and disconnected. Instant highlight wins for high-frequency navigation—demoed in the public essay."
+      },
+      {
+        "title": "Quiet Folio desk",
+        "body": "This catalog’s motion lab uses short, reduced-motion-aware recipes. Most chrome stays still; restraint is part of the letterpress aesthetic."
+      }
+    ],
+    "antiPatterns": [
+      "Adding enter animations to every panel ‘for consistency’.",
+      "Animating keyboard highlight or focus rings with duration.",
+      "Reintroducing deleted motion in a later ‘make it alive’ pass without re-checking frequency."
+    ],
+    "checklist": [
+      "Frequency inventory exists for animated surfaces.",
+      "Keyboard paths are instant.",
+      "High-frequency UI has no decorative motion.",
+      "Kept motions have purpose sentences.",
+      "Decisions documented for future agents."
+    ]
+  },
+  {
+    "slug": "garden-status-labels",
+    "number": 29,
+    "stage": "Deliver",
+    "title": "Label epistemic status in public",
+    "principle": "Maggie Appleton’s digital-garden ethos: publish imperfect work, but make incompleteness legible. Seedling / budding / evergreen (or draft / certainty / effort tags à la Gwern and Devon Zuegel) tell readers how done a note is. For AI craft desks, status labels stop agents and humans from treating a half-formed prompt pack like canon.",
+    "procedure": [
+      "Pick a small status vocabulary (e.g. seedling / budding / evergreen) and define each in one line.",
+      "Put status + planted/last-tended dates on every public craft note, technique draft, or prompt pack.",
+      "Optionally add certainty or effort tags when claims could be over-read as settled truth.",
+      "Update status when you tend the note—growth is visible, not hidden behind a silent edit.",
+      "Teach agents: never upgrade a seedling to evergreen without human or critic review."
+    ],
+    "examplePrompts": [
+      "Add garden status labels (Maggie Appleton ethos) to these docs:\n- Vocabulary: seedling (rough), budding (clarified), evergreen (reasonably complete, still tendable).\n- Each page gets status + planted date + last-tended date in the header.\n- Do not rewrite seedling content to sound finished—label honesty beats fake polish.\nReturn the header pattern and apply it.",
+      "Audit this technique page: if worked examples are thin or sources are partial, set status to budding and add a one-line coverage note. Never imply paywalled depth you do not have."
+    ],
+    "promptWhy": [
+      "Forces honesty about completeness—the failure mode of AI catalogs is sounding finished when thin.",
+      "Ties status to source coverage so Deliver-stage pages cannot bluff past paywalls."
+    ],
+    "tips": [
+      "Gardens favour topography over timelines—status matters more than publish date.",
+      "Learning in public only works if imperfection is disclosed (Appleton’s pattern 3).",
+      "Pair with sources.json coverage notes already used in this catalog.",
+      "Public: https://maggieappleton.com/garden-history — no endorsement.",
+      "Keep Quiet Folio paper/ink if applying on this desk—no purple chrome."
+    ],
+    "sourceUrls": [
+      "https://maggieappleton.com/garden-history",
+      "https://maggieappleton.com/"
+    ],
+    "related": [
+      "illustrate-the-invisible",
+      "hand-rewrite-copy",
+      "keep-working-alongside",
+      "remove-ai-tells"
+    ],
+    "pairsWellWith": [
+      "hand-rewrite-copy",
+      "last-mile-manual",
+      "critic-subagents"
+    ],
+    "workedExamples": [
+      {
+        "title": "Seedling vs evergreen technique",
+        "before": "Thin TC-EBC stub presented with the same chrome as a full Anshu technique—readers assume equal depth.",
+        "after": "Budding label + coverage note (‘public Figma blog paraphrase; no course reprint’) sets expectations.",
+        "body": "Appleton: gardens make imperfection known. This catalog’s sources already use coverage fields; status labels extend that to the page chrome."
+      },
+      {
+        "title": "Planted / last tended",
+        "body": "Maggie’s own essays show planted and last-tended timestamps so readers see growth. Agents should bump last-tended when they deepen a technique."
+      },
+      {
+        "title": "Terms of service for gardens",
+        "body": "Shawn Wang’s digital gardening TOS (cited in Appleton’s essay) asks writers for epistemic disclosure and readers for constructive critique—useful norms for public craft desks."
+      }
+    ],
+    "antiPatterns": [
+      "Shipping unfinished prompt packs with authoritative tone and no status.",
+      "Using status as decoration without definitions.",
+      "Silently editing evergreen pages into contradiction without a tend note."
+    ],
+    "checklist": [
+      "Status vocabulary defined on the desk.",
+      "Public craft pages show status + dates.",
+      "Coverage/paywall honesty matches sources notes.",
+      "Agents forbidden from silent evergreen upgrades."
+    ]
+  },
+  {
+    "slug": "illustrate-the-invisible",
+    "number": 30,
+    "stage": "Discover",
+    "title": "Illustrate invisible concepts before you prompt polish",
+    "principle": "Maggie Appleton’s How to Draw Invisible Programming Concepts: abstract ideas become drawable when you pick a concrete source metaphor for a target concept (source → target), encoding relationships—not mascots. Agents default to buzzword gloss; a metaphor brief with teaching frames forces specificity before UI chrome.",
+    "procedure": [
+      "Name the target concept in plain language (one sentence, no product nouns).",
+      "Brainstorm source metaphors; keep ones whose relationships map (containers, flows, hierarchies)—reject cute mascots that could advertise any product.",
+      "Label source vs target explicitly (Appleton’s fountain/target pattern) for each mapping.",
+      "Describe 1–3 teaching frames (setup → change → result) before prompting UI.",
+      "Only then bind components to those frames; kill gloss badges."
+    ],
+    "examplePrompts": [
+      "Before designing UI for this feature, run illustrate-the-invisible (Maggie Appleton lineage):\n1) One-sentence plain explanation with no brand words.\n2) Metaphor options (3) with why each fits the relationships.\n3) Pick one; describe three teaching frames (setup → change → result).\n4) List UI elements that must map to those frames.\nDo not invent screenshots; stay textual if you cannot draw.",
+      "This landing page explains nothing—only adjectives. Replace the hero with a three-step illustrated explanation of what the product does to the user’s stuff. Kill sparkle badges."
+    ],
+    "promptWhy": [
+      "Metaphor-before-UI blocks generic SaaS section templates.",
+      "Teaching frames give Discover-stage agents a structure Lenny-style essays use visually."
+    ],
+    "tips": [
+      "Metaphors are frames: source lets you see the target; bad sources smuggle wrong relationships.",
+      "Programming is already a stack of metaphors—illustrated ones sit on top for humans (Appleton).",
+      "Digital gardens welcome diagrams and mixed media (intercropping pattern in garden-history).",
+      "Public: https://maggieappleton.com/drawinginvisibles1 — paraphrase methods; don’t lift assets.",
+      "Keep Quiet Folio paper/ink if applying on this desk—no purple chrome."
+    ],
+    "sourceUrls": [
+      "https://maggieappleton.com/drawinginvisibles1",
+      "https://maggieappleton.com/garden-history",
+      "https://maggieappleton.com/"
+    ],
+    "related": [
+      "garden-status-labels",
+      "sketch-what-you-cant-describe",
+      "ambitious-prompts",
+      "thinking-before-prompt"
+    ],
+    "pairsWellWith": [
+      "sketch-what-you-cant-describe",
+      "wireframe-first",
+      "seed-strings"
+    ],
+    "workedExamples": [
+      {
+        "title": "Feature page without a metaphor",
+        "before": "‘AI-powered insights’ + three emoji cards.",
+        "after": "Plain sentence + conveyor-belt metaphor frames showing raw notes → sorted shelves → weekly digest; UI mirrors the frames.",
+        "body": "From drawinginvisibles1: CSS selectors as painting parts of a house; Vue-Router as stations on a metro—source metaphors carry structure. Apply the same discipline to product Explain pages. Cite: maggieappleton.com/drawinginvisibles1."
+      },
+      {
+        "title": "Weak mascot test",
+        "body": "If your robot mascot could advertise any SaaS tool, the symbol failed. Relationships in the metaphor must match the system’s actual transforms."
+      },
+      {
+        "title": "Textual frames when you cannot draw",
+        "body": "Agents can still output frame descriptions and ASCII/diagram structure. The point is conceptual clarity before chrome—not Illustrator skill."
+      }
+    ],
+    "antiPatterns": [
+      "Jumping to UI polish with only adjective briefs.",
+      "Decorative illustrations that don’t teach relationships.",
+      "Copying someone else’s illustrated assets."
+    ],
+    "checklist": [
+      "Plain-language concept sentence exists.",
+      "Metaphor chosen for structural fit.",
+      "Three teaching frames described.",
+      "UI maps to frames; gloss badges removed."
+    ]
+  },
+  {
+    "slug": "hierarchy-with-weight",
+    "number": 31,
+    "stage": "Define",
+    "title": "Build hierarchy with weight and color, not size",
+    "principle": "Refactoring UI’s public tip lineage (Wathan/Schoger): relying on font size alone for hierarchy is a common failure. Use color and weight—typically two or three text colors (primary dark, secondary grey, ancillary lighter)—and keep size steps few. On colored backgrounds, never use raw grey text; reduce opacity of white or pick a hue-matched mute instead.",
+    "procedure": [
+      "Audit text roles: primary / secondary / ancillary—assign color+weight before touching font sizes.",
+      "Limit yourself to two or three type sizes; push contrast through weight and ink value.",
+      "On colored surfaces, replace grey with white-at-opacity or a hand-picked tint of the background hue.",
+      "Map actions to a hierarchy pyramid: one primary, few secondary, tertiary as links.",
+      "Screenshot-critic: can you still parse hierarchy if all sizes were equalized?"
+    ],
+    "examplePrompts": [
+      "Refactor typography hierarchy (Refactoring UI public tips):\n- Roles: primary / secondary / ancillary via color+weight, not five font sizes.\n- Max three sizes on this view.\n- If text sits on a colored background, forbid grey—use white opacity or hue-matched mute.\n- Buttons: one solid primary, outline/low-contrast secondary, link-style tertiary.\nReturn token changes + rationale.",
+      "This card uses size for every level and grey labels on a blue header. Fix hierarchy with weight/color; hue-match the muted header text."
+    ],
+    "promptWhy": [
+      "Caps size steps so models stop shouting with 5xl/4xl/3xl ladders.",
+      "Names the grey-on-color failure mode explicitly—models love soft grey everywhere."
+    ],
+    "tips": [
+      "Public Medium tip ‘7 practical tips for cheating at design’ and refactoringui.com free previews cover these rules.",
+      "De-emphasize to emphasize: quiet surroundings make the primary loud without neon.",
+      "Labels are a last resort—prefer content that explains itself.",
+      "No endorsement of the paid book; only public tips paraphrased."
+    ],
+    "sourceUrls": [
+      "https://medium.com/refactoring-ui/7-practical-tips-for-cheating-at-design-40c736799886",
+      "https://refactoringui.com/",
+      "https://refactoringui.com/previews/building-your-color-palette/"
+    ],
+    "related": [
+      "start-with-whitespace",
+      "fewer-borders",
+      "specify-the-look",
+      "remove-ai-tells"
+    ],
+    "pairsWellWith": [
+      "start-with-whitespace",
+      "hand-rewrite-copy",
+      "cut-elements"
+    ],
+    "workedExamples": [
+      {
+        "title": "Size ladder → ink ladder",
+        "before": "Headline 3xl, sub 2xl, meta xl, all near-black; hierarchy muddy.",
+        "after": "Headline semibold ink, sub regular studio-ink, meta lighter grey—two sizes total.",
+        "body": "Public Refactoring UI tip: color and weight do the job size was forced to do. Cite Medium tip + site."
+      },
+      {
+        "title": "Grey on blue header",
+        "before": "Soft grey subtitle on saturated blue—looks dirty.",
+        "after": "White at ~70% opacity or lighter blue tint; hierarchy without clash.",
+        "body": "Don’t use grey text on colored backgrounds—public tip. Hue-matched mute keeps harmony."
+      },
+      {
+        "title": "Action pyramid",
+        "body": "One solid primary CTA, secondary outline, tertiary text link. Semantics matter less than hierarchy of importance."
+      }
+    ],
+    "antiPatterns": [
+      "Five font sizes to fake structure.",
+      "Grey body text on brand-colored banners.",
+      "Two solid primary buttons competing."
+    ],
+    "checklist": [
+      "Text roles mapped to ≤3 colors/weights.",
+      "≤3 type sizes on the view.",
+      "No grey on colored backgrounds.",
+      "Actions follow primary/secondary/tertiary pyramid."
+    ]
+  },
+  {
+    "slug": "start-with-whitespace",
+    "number": 32,
+    "stage": "Define",
+    "title": "Start with too much whitespace",
+    "principle": "Refactoring UI / Steve Schoger public guidance: developers stop tightening spacing too early. Start with way too much whitespace, then remove until it feels tight but breathable. Establish a spacing scale; avoid ambiguous gaps; you don’t have to fill the whole screen.",
+    "procedure": [
+      "Apply an intentionally excessive padding/gap pass (cards, sections, button internals).",
+      "Define a spacing scale (e.g. 4/8/12/16/24/32/48) and snap every gap to it.",
+      "Tighten only until related groups read as groups and unrelated ones separate—stop before cramped.",
+      "Leave unused canvas when content doesn’t need full-bleed density.",
+      "Critic check: does anything feel pressed to an edge?"
+    ],
+    "examplePrompts": [
+      "Spacing refactor (Refactoring UI public tips):\n1) Double padding inside cards/modals/sections.\n2) Snap all gaps to a declared spacing scale.\n3) Tighten only until grouping is clear—prefer too much air over cramped AI dashboards.\n4) Do not fill empty regions with decorative gradients.\nReturn before/after spacing tokens.",
+      "This form feels anxious. Add generous internal padding, increase vertical rhythm between fields, and delete divider lines that were compensating for tight gaps."
+    ],
+    "promptWhy": [
+      "Double-then-tighten counters the model prior toward dense dashboards.",
+      "Pairs spacing fix with deleting compensatory borders—common AI tell."
+    ],
+    "tips": [
+      "Lack of whitespace is one of the biggest developer mistakes Schoger calls out in public talks.",
+      "Ambiguous spacing (equal gaps between unlike groups) confuses hierarchy.",
+      "Quiet Folio desk uses generous measure and section air on purpose.",
+      "Public: Medium tips + refactoringui.com — no paid-book quotes.",
+      "Schoger CSS Day talk demos excess air then tighten — public YouTube."
+    ],
+    "sourceUrls": [
+      "https://medium.com/refactoring-ui/7-practical-tips-for-cheating-at-design-40c736799886",
+      "https://refactoringui.com/",
+      "https://www.youtube.com/watch?v=7Z9rrryIOC4"
+    ],
+    "related": [
+      "hierarchy-with-weight",
+      "fewer-borders",
+      "cut-elements",
+      "remove-ai-tells"
+    ],
+    "pairsWellWith": [
+      "fewer-borders",
+      "hierarchy-with-weight",
+      "cut-elements"
+    ],
+    "workedExamples": [
+      {
+        "title": "Cramped card → breathing card",
+        "before": "16px everywhere; fields kiss borders; dividers everywhere.",
+        "after": "32px card padding, 24px field gaps on scale; dividers removed where space separates.",
+        "body": "Start with too much white space, then remove—public Refactoring UI layout advice paraphrased."
+      },
+      {
+        "title": "Don’t fill the screen",
+        "body": "A narrow reading column on paper canvas can beat a stretched full-bleed grid. Empty space is a design material."
+      },
+      {
+        "title": "Scale beats vibes",
+        "body": "Snapping to a spacing system prevents 13px/17px/21px junk gaps models invent."
+      },
+      {
+        "title": "Form anxiety",
+        "before": "Fields stacked with 8px gaps and a border on every group.",
+        "after": "24px field rhythm, 32px section padding, borders removed where space groups.",
+        "body": "Public Refactoring UI spacing advice: start with too much whitespace."
+      }
+    ],
+    "antiPatterns": [
+      "Tightening until edges feel pressed.",
+      "Using borders instead of space to separate.",
+      "Filling voids with gradient chrome.",
+      "Using unique magic-number gaps instead of a scale."
+    ],
+    "checklist": [
+      "Excess-air pass happened before tighten.",
+      "Spacing scale declared and applied.",
+      "No content glued to container edges.",
+      "Critic OK on breathing room.",
+      "Ambiguous equal gaps between unlike groups removed."
+    ]
+  },
+  {
+    "slug": "fewer-borders",
+    "number": 33,
+    "stage": "Deliver",
+    "title": "Use fewer borders",
+    "principle": "Refactoring UI public tip: borders are a heavy default. Prefer box shadow, contrasting background regions, or simply more space. Question every border—does it earn its visual cost? Partial, hairline borders beat cages.",
+    "procedure": [
+      "Inventory all borders on the view.",
+      "For each, try in order: more space, background contrast, soft shadow, then hairline if still needed.",
+      "Prefer separating list rows with padding over full-width rules.",
+      "When a border stays, make it subtle (light grey, thin, maybe partial).",
+      "Re-check with remove-ai-tells: cages and card grids are slop fingerprints."
+    ],
+    "examplePrompts": [
+      "Border diet (Refactoring UI):\n- List every border/divider.\n- Replace with spacing or background contrast where possible.\n- Keep at most hairline separators for true section breaks.\n- No double-boxed cards inside bordered sections.\nReturn a kill-list of removed borders.",
+      "This settings page is a stack of outlined boxes. Flatten: one surface, spacing for groups, hairline only between major sections.",
+      "Border diet second pass on screenshots only: circle every remaining box outline. Keep at most one hairline system; delete the rest for space or background tint."
+    ],
+    "promptWhy": [
+      "Kill-list format makes deletion concrete.",
+      "Flattening nested boxes attacks a frequent AI layout tell.",
+      "Screenshot circling makes residual cages visible to a critic."
+    ],
+    "tips": [
+      "Use fewer borders—official Refactoring UI marketing/public tip.",
+      "Accent borders can add color without painting whole surfaces (public tip family).",
+      "This desk uses hairline rules and double rules sparingly as letterpress, not cages.",
+      "Public sources only; no endorsement.",
+      "Accent borders can introduce brand color without painting whole fills (public Refactoring UI tip family)."
+    ],
+    "sourceUrls": [
+      "https://refactoringui.com/",
+      "https://medium.com/refactoring-ui/7-practical-tips-for-cheating-at-design-40c736799886"
+    ],
+    "related": [
+      "start-with-whitespace",
+      "hierarchy-with-weight",
+      "remove-ai-tells",
+      "cut-elements"
+    ],
+    "pairsWellWith": [
+      "start-with-whitespace",
+      "remove-ai-tells",
+      "cut-elements"
+    ],
+    "workedExamples": [
+      {
+        "title": "Card cage stack",
+        "before": "Every widget in a 1px border on a bordered panel.",
+        "after": "Panel background only; widgets separated by 16–24px; one hairline above footer actions.",
+        "body": "Public tip: try shadow, contrasting backgrounds, or space instead of borders."
+      },
+      {
+        "title": "List without rules",
+        "body": "Row padding alone often separates items cleaner than dividers—especially on paper/ink UIs."
+      },
+      {
+        "title": "When borders stay",
+        "body": "Inputs on white-on-white may need a subtle edge or soft fill; make it one intentional treatment, not a unique border per control."
+      },
+      {
+        "title": "Quiet Folio hairlines",
+        "body": "This desk uses double rules and hairlines as letterpress punctuation—not a cage around every card."
+      }
+    ],
+    "antiPatterns": [
+      "Border as the default separator.",
+      "Nested boxes for ‘structure’.",
+      "Heavy black rules competing with type.",
+      "Replacing every deleted border with a heavy shadow (still noise)."
+    ],
+    "checklist": [
+      "Border inventory completed.",
+      "Spacing/background tried before keeping a border.",
+      "No nested card cages.",
+      "Remaining borders are hairline/intentional.",
+      "Accent border if any is intentional and sparse."
+    ]
+  },
+  {
+    "slug": "alive-by-default",
+    "number": 34,
+    "stage": "Discover",
+    "title": "Draw things alive by default",
+    "principle": "Bret Victor’s Stop Drawing Dead Fish (public talk), cited by Nate Parrott as the north star for make-it-alive: everything we draw should be alive by default—responsive to input, showing dynamics, not static corpses of ideas. For AI design, refuse frozen mock energy: controls should behave, numbers should react, demos should move meaning.",
+    "procedure": [
+      "List every meaningful object on the screen and ask: what dynamic would prove it is alive?",
+      "Prefer interactive sketches over static comps when exploring (sliders that drive the picture, not captions that claim they do).",
+      "Surface intermediate state (hover, drag, partial progress) so the system feels continuous.",
+      "Kill dead decoration: illustrations that never respond are fish on ice.",
+      "Pair with inventing-on-principle: aliveness should serve a principle you can name."
+    ],
+    "examplePrompts": [
+      "Apply Bret Victor’s alive-by-default bar (Stop Drawing Dead Fish, via Nate’s make-it-alive lineage):\n- For each primary UI object, add one honest dynamic (input→visible change).\n- Replace any static ‘demo’ image with a control that actually drives the output.\n- No decorative motion without state change.\n- Honor prefers-reduced-motion with non-motion aliveness (values still update).\nReturn the object→dynamic map.",
+      "This settings mock shows a chart PNG. Replace it with live controls that recompute the chart. If you cannot wire data, simulate with deterministic local state—still alive, not a dead fish."
+    ],
+    "promptWhy": [
+      "Object→dynamic map stops ‘make it alive’ from becoming random animation.",
+      "Forces replacement of PNGs posing as products—a common AI deliverable failure."
+    ],
+    "tips": [
+      "Talk: https://www.youtube.com/watch?v=ZfytHvgHybA — public.",
+      "Already cited on make-it-alive; this technique isolates the Victor principle for Discover briefs.",
+      "Inventing on Principle (worrydream) pairs: principles drive the dynamics you choose.",
+      "No endorsement.",
+      "Keep Quiet Folio paper/ink if applying on this desk—no purple chrome."
+    ],
+    "sourceUrls": [
+      "https://www.youtube.com/watch?v=ZfytHvgHybA",
+      "https://worrydream.com/",
+      "https://claude.com/blog/how-the-product-designer-who-built-claude-design-uses-it-to-explore-ideas-before-building-them"
+    ],
+    "related": [
+      "make-it-alive",
+      "point-and-talk",
+      "purposeful-motion",
+      "animation-restraint"
+    ],
+    "pairsWellWith": [
+      "make-it-alive",
+      "purposeful-motion",
+      "critic-subagents"
+    ],
+    "workedExamples": [
+      {
+        "title": "Dead chart fish",
+        "before": "Hero shows a stylish static chart image.",
+        "after": "Sliders adjust parameters; chart redraws—demo is the product behavior.",
+        "body": "Victor’s talk argues against lifeless drawings of dynamic ideas. Nate cites it for Claude Design craft. Paraphrase only."
+      },
+      {
+        "title": "Reduced motion still alive",
+        "body": "Aliveness is state change, not bounce. Values, enables, and layouts can update instantly under reduced-motion."
+      },
+      {
+        "title": "This catalog’s motion lab",
+        "body": "Folio numerals and reveals are restrained proof of life—paired with animation-restraint so daily reading isn’t circus motion."
+      }
+    ],
+    "antiPatterns": [
+      "Static comps of interactive systems.",
+      "Animation without state meaning.",
+      "Claiming ‘delight’ while controls are dead."
+    ],
+    "checklist": [
+      "Object→dynamic map exists.",
+      "Primary demos are interactive or honestly simulated.",
+      "Decoration that never responds removed.",
+      "Reduced-motion path still shows state change."
+    ]
+  },
+  {
+    "slug": "transition-recipes-as-skills",
+    "number": 35,
+    "stage": "Deliver",
+    "title": "Hand agents transition recipes, not vibes",
+    "principle": "Jakub Antalik’s transitions.dev: essential UI transitions as copy-paste recipes (CSS/React) and coding-agent skills beat ‘make it smooth’ prompts. Give the agent a named free recipe, ink-adapted tokens, and reduced-motion rules so motion stays craft—not improvised slop.",
+    "procedure": [
+      "Pick a free transitions.dev recipe that matches the job (reveal, tab underline, success check, skeleton, etc.).",
+      "Paste or attach the recipe as an agent skill/reference; forbid inventing novel easing stacks when a recipe fits.",
+      "Adapt colors/easing to your design tokens (Quiet Folio: ink/paper, short durations).",
+      "Require prefers-reduced-motion handling from the recipe or your override.",
+      "Critic: motion should match purposeful-motion + animation-restraint—delete if frequency is too high.",
+      "Smoke-test interruptibility: trigger twice quickly—motion should retarget, not restart awkwardly."
+    ],
+    "examplePrompts": [
+      "Implement motion using transitions.dev free recipes (Jakub Antalik)—not freeform animation:\n1) Choose recipe: texts-reveal OR number-pop-in OR skeleton-reveal OR success-check (free tier only).\n2) Adapt to tokens: paper #FAF9F7, ink #221C24, duration ≤240ms, ease-out.\n3) Wire prefers-reduced-motion.\n4) Do not use Pro recipes; do not add purple glow.\nReturn which recipe + diff.",
+      "Replace this custom keyframed bounce with the closest free transitions.dev pattern. If none fit, delete the animation per animation-restraint."
+    ],
+    "promptWhy": [
+      "Named recipe constraint stops model-invented bounce soup.",
+      "Token adaptation keeps Quiet Folio identity while reusing proven motion."
+    ],
+    "tips": [
+      "This site’s motion lab already adapts free recipes—see /motion and sources.",
+      "Agent-ready skills on transitions.dev are designed for coding agents.",
+      "Pair with Emil’s purpose/frequency checks before installing a recipe.",
+      "https://transitions.dev/ — free only; no endorsement.",
+      "Prefer CSS transitions for interruptible UI chrome; pair with purposeful-motion."
+    ],
+    "sourceUrls": [
+      "https://transitions.dev/",
+      "https://github.com/jakubantalik/transitions.dev",
+      "https://jakubantalik.com/"
+    ],
+    "related": [
+      "purposeful-motion",
+      "animation-restraint",
+      "video-motion",
+      "stagger-choreograph-motion"
+    ],
+    "pairsWellWith": [
+      "purposeful-motion",
+      "animation-restraint",
+      "make-it-alive"
+    ],
+    "workedExamples": [
+      {
+        "title": "Quiet Folio motion lab",
+        "before": "Agent invents springy purple fades.",
+        "after": "texts-reveal + number-pop-in adapted to ink tokens; reduced-motion honored.",
+        "body": "Catalog already cites transitions.dev free recipes in sources.json. This technique makes the method reusable in prompts."
+      },
+      {
+        "title": "No Pro leakage",
+        "body": "Hard rule: free recipes only. If the agent reaches for gated content, stop and simplify."
+      },
+      {
+        "title": "Recipe vs delete",
+        "body": "If frequency is high (keyboard nav), animation-restraint wins—even if a recipe exists."
+      },
+      {
+        "title": "Skeleton reveal on slow fetch",
+        "before": "Blank page then pop.",
+        "after": "Free skeleton-reveal recipe, ink-tinted bars, reduced-motion uses static placeholders.",
+        "body": "Recipe-as-skill keeps loading states craft-consistent. Cite transitions.dev free tier."
+      }
+    ],
+    "antiPatterns": [
+      "‘Make it silky’ with no recipe reference.",
+      "Mixing five easings on one page.",
+      "Using Pro/gated motion snippets."
+    ],
+    "checklist": [
+      "Named free recipe selected.",
+      "Tokens adapted; no purple chrome.",
+      "Reduced-motion verified.",
+      "Frequency check passed or motion deleted.",
+      "Recipe name recorded in PR/commit message."
+    ]
+  },
+  {
+    "slug": "screens-want-honesty",
+    "number": 36,
+    "stage": "Define",
+    "title": "Design for what screens want",
+    "principle": "Frank Chimero’s What Screens Want: screens are a material whose grain is flux—the capacity for change. Native screen craft manages movement, transformation, and changing data rather than dressing interfaces in skeuomorphic costumes. Designing for screens is choreography of change as much as composition of layouts.",
+    "procedure": [
+      "Name the flux: what must change on this screen (data, state, navigation, time)?",
+      "Center the design on expressing that change clearly—animation only when it communicates relationships.",
+      "Treat the screen as a soft material: prefer flexible type and layout over fake physical objects.",
+      "Cut skeuomorphic/AI chrome that fights flux (static costumes, glass toys, fake paper).",
+      "Cross-check with The Web’s Grain: choices should swing with what HTML/CSS make easy and resilient."
+    ],
+    "examplePrompts": [
+      "Apply Frank Chimero’s What Screens Want honesty pass:\n- Center the design on what changes (states/data), not on faux materials.\n- Replace skeuomorphic/AI chrome with typographic hierarchy + clear states.\n- Keep nesting only where it clarifies.\n- Empty/loading/error must be plainspoken.\nReturn cuts + state map.",
+      "This UI uses glass cards and fake paper tear edges. Rebuild as an honest screen: ink/paper tokens, hairlines, explicit empty state."
+    ],
+    "promptWhy": [
+      "Medium-honesty framing beats generic ‘simplify’.",
+      "Directly attacks skeuomorphic AI tells while pointing at Quiet Folio alternatives."
+    ],
+    "tips": [
+      "Screens don’t care what pixels look like—they want things to move/change (Chimero).",
+      "Companion essay The Web’s Grain extends flux to web-native humility.",
+      "Pairs with remove-ai-tells and purposeful-motion.",
+      "Public: frankchimero.com/blog/2013/what-screens-want/ — no endorsement.",
+      "Keep Quiet Folio paper/ink if applying on this desk—no purple chrome."
+    ],
+    "sourceUrls": [
+      "https://frankchimero.com/blog/2013/what-screens-want/",
+      "https://frankchimero.com/blog/2015/the-webs-grain/",
+      "https://frankchimero.com/"
+    ],
+    "related": [
+      "remove-ai-tells",
+      "designing-depth",
+      "hierarchy-with-weight",
+      "hand-rewrite-copy"
+    ],
+    "pairsWellWith": [
+      "remove-ai-tells",
+      "cut-elements",
+      "garden-status-labels"
+    ],
+    "workedExamples": [
+      {
+        "title": "Fake material → honest state",
+        "before": "Leather-texture notebook UI with no clear edit state.",
+        "after": "Paper/ink surface; explicit editing vs reading modes; fluid type measure.",
+        "body": "Chimero: flux is the grain of screens; skeuomorphs are container costumes. Lean into change (sorts, states, transitions that explain) over leather/glass drag. Cite 2013 essay."
+      },
+      {
+        "title": "Quiet Folio alignment",
+        "body": "This catalog’s letterpress desk is a metaphor worn lightly (folios, rules)—not a skeuomorphic printing press simulator."
+      },
+      {
+        "title": "Honest empty states",
+        "body": "Screens want truth about emptiness. ‘No techniques match’ beats an illustration that hides the lack."
+      }
+    ],
+    "antiPatterns": [
+      "Skeuomorphic costumes without state clarity.",
+      "Ornament that doesn’t change with data.",
+      "Masking errors with delightful animation."
+    ],
+    "checklist": [
+      "State/change map is the center.",
+      "No fake-material chrome.",
+      "Empty/loading/error copy is honest.",
+      "Nesting justified or removed."
     ]
   }
 ]

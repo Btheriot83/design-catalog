@@ -1,0 +1,80 @@
+{
+  "slug": "transition-recipes-as-skills",
+  "number": 35,
+  "stage": "Deliver",
+  "title": "Hand agents transition recipes, not vibes",
+  "principle": "Jakub Antalik’s transitions.dev: essential UI transitions as copy-paste recipes (CSS/React) and coding-agent skills beat ‘make it smooth’ prompts. Give the agent a named free recipe, ink-adapted tokens, and reduced-motion rules so motion stays craft—not improvised slop.",
+  "procedure": [
+    "Pick a free transitions.dev recipe that matches the job (reveal, tab underline, success check, skeleton, etc.).",
+    "Paste or attach the recipe as an agent skill/reference; forbid inventing novel easing stacks when a recipe fits.",
+    "Adapt colors/easing to your design tokens (Quiet Folio: ink/paper, short durations).",
+    "Require prefers-reduced-motion handling from the recipe or your override.",
+    "Critic: motion should match purposeful-motion + animation-restraint—delete if frequency is too high.",
+    "Smoke-test interruptibility: trigger twice quickly—motion should retarget, not restart awkwardly."
+  ],
+  "examplePrompts": [
+    "Implement motion using transitions.dev free recipes (Jakub Antalik)—not freeform animation:\n1) Choose recipe: texts-reveal OR number-pop-in OR skeleton-reveal OR success-check (free tier only).\n2) Adapt to tokens: paper #FAF9F7, ink #221C24, duration ≤240ms, ease-out.\n3) Wire prefers-reduced-motion.\n4) Do not use Pro recipes; do not add purple glow.\nReturn which recipe + diff.",
+    "Replace this custom keyframed bounce with the closest free transitions.dev pattern. If none fit, delete the animation per animation-restraint."
+  ],
+  "promptWhy": [
+    "Named recipe constraint stops model-invented bounce soup.",
+    "Token adaptation keeps Quiet Folio identity while reusing proven motion."
+  ],
+  "tips": [
+    "This site’s motion lab already adapts free recipes—see /motion and sources.",
+    "Agent-ready skills on transitions.dev are designed for coding agents.",
+    "Pair with Emil’s purpose/frequency checks before installing a recipe.",
+    "https://transitions.dev/ — free only; no endorsement.",
+    "Prefer CSS transitions for interruptible UI chrome; pair with purposeful-motion."
+  ],
+  "sourceUrls": [
+    "https://transitions.dev/",
+    "https://github.com/jakubantalik/transitions.dev",
+    "https://jakubantalik.com/"
+  ],
+  "related": [
+    "purposeful-motion",
+    "animation-restraint",
+    "video-motion",
+    "stagger-choreograph-motion"
+  ],
+  "pairsWellWith": [
+    "purposeful-motion",
+    "animation-restraint",
+    "make-it-alive"
+  ],
+  "workedExamples": [
+    {
+      "title": "Quiet Folio motion lab",
+      "before": "Agent invents springy purple fades.",
+      "after": "texts-reveal + number-pop-in adapted to ink tokens; reduced-motion honored.",
+      "body": "Catalog already cites transitions.dev free recipes in sources.json. This technique makes the method reusable in prompts."
+    },
+    {
+      "title": "No Pro leakage",
+      "body": "Hard rule: free recipes only. If the agent reaches for gated content, stop and simplify."
+    },
+    {
+      "title": "Recipe vs delete",
+      "body": "If frequency is high (keyboard nav), animation-restraint wins—even if a recipe exists."
+    },
+    {
+      "title": "Skeleton reveal on slow fetch",
+      "before": "Blank page then pop.",
+      "after": "Free skeleton-reveal recipe, ink-tinted bars, reduced-motion uses static placeholders.",
+      "body": "Recipe-as-skill keeps loading states craft-consistent. Cite transitions.dev free tier."
+    }
+  ],
+  "antiPatterns": [
+    "‘Make it silky’ with no recipe reference.",
+    "Mixing five easings on one page.",
+    "Using Pro/gated motion snippets."
+  ],
+  "checklist": [
+    "Named free recipe selected.",
+    "Tokens adapted; no purple chrome.",
+    "Reduced-motion verified.",
+    "Frequency check passed or motion deleted.",
+    "Recipe name recorded in PR/commit message."
+  ]
+}

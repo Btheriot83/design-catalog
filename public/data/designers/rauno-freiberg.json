@@ -1,7 +1,7 @@
 {
   "slug": "rauno-freiberg",
   "name": "Rauno Freiberg",
-  "status": "directory",
+  "status": "partial",
   "role": "Staff design engineer · Vercel · interaction craft",
   "bio": "Rauno Freiberg is an Estonian interaction designer and Staff Design Engineer at Vercel. His public site rauno.me collects craft notes, Field Notes, and projects including Devouring Details and work toward a History of Software Design exhibit. He writes about invisible details of interaction design and the discipline of making interfaces fast, consistent, and carefully finished.",
   "links": [
@@ -18,10 +18,13 @@
       "url": "https://github.com/rauno"
     }
   ],
-  "techniqueSlugs": [],
+  "techniqueSlugs": [
+    "designing-depth",
+    "stagger-choreograph-motion"
+  ],
   "highlights": [
     "Staff Design Engineer at Vercel; public craft site at rauno.me.",
-    "Known for detail-obsessed interaction writing (e.g. Invisible Details of Interaction Design).",
-    "Projects include Field Notes and History of Software Design."
+    "Catalogued techniques from Designing Depth (layered composition + motion choreography).",
+    "Known for detail-obsessed interaction writing; projects include Field Notes and History of Software Design."
   ]
 }

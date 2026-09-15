@@ -1,0 +1,72 @@
+{
+  "slug": "screens-want-honesty",
+  "number": 36,
+  "stage": "Define",
+  "title": "Design for what screens want",
+  "principle": "Frank Chimero’s What Screens Want: screens are a material whose grain is flux—the capacity for change. Native screen craft manages movement, transformation, and changing data rather than dressing interfaces in skeuomorphic costumes. Designing for screens is choreography of change as much as composition of layouts.",
+  "procedure": [
+    "Name the flux: what must change on this screen (data, state, navigation, time)?",
+    "Center the design on expressing that change clearly—animation only when it communicates relationships.",
+    "Treat the screen as a soft material: prefer flexible type and layout over fake physical objects.",
+    "Cut skeuomorphic/AI chrome that fights flux (static costumes, glass toys, fake paper).",
+    "Cross-check with The Web’s Grain: choices should swing with what HTML/CSS make easy and resilient."
+  ],
+  "examplePrompts": [
+    "Apply Frank Chimero’s What Screens Want honesty pass:\n- Center the design on what changes (states/data), not on faux materials.\n- Replace skeuomorphic/AI chrome with typographic hierarchy + clear states.\n- Keep nesting only where it clarifies.\n- Empty/loading/error must be plainspoken.\nReturn cuts + state map.",
+    "This UI uses glass cards and fake paper tear edges. Rebuild as an honest screen: ink/paper tokens, hairlines, explicit empty state."
+  ],
+  "promptWhy": [
+    "Medium-honesty framing beats generic ‘simplify’.",
+    "Directly attacks skeuomorphic AI tells while pointing at Quiet Folio alternatives."
+  ],
+  "tips": [
+    "Screens don’t care what pixels look like—they want things to move/change (Chimero).",
+    "Companion essay The Web’s Grain extends flux to web-native humility.",
+    "Pairs with remove-ai-tells and purposeful-motion.",
+    "Public: frankchimero.com/blog/2013/what-screens-want/ — no endorsement.",
+    "Keep Quiet Folio paper/ink if applying on this desk—no purple chrome."
+  ],
+  "sourceUrls": [
+    "https://frankchimero.com/blog/2013/what-screens-want/",
+    "https://frankchimero.com/blog/2015/the-webs-grain/",
+    "https://frankchimero.com/"
+  ],
+  "related": [
+    "remove-ai-tells",
+    "designing-depth",
+    "hierarchy-with-weight",
+    "hand-rewrite-copy"
+  ],
+  "pairsWellWith": [
+    "remove-ai-tells",
+    "cut-elements",
+    "garden-status-labels"
+  ],
+  "workedExamples": [
+    {
+      "title": "Fake material → honest state",
+      "before": "Leather-texture notebook UI with no clear edit state.",
+      "after": "Paper/ink surface; explicit editing vs reading modes; fluid type measure.",
+      "body": "Chimero: flux is the grain of screens; skeuomorphs are container costumes. Lean into change (sorts, states, transitions that explain) over leather/glass drag. Cite 2013 essay."
+    },
+    {
+      "title": "Quiet Folio alignment",
+      "body": "This catalog’s letterpress desk is a metaphor worn lightly (folios, rules)—not a skeuomorphic printing press simulator."
+    },
+    {
+      "title": "Honest empty states",
+      "body": "Screens want truth about emptiness. ‘No techniques match’ beats an illustration that hides the lack."
+    }
+  ],
+  "antiPatterns": [
+    "Skeuomorphic costumes without state clarity.",
+    "Ornament that doesn’t change with data.",
+    "Masking errors with delightful animation."
+  ],
+  "checklist": [
+    "State/change map is the center.",
+    "No fake-material chrome.",
+    "Empty/loading/error copy is honest.",
+    "Nesting justified or removed."
+  ]
+}

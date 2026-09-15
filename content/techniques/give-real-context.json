@@ -5,13 +5,15 @@
   "title": "Give Claude your real context",
   "principle": "If you’re designing a feature for an existing app or website, connect GitHub so Claude can fetch your components and existing screens and use them as a starting point—with a few tries it can recreate existing designs with pretty high fidelity. Web search and MCP connections work in Claude Design too when the design depends on outside information.",
   "procedure": [
-    "Connect GitHub so Claude can fetch real components and screens.",
-    "Start from those—not a parallel invented UI system.",
-    "Use web search / MCP when the design needs outside facts.",
-    "Iterate a few times to raise fidelity against the real product."
+    "Connect the real repo (GitHub) or paste the component paths that matter.",
+    "Point at existing screens/routes for the feature area before asking for net-new UI.",
+    "Require the model to name which components it will reuse.",
+    "Use web search / MCP when the design depends on outside facts (pricing, regs, sports data).",
+    "Iterate a few times comparing against production screenshots—not against memory."
   ],
   "examplePrompts": [
-    "I connected our GitHub repo. Pull the relevant components and existing screens for <feature area>. Redesign <flow> starting from those real patterns—match our component vocabulary before proposing net-new UI."
+    "I connected our GitHub repo. Pull the relevant components and existing screens for <feature area>. Redesign <flow> starting from those real patterns—match our component vocabulary before proposing net-new UI.",
+    "Open these production screenshots + the components listed in <paths>. List mismatches between the redesign draft and our real patterns. Prefer reuse over invention; propose at most one net-new component with justification."
   ],
   "tips": [
     "Real components beat imagined design systems when shipping into an existing app.",
@@ -31,19 +33,32 @@
     {
       "title": "GitHub-connected fidelity",
       "body": "Nate: connect GitHub; Claude fetches components/screens and can recreate existing designs with pretty high fidelity after a few tries. Web search and MCP work too. Cite: Anthropic blog."
+    },
+    {
+      "title": "Parallel UI system",
+      "before": "Agent invents a new Button API beside the design system.",
+      "after": "GitHub-connected pass reuses existing Button/Input; only the flow is new.",
+      "body": "Nate: connect GitHub so Claude fetches components/screens; high fidelity after a few tries. Cite Anthropic blog."
+    },
+    {
+      "title": "MCP for outside facts",
+      "body": "When the UI depends on live outside info, web search/MCP is first-class in Claude Design—do not hardcode stale facts into the mock."
     }
   ],
   "antiPatterns": [
     "Designing a feature in a vacuum beside the real app.",
-    "Describing the design system in prose instead of linking sources of truth."
+    "Describing the design system in prose instead of linking sources of truth.",
+    "One-shot redesign with no production comparison."
   ],
   "checklist": [
     "Real repo/components in context.",
     "Outside facts fetched when needed.",
-    "Fidelity checked against production UI."
+    "Fidelity checked against production UI.",
+    "Reuse list written before net-new components."
   ],
   "promptWhy": [
-    "Repo-as-context beats describing your design system from memory."
+    "Repo-as-context beats describing your design system from memory.",
+    "Screenshot+path audit catches parallel invented systems early."
   ],
   "pairsWellWith": [
     "design-system-from-assets",

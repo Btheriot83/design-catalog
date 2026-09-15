@@ -1,7 +1,7 @@
 {
   "slug": "maggie-appleton",
   "name": "Maggie Appleton",
-  "status": "directory",
+  "status": "partial",
   "role": "Designer · digital garden · tools for thought",
   "bio": "Maggie Appleton maintains maggieappleton.com as a digital garden of essays and notes on design, anthropomorphism, and tools for thought. Public work includes design engineering and illustrated essays that treat interfaces as cultural artifacts. She is often cited for making complex product and AI ideas visually legible without buzzword gloss.",
   "links": [
@@ -14,10 +14,13 @@
       "url": "https://x.com/Mappletons"
     }
   ],
-  "techniqueSlugs": [],
+  "techniqueSlugs": [
+    "garden-status-labels",
+    "illustrate-the-invisible"
+  ],
   "highlights": [
     "Digital garden of essays on design and tools for thought.",
-    "Illustrated explanations of product and AI concepts.",
+    "Catalogued techniques from garden ethos (status labels) and drawing invisible concepts (metaphor frames).",
     "Public craft voice for anti-slop clarity in interface writing."
   ]
 }

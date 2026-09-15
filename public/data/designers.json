@@ -70,6 +70,90 @@
     ]
   },
   {
+    "slug": "bret-victor",
+    "name": "Bret Victor",
+    "status": "partial",
+    "role": "Interface researcher · Dynamicland · worrydream",
+    "bio": "Bret Victor publishes at worrydream.com. He led the team that founded Dynamicland and invented Realtalk, a self-hosted spatial computing system. Previously at Apple he designed early iPad UI concepts and helped establish future-interfaces prototyping. Public talks include Inventing on Principle and Stop Drawing Dead Fish—widely cited against lifeless interface demos.",
+    "links": [
+      {
+        "label": "Site",
+        "url": "https://worrydream.com/"
+      },
+      {
+        "label": "CV",
+        "url": "https://worrydream.com/cv/"
+      }
+    ],
+    "techniqueSlugs": [
+      "alive-by-default"
+    ],
+    "highlights": [
+      "Dynamicland / Realtalk; prior Apple future-interfaces work.",
+      "Catalogued alive-by-default from Stop Drawing Dead Fish (public talk).",
+      "Essays: Ladder of Abstraction; Learnable Programming."
+    ]
+  },
+  {
+    "slug": "emil-kowalski",
+    "name": "Emil Kowalski",
+    "status": "partial",
+    "role": "Design engineer · Linear · animations.dev",
+    "bio": "Emil Kowalski is a design engineer on Linear’s web team, previously on Vercel’s design team. He created Sonner (toast) and Vaul (drawer) for React, and teaches web animation theory and implementation through animations.dev. His public writing covers taste, friction, and when not to animate.",
+    "links": [
+      {
+        "label": "Site",
+        "url": "https://emilkowal.ski/"
+      },
+      {
+        "label": "animations.dev",
+        "url": "https://animations.dev/"
+      },
+      {
+        "label": "X",
+        "url": "https://x.com/emilkowalski"
+      },
+      {
+        "label": "GitHub",
+        "url": "https://github.com/emilkowalski"
+      }
+    ],
+    "techniqueSlugs": [
+      "purposeful-motion",
+      "animation-restraint"
+    ],
+    "highlights": [
+      "Design engineer at Linear; previously Vercel design team.",
+      "Catalogued techniques from public essays on purposeful motion and animation restraint.",
+      "Creator of Sonner and Vaul; course at animations.dev (course depth not reprinted here)."
+    ]
+  },
+  {
+    "slug": "frank-chimero",
+    "name": "Frank Chimero",
+    "status": "partial",
+    "role": "Designer · writer · The Shape of Design",
+    "bio": "Frank Chimero is a New York–based designer with a long public practice across brand, product, and creative direction. He co-founded Abstract and wrote, illustrated, and published The Shape of Design (2012). Essays and lectures are widely assigned in design classrooms; current studio work is listed on frankchimero.com and studiofrank.co.",
+    "links": [
+      {
+        "label": "Site",
+        "url": "https://frankchimero.com/"
+      },
+      {
+        "label": "Studio",
+        "url": "https://studiofrank.co/"
+      }
+    ],
+    "techniqueSlugs": [
+      "screens-want-honesty"
+    ],
+    "highlights": [
+      "Author of The Shape of Design; co-founder of Abstract.",
+      "Catalogued screens-want-honesty from public essay What Screens Want.",
+      "Studio practice spans brand and product direction."
+    ]
+  },
+  {
     "slug": "greg-huntoon",
     "name": "Greg Huntoon",
     "status": "partial",
@@ -126,6 +210,65 @@
         "title": "Deliver",
         "summary": "Constraints hold the rails—especially what not to change on revision passes."
       }
+    ]
+  },
+  {
+    "slug": "jakub-antalik",
+    "name": "Jakub Antalik",
+    "status": "partial",
+    "role": "Product designer/engineer · transitions.dev",
+    "bio": "Jakub Antalik is a product designer and engineer focused on motion and craft. He previously worked at Frame.io (acquired by Adobe), Intercom, and as a Design Lead at 0x.org. He publishes transitions.dev, a free collection of essential UI transitions for web apps that can be copied as CSS/React or used as coding-agent skills. This catalog’s motion lab adapts free recipes from that project; Pro recipes were not used.",
+    "links": [
+      {
+        "label": "Site",
+        "url": "https://jakubantalik.com/"
+      },
+      {
+        "label": "transitions.dev",
+        "url": "https://transitions.dev/"
+      },
+      {
+        "label": "X",
+        "url": "https://x.com/Jakubantalik"
+      },
+      {
+        "label": "GitHub · transitions.dev",
+        "url": "https://github.com/jakubantalik/transitions.dev"
+      }
+    ],
+    "techniqueSlugs": [
+      "transition-recipes-as-skills"
+    ],
+    "highlights": [
+      "Author of free transitions.dev UI motion recipes used by this site’s motion lab.",
+      "Catalogued transition-recipes-as-skills for agent-ready motion.",
+      "Prior craft roles at Frame.io, Intercom, and 0x.org."
+    ]
+  },
+  {
+    "slug": "maggie-appleton",
+    "name": "Maggie Appleton",
+    "status": "partial",
+    "role": "Designer · digital garden · tools for thought",
+    "bio": "Maggie Appleton maintains maggieappleton.com as a digital garden of essays and notes on design, anthropomorphism, and tools for thought. Public work includes design engineering and illustrated essays that treat interfaces as cultural artifacts. She is often cited for making complex product and AI ideas visually legible without buzzword gloss.",
+    "links": [
+      {
+        "label": "Site",
+        "url": "https://maggieappleton.com/"
+      },
+      {
+        "label": "X",
+        "url": "https://x.com/Mappletons"
+      }
+    ],
+    "techniqueSlugs": [
+      "garden-status-labels",
+      "illustrate-the-invisible"
+    ],
+    "highlights": [
+      "Digital garden of essays on design and tools for thought.",
+      "Catalogued techniques from garden ethos (status labels) and drawing invisible concepts (metaphor frames).",
+      "Public craft voice for anti-slop clarity in interface writing."
     ]
   },
   {
@@ -194,6 +337,67 @@
     ]
   },
   {
+    "slug": "rauno-freiberg",
+    "name": "Rauno Freiberg",
+    "status": "partial",
+    "role": "Staff design engineer · Vercel · interaction craft",
+    "bio": "Rauno Freiberg is an Estonian interaction designer and Staff Design Engineer at Vercel. His public site rauno.me collects craft notes, Field Notes, and projects including Devouring Details and work toward a History of Software Design exhibit. He writes about invisible details of interaction design and the discipline of making interfaces fast, consistent, and carefully finished.",
+    "links": [
+      {
+        "label": "Site",
+        "url": "https://rauno.me/"
+      },
+      {
+        "label": "X",
+        "url": "https://x.com/raunofreiberg"
+      },
+      {
+        "label": "GitHub",
+        "url": "https://github.com/rauno"
+      }
+    ],
+    "techniqueSlugs": [
+      "designing-depth",
+      "stagger-choreograph-motion"
+    ],
+    "highlights": [
+      "Staff Design Engineer at Vercel; public craft site at rauno.me.",
+      "Catalogued techniques from Designing Depth (layered composition + motion choreography).",
+      "Known for detail-obsessed interaction writing; projects include Field Notes and History of Software Design."
+    ]
+  },
+  {
+    "slug": "steve-schoger",
+    "name": "Steve Schoger",
+    "status": "partial",
+    "role": "Visual designer · Refactoring UI",
+    "bio": "Steve Schoger is a Canadian visual designer known for sharing UI tips publicly and for Refactoring UI, the book and video course made with Adam Wathan. His site describes teaching web design through specific, actionable tactics and refactoring UIs in public. Work centers on practical visual craft rather than theory-only critique.",
+    "links": [
+      {
+        "label": "Site",
+        "url": "https://www.steveschoger.com/"
+      },
+      {
+        "label": "Refactoring UI",
+        "url": "https://refactoringui.com/"
+      },
+      {
+        "label": "X",
+        "url": "https://x.com/steveschoger"
+      }
+    ],
+    "techniqueSlugs": [
+      "hierarchy-with-weight",
+      "start-with-whitespace",
+      "fewer-borders"
+    ],
+    "highlights": [
+      "Co-author of Refactoring UI with Adam Wathan.",
+      "Catalogued techniques from public Refactoring UI tips (hierarchy, whitespace, borders).",
+      "Known for public UI tips and refactor videos."
+    ]
+  },
+  {
     "slug": "adam-argyle",
     "name": "Adam Argyle",
     "status": "directory",
@@ -244,7 +448,8 @@
     "highlights": [
       "Creator of Tailwind CSS; co-author of Refactoring UI.",
       "Public teaching via adamwathan.me articles and courses.",
-      "Utility-first CSS as a craft tool for custom interfaces."
+      "Utility-first CSS as a craft tool for custom interfaces.",
+      "Co-author of Refactoring UI; public tips co-sourced on hierarchy/whitespace/borders techniques (see Steve Schoger entries)."
     ]
   },
   {
@@ -337,29 +542,6 @@
       "Author of Atomic Design; design-systems consultant.",
       "Public writing on pattern libraries and collaborative craft.",
       "Advocate for systematic interface quality."
-    ]
-  },
-  {
-    "slug": "bret-victor",
-    "name": "Bret Victor",
-    "status": "directory",
-    "role": "Interface researcher · Dynamicland · worrydream",
-    "bio": "Bret Victor publishes at worrydream.com. He led the team that founded Dynamicland and invented Realtalk, a self-hosted spatial computing system. Previously at Apple he designed early iPad UI concepts and helped establish future-interfaces prototyping. Public talks include Inventing on Principle and Stop Drawing Dead Fish—widely cited against lifeless interface demos.",
-    "links": [
-      {
-        "label": "Site",
-        "url": "https://worrydream.com/"
-      },
-      {
-        "label": "CV",
-        "url": "https://worrydream.com/cv/"
-      }
-    ],
-    "techniqueSlugs": [],
-    "highlights": [
-      "Dynamicland / Realtalk; prior Apple future-interfaces work.",
-      "Public talks: Inventing on Principle; Stop Drawing Dead Fish.",
-      "Essays: Ladder of Abstraction; Learnable Programming."
     ]
   },
   {
@@ -548,37 +730,6 @@
     ]
   },
   {
-    "slug": "emil-kowalski",
-    "name": "Emil Kowalski",
-    "status": "directory",
-    "role": "Design engineer · Linear · animations.dev",
-    "bio": "Emil Kowalski is a design engineer on Linear’s web team, previously on Vercel’s design team. He created Sonner (toast) and Vaul (drawer) for React, and teaches web animation theory and implementation through animations.dev. His public writing covers taste, friction, and when not to animate.",
-    "links": [
-      {
-        "label": "Site",
-        "url": "https://emilkowal.ski/"
-      },
-      {
-        "label": "animations.dev",
-        "url": "https://animations.dev/"
-      },
-      {
-        "label": "X",
-        "url": "https://x.com/emilkowalski"
-      },
-      {
-        "label": "GitHub",
-        "url": "https://github.com/emilkowalski"
-      }
-    ],
-    "techniqueSlugs": [],
-    "highlights": [
-      "Design engineer at Linear; previously Vercel design team.",
-      "Creator of Sonner and Vaul; course at animations.dev.",
-      "Public essays on taste, judgement, and practical animation tips."
-    ]
-  },
-  {
     "slug": "erika-hall",
     "name": "Erika Hall",
     "status": "directory",
@@ -602,29 +753,6 @@
     ]
   },
   {
-    "slug": "frank-chimero",
-    "name": "Frank Chimero",
-    "status": "directory",
-    "role": "Designer · writer · The Shape of Design",
-    "bio": "Frank Chimero is a New York–based designer with a long public practice across brand, product, and creative direction. He co-founded Abstract and wrote, illustrated, and published The Shape of Design (2012). Essays and lectures are widely assigned in design classrooms; current studio work is listed on frankchimero.com and studiofrank.co.",
-    "links": [
-      {
-        "label": "Site",
-        "url": "https://frankchimero.com/"
-      },
-      {
-        "label": "Studio",
-        "url": "https://studiofrank.co/"
-      }
-    ],
-    "techniqueSlugs": [],
-    "highlights": [
-      "Author of The Shape of Design; co-founder of Abstract.",
-      "Public essays treated as foundational web-design texts.",
-      "Studio practice spans brand and product direction."
-    ]
-  },
-  {
     "slug": "imran-chaudhri",
     "name": "Imran Chaudhri",
     "status": "directory",
@@ -645,37 +773,6 @@
       "Long Apple HI career spanning major product launches.",
       "Co-founder of Humane; later HP IQ design leadership (public).",
       "Public storytelling on Watch and iPhone interaction history."
-    ]
-  },
-  {
-    "slug": "jakub-antalik",
-    "name": "Jakub Antalik",
-    "status": "directory",
-    "role": "Product designer/engineer · transitions.dev",
-    "bio": "Jakub Antalik is a product designer and engineer focused on motion and craft. He previously worked at Frame.io (acquired by Adobe), Intercom, and as a Design Lead at 0x.org. He publishes transitions.dev, a free collection of essential UI transitions for web apps that can be copied as CSS/React or used as coding-agent skills. This catalog’s motion lab adapts free recipes from that project; Pro recipes were not used.",
-    "links": [
-      {
-        "label": "Site",
-        "url": "https://jakubantalik.com/"
-      },
-      {
-        "label": "transitions.dev",
-        "url": "https://transitions.dev/"
-      },
-      {
-        "label": "X",
-        "url": "https://x.com/Jakubantalik"
-      },
-      {
-        "label": "GitHub · transitions.dev",
-        "url": "https://github.com/jakubantalik/transitions.dev"
-      }
-    ],
-    "techniqueSlugs": [],
-    "highlights": [
-      "Author of free transitions.dev UI motion recipes used by this site’s motion lab.",
-      "Prior craft roles at Frame.io, Intercom, and 0x.org.",
-      "Public personal site lists motion components and agent-ready skills."
     ]
   },
   {
@@ -975,29 +1072,6 @@
     ]
   },
   {
-    "slug": "maggie-appleton",
-    "name": "Maggie Appleton",
-    "status": "directory",
-    "role": "Designer · digital garden · tools for thought",
-    "bio": "Maggie Appleton maintains maggieappleton.com as a digital garden of essays and notes on design, anthropomorphism, and tools for thought. Public work includes design engineering and illustrated essays that treat interfaces as cultural artifacts. She is often cited for making complex product and AI ideas visually legible without buzzword gloss.",
-    "links": [
-      {
-        "label": "Site",
-        "url": "https://maggieappleton.com/"
-      },
-      {
-        "label": "X",
-        "url": "https://x.com/Mappletons"
-      }
-    ],
-    "techniqueSlugs": [],
-    "highlights": [
-      "Digital garden of essays on design and tools for thought.",
-      "Illustrated explanations of product and AI concepts.",
-      "Public craft voice for anti-slop clarity in interface writing."
-    ]
-  },
-  {
     "slug": "maxime-heckel",
     "name": "Maxime Heckel",
     "status": "directory",
@@ -1195,33 +1269,6 @@
     ]
   },
   {
-    "slug": "rauno-freiberg",
-    "name": "Rauno Freiberg",
-    "status": "directory",
-    "role": "Staff design engineer · Vercel · interaction craft",
-    "bio": "Rauno Freiberg is an Estonian interaction designer and Staff Design Engineer at Vercel. His public site rauno.me collects craft notes, Field Notes, and projects including Devouring Details and work toward a History of Software Design exhibit. He writes about invisible details of interaction design and the discipline of making interfaces fast, consistent, and carefully finished.",
-    "links": [
-      {
-        "label": "Site",
-        "url": "https://rauno.me/"
-      },
-      {
-        "label": "X",
-        "url": "https://x.com/raunofreiberg"
-      },
-      {
-        "label": "GitHub",
-        "url": "https://github.com/rauno"
-      }
-    ],
-    "techniqueSlugs": [],
-    "highlights": [
-      "Staff Design Engineer at Vercel; public craft site at rauno.me.",
-      "Known for detail-obsessed interaction writing (e.g. Invisible Details of Interaction Design).",
-      "Projects include Field Notes and History of Software Design."
-    ]
-  },
-  {
     "slug": "robin-rendle",
     "name": "Robin Rendle",
     "status": "directory",
@@ -1296,33 +1343,6 @@
       "Vercel: platform, Next.js, AI SDK, v0 craft.",
       "Public site documents creative coding and HCI interests.",
       "Designer-developer bridge for developer tools UX."
-    ]
-  },
-  {
-    "slug": "steve-schoger",
-    "name": "Steve Schoger",
-    "status": "directory",
-    "role": "Visual designer · Refactoring UI",
-    "bio": "Steve Schoger is a Canadian visual designer known for sharing UI tips publicly and for Refactoring UI, the book and video course made with Adam Wathan. His site describes teaching web design through specific, actionable tactics and refactoring UIs in public. Work centers on practical visual craft rather than theory-only critique.",
-    "links": [
-      {
-        "label": "Site",
-        "url": "https://www.steveschoger.com/"
-      },
-      {
-        "label": "Refactoring UI",
-        "url": "https://refactoringui.com/"
-      },
-      {
-        "label": "X",
-        "url": "https://x.com/steveschoger"
-      }
-    ],
-    "techniqueSlugs": [],
-    "highlights": [
-      "Co-author of Refactoring UI with Adam Wathan.",
-      "Known for public UI tips and refactor videos.",
-      "Site frames design advice for builders shipping interfaces."
     ]
   },
   {

@@ -12,11 +12,13 @@
   ],
   "examplePrompts": [
     "Task: Build an AI-powered meal suggestion app using pantry/fridge photo inputs",
-    "Task: Write a short product feature description."
+    "Task: Write a short product feature description.",
+    "Task: Redesign the empty pantry state so a first-time user knows to photograph their fridge within 10 seconds of landing—without a carousel or confetti."
   ],
   "promptWhy": [
     "Leads with the artifact and input modality—nothing buried in pleasantries.",
-    "Names the deliverable type up front so Elements/Behavior can stay short."
+    "Names the deliverable type up front so Elements/Behavior can stay short.",
+    "Specific outcome + explicit refuse beats Redesign the empty state."
   ],
   "tips": [
     "Greg Huntoon (Figma blog): tools don’t require empathy—they require clarity.",
@@ -49,6 +51,12 @@
       "before": "Please write some nice copy for this feature when you get a chance. Thanks!",
       "after": "Task: Write a short product feature description.",
       "body": "Greg’s Figma post pairs Task clarity with Context/Elements/Behavior/Constraints; the Task line alone kills polite ambiguity. Cite: Figma blog."
+    },
+    {
+      "title": "Task mush",
+      "before": "Improve the empty state.",
+      "after": "Photograph fridge in 10s; no carousel/confetti.",
+      "body": "Greg TC-EBC Task is the verb+outcome. Cite Figma blog."
     }
   ],
   "antiPatterns": [
@@ -59,6 +67,7 @@
   "checklist": [
     "One clear Task line.",
     "No politeness padding.",
-    "Artifact type is obvious."
+    "Artifact type is obvious.",
+    "Fresh pass confirms the prompt constraints were followed."
   ]
 }

@@ -1,0 +1,70 @@
+{
+  "slug": "stagger-choreograph-motion",
+  "number": 26,
+  "stage": "Define",
+  "title": "Stagger and choreograph motion like nature",
+  "principle": "Nature rarely moves in perfect synchrony—schools of fish and flocks of birds have slight timing differences. Rauno Freiberg’s Designing Depth extends this to UI: choreograph discrete states over a gesture, stagger sibling reveals, and reverse choreography based on where the trigger sits so motion teaches layering instead of feeling like a single keyframed pop.",
+  "procedure": [
+    "Deconstruct the interaction into discrete states tied to the gesture (not one monolithic keyframe).",
+    "Prioritize motion near the trigger location first so the interface feels like it heard the user.",
+    "Stagger sibling items that look alike (grids, icon rows) with slight delays—enough to read as depth, not enough to feel slow.",
+    "When the same overlay can open from different triggers, reverse or retune choreography to match each origin.",
+    "Honor prefers-reduced-motion: collapse stagger to opacity-only or instant."
+  ],
+  "examplePrompts": [
+    "Rewrite this enter animation as a choreographed sequence (Rauno / Designing Depth):\n- List 3–4 discrete states tied to the user gesture.\n- Stagger sibling cards ≤40ms apart so the grid does not pop as one slab.\n- Start motion nearest the click/focus origin.\n- Keep total under ~300ms; transform+opacity only.\n- Add prefers-reduced-motion fallback (opacity only or none).\nExplain each state’s job in one line.",
+    "This list fades in all at once and feels fake. Stagger item opacity/translate like a flock takeoff—subtle, nature-timed—without making the page feel slower. Return CSS/WAAPI timings."
+  ],
+  "promptWhy": [
+    "Discrete states + origin-first motion stops the model from shipping one generic fade-in keyframe.",
+    "Named stagger budget and reduced-motion keep craft from becoming sluggish decoration."
+  ],
+  "tips": [
+    "OpenAI-style staggered grid fades add depth without feeling slower—users can tell what updated.",
+    "iPhone unlock staggers Home Screen apps to make a swipe feel three-dimensional.",
+    "iPad Dock sliding away vs blurring with Control Centre communicates different layer metaphors—match motion to affordance.",
+    "Cite: https://rauno.me/craft/depth — public essay."
+  ],
+  "sourceUrls": [
+    "https://rauno.me/craft/depth",
+    "https://rauno.me/craft"
+  ],
+  "related": [
+    "designing-depth",
+    "video-motion",
+    "make-it-alive",
+    "purposeful-motion"
+  ],
+  "pairsWellWith": [
+    "designing-depth",
+    "animation-restraint",
+    "transition-recipes-as-skills"
+  ],
+  "workedExamples": [
+    {
+      "title": "Home Screen swipe vs Search tap",
+      "before": "Same overlay always plays one canned keyframe regardless of how you opened it.",
+      "after": "Swipe-down prioritizes top-of-screen feedback then suggestions; tap-Search reverses—input morphs first near the footer trigger, suggestions slightly delayed.",
+      "body": "Rauno documents iOS Search choreography differing by gesture origin. Choreography teaches where attention should go. Cite: rauno.me/craft/depth."
+    },
+    {
+      "title": "Staggered grid load",
+      "body": "Sibling cards that appear in perfect sync feel synthetic. Slight stagger (inspired by natural flocks / OpenAI grid examples in the essay) clarifies how many items arrived and adds motion depth without adding wait."
+    },
+    {
+      "title": "Failure: stagger as delay tax",
+      "body": "If staggered reveals push perceived wait past ~300ms or block keyboard-driven actions, delete the stagger. Depth never outranks responsiveness."
+    }
+  ],
+  "antiPatterns": [
+    "One keyframed pop for every enter, ignoring gesture origin.",
+    "Long cascading delays that make the UI feel laggy.",
+    "Ignoring prefers-reduced-motion."
+  ],
+  "checklist": [
+    "Interaction broken into named states, not one blob animation.",
+    "Motion starts near the trigger.",
+    "Sibling stagger is subtle and timed under a responsive budget.",
+    "Reduced-motion path verified."
+  ]
+}

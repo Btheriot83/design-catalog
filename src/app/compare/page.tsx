@@ -183,6 +183,63 @@ export default function ComparePage() {
       </section>
 
       <section className="mb-12">
+        <h2 className="font-serif text-2xl text-ink">Craft directory stack</h2>
+        <hr className="rule-double mt-4 mb-5 max-w-[10rem]" />
+        <ul className="space-y-3 font-sans text-sm leading-relaxed text-studio-ink">
+          <li>
+            ☐ Depth / choreography:{" "}
+            <Link href="/techniques/designing-depth" className="text-ink underline decoration-hairline">
+              designing-depth
+            </Link>{" "}
+            ·{" "}
+            <Link href="/techniques/stagger-choreograph-motion" className="text-ink underline decoration-hairline">
+              stagger
+            </Link>
+          </li>
+          <li>
+            ☐ Motion gates:{" "}
+            <Link href="/guides/motion-craft" className="text-ink underline decoration-hairline">
+              motion craft guide
+            </Link>
+          </li>
+          <li>
+            ☐ Visual hierarchy / space / borders:{" "}
+            <Link href="/techniques/hierarchy-with-weight" className="text-ink underline decoration-hairline">
+              hierarchy
+            </Link>{" "}
+            ·{" "}
+            <Link href="/techniques/start-with-whitespace" className="text-ink underline decoration-hairline">
+              whitespace
+            </Link>{" "}
+            ·{" "}
+            <Link href="/techniques/fewer-borders" className="text-ink underline decoration-hairline">
+              fewer borders
+            </Link>
+          </li>
+          <li>
+            ☐ Metaphor + honesty:{" "}
+            <Link href="/techniques/illustrate-the-invisible" className="text-ink underline decoration-hairline">
+              illustrate
+            </Link>{" "}
+            ·{" "}
+            <Link href="/techniques/screens-want-honesty" className="text-ink underline decoration-hairline">
+              screens want honesty
+            </Link>{" "}
+            ·{" "}
+            <Link href="/techniques/alive-by-default" className="text-ink underline decoration-hairline">
+              alive-by-default
+            </Link>
+          </li>
+          <li>
+            ☐ Full stacking order:{" "}
+            <Link href="/guides/anti-slop-desk" className="text-ink underline decoration-hairline">
+              anti-slop craft desk
+            </Link>
+          </li>
+        </ul>
+      </section>
+
+      <section className="mb-12">
         <h2 className="font-serif text-2xl text-ink">Agent checklist</h2>
         <hr className="rule-double mt-4 mb-5 max-w-[10rem]" />
         <p className="mb-4 font-sans text-sm leading-relaxed text-studio-ink">

@@ -12,15 +12,19 @@
   ],
   "examplePrompts": [
     "Behavior: User uploads photos; app scans inventory, filters by diet prefs, suggests recipes",
-    "Behavior: Body should imply speed, simplicity, and trust."
+    "Behavior: Body should imply speed, simplicity, and trust.",
+    "Behavior: On each keystroke in search, results filter within 100ms with no enter animation; empty state explains how to add a pantry item."
   ],
   "promptWhy": [
     "End-to-end loop makes the prototype interactive instead of a poster.",
-    "Implied qualities guide tone without vague “exciting” adjectives."
+    "Implied qualities guide tone without vague “exciting” adjectives.",
+    "Concrete timing + empty-state behavior prevents poster UIs."
   ],
   "tips": [
     "Revision prompts: spell what must not change in Constraints; Behavior can state the new interaction.",
-    "Partial catalog—no endorsement."
+    "Partial catalog—no endorsement.",
+    "Keep Quiet Folio paper/ink if applying on this desk—no purple chrome.",
+    "Partial catalog—pair all five TC-EBC slots in one prompt for best results."
   ],
   "sourceUrls": [
     "https://www.figma.com/blog/designer-framework-for-better-ai-prompts/",
@@ -39,15 +43,27 @@
     {
       "title": "Upload→scan→filter→suggest",
       "body": "Behavior line in the pantry TC-EBC prompt is what turns a static recipe collage into a usable flow. Cite: Figma blog."
+    },
+    {
+      "title": "Copy behavior vs product behavior",
+      "before": "Make it feel fast.",
+      "after": "Filter on keystroke; no animation; empty state teaches add.",
+      "body": "Greg Figma blog: Behavior covers interaction loops and implications. Cite public post."
+    },
+    {
+      "title": "Public-source honesty",
+      "body": "Claims stay within public blog/talk paraphrase—no invented paywalled quotes."
     }
   ],
   "antiPatterns": [
     "Static element lists with no interaction story.",
-    "Mood adjectives instead of observable behavior."
+    "Mood adjectives instead of observable behavior.",
+    "Omitting this TC-EBC slot and hoping Task alone carries the build."
   ],
   "checklist": [
     "Primary loop is stated.",
     "Verbs are observable.",
-    "Implications are specific when copy is the artifact."
+    "Implications are specific when copy is the artifact.",
+    "Example prompt includes observable detail, not adjectives only."
   ]
 }

@@ -58,7 +58,8 @@
     "url": "https://transitions.dev/",
     "kind": "Motion craft",
     "note": "Jakub Antalik. Free copy-paste transition recipes used for Quiet Folio motion (texts-reveal, number-pop-in, tabs-sliding, restrained card-tilt, success-check, skeleton-reveal). No Pro recipes.",
-    "coverage": "Cited as product motion craft (free recipes) for Quiet Folio chrome. Adapted to ink craft tokens; prefers-reduced-motion honored. No endorsement."
+    "coverage": "Cited as product motion craft (free recipes) for Quiet Folio chrome. Adapted to ink craft tokens; prefers-reduced-motion honored. No endorsement.",
+    "designerSlug": "jakub-antalik"
   },
   {
     "title": "Bret Victor — Stop Drawing Dead Fish",
@@ -67,5 +68,77 @@
     "note": "Public talk cited by Nate Parrott as the north star for “make it alive”: everything we draw should be alive by default. No endorsement.",
     "coverage": "Talk citation only — used on make-it-alive; not a full technique catalog.",
     "designerSlug": "nate-parrott"
+  },
+  {
+    "title": "Designing Depth — Rauno Freiberg",
+    "url": "https://rauno.me/craft/depth",
+    "kind": "Craft essay",
+    "note": "Rauno Freiberg (July 2024). Public craft essay on layered composition, blurred backdrops, motion choreography and stagger. Source for designing-depth and stagger-choreograph-motion. No endorsement.",
+    "coverage": "Full public essay paraphrased into procedures/prompts; no paywalled material.",
+    "designerSlug": "rauno-freiberg"
+  },
+  {
+    "title": "Great Animations — Emil Kowalski",
+    "url": "https://emilkowal.ski/ui/great-animations",
+    "kind": "Craft essay",
+    "note": "Public principles: natural, fast, purposeful, performant, interruptible, accessible, cohesive. Source for purposeful-motion. No endorsement.",
+    "coverage": "Public web essays paraphrased; animations.dev course content not used.",
+    "designerSlug": "emil-kowalski"
+  },
+  {
+    "title": "You Don't Need Animations — Emil Kowalski",
+    "url": "https://emilkowal.ski/ui/you-dont-need-animations",
+    "kind": "Craft essay",
+    "note": "Public essay on purpose, frequency, and when no animation is best. Source for animation-restraint. No endorsement.",
+    "coverage": "Public web essays paraphrased; animations.dev course content not used.",
+    "designerSlug": "emil-kowalski"
+  },
+  {
+    "title": "A Brief History & Ethos of the Digital Garden — Maggie Appleton",
+    "url": "https://maggieappleton.com/garden-history",
+    "kind": "Craft essay",
+    "note": "Public essay on garden patterns including imperfection/status disclosure. Source for garden-status-labels. No endorsement.",
+    "coverage": "Full public essay paraphrased.",
+    "designerSlug": "maggie-appleton"
+  },
+  {
+    "title": "How to Draw Invisible Programming Concepts: Part I — Maggie Appleton",
+    "url": "https://maggieappleton.com/drawinginvisibles1",
+    "kind": "Craft essay",
+    "note": "Public essay on source→target metaphors for abstract concepts. Source for illustrate-the-invisible. No endorsement.",
+    "coverage": "Full public essay paraphrased; illustrations not copied.",
+    "designerSlug": "maggie-appleton"
+  },
+  {
+    "title": "7 Practical Tips for Cheating at Design — Refactoring UI",
+    "url": "https://medium.com/refactoring-ui/7-practical-tips-for-cheating-at-design-40c736799886",
+    "kind": "Craft essay",
+    "note": "Public Medium tip list (Wathan/Schoger). Source for hierarchy-with-weight, start-with-whitespace, fewer-borders. No endorsement; paid book not quoted.",
+    "coverage": "Public tips only.",
+    "designerSlug": "steve-schoger"
+  },
+  {
+    "title": "Refactoring UI — public site / previews",
+    "url": "https://refactoringui.com/",
+    "kind": "Craft citation",
+    "note": "Marketing site and free previews (e.g. color palette). Cited for public tip lineage. No endorsement.",
+    "coverage": "Free public pages only.",
+    "designerSlug": "steve-schoger"
+  },
+  {
+    "title": "What Screens Want — Frank Chimero",
+    "url": "https://frankchimero.com/blog/2013/what-screens-want/",
+    "kind": "Craft essay",
+    "note": "Frank Chimero (2013). Public essay: screens’ grain is flux. Source for screens-want-honesty. No endorsement.",
+    "coverage": "Full public essay paraphrased.",
+    "designerSlug": "frank-chimero"
+  },
+  {
+    "title": "The Web’s Grain — Frank Chimero",
+    "url": "https://frankchimero.com/blog/2015/the-webs-grain/",
+    "kind": "Craft essay",
+    "note": "Companion to What Screens Want; web-native humility. Cited on screens-want-honesty. No endorsement.",
+    "coverage": "Public essay.",
+    "designerSlug": "frank-chimero"
   }
 ]

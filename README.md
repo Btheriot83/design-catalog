@@ -1,6 +1,6 @@
 # Design Catalog
 
-A craft / anti-slop **designer directory** plus a letterpress study desk of AI design techniques—mostly from **Anshu Chimala** (Discover → Define → Deliver), with **partial** catalogs of **Nate Parrott**’s Claude Design practices and **Greg Huntoon**’s TC-EBC prompt framework. Public sources only; no endorsement.
+A craft / anti-slop **designer directory** plus a letterpress study desk of AI design techniques—**Anshu Chimala** (Discover → Define → Deliver), with **partial** catalogs of **Nate Parrott**’s Claude Design practices and **Greg Huntoon**’s TC-EBC prompt framework. Public sources only; no endorsement.
 
 **Live:** https://design-catalog-three.vercel.app
 
@@ -19,7 +19,7 @@ Do **not** scrape HTML. Fetch static JSON:
 | llms.txt | https://design-catalog-three.vercel.app/llms.txt |
 | Agent guide | [docs/FOR_AGENTS.md](docs/FOR_AGENTS.md) (also [GitHub raw](https://raw.githubusercontent.com/Btheriot83/design-catalog/main/docs/FOR_AGENTS.md)) |
 
-Human page: [/agents](https://design-catalog-three.vercel.app/agents). Directory: [/designers](https://design-catalog-three.vercel.app/designers). Field guide: [/compare](https://design-catalog-three.vercel.app/compare).
+Human page: [/agents](https://design-catalog-three.vercel.app/agents). Directory: [/designers](https://design-catalog-three.vercel.app/designers). Field guide: [/compare](https://design-catalog-three.vercel.app/compare). Guides: [/guides](https://design-catalog-three.vercel.app/guides). Gauntlet log: `docs/GAUNTLET.md`.
 
 **Workflow:** (a) fetch index → (b) pick technique by stage/job → (c) copy prompts → (d) run Discover→Define→Deliver with `DISCOVER.md` / `DEFINE.md` / `DELIVER.md`.
 

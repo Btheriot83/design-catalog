@@ -11,12 +11,14 @@
     "Escalate fidelity only after hierarchy and flow feel right."
   ],
   "examplePrompts": [
-    "Wireframe only—no visual styling. Gray boxes, labels, and hierarchy. Give me 5 structural alternatives for this flow so I can compare layout ideas quickly."
+    "Wireframe only—no visual styling. Gray boxes, labels, and hierarchy. Give me 5 structural alternatives for this flow so I can compare layout ideas quickly.",
+    "Build a greyscale wireframe only—no brand color, no imagery, no polish. Same IA and hierarchy as the brief. Stop and show me before any visual pass."
   ],
   "tips": [
     "Speed comes from skipping premature visual decisions.",
     "Structure-first prevents Claude from locking onto a favorite aesthetic early.",
-    "Nate uses Claude Design daily for wireframing early ideas and generating many flow versions for feedback."
+    "Nate uses Claude Design daily for wireframing early ideas and generating many flow versions for feedback.",
+    "Pairs with sketch-what-you-cant-describe when you already have paper boxes."
   ],
   "sourceUrls": [
     "https://claude.com/blog/how-the-product-designer-who-built-claude-design-uses-it-to-explore-ideas-before-building-them"
@@ -35,6 +37,12 @@
     {
       "title": "Structure before skin",
       "body": "Nate: wireframe structure first so layout decisions aren’t entangled with look; then specify look / system from assets. Cite: Anthropic blog."
+    },
+    {
+      "title": "Color too early",
+      "before": "First pass is a purple SaaS landing.",
+      "after": "Greyscale regions + labels first; color only after approval.",
+      "body": "Nate: wireframe first when fidelity does not matter yet. Cite Anthropic blog."
     }
   ],
   "antiPatterns": [
@@ -45,10 +53,12 @@
   "checklist": [
     "Wireframe-only constraint stated.",
     "Multiple structures compared.",
-    "Fidelity escalated on purpose."
+    "Fidelity escalated on purpose.",
+    "Fresh pass confirms the prompt constraints were followed."
   ],
   "promptWhy": [
-    "Gray-box constraint keeps the model on hierarchy, not favorite aesthetics."
+    "Gray-box constraint keeps the model on hierarchy, not favorite aesthetics.",
+    "Greyscale gate stops the model from burning tokens on chrome before structure is right."
   ],
   "pairsWellWith": [
     "ten-options-then-remix",

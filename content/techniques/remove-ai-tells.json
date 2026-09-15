@@ -12,7 +12,8 @@
     "Re-check with a critic or fresh eyes until the page no longer reads as template slop."
   ],
   "examplePrompts": [
-    "Audit this page for AI design tells and remove them. Kill-list:\n- Vibe purple / indigo accent defaults\n- Gradients used as chrome (hero washes, button fills) without compositional reason\n- Glassmorphism cards and frosted panels\n- Inter, Geist, or Space Grotesk as the default type stack\n- Three-card grids with emoji icons and generic feature blurbs\n- Fake stats / social-proof numbers\n- Headline badges (“New”, “AI-powered”, sparkles)\n- Soft drop shadows and glowing orbs as decoration\n\nReplace with intentional color, type, and structure. Do not swap one tell for another."
+    "Audit this page for AI design tells and remove them. Kill-list:\n- Vibe purple / indigo accent defaults\n- Gradients used as chrome (hero washes, button fills) without compositional reason\n- Glassmorphism cards and frosted panels\n- Inter, Geist, or Space Grotesk as the default type stack\n- Three-card grids with emoji icons and generic feature blurbs\n- Fake stats / social-proof numbers\n- Headline badges (“New”, “AI-powered”, sparkles)\n- Soft drop shadows and glowing orbs as decoration\n\nReplace with intentional color, type, and structure. Do not swap one tell for another.",
+    "Second pass: compare this page to Quiet Folio tokens (paper #FAF9F7, ink #221C24, hairline #E8E3E8, Source Serif + IBM Plex). List remaining tells that fight that desk. Fix them without introducing new chrome."
   ],
   "tips": [
     "Tells compound—fixing one gradient while leaving Inter + emoji cards still reads as slop.",
@@ -55,7 +56,8 @@
     "Fresh critic or human pass no longer tags it as template slop."
   ],
   "promptWhy": [
-    "An explicit kill-list beats “make it less AI”—models need named fingerprints to delete."
+    "An explicit kill-list beats “make it less AI”—models need named fingerprints to delete.",
+    "Concrete token bar beats abstract less-AI on the second pass."
   ],
   "pairsWellWith": [
     "cut-elements",

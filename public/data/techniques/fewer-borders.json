@@ -1,0 +1,79 @@
+{
+  "slug": "fewer-borders",
+  "number": 33,
+  "stage": "Deliver",
+  "title": "Use fewer borders",
+  "principle": "Refactoring UI public tip: borders are a heavy default. Prefer box shadow, contrasting background regions, or simply more space. Question every border—does it earn its visual cost? Partial, hairline borders beat cages.",
+  "procedure": [
+    "Inventory all borders on the view.",
+    "For each, try in order: more space, background contrast, soft shadow, then hairline if still needed.",
+    "Prefer separating list rows with padding over full-width rules.",
+    "When a border stays, make it subtle (light grey, thin, maybe partial).",
+    "Re-check with remove-ai-tells: cages and card grids are slop fingerprints."
+  ],
+  "examplePrompts": [
+    "Border diet (Refactoring UI):\n- List every border/divider.\n- Replace with spacing or background contrast where possible.\n- Keep at most hairline separators for true section breaks.\n- No double-boxed cards inside bordered sections.\nReturn a kill-list of removed borders.",
+    "This settings page is a stack of outlined boxes. Flatten: one surface, spacing for groups, hairline only between major sections.",
+    "Border diet second pass on screenshots only: circle every remaining box outline. Keep at most one hairline system; delete the rest for space or background tint."
+  ],
+  "promptWhy": [
+    "Kill-list format makes deletion concrete.",
+    "Flattening nested boxes attacks a frequent AI layout tell.",
+    "Screenshot circling makes residual cages visible to a critic."
+  ],
+  "tips": [
+    "Use fewer borders—official Refactoring UI marketing/public tip.",
+    "Accent borders can add color without painting whole surfaces (public tip family).",
+    "This desk uses hairline rules and double rules sparingly as letterpress, not cages.",
+    "Public sources only; no endorsement.",
+    "Accent borders can introduce brand color without painting whole fills (public Refactoring UI tip family)."
+  ],
+  "sourceUrls": [
+    "https://refactoringui.com/",
+    "https://medium.com/refactoring-ui/7-practical-tips-for-cheating-at-design-40c736799886"
+  ],
+  "related": [
+    "start-with-whitespace",
+    "hierarchy-with-weight",
+    "remove-ai-tells",
+    "cut-elements"
+  ],
+  "pairsWellWith": [
+    "start-with-whitespace",
+    "remove-ai-tells",
+    "cut-elements"
+  ],
+  "workedExamples": [
+    {
+      "title": "Card cage stack",
+      "before": "Every widget in a 1px border on a bordered panel.",
+      "after": "Panel background only; widgets separated by 16–24px; one hairline above footer actions.",
+      "body": "Public tip: try shadow, contrasting backgrounds, or space instead of borders."
+    },
+    {
+      "title": "List without rules",
+      "body": "Row padding alone often separates items cleaner than dividers—especially on paper/ink UIs."
+    },
+    {
+      "title": "When borders stay",
+      "body": "Inputs on white-on-white may need a subtle edge or soft fill; make it one intentional treatment, not a unique border per control."
+    },
+    {
+      "title": "Quiet Folio hairlines",
+      "body": "This desk uses double rules and hairlines as letterpress punctuation—not a cage around every card."
+    }
+  ],
+  "antiPatterns": [
+    "Border as the default separator.",
+    "Nested boxes for ‘structure’.",
+    "Heavy black rules competing with type.",
+    "Replacing every deleted border with a heavy shadow (still noise)."
+  ],
+  "checklist": [
+    "Border inventory completed.",
+    "Spacing/background tried before keeping a border.",
+    "No nested card cages.",
+    "Remaining borders are hairline/intentional.",
+    "Accent border if any is intentional and sparse."
+  ]
+}

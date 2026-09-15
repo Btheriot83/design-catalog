@@ -50,21 +50,28 @@ export default function HomePage() {
                 href="/designers/anshu-chimala"
                 className="text-ink underline decoration-hairline hover:decoration-ink"
               >
-                Anshu Chimala
+                Anshu
               </Link>
               ,{" "}
               <Link
                 href="/designers/nate-parrott"
                 className="text-ink underline decoration-hairline hover:decoration-ink"
               >
-                Nate Parrott
+                Nate
               </Link>
-              , and{" "}
+              ,{" "}
               <Link
                 href="/designers/greg-huntoon"
                 className="text-ink underline decoration-hairline hover:decoration-ink"
               >
-                Greg Huntoon
+                Greg
+              </Link>
+              , plus craft techniques from{" "}
+              <Link
+                href="/guides/anti-slop-desk"
+                className="text-ink underline decoration-hairline hover:decoration-ink"
+              >
+                Rauno, Emil, Maggie, Schoger, Victor, Chimero, Jakub
               </Link>
               . Credits and outbound links only—no endorsement.
             </span>

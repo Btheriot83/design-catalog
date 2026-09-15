@@ -1,0 +1,72 @@
+{
+  "slug": "alive-by-default",
+  "number": 34,
+  "stage": "Discover",
+  "title": "Draw things alive by default",
+  "principle": "Bret Victor’s Stop Drawing Dead Fish (public talk), cited by Nate Parrott as the north star for make-it-alive: everything we draw should be alive by default—responsive to input, showing dynamics, not static corpses of ideas. For AI design, refuse frozen mock energy: controls should behave, numbers should react, demos should move meaning.",
+  "procedure": [
+    "List every meaningful object on the screen and ask: what dynamic would prove it is alive?",
+    "Prefer interactive sketches over static comps when exploring (sliders that drive the picture, not captions that claim they do).",
+    "Surface intermediate state (hover, drag, partial progress) so the system feels continuous.",
+    "Kill dead decoration: illustrations that never respond are fish on ice.",
+    "Pair with inventing-on-principle: aliveness should serve a principle you can name."
+  ],
+  "examplePrompts": [
+    "Apply Bret Victor’s alive-by-default bar (Stop Drawing Dead Fish, via Nate’s make-it-alive lineage):\n- For each primary UI object, add one honest dynamic (input→visible change).\n- Replace any static ‘demo’ image with a control that actually drives the output.\n- No decorative motion without state change.\n- Honor prefers-reduced-motion with non-motion aliveness (values still update).\nReturn the object→dynamic map.",
+    "This settings mock shows a chart PNG. Replace it with live controls that recompute the chart. If you cannot wire data, simulate with deterministic local state—still alive, not a dead fish."
+  ],
+  "promptWhy": [
+    "Object→dynamic map stops ‘make it alive’ from becoming random animation.",
+    "Forces replacement of PNGs posing as products—a common AI deliverable failure."
+  ],
+  "tips": [
+    "Talk: https://www.youtube.com/watch?v=ZfytHvgHybA — public.",
+    "Already cited on make-it-alive; this technique isolates the Victor principle for Discover briefs.",
+    "Inventing on Principle (worrydream) pairs: principles drive the dynamics you choose.",
+    "No endorsement.",
+    "Keep Quiet Folio paper/ink if applying on this desk—no purple chrome."
+  ],
+  "sourceUrls": [
+    "https://www.youtube.com/watch?v=ZfytHvgHybA",
+    "https://worrydream.com/",
+    "https://claude.com/blog/how-the-product-designer-who-built-claude-design-uses-it-to-explore-ideas-before-building-them"
+  ],
+  "related": [
+    "make-it-alive",
+    "point-and-talk",
+    "purposeful-motion",
+    "animation-restraint"
+  ],
+  "pairsWellWith": [
+    "make-it-alive",
+    "purposeful-motion",
+    "critic-subagents"
+  ],
+  "workedExamples": [
+    {
+      "title": "Dead chart fish",
+      "before": "Hero shows a stylish static chart image.",
+      "after": "Sliders adjust parameters; chart redraws—demo is the product behavior.",
+      "body": "Victor’s talk argues against lifeless drawings of dynamic ideas. Nate cites it for Claude Design craft. Paraphrase only."
+    },
+    {
+      "title": "Reduced motion still alive",
+      "body": "Aliveness is state change, not bounce. Values, enables, and layouts can update instantly under reduced-motion."
+    },
+    {
+      "title": "This catalog’s motion lab",
+      "body": "Folio numerals and reveals are restrained proof of life—paired with animation-restraint so daily reading isn’t circus motion."
+    }
+  ],
+  "antiPatterns": [
+    "Static comps of interactive systems.",
+    "Animation without state meaning.",
+    "Claiming ‘delight’ while controls are dead."
+  ],
+  "checklist": [
+    "Object→dynamic map exists.",
+    "Primary demos are interactive or honestly simulated.",
+    "Decoration that never responds removed.",
+    "Reduced-motion path still shows state change."
+  ]
+}

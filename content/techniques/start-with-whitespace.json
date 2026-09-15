@@ -1,0 +1,80 @@
+{
+  "slug": "start-with-whitespace",
+  "number": 32,
+  "stage": "Define",
+  "title": "Start with too much whitespace",
+  "principle": "Refactoring UI / Steve Schoger public guidance: developers stop tightening spacing too early. Start with way too much whitespace, then remove until it feels tight but breathable. Establish a spacing scale; avoid ambiguous gaps; you don’t have to fill the whole screen.",
+  "procedure": [
+    "Apply an intentionally excessive padding/gap pass (cards, sections, button internals).",
+    "Define a spacing scale (e.g. 4/8/12/16/24/32/48) and snap every gap to it.",
+    "Tighten only until related groups read as groups and unrelated ones separate—stop before cramped.",
+    "Leave unused canvas when content doesn’t need full-bleed density.",
+    "Critic check: does anything feel pressed to an edge?"
+  ],
+  "examplePrompts": [
+    "Spacing refactor (Refactoring UI public tips):\n1) Double padding inside cards/modals/sections.\n2) Snap all gaps to a declared spacing scale.\n3) Tighten only until grouping is clear—prefer too much air over cramped AI dashboards.\n4) Do not fill empty regions with decorative gradients.\nReturn before/after spacing tokens.",
+    "This form feels anxious. Add generous internal padding, increase vertical rhythm between fields, and delete divider lines that were compensating for tight gaps."
+  ],
+  "promptWhy": [
+    "Double-then-tighten counters the model prior toward dense dashboards.",
+    "Pairs spacing fix with deleting compensatory borders—common AI tell."
+  ],
+  "tips": [
+    "Lack of whitespace is one of the biggest developer mistakes Schoger calls out in public talks.",
+    "Ambiguous spacing (equal gaps between unlike groups) confuses hierarchy.",
+    "Quiet Folio desk uses generous measure and section air on purpose.",
+    "Public: Medium tips + refactoringui.com — no paid-book quotes.",
+    "Schoger CSS Day talk demos excess air then tighten — public YouTube."
+  ],
+  "sourceUrls": [
+    "https://medium.com/refactoring-ui/7-practical-tips-for-cheating-at-design-40c736799886",
+    "https://refactoringui.com/",
+    "https://www.youtube.com/watch?v=7Z9rrryIOC4"
+  ],
+  "related": [
+    "hierarchy-with-weight",
+    "fewer-borders",
+    "cut-elements",
+    "remove-ai-tells"
+  ],
+  "pairsWellWith": [
+    "fewer-borders",
+    "hierarchy-with-weight",
+    "cut-elements"
+  ],
+  "workedExamples": [
+    {
+      "title": "Cramped card → breathing card",
+      "before": "16px everywhere; fields kiss borders; dividers everywhere.",
+      "after": "32px card padding, 24px field gaps on scale; dividers removed where space separates.",
+      "body": "Start with too much white space, then remove—public Refactoring UI layout advice paraphrased."
+    },
+    {
+      "title": "Don’t fill the screen",
+      "body": "A narrow reading column on paper canvas can beat a stretched full-bleed grid. Empty space is a design material."
+    },
+    {
+      "title": "Scale beats vibes",
+      "body": "Snapping to a spacing system prevents 13px/17px/21px junk gaps models invent."
+    },
+    {
+      "title": "Form anxiety",
+      "before": "Fields stacked with 8px gaps and a border on every group.",
+      "after": "24px field rhythm, 32px section padding, borders removed where space groups.",
+      "body": "Public Refactoring UI spacing advice: start with too much whitespace."
+    }
+  ],
+  "antiPatterns": [
+    "Tightening until edges feel pressed.",
+    "Using borders instead of space to separate.",
+    "Filling voids with gradient chrome.",
+    "Using unique magic-number gaps instead of a scale."
+  ],
+  "checklist": [
+    "Excess-air pass happened before tighten.",
+    "Spacing scale declared and applied.",
+    "No content glued to container edges.",
+    "Critic OK on breathing room.",
+    "Ambiguous equal gaps between unlike groups removed."
+  ]
+}

@@ -12,16 +12,20 @@
   ],
   "examplePrompts": [
     "Elements: Camera input, pantry scanner, dietary settings form, meal suggestions list, recipe cards",
-    "Elements: Headline (max 7 words), subheadline, single-sentence body copy."
+    "Elements: Headline (max 7 words), subheadline, single-sentence body copy.",
+    "Elements: Search field, filter chips (diet), recipe cards (photo, time, missing-ingredient count), primary Cook tonight button. No testimonial slider."
   ],
   "promptWhy": [
     "Inventory removes “what screens exist?” ambiguity.",
-    "Part-level copy elements force structure instead of a blob of marketing prose."
+    "Part-level copy elements force structure instead of a blob of marketing prose.",
+    "Named elements + explicit exclusions beat modern dashboard."
   ],
   "tips": [
     "TC-EBC README: each line as short as possible; only what the model must know.",
     "Pairs with wireframe-first when you’re still exploring structure.",
-    "Partial catalog—no endorsement."
+    "Partial catalog—no endorsement.",
+    "Keep Quiet Folio paper/ink if applying on this desk—no purple chrome.",
+    "Exclusions (No X) are as important as inclusions in Elements."
   ],
   "sourceUrls": [
     "https://www.figma.com/blog/designer-framework-for-better-ai-prompts/",
@@ -40,15 +44,25 @@
     {
       "title": "Pantry app element inventory",
       "body": "Camera, scanner, dietary form, suggestions list, recipe cards—enough for Figma Make to scaffold a real information architecture. Cite: Figma blog."
+    },
+    {
+      "title": "Exclusion as element craft",
+      "body": "Listing what must not appear (testimonial slider) is Elements hygiene—stops default SaaS modules. Cite Figma TC-EBC post."
+    },
+    {
+      "title": "Public-source honesty",
+      "body": "Claims stay within public blog/talk paraphrase—no invented paywalled quotes."
     }
   ],
   "antiPatterns": [
     "Embedding visual style essays inside Elements.",
-    "Omitting key screens so the model invents a different IA."
+    "Omitting key screens so the model invents a different IA.",
+    "Omitting this TC-EBC slot and hoping Task alone carries the build."
   ],
   "checklist": [
     "Elements are countable UI/copy parts.",
     "List is short.",
-    "Style lives under Constraints, not here."
+    "Style lives under Constraints, not here.",
+    "Example prompt includes observable detail, not adjectives only."
   ]
 }

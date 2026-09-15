@@ -11,12 +11,15 @@
     "Spot-check that no regenerated marketing blurbs reappear on later passes."
   ],
   "examplePrompts": [
-    "Do not rewrite these strings. Wire them exactly as written:\n\n- Name line: <your hand-written line>\n- Empty state: <your hand-written empty state>\n- Primary CTA: <your hand-written CTA>\n- Error: <your hand-written error>\n- Onboarding step 1–n: <your hand-written steps>\n\nIf you need more UI copy, leave a TODO comment rather than inventing marketing language."
+    "Do not rewrite these strings. Wire them exactly as written:\n\n- Name line: <your hand-written line>\n- Empty state: <your hand-written empty state>\n- Primary CTA: <your hand-written CTA>\n- Error: <your hand-written error>\n- Onboarding step 1–n: <your hand-written steps>\n\nIf you need more UI copy, leave a TODO comment rather than inventing marketing language.",
+    "Protect these hand-written strings under LOCKED_COPY. Future agents may restyle but must not rewrite locked lines without asking:\n---\n{paste}\n---"
   ],
   "tips": [
     "Copy is where AI tells linger after the visuals look intentional.",
     "Specific lived detail beats polished generic claims.",
-    "Protect hand-written strings from “helpful” regenerations in later agent turns."
+    "Protect hand-written strings from “helpful” regenerations in later agent turns.",
+    "Keep Quiet Folio paper/ink if applying on this desk—no purple chrome.",
+    "Lenny technique 8 is named at the paywall—this catalog keeps editorial condensation only."
   ],
   "sourceUrls": [
     "https://www.lennysnewsletter.com/p/how-to-turn-your-ai-into-a-world"
@@ -36,6 +39,10 @@
     {
       "title": "Protect strings from “helpful” regen",
       "body": "Wire hand-written name line, empty state, CTA, errors, onboarding exactly; TODO rather than inventing marketing blurbs on later turns."
+    },
+    {
+      "title": "Public-source honesty",
+      "body": "Claims stay within public blog/talk paraphrase—no invented paywalled quotes."
     }
   ],
   "antiPatterns": [
@@ -50,7 +57,8 @@
     "Spot-checked after later passes for regenerated blurbs."
   ],
   "promptWhy": [
-    "Exact-string wiring + TODO fallback stops the model from re-AI-ing the voice."
+    "Exact-string wiring + TODO fallback stops the model from re-AI-ing the voice.",
+    "Explicit lock block prevents later agents from regenerating voice."
   ],
   "pairsWellWith": [
     "remove-ai-tells",

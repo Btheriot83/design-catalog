@@ -1,0 +1,71 @@
+{
+  "slug": "garden-status-labels",
+  "number": 29,
+  "stage": "Deliver",
+  "title": "Label epistemic status in public",
+  "principle": "Maggie Appleton’s digital-garden ethos: publish imperfect work, but make incompleteness legible. Seedling / budding / evergreen (or draft / certainty / effort tags à la Gwern and Devon Zuegel) tell readers how done a note is. For AI craft desks, status labels stop agents and humans from treating a half-formed prompt pack like canon.",
+  "procedure": [
+    "Pick a small status vocabulary (e.g. seedling / budding / evergreen) and define each in one line.",
+    "Put status + planted/last-tended dates on every public craft note, technique draft, or prompt pack.",
+    "Optionally add certainty or effort tags when claims could be over-read as settled truth.",
+    "Update status when you tend the note—growth is visible, not hidden behind a silent edit.",
+    "Teach agents: never upgrade a seedling to evergreen without human or critic review."
+  ],
+  "examplePrompts": [
+    "Add garden status labels (Maggie Appleton ethos) to these docs:\n- Vocabulary: seedling (rough), budding (clarified), evergreen (reasonably complete, still tendable).\n- Each page gets status + planted date + last-tended date in the header.\n- Do not rewrite seedling content to sound finished—label honesty beats fake polish.\nReturn the header pattern and apply it.",
+    "Audit this technique page: if worked examples are thin or sources are partial, set status to budding and add a one-line coverage note. Never imply paywalled depth you do not have."
+  ],
+  "promptWhy": [
+    "Forces honesty about completeness—the failure mode of AI catalogs is sounding finished when thin.",
+    "Ties status to source coverage so Deliver-stage pages cannot bluff past paywalls."
+  ],
+  "tips": [
+    "Gardens favour topography over timelines—status matters more than publish date.",
+    "Learning in public only works if imperfection is disclosed (Appleton’s pattern 3).",
+    "Pair with sources.json coverage notes already used in this catalog.",
+    "Public: https://maggieappleton.com/garden-history — no endorsement.",
+    "Keep Quiet Folio paper/ink if applying on this desk—no purple chrome."
+  ],
+  "sourceUrls": [
+    "https://maggieappleton.com/garden-history",
+    "https://maggieappleton.com/"
+  ],
+  "related": [
+    "illustrate-the-invisible",
+    "hand-rewrite-copy",
+    "keep-working-alongside",
+    "remove-ai-tells"
+  ],
+  "pairsWellWith": [
+    "hand-rewrite-copy",
+    "last-mile-manual",
+    "critic-subagents"
+  ],
+  "workedExamples": [
+    {
+      "title": "Seedling vs evergreen technique",
+      "before": "Thin TC-EBC stub presented with the same chrome as a full Anshu technique—readers assume equal depth.",
+      "after": "Budding label + coverage note (‘public Figma blog paraphrase; no course reprint’) sets expectations.",
+      "body": "Appleton: gardens make imperfection known. This catalog’s sources already use coverage fields; status labels extend that to the page chrome."
+    },
+    {
+      "title": "Planted / last tended",
+      "body": "Maggie’s own essays show planted and last-tended timestamps so readers see growth. Agents should bump last-tended when they deepen a technique."
+    },
+    {
+      "title": "Terms of service for gardens",
+      "body": "Shawn Wang’s digital gardening TOS (cited in Appleton’s essay) asks writers for epistemic disclosure and readers for constructive critique—useful norms for public craft desks."
+    }
+  ],
+  "antiPatterns": [
+    "Shipping unfinished prompt packs with authoritative tone and no status.",
+    "Using status as decoration without definitions.",
+    "Silently editing evergreen pages into contradiction without a tend note."
+  ],
+  "checklist": [
+    "Status vocabulary defined on the desk.",
+    "Public craft pages show status + dates.",
+    "Coverage/paywall honesty matches sources notes.",
+    "Agents forbidden from silent evergreen upgrades."
+  ]
+}

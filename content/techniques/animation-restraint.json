@@ -1,0 +1,72 @@
+{
+  "slug": "animation-restraint",
+  "number": 28,
+  "stage": "Deliver",
+  "title": "Default to no animation",
+  "principle": "The best animation is often no animation. Emil Kowalski’s You Don’t Need Animations: when users open a tool with a clear goal hundreds of times a day, delight becomes friction. Frequency of use is the deciding variable—hover flair, list selection, and keyboard navigation usually lose to instant response. Ship restraint on purpose.",
+  "procedure": [
+    "List surfaces by daily frequency (power tools, lists, shortcuts vs rare feedback, onboarding, marketing).",
+    "Delete motion on high-frequency and keyboard-driven paths by default.",
+    "Keep motion only where purpose is clear and frequency is low enough that delight won’t sour.",
+    "If unsure, A/B with yourself: toggle J/K style open with and without motion—pick the one that still feels good after twenty reps.",
+    "Document the ‘no motion’ decisions so the next agent doesn’t ‘polish’ them back in."
+  ],
+  "examplePrompts": [
+    "Apply animation restraint (Emil Kowalski — You Don’t Need Animations):\n1) Rank every animated element by how often a power user will see it per day.\n2) Remove animations from anything likely >20×/day and from all keyboard-initiated actions.\n3) Keep at most 1–2 low-frequency delight motions if they have a purpose.\n4) Do not replace deleted motion with slower ‘elegant’ fades.\nReturn a before/after inventory.",
+    "This command palette animates on open and on highlight move. Strip both. Make highlight follow keys instantly. Justify any remaining motion in one sentence or delete it."
+  ],
+  "promptWhy": [
+    "Frequency ranking makes delete decisions mechanical instead of taste-argumentative.",
+    "Palette example targets the classic AI failure: decorative motion on a workhorse control."
+  ],
+  "tips": [
+    "Raycast opens with no animation—and that is the optimal daily experience.",
+    "Rare morphing feedback widgets can delight; the same morph every hour becomes annoyance.",
+    "Restraint pairs with remove-ai-tells: motion-as-chrome is an AI tell.",
+    "Public essay: https://emilkowal.ski/ui/you-dont-need-animations"
+  ],
+  "sourceUrls": [
+    "https://emilkowal.ski/ui/you-dont-need-animations",
+    "https://emilkowal.ski/ui/great-animations",
+    "https://emilkowal.ski/"
+  ],
+  "related": [
+    "purposeful-motion",
+    "remove-ai-tells",
+    "cut-elements",
+    "last-mile-manual"
+  ],
+  "pairsWellWith": [
+    "purposeful-motion",
+    "remove-ai-tells",
+    "critic-subagents"
+  ],
+  "workedExamples": [
+    {
+      "title": "Command palette vs marketing hero",
+      "before": "Both use 300ms fades because ‘polish’.",
+      "after": "Palette: instant. Hero explain-motion: kept with a purpose sentence.",
+      "body": "Emil contrasts daily tools (no animation) with purposeful marketing motion. Frequency splits the decision. Cite: emilkowal.ski/ui/you-dont-need-animations."
+    },
+    {
+      "title": "List highlight lag",
+      "body": "Arrow-key list selection with animated highlight feels delayed and disconnected. Instant highlight wins for high-frequency navigation—demoed in the public essay."
+    },
+    {
+      "title": "Quiet Folio desk",
+      "body": "This catalog’s motion lab uses short, reduced-motion-aware recipes. Most chrome stays still; restraint is part of the letterpress aesthetic."
+    }
+  ],
+  "antiPatterns": [
+    "Adding enter animations to every panel ‘for consistency’.",
+    "Animating keyboard highlight or focus rings with duration.",
+    "Reintroducing deleted motion in a later ‘make it alive’ pass without re-checking frequency."
+  ],
+  "checklist": [
+    "Frequency inventory exists for animated surfaces.",
+    "Keyboard paths are instant.",
+    "High-frequency UI has no decorative motion.",
+    "Kept motions have purpose sentences.",
+    "Decisions documented for future agents."
+  ]
+}

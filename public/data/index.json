@@ -1,15 +1,15 @@
 {
   "name": "Design Catalog",
-  "description": "Letterpress study desk of AI design techniques (Anshu Chimala, Nate Parrott, Greg Huntoon). Public sources only; no endorsement.",
+  "description": "Letterpress study desk of AI design techniques (Anshu, Nate, Greg + craft directory voices). Public sources only; no endorsement.",
   "baseUrl": "https://design-catalog-three.vercel.app",
-  "lastUpdated": "2026-09-15T18:32:29.702Z",
-  "techniqueCount": 24,
+  "lastUpdated": "2026-09-15T19:26:14.668Z",
+  "techniqueCount": 36,
   "designerCount": 50,
-  "sourceCount": 9,
+  "sourceCount": 18,
   "stages": [
     {
       "id": "Discover",
-      "techniqueCount": 8,
+      "techniqueCount": 10,
       "techniqueSlugs": [
         "seed-strings",
         "ambitious-prompts",
@@ -18,12 +18,14 @@
         "sketch-what-you-cant-describe",
         "wireframe-first",
         "tc-ebc-task",
-        "tc-ebc-context"
+        "tc-ebc-context",
+        "illustrate-the-invisible",
+        "alive-by-default"
       ]
     },
     {
       "id": "Define",
-      "techniqueCount": 9,
+      "techniqueCount": 15,
       "techniqueSlugs": [
         "critic-subagents",
         "image-generation",
@@ -33,12 +35,18 @@
         "give-real-context",
         "make-it-alive",
         "tc-ebc-elements",
-        "tc-ebc-behavior"
+        "tc-ebc-behavior",
+        "designing-depth",
+        "stagger-choreograph-motion",
+        "purposeful-motion",
+        "hierarchy-with-weight",
+        "start-with-whitespace",
+        "screens-want-honesty"
       ]
     },
     {
       "id": "Deliver",
-      "techniqueCount": 7,
+      "techniqueCount": 11,
       "techniqueSlugs": [
         "cut-elements",
         "remove-ai-tells",
@@ -46,7 +54,11 @@
         "point-and-talk",
         "last-mile-manual",
         "keep-working-alongside",
-        "tc-ebc-constraints"
+        "tc-ebc-constraints",
+        "animation-restraint",
+        "garden-status-labels",
+        "fewer-borders",
+        "transition-recipes-as-skills"
       ]
     }
   ],
@@ -60,6 +72,30 @@
       "json": "https://design-catalog-three.vercel.app/data/designers/anshu-chimala.json"
     },
     {
+      "slug": "bret-victor",
+      "name": "Bret Victor",
+      "status": "partial",
+      "techniqueCount": 1,
+      "url": "https://design-catalog-three.vercel.app/designers/bret-victor",
+      "json": "https://design-catalog-three.vercel.app/data/designers/bret-victor.json"
+    },
+    {
+      "slug": "emil-kowalski",
+      "name": "Emil Kowalski",
+      "status": "partial",
+      "techniqueCount": 2,
+      "url": "https://design-catalog-three.vercel.app/designers/emil-kowalski",
+      "json": "https://design-catalog-three.vercel.app/data/designers/emil-kowalski.json"
+    },
+    {
+      "slug": "frank-chimero",
+      "name": "Frank Chimero",
+      "status": "partial",
+      "techniqueCount": 1,
+      "url": "https://design-catalog-three.vercel.app/designers/frank-chimero",
+      "json": "https://design-catalog-three.vercel.app/data/designers/frank-chimero.json"
+    },
+    {
       "slug": "greg-huntoon",
       "name": "Greg Huntoon",
       "status": "partial",
@@ -68,12 +104,44 @@
       "json": "https://design-catalog-three.vercel.app/data/designers/greg-huntoon.json"
     },
     {
+      "slug": "jakub-antalik",
+      "name": "Jakub Antalik",
+      "status": "partial",
+      "techniqueCount": 1,
+      "url": "https://design-catalog-three.vercel.app/designers/jakub-antalik",
+      "json": "https://design-catalog-three.vercel.app/data/designers/jakub-antalik.json"
+    },
+    {
+      "slug": "maggie-appleton",
+      "name": "Maggie Appleton",
+      "status": "partial",
+      "techniqueCount": 2,
+      "url": "https://design-catalog-three.vercel.app/designers/maggie-appleton",
+      "json": "https://design-catalog-three.vercel.app/data/designers/maggie-appleton.json"
+    },
+    {
       "slug": "nate-parrott",
       "name": "Nate Parrott",
       "status": "partial",
       "techniqueCount": 11,
       "url": "https://design-catalog-three.vercel.app/designers/nate-parrott",
       "json": "https://design-catalog-three.vercel.app/data/designers/nate-parrott.json"
+    },
+    {
+      "slug": "rauno-freiberg",
+      "name": "Rauno Freiberg",
+      "status": "partial",
+      "techniqueCount": 2,
+      "url": "https://design-catalog-three.vercel.app/designers/rauno-freiberg",
+      "json": "https://design-catalog-three.vercel.app/data/designers/rauno-freiberg.json"
+    },
+    {
+      "slug": "steve-schoger",
+      "name": "Steve Schoger",
+      "status": "partial",
+      "techniqueCount": 3,
+      "url": "https://design-catalog-three.vercel.app/designers/steve-schoger",
+      "json": "https://design-catalog-three.vercel.app/data/designers/steve-schoger.json"
     },
     {
       "slug": "adam-argyle",
@@ -122,14 +190,6 @@
       "techniqueCount": 0,
       "url": "https://design-catalog-three.vercel.app/designers/brad-frost",
       "json": "https://design-catalog-three.vercel.app/data/designers/brad-frost.json"
-    },
-    {
-      "slug": "bret-victor",
-      "name": "Bret Victor",
-      "status": "directory",
-      "techniqueCount": 0,
-      "url": "https://design-catalog-three.vercel.app/designers/bret-victor",
-      "json": "https://design-catalog-three.vercel.app/data/designers/bret-victor.json"
     },
     {
       "slug": "brian-lovin",
@@ -188,14 +248,6 @@
       "json": "https://design-catalog-three.vercel.app/data/designers/don-norman.json"
     },
     {
-      "slug": "emil-kowalski",
-      "name": "Emil Kowalski",
-      "status": "directory",
-      "techniqueCount": 0,
-      "url": "https://design-catalog-three.vercel.app/designers/emil-kowalski",
-      "json": "https://design-catalog-three.vercel.app/data/designers/emil-kowalski.json"
-    },
-    {
       "slug": "erika-hall",
       "name": "Erika Hall",
       "status": "directory",
@@ -204,28 +256,12 @@
       "json": "https://design-catalog-three.vercel.app/data/designers/erika-hall.json"
     },
     {
-      "slug": "frank-chimero",
-      "name": "Frank Chimero",
-      "status": "directory",
-      "techniqueCount": 0,
-      "url": "https://design-catalog-three.vercel.app/designers/frank-chimero",
-      "json": "https://design-catalog-three.vercel.app/data/designers/frank-chimero.json"
-    },
-    {
       "slug": "imran-chaudhri",
       "name": "Imran Chaudhri",
       "status": "directory",
       "techniqueCount": 0,
       "url": "https://design-catalog-three.vercel.app/designers/imran-chaudhri",
       "json": "https://design-catalog-three.vercel.app/data/designers/imran-chaudhri.json"
-    },
-    {
-      "slug": "jakub-antalik",
-      "name": "Jakub Antalik",
-      "status": "directory",
-      "techniqueCount": 0,
-      "url": "https://design-catalog-three.vercel.app/designers/jakub-antalik",
-      "json": "https://design-catalog-three.vercel.app/data/designers/jakub-antalik.json"
     },
     {
       "slug": "jason-yuan",
@@ -324,14 +360,6 @@
       "json": "https://design-catalog-three.vercel.app/data/designers/luke-wroblewski.json"
     },
     {
-      "slug": "maggie-appleton",
-      "name": "Maggie Appleton",
-      "status": "directory",
-      "techniqueCount": 0,
-      "url": "https://design-catalog-three.vercel.app/designers/maggie-appleton",
-      "json": "https://design-catalog-three.vercel.app/data/designers/maggie-appleton.json"
-    },
-    {
       "slug": "maxime-heckel",
       "name": "Maxime Heckel",
       "status": "directory",
@@ -388,14 +416,6 @@
       "json": "https://design-catalog-three.vercel.app/data/designers/rasmus-andersson.json"
     },
     {
-      "slug": "rauno-freiberg",
-      "name": "Rauno Freiberg",
-      "status": "directory",
-      "techniqueCount": 0,
-      "url": "https://design-catalog-three.vercel.app/designers/rauno-freiberg",
-      "json": "https://design-catalog-three.vercel.app/data/designers/rauno-freiberg.json"
-    },
-    {
       "slug": "robin-rendle",
       "name": "Robin Rendle",
       "status": "directory",
@@ -418,14 +438,6 @@
       "techniqueCount": 0,
       "url": "https://design-catalog-three.vercel.app/designers/shu-ding",
       "json": "https://design-catalog-three.vercel.app/data/designers/shu-ding.json"
-    },
-    {
-      "slug": "steve-schoger",
-      "name": "Steve Schoger",
-      "status": "directory",
-      "techniqueCount": 0,
-      "url": "https://design-catalog-three.vercel.app/designers/steve-schoger",
-      "json": "https://design-catalog-three.vercel.app/data/designers/steve-schoger.json"
     },
     {
       "slug": "tobias-van-schneider",
@@ -692,6 +704,126 @@
       "designerName": "Greg Huntoon",
       "url": "https://design-catalog-three.vercel.app/techniques/tc-ebc-constraints",
       "json": "https://design-catalog-three.vercel.app/data/techniques/tc-ebc-constraints.json"
+    },
+    {
+      "slug": "designing-depth",
+      "number": 25,
+      "title": "Design depth into flat frames",
+      "stage": "Define",
+      "designerSlug": "rauno-freiberg",
+      "designerName": "Rauno Freiberg",
+      "url": "https://design-catalog-three.vercel.app/techniques/designing-depth",
+      "json": "https://design-catalog-three.vercel.app/data/techniques/designing-depth.json"
+    },
+    {
+      "slug": "stagger-choreograph-motion",
+      "number": 26,
+      "title": "Stagger and choreograph motion like nature",
+      "stage": "Define",
+      "designerSlug": "rauno-freiberg",
+      "designerName": "Rauno Freiberg",
+      "url": "https://design-catalog-three.vercel.app/techniques/stagger-choreograph-motion",
+      "json": "https://design-catalog-three.vercel.app/data/techniques/stagger-choreograph-motion.json"
+    },
+    {
+      "slug": "purposeful-motion",
+      "number": 27,
+      "title": "Give every animation a purpose",
+      "stage": "Define",
+      "designerSlug": "emil-kowalski",
+      "designerName": "Emil Kowalski",
+      "url": "https://design-catalog-three.vercel.app/techniques/purposeful-motion",
+      "json": "https://design-catalog-three.vercel.app/data/techniques/purposeful-motion.json"
+    },
+    {
+      "slug": "animation-restraint",
+      "number": 28,
+      "title": "Default to no animation",
+      "stage": "Deliver",
+      "designerSlug": "emil-kowalski",
+      "designerName": "Emil Kowalski",
+      "url": "https://design-catalog-three.vercel.app/techniques/animation-restraint",
+      "json": "https://design-catalog-three.vercel.app/data/techniques/animation-restraint.json"
+    },
+    {
+      "slug": "garden-status-labels",
+      "number": 29,
+      "title": "Label epistemic status in public",
+      "stage": "Deliver",
+      "designerSlug": "maggie-appleton",
+      "designerName": "Maggie Appleton",
+      "url": "https://design-catalog-three.vercel.app/techniques/garden-status-labels",
+      "json": "https://design-catalog-three.vercel.app/data/techniques/garden-status-labels.json"
+    },
+    {
+      "slug": "illustrate-the-invisible",
+      "number": 30,
+      "title": "Illustrate invisible concepts before you prompt polish",
+      "stage": "Discover",
+      "designerSlug": "maggie-appleton",
+      "designerName": "Maggie Appleton",
+      "url": "https://design-catalog-three.vercel.app/techniques/illustrate-the-invisible",
+      "json": "https://design-catalog-three.vercel.app/data/techniques/illustrate-the-invisible.json"
+    },
+    {
+      "slug": "hierarchy-with-weight",
+      "number": 31,
+      "title": "Build hierarchy with weight and color, not size",
+      "stage": "Define",
+      "designerSlug": "steve-schoger",
+      "designerName": "Steve Schoger",
+      "url": "https://design-catalog-three.vercel.app/techniques/hierarchy-with-weight",
+      "json": "https://design-catalog-three.vercel.app/data/techniques/hierarchy-with-weight.json"
+    },
+    {
+      "slug": "start-with-whitespace",
+      "number": 32,
+      "title": "Start with too much whitespace",
+      "stage": "Define",
+      "designerSlug": "steve-schoger",
+      "designerName": "Steve Schoger",
+      "url": "https://design-catalog-three.vercel.app/techniques/start-with-whitespace",
+      "json": "https://design-catalog-three.vercel.app/data/techniques/start-with-whitespace.json"
+    },
+    {
+      "slug": "fewer-borders",
+      "number": 33,
+      "title": "Use fewer borders",
+      "stage": "Deliver",
+      "designerSlug": "steve-schoger",
+      "designerName": "Steve Schoger",
+      "url": "https://design-catalog-three.vercel.app/techniques/fewer-borders",
+      "json": "https://design-catalog-three.vercel.app/data/techniques/fewer-borders.json"
+    },
+    {
+      "slug": "alive-by-default",
+      "number": 34,
+      "title": "Draw things alive by default",
+      "stage": "Discover",
+      "designerSlug": "bret-victor",
+      "designerName": "Bret Victor",
+      "url": "https://design-catalog-three.vercel.app/techniques/alive-by-default",
+      "json": "https://design-catalog-three.vercel.app/data/techniques/alive-by-default.json"
+    },
+    {
+      "slug": "transition-recipes-as-skills",
+      "number": 35,
+      "title": "Hand agents transition recipes, not vibes",
+      "stage": "Deliver",
+      "designerSlug": "jakub-antalik",
+      "designerName": "Jakub Antalik",
+      "url": "https://design-catalog-three.vercel.app/techniques/transition-recipes-as-skills",
+      "json": "https://design-catalog-three.vercel.app/data/techniques/transition-recipes-as-skills.json"
+    },
+    {
+      "slug": "screens-want-honesty",
+      "number": 36,
+      "title": "Design for what screens want",
+      "stage": "Define",
+      "designerSlug": "frank-chimero",
+      "designerName": "Frank Chimero",
+      "url": "https://design-catalog-three.vercel.app/techniques/screens-want-honesty",
+      "json": "https://design-catalog-three.vercel.app/data/techniques/screens-want-honesty.json"
     }
   ],
   "routes": {

@@ -12,7 +12,8 @@
     "Revisit the brief when a remix drifts—update the written intent instead of vibes-chasing."
   ],
   "examplePrompts": [
-    "Before designing anything: here is the full brief I wrote offline.\n\nGoal: <what this artifact must communicate>\nAudience: <who sees it>\nConstraints: <brand, format, time, fidelity>\nMust include: <flows, screens, or beats>\nMust avoid: <defaults or aesthetics I do not want>\n\nExecute this vision. Do not invent a different concept."
+    "Before designing anything: here is the full brief I wrote offline.\n\nGoal: <what this artifact must communicate>\nAudience: <who sees it>\nConstraints: <brand, format, time, fidelity>\nMust include: <flows, screens, or beats>\nMust avoid: <defaults or aesthetics I do not want>\n\nExecute this vision. Do not invent a different concept.",
+    "Before any UI generation: write (1) user job, (2) refuse-list, (3) success look in 5 bullets, (4) which technique lane. Show me that plan and wait for OK."
   ],
   "tips": [
     "Nate: “I spend a lot of time writing prompts before I design.”",
@@ -32,19 +33,32 @@
     {
       "title": "Couch / walk brief → exact vision",
       "body": "Nate: spend a lot of time writing prompts before designing; dictate, Notes-from-the-couch, or walk transcripts so Claude executes the vision when you sit down—not a blank-canvas improvisation. Cite: Anthropic Claude blog."
+    },
+    {
+      "title": "Prompt-first thrash",
+      "before": "Jump straight into generate; thrash for an hour.",
+      "after": "Plan gate then one ambitious prompt.",
+      "body": "Nate: think before you prompt. Cite Anthropic blog."
+    },
+    {
+      "title": "Public-source honesty",
+      "body": "Claims stay within the public Anthropic/Figma posts—no invented paywalled quotes."
     }
   ],
   "antiPatterns": [
     "Opening the tool and prompting with no written intent.",
-    "Using the first empty generation as a substitute for a brief."
+    "Using the first empty generation as a substitute for a brief.",
+    "Skipping this step and hoping vibes carry the craft."
   ],
   "checklist": [
     "Brief exists before visuals.",
     "Constraints and must-avoids are explicit.",
-    "Capture method doesn’t matter—completeness does."
+    "Capture method doesn’t matter—completeness does.",
+    "Fresh pass confirms the prompt constraints were followed."
   ],
   "promptWhy": [
-    "Front-loaded brief blocks the model from inventing a different concept."
+    "Front-loaded brief blocks the model from inventing a different concept.",
+    "Offline thinking prevents the first token stream from locking a bad prior."
   ],
   "pairsWellWith": [
     "specify-the-look",

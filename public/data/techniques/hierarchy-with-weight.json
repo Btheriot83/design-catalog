@@ -1,0 +1,73 @@
+{
+  "slug": "hierarchy-with-weight",
+  "number": 31,
+  "stage": "Define",
+  "title": "Build hierarchy with weight and color, not size",
+  "principle": "Refactoring UI’s public tip lineage (Wathan/Schoger): relying on font size alone for hierarchy is a common failure. Use color and weight—typically two or three text colors (primary dark, secondary grey, ancillary lighter)—and keep size steps few. On colored backgrounds, never use raw grey text; reduce opacity of white or pick a hue-matched mute instead.",
+  "procedure": [
+    "Audit text roles: primary / secondary / ancillary—assign color+weight before touching font sizes.",
+    "Limit yourself to two or three type sizes; push contrast through weight and ink value.",
+    "On colored surfaces, replace grey with white-at-opacity or a hand-picked tint of the background hue.",
+    "Map actions to a hierarchy pyramid: one primary, few secondary, tertiary as links.",
+    "Screenshot-critic: can you still parse hierarchy if all sizes were equalized?"
+  ],
+  "examplePrompts": [
+    "Refactor typography hierarchy (Refactoring UI public tips):\n- Roles: primary / secondary / ancillary via color+weight, not five font sizes.\n- Max three sizes on this view.\n- If text sits on a colored background, forbid grey—use white opacity or hue-matched mute.\n- Buttons: one solid primary, outline/low-contrast secondary, link-style tertiary.\nReturn token changes + rationale.",
+    "This card uses size for every level and grey labels on a blue header. Fix hierarchy with weight/color; hue-match the muted header text."
+  ],
+  "promptWhy": [
+    "Caps size steps so models stop shouting with 5xl/4xl/3xl ladders.",
+    "Names the grey-on-color failure mode explicitly—models love soft grey everywhere."
+  ],
+  "tips": [
+    "Public Medium tip ‘7 practical tips for cheating at design’ and refactoringui.com free previews cover these rules.",
+    "De-emphasize to emphasize: quiet surroundings make the primary loud without neon.",
+    "Labels are a last resort—prefer content that explains itself.",
+    "No endorsement of the paid book; only public tips paraphrased."
+  ],
+  "sourceUrls": [
+    "https://medium.com/refactoring-ui/7-practical-tips-for-cheating-at-design-40c736799886",
+    "https://refactoringui.com/",
+    "https://refactoringui.com/previews/building-your-color-palette/"
+  ],
+  "related": [
+    "start-with-whitespace",
+    "fewer-borders",
+    "specify-the-look",
+    "remove-ai-tells"
+  ],
+  "pairsWellWith": [
+    "start-with-whitespace",
+    "hand-rewrite-copy",
+    "cut-elements"
+  ],
+  "workedExamples": [
+    {
+      "title": "Size ladder → ink ladder",
+      "before": "Headline 3xl, sub 2xl, meta xl, all near-black; hierarchy muddy.",
+      "after": "Headline semibold ink, sub regular studio-ink, meta lighter grey—two sizes total.",
+      "body": "Public Refactoring UI tip: color and weight do the job size was forced to do. Cite Medium tip + site."
+    },
+    {
+      "title": "Grey on blue header",
+      "before": "Soft grey subtitle on saturated blue—looks dirty.",
+      "after": "White at ~70% opacity or lighter blue tint; hierarchy without clash.",
+      "body": "Don’t use grey text on colored backgrounds—public tip. Hue-matched mute keeps harmony."
+    },
+    {
+      "title": "Action pyramid",
+      "body": "One solid primary CTA, secondary outline, tertiary text link. Semantics matter less than hierarchy of importance."
+    }
+  ],
+  "antiPatterns": [
+    "Five font sizes to fake structure.",
+    "Grey body text on brand-colored banners.",
+    "Two solid primary buttons competing."
+  ],
+  "checklist": [
+    "Text roles mapped to ≤3 colors/weights.",
+    "≤3 type sizes on the view.",
+    "No grey on colored backgrounds.",
+    "Actions follow primary/secondary/tertiary pyramid."
+  ]
+}

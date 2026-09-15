@@ -1,0 +1,72 @@
+{
+  "slug": "illustrate-the-invisible",
+  "number": 30,
+  "stage": "Discover",
+  "title": "Illustrate invisible concepts before you prompt polish",
+  "principle": "Maggie Appleton’s How to Draw Invisible Programming Concepts: abstract ideas become drawable when you pick a concrete source metaphor for a target concept (source → target), encoding relationships—not mascots. Agents default to buzzword gloss; a metaphor brief with teaching frames forces specificity before UI chrome.",
+  "procedure": [
+    "Name the target concept in plain language (one sentence, no product nouns).",
+    "Brainstorm source metaphors; keep ones whose relationships map (containers, flows, hierarchies)—reject cute mascots that could advertise any product.",
+    "Label source vs target explicitly (Appleton’s fountain/target pattern) for each mapping.",
+    "Describe 1–3 teaching frames (setup → change → result) before prompting UI.",
+    "Only then bind components to those frames; kill gloss badges."
+  ],
+  "examplePrompts": [
+    "Before designing UI for this feature, run illustrate-the-invisible (Maggie Appleton lineage):\n1) One-sentence plain explanation with no brand words.\n2) Metaphor options (3) with why each fits the relationships.\n3) Pick one; describe three teaching frames (setup → change → result).\n4) List UI elements that must map to those frames.\nDo not invent screenshots; stay textual if you cannot draw.",
+    "This landing page explains nothing—only adjectives. Replace the hero with a three-step illustrated explanation of what the product does to the user’s stuff. Kill sparkle badges."
+  ],
+  "promptWhy": [
+    "Metaphor-before-UI blocks generic SaaS section templates.",
+    "Teaching frames give Discover-stage agents a structure Lenny-style essays use visually."
+  ],
+  "tips": [
+    "Metaphors are frames: source lets you see the target; bad sources smuggle wrong relationships.",
+    "Programming is already a stack of metaphors—illustrated ones sit on top for humans (Appleton).",
+    "Digital gardens welcome diagrams and mixed media (intercropping pattern in garden-history).",
+    "Public: https://maggieappleton.com/drawinginvisibles1 — paraphrase methods; don’t lift assets.",
+    "Keep Quiet Folio paper/ink if applying on this desk—no purple chrome."
+  ],
+  "sourceUrls": [
+    "https://maggieappleton.com/drawinginvisibles1",
+    "https://maggieappleton.com/garden-history",
+    "https://maggieappleton.com/"
+  ],
+  "related": [
+    "garden-status-labels",
+    "sketch-what-you-cant-describe",
+    "ambitious-prompts",
+    "thinking-before-prompt"
+  ],
+  "pairsWellWith": [
+    "sketch-what-you-cant-describe",
+    "wireframe-first",
+    "seed-strings"
+  ],
+  "workedExamples": [
+    {
+      "title": "Feature page without a metaphor",
+      "before": "‘AI-powered insights’ + three emoji cards.",
+      "after": "Plain sentence + conveyor-belt metaphor frames showing raw notes → sorted shelves → weekly digest; UI mirrors the frames.",
+      "body": "From drawinginvisibles1: CSS selectors as painting parts of a house; Vue-Router as stations on a metro—source metaphors carry structure. Apply the same discipline to product Explain pages. Cite: maggieappleton.com/drawinginvisibles1."
+    },
+    {
+      "title": "Weak mascot test",
+      "body": "If your robot mascot could advertise any SaaS tool, the symbol failed. Relationships in the metaphor must match the system’s actual transforms."
+    },
+    {
+      "title": "Textual frames when you cannot draw",
+      "body": "Agents can still output frame descriptions and ASCII/diagram structure. The point is conceptual clarity before chrome—not Illustrator skill."
+    }
+  ],
+  "antiPatterns": [
+    "Jumping to UI polish with only adjective briefs.",
+    "Decorative illustrations that don’t teach relationships.",
+    "Copying someone else’s illustrated assets."
+  ],
+  "checklist": [
+    "Plain-language concept sentence exists.",
+    "Metaphor chosen for structural fit.",
+    "Three teaching frames described.",
+    "UI maps to frames; gloss badges removed."
+  ]
+}

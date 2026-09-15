@@ -5,18 +5,22 @@
   "title": "Sketch what you can’t describe",
   "principle": "If you have a layout in your head and no words for it, draw it on paper and upload a photo. Visual intent that resists language still transfers when Claude can see the sketch.",
   "procedure": [
-    "When layout is clear in your head but not in words, draw it on paper.",
-    "Photograph and upload the sketch.",
-    "Ask Claude to recreate structure/hierarchy/proportions—not invent a new composition.",
-    "Gate structural changes behind a question."
+    "When layout is clear in your head but not in words, draw it on paper (boxes + labels are enough).",
+    "Photograph in even light; crop to the sketch; upload.",
+    "Ask the model to recreate structure/hierarchy/proportions—not invent a new composition.",
+    "Gate structural changes behind a question; allow only spacing/type polish without asking.",
+    "If the recreation drifts, point-and-talk with a markup on the sketch photo rather than rewriting prose."
   ],
   "examplePrompts": [
-    "I uploaded a photo of a paper sketch. Recreate this layout structure in HTML—same regions, hierarchy, and proportions. Do not invent a different composition. Ask before changing the structure."
+    "I uploaded a photo of a paper sketch. Recreate this layout structure in HTML—same regions, hierarchy, and proportions. Do not invent a different composition. Ask before changing the structure.",
+    "Here is a second photo of the same sketch with red arrows. Keep regions A/B/C exactly; only adjust the gutter between A and B to match the arrow note. Ask before any other structural change."
   ],
   "tips": [
     "Use this when you can picture the layout but can’t name it.",
     "The sketch is the brief; the prompt should protect that structure.",
-    "Pairs well with wireframe-first when fidelity still doesn’t matter."
+    "Pairs well with wireframe-first when fidelity still doesn’t matter.",
+    "Keep Quiet Folio paper/ink if applying on this desk—no purple chrome.",
+    "Even box-and-arrow paper beats spatial scavenger-hunt prose."
   ],
   "sourceUrls": [
     "https://claude.com/blog/how-the-product-designer-who-built-claude-design-uses-it-to-explore-ideas-before-building-them"
@@ -30,19 +34,32 @@
     {
       "title": "Paper photo as brief",
       "body": "Nate: if you have a layout in your head and no words for it, draw on paper and upload a photo. Cite: Anthropic blog."
+    },
+    {
+      "title": "Words fail, boxes win",
+      "before": "Three paragraphs describing a sidebarish nav with a hero that kind of overlaps.",
+      "after": "Paper boxes uploaded; HTML regions match proportions; model asks before changing structure.",
+      "body": "Nate Anthropic blog: draw what you cannot describe, upload the photo. Cite public post."
+    },
+    {
+      "title": "Failure: improve the composition",
+      "body": "If the prompt invites invention, the sketch becomes moodboarding and you lose the mental model you already had."
     }
   ],
   "antiPatterns": [
     "Paragraphs of spatial scavenger-hunt prose.",
-    "Letting the model “improve” the composition unasked."
+    "Letting the model “improve” the composition unasked.",
+    "Uploading a scribble with no region labels and expecting perfect IA."
   ],
   "checklist": [
     "Sketch uploaded.",
     "Prompt protects structure.",
-    "Changes require ask-first."
+    "Changes require ask-first.",
+    "Drift fixed via markup, not a full rewrite."
   ],
   "promptWhy": [
-    "Photo + “do not invent a different composition” makes the sketch authoritative."
+    "Photo + “do not invent a different composition” makes the sketch authoritative.",
+    "Markup-on-sketch keeps authority with the drawing when the first pass drifts."
   ],
   "pairsWellWith": [
     "wireframe-first",

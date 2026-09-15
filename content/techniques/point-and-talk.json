@@ -12,7 +12,8 @@
     "Combine with last-mile direct edits for pixel tweaks."
   ],
   "examplePrompts": [
-    "(Spoken into a comment on the selected element)\nMake this tighter: reduce padding, keep the label, drop the secondary line."
+    "(Spoken into a comment on the selected element)\nMake this tighter: reduce padding, keep the label, drop the secondary line.",
+    "I attached a screenshot with a red box around [region]. Only modify that region: [instruction]. Leave everything outside the box untouched. Confirm the box bounds before editing."
   ],
   "tips": [
     "Requires device dictation plus the comment affordance in Claude Design.",
@@ -38,6 +39,12 @@
       "before": "“The blue button in the third card under the pricing section—make it quieter.”",
       "after": "Select the button → comment → speak: “Quieter: secondary weight, drop the glow.”",
       "body": "Nate: click and speak with dictation so the edit is grounded on the exact target. Cite: Anthropic blog."
+    },
+    {
+      "title": "Prose scavenger hunt",
+      "before": "Three paragraphs describing which card.",
+      "after": "Red box + one instruction.",
+      "body": "Nate: point and talk. Cite Anthropic blog."
     }
   ],
   "antiPatterns": [
@@ -48,10 +55,12 @@
   "checklist": [
     "Dictation enabled.",
     "Element selected before speaking.",
-    "Change is local to the selection."
+    "Change is local to the selection.",
+    "Fresh pass confirms the prompt constraints were followed."
   ],
   "promptWhy": [
-    "Selection replaces ambiguous spatial language."
+    "Selection replaces ambiguous spatial language.",
+    "Spatial selection beats long spatial prose and protects the rest of the composition."
   ],
   "pairsWellWith": [
     "last-mile-manual",

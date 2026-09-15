@@ -11,7 +11,8 @@
     "Stay in flow—idle waiting between turns is optional."
   ],
   "examplePrompts": [
-    "(Queued while a prior turn is still running)\nWhile you finish that: also prepare a second variant with denser type and no hero illustration. I’ll pick after both land."
+    "(Queued while a prior turn is still running)\nWhile you finish that: also prepare a second variant with denser type and no hero illustration. I’ll pick after both land.",
+    "Stay in the canvas with me. I will point at regions; you only change what I indicate. After each change, wait—do not autonomously restyle the whole page."
   ],
   "tips": [
     "Idle waiting between turns is optional, not required.",
@@ -35,6 +36,12 @@
     {
       "title": "Don’t wait on every turn",
       "body": "Nate: keep collaborating—sketch, gather references, edit other surfaces—while the model works, instead of blocking on each response. Cite: Anthropic blog."
+    },
+    {
+      "title": "One-shot drift",
+      "before": "Leave for coffee; return to a different product.",
+      "after": "Point-and-change turns with waits between.",
+      "body": "Nate: keep working alongside Claude Design. Cite Anthropic blog."
     }
   ],
   "antiPatterns": [
@@ -49,7 +56,8 @@
     "Parallel human work identified while the model runs."
   ],
   "promptWhy": [
-    "Queued variant ask keeps momentum without abandoning the in-flight turn."
+    "Queued variant ask keeps momentum without abandoning the in-flight turn.",
+    "Alongside mode keeps human taste in the loop instead of one-shot regeneration."
   ],
   "pairsWellWith": [
     "thinking-before-prompt",

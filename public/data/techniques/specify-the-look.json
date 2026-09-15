@@ -11,12 +11,15 @@
     "Re-check outputs for drift back to favorite model aesthetics."
   ],
   "examplePrompts": [
-    "Do not use your default aesthetic. Use these constraints:\n\nFonts: <primary / secondary>\nColors: <background, text, accent>\nMood references: I uploaded a moodboard—match its typography weight, contrast, and spacing feel.\n\nPropose 3 font-and-color pairings that fit, then wait for me to pick before designing screens."
+    "Do not use your default aesthetic. Use these constraints:\n\nFonts: <primary / secondary>\nColors: <background, text, accent>\nMood references: I uploaded a moodboard—match its typography weight, contrast, and spacing feel.\n\nPropose 3 font-and-color pairings that fit, then wait for me to pick before designing screens.",
+    "Lock look from these three reference screenshots. Extract: type pairing, radius, density, chroma limits. Write a 6-bullet look spec and refuse any purple/glow defaults. Apply to the current draft."
   ],
   "tips": [
     "Undirected Claude lands on recognizable favorite aesthetics; specify look early.",
     "Moodboards and explicit type/color beat vague “make it nice” asks.",
-    "Brainstorm pairings, then choose—don’t skip the selection step."
+    "Brainstorm pairings, then choose—don’t skip the selection step.",
+    "Keep Quiet Folio paper/ink if applying on this desk—no purple chrome.",
+    "Reference screenshots beat adjective stacks (premium, clean, modern)."
   ],
   "sourceUrls": [
     "https://claude.com/blog/how-the-product-designer-who-built-claude-design-uses-it-to-explore-ideas-before-building-them"
@@ -32,19 +35,32 @@
     {
       "title": "Head off favorite aesthetics",
       "body": "Nate: left undirected, Claude picks recognizable favorite aesthetics. Specify fonts/colors, moodboard, or iterate pairings until one feels right. Cite: Anthropic blog."
+    },
+    {
+      "title": "Vibe word vs look spec",
+      "before": "Make it premium and minimal.",
+      "after": "Spec: Source Serif + IBM Plex, 0 radius, hairline borders, paper #FAF9F7, ink #221C24, no chroma accents.",
+      "body": "Nate lineage: specify the look with concrete references. Paraphrase of public Anthropic post practices."
+    },
+    {
+      "title": "Quiet Folio as locked look",
+      "body": "This desk tokens are themselves a specify-the-look artifact—seeded once, reused everywhere."
     }
   ],
   "antiPatterns": [
     "“Make it nice / modern / clean” with no type or color.",
-    "Accepting the first pairing without a selection step."
+    "Accepting the first pairing without a selection step.",
+    "Adjective-only aesthetic briefs."
   ],
   "checklist": [
     "Fonts named or moodboard attached.",
     "A human picked the pairing.",
-    "Later artifacts reuse it."
+    "Later artifacts reuse it.",
+    "Look spec bullets exist and are checked against the draft."
   ],
   "promptWhy": [
-    "Explicit type/color + choose-before-build prevents default aesthetic lock-in."
+    "Explicit type/color + choose-before-build prevents default aesthetic lock-in.",
+    "Extraction to spec to apply beats make-it-like-Linear vibes."
   ],
   "pairsWellWith": [
     "design-system-from-assets",

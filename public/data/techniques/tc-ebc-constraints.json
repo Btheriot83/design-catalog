@@ -13,12 +13,14 @@
   "examplePrompts": [
     "Constraints: Mobile-first, iOS/Android, accessible UI, supports multiple household profiles",
     "Constraints: No jargon. Match the brand tone of Duolingo or Notion. Total length: under 200 characters.",
-    "Full TC-EBC skeleton:\nTask: <what you’re building>\nContext: <why / for whom>\nElements: <UI or copy parts>\nBehavior: <user↔system loop>\nConstraints: <guardrails; for revisions, what not to change>"
+    "Full TC-EBC skeleton:\nTask: <what you’re building>\nContext: <why / for whom>\nElements: <UI or copy parts>\nBehavior: <user↔system loop>\nConstraints: <guardrails; for revisions, what not to change>",
+    "Constraints: Do not change the navigation IA, token names, or primary button component API. You may restyle empty-state illustration and microcopy only."
   ],
   "promptWhy": [
     "Platform + a11y + multi-profile prevents desktop-only fantasy apps.",
     "Measurable length + named tone anchors beat “simple but exciting.”",
-    "Skeleton keeps every prompt scannable and complete."
+    "Skeleton keeps every prompt scannable and complete.",
+    "Named untouchables make revisions safe—Greg revision note."
   ],
   "tips": [
     "Huntoon: for revision prompts, always add directions in Constraints about what not to adjust.",
@@ -50,6 +52,12 @@
       "before": "“Make it better” on a second pass — model restyles everything you liked.",
       "after": "Constraints: Do not change the headline, palette, or primary CTA label. Only tighten spacing and secondary copy.",
       "body": "Greg: put do-not-adjust rules in Constraints so revision passes don’t thrash locked decisions. Cite: Figma blog / TC-EBC repo."
+    },
+    {
+      "title": "Revision without constraints",
+      "before": "Agent rewrites the whole app shell.",
+      "after": "Only empty-state art+copy move.",
+      "body": "Constraints = what must not change. Cite Figma blog + tc-ebc repo."
     }
   ],
   "antiPatterns": [

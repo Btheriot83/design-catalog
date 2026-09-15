@@ -1,0 +1,72 @@
+{
+  "slug": "purposeful-motion",
+  "number": 27,
+  "stage": "Define",
+  "title": "Give every animation a purpose",
+  "principle": "Emil Kowalski’s Great Animations / You Don’t Need Animations thesis: motion must earn its place—explain a feature, signal state change, keep spatial consistency, or (rarely) delight on low-frequency surfaces. Frequency of use, perception of speed (ease-out, usually under 300ms), transform+opacity performance, interruptibility, and prefers-reduced-motion decide whether motion helps or burns trust.",
+  "procedure": [
+    "Write the purpose in one sentence before coding motion (explain / state-change / spatial continuity / rare delight).",
+    "Estimate frequency: daily-driver controls and keyboard actions default to no animation.",
+    "Prefer ease-out and durations under ~300ms for UI; reserve slower/elegant easing for cohesive low-frequency moments (e.g. Sonner-like toast personality).",
+    "Animate transform and opacity only; prefer CSS transitions (interruptible) over one-shot keyframes for dynamic UI.",
+    "Add prefers-reduced-motion fallback; review the next day with fresh eyes or a critic screenshot."
+  ],
+  "examplePrompts": [
+    "Review every animation in this UI against Emil Kowalski’s purposeful-motion bar:\nFor each motion, answer: purpose? frequency? duration/easing? transform+opacity only? interruptible? reduced-motion?\nDelete any motion that fails purpose or fires on high-frequency/keyboard paths.\nKeep total UI transitions ≤300ms with ease-out unless you justify a cohesive exception.\nReturn a kill-list + kept motions with one-line purposes.",
+    "Add enter/exit to this toast. Requirements: spatial consistency (same direction in and out), CSS transition not keyframe, ease that matches the component personality, prefers-reduced-motion → opacity only. Explain purpose in one line."
+  ],
+  "promptWhy": [
+    "Checklist forces delete-first review instead of ‘make it smoother’ which usually adds lag.",
+    "Toast brief encodes Sonner-style principles (spatial continuity, transitions, personality) without copying proprietary code."
+  ],
+  "tips": [
+    "Faster spinner can feel like harder work even when load time is identical—perception matters.",
+    "Tooltip pattern: delay first open; subsequent sibling tooltips open with no delay/animation.",
+    "Never animate keyboard-initiated actions repeated hundreds of times a day (Raycast example).",
+    "Public: https://emilkowal.ski/ui/great-animations and https://emilkowal.ski/ui/you-dont-need-animations — no endorsement."
+  ],
+  "sourceUrls": [
+    "https://emilkowal.ski/ui/great-animations",
+    "https://emilkowal.ski/ui/you-dont-need-animations",
+    "https://emilkowal.ski/"
+  ],
+  "related": [
+    "animation-restraint",
+    "stagger-choreograph-motion",
+    "video-motion",
+    "make-it-alive"
+  ],
+  "pairsWellWith": [
+    "animation-restraint",
+    "transition-recipes-as-skills",
+    "critic-subagents"
+  ],
+  "workedExamples": [
+    {
+      "title": "Marketing explain vs daily chrome",
+      "before": "Same 400ms ease-in fade on marketing hero and on every command-palette keystroke.",
+      "after": "Keep purposeful explain-motion on marketing; strip palette/keyboard motion entirely; UI chrome ≤300ms ease-out.",
+      "body": "Emil: purpose + frequency first. Linear marketing animation that teaches a feature can justify motion; Raycast-like daily tools should not animate open. Cite public essays on emilkowal.ski."
+    },
+    {
+      "title": "Toast spatial consistency",
+      "body": "Sonner-style enter/exit from the same direction makes swipe-to-dismiss intuitive. Purpose is continuity, not decoration. Prefer transitions so rapid toasts interrupt cleanly."
+    },
+    {
+      "title": "Performance trap",
+      "body": "Animating layout properties or main-thread springs while the page loads drops frames. Stick to transform/opacity; hardware-accelerated CSS/WAAPI when the main thread is busy (Emil’s Vercel tab example paraphrased)."
+    }
+  ],
+  "antiPatterns": [
+    "Animating everything that mounts.",
+    "ease-in dropdowns that feel sluggish at the moment of response.",
+    "Keyframes on rapidly retargeted UI (toasts, toggles) that restart from zero."
+  ],
+  "checklist": [
+    "Every kept animation has a written purpose.",
+    "High-frequency and keyboard paths are animation-free.",
+    "Durations generally ≤300ms with responsive easing.",
+    "transform/opacity only; reduced-motion path present.",
+    "Fresh-eyes or critic pass done."
+  ]
+}

@@ -11,7 +11,8 @@
     "Bring existing marks—don’t ask Claude Design to invent logos (no image model for that)."
   ],
   "examplePrompts": [
-    "I uploaded our brand files (logo, typography specs, slide deck, product screenshots). Analyze them and generate a design system I can reuse: fonts, colors, spacing, component patterns, and do’s/don’ts.\n\nEvery new artifact in this project should start from that system—not a blank aesthetic."
+    "I uploaded our brand files (logo, typography specs, slide deck, product screenshots). Analyze them and generate a design system I can reuse: fonts, colors, spacing, component patterns, and do’s/don’ts.\n\nEvery new artifact in this project should start from that system—not a blank aesthetic.",
+    "Here are logo/color/type assets. Derive a minimal token set (colors, radii, type roles, spacing). Build the screen only from those tokens—no inventing a parallel palette."
   ],
   "tips": [
     "Nate distilled Anthropic’s fonts, colors, assets, and principles into prompts so outputs stayed brand-compliant.",
@@ -31,19 +32,32 @@
     {
       "title": "Anthropic brand distilled into prompts",
       "body": "Nate spent time distilling Anthropic fonts, colors, assets, and principles into prompts so tool output stayed brand-compliant—then shared the internal prototype. Cite: Anthropic blog."
+    },
+    {
+      "title": "Invented brand",
+      "before": "Agent invents coral/indigo beside the real logo.",
+      "after": "Tokens extracted from assets; UI uses only those.",
+      "body": "Nate: design system from assets. Cite Anthropic blog."
+    },
+    {
+      "title": "Public-source honesty",
+      "body": "Claims stay within the public Anthropic/Figma posts—no invented paywalled quotes."
     }
   ],
   "antiPatterns": [
     "Blank-slate aesthetics every artifact.",
-    "Asking Claude Design to invent the logo."
+    "Asking Claude Design to invent the logo.",
+    "Skipping this step and hoping vibes carry the craft."
   ],
   "checklist": [
     "Assets uploaded.",
     "System documented (type, color, spacing, do/don’t).",
-    "New work starts from the system."
+    "New work starts from the system.",
+    "Fresh pass confirms the prompt constraints were followed."
   ],
   "promptWhy": [
-    "Asset analysis → system turns each prompt into a continuation of brand choices."
+    "Asset analysis → system turns each prompt into a continuation of brand choices.",
+    "Assets-as-source-of-truth stops hallucinated brand systems."
   ],
   "pairsWellWith": [
     "specify-the-look",

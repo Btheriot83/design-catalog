@@ -12,16 +12,20 @@
   ],
   "examplePrompts": [
     "Context: Home cooking assistant for households with dietary restrictions",
-    "Context: For a new “One-Click Export” feature in a design tool."
+    "Context: For a new “One-Click Export” feature in a design tool.",
+    "Context: Mobile-first pantry app for two adults meal-planning Sunday nights; fridge photo is the primary input; dark kitchen lighting."
   ],
   "promptWhy": [
     "Audience + dietary restrictions steer filtering behavior without a novel’s worth of backstory.",
-    "Product + feature name anchors tone and domain for copy or UI."
+    "Product + feature name anchors tone and domain for copy or UI.",
+    "Specific users/setting change layout and photo treatment immediately."
   ],
   "tips": [
     "Context engineering (Anthropic’s term, cited in the Figma piece): curate what the model sees.",
     "In Figma Make, structured frames beat screenshots when you have them.",
-    "Partial catalog—no endorsement."
+    "Partial catalog—no endorsement.",
+    "Keep Quiet Folio paper/ink if applying on this desk—no purple chrome.",
+    "Context should name user, setting, and input modality—not just the product category."
   ],
   "sourceUrls": [
     "https://www.figma.com/blog/designer-framework-for-better-ai-prompts/",
@@ -42,15 +46,27 @@
       "before": "Write a description… Keep it simple but also exciting. Maybe like how Apple does it?",
       "after": "Context: For a new One-Click Export feature in a design tool (+ Elements/Behavior/Constraints).",
       "body": "Figma blog contrast: vague Apple-ish ask vs TC-EBC. Cite: Figma blog."
+    },
+    {
+      "title": "Generic vs kitchen context",
+      "before": "A recipe app.",
+      "after": "Sunday planners, fridge-photo input, dim kitchen—UI prioritizes upload and missing ingredients.",
+      "body": "Context in TC-EBC is mise-en-place for the prompt. Cite Figma blog."
+    },
+    {
+      "title": "Public-source honesty",
+      "body": "Claims stay within public blog/talk paraphrase—no invented paywalled quotes."
     }
   ],
   "antiPatterns": [
     "Novel-length backstory.",
-    "Omitting who it’s for so the model invents an audience."
+    "Omitting who it’s for so the model invents an audience.",
+    "Omitting this TC-EBC slot and hoping Task alone carries the build."
   ],
   "checklist": [
     "Why/for whom is one tight line.",
     "Every clause earns its tokens.",
-    "Stable across revision prompts unless audience changed."
+    "Stable across revision prompts unless audience changed.",
+    "Example prompt includes observable detail, not adjectives only."
   ]
 }
