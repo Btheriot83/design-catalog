@@ -1,0 +1,25 @@
+{
+  "slug": "wireframe-first",
+  "number": 15,
+  "stage": "Discover",
+  "title": "Wireframe first when fidelity doesn’t matter",
+  "principle": "Asking for wireframes is much faster, and it keeps Claude focused on higher-level structure instead of visuals. Use this to try many different ideas quickly before committing to look-and-feel.",
+  "procedure": [
+    "When you’re exploring structure—not polish—explicitly ask for wireframes.",
+    "Compare multiple structural directions quickly.",
+    "Lock a structure before requesting high-fidelity visuals.",
+    "Escalate fidelity only after hierarchy and flow feel right."
+  ],
+  "examplePrompts": [
+    "Wireframe only—no visual styling. Gray boxes, labels, and hierarchy. Give me 5 structural alternatives for this flow so I can compare layout ideas quickly."
+  ],
+  "tips": [
+    "Speed comes from skipping premature visual decisions.",
+    "Structure-first prevents Claude from locking onto a favorite aesthetic early.",
+    "Nate uses Claude Design daily for wireframing early ideas and generating many flow versions for feedback."
+  ],
+  "sourceUrls": [
+    "https://claude.com/blog/how-the-product-designer-who-built-claude-design-uses-it-to-explore-ideas-before-building-them"
+  ],
+  "related": ["ten-options-then-remix", "thinking-before-prompt", "specify-the-look"]
+}

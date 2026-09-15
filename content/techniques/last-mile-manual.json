@@ -1,0 +1,25 @@
+{
+  "slug": "last-mile-manual",
+  "number": 16,
+  "stage": "Deliver",
+  "title": "Make the last mile manual",
+  "principle": "Use direct editing tools—rearrange, delete, edit text, resize, change colors—for final touches instead of prompting for them. Direct edits use no tokens, and small calls like sizing and alignment are better eyeballed anyway.",
+  "procedure": [
+    "Get the design close enough with prompts.",
+    "Switch to direct editing for rearrange, delete, text edits, resize, and color tweaks.",
+    "Eyeball sizing and alignment rather than prompting micro-adjustments.",
+    "Reserve new prompts for structural or conceptual changes, not last-pixel polish."
+  ],
+  "examplePrompts": [
+    "(Prefer direct edits over a prompt for this class of change)\nDo not prompt: nudge this 4px, recolor that label, delete this spacer.\nUse rearrange / delete / edit text / resize / change colors on the canvas instead."
+  ],
+  "tips": [
+    "Direct edits cost no tokens.",
+    "Micro-layout judgment is often faster and better by eye.",
+    "Prompting every tiny tweak is the expensive, slow path."
+  ],
+  "sourceUrls": [
+    "https://claude.com/blog/how-the-product-designer-who-built-claude-design-uses-it-to-explore-ideas-before-building-them"
+  ],
+  "related": ["point-and-talk", "keep-working-alongside", "design-system-from-assets"]
+}

@@ -1,0 +1,25 @@
+{
+  "slug": "specify-the-look",
+  "number": 10,
+  "stage": "Define",
+  "title": "Tell Claude what it should look like",
+  "principle": "Left undirected, Claude picks one of its favorite aesthetics—you’d probably recognize them. Head that off by specifying fonts and colors, providing a moodboard of images for inspiration, or asking Claude to brainstorm font-and-color pairings and going back and forth until a pairing feels right.",
+  "procedure": [
+    "Name concrete fonts and colors, or upload a moodboard of reference images.",
+    "Alternatively, ask Claude to brainstorm font-and-color pairings.",
+    "Iterate on pairings until one feels right—don’t accept the first default aesthetic.",
+    "Reuse the chosen pairing in later prompts so outputs stay on-brand."
+  ],
+  "examplePrompts": [
+    "Do not use your default aesthetic. Use these constraints:\n\nFonts: <primary / secondary>\nColors: <background, text, accent>\nMood references: I uploaded a moodboard—match its typography weight, contrast, and spacing feel.\n\nPropose 3 font-and-color pairings that fit, then wait for me to pick before designing screens."
+  ],
+  "tips": [
+    "Undirected Claude lands on recognizable favorite aesthetics; specify look early.",
+    "Moodboards and explicit type/color beat vague “make it nice” asks.",
+    "Brainstorm pairings, then choose—don’t skip the selection step."
+  ],
+  "sourceUrls": [
+    "https://claude.com/blog/how-the-product-designer-who-built-claude-design-uses-it-to-explore-ideas-before-building-them"
+  ],
+  "related": ["design-system-from-assets", "thinking-before-prompt", "ten-options-then-remix"]
+}

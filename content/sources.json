@@ -3,7 +3,7 @@
     "title": "How to turn your AI into a world-class designer",
     "url": "https://www.lennysnewsletter.com/p/how-to-turn-your-ai-into-a-world",
     "kind": "Primary essay",
-    "note": "Anshu Chimala guest post in Lenny’s Newsletter, Sep 2026. Primary source for the eight techniques catalogued here."
+    "note": "Anshu Chimala guest post in Lenny’s Newsletter, Sep 2026. Primary source for the eight Anshu techniques catalogued here."
   },
   {
     "title": "Anshu Chimala on Substack",
@@ -26,13 +26,13 @@
   {
     "title": "How the product designer who built Claude Design uses it to explore ideas before building them",
     "url": "https://claude.com/blog/how-the-product-designer-who-built-claude-design-uses-it-to-explore-ideas-before-building-them",
-    "kind": "Next candidate",
-    "note": "Nate Parrott — stubbed designer entry."
+    "kind": "Primary essay",
+    "note": "Nate Parrott (Anthropic product designer who built Claude Design). Public source for the eleven partial-catalog techniques. No endorsement implied."
   },
   {
     "title": "A designer framework for better AI prompts",
     "url": "https://www.figma.com/blog/designer-framework-for-better-ai-prompts/",
     "kind": "Next candidate",
-    "note": "David Kossnick / TC-EBC lineage — stubbed designer entry."
+    "note": "David Kossnick / TC-EBC lineage — stubbed designer entry; next catalog candidate."
   }
 ]

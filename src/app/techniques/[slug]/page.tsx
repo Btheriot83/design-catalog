@@ -3,7 +3,11 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { PromptBlock } from "@/components/PromptBlock";
 import { StageBadge } from "@/components/StageBadge";
-import { getAllTechniques, getTechnique } from "@/lib/content";
+import {
+  getAllTechniques,
+  getDesignerForTechnique,
+  getTechnique,
+} from "@/lib/content";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -27,6 +31,7 @@ export default async function TechniquePage({ params }: Props) {
     .map((s) => getTechnique(s))
     .filter(Boolean);
 
+  const designer = getDesignerForTechnique(technique.slug);
   const num = String(technique.number).padStart(2, "0");
 
   return (
@@ -126,10 +131,17 @@ export default async function TechniquePage({ params }: Props) {
         <Link href="/techniques" className="hover:text-ochre">
           ← All techniques
         </Link>
-        {" · "}
-        <Link href="/designers/anshu-chimala" className="hover:text-ochre">
-          Anshu Chimala
-        </Link>
+        {designer ? (
+          <>
+            {" · "}
+            <Link
+              href={`/designers/${designer.slug}`}
+              className="hover:text-ochre"
+            >
+              {designer.name}
+            </Link>
+          </>
+        ) : null}
       </p>
     </article>
   );

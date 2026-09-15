@@ -1,0 +1,25 @@
+{
+  "slug": "sketch-what-you-cant-describe",
+  "number": 13,
+  "stage": "Discover",
+  "title": "Sketch what you can’t describe",
+  "principle": "If you have a layout in your head and no words for it, draw it on paper and upload a photo. Visual intent that resists language still transfers when Claude can see the sketch.",
+  "procedure": [
+    "When words fail, sketch the layout on paper (rough is fine).",
+    "Photograph or scan the sketch and upload it.",
+    "Ask Claude to interpret the sketch as structure—not to “pretty it up” into a different layout.",
+    "Iterate with pointed follow-ups once the structure matches."
+  ],
+  "examplePrompts": [
+    "I uploaded a photo of a paper sketch. Recreate this layout structure in HTML—same regions, hierarchy, and proportions. Do not invent a different composition. Ask before changing the structure."
+  ],
+  "tips": [
+    "Use this when you can picture the layout but can’t name it.",
+    "The sketch is the brief; the prompt should protect that structure.",
+    "Pairs well with wireframe-first when fidelity still doesn’t matter."
+  ],
+  "sourceUrls": [
+    "https://claude.com/blog/how-the-product-designer-who-built-claude-design-uses-it-to-explore-ideas-before-building-them"
+  ],
+  "related": ["wireframe-first", "point-and-talk", "thinking-before-prompt"]
+}

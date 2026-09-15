@@ -1,0 +1,25 @@
+{
+  "slug": "design-system-from-assets",
+  "number": 11,
+  "stage": "Define",
+  "title": "Turn recurring work into a design system",
+  "principle": "Upload brand files and assets—logos, slide decks, screenshots, typography specs, and anything else you reuse—and Claude will analyze them and generate a design system. Each artifact afterward starts from your choices rather than a blank slate. Claude Design isn’t built for logo generation; bring logos and assets you already have.",
+  "procedure": [
+    "Gather reusable brand materials: logos, decks, screenshots, typography specs, colors, and other assets.",
+    "Upload them and ask Claude to analyze them into a design system.",
+    "Start new artifacts from that system instead of a blank canvas.",
+    "For logos and established marks, bring existing files—don’t ask the model to invent them."
+  ],
+  "examplePrompts": [
+    "I uploaded our brand files (logo, typography specs, slide deck, product screenshots). Analyze them and generate a design system I can reuse: fonts, colors, spacing, component patterns, and do’s/don’ts.\n\nEvery new artifact in this project should start from that system—not a blank aesthetic."
+  ],
+  "tips": [
+    "Nate distilled Anthropic’s fonts, colors, assets, and principles into prompts so outputs stayed brand-compliant.",
+    "Claude Design has no image model for logo design; bring assets you already have.",
+    "A system turns each prompt into a continuation of your choices, not a reset."
+  ],
+  "sourceUrls": [
+    "https://claude.com/blog/how-the-product-designer-who-built-claude-design-uses-it-to-explore-ideas-before-building-them"
+  ],
+  "related": ["specify-the-look", "give-real-context", "last-mile-manual"]
+}

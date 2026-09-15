@@ -1,0 +1,25 @@
+{
+  "slug": "point-and-talk",
+  "number": 14,
+  "stage": "Deliver",
+  "title": "Point and talk",
+  "principle": "Instead of writing a paragraph identifying which element you mean, click on it and speak. With dictation enabled, select “comment,” click into the comment box, and your words appear as if you typed—grounding edits in the exact UI target.",
+  "procedure": [
+    "Enable dictation on your device.",
+    "Select the element, choose comment, and click into the comment box.",
+    "Speak the change you want for that specific element.",
+    "Prefer this over long written descriptions of “the blue button in the third card.”"
+  ],
+  "examplePrompts": [
+    "(Spoken into a comment on the selected element)\nMake this tighter: reduce padding, keep the label, drop the secondary line."
+  ],
+  "tips": [
+    "Requires device dictation plus the comment affordance in Claude Design.",
+    "Selection replaces spatial scavenger-hunt prose in prompts.",
+    "Works especially well for last-mile tweaks alongside direct editing tools."
+  ],
+  "sourceUrls": [
+    "https://claude.com/blog/how-the-product-designer-who-built-claude-design-uses-it-to-explore-ideas-before-building-them"
+  ],
+  "related": ["last-mile-manual", "keep-working-alongside", "sketch-what-you-cant-describe"]
+}

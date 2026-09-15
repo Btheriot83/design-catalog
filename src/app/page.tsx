@@ -16,16 +16,22 @@ export default function HomePage() {
           How to turn AI into a world-class designer
         </h1>
         <p className="mt-6 font-sans text-lg leading-relaxed text-ink/70">
-          Eight techniques from{" "}
+          Techniques from{" "}
           <Link
             href="/designers/anshu-chimala"
             className="text-ink underline decoration-ochre/50 hover:text-ochre"
           >
             Anshu Chimala
+          </Link>{" "}
+          and a partial catalog from{" "}
+          <Link
+            href="/designers/nate-parrott"
+            className="text-ink underline decoration-ochre/50 hover:text-ochre"
+          >
+            Nate Parrott
           </Link>
-          —Apple eng/design leadership, YC founder—mapped across Discover,
-          Define, and Deliver. A Double Diamond–inspired process for agent
-          teams, not committees of next tokens.
+          —mapped across Discover, Define, and Deliver. Public sources only; no
+          endorsement implied.
         </p>
         <div className="mt-8 flex flex-wrap gap-3 font-sans text-sm">
           <Link

@@ -1,0 +1,27 @@
+{
+  "slug": "make-it-alive",
+  "number": 19,
+  "stage": "Define",
+  "title": "Make it alive",
+  "principle": "Inspired by Bret Victor’s talk Stop Drawing Dead Fish—“Everything we draw should be alive by default.” Prefer creations that don’t fit existing boxes: docs with interactive simulations, slide decks that talk to you, diagrams that are also videos, designs that are also their own editors. HTML is a rich interactive medium—treat Claude Design as a way to make visuals alive, not static dead fish.",
+  "procedure": [
+    "Ask whether the artifact can be interactive, simulated, animated, or self-editing—not only a static mock.",
+    "Prefer HTML’s interactive range: simulations, talking decks, living diagrams, tools-inside-designs.",
+    "When needed, have Claude Design build a small bespoke tool (e.g. a video editor) and use that tool to produce the final piece.",
+    "Use aliveness for communication and ideation before anyone commits to building production software."
+  ],
+  "examplePrompts": [
+    "Don’t deliver a static mock. Make this alive: an interactive HTML prototype where the key mechanic is playable, with controls I can tweak live.",
+    "I’m not an animator. First build me a small bespoke video editor in this canvas; I’ll use that editor to craft the intro animation."
+  ],
+  "tips": [
+    "Nate’s favorites: docs with simulations, decks that talk, diagrams that are videos, designs that are their own editors.",
+    "Example from his work: Claude Design intro animation—built a video editor in the tool, then used it to make the animation.",
+    "Other named experiments: subway-times app with adjustable animation physics; Instagram-style color sliders/presets instead of describing colors in words.",
+    "Claude Design is for early ideation, collaboration, and buy-in; Claude Code is for shipping production software—they round-trip."
+  ],
+  "sourceUrls": [
+    "https://claude.com/blog/how-the-product-designer-who-built-claude-design-uses-it-to-explore-ideas-before-building-them"
+  ],
+  "related": ["ten-options-then-remix", "give-real-context", "wireframe-first"]
+}

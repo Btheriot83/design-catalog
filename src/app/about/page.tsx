@@ -27,20 +27,23 @@ export default function AboutPage() {
           Newsletter. Stages follow his Discover → Define → Deliver framing.
         </p>
         <p>
-          Future entries are stubbed for{" "}
-          <Link href="/designers" className="underline hover:text-ochre">
+          <Link
+            href="/designers/nate-parrott"
+            className="text-ink underline decoration-ochre/40 hover:text-ochre"
+          >
             Nate Parrott
           </Link>{" "}
-          and{" "}
+          is a partial catalog from one public Claude blog post on Claude
+          Design.{" "}
           <Link href="/designers" className="underline hover:text-ochre">
             David Kossnick
-          </Link>
-          . We do not invent unpublished Substack posts or attribute work that
-          isn’t public.
+          </Link>{" "}
+          (TC-EBC / Figma) remains the next stub candidate. We do not invent
+          unpublished Substack posts or attribute work that isn’t public.
         </p>
         <p>
-          This site is not affiliated with Anshu, Lenny’s Newsletter, Apple,
-          YC, fal.ai, Sakana AI, or any cited tool. See{" "}
+          This site is not affiliated with Anshu, Nate, Lenny’s Newsletter,
+          Apple, YC, fal.ai, Sakana AI, Anthropic, Figma, or any cited tool. See{" "}
           <Link href="/sources" className="underline hover:text-ochre">
             Sources
           </Link>{" "}

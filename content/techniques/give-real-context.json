@@ -1,0 +1,25 @@
+{
+  "slug": "give-real-context",
+  "number": 17,
+  "stage": "Define",
+  "title": "Give Claude your real context",
+  "principle": "If you’re designing a feature for an existing app or website, connect GitHub so Claude can fetch your components and existing screens and use them as a starting point—with a few tries it can recreate existing designs with pretty high fidelity. Web search and MCP connections work in Claude Design too when the design depends on outside information.",
+  "procedure": [
+    "For work on an existing product, connect GitHub so Claude can see real components and screens.",
+    "Use those as the starting point instead of inventing a parallel UI system.",
+    "When the design needs outside facts, use web search or MCP connections.",
+    "Iterate a few times to raise fidelity against the real product."
+  ],
+  "examplePrompts": [
+    "I connected our GitHub repo. Pull the relevant components and existing screens for <feature area>. Redesign <flow> starting from those real patterns—match our component vocabulary before proposing net-new UI."
+  ],
+  "tips": [
+    "Real components beat imagined design systems when shipping into an existing app.",
+    "Nate notes high fidelity is reachable “with a few tries,” not one shot.",
+    "Web search and MCP are first-class when the brief depends on outside information."
+  ],
+  "sourceUrls": [
+    "https://claude.com/blog/how-the-product-designer-who-built-claude-design-uses-it-to-explore-ideas-before-building-them"
+  ],
+  "related": ["design-system-from-assets", "specify-the-look", "wireframe-first"]
+}

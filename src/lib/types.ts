@@ -16,7 +16,7 @@ export interface Technique {
 export interface Designer {
   slug: string;
   name: string;
-  status: "complete" | "stub";
+  status: "complete" | "partial" | "stub";
   role: string;
   bio: string;
   links: { label: string; url: string }[];

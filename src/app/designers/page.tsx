@@ -2,10 +2,21 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { PageHeader } from "@/components/PageHeader";
 import { getAllDesigners } from "@/lib/content";
+import type { Designer } from "@/lib/types";
 
 export const metadata: Metadata = {
   title: "Designers",
 };
+
+function statusLabel(status: Designer["status"]) {
+  if (status === "complete") return "Complete";
+  if (status === "partial") return "Partial · in progress";
+  return "Stub · next";
+}
+
+function hasEntryPage(status: Designer["status"]) {
+  return status === "complete" || status === "partial";
+}
 
 export default function DesignersPage() {
   const designers = getAllDesigners();
@@ -15,7 +26,7 @@ export default function DesignersPage() {
       <PageHeader
         kicker="Designers"
         title="Who’s in the catalog"
-        description="Complete entries ship with full technique sets. Stubs mark next candidates with public sources only."
+        description="Complete entries ship with full technique sets. Partial entries catalog one public source so far. Stubs mark next candidates with public sources only."
       />
       <ul className="space-y-4">
         {designers.map((d) => (
@@ -25,7 +36,7 @@ export default function DesignersPage() {
           >
             <div className="flex flex-wrap items-baseline justify-between gap-3">
               <h2 className="font-serif text-2xl text-ink">
-                {d.status === "complete" ? (
+                {hasEntryPage(d.status) ? (
                   <Link
                     href={`/designers/${d.slug}`}
                     className="hover:text-ochre"
@@ -37,7 +48,7 @@ export default function DesignersPage() {
                 )}
               </h2>
               <span className="font-sans text-[10px] uppercase tracking-[0.2em] text-ink/45">
-                {d.status === "complete" ? "Complete" : "Stub · next"}
+                {statusLabel(d.status)}
               </span>
             </div>
             <p className="mt-1 font-sans text-sm text-ochre/90">{d.role}</p>
@@ -57,7 +68,7 @@ export default function DesignersPage() {
                   </a>
                 </li>
               ))}
-              {d.status === "complete" ? (
+              {hasEntryPage(d.status) ? (
                 <li>
                   <Link
                     href={`/designers/${d.slug}`}

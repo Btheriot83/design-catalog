@@ -1,0 +1,25 @@
+{
+  "slug": "keep-working-alongside",
+  "number": 18,
+  "stage": "Deliver",
+  "title": "Keep working alongside Claude",
+  "principle": "You don’t have to wait for Claude to deliver a finished result before prompting new changes or tasks. Queue multiple messages at once, or keep talking while Claude is still working on the previous turn—treat the session as continuous collaboration, not a batch job.",
+  "procedure": [
+    "Start a turn without treating it as a hard lock on further input.",
+    "Queue follow-up messages or keep talking while work is in progress.",
+    "Split parallel asks when you already know the next correction.",
+    "Use the overlap to stay in flow instead of idle-waiting on each completion."
+  ],
+  "examplePrompts": [
+    "(Queued while a prior turn is still running)\nWhile you finish that: also prepare a second variant with denser type and no hero illustration. I’ll pick after both land."
+  ],
+  "tips": [
+    "Idle waiting between turns is optional, not required.",
+    "Queueing matches how Nate describes daily use: continuous collaboration.",
+    "Still front-load intent (thinking-before-prompt); parallelism isn’t a substitute for a brief."
+  ],
+  "sourceUrls": [
+    "https://claude.com/blog/how-the-product-designer-who-built-claude-design-uses-it-to-explore-ideas-before-building-them"
+  ],
+  "related": ["point-and-talk", "last-mile-manual", "ten-options-then-remix"]
+}

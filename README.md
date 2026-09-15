@@ -1,6 +1,6 @@
 # Design Catalog
 
-Editorial catalog of AI design craft. Version 1 centers **Anshu Chimala**’s eight techniques (Discover → Define → Deliver) from his Sep 2026 guest essay in Lenny’s Newsletter.
+Editorial catalog of AI design craft. Version 1 centers **Anshu Chimala**’s eight techniques (Discover → Define → Deliver) from his Sep 2026 guest essay in Lenny’s Newsletter, plus a **partial** catalog of **Nate Parrott**’s Claude Design practices from one public Anthropic blog post. **David Kossnick** (TC-EBC / Figma) remains the next stub candidate.
 
 ## Stack
 
@@ -24,7 +24,7 @@ npm run build
 
 ## Content
 
-Typed JSON under `content/` — designers, techniques, sources. Do not invent unpublished Substack posts.
+Typed JSON under `content/` — designers, techniques, sources. Do not invent unpublished Substack posts. No endorsement implied by any citation.
 
 ## Disclaimer
 

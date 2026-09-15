@@ -8,6 +8,12 @@ function readJson<T>(path: string): T {
   return JSON.parse(readFileSync(path, "utf8")) as T;
 }
 
+const statusRank: Record<Designer["status"], number> = {
+  complete: 0,
+  partial: 1,
+  stub: 2,
+};
+
 export function getAllTechniques(): Technique[] {
   const dir = join(root, "techniques");
   return readdirSync(dir)
@@ -26,13 +32,18 @@ export function getAllDesigners(): Designer[] {
     .filter((f) => f.endsWith(".json"))
     .map((f) => readJson<Designer>(join(dir, f)))
     .sort((a, b) => {
-      if (a.status !== b.status) return a.status === "complete" ? -1 : 1;
+      const rank = statusRank[a.status] - statusRank[b.status];
+      if (rank !== 0) return rank;
       return a.name.localeCompare(b.name);
     });
 }
 
 export function getDesigner(slug: string): Designer | undefined {
   return getAllDesigners().find((d) => d.slug === slug);
+}
+
+export function getDesignerForTechnique(techniqueSlug: string): Designer | undefined {
+  return getAllDesigners().find((d) => d.techniqueSlugs.includes(techniqueSlug));
 }
 
 export function getSources(): Source[] {

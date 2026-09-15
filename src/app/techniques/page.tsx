@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { PageHeader } from "@/components/PageHeader";
 import { TechniqueCard } from "@/components/TechniqueCard";
-import { getTechniquesByStage } from "@/lib/content";
+import { getAllTechniques, getTechniquesByStage } from "@/lib/content";
 
 export const metadata: Metadata = {
   title: "Techniques",
@@ -9,13 +9,14 @@ export const metadata: Metadata = {
 
 export default function TechniquesPage() {
   const byStage = getTechniquesByStage();
+  const count = getAllTechniques().length;
 
   return (
     <div>
       <PageHeader
         kicker="Techniques"
-        title="Eight ways past average slop"
-        description="Discover variety, Define identity, Deliver restraint. Numbered as in Anshu’s essay."
+        title="Ways past average slop"
+        description={`${count} techniques across Discover, Define, and Deliver—from Anshu’s essay and Nate’s Claude Design practices.`}
       />
       <div className="space-y-12">
         {byStage.map(({ stage, techniques }) => (
