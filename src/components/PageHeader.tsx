@@ -8,17 +8,17 @@ export function PageHeader({
   description?: string;
 }) {
   return (
-    <header className="mb-10 border-b border-ink/10 pb-8">
+    <header className="mb-10 border-b border-hairline pb-8">
       {kicker ? (
-        <p className="mb-3 font-sans text-[11px] uppercase tracking-[0.22em] text-ochre">
+        <p className="mb-3 font-sans text-[11px] uppercase tracking-[0.18em] text-faint">
           {kicker}
         </p>
       ) : null}
-      <h1 className="font-serif text-4xl leading-tight tracking-tight text-ink sm:text-5xl">
+      <h1 className="font-serif text-4xl leading-tight tracking-tight text-ink sm:text-[2.75rem]">
         {title}
       </h1>
       {description ? (
-        <p className="mt-4 max-w-2xl font-sans text-base leading-relaxed text-ink/65">
+        <p className="mt-4 max-w-xl font-sans text-base leading-relaxed text-studio-ink">
           {description}
         </p>
       ) : null}

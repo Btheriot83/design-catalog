@@ -8,48 +8,53 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <div className="max-w-2xl">
+    <div className="max-w-xl">
       <PageHeader
-        kicker="About"
-        title="An independent craft catalog"
-        description="Design Catalog collects AI design techniques with editorial clarity—paper, ink, and one restrained accent—so builders can escape average slop."
+        title="About this desk"
+        description="A quiet reading room for AI design craft—not a SaaS landing, not a vibe deck."
       />
-      <div className="space-y-5 font-sans text-base leading-relaxed text-ink/75">
+      <div className="space-y-5 font-sans text-base leading-relaxed text-studio-ink">
         <p>
-          Version 1 centers{" "}
+          The spine is{" "}
           <Link
             href="/designers/anshu-chimala"
-            className="text-ink underline decoration-ochre/40 hover:text-ochre"
+            className="text-ink underline decoration-hairline hover:decoration-ink"
           >
             Anshu Chimala
           </Link>
           ’s eight techniques from his Sep 2026 guest essay in Lenny’s
-          Newsletter. Stages follow his Discover → Define → Deliver framing.
+          Newsletter, framed as Discover → Define → Deliver.
         </p>
         <p>
           <Link
             href="/designers/nate-parrott"
-            className="text-ink underline decoration-ochre/40 hover:text-ochre"
+            className="text-ink underline decoration-hairline hover:decoration-ink"
           >
             Nate Parrott
           </Link>{" "}
-          is a partial catalog from one public Claude blog post on Claude
-          Design.{" "}
-          <Link href="/designers" className="underline hover:text-ochre">
+          appears as a partial catalog from one public Claude Design post.{" "}
+          <Link
+            href="/designers"
+            className="text-ink underline decoration-hairline hover:decoration-ink"
+          >
             David Kossnick
           </Link>{" "}
-          (TC-EBC / Figma) remains the next stub candidate. We do not invent
-          unpublished Substack posts or attribute work that isn’t public.
+          stays a stub until there is a public source worth cataloging. We do
+          not invent unpublished posts.
         </p>
         <p>
           This site is not affiliated with Anshu, Nate, Lenny’s Newsletter,
-          Apple, YC, fal.ai, Sakana AI, Anthropic, Figma, or any cited tool. See{" "}
-          <Link href="/sources" className="underline hover:text-ochre">
+          Apple, YC, fal.ai, Sakana AI, Anthropic, Figma, or any cited tool.
+          See{" "}
+          <Link
+            href="/sources"
+            className="text-ink underline decoration-hairline hover:decoration-ink"
+          >
             Sources
           </Link>{" "}
-          for the full disclaimer.
+          for the disclaimer.
         </p>
-        <p className="text-ink/50">
+        <p className="text-faint">
           Built for Brandon Theriot · Next.js App Router · TypeScript ·
           Tailwind · Source Serif 4 + IBM Plex Sans.
         </p>

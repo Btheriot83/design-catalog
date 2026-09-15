@@ -12,16 +12,15 @@ export default function SourcesPage() {
   return (
     <div>
       <PageHeader
-        kicker="Sources"
-        title="Citations & provenance"
-        description="Primary essay, author presence, related tooling, and next-candidate posts."
+        title="Sources"
+        description="Citations, provenance, and the no-endorsement line."
       />
 
-      <aside className="mb-10 border border-deep-red/35 bg-deep-red/[0.04] p-5">
-        <p className="font-sans text-[11px] uppercase tracking-[0.2em] text-deep-red">
+      <aside className="mb-10 border border-hairline bg-ghost p-5">
+        <p className="font-sans text-[11px] font-medium uppercase tracking-[0.16em] text-ink">
           No endorsement
         </p>
-        <p className="mt-3 font-sans text-sm leading-relaxed text-ink/80">
+        <p className="mt-3 font-sans text-sm leading-relaxed text-studio-ink">
           Design Catalog is an independent editorial project. Linking to a
           person, publication, company, model, or repository does{" "}
           <strong className="font-medium text-ink">not</strong> imply
@@ -34,28 +33,25 @@ export default function SourcesPage() {
         </p>
       </aside>
 
-      <ul className="space-y-5">
+      <ul className="divide-y divide-hairline border-t border-hairline">
         {sources.map((s) => (
-          <li
-            key={s.url}
-            className="border-b border-ink/10 pb-5 last:border-0"
-          >
-            <p className="font-sans text-[10px] uppercase tracking-[0.18em] text-ink/40">
+          <li key={s.url} className="py-5">
+            <p className="font-sans text-[10px] uppercase tracking-[0.16em] text-faint">
               {s.kind}
             </p>
             <a
               href={s.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-1 block font-serif text-xl text-ink hover:text-ochre"
+              className="mt-1 block font-serif text-xl text-ink hover:underline hover:decoration-hairline"
             >
               {s.title}
             </a>
-            <p className="mt-1 break-all font-mono text-xs text-ink/45">
+            <p className="mt-1 break-all font-mono text-xs text-faint">
               {s.url}
             </p>
             {s.note ? (
-              <p className="mt-2 max-w-2xl font-sans text-sm leading-relaxed text-ink/60">
+              <p className="mt-2 max-w-xl font-sans text-sm leading-relaxed text-studio-ink">
                 {s.note}
               </p>
             ) : null}

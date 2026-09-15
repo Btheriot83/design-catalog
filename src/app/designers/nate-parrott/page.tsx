@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { PageHeader } from "@/components/PageHeader";
+import { StatusChip } from "@/components/StatusChip";
 import { TechniqueCard } from "@/components/TechniqueCard";
 import { getAllTechniques, getDesigner } from "@/lib/content";
 
@@ -19,13 +20,12 @@ export default function NateParrottPage() {
 
   return (
     <div>
-      <PageHeader
-        kicker="Designer · partial catalog"
-        title={designer.name}
-        description={designer.role}
-      />
+      <div className="mb-3">
+        <StatusChip status={designer.status} />
+      </div>
+      <PageHeader title={designer.name} description={designer.role} />
 
-      <div className="mb-12 max-w-2xl space-y-4 font-sans text-base leading-relaxed text-ink/75">
+      <div className="mb-12 max-w-xl space-y-4 font-sans text-base leading-relaxed text-studio-ink">
         <p>{designer.bio}</p>
         <ul className="flex flex-wrap gap-4 text-sm">
           {designer.links.map((l) => (
@@ -34,7 +34,7 @@ export default function NateParrottPage() {
                 href={l.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="underline decoration-ochre/40 hover:text-ochre"
+                className="underline decoration-hairline hover:text-ink hover:decoration-ink"
               >
                 {l.label}
               </a>
@@ -48,35 +48,37 @@ export default function NateParrottPage() {
           <h2 className="mb-5 font-serif text-2xl text-ink">
             Stages · mapped for this catalog
           </h2>
-          <div className="grid gap-4 sm:grid-cols-3">
-            {designer.stages.map((s) => (
-              <div
-                key={s.id}
-                className="border border-ink/12 bg-paper-raised p-5"
-              >
-                <h3 className="font-serif text-xl text-ink">{s.title}</h3>
-                <p className="mt-2 font-sans text-sm leading-relaxed text-ink/60">
-                  {s.summary}
-                </p>
-              </div>
+          <ol className="space-y-5 border-t border-hairline pt-5">
+            {designer.stages.map((s, i) => (
+              <li key={s.id} className="flex gap-4">
+                <span className="w-6 shrink-0 font-mono text-sm tabular-nums text-faint">
+                  {i + 1}
+                </span>
+                <div>
+                  <h3 className="font-serif text-lg text-ink">{s.title}</h3>
+                  <p className="mt-1 font-sans text-sm leading-relaxed text-studio-ink">
+                    {s.summary}
+                  </p>
+                </div>
+              </li>
             ))}
-          </div>
+          </ol>
         </section>
       ) : null}
 
       <section>
-        <div className="mb-5 flex items-end justify-between">
+        <div className="mb-5 flex items-end justify-between gap-4">
           <h2 className="font-serif text-2xl text-ink">
             {techniques.length} techniques
           </h2>
           <Link
             href="/techniques"
-            className="font-sans text-sm text-ink/50 hover:text-ochre"
+            className="font-sans text-sm text-faint hover:text-ink"
           >
-            All techniques →
+            Index →
           </Link>
         </div>
-        <div className="grid gap-4 sm:grid-cols-2">
+        <div className="border-t border-hairline">
           {techniques.map((t) => (
             <TechniqueCard key={t.slug} technique={t} />
           ))}

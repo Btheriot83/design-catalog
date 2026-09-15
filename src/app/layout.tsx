@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     template: "%s · Design Catalog",
   },
   description:
-    "An editorial catalog of AI design craft—techniques from Anshu Chimala and related designers. Paper, ink, restraint.",
+    "A study desk of AI design techniques—mostly from Anshu Chimala—for getting past average output. Public sources only; no endorsement.",
 };
 
 export default function RootLayout({
@@ -45,7 +45,7 @@ export default function RootLayout({
     >
       <body className="flex min-h-full flex-col bg-paper text-ink antialiased">
         <Header />
-        <main className="mx-auto w-full max-w-5xl flex-1 px-5 py-10 sm:px-8 sm:py-14">
+        <main className="mx-auto w-full max-w-3xl flex-1 px-5 py-12 sm:px-8 sm:py-16">
           {children}
         </main>
         <Footer />

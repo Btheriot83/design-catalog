@@ -7,18 +7,20 @@ export function TechniqueCard({ technique }: { technique: Technique }) {
   return (
     <Link
       href={`/techniques/${technique.slug}`}
-      className="group block border border-ink/12 bg-paper-raised p-5 transition-colors hover:border-ochre/50"
+      className="group block border-b border-hairline py-5 first:pt-0 last:border-0"
     >
-      <div className="flex items-start justify-between gap-3">
-        <span className="font-serif text-3xl tabular-nums text-ink/25 group-hover:text-ochre/60">
-          {num}
-        </span>
+      <div className="flex items-baseline justify-between gap-4">
+        <div className="flex min-w-0 items-baseline gap-3">
+          <span className="shrink-0 font-mono text-sm tabular-nums text-faint">
+            {num}
+          </span>
+          <h3 className="font-serif text-xl leading-snug text-ink group-hover:underline group-hover:decoration-hairline group-hover:underline-offset-4">
+            {technique.title}
+          </h3>
+        </div>
         <StageBadge stage={technique.stage} />
       </div>
-      <h3 className="mt-3 font-serif text-xl leading-snug text-ink group-hover:text-ochre">
-        {technique.title}
-      </h3>
-      <p className="mt-2 line-clamp-3 font-sans text-sm leading-relaxed text-ink/60">
+      <p className="mt-2 pl-9 font-sans text-sm leading-relaxed text-studio-ink line-clamp-2">
         {technique.principle}
       </p>
     </Link>

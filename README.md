@@ -1,6 +1,8 @@
 # Design Catalog
 
-Editorial catalog of AI design craft. Version 1 centers **Anshu Chimala**’s eight techniques (Discover → Define → Deliver) from his Sep 2026 guest essay in Lenny’s Newsletter, plus a **partial** catalog of **Nate Parrott**’s Claude Design practices from one public Anthropic blog post. **David Kossnick** (TC-EBC / Figma) remains the next stub candidate.
+A study desk of AI design techniques—mostly from **Anshu Chimala** (Discover → Define → Deliver, Sep 2026 Lenny’s Newsletter essay), with a **partial** catalog of **Nate Parrott**’s Claude Design practices. **David Kossnick** remains a stub. Public sources only; no endorsement.
+
+See `docs/REDESIGN.md` for the App Desk redesign notes (seed direction, cuts, copy).
 
 ## Stack
 

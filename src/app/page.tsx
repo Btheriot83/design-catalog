@@ -8,97 +8,74 @@ export default function HomePage() {
 
   return (
     <div>
-      <section className="mb-14 max-w-3xl">
-        <p className="mb-4 font-sans text-[11px] uppercase tracking-[0.22em] text-ochre">
-          Editorial catalog · v1
-        </p>
-        <h1 className="font-serif text-4xl leading-[1.1] tracking-tight text-ink sm:text-6xl">
-          How to turn AI into a world-class designer
+      <section className="mb-14">
+        <h1 className="max-w-2xl font-serif text-4xl leading-[1.12] tracking-tight text-ink sm:text-5xl">
+          Techniques for getting past average AI design
         </h1>
-        <p className="mt-6 font-sans text-lg leading-relaxed text-ink/70">
-          Techniques from{" "}
+        <p className="mt-6 max-w-xl font-sans text-base leading-relaxed text-studio-ink">
+          A browsable study desk of craft notes—mostly from{" "}
           <Link
             href="/designers/anshu-chimala"
-            className="text-ink underline decoration-ochre/50 hover:text-ochre"
+            className="text-ink underline decoration-hairline hover:decoration-ink"
           >
             Anshu Chimala
-          </Link>{" "}
-          and a partial catalog from{" "}
+          </Link>
+          , with a partial set from{" "}
           <Link
             href="/designers/nate-parrott"
-            className="text-ink underline decoration-ochre/50 hover:text-ochre"
+            className="text-ink underline decoration-hairline hover:decoration-ink"
           >
             Nate Parrott
           </Link>
-          —mapped across Discover, Define, and Deliver. Public sources only; no
-          endorsement implied.
+          . Public sources only. No endorsement.
         </p>
-        <div className="mt-8 flex flex-wrap gap-3 font-sans text-sm">
+        <p className="mt-8">
           <Link
             href="/techniques"
-            className="border border-ink bg-ink px-4 py-2 text-paper hover:border-ochre hover:bg-ochre"
+            className="inline-block border border-ink bg-ink px-4 py-2.5 font-sans text-sm text-paper hover:bg-transparent hover:text-ink"
           >
-            Browse {count} techniques
+            Open the index · {count} techniques
           </Link>
-          <Link
-            href="/prompts"
-            className="border border-ink/25 px-4 py-2 text-ink hover:border-ochre hover:text-ochre"
-          >
-            Prompt library
-          </Link>
-          <Link
-            href="/sources"
-            className="border border-ink/25 px-4 py-2 text-ink hover:border-ochre hover:text-ochre"
-          >
-            Sources
-          </Link>
-        </div>
+        </p>
       </section>
 
-      <section className="mb-16 grid gap-4 sm:grid-cols-3">
-        {byStage.map(({ stage, techniques }) => (
-          <div
-            key={stage}
-            className="border border-ink/12 bg-paper-raised p-5"
-          >
-            <p className="font-sans text-[10px] uppercase tracking-[0.2em] text-ink/45">
-              Stage
-            </p>
-            <h2 className="mt-1 font-serif text-2xl text-ink">{stage}</h2>
-            <p className="mt-2 font-sans text-sm text-ink/55">
-              {techniques.length} technique
-              {techniques.length === 1 ? "" : "s"}
-            </p>
-            <ul className="mt-4 space-y-1.5 font-sans text-sm text-ink/75">
-              {techniques.map((t) => (
-                <li key={t.slug}>
-                  <Link
-                    href={`/techniques/${t.slug}`}
-                    className="hover:text-ochre"
-                  >
-                    <span className="tabular-nums text-ink/35">
+      <section className="mb-16">
+        <h2 className="mb-6 font-serif text-2xl text-ink">Contents</h2>
+        <div className="space-y-8">
+          {byStage.map(({ stage, techniques }) => (
+            <div key={stage}>
+              <div className="mb-3 flex items-baseline gap-3 border-b border-hairline pb-2">
+                <h3 className="font-serif text-lg text-ink">{stage}</h3>
+                <span className="font-mono text-xs tabular-nums text-faint">
+                  {techniques.length}
+                </span>
+              </div>
+              <ol className="space-y-1.5 font-sans text-sm text-studio-ink">
+                {techniques.map((t) => (
+                  <li key={t.slug} className="flex gap-3">
+                    <span className="w-6 shrink-0 font-mono text-xs tabular-nums text-faint">
                       {String(t.number).padStart(2, "0")}
-                    </span>{" "}
-                    {t.title}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-        ))}
+                    </span>
+                    <Link
+                      href={`/techniques/${t.slug}`}
+                      className="text-ink hover:underline hover:decoration-hairline hover:underline-offset-4"
+                    >
+                      {t.title}
+                    </Link>
+                  </li>
+                ))}
+              </ol>
+            </div>
+          ))}
+        </div>
       </section>
 
       <section>
-        <div className="mb-6 flex items-end justify-between gap-4">
-          <h2 className="font-serif text-3xl text-ink">All techniques</h2>
-          <Link
-            href="/techniques"
-            className="font-sans text-sm text-ink/50 hover:text-ochre"
-          >
-            View index →
-          </Link>
-        </div>
-        <div className="grid gap-4 sm:grid-cols-2">
+        <h2 className="mb-2 font-serif text-2xl text-ink">All techniques</h2>
+        <p className="mb-6 font-sans text-sm text-faint">
+          Numbered in catalog order.
+        </p>
+        <div className="border-t border-hairline">
           {getAllTechniques().map((t) => (
             <TechniqueCard key={t.slug} technique={t} />
           ))}
