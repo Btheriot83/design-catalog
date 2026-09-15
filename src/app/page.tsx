@@ -71,45 +71,58 @@ export default function HomePage() {
           }
         />
         <hr className="rule-double mt-8 max-w-[14rem]" />
-        <dl className="mt-10 grid grid-cols-3 gap-4 border-y border-ink/80 py-6 sm:max-w-md">
+        {/* Stats as doors — make-it-alive + cut-elements: counts navigate; drop duplicate CTAs */}
+        <dl className="mt-10 grid grid-cols-3 gap-3 border-y border-ink/80 py-5 sm:max-w-md sm:gap-4 sm:py-6">
           {[
-            { k: "Techniques", v: String(techniques.length).padStart(2, "0") },
-            { k: "Prompts", v: String(promptCount) },
-            { k: "Directory", v: String(directoryCount) },
+            {
+              k: "Techniques",
+              v: String(techniques.length).padStart(2, "0"),
+              href: "/techniques",
+              hint: "Open technique index",
+            },
+            {
+              k: "Prompts",
+              v: String(promptCount),
+              href: "/prompts",
+              hint: "Open prompt library",
+            },
+            {
+              k: "Directory",
+              v: String(directoryCount),
+              href: "/designers",
+              hint: "Open designer directory",
+            },
           ].map((s) => (
             <div key={s.k}>
-              <dt className="eyebrow">{s.k}</dt>
-              <dd className="mt-1 text-4xl sm:text-5xl">
-                <FolioNumber value={s.v} className="text-4xl sm:text-5xl" />
-              </dd>
+              <dt>
+                <Link
+                  href={s.href}
+                  className="group block rounded-sm outline-none focus-visible:ring-2 focus-visible:ring-ink/40 focus-visible:ring-offset-2 focus-visible:ring-offset-paper"
+                  aria-label={s.hint}
+                >
+                  <span className="eyebrow text-studio-ink transition-colors group-hover:text-ink group-focus-visible:text-ink">
+                    {s.k}
+                  </span>
+                  <span className="mt-1 block text-4xl sm:text-5xl">
+                    <FolioNumber
+                      value={s.v}
+                      className="text-4xl underline decoration-transparent underline-offset-8 transition-[text-decoration-color] group-hover:decoration-ink/50 group-focus-visible:decoration-ink/50 sm:text-5xl"
+                    />
+                  </span>
+                </Link>
+              </dt>
             </div>
           ))}
         </dl>
-        <p className="mt-8 flex flex-wrap gap-3">
-          <Link
-            href="/designers"
-            className="inline-block border border-ink bg-ink px-4 py-2.5 font-sans text-sm text-paper hover:bg-transparent hover:text-ink"
-          >
-            Open the directory
-          </Link>
-          <Link
-            href="/techniques"
-            className="inline-block border border-ink/25 bg-card px-4 py-2.5 font-sans text-sm text-ink press-shadow hover:border-ink"
-          >
-            Technique index
-          </Link>
-          <Link
-            href="/prompts"
-            className="inline-block border border-ink/25 bg-card px-4 py-2.5 font-sans text-sm text-ink press-shadow hover:border-ink"
-          >
-            Prompt library
-          </Link>
+        <p className="mt-3 font-sans text-[11px] tracking-wide text-faint">
+          Press a count to open it · or jump to{" "}
           <Link
             href="/examples"
-            className="inline-block border border-ink/25 bg-card px-4 py-2.5 font-sans text-sm text-ink press-shadow hover:border-ink"
+            className="text-studio-ink underline decoration-hairline hover:text-ink hover:decoration-ink"
           >
-            Examples &amp; checklists
+            examples &amp; checklists
           </Link>
+          .
         </p>
         <p className="mt-4 font-sans text-sm text-studio-ink">
           Technique authors on desk:{" "}
