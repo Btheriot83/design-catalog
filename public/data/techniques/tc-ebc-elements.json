@@ -1,0 +1,54 @@
+{
+  "slug": "tc-ebc-elements",
+  "number": 22,
+  "stage": "Define",
+  "title": "TC-EBC · Elements",
+  "principle": "Elements lists the literal UI pieces (or copy parts) that must exist. Keep it a short inventory—headline, scanner, cards—not a visual essay. The model stops guessing which components to invent.",
+  "procedure": [
+    "List concrete UI or copy elements as a short comma/line inventory.",
+    "Name components the user would recognize (camera input, recipe cards, headline).",
+    "Avoid styling prose here—put look constraints under Constraints.",
+    "For copy tasks, specify parts: headline max words, subhead, body."
+  ],
+  "examplePrompts": [
+    "Elements: Camera input, pantry scanner, dietary settings form, meal suggestions list, recipe cards",
+    "Elements: Headline (max 7 words), subheadline, single-sentence body copy."
+  ],
+  "promptWhy": [
+    "Inventory removes “what screens exist?” ambiguity.",
+    "Part-level copy elements force structure instead of a blob of marketing prose."
+  ],
+  "tips": [
+    "TC-EBC README: each line as short as possible; only what the model must know.",
+    "Pairs with wireframe-first when you’re still exploring structure.",
+    "Partial catalog—no endorsement."
+  ],
+  "sourceUrls": [
+    "https://www.figma.com/blog/designer-framework-for-better-ai-prompts/",
+    "https://github.com/greghuntoon-figma/tc-ebc"
+  ],
+  "related": [
+    "tc-ebc-behavior",
+    "wireframe-first",
+    "tc-ebc-task"
+  ],
+  "pairsWellWith": [
+    "wireframe-first",
+    "design-system-from-assets"
+  ],
+  "workedExamples": [
+    {
+      "title": "Pantry app element inventory",
+      "body": "Camera, scanner, dietary form, suggestions list, recipe cards—enough for Figma Make to scaffold a real information architecture. Cite: Figma blog."
+    }
+  ],
+  "antiPatterns": [
+    "Embedding visual style essays inside Elements.",
+    "Omitting key screens so the model invents a different IA."
+  ],
+  "checklist": [
+    "Elements are countable UI/copy parts.",
+    "List is short.",
+    "Style lives under Constraints, not here."
+  ]
+}

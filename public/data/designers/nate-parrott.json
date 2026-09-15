@@ -1,0 +1,65 @@
+{
+  "slug": "nate-parrott",
+  "name": "Nate Parrott",
+  "status": "partial",
+  "role": "Product designer at Anthropic · built Claude Design",
+  "bio": "Partial catalog from one public Claude blog post (no endorsement). Nate Parrott, a product designer at Anthropic who built Claude Design, describes using it to explore, iterate, and share visual ideas early—prototypes, decks, animations—before committing to build. This entry catalogs his published best practices and “make it alive” craft notes from that article only; it does not invent unpublished material.",
+  "links": [
+    {
+      "label": "Site",
+      "url": "https://nateparrott.com/"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/nate-parrott"
+    },
+    {
+      "label": "X",
+      "url": "https://x.com/nateparrott"
+    },
+    {
+      "label": "Claude blog: exploring ideas before building",
+      "url": "https://claude.com/blog/how-the-product-designer-who-built-claude-design-uses-it-to-explore-ideas-before-building-them"
+    },
+    {
+      "label": "Notable repo · Flashlight",
+      "url": "https://github.com/nate-parrott/Flashlight"
+    }
+  ],
+  "techniqueSlugs": [
+    "thinking-before-prompt",
+    "specify-the-look",
+    "design-system-from-assets",
+    "ten-options-then-remix",
+    "sketch-what-you-cant-describe",
+    "point-and-talk",
+    "wireframe-first",
+    "last-mile-manual",
+    "give-real-context",
+    "keep-working-alongside",
+    "make-it-alive"
+  ],
+  "stages": [
+    {
+      "id": "Discover",
+      "title": "Discover",
+      "summary": "Front-load intent, wireframe structure, sketch the indescribable, and generate many options to remix."
+    },
+    {
+      "id": "Define",
+      "title": "Define",
+      "summary": "Specify look, bake brand into a design system, ground work in real product context, and make artifacts alive."
+    },
+    {
+      "id": "Deliver",
+      "title": "Deliver",
+      "summary": "Point-and-talk edits, finish the last mile by hand, and keep collaborating without waiting on every turn."
+    }
+  ],
+  "highlights": [
+    "Eleven practices from one public Claude Design post (partial).",
+    "Think before you prompt; specify look; system from assets; ten options then remix.",
+    "Sketch, point-and-talk, wireframe-first; last mile manual; real context; work alongside.",
+    "Make it alive — Bret Victor’s dead-fish warning as craft north star."
+  ]
+}

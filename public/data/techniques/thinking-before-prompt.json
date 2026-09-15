@@ -1,0 +1,54 @@
+{
+  "slug": "thinking-before-prompt",
+  "number": 9,
+  "stage": "Discover",
+  "title": "Do the thinking before you prompt",
+  "principle": "The best way to get output that matches your vision is to tell Claude what you need up front. Spend time writing prompts before you design—dictate in the tool, type in Notes, or record a voice note on a walk and paste the transcript later. Figure out what you want away from the computer so Claude can execute your exact vision when you sit down.",
+  "procedure": [
+    "Step away from the canvas: decide goal, audience, constraints, and success criteria before any pixels.",
+    "Capture the brief offline—voice dictation in Claude Design, phone Notes, or a walk voice-note transcript (methods Nate names).",
+    "Paste or speak the full brief before asking for visuals.",
+    "Refuse empty first prompts; iterate only after intent is written.",
+    "Revisit the brief when a remix drifts—update the written intent instead of vibes-chasing."
+  ],
+  "examplePrompts": [
+    "Before designing anything: here is the full brief I wrote offline.\n\nGoal: <what this artifact must communicate>\nAudience: <who sees it>\nConstraints: <brand, format, time, fidelity>\nMust include: <flows, screens, or beats>\nMust avoid: <defaults or aesthetics I do not want>\n\nExecute this vision. Do not invent a different concept."
+  ],
+  "tips": [
+    "Nate: “I spend a lot of time writing prompts before I design.”",
+    "Dictation, couch Notes drafts, and walk transcripts are all valid brief-capture methods he names.",
+    "Efficiency comes from front-loading intent, not from prompting blank and hoping."
+  ],
+  "sourceUrls": [
+    "https://claude.com/blog/how-the-product-designer-who-built-claude-design-uses-it-to-explore-ideas-before-building-them"
+  ],
+  "related": [
+    "specify-the-look",
+    "ten-options-then-remix",
+    "wireframe-first",
+    "tc-ebc-task"
+  ],
+  "workedExamples": [
+    {
+      "title": "Couch / walk brief → exact vision",
+      "body": "Nate: spend a lot of time writing prompts before designing; dictate, Notes-from-the-couch, or walk transcripts so Claude executes the vision when you sit down—not a blank-canvas improvisation. Cite: Anthropic Claude blog."
+    }
+  ],
+  "antiPatterns": [
+    "Opening the tool and prompting with no written intent.",
+    "Using the first empty generation as a substitute for a brief."
+  ],
+  "checklist": [
+    "Brief exists before visuals.",
+    "Constraints and must-avoids are explicit.",
+    "Capture method doesn’t matter—completeness does."
+  ],
+  "promptWhy": [
+    "Front-loaded brief blocks the model from inventing a different concept."
+  ],
+  "pairsWellWith": [
+    "specify-the-look",
+    "ten-options-then-remix",
+    "tc-ebc-task"
+  ]
+}

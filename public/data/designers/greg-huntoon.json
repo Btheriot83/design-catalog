@@ -1,0 +1,59 @@
+{
+  "slug": "greg-huntoon",
+  "name": "Greg Huntoon",
+  "status": "partial",
+  "role": "Manager, Designer Advocates · Figma · TC-EBC prompt framework",
+  "bio": "Partial catalog from Greg Huntoon’s public Figma blog post “Cooking with constraints” and the TC-EBC reference repo. TC-EBC (Task, Context, Elements, Behavior, Constraints) structures prompts so LLM-driven design tools get clear intent instead of polite ambiguity. Earlier stub mistakenly listed David Kossnick here; authorship of TC-EBC is Greg’s. No endorsement.",
+  "links": [
+    {
+      "label": "Figma community",
+      "url": "https://www.figma.com/@greghuntoon"
+    },
+    {
+      "label": "Figma blog: Cooking with constraints",
+      "url": "https://www.figma.com/blog/designer-framework-for-better-ai-prompts/"
+    },
+    {
+      "label": "TC-EBC reference repo",
+      "url": "https://github.com/greghuntoon-figma/tc-ebc"
+    },
+    {
+      "label": "LinkedIn",
+      "url": "https://www.linkedin.com/in/greghuntoon"
+    },
+    {
+      "label": "X",
+      "url": "https://x.com/GregHuntoon"
+    }
+  ],
+  "techniqueSlugs": [
+    "tc-ebc-task",
+    "tc-ebc-context",
+    "tc-ebc-elements",
+    "tc-ebc-behavior",
+    "tc-ebc-constraints"
+  ],
+  "highlights": [
+    "Mise en place for prompts: clarity, context, constraints before heat hits the pan.",
+    "Polite fluff dilutes intention—models need clean instructions.",
+    "Revision discipline: put do-not-adjust rules in Constraints.",
+    "Five techniques catalogued (partial)—skeletons from the public post only."
+  ],
+  "stages": [
+    {
+      "id": "Discover",
+      "title": "Discover",
+      "summary": "Task and Context lock what you’re building and for whom before Elements sprawl."
+    },
+    {
+      "id": "Define",
+      "title": "Define",
+      "summary": "Elements and Behavior turn inventory + interaction into a buildable prompt."
+    },
+    {
+      "id": "Deliver",
+      "title": "Deliver",
+      "summary": "Constraints hold the rails—especially what not to change on revision passes."
+    }
+  ]
+}

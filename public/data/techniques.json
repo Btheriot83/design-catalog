@@ -1,0 +1,1390 @@
+[
+  {
+    "slug": "seed-strings",
+    "number": 1,
+    "stage": "Discover",
+    "title": "Use seed strings to inject variety",
+    "principle": "Models can’t truly act random—they predict the most likely token. Bring randomness from outside the model. Sakana AI’s String Seed of Thought: generate a long random alphanumeric string, then derive creative direction from subpatterns in that string so every run lands somewhere new.",
+    "procedure": [
+      "Ask the agent to generate a long, random alphanumeric string via a shell script (outside the model’s token priors).",
+      "Have it define creative direction—color, layout, typography—from that string, looking past the surface for subpatterns, special numbers, or other sparks.",
+      "Instruct it to bring that direction to life with judgment, and never reveal the string in the UI—it’s inspiration only."
+    ],
+    "examplePrompts": [
+      "I want you to build me a landing page for my productivity app.\n\nFollow this procedure:\n\n1. Generate a long, random alphanumeric string using a shell script.\n2. Define the creative direction (color scheme, layout, typography, etc.) based on the string. Look beyond the surface for subpatterns, special numbers, anything that inspires you.\n3. Use your judgment to bring this direction to life and make it look great.\n\nDon't reveal the string in the design. It's only for your inspiration."
+    ],
+    "tips": [
+      "Asking for “something unique” or “completely at random” still yields the same fake-random patterns (pottery metaphors, identical structures).",
+      "Default unseeded runs collapse to purplish gradients, text-left / graphic-right SaaS layouts.",
+      "Seeded runs produce one-of-a-kind schemes—no two runs match."
+    ],
+    "sourceUrls": [
+      "https://www.lennysnewsletter.com/p/how-to-turn-your-ai-into-a-world"
+    ],
+    "related": [
+      "ambitious-prompts",
+      "remove-ai-tells",
+      "critic-subagents"
+    ],
+    "workedExamples": [
+      {
+        "title": "Productivity landing default collapse",
+        "before": "Four unseeded Claude Opus runs of “Build me a landing page for my productivity app” → purplish gradient, text-left / graphic-right, identical structure every time.",
+        "after": "Same brief plus a shell-generated seed string → divergent color, type, and layout; no two runs match.",
+        "body": "From the Lenny essay: without an external seed the model predicts the SaaS default. Asking for “totally unique / completely at random” still yields fake-random sameness (same awkward pottery metaphors). The seed forces decisions off the training prior. Cite: Lenny guest post."
+      },
+      {
+        "title": "This catalog’s Quiet Folio direction",
+        "body": "A 64-char hex seed was hashed; subpatterns (flat runs, cool trailing digits) picked Quiet Folio / letterpress monograph—paper #FAF9F7, ink #221C24, oversized folio numerals, one ink mark. The string never appears in the UI. See docs/REDESIGN.md and docs/CRITIC_LOOP.md."
+      },
+      {
+        "title": "Failure mode: reveal the seed",
+        "body": "If the agent prints the seed in the hero or footer, the technique collapses into a gimmick and the page still looks generated. Keep the string private to the model’s inspiration step."
+      }
+    ],
+    "antiPatterns": [
+      "Prompting “make it unique / random” with no external entropy—still collapses to familiar slop.",
+      "Reusing one seed across products until every artifact shares the same accidental palette.",
+      "Showing the seed string in the design (turns craft into a novelty badge)."
+    ],
+    "checklist": [
+      "Agent generated entropy outside the model (shell / crypto), not “imagine a random string.”",
+      "Creative direction cites subpatterns in that string (color, type, layout).",
+      "Seed is not visible in the shipped UI.",
+      "A second run with a new seed produces a visibly different direction."
+    ],
+    "promptWhy": [
+      "External shell entropy + forced direction-from-string breaks the SaaS-landing prior without inventing fake randomness in prose."
+    ],
+    "pairsWellWith": [
+      "ambitious-prompts",
+      "remove-ai-tells",
+      "critic-subagents"
+    ]
+  },
+  {
+    "slug": "ambitious-prompts",
+    "number": 2,
+    "stage": "Discover",
+    "title": "Be much more ambitious with your prompts",
+    "principle": "Vague prompts let the model invent bland defaults. Specific, wild briefs give it a vision to execute. Bring your taste: name an inspiration (game, interior trend, installation) and say how it should shape the output. Prefer ideas that make you think “this might not work.”",
+    "procedure": [
+      "Ask AI for a broad, short list of bold design-language ideas—high-level only, go wide not deep.",
+      "Pick favorites; write human feel notes (what feels tacky, what to keep, texture vs. gradient boredom).",
+      "Ask AI to sharpen one direction based on those notes.",
+      "Iterate until satisfied, then ask AI to write a concise build prompt for an agent POC."
+    ],
+    "examplePrompts": [
+      "Build me a landing page for my productivity app, with a bold pixel art theme and stunning graphics. Each section should feel like a still from a video game, yet somehow it should all function as a landing page.",
+      "Build me a landing page for my productivity app, set in an isometric living 3D city, where different features are somehow represented by neighborhoods or buildings.",
+      "Build me a landing page for my productivity app, with a radically asymmetric layout, dissonant colors and typography, and uncomfortable negative space. Break all the rules but still make it look good.",
+      "I want to come up with a bold, unique design language for my product. Can you list as many ideas as you can, with short, high-level descriptions? Go broad, not deep.",
+      "Industrial Control Panel:\n\n- I’m imagining something tactile. Clicky, satisfying buttons, nice sounds.\n- Initially I pictured something cartoony or skeuomorphic, but this feels tacky to me. Avoid that.\n- Instead, want consistent components and little touches that land this look without going overboard.\n- Gray gradients would look boring. Need more texture. Maybe we can incorporate some color, while retaining the control panel feel?\n\nCan you sharpen this one based on my tastes?",
+      "Can you write a concise prompt that an AI agent could use to build an initial POC page with this?"
+    ],
+    "tips": [
+      "Pasting AI ideas straight back into AI yields average results anyone else could get—your steering is the uniqueness.",
+      "If you think “there’s no way this will work,” you’re often on the right track.",
+      "Save failing prompts and retest on newer models to track the frontier."
+    ],
+    "sourceUrls": [
+      "https://www.lennysnewsletter.com/p/how-to-turn-your-ai-into-a-world"
+    ],
+    "related": [
+      "seed-strings",
+      "critic-subagents",
+      "ten-options-then-remix"
+    ],
+    "workedExamples": [
+      {
+        "title": "Pixel-art / isometric / asymmetric briefs",
+        "body": "Lenny shows three ambitious productivity-landing briefs (bold pixel-art game stills; isometric living 3D city of feature-neighborhoods; radically asymmetric dissonant type). Specific wild vision beats “nice modern landing page.” Cite: Lenny URL."
+      },
+      {
+        "title": "Industrial Control Panel taste loop",
+        "before": "AI lists broad design-language ideas.",
+        "after": "Human feel notes (“tactile, not cartoony; texture over gray gradients”) → sharpened direction → agent-written POC prompt.",
+        "body": "Uniqueness comes from steering, not from pasting AI ideas straight back into AI. Cite: Lenny."
+      },
+      {
+        "title": "“This might not work” as a signal",
+        "body": "Anshu: if you think there’s no way this will work, you’re often on the right track—save failing prompts and retest on newer models. Paraphrase; cite Lenny."
+      }
+    ],
+    "antiPatterns": [
+      "Pasting AI-generated idea lists back into AI unchanged—anyone else gets the same average.",
+      "Stopping at the first “safe” brief that sounds professional.",
+      "Skipping the human taste notes between brainstorm and build prompt."
+    ],
+    "checklist": [
+      "Brief names a concrete inspiration (game, interior, installation) and how it shapes UI.",
+      "You wrote feel notes before asking AI to sharpen.",
+      "Build prompt is concise enough for an agent POC.",
+      "At least one idea felt slightly dangerous / “might not work.”"
+    ],
+    "promptWhy": [
+      "Concrete motif + “still function as a landing page” constrains wildness into a usable artifact.",
+      "Isometric city metaphor forces feature→place mapping instead of generic feature cards.",
+      "Explicit rule-breaking + “still look good” invites risk without pure chaos.",
+      "Broad/short list keeps brainstorm from collapsing into one polished average idea.",
+      "Human feel notes are the uniqueness; the model only sharpens them.",
+      "Separates taste work from implementation—agent gets a buildable brief, not a vibe."
+    ],
+    "pairsWellWith": [
+      "seed-strings",
+      "critic-subagents",
+      "ten-options-then-remix"
+    ]
+  },
+  {
+    "slug": "critic-subagents",
+    "number": 3,
+    "stage": "Define",
+    "title": "Create positive feedback loops with subagents",
+    "principle": "The implementer can’t objectively judge its own work—it still sees code, rationale, and sunk effort. A fresh-context critic that sees screenshots only evaluates aesthetic and quality. Use a strong (expensive) model for taste decisions and a cheaper model for grunt implementation.",
+    "procedure": [
+      "Capture a screenshot of the current design.",
+      "Invoke the critic in a fresh context with only the screenshot—no code, implementation details, or prior critiques.",
+      "Ask it to name the aesthetic the design is going for, imagine how a top design studio would execute that aesthetic, then outline the biggest gaps.",
+      "Require a score out of 10 against that studio-level bar.",
+      "Stop only when the critic independently scores ≥9/10. Do not put that threshold in the critic prompt—keep scoring objective. Reuse the same critic prompt each iteration."
+    ],
+    "examplePrompts": [
+      "I want you to improve this design. To figure out what to focus on, use a strong subagent as a design critic.\n\nFollow this procedure at each iteration:\n\n- Capture a screenshot of the current design\n- Invoke the critic in a fresh context, with just the screenshot, not the code, implementation details, or earlier iterations/critiques\n- Ask it to evaluate the aesthetic that the design is going for, imagine how a top design studio would execute this aesthetic, then outline the biggest gaps\n- Lastly, it should provide a score out of 10 indicating how close the current design is to that studio-level quality bar\n\nProvide this guidance to the critic in its prompt:\n\n- It should think high-level about the overall structure and composition as well as look at the fine details\n- It should watch out for patterns that feel overdone, excessive, or otherwise obviously AI-generated, and penalize them\n- It should provide tight, specific feedback, not vague prose\n- It should be bold and opinionated, not rely on what’s safe or easy\n\nYour work is only complete when the critic independently deems it 9/10 or higher. Do not put that criterion in the critic prompt; keep it objective in its scoring. Use the same critic prompt each time."
+    ],
+    "tips": [
+      "Bad criteria: vague beauty judgments. OK: studio-bar framing. Great: rank against concrete example images.",
+      "Give moodboard / baseline images as quality anchors—not targets to copy.",
+      "Set stopping carefully or the critic never says “done” and tokens burn forever; try 1–2 iterations first.",
+      "Bigger models for critic taste; capable-but-cheaper models for implementation."
+    ],
+    "sourceUrls": [
+      "https://www.lennysnewsletter.com/p/how-to-turn-your-ai-into-a-world"
+    ],
+    "related": [
+      "image-generation",
+      "cut-elements",
+      "remove-ai-tells",
+      "seed-strings"
+    ],
+    "workedExamples": [
+      {
+        "title": "Seeded landings → individual identity",
+        "before": "Promising seeded pages still stuck in text-left / CTA / nav / graphic-right.",
+        "after": "Fresh-context critic on screenshots only, loop until ≥9/10 → each page keeps its aesthetic but gains distinct composition.",
+        "body": "Lenny: expensive critic for taste (<10% tokens in the example), cheaper model for grunt work. Stopping criterion stays outside the critic prompt. Cite: Lenny."
+      },
+      {
+        "title": "Criteria quality ladder",
+        "body": "Bad: “looks beautiful, not AI.” OK: studio-bar framing. Great: rank against concrete example images. Paraphrase from Lenny tips."
+      },
+      {
+        "title": "This catalog’s critic loops",
+        "body": "docs/CRITIC_LOOP.md records rounds scored against Lenny density + Stripe/Economist restraint—same pattern applied to the desk itself."
+      }
+    ],
+    "antiPatterns": [
+      "Letting the implementer score its own work while still seeing the code and sunk effort.",
+      "Putting the ≥9/10 stop rule inside the critic prompt (it inflates scores to finish).",
+      "Running endless loops with mushy criteria until tokens burn out."
+    ],
+    "checklist": [
+      "Critic sees screenshot only—fresh context, no code or prior critiques.",
+      "Same critic prompt reused each iteration.",
+      "Stop rule lives with the implementer, not inside the critic.",
+      "Tried 1–2 iterations before committing to a long loop.",
+      "Optional: baseline / moodboard images as quality anchors, not copy targets."
+    ],
+    "promptWhy": [
+      "Screenshot-only critic + studio-bar scoring + external stop rule creates an objective taste loop the implementer can’t game."
+    ],
+    "pairsWellWith": [
+      "cut-elements",
+      "remove-ai-tells",
+      "image-generation",
+      "seed-strings"
+    ]
+  },
+  {
+    "slug": "image-generation",
+    "number": 4,
+    "stage": "Define",
+    "title": "Use image generation to enrich designs",
+    "principle": "Coding agents default to CSS gradients, shapes, and basic patterns—strong AI tells. Real generated images (plus shaders or 3D) add personality and signal more than surface effort. Verify frame-by-frame in the browser. Keep API keys local and gitignored.",
+    "procedure": [
+      "Instruct the agent that the design is plain and must gain personality via image generation.",
+      "Allow shaders or 3D effects combined with images for richer visuals.",
+      "Provide an API key for local use only—never store keys in product code; prefer a gitignored .env.agents file referenced from AGENTS.md / CLAUDE.md.",
+      "Require browser verification of the result frame-by-frame."
+    ],
+    "examplePrompts": [
+      "The design is pretty plain. Add more personality using image generation. Consider shaders or 3D effects in combination with images to create more interesting visuals.\n\nFor image generation, use this OpenAI API key (only use it locally, do not store it in the code or product): <YOUR_KEY>\n\nVerify that your work looks right frame-by-frame in the browser.",
+      "Create a gitignored file called .env.agents, store this API key in it, and note to yourself in AGENTS.md/CLAUDE.md that these keys are for you to use during development (but must not ship with the product).",
+      "Use the Codex CLI to generate images. Help me install it if it isn’t already present. Make sure it’s billing my subscription, not an API key."
+    ],
+    "tips": [
+      "Built-in image tools are underused until you explicitly tell the agent to use them.",
+      "Use a separate API key with a tight spend limit so costs stay bounded if the agent misuses it.",
+      "CSS blobs and gradients alone are a giveaway—prefer real imagery."
+    ],
+    "sourceUrls": [
+      "https://www.lennysnewsletter.com/p/how-to-turn-your-ai-into-a-world"
+    ],
+    "related": [
+      "video-motion",
+      "remove-ai-tells",
+      "critic-subagents"
+    ],
+    "workedExamples": [
+      {
+        "title": "Plain seeded page → image-enriched",
+        "before": "Code-only gradients, shapes, patterns.",
+        "after": "Agent instructed to add personality via image gen (+ shaders/3D), verify frame-by-frame.",
+        "body": "Lenny shows before/after on prior designs: images signal more than surface CSS effort and reduce “obviously AI” reads. Cite: Lenny."
+      },
+      {
+        "title": "Key hygiene",
+        "body": "Separate spend-capped API key; gitignored .env.agents; never ship keys. Codex CLI can bill a ChatGPT subscription instead of an API key when available. Paraphrase: Lenny."
+      }
+    ],
+    "antiPatterns": [
+      "Relying on CSS blobs/gradients as the only “visual interest.”",
+      "Pasting long-lived production API keys into chat without spend limits.",
+      "Skipping browser frame-by-frame verification after generation."
+    ],
+    "checklist": [
+      "Agent was explicitly told to use image generation (built-in tools are underused otherwise).",
+      "Keys live in gitignored local config, not in product code.",
+      "Result checked in the browser, not only in the file tree.",
+      "Images + effects serve the aesthetic—not random stock decoration."
+    ],
+    "promptWhy": [
+      "Explicit image-gen ask + local-only key + browser verify overrides the code-only default.",
+      "Makes key hygiene a first-class agent instruction so secrets don’t ship.",
+      "Subscription-billed Codex path avoids scattering extra API keys when you already pay for ChatGPT."
+    ],
+    "pairsWellWith": [
+      "video-motion",
+      "remove-ai-tells",
+      "critic-subagents"
+    ]
+  },
+  {
+    "slug": "video-motion",
+    "number": 5,
+    "stage": "Define",
+    "title": "For more advanced motion, use video generation",
+    "principle": "Video models aren’t just for UGC ads. Looping matted clips (solid bg → chroma key or video matting) become UI layers. Keyframe→video interpolation creates scroll/scrub transitions between product states. Aggregators like fal.ai let one key unlock many models.",
+    "procedure": [
+      "For animated graphics: generate a looping clip on a solid background, then chroma-key or matte out the background so it layers cleanly in the UI.",
+      "For richer refraction: render over page background colors first so effects bake in, then remove the background.",
+      "For transitions: generate still keyframes, then interpolate with a video model; seed the next clip from the prior clip’s last frame for continuity.",
+      "Scrub or play clips on scroll, swipe, or navigation gestures.",
+      "Point the agent at fal.ai (or similar) with a local-only API key and let it pick recent suitable models."
+    ],
+    "examplePrompts": [
+      "Can you replace the image on this page with a looping video clip that does something more interesting? Have the crystal splinter apart and slowly spin around. It should have awesome glassy effects that refract the page background and cast shadows and light around it.\n\nTo get convincing glass refraction effects, render the video of the glass over the page background colors first (so it bakes in the refraction effects), then remove the background with a video matting model.\n\nUse this fal.ai API key: <YOUR_KEY>\n\nFind appropriate recent models for video generation and background removal.",
+      "Build a demo page for a suitcase that uses a video model to create interactive transitions between a couple of screens. Each screen should show the suitcase in a different state, with vertical motion that feels appropriate for scrolling:\n\n- Initially, have the suitcase floating high up in the air\n- Then have it land on the floor and pop open\n- Finally, have its contents neatly land into it from the top\n\nGenerate the initial frame using your image generation skill. Then, generate a video clip that starts from that frame and animates to the next state. Use the final frame of that video to seed the next transition so that it continues seamlessly. Scrub through the transitions one by one as the user scrolls.\n\nUse this fal.ai API key: <YOUR_KEY>\n\nUse a video model with strong physics and consistency."
+    ],
+    "tips": [
+      "Matted loops beat CSS animation for caustics, refraction, and physical motion.",
+      "Scroll-scrubbed keyframe transitions make users want to keep reading.",
+      "Model quality changes fast—aggregators reduce integration churn.",
+      "Product motion craft (free recipes): https://transitions.dev/ — wire texts-reveal, number-pop-in, tabs-sliding, card-tilt, success-check into real chrome; prefer-reduced-motion off; Pro needs Brandon's yes."
+    ],
+    "sourceUrls": [
+      "https://www.lennysnewsletter.com/p/how-to-turn-your-ai-into-a-world"
+    ],
+    "related": [
+      "image-generation",
+      "cut-elements",
+      "make-it-alive"
+    ],
+    "workedExamples": [
+      {
+        "title": "Crystal splinter loop (matted UI layer)",
+        "before": "Static image on the page.",
+        "after": "Looping glass crystal that splinters/spins; rendered over page colors then matted—caustics and refraction CSS can’t fake.",
+        "body": "Public Lenny example using fal.ai for video gen + matting. Cite: Lenny."
+      },
+      {
+        "title": "Suitcase scroll-scrub transitions",
+        "body": "Demo page: suitcase floats → lands/opens → contents fall in; each state seeded from the prior clip’s last frame; scrubbed on scroll. One-prompt build in the essay. Cite: Lenny."
+      }
+    ],
+    "antiPatterns": [
+      "Dropping a rectangular MP4 with black bars into the layout (reads as embedded video, not UI).",
+      "CSS-only motion when the aesthetic needs physical refraction/physics.",
+      "Hard-wiring one video vendor when an aggregator would let the agent pick a current model."
+    ],
+    "checklist": [
+      "Animated graphic is matted (or chroma-keyed) so it layers as UI, not a player chrome.",
+      "Transitions share continuity (last frame seeds next clip) when scrubbing.",
+      "API key is local-only; agent chose an appropriate recent model.",
+      "Motion serves reading/engagement—not decorative autoplay noise."
+    ],
+    "promptWhy": [
+      "Bake-refraction-then-matte recipe produces UI-layer glass, not a floating video rectangle.",
+      "Keyframe→video→seed-next + scroll scrub turns product states into a tangible story."
+    ],
+    "pairsWellWith": [
+      "image-generation",
+      "make-it-alive",
+      "cut-elements"
+    ]
+  },
+  {
+    "slug": "cut-elements",
+    "number": 6,
+    "stage": "Deliver",
+    "title": "Cut out elements that don’t add value",
+    "principle": "AI loves to add and rarely subtract. Over-explanation and decorative chrome read as generated. Restraint looks premium. Your job in polish is mostly deletion—push the model to take the risk of removing code.",
+    "procedure": [
+      "Audit the screen: what still needs to be there for the user’s job?",
+      "Kill decorative noise—glows, random text highlights, unnecessary containers, redundant labels when imagery already communicates.",
+      "Prefer native / system controls over worse custom buttons and fields.",
+      "Ask the agent explicitly to simplify layout, remove gradients/glows, and aim for true minimalism."
+    ],
+    "examplePrompts": [
+      "Dial this calorie tracker back:\n\n- Simplify the layout into an image-centric grid\n- Get rid of gradients, glows, and unnecessary containers\n- Aim for a truly minimalist aesthetic that feels Apple-native\n- Prefer built-in iOS components over custom buttons and text fields that look worse\n- Remove extra labels and empty space where the food images already communicate the content"
+    ],
+    "tips": [
+      "Even when you ask for “clean, minimalist,” models still add pink glows, random color highlights, extra labels, and bad custom controls.",
+      "Putting less on screen often communicates more—attention isn’t diluted by clutter.",
+      "Deletion feels risky to next-token models; you must demand it."
+    ],
+    "sourceUrls": [
+      "https://www.lennysnewsletter.com/p/how-to-turn-your-ai-into-a-world"
+    ],
+    "related": [
+      "remove-ai-tells",
+      "hand-rewrite-copy",
+      "critic-subagents",
+      "last-mile-manual"
+    ],
+    "workedExamples": [
+      {
+        "title": "Calorie tracker cut story",
+        "before": "Asked for clean minimalism; still got pink glows, random text highlights, redundant labels beside food images, custom controls worse than native iOS.",
+        "after": "Image-centric grid; gradients/glows/containers gone; Apple-native components; tighter type—opinionated, quieter, clearer.",
+        "body": "Primary Deliver case in the Lenny essay. Models won’t delete riskily without an explicit push. Cite: Lenny."
+      },
+      {
+        "title": "This desk’s cut list",
+        "body": "Ochre accents, marketing stage strips, dual CTA rows, badge-above-H1 removed in the App Desk pass—restraint as the taste bet. See docs/REDESIGN.md."
+      }
+    ],
+    "antiPatterns": [
+      "Asking for “minimal” once, then accepting the still-decorated result.",
+      "Adding explanatory labels when imagery already communicates.",
+      "Custom controls that look worse than platform natives."
+    ],
+    "checklist": [
+      "Every element has a job for the user’s task—or it’s gone.",
+      "No glow/gradient chrome without compositional reason.",
+      "Native/system controls preferred where custom is weaker.",
+      "A second pass asked specifically for deletion, not addition."
+    ],
+    "promptWhy": [
+      "Bullet deletion asks (grid, kill glows, native iOS) force subtractive edits models avoid by default."
+    ],
+    "pairsWellWith": [
+      "remove-ai-tells",
+      "hand-rewrite-copy",
+      "critic-subagents",
+      "last-mile-manual"
+    ]
+  },
+  {
+    "slug": "remove-ai-tells",
+    "number": 7,
+    "stage": "Deliver",
+    "title": "Remove AI tells",
+    "principle": "Certain visual and copy patterns scream “generated.” Maintain a kill-list and scrub the UI until those fingerprints are gone. This catalog’s anti-slop stance sits in the same independent lineage as public tooling like design-slop-cop and Build Games–style anti-slop practice—not as an endorsement of any one tool.",
+    "procedure": [
+      "Walk the design against a kill-list of common AI tells.",
+      "Replace default type stacks (Inter / Geist / Space Grotesk) with a distinctive pairing chosen on purpose.",
+      "Remove vibe-purple chrome, decorative gradients-as-chrome, and glassmorphism panels.",
+      "Delete 3-card emoji feature grids, fake stats, and headline badges that add no information.",
+      "Re-check with a critic or fresh eyes until the page no longer reads as template slop."
+    ],
+    "examplePrompts": [
+      "Audit this page for AI design tells and remove them. Kill-list:\n- Vibe purple / indigo accent defaults\n- Gradients used as chrome (hero washes, button fills) without compositional reason\n- Glassmorphism cards and frosted panels\n- Inter, Geist, or Space Grotesk as the default type stack\n- Three-card grids with emoji icons and generic feature blurbs\n- Fake stats / social-proof numbers\n- Headline badges (“New”, “AI-powered”, sparkles)\n- Soft drop shadows and glowing orbs as decoration\n\nReplace with intentional color, type, and structure. Do not swap one tell for another."
+    ],
+    "tips": [
+      "Tells compound—fixing one gradient while leaving Inter + emoji cards still reads as slop.",
+      "Related public tooling: https://github.com/AdrianKrebs/design-slop-cop (independent; cited for lineage, not endorsement).",
+      "This site’s paper/ink desk is itself an anti-tell choice: plum-cast paper, monochrome chrome, serif + IBM Plex—no accent rainbow."
+    ],
+    "sourceUrls": [
+      "https://www.lennysnewsletter.com/p/how-to-turn-your-ai-into-a-world",
+      "https://github.com/AdrianKrebs/design-slop-cop"
+    ],
+    "related": [
+      "cut-elements",
+      "hand-rewrite-copy",
+      "seed-strings",
+      "specify-the-look"
+    ],
+    "workedExamples": [
+      {
+        "title": "Kill-list scrub (public technique; deeper Lenny tips paywalled)",
+        "body": "Technique 7+ in the Lenny essay sit behind the paywall from the free preview. This catalog’s kill-list (vibe-purple, gradient chrome, glassmorphism, Inter/Geist/Space Grotesk defaults, emoji 3-card grids, fake stats, sparkle badges) is an editorial condensation aligned with the essay’s Deliver stage—not a verbatim paywalled transcript. Cite Lenny for the technique name/stage; see Sources for the gap note."
+      },
+      {
+        "title": "Quiet Folio as anti-tell",
+        "body": "This site: plum-cast paper, monochrome chrome, serif + IBM Plex, letterpress numerals—no accent rainbow. Crafted plain instead of template docs."
+      }
+    ],
+    "antiPatterns": [
+      "Fixing one tell (gradient) while leaving Inter + emoji feature cards.",
+      "Swapping purple for another default accent rainbow.",
+      "Treating anti-slop tooling as a substitute for taste."
+    ],
+    "checklist": [
+      "Walked a written kill-list against the live UI.",
+      "Type stack is intentional, not the model default.",
+      "No decorative glass / orb / sparkle chrome.",
+      "Fresh critic or human pass no longer tags it as template slop."
+    ],
+    "promptWhy": [
+      "An explicit kill-list beats “make it less AI”—models need named fingerprints to delete."
+    ],
+    "pairsWellWith": [
+      "cut-elements",
+      "hand-rewrite-copy",
+      "seed-strings",
+      "specify-the-look"
+    ]
+  },
+  {
+    "slug": "hand-rewrite-copy",
+    "number": 8,
+    "stage": "Deliver",
+    "title": "Rewrite copy by hand",
+    "principle": "Visual polish can still leave AI voice in the words. Name lines, empty states, CTAs, errors, and onboarding survive longest as tells. Don’t ask the model to “make it sound human”—rewrite the critical lines yourself with specific detail and opinion.",
+    "procedure": [
+      "List the high-leverage strings: product name line / tagline, empty states, primary CTA, error messages, onboarding steps.",
+      "Rewrite each by hand—short, concrete, opinionated; cut hedges and template enthusiasm.",
+      "Paste the human copy back for the agent to wire up without “improving” the wording.",
+      "Spot-check that no regenerated marketing blurbs reappear on later passes."
+    ],
+    "examplePrompts": [
+      "Do not rewrite these strings. Wire them exactly as written:\n\n- Name line: <your hand-written line>\n- Empty state: <your hand-written empty state>\n- Primary CTA: <your hand-written CTA>\n- Error: <your hand-written error>\n- Onboarding step 1–n: <your hand-written steps>\n\nIf you need more UI copy, leave a TODO comment rather than inventing marketing language."
+    ],
+    "tips": [
+      "Copy is where AI tells linger after the visuals look intentional.",
+      "Specific lived detail beats polished generic claims.",
+      "Protect hand-written strings from “helpful” regenerations in later agent turns."
+    ],
+    "sourceUrls": [
+      "https://www.lennysnewsletter.com/p/how-to-turn-your-ai-into-a-world"
+    ],
+    "related": [
+      "remove-ai-tells",
+      "cut-elements",
+      "last-mile-manual"
+    ],
+    "workedExamples": [
+      {
+        "title": "Hero rewrite on this desk",
+        "before": "How to turn AI into a world-class designer",
+        "after": "Techniques for getting past average AI design",
+        "body": "docs/REDESIGN.md — hand rewrite as Technique 8 practice. Deeper Lenny examples for technique 8 are paywalled in the free preview; we don’t invent quotes."
+      },
+      {
+        "title": "Protect strings from “helpful” regen",
+        "body": "Wire hand-written name line, empty state, CTA, errors, onboarding exactly; TODO rather than inventing marketing blurbs on later turns."
+      }
+    ],
+    "antiPatterns": [
+      "Asking the model to “make the copy sound more human.”",
+      "Letting later agent turns regenerate hero/CTA wording.",
+      "Polished generic claims instead of specific lived detail."
+    ],
+    "checklist": [
+      "High-leverage strings listed (tagline, empty, CTA, errors, onboarding).",
+      "Each rewritten by a human with opinion and specificity.",
+      "Agent instructed not to alter those strings.",
+      "Spot-checked after later passes for regenerated blurbs."
+    ],
+    "promptWhy": [
+      "Exact-string wiring + TODO fallback stops the model from re-AI-ing the voice."
+    ],
+    "pairsWellWith": [
+      "remove-ai-tells",
+      "cut-elements",
+      "last-mile-manual"
+    ]
+  },
+  {
+    "slug": "thinking-before-prompt",
+    "number": 9,
+    "stage": "Discover",
+    "title": "Do the thinking before you prompt",
+    "principle": "The best way to get output that matches your vision is to tell Claude what you need up front. Spend time writing prompts before you design—dictate in the tool, type in Notes, or record a voice note on a walk and paste the transcript later. Figure out what you want away from the computer so Claude can execute your exact vision when you sit down.",
+    "procedure": [
+      "Step away from the canvas: decide goal, audience, constraints, and success criteria before any pixels.",
+      "Capture the brief offline—voice dictation in Claude Design, phone Notes, or a walk voice-note transcript (methods Nate names).",
+      "Paste or speak the full brief before asking for visuals.",
+      "Refuse empty first prompts; iterate only after intent is written.",
+      "Revisit the brief when a remix drifts—update the written intent instead of vibes-chasing."
+    ],
+    "examplePrompts": [
+      "Before designing anything: here is the full brief I wrote offline.\n\nGoal: <what this artifact must communicate>\nAudience: <who sees it>\nConstraints: <brand, format, time, fidelity>\nMust include: <flows, screens, or beats>\nMust avoid: <defaults or aesthetics I do not want>\n\nExecute this vision. Do not invent a different concept."
+    ],
+    "tips": [
+      "Nate: “I spend a lot of time writing prompts before I design.”",
+      "Dictation, couch Notes drafts, and walk transcripts are all valid brief-capture methods he names.",
+      "Efficiency comes from front-loading intent, not from prompting blank and hoping."
+    ],
+    "sourceUrls": [
+      "https://claude.com/blog/how-the-product-designer-who-built-claude-design-uses-it-to-explore-ideas-before-building-them"
+    ],
+    "related": [
+      "specify-the-look",
+      "ten-options-then-remix",
+      "wireframe-first",
+      "tc-ebc-task"
+    ],
+    "workedExamples": [
+      {
+        "title": "Couch / walk brief → exact vision",
+        "body": "Nate: spend a lot of time writing prompts before designing; dictate, Notes-from-the-couch, or walk transcripts so Claude executes the vision when you sit down—not a blank-canvas improvisation. Cite: Anthropic Claude blog."
+      }
+    ],
+    "antiPatterns": [
+      "Opening the tool and prompting with no written intent.",
+      "Using the first empty generation as a substitute for a brief."
+    ],
+    "checklist": [
+      "Brief exists before visuals.",
+      "Constraints and must-avoids are explicit.",
+      "Capture method doesn’t matter—completeness does."
+    ],
+    "promptWhy": [
+      "Front-loaded brief blocks the model from inventing a different concept."
+    ],
+    "pairsWellWith": [
+      "specify-the-look",
+      "ten-options-then-remix",
+      "tc-ebc-task"
+    ]
+  },
+  {
+    "slug": "specify-the-look",
+    "number": 10,
+    "stage": "Define",
+    "title": "Tell Claude what it should look like",
+    "principle": "Left undirected, Claude picks one of its favorite aesthetics—you’d probably recognize them. Head that off by specifying fonts and colors, providing a moodboard of images for inspiration, or asking Claude to brainstorm font-and-color pairings and going back and forth until a pairing feels right.",
+    "procedure": [
+      "Name concrete fonts and colors, or upload a moodboard.",
+      "Or ask for font-and-color pairing brainstorms—then choose; don’t accept the first default aesthetic.",
+      "Lock the pairing into later prompts / a design system.",
+      "Re-check outputs for drift back to favorite model aesthetics."
+    ],
+    "examplePrompts": [
+      "Do not use your default aesthetic. Use these constraints:\n\nFonts: <primary / secondary>\nColors: <background, text, accent>\nMood references: I uploaded a moodboard—match its typography weight, contrast, and spacing feel.\n\nPropose 3 font-and-color pairings that fit, then wait for me to pick before designing screens."
+    ],
+    "tips": [
+      "Undirected Claude lands on recognizable favorite aesthetics; specify look early.",
+      "Moodboards and explicit type/color beat vague “make it nice” asks.",
+      "Brainstorm pairings, then choose—don’t skip the selection step."
+    ],
+    "sourceUrls": [
+      "https://claude.com/blog/how-the-product-designer-who-built-claude-design-uses-it-to-explore-ideas-before-building-them"
+    ],
+    "related": [
+      "design-system-from-assets",
+      "thinking-before-prompt",
+      "ten-options-then-remix",
+      "remove-ai-tells",
+      "seed-strings"
+    ],
+    "workedExamples": [
+      {
+        "title": "Head off favorite aesthetics",
+        "body": "Nate: left undirected, Claude picks recognizable favorite aesthetics. Specify fonts/colors, moodboard, or iterate pairings until one feels right. Cite: Anthropic blog."
+      }
+    ],
+    "antiPatterns": [
+      "“Make it nice / modern / clean” with no type or color.",
+      "Accepting the first pairing without a selection step."
+    ],
+    "checklist": [
+      "Fonts named or moodboard attached.",
+      "A human picked the pairing.",
+      "Later artifacts reuse it."
+    ],
+    "promptWhy": [
+      "Explicit type/color + choose-before-build prevents default aesthetic lock-in."
+    ],
+    "pairsWellWith": [
+      "design-system-from-assets",
+      "remove-ai-tells",
+      "seed-strings"
+    ]
+  },
+  {
+    "slug": "design-system-from-assets",
+    "number": 11,
+    "stage": "Define",
+    "title": "Turn recurring work into a design system",
+    "principle": "Upload brand files and assets—logos, slide decks, screenshots, typography specs, and anything else you reuse—and Claude will analyze them and generate a design system. Each artifact afterward starts from your choices rather than a blank slate. Claude Design isn’t built for logo generation; bring logos and assets you already have.",
+    "procedure": [
+      "Gather logos, decks, screenshots, type specs, colors.",
+      "Upload and ask Claude to analyze them into a reusable design system.",
+      "Start new artifacts from that system.",
+      "Bring existing marks—don’t ask Claude Design to invent logos (no image model for that)."
+    ],
+    "examplePrompts": [
+      "I uploaded our brand files (logo, typography specs, slide deck, product screenshots). Analyze them and generate a design system I can reuse: fonts, colors, spacing, component patterns, and do’s/don’ts.\n\nEvery new artifact in this project should start from that system—not a blank aesthetic."
+    ],
+    "tips": [
+      "Nate distilled Anthropic’s fonts, colors, assets, and principles into prompts so outputs stayed brand-compliant.",
+      "Claude Design has no image model for logo design; bring assets you already have.",
+      "A system turns each prompt into a continuation of your choices, not a reset."
+    ],
+    "sourceUrls": [
+      "https://claude.com/blog/how-the-product-designer-who-built-claude-design-uses-it-to-explore-ideas-before-building-them"
+    ],
+    "related": [
+      "specify-the-look",
+      "give-real-context",
+      "last-mile-manual",
+      "tc-ebc-constraints"
+    ],
+    "workedExamples": [
+      {
+        "title": "Anthropic brand distilled into prompts",
+        "body": "Nate spent time distilling Anthropic fonts, colors, assets, and principles into prompts so tool output stayed brand-compliant—then shared the internal prototype. Cite: Anthropic blog."
+      }
+    ],
+    "antiPatterns": [
+      "Blank-slate aesthetics every artifact.",
+      "Asking Claude Design to invent the logo."
+    ],
+    "checklist": [
+      "Assets uploaded.",
+      "System documented (type, color, spacing, do/don’t).",
+      "New work starts from the system."
+    ],
+    "promptWhy": [
+      "Asset analysis → system turns each prompt into a continuation of brand choices."
+    ],
+    "pairsWellWith": [
+      "specify-the-look",
+      "give-real-context",
+      "tc-ebc-constraints"
+    ]
+  },
+  {
+    "slug": "ten-options-then-remix",
+    "number": 12,
+    "stage": "Discover",
+    "title": "Ask for ten options, then remix",
+    "principle": "Ask for many options; most won’t be good, and that’s fine—one or two will be. Then remix: pick favorites and ask for riffs that combine them. Claude creates options and starting points so you don’t stare at a blank canvas; you choose what’s good alone or as a combination of versions.",
+    "procedure": [
+      "Ask for a large batch (e.g. ten) with deliberate variation.",
+      "Expect most to miss; keep one or two.",
+      "Name what works across favorites (layout from B, type from D).",
+      "Ask for several riffs that combine those pieces; repeat if needed.",
+      "Use volume specifically when collecting colleague feedback on flows."
+    ],
+    "examplePrompts": [
+      "Give me 10 distinct options for this brief. Vary layout, hierarchy, and visual language. I will pick; do not optimize for a single “best” answer.",
+      "I like option B and a little of option D. Give me five riffs that smoosh those together."
+    ],
+    "tips": [
+      "Volume is intentional: most options can fail if a few succeed.",
+      "Remix across versions instead of polishing one weak default.",
+      "Nate also generates many flow versions specifically to collect colleague feedback."
+    ],
+    "sourceUrls": [
+      "https://claude.com/blog/how-the-product-designer-who-built-claude-design-uses-it-to-explore-ideas-before-building-them"
+    ],
+    "related": [
+      "thinking-before-prompt",
+      "wireframe-first",
+      "specify-the-look",
+      "critic-subagents"
+    ],
+    "workedExamples": [
+      {
+        "title": "“Option B + a little of D”",
+        "body": "Nate’s remix line: like B and a little of D—give five riffs that smoosh them together. Most options won’t be good; that’s fine. Cite: Anthropic blog."
+      }
+    ],
+    "antiPatterns": [
+      "Polishing one weak default instead of sampling.",
+      "Asking for “the best” single answer."
+    ],
+    "checklist": [
+      "Batch size is large enough to explore.",
+      "Remix cites specific options.",
+      "Feedback round uses multiple flow versions when needed."
+    ],
+    "promptWhy": [
+      "Volume + explicit “I will pick” stops single-answer collapse.",
+      "Named remix targets turn selection into a generative step."
+    ],
+    "pairsWellWith": [
+      "wireframe-first",
+      "thinking-before-prompt",
+      "critic-subagents"
+    ]
+  },
+  {
+    "slug": "sketch-what-you-cant-describe",
+    "number": 13,
+    "stage": "Discover",
+    "title": "Sketch what you can’t describe",
+    "principle": "If you have a layout in your head and no words for it, draw it on paper and upload a photo. Visual intent that resists language still transfers when Claude can see the sketch.",
+    "procedure": [
+      "When layout is clear in your head but not in words, draw it on paper.",
+      "Photograph and upload the sketch.",
+      "Ask Claude to recreate structure/hierarchy/proportions—not invent a new composition.",
+      "Gate structural changes behind a question."
+    ],
+    "examplePrompts": [
+      "I uploaded a photo of a paper sketch. Recreate this layout structure in HTML—same regions, hierarchy, and proportions. Do not invent a different composition. Ask before changing the structure."
+    ],
+    "tips": [
+      "Use this when you can picture the layout but can’t name it.",
+      "The sketch is the brief; the prompt should protect that structure.",
+      "Pairs well with wireframe-first when fidelity still doesn’t matter."
+    ],
+    "sourceUrls": [
+      "https://claude.com/blog/how-the-product-designer-who-built-claude-design-uses-it-to-explore-ideas-before-building-them"
+    ],
+    "related": [
+      "wireframe-first",
+      "point-and-talk",
+      "thinking-before-prompt"
+    ],
+    "workedExamples": [
+      {
+        "title": "Paper photo as brief",
+        "body": "Nate: if you have a layout in your head and no words for it, draw on paper and upload a photo. Cite: Anthropic blog."
+      }
+    ],
+    "antiPatterns": [
+      "Paragraphs of spatial scavenger-hunt prose.",
+      "Letting the model “improve” the composition unasked."
+    ],
+    "checklist": [
+      "Sketch uploaded.",
+      "Prompt protects structure.",
+      "Changes require ask-first."
+    ],
+    "promptWhy": [
+      "Photo + “do not invent a different composition” makes the sketch authoritative."
+    ],
+    "pairsWellWith": [
+      "wireframe-first",
+      "point-and-talk",
+      "thinking-before-prompt"
+    ]
+  },
+  {
+    "slug": "point-and-talk",
+    "number": 14,
+    "stage": "Deliver",
+    "title": "Point and talk",
+    "principle": "Instead of writing a paragraph identifying which element you mean, click on it and speak. With dictation enabled, select “comment,” click into the comment box, and your words appear as if you typed—grounding edits in the exact UI target.",
+    "procedure": [
+      "Enable device dictation.",
+      "Select the element, open comment, click into the box.",
+      "Speak the change for that exact target.",
+      "Prefer this over written “the blue button in the third card” scavenger hunts.",
+      "Combine with last-mile direct edits for pixel tweaks."
+    ],
+    "examplePrompts": [
+      "(Spoken into a comment on the selected element)\nMake this tighter: reduce padding, keep the label, drop the secondary line."
+    ],
+    "tips": [
+      "Requires device dictation plus the comment affordance in Claude Design.",
+      "Selection replaces spatial scavenger-hunt prose in prompts.",
+      "Works especially well for last-mile tweaks alongside direct editing tools."
+    ],
+    "sourceUrls": [
+      "https://claude.com/blog/how-the-product-designer-who-built-claude-design-uses-it-to-explore-ideas-before-building-them"
+    ],
+    "related": [
+      "last-mile-manual",
+      "keep-working-alongside",
+      "sketch-what-you-cant-describe",
+      "cut-elements"
+    ],
+    "workedExamples": [
+      {
+        "title": "Comment-box dictation",
+        "body": "Nate: click the element and speak—with dictation on, comment-box speech appears as typed, grounding the edit. Cite: Anthropic blog."
+      }
+    ],
+    "antiPatterns": [
+      "Long written element-identification paragraphs.",
+      "Prompting micro-nudge edits that should be direct."
+    ],
+    "checklist": [
+      "Dictation enabled.",
+      "Element selected before speaking.",
+      "Change is local to the selection."
+    ],
+    "promptWhy": [
+      "Selection replaces ambiguous spatial language."
+    ],
+    "pairsWellWith": [
+      "last-mile-manual",
+      "keep-working-alongside",
+      "cut-elements"
+    ]
+  },
+  {
+    "slug": "wireframe-first",
+    "number": 15,
+    "stage": "Discover",
+    "title": "Wireframe first when fidelity doesn’t matter",
+    "principle": "Asking for wireframes is much faster, and it keeps Claude focused on higher-level structure instead of visuals. Use this to try many different ideas quickly before committing to look-and-feel.",
+    "procedure": [
+      "When fidelity doesn’t matter, explicitly ask for wireframes only.",
+      "Compare multiple structural directions quickly.",
+      "Lock structure before high-fidelity visuals.",
+      "Escalate fidelity only after hierarchy and flow feel right."
+    ],
+    "examplePrompts": [
+      "Wireframe only—no visual styling. Gray boxes, labels, and hierarchy. Give me 5 structural alternatives for this flow so I can compare layout ideas quickly."
+    ],
+    "tips": [
+      "Speed comes from skipping premature visual decisions.",
+      "Structure-first prevents Claude from locking onto a favorite aesthetic early.",
+      "Nate uses Claude Design daily for wireframing early ideas and generating many flow versions for feedback."
+    ],
+    "sourceUrls": [
+      "https://claude.com/blog/how-the-product-designer-who-built-claude-design-uses-it-to-explore-ideas-before-building-them"
+    ],
+    "related": [
+      "ten-options-then-remix",
+      "thinking-before-prompt",
+      "specify-the-look",
+      "tc-ebc-elements"
+    ],
+    "workedExamples": [
+      {
+        "title": "Daily bread-and-butter wireframes",
+        "body": "Nate uses Claude Design daily for wireframing early ideas and generating many flow versions for feedback—structure before visuals. Cite: Anthropic blog."
+      }
+    ],
+    "antiPatterns": [
+      "Jumping to polished visuals while structure is still mush.",
+      "Letting early aesthetic defaults lock the layout."
+    ],
+    "checklist": [
+      "Wireframe-only constraint stated.",
+      "Multiple structures compared.",
+      "Fidelity escalated on purpose."
+    ],
+    "promptWhy": [
+      "Gray-box constraint keeps the model on hierarchy, not favorite aesthetics."
+    ],
+    "pairsWellWith": [
+      "ten-options-then-remix",
+      "thinking-before-prompt",
+      "tc-ebc-elements"
+    ]
+  },
+  {
+    "slug": "last-mile-manual",
+    "number": 16,
+    "stage": "Deliver",
+    "title": "Make the last mile manual",
+    "principle": "Use direct editing tools—rearrange, delete, edit text, resize, change colors—for final touches instead of prompting for them. Direct edits use no tokens, and small calls like sizing and alignment are better eyeballed anyway.",
+    "procedure": [
+      "Prompt until the design is close.",
+      "Switch to direct editing: rearrange, delete, text, resize, color.",
+      "Eyeball sizing/alignment—don’t spend tokens on 4px nudges.",
+      "Reserve new prompts for structural/conceptual changes."
+    ],
+    "examplePrompts": [
+      "(Prefer direct edits over a prompt for this class of change)\nDo not prompt: nudge this 4px, recolor that label, delete this spacer.\nUse rearrange / delete / edit text / resize / change colors on the canvas instead."
+    ],
+    "tips": [
+      "Direct edits cost no tokens.",
+      "Micro-layout judgment is often faster and better by eye.",
+      "Prompting every tiny tweak is the expensive, slow path."
+    ],
+    "sourceUrls": [
+      "https://claude.com/blog/how-the-product-designer-who-built-claude-design-uses-it-to-explore-ideas-before-building-them"
+    ],
+    "related": [
+      "point-and-talk",
+      "keep-working-alongside",
+      "design-system-from-assets",
+      "hand-rewrite-copy",
+      "cut-elements"
+    ],
+    "workedExamples": [
+      {
+        "title": "Tokens vs eyeballs",
+        "body": "Nate: direct edits use no tokens; small sizing/alignment calls are better eyeballed than prompted. Cite: Anthropic blog."
+      }
+    ],
+    "antiPatterns": [
+      "Prompting every micro-tweak.",
+      "Skipping direct tools that already exist on the canvas."
+    ],
+    "checklist": [
+      "Last-pixel work done by hand.",
+      "Prompts reserved for real changes.",
+      "Token spend on polish near zero."
+    ],
+    "promptWhy": [
+      "Meta-instruction to prefer canvas tools prevents expensive micro-prompt loops."
+    ],
+    "pairsWellWith": [
+      "point-and-talk",
+      "hand-rewrite-copy",
+      "cut-elements"
+    ]
+  },
+  {
+    "slug": "give-real-context",
+    "number": 17,
+    "stage": "Define",
+    "title": "Give Claude your real context",
+    "principle": "If you’re designing a feature for an existing app or website, connect GitHub so Claude can fetch your components and existing screens and use them as a starting point—with a few tries it can recreate existing designs with pretty high fidelity. Web search and MCP connections work in Claude Design too when the design depends on outside information.",
+    "procedure": [
+      "Connect GitHub so Claude can fetch real components and screens.",
+      "Start from those—not a parallel invented UI system.",
+      "Use web search / MCP when the design needs outside facts.",
+      "Iterate a few times to raise fidelity against the real product."
+    ],
+    "examplePrompts": [
+      "I connected our GitHub repo. Pull the relevant components and existing screens for <feature area>. Redesign <flow> starting from those real patterns—match our component vocabulary before proposing net-new UI."
+    ],
+    "tips": [
+      "Real components beat imagined design systems when shipping into an existing app.",
+      "Nate notes high fidelity is reachable “with a few tries,” not one shot.",
+      "Web search and MCP are first-class when the brief depends on outside information."
+    ],
+    "sourceUrls": [
+      "https://claude.com/blog/how-the-product-designer-who-built-claude-design-uses-it-to-explore-ideas-before-building-them"
+    ],
+    "related": [
+      "design-system-from-assets",
+      "specify-the-look",
+      "wireframe-first",
+      "tc-ebc-context"
+    ],
+    "workedExamples": [
+      {
+        "title": "GitHub-connected fidelity",
+        "body": "Nate: connect GitHub; Claude fetches components/screens and can recreate existing designs with pretty high fidelity after a few tries. Web search and MCP work too. Cite: Anthropic blog."
+      }
+    ],
+    "antiPatterns": [
+      "Designing a feature in a vacuum beside the real app.",
+      "Describing the design system in prose instead of linking sources of truth."
+    ],
+    "checklist": [
+      "Real repo/components in context.",
+      "Outside facts fetched when needed.",
+      "Fidelity checked against production UI."
+    ],
+    "promptWhy": [
+      "Repo-as-context beats describing your design system from memory."
+    ],
+    "pairsWellWith": [
+      "design-system-from-assets",
+      "tc-ebc-context",
+      "specify-the-look"
+    ]
+  },
+  {
+    "slug": "keep-working-alongside",
+    "number": 18,
+    "stage": "Deliver",
+    "title": "Keep working alongside Claude",
+    "principle": "You don’t have to wait for Claude to deliver a finished result before prompting new changes or tasks. Queue multiple messages at once, or keep talking while Claude is still working on the previous turn—treat the session as continuous collaboration, not a batch job.",
+    "procedure": [
+      "Treat the session as continuous collaboration, not a batch job.",
+      "Queue follow-ups while a turn is still running.",
+      "Split parallel asks when the next correction is already known.",
+      "Stay in flow—idle waiting between turns is optional."
+    ],
+    "examplePrompts": [
+      "(Queued while a prior turn is still running)\nWhile you finish that: also prepare a second variant with denser type and no hero illustration. I’ll pick after both land."
+    ],
+    "tips": [
+      "Idle waiting between turns is optional, not required.",
+      "Queueing matches how Nate describes daily use: continuous collaboration.",
+      "Still front-load intent (thinking-before-prompt); parallelism isn’t a substitute for a brief."
+    ],
+    "sourceUrls": [
+      "https://claude.com/blog/how-the-product-designer-who-built-claude-design-uses-it-to-explore-ideas-before-building-them"
+    ],
+    "related": [
+      "point-and-talk",
+      "last-mile-manual",
+      "ten-options-then-remix",
+      "thinking-before-prompt"
+    ],
+    "workedExamples": [
+      {
+        "title": "Queue while it works",
+        "body": "Nate: you don’t have to wait for a finished result—queue multiple messages or keep talking mid-turn. Cite: Anthropic blog."
+      }
+    ],
+    "antiPatterns": [
+      "Blocking on every completion before thinking the next ask.",
+      "Parallelism without a brief (busy, not intentional)."
+    ],
+    "checklist": [
+      "Follow-ups queued when known.",
+      "Brief still front-loaded.",
+      "Flow uninterrupted by optional idle waits."
+    ],
+    "promptWhy": [
+      "Queued variant ask keeps momentum without abandoning the in-flight turn."
+    ],
+    "pairsWellWith": [
+      "thinking-before-prompt",
+      "ten-options-then-remix",
+      "point-and-talk"
+    ]
+  },
+  {
+    "slug": "make-it-alive",
+    "number": 19,
+    "stage": "Define",
+    "title": "Make it alive",
+    "principle": "Inspired by Bret Victor’s talk Stop Drawing Dead Fish—“Everything we draw should be alive by default.” Prefer creations that don’t fit existing boxes: docs with interactive simulations, slide decks that talk to you, diagrams that are also videos, designs that are also their own editors. HTML is a rich interactive medium—treat Claude Design as a way to make visuals alive, not static dead fish.",
+    "procedure": [
+      "Ask if the artifact can be interactive, simulated, animated, or self-editing.",
+      "Prefer HTML’s range: simulations, talking decks, living diagrams, tools-inside-designs.",
+      "When needed, build a bespoke mini-tool in Claude Design (e.g. video editor) then use it to craft the final piece.",
+      "Use aliveness for ideation/buy-in before production engineering in Claude Code."
+    ],
+    "examplePrompts": [
+      "Don’t deliver a static mock. Make this alive: an interactive HTML prototype where the key mechanic is playable, with controls I can tweak live.",
+      "I’m not an animator. First build me a small bespoke video editor in this canvas; I’ll use that editor to craft the intro animation."
+    ],
+    "tips": [
+      "Nate’s favorites: docs with simulations, decks that talk, diagrams that are videos, designs that are their own editors.",
+      "Example from his work: Claude Design intro animation—built a video editor in the tool, then used it to make the animation.",
+      "Other named experiments: subway-times app with adjustable animation physics; Instagram-style color sliders/presets instead of describing colors in words.",
+      "Claude Design is for early ideation, collaboration, and buy-in; Claude Code is for shipping production software—they round-trip.",
+      "Product motion craft (free recipes): https://transitions.dev/ — wire texts-reveal, number-pop-in, tabs-sliding, card-tilt, success-check into real chrome; prefer-reduced-motion off; Pro needs Brandon's yes."
+    ],
+    "sourceUrls": [
+      "https://claude.com/blog/how-the-product-designer-who-built-claude-design-uses-it-to-explore-ideas-before-building-them"
+    ],
+    "related": [
+      "ten-options-then-remix",
+      "give-real-context",
+      "wireframe-first",
+      "video-motion"
+    ],
+    "workedExamples": [
+      {
+        "title": "Intro animation via bespoke editor; subway physics; color sliders",
+        "body": "Nate: Claude Design intro animation—built a video editor in-tool, then used it. Also: subway-times app with adjustable animation physics; Instagram-style color sliders instead of describing colors in words. Cite: Anthropic blog. Bret Victor’s Stop Drawing Dead Fish as the north star."
+      }
+    ],
+    "antiPatterns": [
+      "Static mocks when interaction is the point.",
+      "Forcing Claude Design to do production software work that belongs in Claude Code."
+    ],
+    "checklist": [
+      "Artifact does something live.",
+      "Medium matches the idea (HTML playground).",
+      "Production handoff path is clear when it’s time to build."
+    ],
+    "promptWhy": [
+      "Explicit “don’t deliver a static mock” forces interaction.",
+      "Tool-then-artifact pattern matches Nate’s intro-animation story."
+    ],
+    "pairsWellWith": [
+      "video-motion",
+      "ten-options-then-remix",
+      "wireframe-first"
+    ]
+  },
+  {
+    "slug": "tc-ebc-task",
+    "number": 20,
+    "stage": "Discover",
+    "title": "TC-EBC · Task",
+    "principle": "Task is the one-line what you’re building. Models want clean instructions, not politeness. Buried asks (“Please build… Thanks!”) dilute intent; a crisp Task line collapses ambiguity before Context and Constraints do the rest.",
+    "procedure": [
+      "Write a single Task line: what to build or produce—no pleasantries.",
+      "Put the verb and artifact first (“Build…”, “Write…”, “Generate…”).",
+      "Strip maybe/just/please/thanks—clarity over charm.",
+      "Only then add Context, Elements, Behavior, Constraints."
+    ],
+    "examplePrompts": [
+      "Task: Build an AI-powered meal suggestion app using pantry/fridge photo inputs",
+      "Task: Write a short product feature description."
+    ],
+    "promptWhy": [
+      "Leads with the artifact and input modality—nothing buried in pleasantries.",
+      "Names the deliverable type up front so Elements/Behavior can stay short."
+    ],
+    "tips": [
+      "Greg Huntoon (Figma blog): tools don’t require empathy—they require clarity.",
+      "Vague polite prompts are “throwing ingredients in a pot and hoping for a meal.”",
+      "TC-EBC is Greg’s framework; this catalog entry is partial, no endorsement."
+    ],
+    "sourceUrls": [
+      "https://www.figma.com/blog/designer-framework-for-better-ai-prompts/",
+      "https://github.com/greghuntoon-figma/tc-ebc"
+    ],
+    "related": [
+      "tc-ebc-context",
+      "tc-ebc-elements",
+      "thinking-before-prompt"
+    ],
+    "pairsWellWith": [
+      "thinking-before-prompt",
+      "ambitious-prompts"
+    ],
+    "workedExamples": [
+      {
+        "title": "Pantry app: polite vs Task-led",
+        "before": "Please build a new app that allows home cooks to take a picture of their pantry… Remember allergies… Thanks!",
+        "after": "Task: Build an AI-powered meal suggestion app using pantry/fridge photo inputs (+ rest of TC-EBC).",
+        "body": "Figma blog before/after: unstructured polite prompt → bland near-wireframe; TC-EBC → richer scaffolding. Cite: Figma blog / Greg Huntoon."
+      }
+    ],
+    "antiPatterns": [
+      "Leading with please/thanks and burying the ask.",
+      "Multiple competing tasks in one line."
+    ],
+    "checklist": [
+      "One clear Task line.",
+      "No politeness padding.",
+      "Artifact type is obvious."
+    ]
+  },
+  {
+    "slug": "tc-ebc-context",
+    "number": 21,
+    "stage": "Discover",
+    "title": "TC-EBC · Context",
+    "principle": "Context frames why and for whom. It prevents drift. Ask what context the model needs to succeed—then remove everything else. Elegance is subtraction.",
+    "procedure": [
+      "Add a Context line: audience, setting, and job-to-be-done.",
+      "Include only facts that change the output if omitted.",
+      "Drop narrative fluff that forces the model to decipher meaning.",
+      "For revisions, keep Context stable unless the audience actually changed."
+    ],
+    "examplePrompts": [
+      "Context: Home cooking assistant for households with dietary restrictions",
+      "Context: For a new “One-Click Export” feature in a design tool."
+    ],
+    "promptWhy": [
+      "Audience + dietary restrictions steer filtering behavior without a novel’s worth of backstory.",
+      "Product + feature name anchors tone and domain for copy or UI."
+    ],
+    "tips": [
+      "Context engineering (Anthropic’s term, cited in the Figma piece): curate what the model sees.",
+      "In Figma Make, structured frames beat screenshots when you have them.",
+      "Partial catalog—no endorsement."
+    ],
+    "sourceUrls": [
+      "https://www.figma.com/blog/designer-framework-for-better-ai-prompts/",
+      "https://github.com/greghuntoon-figma/tc-ebc"
+    ],
+    "related": [
+      "tc-ebc-task",
+      "give-real-context",
+      "tc-ebc-constraints"
+    ],
+    "pairsWellWith": [
+      "give-real-context",
+      "thinking-before-prompt"
+    ],
+    "workedExamples": [
+      {
+        "title": "Feature copy with domain context",
+        "before": "Write a description… Keep it simple but also exciting. Maybe like how Apple does it?",
+        "after": "Context: For a new One-Click Export feature in a design tool (+ Elements/Behavior/Constraints).",
+        "body": "Figma blog contrast: vague Apple-ish ask vs TC-EBC. Cite: Figma blog."
+      }
+    ],
+    "antiPatterns": [
+      "Novel-length backstory.",
+      "Omitting who it’s for so the model invents an audience."
+    ],
+    "checklist": [
+      "Why/for whom is one tight line.",
+      "Every clause earns its tokens.",
+      "Stable across revision prompts unless audience changed."
+    ]
+  },
+  {
+    "slug": "tc-ebc-elements",
+    "number": 22,
+    "stage": "Define",
+    "title": "TC-EBC · Elements",
+    "principle": "Elements lists the literal UI pieces (or copy parts) that must exist. Keep it a short inventory—headline, scanner, cards—not a visual essay. The model stops guessing which components to invent.",
+    "procedure": [
+      "List concrete UI or copy elements as a short comma/line inventory.",
+      "Name components the user would recognize (camera input, recipe cards, headline).",
+      "Avoid styling prose here—put look constraints under Constraints.",
+      "For copy tasks, specify parts: headline max words, subhead, body."
+    ],
+    "examplePrompts": [
+      "Elements: Camera input, pantry scanner, dietary settings form, meal suggestions list, recipe cards",
+      "Elements: Headline (max 7 words), subheadline, single-sentence body copy."
+    ],
+    "promptWhy": [
+      "Inventory removes “what screens exist?” ambiguity.",
+      "Part-level copy elements force structure instead of a blob of marketing prose."
+    ],
+    "tips": [
+      "TC-EBC README: each line as short as possible; only what the model must know.",
+      "Pairs with wireframe-first when you’re still exploring structure.",
+      "Partial catalog—no endorsement."
+    ],
+    "sourceUrls": [
+      "https://www.figma.com/blog/designer-framework-for-better-ai-prompts/",
+      "https://github.com/greghuntoon-figma/tc-ebc"
+    ],
+    "related": [
+      "tc-ebc-behavior",
+      "wireframe-first",
+      "tc-ebc-task"
+    ],
+    "pairsWellWith": [
+      "wireframe-first",
+      "design-system-from-assets"
+    ],
+    "workedExamples": [
+      {
+        "title": "Pantry app element inventory",
+        "body": "Camera, scanner, dietary form, suggestions list, recipe cards—enough for Figma Make to scaffold a real information architecture. Cite: Figma blog."
+      }
+    ],
+    "antiPatterns": [
+      "Embedding visual style essays inside Elements.",
+      "Omitting key screens so the model invents a different IA."
+    ],
+    "checklist": [
+      "Elements are countable UI/copy parts.",
+      "List is short.",
+      "Style lives under Constraints, not here."
+    ]
+  },
+  {
+    "slug": "tc-ebc-behavior",
+    "number": 23,
+    "stage": "Define",
+    "title": "TC-EBC · Behavior",
+    "principle": "Behavior states how users interact and how the system responds. Without it, you get static mock chrome. With it, flows and implications (speed, trust, filters) show up in the first build.",
+    "procedure": [
+      "Describe the primary user→system loop in one tight line.",
+      "Name filters, states, or implications the UI must express.",
+      "Keep verbs observable (uploads, scans, filters, suggests).",
+      "For copy, say what the body should imply (speed, trust)—not just “be exciting.”"
+    ],
+    "examplePrompts": [
+      "Behavior: User uploads photos; app scans inventory, filters by diet prefs, suggests recipes",
+      "Behavior: Body should imply speed, simplicity, and trust."
+    ],
+    "promptWhy": [
+      "End-to-end loop makes the prototype interactive instead of a poster.",
+      "Implied qualities guide tone without vague “exciting” adjectives."
+    ],
+    "tips": [
+      "Revision prompts: spell what must not change in Constraints; Behavior can state the new interaction.",
+      "Partial catalog—no endorsement."
+    ],
+    "sourceUrls": [
+      "https://www.figma.com/blog/designer-framework-for-better-ai-prompts/",
+      "https://github.com/greghuntoon-figma/tc-ebc"
+    ],
+    "related": [
+      "tc-ebc-elements",
+      "make-it-alive",
+      "tc-ebc-constraints"
+    ],
+    "pairsWellWith": [
+      "make-it-alive",
+      "point-and-talk"
+    ],
+    "workedExamples": [
+      {
+        "title": "Upload→scan→filter→suggest",
+        "body": "Behavior line in the pantry TC-EBC prompt is what turns a static recipe collage into a usable flow. Cite: Figma blog."
+      }
+    ],
+    "antiPatterns": [
+      "Static element lists with no interaction story.",
+      "Mood adjectives instead of observable behavior."
+    ],
+    "checklist": [
+      "Primary loop is stated.",
+      "Verbs are observable.",
+      "Implications are specific when copy is the artifact."
+    ]
+  },
+  {
+    "slug": "tc-ebc-constraints",
+    "number": 24,
+    "stage": "Deliver",
+    "title": "TC-EBC · Constraints",
+    "principle": "Constraints are guardrails: device, a11y, brand tone, length, what not to change. In revisions, put “do not adjust X” here so the model doesn’t “helpfully” rewrite everything.",
+    "procedure": [
+      "List hard guardrails: platform, accessibility, profiles, tone references, length caps.",
+      "For revisions, add explicit do-not-touch clauses.",
+      "Prefer measurable limits (under 200 characters; max 7 words) over vibes.",
+      "Match brand by naming comparable products when useful (e.g. Duolingo or Notion)—as tone anchors, not clones."
+    ],
+    "examplePrompts": [
+      "Constraints: Mobile-first, iOS/Android, accessible UI, supports multiple household profiles",
+      "Constraints: No jargon. Match the brand tone of Duolingo or Notion. Total length: under 200 characters.",
+      "Full TC-EBC skeleton:\nTask: <what you’re building>\nContext: <why / for whom>\nElements: <UI or copy parts>\nBehavior: <user↔system loop>\nConstraints: <guardrails; for revisions, what not to change>"
+    ],
+    "promptWhy": [
+      "Platform + a11y + multi-profile prevents desktop-only fantasy apps.",
+      "Measurable length + named tone anchors beat “simple but exciting.”",
+      "Skeleton keeps every prompt scannable and complete."
+    ],
+    "tips": [
+      "Huntoon: for revision prompts, always add directions in Constraints about what not to adjust.",
+      "Specificity ≠ rigidity—tight enough to hold shape, flexible enough to evolve.",
+      "Partial catalog—no endorsement."
+    ],
+    "sourceUrls": [
+      "https://www.figma.com/blog/designer-framework-for-better-ai-prompts/",
+      "https://github.com/greghuntoon-figma/tc-ebc"
+    ],
+    "related": [
+      "tc-ebc-task",
+      "tc-ebc-context",
+      "last-mile-manual",
+      "remove-ai-tells"
+    ],
+    "pairsWellWith": [
+      "last-mile-manual",
+      "cut-elements",
+      "hand-rewrite-copy"
+    ],
+    "workedExamples": [
+      {
+        "title": "Revision discipline",
+        "body": "Figma blog pro tip: teach an LLM TC-EBC and use it to refine revision prompts; put do-not-adjust rules in Constraints. Cite: Figma blog."
+      }
+    ],
+    "antiPatterns": [
+      "No length/platform/tone rails.",
+      "Revision prompts that omit what must stay untouched."
+    ],
+    "checklist": [
+      "Guardrails are measurable where possible.",
+      "Revisions name do-not-touch items.",
+      "Tone anchors are explicit if brand matters."
+    ]
+  }
+]

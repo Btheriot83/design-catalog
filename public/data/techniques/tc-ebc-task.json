@@ -1,0 +1,56 @@
+{
+  "slug": "tc-ebc-task",
+  "number": 20,
+  "stage": "Discover",
+  "title": "TC-EBC · Task",
+  "principle": "Task is the one-line what you’re building. Models want clean instructions, not politeness. Buried asks (“Please build… Thanks!”) dilute intent; a crisp Task line collapses ambiguity before Context and Constraints do the rest.",
+  "procedure": [
+    "Write a single Task line: what to build or produce—no pleasantries.",
+    "Put the verb and artifact first (“Build…”, “Write…”, “Generate…”).",
+    "Strip maybe/just/please/thanks—clarity over charm.",
+    "Only then add Context, Elements, Behavior, Constraints."
+  ],
+  "examplePrompts": [
+    "Task: Build an AI-powered meal suggestion app using pantry/fridge photo inputs",
+    "Task: Write a short product feature description."
+  ],
+  "promptWhy": [
+    "Leads with the artifact and input modality—nothing buried in pleasantries.",
+    "Names the deliverable type up front so Elements/Behavior can stay short."
+  ],
+  "tips": [
+    "Greg Huntoon (Figma blog): tools don’t require empathy—they require clarity.",
+    "Vague polite prompts are “throwing ingredients in a pot and hoping for a meal.”",
+    "TC-EBC is Greg’s framework; this catalog entry is partial, no endorsement."
+  ],
+  "sourceUrls": [
+    "https://www.figma.com/blog/designer-framework-for-better-ai-prompts/",
+    "https://github.com/greghuntoon-figma/tc-ebc"
+  ],
+  "related": [
+    "tc-ebc-context",
+    "tc-ebc-elements",
+    "thinking-before-prompt"
+  ],
+  "pairsWellWith": [
+    "thinking-before-prompt",
+    "ambitious-prompts"
+  ],
+  "workedExamples": [
+    {
+      "title": "Pantry app: polite vs Task-led",
+      "before": "Please build a new app that allows home cooks to take a picture of their pantry… Remember allergies… Thanks!",
+      "after": "Task: Build an AI-powered meal suggestion app using pantry/fridge photo inputs (+ rest of TC-EBC).",
+      "body": "Figma blog before/after: unstructured polite prompt → bland near-wireframe; TC-EBC → richer scaffolding. Cite: Figma blog / Greg Huntoon."
+    }
+  ],
+  "antiPatterns": [
+    "Leading with please/thanks and burying the ask.",
+    "Multiple competing tasks in one line."
+  ],
+  "checklist": [
+    "One clear Task line.",
+    "No politeness padding.",
+    "Artifact type is obvious."
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "slug": "tc-ebc-constraints",
+  "number": 24,
+  "stage": "Deliver",
+  "title": "TC-EBC · Constraints",
+  "principle": "Constraints are guardrails: device, a11y, brand tone, length, what not to change. In revisions, put “do not adjust X” here so the model doesn’t “helpfully” rewrite everything.",
+  "procedure": [
+    "List hard guardrails: platform, accessibility, profiles, tone references, length caps.",
+    "For revisions, add explicit do-not-touch clauses.",
+    "Prefer measurable limits (under 200 characters; max 7 words) over vibes.",
+    "Match brand by naming comparable products when useful (e.g. Duolingo or Notion)—as tone anchors, not clones."
+  ],
+  "examplePrompts": [
+    "Constraints: Mobile-first, iOS/Android, accessible UI, supports multiple household profiles",
+    "Constraints: No jargon. Match the brand tone of Duolingo or Notion. Total length: under 200 characters.",
+    "Full TC-EBC skeleton:\nTask: <what you’re building>\nContext: <why / for whom>\nElements: <UI or copy parts>\nBehavior: <user↔system loop>\nConstraints: <guardrails; for revisions, what not to change>"
+  ],
+  "promptWhy": [
+    "Platform + a11y + multi-profile prevents desktop-only fantasy apps.",
+    "Measurable length + named tone anchors beat “simple but exciting.”",
+    "Skeleton keeps every prompt scannable and complete."
+  ],
+  "tips": [
+    "Huntoon: for revision prompts, always add directions in Constraints about what not to adjust.",
+    "Specificity ≠ rigidity—tight enough to hold shape, flexible enough to evolve.",
+    "Partial catalog—no endorsement."
+  ],
+  "sourceUrls": [
+    "https://www.figma.com/blog/designer-framework-for-better-ai-prompts/",
+    "https://github.com/greghuntoon-figma/tc-ebc"
+  ],
+  "related": [
+    "tc-ebc-task",
+    "tc-ebc-context",
+    "last-mile-manual",
+    "remove-ai-tells"
+  ],
+  "pairsWellWith": [
+    "last-mile-manual",
+    "cut-elements",
+    "hand-rewrite-copy"
+  ],
+  "workedExamples": [
+    {
+      "title": "Revision discipline",
+      "body": "Figma blog pro tip: teach an LLM TC-EBC and use it to refine revision prompts; put do-not-adjust rules in Constraints. Cite: Figma blog."
+    }
+  ],
+  "antiPatterns": [
+    "No length/platform/tone rails.",
+    "Revision prompts that omit what must stay untouched."
+  ],
+  "checklist": [
+    "Guardrails are measurable where possible.",
+    "Revisions name do-not-touch items.",
+    "Tone anchors are explicit if brand matters."
+  ]
+}
