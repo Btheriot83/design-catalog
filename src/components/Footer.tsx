@@ -4,7 +4,24 @@ export function Footer() {
   return (
     <footer className="mt-auto border-t border-hairline">
       <div className="mx-auto flex max-w-3xl flex-col gap-3 px-5 py-10 sm:flex-row sm:items-baseline sm:justify-between sm:px-8">
-        <p className="eyebrow">Independent · No endorsement</p>
+        <p className="font-sans text-sm text-studio-ink">
+          Catalogued sources · Built by{" "}
+          <Link
+            href="/designers/brandon-theriot"
+            className="text-ink underline decoration-hairline hover:decoration-ink"
+          >
+            Brandon Theriot
+          </Link>
+          {" · "}
+          <a
+            href="https://github.com/Btheriot83/design-catalog"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline decoration-hairline hover:text-ink hover:decoration-ink"
+          >
+            GitHub
+          </a>
+        </p>
         <p className="font-sans text-sm text-studio-ink">
           <Link href="/sources" className="hover:text-ink">
             Sources

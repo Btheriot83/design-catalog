@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  /* Quiet Folio catalog — view-transition-name used via CSS where supported */
 };
 
 export default nextConfig;

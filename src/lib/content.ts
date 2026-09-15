@@ -12,6 +12,7 @@ const statusRank: Record<Designer["status"], number> = {
   complete: 0,
   partial: 1,
   stub: 2,
+  curator: 3,
 };
 
 export function getAllTechniques(): Technique[] {

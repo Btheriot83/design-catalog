@@ -1,7 +1,9 @@
 "use client";
 
 import Link from "next/link";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
+import { FolioNumber } from "@/components/motion/FolioNumber";
+import { SkeletonReveal } from "@/components/motion/SkeletonReveal";
 import { PromptBlock } from "./PromptBlock";
 
 type Item = {
@@ -26,6 +28,7 @@ export function PromptsLibrary({
   const [q, setQ] = useState("");
   const [stage, setStage] = useState<string>("All");
   const [designer, setDesigner] = useState<string>("All");
+  const [revealKey, setRevealKey] = useState(0);
 
   const filtered = useMemo(() => {
     const needle = q.trim().toLowerCase();
@@ -41,6 +44,10 @@ export function PromptsLibrary({
       );
     });
   }, [prompts, q, stage, designer]);
+
+  useEffect(() => {
+    setRevealKey((k) => k + 1);
+  }, [q, stage, designer]);
 
   return (
     <div>
@@ -91,36 +98,43 @@ export function PromptsLibrary({
         </div>
       </div>
 
-      <div className="space-y-8">
-        {filtered.map((p) => (
-          <section
-            key={`${p.techniqueSlug}-${p.index}`}
-            className="scroll-mt-8"
-          >
-            <div className="mb-3 flex flex-wrap items-baseline gap-x-3 gap-y-1">
-              <span className="folio-num text-4xl text-ink/85 sm:text-5xl">
-                {String(p.techniqueNumber).padStart(2, "0")}
-              </span>
-              <Link
-                href={`/techniques/${p.techniqueSlug}`}
-                className="font-serif text-lg text-ink hover:underline hover:decoration-hairline"
-              >
-                {p.techniqueTitle}
-              </Link>
-              <span className="eyebrow">{p.stage}</span>
-              {p.designerName ? (
-                <span className="font-sans text-sm text-faint">{p.designerName}</span>
-              ) : null}
-            </div>
-            <PromptBlock label={`Example ${p.index}`} why={p.why}>
-              {p.prompt}
-            </PromptBlock>
-          </section>
-        ))}
-        {filtered.length === 0 ? (
-          <p className="font-sans text-sm text-studio-ink">No prompts match.</p>
-        ) : null}
-      </div>
+      <SkeletonReveal key={revealKey} delayMs={160} bars={4}>
+        <div className="space-y-8">
+          {filtered.map((p) => (
+            <section
+              key={`${p.techniqueSlug}-${p.index}`}
+              className="scroll-mt-8"
+            >
+              <div className="mb-3 flex flex-wrap items-baseline gap-x-3 gap-y-1">
+                <span className="folio-num text-4xl text-ink/85 sm:text-5xl">
+                  <FolioNumber
+                    value={String(p.techniqueNumber).padStart(2, "0")}
+                    className="text-4xl sm:text-5xl"
+                  />
+                </span>
+                <Link
+                  href={`/techniques/${p.techniqueSlug}`}
+                  className="font-serif text-lg text-ink hover:underline hover:decoration-hairline"
+                >
+                  {p.techniqueTitle}
+                </Link>
+                <span className="eyebrow">{p.stage}</span>
+                {p.designerName ? (
+                  <span className="font-sans text-sm text-faint">
+                    {p.designerName}
+                  </span>
+                ) : null}
+              </div>
+              <PromptBlock label={`Example ${p.index}`} why={p.why}>
+                {p.prompt}
+              </PromptBlock>
+            </section>
+          ))}
+          {filtered.length === 0 ? (
+            <p className="font-sans text-sm text-studio-ink">No prompts match.</p>
+          ) : null}
+        </div>
+      </SkeletonReveal>
     </div>
   );
 }

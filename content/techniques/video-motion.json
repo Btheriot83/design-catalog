@@ -18,7 +18,8 @@
   "tips": [
     "Matted loops beat CSS animation for caustics, refraction, and physical motion.",
     "Scroll-scrubbed keyframe transitions make users want to keep reading.",
-    "Model quality changes fast—aggregators reduce integration churn."
+    "Model quality changes fast—aggregators reduce integration churn.",
+    "Product motion craft (free recipes): https://transitions.dev/ — wire texts-reveal, number-pop-in, tabs-sliding, card-tilt, success-check into real chrome; prefer-reduced-motion off; Pro needs Brandon's yes."
   ],
   "sourceUrls": [
     "https://www.lennysnewsletter.com/p/how-to-turn-your-ai-into-a-world"

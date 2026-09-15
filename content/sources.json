@@ -4,14 +4,16 @@
     "url": "https://www.lennysnewsletter.com/p/how-to-turn-your-ai-into-a-world",
     "kind": "Primary essay",
     "note": "Anshu Chimala guest post in Lenny’s Newsletter, Sep 2026. Primary source for techniques 1–8.",
-    "coverage": "Free preview covers Discover + Define through technique 6 (cut elements) with worked examples (productivity landings, critic loops, image/video, calorie-tracker cuts). Technique 7 (Remove AI tells) and 8 (hand-rewrite copy) are named at the paywall boundary—deeper verbatim tips are paid. This catalog paraphrases Deliver-stage practice honestly and does not invent paywalled quotes."
+    "coverage": "Free preview covers Discover + Define through technique 6 (cut elements) with worked examples (productivity landings, critic loops, image/video, calorie-tracker cuts). Technique 7 (Remove AI tells) and 8 (hand-rewrite copy) are named at the paywall boundary—deeper verbatim tips are paid. This catalog paraphrases Deliver-stage practice honestly and does not invent paywalled quotes.",
+    "designerSlug": "anshu-chimala"
   },
   {
     "title": "Anshu Chimala on Substack",
     "url": "https://substack.com/@anshuc",
     "kind": "Author presence",
     "note": "Public profile / newsletter home.",
-    "coverage": "Cited for identity only. We do not invent or summarize unpublished Substack posts."
+    "coverage": "Cited for identity only. We do not invent or summarize unpublished Substack posts.",
+    "designerSlug": "anshu-chimala"
   },
   {
     "title": "Sakana AI — String Seed of Thought",
@@ -32,20 +34,30 @@
     "url": "https://claude.com/blog/how-the-product-designer-who-built-claude-design-uses-it-to-explore-ideas-before-building-them",
     "kind": "Primary essay",
     "note": "Nate Parrott (Anthropic). Public source for the eleven partial-catalog techniques.",
-    "coverage": "Full public post: best-practice list (thinking before prompt through keep working alongside) plus Make it alive craft notes and product examples (intro animation editor, subway physics, color sliders). No endorsement."
+    "coverage": "Full public post: best-practice list (thinking before prompt through keep working alongside) plus Make it alive craft notes and product examples (intro animation editor, subway physics, color sliders). No endorsement.",
+    "designerSlug": "nate-parrott"
   },
   {
     "title": "Cooking with constraints: A designer’s framework for better AI prompts",
     "url": "https://www.figma.com/blog/designer-framework-for-better-ai-prompts/",
     "kind": "Primary essay",
     "note": "Greg Huntoon, Figma Blog (Jan 2026). Public source for TC-EBC. Earlier catalog stub mis-attributed this lineage to David Kossnick—corrected.",
-    "coverage": "Full public post: mise en place framing; TC-EBC definitions; pantry-app and feature-copy before/after; revision + model-choice notes. Catalogued as five partial techniques (Task…Constraints). No endorsement."
+    "coverage": "Full public post: mise en place framing; TC-EBC definitions; pantry-app and feature-copy before/after; revision + model-choice notes. Catalogued as five partial techniques (Task…Constraints). No endorsement.",
+    "designerSlug": "greg-huntoon"
   },
   {
     "title": "TC-EBC Prompt Framework (reference repo)",
     "url": "https://github.com/greghuntoon-figma/tc-ebc",
     "kind": "Referenced method",
     "note": "Canonical short-form TC-EBC skeleton by Greg Huntoon.",
-    "coverage": "Format reference for prompt skeletons used in this catalog."
+    "coverage": "Format reference for prompt skeletons used in this catalog.",
+    "designerSlug": "greg-huntoon"
+  },
+  {
+    "title": "Transitions.dev — free UI transitions for agents",
+    "url": "https://transitions.dev/",
+    "kind": "Motion craft",
+    "note": "Jakub Antalik. Free copy-paste transition recipes used for Quiet Folio motion (texts-reveal, number-pop-in, tabs-sliding, restrained card-tilt, success-check, skeleton-reveal). No Pro recipes.",
+    "coverage": "Cited as product motion craft (free recipes) for Quiet Folio chrome. Adapted to ink craft tokens; prefers-reduced-motion honored. No endorsement."
   }
 ]

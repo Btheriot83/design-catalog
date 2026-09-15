@@ -18,7 +18,8 @@
     "Nate’s favorites: docs with simulations, decks that talk, diagrams that are videos, designs that are their own editors.",
     "Example from his work: Claude Design intro animation—built a video editor in the tool, then used it to make the animation.",
     "Other named experiments: subway-times app with adjustable animation physics; Instagram-style color sliders/presets instead of describing colors in words.",
-    "Claude Design is for early ideation, collaboration, and buy-in; Claude Code is for shipping production software—they round-trip."
+    "Claude Design is for early ideation, collaboration, and buy-in; Claude Code is for shipping production software—they round-trip.",
+    "Product motion craft (free recipes): https://transitions.dev/ — wire texts-reveal, number-pop-in, tabs-sliding, card-tilt, success-check into real chrome; prefer-reduced-motion off; Pro needs Brandon's yes."
   ],
   "sourceUrls": [
     "https://claude.com/blog/how-the-product-designer-who-built-claude-design-uses-it-to-explore-ideas-before-building-them"

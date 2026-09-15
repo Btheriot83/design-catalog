@@ -50,6 +50,20 @@ body::before {
   background: color-mix(in srgb, var(--paper) 68%, transparent);
 }
 
+/* Soft monochrome ink diffusion / paper turbulence (~4% opacity) */
+body::after {
+  content: "";
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  opacity: 0.04;
+  mix-blend-mode: multiply;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='280' height='280'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0.13 0 0 0 0 0.11 0 0 0 0 0.14 0 0 0 0.55 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 280px 280px;
+}
+
 body > * {
   position: relative;
   z-index: 1;
@@ -117,4 +131,394 @@ a {
 
 .press-shadow {
   box-shadow: var(--shadow-press);
+}
+
+/* ── transitions.dev free recipes · Quiet Folio retune ── */
+:root {
+  --stagger-dur: 520ms;
+  --stagger-distance: 10px;
+  --stagger-stagger: 45ms;
+  --stagger-blur: 2px;
+  --stagger-ease: cubic-bezier(0.22, 1, 0.36, 1);
+
+  --digit-dur: 480ms;
+  --digit-distance: 6px;
+  --digit-stagger: 55ms;
+  --digit-blur: 1.5px;
+  --digit-ease: cubic-bezier(0.34, 1.35, 0.64, 1);
+  --digit-dir-x: 0;
+  --digit-dir-y: 1;
+
+  --tabs-dur: 240ms;
+  --tabs-ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --tabs-text-muted: var(--studio-ink);
+  --tabs-text-active: var(--ink);
+  --tabs-bar-bg: color-mix(in srgb, var(--ghost) 85%, var(--hairline));
+  --tabs-pill-bg: var(--card);
+
+  --tilt-perspective: 900px;
+  --tilt-return: 700ms;
+  --tilt-return-ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --tilt-follow: 320ms;
+  --tilt-follow-ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --tilt-glare-opacity: 0.10;
+  --tilt-glare-fade: 280ms;
+  --tilt-glare-ease: cubic-bezier(0.22, 1, 0.36, 1);
+
+  --check-opacity-dur: 420ms;
+  --check-rotate-dur: 420ms;
+  --check-rotate-from: 55deg;
+  --check-bob-dur: 420ms;
+  --check-y-amount: 10px;
+  --check-blur-dur: 420ms;
+  --check-blur-from: 4px;
+  --check-path-dur: 420ms;
+  --check-path-delay: 60ms;
+  --check-ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --check-ease-opacity: cubic-bezier(0.22, 1, 0.36, 1);
+  --check-ease-rotate: cubic-bezier(0.22, 1, 0.36, 1);
+  --check-ease-bob: cubic-bezier(0.34, 1.25, 0.64, 1);
+  --check-ease-path: cubic-bezier(0.22, 1, 0.36, 1);
+
+  --pulse-dur: 900ms;
+  --pulse-count: 1;
+  --pulse-min: 0.55;
+  --reveal-dur: 360ms;
+  --reveal-blur: 1.5px;
+  --reveal-ease: ease-in-out;
+}
+
+/* Texts reveal */
+.t-stagger-line {
+  display: block;
+  opacity: 0;
+  transform: translateY(var(--stagger-distance));
+  filter: blur(var(--stagger-blur));
+  transition:
+    opacity var(--stagger-dur) var(--stagger-ease),
+    transform var(--stagger-dur) var(--stagger-ease),
+    filter var(--stagger-dur) var(--stagger-ease);
+  will-change: transform, opacity, filter;
+}
+.t-stagger-line--2 {
+  transition-delay: var(--stagger-stagger);
+}
+.t-stagger-line--3 {
+  transition-delay: calc(var(--stagger-stagger) * 2);
+}
+.t-stagger.is-shown .t-stagger-line {
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0);
+}
+.t-stagger.is-hiding .t-stagger-line {
+  opacity: 0;
+  transform: translateY(0);
+  filter: blur(0);
+  transition: opacity 200ms ease, transform 0s linear, filter 0s linear;
+  transition-delay: 0s;
+}
+
+/* Number pop-in */
+@keyframes t-digit-pop-in {
+  0% {
+    transform: translate(
+      calc(var(--digit-distance) * var(--digit-dir-x)),
+      calc(var(--digit-distance) * var(--digit-dir-y))
+    );
+    opacity: 0;
+    filter: blur(var(--digit-blur));
+  }
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+.t-digit-group {
+  display: inline-flex;
+  align-items: baseline;
+}
+.t-digit {
+  display: inline-block;
+  will-change: transform, opacity, filter;
+}
+.t-digit-group.is-animating .t-digit {
+  animation: t-digit-pop-in var(--digit-dur) var(--digit-ease) both;
+}
+.t-digit-group.is-animating .t-digit[data-stagger="1"] {
+  animation-delay: var(--digit-stagger);
+}
+.t-digit-group.is-animating .t-digit[data-stagger="2"] {
+  animation-delay: calc(var(--digit-stagger) * 2);
+}
+
+/* Tabs sliding */
+.t-tabs {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  padding: 3px;
+  border-radius: 2px;
+  background: var(--tabs-bar-bg);
+  border: 1px solid var(--hairline);
+}
+.t-tab {
+  position: relative;
+  appearance: none;
+  border: 0;
+  background: transparent;
+  height: 30px;
+  padding: 4px 12px;
+  color: var(--tabs-text-muted);
+  cursor: pointer;
+  border-radius: 1px;
+  z-index: 1;
+  font-family: inherit;
+  font-size: 0.875rem;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  transition: color var(--tabs-dur) var(--tabs-ease);
+}
+.t-tab:not([aria-selected="true"]):hover,
+.t-tab[aria-selected="true"] {
+  color: var(--tabs-text-active);
+}
+.t-tabs-pill {
+  position: absolute;
+  top: 3px;
+  left: 0;
+  height: 30px;
+  width: 0;
+  background: var(--tabs-pill-bg);
+  border: 1px solid color-mix(in srgb, var(--ink) 18%, var(--hairline));
+  border-radius: 1px;
+  box-shadow: var(--shadow-press);
+  transform: translateX(0);
+  transition:
+    transform var(--tabs-dur) var(--tabs-ease),
+    width var(--tabs-dur) var(--tabs-ease);
+  will-change: transform, width;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Card tilt · restrained */
+.t-tilt {
+  touch-action: pan-y;
+}
+.t-tilt-card {
+  position: relative;
+  transform:
+    perspective(var(--tilt-perspective))
+    rotateX(var(--tilt-rx, 0deg))
+    rotateY(var(--tilt-ry, 0deg));
+  transform-style: preserve-3d;
+  transition: transform var(--tilt-return) var(--tilt-return-ease);
+  will-change: transform;
+}
+.t-tilt-card.is-tilting {
+  transition: transform var(--tilt-follow) var(--tilt-follow-ease);
+}
+.t-tilt-glare {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0;
+  mix-blend-mode: soft-light;
+  background:
+    radial-gradient(
+      circle 90px at var(--tilt-gx, 50%) var(--tilt-gy, 50%),
+      rgba(250, 249, 247, 0.55),
+      rgba(250, 249, 247, 0.08) 50%,
+      transparent 78%
+    );
+  transition: opacity var(--tilt-glare-fade) var(--tilt-glare-ease);
+}
+.t-tilt.is-hover .t-tilt-glare {
+  opacity: var(--tilt-glare-opacity);
+}
+
+/* Success check */
+.t-success-check {
+  display: inline-block;
+  transform-origin: center;
+  opacity: 0;
+  will-change: transform, opacity, filter;
+  vertical-align: middle;
+}
+.t-success-check svg {
+  display: block;
+  overflow: visible;
+}
+.t-success-check svg path {
+  stroke-dasharray: 24;
+  stroke-dashoffset: 24;
+}
+.t-success-check[data-state="in"] {
+  animation:
+    t-check-fade var(--check-opacity-dur) var(--check-ease-opacity) forwards,
+    t-check-rotate var(--check-rotate-dur) var(--check-ease-rotate) forwards,
+    t-check-blur var(--check-blur-dur) var(--check-ease-out) forwards,
+    t-check-bob var(--check-bob-dur) var(--check-ease-bob) forwards;
+}
+.t-success-check[data-state="in"] svg path {
+  animation: t-check-draw var(--check-path-dur) var(--check-ease-path)
+    var(--check-path-delay, 0ms) forwards;
+}
+@keyframes t-check-fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes t-check-rotate {
+  from {
+    transform: rotate(var(--check-rotate-from));
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+@keyframes t-check-blur {
+  from {
+    filter: blur(var(--check-blur-from));
+  }
+  to {
+    filter: blur(0);
+  }
+}
+@keyframes t-check-bob {
+  from {
+    translate: 0 var(--check-y-amount);
+  }
+  to {
+    translate: 0 0;
+  }
+}
+@keyframes t-check-draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Skeleton reveal */
+.t-skel {
+  position: relative;
+}
+.t-skel-skeleton,
+.t-skel-content {
+  position: absolute;
+  inset: 0;
+}
+.t-skel-skeleton {
+  z-index: 1;
+  opacity: 1;
+  filter: blur(0);
+  transition:
+    opacity var(--reveal-dur) var(--reveal-ease),
+    filter var(--reveal-dur) var(--reveal-ease);
+}
+.t-skel-content {
+  z-index: 2;
+  opacity: 0;
+  filter: blur(var(--reveal-blur));
+  transition:
+    opacity var(--reveal-dur) var(--reveal-ease),
+    filter var(--reveal-dur) var(--reveal-ease);
+}
+.t-skel.is-revealed .t-skel-skeleton {
+  opacity: 0;
+  filter: blur(var(--reveal-blur));
+  pointer-events: none;
+}
+.t-skel.is-revealed .t-skel-content {
+  opacity: 1;
+  filter: blur(0);
+}
+.t-skel.is-resetting .t-skel-skeleton,
+.t-skel.is-resetting .t-skel-content {
+  transition: none !important;
+}
+.t-skel-skeleton.is-pulsing > * {
+  animation: t-skel-pulse var(--pulse-dur) ease-in-out var(--pulse-count);
+}
+@keyframes t-skel-pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: var(--pulse-min);
+  }
+}
+
+/* Ink wash shader · restrained paper craft (not purple shimmer) */
+.ink-wash {
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  opacity: 0.055;
+  mix-blend-mode: multiply;
+}
+.ink-wash svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .ink-wash-drift {
+    animation: ink-drift 48s linear infinite alternate;
+  }
+}
+@keyframes ink-drift {
+  from {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  to {
+    transform: translate3d(-1.5%, 1%, 0) scale(1.04);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .t-stagger-line {
+    transition: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+    filter: none !important;
+  }
+  .t-digit-group .t-digit {
+    animation: none !important;
+  }
+  .t-tabs-pill,
+  .t-tab {
+    transition: none !important;
+  }
+  .t-tilt-card {
+    transform: none !important;
+    transition: none !important;
+  }
+  .t-success-check {
+    animation: none !important;
+    opacity: 1;
+  }
+  .t-success-check svg path {
+    animation: none !important;
+    stroke-dashoffset: 0 !important;
+  }
+  .t-skel-skeleton,
+  .t-skel-content {
+    transition: none !important;
+  }
+  .t-skel-skeleton.is-pulsing > * {
+    animation: none !important;
+  }
+  .ink-wash-drift {
+    animation: none !important;
+  }
 }

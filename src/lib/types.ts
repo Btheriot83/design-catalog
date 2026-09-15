@@ -30,7 +30,7 @@ export interface Technique {
 export interface Designer {
   slug: string;
   name: string;
-  status: "complete" | "partial" | "stub";
+  status: "complete" | "partial" | "stub" | "curator";
   role: string;
   bio: string;
   links: { label: string; url: string }[];
@@ -38,6 +38,8 @@ export interface Designer {
   stages?: { id: Stage; title: string; summary: string }[];
   /** Short highlight bullets for the designer page */
   highlights?: string[];
+  /** Optional personal site; UI skips null/empty */
+  personalSite?: string | null;
 }
 
 export interface Source {
@@ -46,4 +48,6 @@ export interface Source {
   kind: string;
   note?: string;
   coverage?: string;
+  /** Optional person slug for provenance UI */
+  designerSlug?: string;
 }

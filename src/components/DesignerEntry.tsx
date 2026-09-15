@@ -13,33 +13,49 @@ export function DesignerEntry({
   techniques: Technique[];
   stagesTitle: string;
 }) {
+  const isBuilder = designer.status === "curator";
+
   return (
     <div>
       <div className="mb-3 flex flex-wrap items-center gap-3">
         <StatusChip status={designer.status} />
-        <span className="folio-num text-3xl text-ink/40">
-          {String(techniques.length).padStart(2, "0")}
-        </span>
-        <span className="eyebrow">techniques</span>
+        {!isBuilder ? (
+          <>
+            <span className="folio-num text-3xl text-ink/40">
+              {String(techniques.length).padStart(2, "0")}
+            </span>
+            <span className="eyebrow">techniques</span>
+          </>
+        ) : (
+          <span className="eyebrow">Credits · catalog</span>
+        )}
       </div>
       <PageHeader title={designer.name} description={designer.role} />
 
       <div className="mb-12 max-w-xl space-y-4 font-sans text-base leading-relaxed text-studio-ink">
         <p>{designer.bio}</p>
-        <ul className="flex flex-wrap gap-4 text-sm">
-          {designer.links.map((l) => (
-            <li key={l.url}>
-              <a
-                href={l.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline decoration-hairline hover:text-ink hover:decoration-ink"
-              >
-                {l.label}
-              </a>
-            </li>
-          ))}
-        </ul>
+        {designer.links.length > 0 ? (
+          <nav
+            aria-label={`${designer.name} credits`}
+            className="border border-hairline bg-card p-4 press-shadow"
+          >
+            <p className="eyebrow text-ink">Credits · outbound</p>
+            <ul className="mt-3 flex flex-wrap gap-x-5 gap-y-2.5 text-sm">
+              {designer.links.map((l) => (
+                <li key={l.url}>
+                  <a
+                    href={l.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-ink underline decoration-hairline hover:decoration-ink"
+                  >
+                    {l.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </nav>
+        ) : null}
       </div>
 
       {designer.highlights && designer.highlights.length > 0 ? (
@@ -75,25 +91,35 @@ export function DesignerEntry({
         </section>
       ) : null}
 
-      <section>
-        <div className="mb-5 flex items-end justify-between gap-4">
-          <h2 className="font-serif text-2xl text-ink">
-            {techniques.length} techniques
-          </h2>
-          <Link
-            href={`/techniques?designer=${designer.slug}`}
-            className="font-sans text-sm text-faint hover:text-ink"
-          >
-            Filtered index →
-          </Link>
-        </div>
-        <hr className="rule-double mb-4" />
-        <div>
-          {techniques.map((t) => (
-            <TechniqueCard key={t.slug} technique={t} />
-          ))}
-        </div>
-      </section>
+      {techniques.length > 0 ? (
+        <section>
+          <div className="mb-5 flex items-end justify-between gap-4">
+            <h2 className="font-serif text-2xl text-ink">
+              {techniques.length} techniques
+            </h2>
+            <Link
+              href={`/techniques?designer=${designer.slug}`}
+              className="font-sans text-sm text-faint hover:text-ink"
+            >
+              Filtered index →
+            </Link>
+          </div>
+          <hr className="rule-double mb-4" />
+          <div>
+            {techniques.map((t) => (
+              <TechniqueCard key={t.slug} technique={t} />
+            ))}
+          </div>
+        </section>
+      ) : isBuilder ? (
+        <section className="border-t border-hairline pt-8">
+          <p className="font-sans text-sm leading-relaxed text-studio-ink">
+            No techniques authored here—this entry credits the person who
+            assembles the catalog. Source craft lives under Anshu, Nate, and
+            Greg.
+          </p>
+        </section>
+      ) : null}
     </div>
   );
 }

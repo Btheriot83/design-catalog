@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { NumberPopIn } from "@/components/NumberPopIn";
 import { PromptBlock } from "@/components/PromptBlock";
+import { TextsReveal } from "@/components/TextsReveal";
 import { StageBadge } from "@/components/StageBadge";
 import {
   getAllTechniques,
@@ -49,15 +51,19 @@ export default async function TechniquePage({ params }: Props) {
           <StageBadge stage={technique.stage} />
         </div>
         <span className="folio-num text-7xl text-ink/25 sm:text-8xl" aria-hidden>
-          {num}
+          <NumberPopIn value={technique.number} pad={2} />
         </span>
       </div>
 
-      <h1 className="max-w-2xl font-serif text-4xl leading-[1.1] tracking-tight text-ink sm:text-[2.75rem]">
-        {technique.title}
-      </h1>
-
-      <p className="pull-principle">{technique.principle}</p>
+      <TextsReveal>
+        <h1
+          className="t-stagger-line t-stagger-line--1 max-w-2xl font-serif text-4xl leading-[1.1] tracking-tight text-ink sm:text-[2.75rem]"
+          style={{ viewTransitionName: `tech-${technique.slug}` }}
+        >
+          {technique.title}
+        </h1>
+        <p className="pull-principle t-stagger-line t-stagger-line--2">{technique.principle}</p>
+      </TextsReveal>
 
       <section className="mt-14">
         <h2 className="eyebrow mb-5 text-ink">Procedure</h2>

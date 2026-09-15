@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import { SlidingTabs } from "@/components/motion/SlidingTabs";
 import type { Stage } from "@/lib/types";
 
 const stages: Array<"All" | Stage> = ["All", "Discover", "Define", "Deliver"];
@@ -25,23 +25,15 @@ export function StageFilter({
   }
 
   return (
-    <div className="mb-4 flex flex-wrap gap-2 border-b border-hairline pb-4">
-      {stages.map((s) => {
-        const isActive = active === s;
-        return (
-          <Link
-            key={s}
-            href={href(s)}
-            className={
-              isActive
-                ? "border border-ink bg-ink px-3 py-1.5 font-sans text-sm text-paper"
-                : "border border-hairline bg-card px-3 py-1.5 font-sans text-sm text-studio-ink press-shadow hover:border-ink hover:text-ink"
-            }
-          >
-            {s}
-          </Link>
-        );
-      })}
+    <div className="mb-4 border-b border-hairline pb-4">
+      <SlidingTabs
+        activeKey={active}
+        items={stages.map((s) => ({
+          key: s,
+          label: s,
+          href: href(s),
+        }))}
+      />
     </div>
   );
 }

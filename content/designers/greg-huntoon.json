@@ -2,9 +2,13 @@
   "slug": "greg-huntoon",
   "name": "Greg Huntoon",
   "status": "partial",
-  "role": "Manager, Designer Advocates · Figma · TC-EBC prompt framework",
-  "bio": "Partial catalog from Greg Huntoon’s public Figma blog post “Cooking with constraints” and the TC-EBC reference repo. TC-EBC (Task, Context, Elements, Behavior, Constraints) structures prompts so LLM-driven design tools get clear intent instead of polite ambiguity. Earlier stub mistakenly listed David Kossnick here; authorship of TC-EBC is Greg’s. No endorsement.",
+  "role": "Manager, Designer Advocates \u00b7 Figma \u00b7 TC-EBC prompt framework",
+  "bio": "Partial catalog from Greg Huntoon\u2019s public Figma blog post \u201cCooking with constraints\u201d and the TC-EBC reference repo. TC-EBC (Task, Context, Elements, Behavior, Constraints) structures prompts so LLM-driven design tools get clear intent instead of polite ambiguity. Earlier stub mistakenly listed David Kossnick here; authorship of TC-EBC is Greg\u2019s. No endorsement.",
   "links": [
+    {
+      "label": "Figma community",
+      "url": "https://www.figma.com/@greghuntoon"
+    },
     {
       "label": "Figma blog: Cooking with constraints",
       "url": "https://www.figma.com/blog/designer-framework-for-better-ai-prompts/"
@@ -12,6 +16,14 @@
     {
       "label": "TC-EBC reference repo",
       "url": "https://github.com/greghuntoon-figma/tc-ebc"
+    },
+    {
+      "label": "LinkedIn",
+      "url": "https://www.linkedin.com/in/greghuntoon"
+    },
+    {
+      "label": "X",
+      "url": "https://x.com/GregHuntoon"
     }
   ],
   "techniqueSlugs": [
@@ -23,15 +35,15 @@
   ],
   "highlights": [
     "Mise en place for prompts: clarity, context, constraints before heat hits the pan.",
-    "Polite fluff dilutes intention—models need clean instructions.",
+    "Polite fluff dilutes intention\u2014models need clean instructions.",
     "Revision discipline: put do-not-adjust rules in Constraints.",
-    "Five techniques catalogued (partial)—skeletons from the public post only."
+    "Five techniques catalogued (partial)\u2014skeletons from the public post only."
   ],
   "stages": [
     {
       "id": "Discover",
       "title": "Discover",
-      "summary": "Task and Context lock what you’re building and for whom before Elements sprawl."
+      "summary": "Task and Context lock what you\u2019re building and for whom before Elements sprawl."
     },
     {
       "id": "Define",
@@ -41,7 +53,7 @@
     {
       "id": "Deliver",
       "title": "Deliver",
-      "summary": "Constraints hold the rails—especially what not to change on revision passes."
+      "summary": "Constraints hold the rails\u2014especially what not to change on revision passes."
     }
   ]
 }

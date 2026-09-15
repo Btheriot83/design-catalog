@@ -74,8 +74,12 @@ export default async function TechniquesPage({ searchParams }: Props) {
             </div>
             <hr className="rule-double mb-4" />
             <div>
-              {list.map((t) => (
-                <TechniqueCard key={t.slug} technique={t} />
+              {list.map((t, i) => (
+                <TechniqueCard
+                  key={t.slug}
+                  technique={t}
+                  tilt={i % 4 === 0}
+                />
               ))}
             </div>
           </section>

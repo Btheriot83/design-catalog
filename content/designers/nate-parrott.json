@@ -2,12 +2,28 @@
   "slug": "nate-parrott",
   "name": "Nate Parrott",
   "status": "partial",
-  "role": "Product designer at Anthropic · built Claude Design",
-  "bio": "Partial catalog from one public Claude blog post (no endorsement). Nate Parrott, a product designer at Anthropic who built Claude Design, describes using it to explore, iterate, and share visual ideas early—prototypes, decks, animations—before committing to build. This entry catalogs his published best practices and “make it alive” craft notes from that article only; it does not invent unpublished material.",
+  "role": "Product designer at Anthropic \u00b7 built Claude Design",
+  "bio": "Partial catalog from one public Claude blog post (no endorsement). Nate Parrott, a product designer at Anthropic who built Claude Design, describes using it to explore, iterate, and share visual ideas early\u2014prototypes, decks, animations\u2014before committing to build. This entry catalogs his published best practices and \u201cmake it alive\u201d craft notes from that article only; it does not invent unpublished material.",
   "links": [
+    {
+      "label": "Site",
+      "url": "https://nateparrott.com/"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/nate-parrott"
+    },
+    {
+      "label": "X",
+      "url": "https://x.com/nateparrott"
+    },
     {
       "label": "Claude blog: exploring ideas before building",
       "url": "https://claude.com/blog/how-the-product-designer-who-built-claude-design-uses-it-to-explore-ideas-before-building-them"
+    },
+    {
+      "label": "Notable repo \u00b7 Flashlight",
+      "url": "https://github.com/nate-parrott/Flashlight"
     }
   ],
   "techniqueSlugs": [
@@ -44,6 +60,6 @@
     "Eleven practices from one public Claude Design post (partial).",
     "Think before you prompt; specify look; system from assets; ten options then remix.",
     "Sketch, point-and-talk, wireframe-first; last mile manual; real context; work alongside.",
-    "Make it alive — Bret Victor’s dead-fish warning as craft north star."
+    "Make it alive \u2014 Bret Victor\u2019s dead-fish warning as craft north star."
   ]
 }
