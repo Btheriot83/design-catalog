@@ -1,7 +1,7 @@
 {
   "slug": "tobias-van-schneider",
   "name": "Tobias van Schneider",
-  "status": "directory",
+  "status": "partial",
   "role": "Designer & maker · vanschneider.com",
   "bio": "Tobias van Schneider is a designer and maker whose public brand centers on independent product and studio craft. His X bio and site point to personal projects including tools and collections aimed at attention and making. Directory entry credits public presence only; no affiliation claimed.",
   "links": [
@@ -14,10 +14,12 @@
       "url": "https://x.com/vanschneider"
     }
   ],
-  "techniqueSlugs": [],
+  "techniqueSlugs": [
+    "taste-as-filter",
+    "protect-the-feeling"
+  ],
   "highlights": [
-    "Independent designer/maker with long public craft presence.",
-    "Site and X document products and studio work.",
-    "Cited here as a public craft voice—not an endorsement."
+    "Taste is a filter you train—not a mood board you paste.",
+    "Protect the feeling of the work through shipping decisions."
   ]
 }

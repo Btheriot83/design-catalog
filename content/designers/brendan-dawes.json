@@ -1,0 +1,25 @@
+{
+  "slug": "brendan-dawes",
+  "name": "Brendan Dawes",
+  "status": "partial",
+  "role": "Artist-designer · playful data & interaction",
+  "bio": "Brendan Dawes publishes playful, material-driven interaction and data work at brendandawes.com. Catalogued from public projects/writing—no endorsement.",
+  "links": [
+    {
+      "label": "Site",
+      "url": "https://brendandawes.com/"
+    },
+    {
+      "label": "X",
+      "url": "https://x.com/brendandawes"
+    }
+  ],
+  "techniqueSlugs": [
+    "data-as-playful-material",
+    "constraint-bred-play"
+  ],
+  "highlights": [
+    "Treat data as a material you can play with, not only chart.",
+    "Constraints breed inventive interaction."
+  ]
+}

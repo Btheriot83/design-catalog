@@ -1,0 +1,60 @@
+{
+  "slug": "show-the-path",
+  "number": 40,
+  "stage": "Deliver",
+  "title": "Show the path from data to ink",
+  "principle": "Make the transformation from raw data to visual marks legible so readers can trust—and critique—the representation.",
+  "procedure": [
+    "Expose intermediate steps (filter → aggregate → encode) in UI or adjacent annotation.",
+    "Label encodings: what position/color/size mean in plain language.",
+    "Offer a peek at a row of underlying data near the chart.",
+    "Call out what’s hidden by aggregation.",
+    "Invite critique: what would change the conclusion?"
+  ],
+  "examplePrompts": [
+    "Revise this visualization for trust.\n\nShow: encoding legend in plain language; one sample of raw rows; what aggregation hides.\nAdd a one-line ‘what would overturn this’ note.\nDo not rely on chart junk or unexplained color scales."
+  ],
+  "promptWhy": [
+    "Forces transparency of the visual argument."
+  ],
+  "tips": [
+    "Trust fails when viz is a black box.",
+    "Public viz craft from Amelia emphasizes clarity of representation.",
+    "Cite: wattenberger.com"
+  ],
+  "sourceUrls": [
+    "https://wattenberger.com/"
+  ],
+  "related": [
+    "explorable-explanations",
+    "epistemic-disclosure"
+  ],
+  "pairsWellWith": [
+    "explorable-explanations",
+    "epistemic-disclosure"
+  ],
+  "workedExamples": [
+    {
+      "title": "Mystery color scale",
+      "before": "Rainbow scale, no legend semantics.",
+      "after": "Legend states quantity; sample rows visible; aggregation noted.",
+      "body": "Path from data to ink is readable; critique becomes possible."
+    },
+    {
+      "title": "Aggregation hide",
+      "before": "Average line only.",
+      "after": "Average + note that outliers were clipped + link to distribution.",
+      "body": "Disclose what the summary erases."
+    }
+  ],
+  "antiPatterns": [
+    "Unexplained encodings.",
+    "No way to see underlying rows."
+  ],
+  "checklist": [
+    "Encodings are plain-language labeled.",
+    "Sample data is reachable.",
+    "Aggregation limits are stated.",
+    "A critique hook exists."
+  ]
+}

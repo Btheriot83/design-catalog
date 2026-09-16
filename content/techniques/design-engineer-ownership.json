@@ -1,0 +1,59 @@
+{
+  "slug": "design-engineer-ownership",
+  "number": 58,
+  "stage": "Define",
+  "title": "Own the problem as a design engineer",
+  "principle": "When quality matters, one person (or a tight pair) owns design and implementation of a surface—so details don’t die in handoff gaps.",
+  "procedure": [
+    "Assign a single owner for the risky surface.",
+    "Owner can change design in code without a ticket ping-pong.",
+    "Budget time for polish that only appears in the medium.",
+    "Review together on the deployed URL, not only in comps.",
+    "Write down decisions that comps would have missed."
+  ],
+  "examplePrompts": [
+    "Staff this surface with design-engineer ownership.\n\nOwner:\nDecisions they can make without handoff:\nReview happens on: deployed URL\nList details that comps would miss:\nNo pure throw-over-the-wall plan."
+  ],
+  "promptWhy": [
+    "Institutionalizes design-engineer ownership."
+  ],
+  "tips": [
+    "Jim writes about design engineers solving problems comps alone can’t.",
+    "Cite: blog.jim-nielsen.com"
+  ],
+  "sourceUrls": [
+    "https://blog.jim-nielsen.com/"
+  ],
+  "related": [
+    "browser-native-first",
+    "design-with-code-loop"
+  ],
+  "pairsWellWith": [
+    "browser-native-first",
+    "design-with-code-loop"
+  ],
+  "workedExamples": [
+    {
+      "title": "Handoff ping-pong",
+      "before": "Designer tickets every 2px change.",
+      "after": "Owner adjusts in code; review on URL.",
+      "body": "Ownership closes the gap."
+    },
+    {
+      "title": "Comp-perfect, web-wrong",
+      "before": "Signed-off images ignore focus/scroll.",
+      "after": "Owner responsible for real states.",
+      "body": "Medium-owned quality."
+    }
+  ],
+  "antiPatterns": [
+    "Throw-over-the-wall for detail-rich UI.",
+    "Review only in Figma."
+  ],
+  "checklist": [
+    "Owner named.",
+    "Authority clear.",
+    "URL review.",
+    "Missed-by-comps list exists."
+  ]
+}

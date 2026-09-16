@@ -1,0 +1,61 @@
+{
+  "slug": "invent-software-materials",
+  "number": 38,
+  "stage": "Discover",
+  "title": "Invent new software materials",
+  "principle": "Powerful interface innovation comes from discovering new metaphors and reifying them as materials—especially when text and files are too low-level for the job.",
+  "procedure": [
+    "State the job that current materials (text spans, files) cannot express cleanly.",
+    "Ask: discrete or continuous? hierarchical? what weight/salience does each unit carry?",
+    "Borrow a proven metaphor from another medium (timeline clips, spatial boards) only if its physics transfer.",
+    "Prototype the material’s affordances before chrome or marketing.",
+    "Reject materials that are only labels on the same old feature bag."
+  ],
+  "examplePrompts": [
+    "Invent a software material for <domain>.\n\nCurrent weak abstraction: <e.g. flat URL history list>\nQuestions to answer: discrete vs continuous; hierarchy; weight; salience.\nPropose: name, laws of physics, 3 operations, 1 metaphor borrow (or none).\nDo not ship a feature list."
+  ],
+  "promptWhy": [
+    "Blocks feature-list answers; demands a reified material."
+  ],
+  "tips": [
+    "Linus sketches browsing history as a clips-and-timeline reel instead of a URL list.",
+    "Tools for thought may need materials above text but below files.",
+    "Cite: thesephist.com/posts/materials/ and latent essay for LM interfaces."
+  ],
+  "sourceUrls": [
+    "https://thesephist.com/posts/materials/",
+    "https://thesephist.com/posts/latent/"
+  ],
+  "related": [
+    "materials-not-features",
+    "ambitious-prompts"
+  ],
+  "pairsWellWith": [
+    "materials-not-features",
+    "thinking-before-prompt"
+  ],
+  "workedExamples": [
+    {
+      "title": "Browsing history as reel",
+      "before": "History = flat URL list; reopen closed tab is a special feature.",
+      "after": "History = timeline of page clips; reopen = select a span and restore.",
+      "body": "Linus’s sketch: visiting pages records clips; Enter starts a new track; edit/share sessions like video. Cite materials essay."
+    },
+    {
+      "title": "Latent handles for language",
+      "before": "Prompt → wait → retry chat loop.",
+      "after": "Direct manipulation of meaning (drag ‘less formal’, interpolate ideas) as a material interface to LMs.",
+      "body": "From the latent essay: tighter feedback than chat alone. Catalog paraphrases publicly; no endorsement."
+    }
+  ],
+  "antiPatterns": [
+    "Renaming screens without changing the underlying material.",
+    "Copying a metaphor’s chrome without its physics."
+  ],
+  "checklist": [
+    "Job that old materials fail is explicit.",
+    "New material has named operations and constraints.",
+    "At least one borrowed metaphor’s physics are checked for fit.",
+    "Prototype exercises the material, not the marketing page."
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "slug": "browser-native-first",
+  "number": 59,
+  "stage": "Deliver",
+  "title": "Prefer browser-native first",
+  "principle": "Reach for native platform capabilities (HTML, CSS, built-in APIs) before heavy custom libraries—less weight, more resilience.",
+  "procedure": [
+    "List features that HTML/CSS/ARIA already provide.",
+    "Use native controls where accessible defaults are good enough.",
+    "Add libraries only when native can’t meet a measured need.",
+    "Document why each dependency earned its weight.",
+    "Revisit dependencies when browsers catch up."
+  ],
+  "examplePrompts": [
+    "Audit this UI for browser-native opportunities.\n\nReplace custom with native where possible.\nFor each remaining library: measured need + weight.\nPrefer progressive enhancement.\nCut vanity dependencies."
+  ],
+  "promptWhy": [
+    "Forces platform-first thinking."
+  ],
+  "tips": [
+    "Jim’s writing often champions working with the web platform.",
+    "Cite: blog.jim-nielsen.com"
+  ],
+  "sourceUrls": [
+    "https://blog.jim-nielsen.com/"
+  ],
+  "related": [
+    "design-engineer-ownership",
+    "weight-of-implementation"
+  ],
+  "pairsWellWith": [
+    "design-engineer-ownership",
+    "weight-of-implementation"
+  ],
+  "workedExamples": [
+    {
+      "title": "Custom date picker sprawl",
+      "before": "Heavy picker for no special need.",
+      "after": "input type=date + progressive enhancement.",
+      "body": "Native first."
+    },
+    {
+      "title": "Unearned dependency",
+      "before": "Animation library for one fade.",
+      "after": "CSS transition; library removed.",
+      "body": "Weight must earn its keep."
+    }
+  ],
+  "antiPatterns": [
+    "Libraries by habit.",
+    "Ignoring accessible native defaults."
+  ],
+  "checklist": [
+    "Native options considered.",
+    "Dependencies justified.",
+    "Progressive enhancement noted.",
+    "Vanity deps cut."
+  ]
+}

@@ -140,5 +140,54 @@
     "note": "Companion to What Screens Want; web-native humility. Cited on screens-want-honesty. No endorsement.",
     "coverage": "Public essay.",
     "designerSlug": "frank-chimero"
+  },
+  {
+    "title": "Design with materials, not features",
+    "url": "https://thesephist.com/posts/materials/",
+    "kind": "Essay",
+    "note": "Linus Lee",
+    "designerSlug": "linus-lee"
+  },
+  {
+    "title": "Invisible Details of Interaction Design",
+    "url": "https://rauno.me/craft/interaction-design",
+    "kind": "Essay",
+    "note": "Rauno Freiberg",
+    "designerSlug": "rauno-freiberg"
+  },
+  {
+    "title": "Novelty",
+    "url": "https://rauno.me/craft/novelty",
+    "kind": "Essay",
+    "note": "Rauno Freiberg",
+    "designerSlug": "rauno-freiberg"
+  },
+  {
+    "title": "Andy Matuschak notes",
+    "url": "https://notes.andymatuschak.org/",
+    "kind": "Notes",
+    "note": "Evergreen notes",
+    "designerSlug": "andy-matuschak"
+  },
+  {
+    "title": "Brendan Dawes",
+    "url": "https://brendandawes.com/",
+    "kind": "Site",
+    "note": "Playful data & interaction",
+    "designerSlug": "brendan-dawes"
+  },
+  {
+    "title": "Jim Nielsen blog",
+    "url": "https://blog.jim-nielsen.com/",
+    "kind": "Blog",
+    "note": "Design engineering",
+    "designerSlug": "jim-nielsen"
+  },
+  {
+    "title": "Weight of Code",
+    "url": "https://weightofcode.com/",
+    "kind": "Site",
+    "note": "Naz Hamid",
+    "designerSlug": "naz-hamid"
   }
 ]

@@ -1,7 +1,7 @@
 {
   "slug": "amelia-wattenberger",
   "name": "Amelia Wattenberger",
-  "status": "directory",
+  "status": "partial",
   "role": "Principal research engineer · GitHub · novel UIs",
   "bio": "Amelia Wattenberger creates things on the web spanning data visualization, novel interfaces, and AI tooling. Public site wattenberger.com lists Principal Research Engineer work on a small R&D team within GitHub exploring novel UIs and ML. Earlier writing includes interactive D3 and React teaching materials.",
   "links": [
@@ -12,12 +12,18 @@
     {
       "label": "X",
       "url": "https://x.com/Wattenberger"
+    },
+    {
+      "label": "GitHub · Fullstack D3",
+      "url": "https://github.com/Wattenberger/Fullstack-D3-and-Data-Visualization"
     }
   ],
-  "techniqueSlugs": [],
+  "techniqueSlugs": [
+    "explorable-explanations",
+    "show-the-path"
+  ],
   "highlights": [
-    "GitHub R&D: novel UIs + ML; public research writing.",
-    "Known for interactive D3/React education essays.",
-    "Explores alternatives to chatbot-only AI interfaces."
+    "Prefer explorables over static charts when understanding is the goal.",
+    "Show the path from data to visual so trust isn’t a black box."
   ]
 }

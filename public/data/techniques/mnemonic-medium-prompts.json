@@ -1,0 +1,60 @@
+{
+  "slug": "mnemonic-medium-prompts",
+  "number": 52,
+  "stage": "Deliver",
+  "title": "Embed mnemonic prompts in reading",
+  "principle": "If lasting understanding matters, put retrieval prompts in the medium itself—so memory practice is part of reading, not a separate chore.",
+  "procedure": [
+    "Identify the few ideas that must stick.",
+    "Write retrieval prompts (not recognition quizzes) near those ideas.",
+    "Schedule lightweight revisit affordances in the UI if possible.",
+    "Avoid prompt spam—only where forgetting is costly.",
+    "Measure whether people remember, not whether they scrolled."
+  ],
+  "examplePrompts": [
+    "Add mnemonic prompts to this explainer.\n\nIdeas that must stick (≤5):\nRetrieval prompts (question form, not multiple choice fluff):\nPlacement next to the idea:\nDo not quiz trivial facts."
+  ],
+  "promptWhy": [
+    "Makes memory a product requirement."
+  ],
+  "tips": [
+    "Andy’s mnemonic medium work (e.g. with Quantum Country collaborators) is public.",
+    "Cite: andymatuschak.org / notes"
+  ],
+  "sourceUrls": [
+    "https://andymatuschak.org/",
+    "https://notes.andymatuschak.org/"
+  ],
+  "related": [
+    "evergreen-notes",
+    "teach-with-interactive-widgets"
+  ],
+  "pairsWellWith": [
+    "evergreen-notes",
+    "teach-with-interactive-widgets"
+  ],
+  "workedExamples": [
+    {
+      "title": "Scroll amnesia",
+      "before": "Beautiful essay, nothing retained.",
+      "after": "Three retrieval prompts at key claims.",
+      "body": "Memory in the medium."
+    },
+    {
+      "title": "Trivia spam",
+      "before": "Quiz every paragraph.",
+      "after": "Only costly-to-forget ideas get prompts.",
+      "body": "Restraint keeps prompts meaningful."
+    }
+  ],
+  "antiPatterns": [
+    "No memory design when learning is the goal.",
+    "Recognition-only quizzes."
+  ],
+  "checklist": [
+    "≤5 sticky ideas.",
+    "Retrieval prompts written.",
+    "Placement intentional.",
+    "No trivia spam."
+  ]
+}

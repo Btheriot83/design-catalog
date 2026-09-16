@@ -1,0 +1,61 @@
+{
+  "slug": "evergreen-notes",
+  "number": 51,
+  "stage": "Define",
+  "title": "Write evergreen notes",
+  "principle": "Prefer concept-oriented notes that are atomically clear, densely linked, and refined over time—not dated daily dump files.",
+  "procedure": [
+    "Title notes as concepts (not ‘Tuesday meeting’).",
+    "One idea per note; split when a note smuggles two.",
+    "Link aggressively to related concepts; write the link context.",
+    "Revise notes when understanding improves; don’t freeze first drafts.",
+    "Prefer associational navigation over chronological logs for ideas."
+  ],
+  "examplePrompts": [
+    "Convert these raw notes into evergreen notes.\n\nRules: concept titles; atomic; contextual links; revise language for clarity.\nReject date-titled dumps.\nOutput 5 evergreen note outlines with links between them."
+  ],
+  "promptWhy": [
+    "Operationalizes evergreen rules."
+  ],
+  "tips": [
+    "Andy’s public notes define evergreen note practice.",
+    "Pairs with Maggie’s garden ethos.",
+    "Cite: notes.andymatuschak.org"
+  ],
+  "sourceUrls": [
+    "https://notes.andymatuschak.org/",
+    "https://andymatuschak.org/"
+  ],
+  "related": [
+    "mnemonic-medium-prompts",
+    "topography-over-timelines"
+  ],
+  "pairsWellWith": [
+    "mnemonic-medium-prompts",
+    "topography-over-timelines"
+  ],
+  "workedExamples": [
+    {
+      "title": "Daily dump",
+      "before": "2026-09-16.md wall of bullets.",
+      "after": "Concept notes linked; daily file only as inbox.",
+      "body": "Evergreen practice."
+    },
+    {
+      "title": "Essay monolith",
+      "before": "One 3k-word file mixing five ideas.",
+      "after": "Five atomic notes + links.",
+      "body": "Atomicity enables reuse."
+    }
+  ],
+  "antiPatterns": [
+    "Date-only knowledge base.",
+    "Never revising notes."
+  ],
+  "checklist": [
+    "Concept titles.",
+    "Atomic notes.",
+    "Contextual links.",
+    "Revision habit."
+  ]
+}

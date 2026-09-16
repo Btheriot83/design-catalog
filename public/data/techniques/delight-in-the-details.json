@@ -1,0 +1,61 @@
+{
+  "slug": "delight-in-the-details",
+  "number": 42,
+  "stage": "Deliver",
+  "title": "Delight in the details",
+  "principle": "Spend care on micro-interactions, focus states, and edge copy that most users only notice when missing—polish is a signal of respect.",
+  "procedure": [
+    "List five moments a careful user will touch (focus, empty, error, success, hover).",
+    "Design each moment intentionally; ban default browser leftovers where brand matters.",
+    "Add one surprise of restraint (not fireworks)—timing, easing, or copy.",
+    "Verify keyboard and reduced-motion paths feel equally considered.",
+    "Cut any delight that slows a frequent action (novelty vs frequency)."
+  ],
+  "examplePrompts": [
+    "Polish the five touch moments on this UI: focus, empty, error, success, hover.\n\nFor each: intended feel in 5 words; motion ≤200ms or none; copy rewrite.\nRespect prefers-reduced-motion.\nDo not add confetti to primary flows."
+  ],
+  "promptWhy": [
+    "Turns vague ‘make it nice’ into a checklist of moments."
+  ],
+  "tips": [
+    "Comeau’s public writing obsesses over CSS details that feel good in the hand.",
+    "Pair with Rauno’s novelty restraint for high-frequency actions.",
+    "Cite: joshwcomeau.com"
+  ],
+  "sourceUrls": [
+    "https://www.joshwcomeau.com/animation/css-transitions/",
+    "https://www.joshwcomeau.com/"
+  ],
+  "related": [
+    "novelty-restraint",
+    "hand-rewrite-copy"
+  ],
+  "pairsWellWith": [
+    "novelty-restraint",
+    "remove-ai-tells"
+  ],
+  "workedExamples": [
+    {
+      "title": "Default focus ring shame",
+      "before": "outline:none with no replacement.",
+      "after": "Visible, on-brand focus that still passes contrast.",
+      "body": "Detail users feel via keyboard."
+    },
+    {
+      "title": "Empty state shrug",
+      "before": "No items.",
+      "after": "One human sentence + one clear next action.",
+      "body": "Empty states are product moments, not absences."
+    }
+  ],
+  "antiPatterns": [
+    "outline:none without a replacement.",
+    "Delight on the most frequent action that needs speed."
+  ],
+  "checklist": [
+    "Five touch moments designed.",
+    "Focus visible.",
+    "Reduced motion honored.",
+    "No noisy delight on high-frequency actions."
+  ]
+}

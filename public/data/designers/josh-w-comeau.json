@@ -1,7 +1,7 @@
 {
   "slug": "josh-w-comeau",
   "name": "Josh W. Comeau",
-  "status": "directory",
+  "status": "partial",
   "role": "Educator · CSS & animation craft",
   "bio": "Josh W. Comeau runs joshwcomeau.com, an interactive teaching site for CSS, animation, SVG, and layout. He previously held senior engineering roles at Gatsby, DigitalOcean, and Khan Academy and now focuses on indie developer education. Public tutorials emphasize feel, performance nuance, and principles like squash-and-stretch applied to UI.",
   "links": [
@@ -12,12 +12,18 @@
     {
       "label": "X",
       "url": "https://x.com/JoshWComeau"
+    },
+    {
+      "label": "Essay · Animating with CSS",
+      "url": "https://www.joshwcomeau.com/animation/css-transitions/"
     }
   ],
-  "techniqueSlugs": [],
+  "techniqueSlugs": [
+    "teach-with-interactive-widgets",
+    "delight-in-the-details"
+  ],
   "highlights": [
-    "Interactive CSS/animation education without slop demos.",
-    "Prior Gatsby, DigitalOcean, Khan Academy engineering.",
-    "Open-source: use-sound, react-flip-move."
+    "Interactive widgets inside essays so readers feel the CSS.",
+    "Polish micro-details that make interfaces feel cared for."
   ]
 }

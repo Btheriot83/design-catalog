@@ -1,0 +1,59 @@
+{
+  "slug": "systemize-repeating-ui",
+  "number": 50,
+  "stage": "Define",
+  "title": "Systemize what repeats",
+  "principle": "When the same card/button/spacing appears thrice, extract tokens and components. Systems free attention for the non-repeating moments.",
+  "procedure": [
+    "Inventory repeated UI (3+ occurrences).",
+    "Extract tokens: space, type, color, radius.",
+    "Build components with clear variants—not one mega-prop soup.",
+    "Document do/don’t with screenshots.",
+    "Leave intentional one-offs outside the system with a note."
+  ],
+  "examplePrompts": [
+    "Build a mini system from this UI.\n\nRepeated elements (≥3):\nTokens to extract:\nComponents + variants:\nOne intentional one-off with justification:\nDo not systematize unique moments."
+  ],
+  "promptWhy": [
+    "Turns repetition into a system responsibly."
+  ],
+  "tips": [
+    "Design+Code teaching emphasizes reusable UI systems paired with code.",
+    "Cite: designcode.io"
+  ],
+  "sourceUrls": [
+    "https://designcode.io/"
+  ],
+  "related": [
+    "learn-by-building-ui",
+    "design-system-from-assets"
+  ],
+  "pairsWellWith": [
+    "learn-by-building-ui",
+    "design-system-from-assets"
+  ],
+  "workedExamples": [
+    {
+      "title": "Copy-paste cards",
+      "before": "Slightly different padding each time.",
+      "after": "Card component + space tokens.",
+      "body": "Repetition → system."
+    },
+    {
+      "title": "Mega-component",
+      "before": "One Button with 40 boolean props.",
+      "after": "Small variant set; compose.",
+      "body": "Systems stay usable."
+    }
+  ],
+  "antiPatterns": [
+    "Systematizing one-offs.",
+    "No documentation of variants."
+  ],
+  "checklist": [
+    "Inventory done.",
+    "Tokens exist.",
+    "Variants clear.",
+    "One-offs labeled."
+  ]
+}

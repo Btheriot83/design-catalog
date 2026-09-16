@@ -1,7 +1,7 @@
 {
   "slug": "jessica-hische",
   "name": "Jessica Hische",
-  "status": "directory",
+  "status": "partial",
   "role": "Lettering artist · author · procrastiworker",
   "bio": "Jessica Hische is a lettering artist and New York Times best-selling author based in Oakland. Public site jessicahische.is documents client lettering, books, and the well-known Should I Work for Free flowchart. Practice centers on typographic craft and thoughtful freelance boundaries.",
   "links": [
@@ -14,10 +14,12 @@
       "url": "https://x.com/jessicahische"
     }
   ],
-  "techniqueSlugs": [],
+  "techniqueSlugs": [
+    "lettering-process-passes",
+    "shoulders-of-type"
+  ],
   "highlights": [
-    "Lettering artist with widely taught freelance craft resources.",
-    "NYT best-selling author; Oakland-based practice.",
-    "Public teaching of typographic taste and client craft."
+    "Lettering improves through deliberate passes, not one magic flourish.",
+    "Study type anatomy before decorative execution."
   ]
 }

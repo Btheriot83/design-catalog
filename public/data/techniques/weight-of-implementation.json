@@ -1,0 +1,60 @@
+{
+  "slug": "weight-of-implementation",
+  "number": 47,
+  "stage": "Define",
+  "title": "Account for implementation weight",
+  "principle": "Every visual choice has a cost in code, maintenance, and performance. Weigh delight against weight before committing.",
+  "procedure": [
+    "For each fancy idea, estimate implementation weight (S/M/L) and maintenance.",
+    "Ask what lighter alternative preserves 80% of the feeling.",
+    "Prefer system primitives over one-off snowflakes when weight is high.",
+    "Document accepted weight so future you doesn’t ‘simplify’ blindly.",
+    "Cut ideas whose weight exceeds their contribution to the thesis."
+  ],
+  "examplePrompts": [
+    "Score each proposed detail S/M/L for implementation weight.\n\nFeeling contribution (1–5):\nLighter alternative:\nKeep only if contribution ≥ weight class.\nPrefer system primitives over snowflakes."
+  ],
+  "promptWhy": [
+    "Makes cost of craft explicit."
+  ],
+  "tips": [
+    "Naz’s Weight of Code frames making with cost awareness.",
+    "Cite: weightofcode.com / nazhamid.com"
+  ],
+  "sourceUrls": [
+    "https://weightofcode.com/",
+    "https://nazhamid.com/"
+  ],
+  "related": [
+    "design-with-code-loop",
+    "novelty-restraint"
+  ],
+  "pairsWellWith": [
+    "design-with-code-loop",
+    "cut-elements"
+  ],
+  "workedExamples": [
+    {
+      "title": "Snowflake hero",
+      "before": "Custom WebGL for a minor flourish.",
+      "after": "CSS/system motion that keeps the feeling.",
+      "body": "Weight vs contribution."
+    },
+    {
+      "title": "Uncosted polish list",
+      "before": "20 polish tickets, no weights.",
+      "after": "Scored list; ship high contribution/low weight first.",
+      "body": "Operationalizes weight."
+    }
+  ],
+  "antiPatterns": [
+    "Ignoring maintenance cost.",
+    "Snowflakes by default."
+  ],
+  "checklist": [
+    "Weights estimated.",
+    "Alternatives considered.",
+    "Snowflakes justified.",
+    "Accepted weight documented."
+  ]
+}

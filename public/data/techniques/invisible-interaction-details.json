@@ -1,0 +1,59 @@
+{
+  "slug": "invisible-interaction-details",
+  "number": 43,
+  "stage": "Define",
+  "title": "Hunt invisible interaction details",
+  "principle": "Great interaction design hides in thresholds, momentum, and metaphors. Slow-motion the everyday gestures and write down why they feel inevitable.",
+  "procedure": [
+    "Pick a common gesture (swipe dismiss, rubber-band, scrub).",
+    "Record or step through it slowly; note thresholds, easing, failure cases.",
+    "Name the metaphor (physical inertia, camera depth of field, etc.).",
+    "Replicate the why in your product—not a cargo-cult animation.",
+    "Document the rule so future features stay consistent."
+  ],
+  "examplePrompts": [
+    "Analyze this interaction like Rauno’s invisible-details practice.\n\nGesture: <…>\nThresholds / momentum / finger-up behavior:\nMetaphor:\nFailure cases:\nImplementation rule for our UI:\nDo not copy aesthetics without the underlying rule."
+  ],
+  "promptWhy": [
+    "Forces analysis before decoration."
+  ],
+  "tips": [
+    "Rauno: study obscure papers and slow-mo recordings; articulate why it feels right.",
+    "Cite: rauno.me/craft/interaction-design"
+  ],
+  "sourceUrls": [
+    "https://rauno.me/craft/interaction-design"
+  ],
+  "related": [
+    "novelty-restraint",
+    "designing-depth"
+  ],
+  "pairsWellWith": [
+    "novelty-restraint",
+    "make-it-alive"
+  ],
+  "workedExamples": [
+    {
+      "title": "Cargo-cult spring",
+      "before": "Random bounce on every tap.",
+      "after": "Spring only where momentum metaphor applies; documented threshold.",
+      "body": "Invisible details essay: articulate the why, don’t sprinkle motion."
+    },
+    {
+      "title": "Swipe without physics",
+      "before": "Binary dismiss at any drag.",
+      "after": "Distance + velocity thresholds; cancel restores with easing.",
+      "body": "Everyday iOS-like gestures teach threshold craft."
+    }
+  ],
+  "antiPatterns": [
+    "Animating without naming the metaphor.",
+    "Ignoring finger-up / cancel paths."
+  ],
+  "checklist": [
+    "Gesture dissected.",
+    "Metaphor named.",
+    "Rule documented.",
+    "Cancel path designed."
+  ]
+}

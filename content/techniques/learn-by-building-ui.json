@@ -1,0 +1,59 @@
+{
+  "slug": "learn-by-building-ui",
+  "number": 49,
+  "stage": "Discover",
+  "title": "Learn UI by building end-to-end",
+  "principle": "Skill compounds when you ship small complete interfaces—layout, type, color, motion, code—rather than consuming tutorials without an artifact.",
+  "procedure": [
+    "Pick a tiny product surface you can finish in days, not months.",
+    "Implement layout → type → color → interaction in that order.",
+    "Publish or deploy something clickable; screenshots alone don’t count.",
+    "Write three lessons learned while the pain is fresh.",
+    "Repeat with a slightly harder surface; recycle the system."
+  ],
+  "examplePrompts": [
+    "Propose a 3–5 day learn-by-building project.\n\nScope that can ship:\nOrder: layout → type → color → interaction.\nDefinition of done: deployed URL.\nThree reflection prompts after ship.\nNo tutorial-only plan."
+  ],
+  "promptWhy": [
+    "Forces an artifact-based learning plan."
+  ],
+  "tips": [
+    "Meng’s Design+Code ethos: design and code learned together by making.",
+    "Cite: designcode.io"
+  ],
+  "sourceUrls": [
+    "https://designcode.io/"
+  ],
+  "related": [
+    "systemize-repeating-ui",
+    "design-with-code-loop"
+  ],
+  "pairsWellWith": [
+    "systemize-repeating-ui",
+    "design-with-code-loop"
+  ],
+  "workedExamples": [
+    {
+      "title": "Tutorial hoarding",
+      "before": "20 courses, 0 shipped UI.",
+      "after": "One tiny deployed surface + reflection.",
+      "body": "Building closes the loop."
+    },
+    {
+      "title": "Mock-only practice",
+      "before": "Pretty Figma, never in code.",
+      "after": "Same UI in production constraints.",
+      "body": "Medium teaches what boards hide."
+    }
+  ],
+  "antiPatterns": [
+    "Consuming without shipping.",
+    "Scope so large nothing ships."
+  ],
+  "checklist": [
+    "Scope finishable.",
+    "Deployed artifact.",
+    "Reflection written.",
+    "Next surface planned."
+  ]
+}

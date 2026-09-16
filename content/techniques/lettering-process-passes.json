@@ -1,0 +1,59 @@
+{
+  "slug": "lettering-process-passes",
+  "number": 45,
+  "stage": "Define",
+  "title": "Work lettering in deliberate passes",
+  "principle": "Custom lettering quality comes from staged passes—skeleton, weight, contrast, then flourish—not from polishing a weak skeleton.",
+  "procedure": [
+    "Pass 1: skeleton / structure only (no decoration).",
+    "Pass 2: weight and contrast consistency across letters.",
+    "Pass 3: optical corrections (overshoots, spacing).",
+    "Pass 4: flourishes only where structure already sings.",
+    "Stop when decoration starts hiding structure problems."
+  ],
+  "examplePrompts": [
+    "Critique this lettering in passes.\n\n1) Skeleton issues\n2) Weight/contrast issues\n3) Optical spacing\n4) Flourish keep/kill\nDo not add ornament until structure passes."
+  ],
+  "promptWhy": [
+    "Enforces staged craft."
+  ],
+  "tips": [
+    "Hische’s public teaching emphasizes process and craft of letterforms.",
+    "Cite: jessicahische.is"
+  ],
+  "sourceUrls": [
+    "https://jessicahische.is/"
+  ],
+  "related": [
+    "shoulders-of-type",
+    "hierarchy-before-decoration"
+  ],
+  "pairsWellWith": [
+    "shoulders-of-type",
+    "hierarchy-before-decoration"
+  ],
+  "workedExamples": [
+    {
+      "title": "Flourish-first",
+      "before": "Swashes on uneven skeleton.",
+      "after": "Fix skeleton/weight; fewer swashes.",
+      "body": "Decoration can’t rescue structure."
+    },
+    {
+      "title": "Optical miss",
+      "before": "Mathematically equal gaps look uneven.",
+      "after": "Optical spacing pass before shipping.",
+      "body": "Eyes over rulers."
+    }
+  ],
+  "antiPatterns": [
+    "Ornament before skeleton.",
+    "Skipping optical spacing."
+  ],
+  "checklist": [
+    "Skeleton pass done.",
+    "Weight consistent.",
+    "Optical pass done.",
+    "Flourishes justified."
+  ]
+}

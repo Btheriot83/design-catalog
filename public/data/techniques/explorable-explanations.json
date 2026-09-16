@@ -1,0 +1,60 @@
+{
+  "slug": "explorable-explanations",
+  "number": 39,
+  "stage": "Define",
+  "title": "Build explorable explanations",
+  "principle": "When the goal is understanding, let readers manipulate the model—sliders, scrubbers, linked views—instead of only reading a static takeaway chart.",
+  "procedure": [
+    "State the misconception or hard idea the explorable must correct.",
+    "Pick one interactive control that changes the underlying model (not cosmetic filters).",
+    "Link views so one action updates explanation + visual together.",
+    "Provide a default path for skim readers; depth for explorers.",
+    "Instrument failure: if interaction doesn’t change understanding, cut it."
+  ],
+  "examplePrompts": [
+    "Design an explorable for <concept>.\n\nMisconception to correct: <…>\nOne primary control: <slider/scrubber/toggle>\nLinked outputs: <chart + plain-language readout>\nStatic fallback summary for no-JS / reduced motion.\nDo not decorate; the control must change the model."
+  ],
+  "promptWhy": [
+    "Demands model-changing interaction, not decoration."
+  ],
+  "tips": [
+    "Amelia’s public work centers interactive essays and viz craft.",
+    "Explorables beat poster charts when the reader must build intuition.",
+    "Cite: wattenberger.com"
+  ],
+  "sourceUrls": [
+    "https://wattenberger.com/"
+  ],
+  "related": [
+    "show-the-path",
+    "make-it-alive"
+  ],
+  "pairsWellWith": [
+    "show-the-path",
+    "video-motion"
+  ],
+  "workedExamples": [
+    {
+      "title": "Poster chart → explorable",
+      "before": "One static bar chart + long caption.",
+      "after": "Slider on the key parameter; chart + sentence update together.",
+      "body": "Interaction teaches the model; caption alone often doesn’t."
+    },
+    {
+      "title": "Cosmetic filters",
+      "before": "Dropdown that only restyles colors.",
+      "after": "Control that changes the calculation readers must grasp.",
+      "body": "If the model doesn’t move, it’s chrome—not an explorable."
+    }
+  ],
+  "antiPatterns": [
+    "Interactivity that only toggles theme.",
+    "No static summary for accessibility / reduced motion."
+  ],
+  "checklist": [
+    "Misconception is named.",
+    "One control changes the model.",
+    "Views stay linked.",
+    "Static fallback exists."
+  ]
+}

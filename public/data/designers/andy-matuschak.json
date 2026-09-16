@@ -1,7 +1,7 @@
 {
   "slug": "andy-matuschak",
   "name": "Andy Matuschak",
-  "status": "directory",
+  "status": "partial",
   "role": "Applied researcher · tools that expand thought",
   "bio": "Andy Matuschak is an applied researcher focused on user interfaces that expand what people can think and do. Public work includes Quantum Country and an augmented book that helps people understand and remember what they read. Previously helped build iOS at Apple and led R&D at Khan Academy.",
   "links": [
@@ -12,12 +12,18 @@
     {
       "label": "X",
       "url": "https://x.com/andy_matuschak"
+    },
+    {
+      "label": "Notes",
+      "url": "https://notes.andymatuschak.org/"
     }
   ],
-  "techniqueSlugs": [],
+  "techniqueSlugs": [
+    "evergreen-notes",
+    "mnemonic-medium-prompts"
+  ],
   "highlights": [
-    "Quantum Country and memory-augmenting reading interfaces.",
-    "Prior Apple iOS and Khan Academy R&D leadership.",
-    "Public research ethos: more wonder, insight, and expression."
+    "Evergreen notes: concept-oriented, linked, continuously refined.",
+    "Mnemonic medium: prompts that make memory part of the reading."
   ]
 }

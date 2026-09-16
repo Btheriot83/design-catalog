@@ -1,0 +1,63 @@
+{
+  "slug": "materials-not-features",
+  "number": 37,
+  "stage": "Define",
+  "title": "Design with materials, not features",
+  "principle": "For open-ended creative software, don’t ship a bag of buttons for N tasks. Present materials with consistent laws of physics so users compose N×N capabilities.",
+  "procedure": [
+    "Name the primary materials the user will manipulate (shapes, commits, clips, notes)—not the feature list.",
+    "Write the laws of physics: what can combine, collide, nest, or never occupy the same slot.",
+    "Prefer spatial/composable metaphors over deep menu hierarchies when tasks are open-ended.",
+    "Stress-test: can a user invent a workflow you didn’t design? If not, you still have a feature bag.",
+    "Cut features that don’t act on a material; fold them into tools that operate on materials."
+  ],
+  "examplePrompts": [
+    "Redesign this product as materials + laws of physics, not a feature menu.\n\nPrimary materials: <list>\nLaws of physics: <what can combine / collide / nest>\nTasks that must remain possible: <list>\nDo not add unrelated feature buttons. Show how each capability emerges from materials.",
+    "Compare two IA sketches: (A) feature-bag home with N buttons, (B) one canvas of materials with tools. Prefer B unless tasks are single-path. Explain tradeoffs in one paragraph."
+  ],
+  "promptWhy": [
+    "Forces the model to invent composable primitives instead of menu sprawl.",
+    "Makes the feature-bag failure mode explicit before pixels."
+  ],
+  "tips": [
+    "Linus: feature-bag apps fit well-defined paths (Uber, Search); material apps fit open creation (Figma, Notes, Git).",
+    "Git’s material is the commit—even without a spatial metaphor.",
+    "Cite: thesephist.com/posts/materials/"
+  ],
+  "sourceUrls": [
+    "https://thesephist.com/posts/materials/"
+  ],
+  "related": [
+    "invent-software-materials",
+    "ambitious-prompts",
+    "specify-the-look"
+  ],
+  "pairsWellWith": [
+    "invent-software-materials",
+    "seed-strings"
+  ],
+  "workedExamples": [
+    {
+      "title": "Figma vs Uber home",
+      "before": "Home is a grid of feature buttons for every job.",
+      "after": "Canvas of shapes/text with tools that operate on materials.",
+      "body": "Linus contrasts Uber/Google (clear paths → features) with Figma/Notes/file explorers (open tasks → materials + physics). Cite materials essay."
+    },
+    {
+      "title": "Git as material",
+      "before": "Version control as a menu of git commands.",
+      "after": "Commits as the material; branches/tags as compositions of commits with strict rules.",
+      "body": "Even without spatial UI, commits obey laws (order, diff, scope). Cite materials essay."
+    }
+  ],
+  "antiPatterns": [
+    "Adding another top-level button for every new workflow.",
+    "Static mockups that freeze materials before you learn their physics in the medium."
+  ],
+  "checklist": [
+    "Materials are named and few.",
+    "Laws of physics are written and consistent.",
+    "At least one unforeseen workflow is possible.",
+    "Feature buttons that don’t act on materials are cut or folded."
+  ]
+}

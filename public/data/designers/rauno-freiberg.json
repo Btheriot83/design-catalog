@@ -16,15 +16,27 @@
     {
       "label": "GitHub",
       "url": "https://github.com/rauno"
+    },
+    {
+      "label": "Essay · Invisible details",
+      "url": "https://rauno.me/craft/interaction-design"
+    },
+    {
+      "label": "Essay · Novelty",
+      "url": "https://rauno.me/craft/novelty"
     }
   ],
   "techniqueSlugs": [
     "designing-depth",
-    "stagger-choreograph-motion"
+    "stagger-choreograph-motion",
+    "invisible-interaction-details",
+    "novelty-restraint"
   ],
   "highlights": [
     "Staff Design Engineer at Vercel; public craft site at rauno.me.",
     "Catalogued techniques from Designing Depth (layered composition + motion choreography).",
-    "Known for detail-obsessed interaction writing; projects include Field Notes and History of Software Design."
+    "Known for detail-obsessed interaction writing; projects include Field Notes and History of Software Design.",
+    "Novelty is seasoning—especially on high-frequency actions.",
+    "Deconstruct why interactions feel right (springs, metaphors, thresholds)."
   ]
 }

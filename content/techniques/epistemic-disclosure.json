@@ -1,0 +1,61 @@
+{
+  "slug": "epistemic-disclosure",
+  "number": 55,
+  "stage": "Deliver",
+  "title": "Disclose epistemic status",
+  "principle": "Tell readers how sure you are and what kind of claim you’re making. Metadata about validity builds trust in public knowledge work.",
+  "procedure": [
+    "Label claims: observation / hypothesis / established / contested.",
+    "Surface ‘planted’ and ‘last tended’ dates on living notes.",
+    "Separate speculation from cited fact in layout (not just prose hedges).",
+    "When AI assists, disclose assistance where it matters for trust.",
+    "Never present a seedling idea with evergreen typography."
+  ],
+  "examplePrompts": [
+    "Add epistemic disclosure to this page.\n\nFor each major claim, tag: observation | hypothesis | established | contested.\nShow planted/last-tended dates.\nVisually demote speculative sections.\nDo not make uncertain claims look canonical."
+  ],
+  "promptWhy": [
+    "Forces honest certainty labeling in the artifact itself."
+  ],
+  "tips": [
+    "Maggie’s Garden uses planted/tended language as a design pattern.",
+    "Epistemic disclosure is a named pattern in her garden.",
+    "Cite: maggieappleton.com/epistemic-disclosure"
+  ],
+  "sourceUrls": [
+    "https://maggieappleton.com/epistemic-disclosure",
+    "https://maggieappleton.com/garden-history"
+  ],
+  "related": [
+    "topography-over-timelines",
+    "hand-rewrite-copy"
+  ],
+  "pairsWellWith": [
+    "topography-over-timelines",
+    "remove-ai-tells"
+  ],
+  "workedExamples": [
+    {
+      "title": "Seedling dressed as doctrine",
+      "before": "Half-baked take set in authoritative H1 with no dates.",
+      "after": "Seedling badge + planted/tended + hypothesis tag.",
+      "body": "Matches Garden practice of growth states and epistemic honesty."
+    },
+    {
+      "title": "Speculation vs citation",
+      "before": "Mix of vibes and sources in one undifferentiated wall.",
+      "after": "Cited facts in body; speculation in a demoted ‘hypothesis’ block.",
+      "body": "Layout carries epistemic status, not only hedging words."
+    }
+  ],
+  "antiPatterns": [
+    "Authoritative chrome on uncertain claims.",
+    "Hiding last-updated on living documents."
+  ],
+  "checklist": [
+    "Major claims are tagged by certainty.",
+    "Dates of planting/tending are visible.",
+    "Speculation is visually demoted.",
+    "Typography doesn’t overclaim."
+  ]
+}

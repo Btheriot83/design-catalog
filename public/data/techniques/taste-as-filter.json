@@ -1,0 +1,61 @@
+{
+  "slug": "taste-as-filter",
+  "number": 53,
+  "stage": "Discover",
+  "title": "Train taste as a filter",
+  "principle": "Taste is curated judgment: collect references, articulate why they work, and use that filter to reject average options early—not after polish.",
+  "procedure": [
+    "Collect 10 references you respect; write one sentence why each works.",
+    "Extract 3 transferable rules (not ‘I like blue’).",
+    "Apply the filter to first drafts: kill anything that fails the rules.",
+    "Update the filter when a project teaches a new why.",
+    "Keep the filter personal and specific—avoid generic ‘clean modern’."
+  ],
+  "examplePrompts": [
+    "Build a taste filter for this project.\n\n10 references with one-sentence whys.\n3 rules we will obey.\nList of defaults we will reject on sight.\nDo not output a generic mood board without rules."
+  ],
+  "promptWhy": [
+    "Forces articulated taste, not vibes."
+  ],
+  "tips": [
+    "van Schneider’s public writing emphasizes personal taste and process.",
+    "Filters beat endless optioneering.",
+    "Cite: vanschneider.com"
+  ],
+  "sourceUrls": [
+    "https://www.vanschneider.com/",
+    "https://www.vanschneider.com/articles"
+  ],
+  "related": [
+    "protect-the-feeling",
+    "ambitious-prompts"
+  ],
+  "pairsWellWith": [
+    "protect-the-feeling",
+    "seed-strings"
+  ],
+  "workedExamples": [
+    {
+      "title": "Moodboard without why",
+      "before": "30 pretty screenshots, no rules.",
+      "after": "10 refs + why + 3 enforceable rules.",
+      "body": "Taste becomes operational."
+    },
+    {
+      "title": "Late regret",
+      "before": "Polish a direction you already dislike.",
+      "after": "Filter kills it at draft 1.",
+      "body": "Train judgment early."
+    }
+  ],
+  "antiPatterns": [
+    "Vague adjectives as a filter.",
+    "Copying references’ chrome without the why."
+  ],
+  "checklist": [
+    "Whys written.",
+    "Three rules enforceable.",
+    "Reject list exists.",
+    "Filter applied to drafts."
+  ]
+}

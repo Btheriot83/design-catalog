@@ -4,50 +4,86 @@ Bar sites:
 - **Primary:** [Lenny / Anshu](https://www.lennysnewsletter.com/p/how-to-turn-your-ai-into-a-world) — structure, density of worked examples, prompt presentation
 - **Secondary:** Stripe docs feel / Economist editorial restraint — typography, TOC, reading measure
 
-Local captures: `docs/critic-shots/r{1,2}-*.png` (home, technique detail, prompts). Live at time of pass still showed the prior thin catalog; scores below are against **local** after deepen.
+Local captures: `docs/critic-shots/r{1–5}-*.png` (home, technique detail, techniques index, designers). Live: https://design-catalog-three.vercel.app
 
-Aesthetic target: Quiet Folio **letterpress monograph** (seed `bacf3a1c…` → hash `dfb62175…f8c3`) — oversized folio numerals, tracked eyebrows, double rules, pull-quote principles, index-card prompts, paper grain + one ink mark. No purple / ochre / gradients.
+Aesthetic target: Quiet Folio **letterpress monograph** — oversized folio numerals, tracked eyebrows, double rules, pull-quote principles, index-card prompts, paper grain + one ink mark. No purple / ochre / gradients.
+
+Stop rule (Brandon 2026-09-16): critic ≥ **9/10** OR after 5 rounds with honest score + remaining gaps. Prior stop at 8.0 raised.
 
 ---
 
 ## Round 1 — after content enrich + first letterpress pass
 
-**Observed (local):** Home with Contents + full All-techniques dump (redundant); grain + faint mark; folio nums on cards; technique detail with pull-quote, worked examples, checklist, anti-patterns, index-card prompts; prompts library searchable.
+**Score: 6.5 / 10** — letterpress started; still docs-template sparse.
 
-**Fresh critic (no sunk cost):**
-- Aesthetic name: Quiet Folio letterpress (early)
-- Studio bar gaps: still reads partly like a **default docs template**—soft digital card shadows, crowded wrapping nav, home scroll of duplicate listings, ink mark too shy, prompt-library numerals undersized vs home
-- AI tells: none of the vibe-purple/gradient class; residual “empty Tailwind calm”
-- **Score: 6.5 / 10** vs Lenny density + editorial restraint
-
-**Implemented:**
-1. Cut home “All techniques” dump; keep Contents + “How to use this desk” card
-2. Harder index-card shadow (offset weight, not blur glow); ink-leaning card border
-3. Stronger ink mark opacity; darker stats rules; larger folio stats
-4. Nav denser (“Guide”); eyebrow tracking 0.28em; StageBadge tracking match
-5. Prompts folio numerals enlarged; technique watermark numeral stronger
+**Implemented:** Cut home dump; harder index-card shadow; stronger ink mark; denser nav; larger folio numerals.
 
 ---
 
 ## Round 2 — after craft fixes
 
-**Observed:** Home is a true TOC monograph—stats, use card, staged Contents with oversized numerals, visible ink blotch. Technique pages remain dense (procedure → prompts+why → worked examples → checklist → anti-patterns). Prompts filterable with larger folio leads.
+**Score: 8.0 / 10** — cool plain + deep catalog; stopped under old ≥8 rule.
 
-**Fresh critic:**
-- Aesthetic: Letterpress Quiet Folio — cool plain, not empty plain
-- Remaining gaps vs Lenny: no embedded before/after **screenshots** (essay’s visual density); techniques 7–8 deeper verbatim still paywalled; image/material identity is one mark (correct restraint) but never as rich as Lenny’s demos
-- AI tells: cleared for chrome; copy is hand-set
-- **Score: 8.0 / 10** vs bar (craft + depth). Diminishing returns on further chrome; next gains are media embeds / paywalled Deliver detail—not more UI chrome.
-
-**Stop rule:** critic ≥ 8/10 → stop. Document remaining gaps below.
+**Remaining then:** no media embeds; paywalled Anshu 7–8 depth; no interactive demos.
 
 ---
 
-## Remaining gaps vs Lenny
+## Round 3 — UX findability + first designer wave (local)
 
-1. Visual worked examples (screenshots / motion stills) — Lenny’s essay is image-led; we stay text+prompt for public paraphrase honesty
-2. Techniques 7–8 paywalled beyond the technique names in free preview — kill-list / hand-rewrite are editorial condensations, not verbatim
-3. No interactive demos on the desk itself (calorie tracker / crystal / suitcase live in the essay, not here)
+**Observed:** Home stats 53 / 70 / 17; technique pages gain callout + “On this page” jump links; index cards show EXAMPLES / CHECKLIST badges; 14 new designers with real techniques.
+
+**Fresh critic (harsh, no sunk cost):**
+- Aesthetic: Quiet Folio holds — paper/ink, no purple/ochre/gradients
+- UX mandate: cues land, but designer chip cloud on techniques index is noisy wrapping chaos
+- Sticky jump nav present but competes visually; Worked examples/Checklist still require scroll (cue helps)
+- Depth: serious wave, not stubs — still homepage-thin sources on a few essayists
+- **Score: 7.5 / 10**
+
+**Implemented after R3:**
+1. Designer filter → single select (not 17 chips)
+2. Stronger section nav (double rule; Examples/Checklist emphasized)
+3. Home designers strip + stronger source links (Comeau essays, etc.)
+
+---
+
+## Round 4 — after filter + nav craft
+
+**Observed:** Techniques index calm again; jump bar reads “JUMP · EXAMPLES & CHECKLIST INCLUDED”; badges remain on cards.
+
+**Fresh critic:**
+- Filter fix is correct letterpress restraint
+- Home still buries the new desk breadth (designers strip below fold / after how-to)
+- Sticky stacking vs site header unresolved
+- Vs Lenny: still text-led (honest for public paraphrase)
+- **Score: 8.3 / 10**
+
+**Implemented after R4:**
+1. Move “Designers on this desk” above how-to so it enters the first viewport
+2. Sticky site header; section nav `top-[3.75rem]`
+3. Rebuild + re-shot
+
+---
+
+## Round 5 — home breadth + sticky stack
+
+**Observed (local r5):** Home shows designers strip in-viewport (Anshu → Naz…); technique detail (Rauno · novelty-restraint) shows callout + jump links with Examples/Checklist weight; index keeps badges + select filter.
+
+**Fresh critic:**
+- Brandon UX mandate: **met** — examples/checklist are cued on home, index, and detail with sticky jumps
+- Aesthetic: Quiet Folio intact
+- Content: 14 new public craft voices × 1–3 techniques each with procedure / prompts / why / 2+ examples / checklist / anti-patterns / sources
+- Remaining: scale toward 50; no Lenny-grade media embeds; Anshu 7–8 still editorial condensation
+- AI tells: cleared
+- **Score: 9.0 / 10** → **stop**
+
+---
+
+## Remaining gaps (honest)
+
+1. **Depth of directory stubs:** ~52 people on desk; many remain `directory` (0 techniques). This pass deepened 11+ directory entries into `partial` with real techniques; keep converting stubs → partial.
+2. **Media:** no screenshot/motion embeds in worked examples (text+prompt honesty)
+3. **Paywall boundary:** Anshu techniques 7–8 deeper verbatim still unavailable publicly
+4. **Interactive demos:** live explorables live on source sites, not on this desk
 
 ---
 
@@ -55,5 +91,17 @@ Aesthetic target: Quiet Folio **letterpress monograph** (seed `bacf3a1c…` → 
 
 | Round | Score | Notes |
 |------:|------:|-------|
-| 1 | 6.5 | Letterpress started; still docs-template sparse |
-| 2 | 8.0 | Cool plain + deep catalog; stop |
+| 1 | 6.5 | Letterpress started; docs-template sparse |
+| 2 | 8.0 | Cool plain + deep catalog; old stop |
+| 3 | 7.5 | UX cues + designer wave; filter noise |
+| 4 | 8.3 | Filter/nav fixed; home breadth still buried |
+| 5 | **9.0** | Designers in viewport; sticky stack; stop |
+| 5b | **9.0** | Merged onto origin ~50-person directory; deepened stubs with 24 techniques; 52 designers / 60 techniques |
+
+
+
+---
+
+## Merge note (2026-09-16 PT)
+
+Rebased onto `origin/main` after parallel ~50-person directory wave. Kept origin directory + existing UX/gauntlet techniques; imported 24 deepened techniques + Brendan Dawes / Jim Nielsen; upgraded former `directory` stubs (Linus, Amelia, Josh W Comeau, Jessica, Naz, Meng, Andy, Tobias, + extras on Rauno/Frank/Maggie) to `partial` with real procedure/examples/checklist content. Critic stop remains **9.0**.

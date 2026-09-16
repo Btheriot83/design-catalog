@@ -1,0 +1,59 @@
+{
+  "slug": "data-as-playful-material",
+  "number": 56,
+  "stage": "Define",
+  "title": "Treat data as playful material",
+  "principle": "Data can be a material for playful interaction—not only a solemn chart. Let people poke, rearrange, and feel the dataset.",
+  "procedure": [
+    "Name the human question the dataset answers.",
+    "Pick one playful verb (scatter, stack, sort, scrub) that reveals structure.",
+    "Prototype tactile feedback (motion/sound/haptics) lightly.",
+    "Keep accuracy honest while inviting play.",
+    "Cut play that obscures the question."
+  ],
+  "examplePrompts": [
+    "Design a playful data interaction.\n\nDataset question:\nPlayful verb:\nHow play reveals structure:\nAccuracy guardrails:\nKill criteria if play obscures."
+  ],
+  "promptWhy": [
+    "Binds play to insight."
+  ],
+  "tips": [
+    "Dawes’s public body of work explores inventive data/interaction materials.",
+    "Cite: brendandawes.com"
+  ],
+  "sourceUrls": [
+    "https://brendandawes.com/"
+  ],
+  "related": [
+    "constraint-bred-play",
+    "explorable-explanations"
+  ],
+  "pairsWellWith": [
+    "constraint-bred-play",
+    "explorable-explanations"
+  ],
+  "workedExamples": [
+    {
+      "title": "Solemn dashboard only",
+      "before": "Static KPI cards.",
+      "after": "Scrubable timeline that makes patterns felt.",
+      "body": "Play as understanding."
+    },
+    {
+      "title": "Play without question",
+      "before": "Particles for their own sake.",
+      "after": "Verb tied to the dataset question.",
+      "body": "Play must reveal."
+    }
+  ],
+  "antiPatterns": [
+    "Decoration disconnected from data.",
+    "Play that lies."
+  ],
+  "checklist": [
+    "Question named.",
+    "Verb chosen.",
+    "Accuracy guarded.",
+    "Obscuring play cut."
+  ]
+}

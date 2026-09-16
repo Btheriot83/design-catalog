@@ -1,0 +1,59 @@
+{
+  "slug": "protect-the-feeling",
+  "number": 54,
+  "stage": "Deliver",
+  "title": "Protect the feeling when shipping",
+  "principle": "Every late addition can dilute the feeling you fought for. Ship decisions should defend the emotional thesis of the piece.",
+  "procedure": [
+    "Write the feeling in one sentence (calm authority, playful precision, etc.).",
+    "For each late request, ask: does this strengthen or dilute the feeling?",
+    "Cut or quarantine diluting requests into a later experiment.",
+    "Preserve silence/negative space that carries the feeling.",
+    "Final pass: remove one thing that doesn’t serve the sentence."
+  ],
+  "examplePrompts": [
+    "Feeling thesis: <one sentence>.\nAudit these late requests: <list>.\nKeep / cut / quarantine each with a one-line reason tied to the thesis.\nEnd by removing one non-serving element."
+  ],
+  "promptWhy": [
+    "Ties cuts to an emotional thesis."
+  ],
+  "tips": [
+    "Process essays from van Schneider stress intention through to shipping.",
+    "Cite: vanschneider.com"
+  ],
+  "sourceUrls": [
+    "https://www.vanschneider.com/"
+  ],
+  "related": [
+    "taste-as-filter",
+    "cut-elements"
+  ],
+  "pairsWellWith": [
+    "taste-as-filter",
+    "cut-elements"
+  ],
+  "workedExamples": [
+    {
+      "title": "Stakeholder sticker pack",
+      "before": "Add badges, banners, and a second CTA ‘just in case’.",
+      "after": "One CTA; extras quarantined; silence preserved.",
+      "body": "Feeling thesis decides."
+    },
+    {
+      "title": "Loud last mile",
+      "before": "Marketing overlay breaks the calm layout.",
+      "after": "Overlay redesigned to obey the thesis or cut.",
+      "body": "Protect the feeling at the finish."
+    }
+  ],
+  "antiPatterns": [
+    "Shipping every request.",
+    "Letting silence get filled by default."
+  ],
+  "checklist": [
+    "Feeling sentence exists.",
+    "Late requests audited.",
+    "At least one cut.",
+    "Silence preserved where intended."
+  ]
+}

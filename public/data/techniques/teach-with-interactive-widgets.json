@@ -1,0 +1,60 @@
+{
+  "slug": "teach-with-interactive-widgets",
+  "number": 41,
+  "stage": "Define",
+  "title": "Teach with interactive widgets",
+  "principle": "When explaining visual systems (CSS, layout, motion), put a live control next to the prose so readers change values and see results—don’t only show static code screenshots.",
+  "procedure": [
+    "Pick the one property or concept that must be felt, not just read.",
+    "Build a minimal widget: control + live preview + readable output values.",
+    "Keep the widget’s scope tiny; one lesson per control cluster.",
+    "Sync code sample text with widget state when possible.",
+    "Provide reduced-motion / no-JS fallbacks for the same lesson."
+  ],
+  "examplePrompts": [
+    "Add an interactive teaching widget for <CSS concept>.\n\nControl(s): <sliders/toggles>\nLive preview requirement: updates within 100ms.\nShow current computed values as text.\nInclude a static before/after for reduced motion.\nDo not bury the lesson in a long code dump alone."
+  ],
+  "promptWhy": [
+    "Forces a learn-by-feeling artifact."
+  ],
+  "tips": [
+    "Josh’s essays are known for embedded interactive demos.",
+    "Feeling the property beats memorizing the property.",
+    "Cite: joshwcomeau.com"
+  ],
+  "sourceUrls": [
+    "https://www.joshwcomeau.com/"
+  ],
+  "related": [
+    "delight-in-the-details",
+    "explorable-explanations"
+  ],
+  "pairsWellWith": [
+    "delight-in-the-details",
+    "explorable-explanations"
+  ],
+  "workedExamples": [
+    {
+      "title": "Static code dump",
+      "before": "Long CSS block + screenshot.",
+      "after": "Slider for the key property + live box + synced snippet.",
+      "body": "Readers learn by tweaking; matches Comeau teaching craft."
+    },
+    {
+      "title": "Overloaded playground",
+      "before": "20 controls on one widget.",
+      "after": "One cluster teaching one idea; next idea on next widget.",
+      "body": "Scope the lesson; don’t recreate Figma inside the essay."
+    }
+  ],
+  "antiPatterns": [
+    "Screenshot-only explanations for dynamic ideas.",
+    "Widgets that ignore reduced motion."
+  ],
+  "checklist": [
+    "One concept per widget.",
+    "Live preview + readable values.",
+    "Fallback exists.",
+    "Code and widget stay in sync."
+  ]
+}

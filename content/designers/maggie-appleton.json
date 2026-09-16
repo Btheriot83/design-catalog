@@ -12,15 +12,21 @@
     {
       "label": "X",
       "url": "https://x.com/Mappletons"
+    },
+    {
+      "label": "Essay · Epistemic disclosure",
+      "url": "https://maggieappleton.com/epistemic-disclosure"
     }
   ],
   "techniqueSlugs": [
     "garden-status-labels",
-    "illustrate-the-invisible"
+    "illustrate-the-invisible",
+    "epistemic-disclosure"
   ],
   "highlights": [
     "Digital garden of essays on design and tools for thought.",
     "Catalogued techniques from garden ethos (status labels) and drawing invisible concepts (metaphor frames).",
-    "Public craft voice for anti-slop clarity in interface writing."
+    "Public craft voice for anti-slop clarity in interface writing.",
+    "Disclose epistemic status so certainty is readable."
   ]
 }

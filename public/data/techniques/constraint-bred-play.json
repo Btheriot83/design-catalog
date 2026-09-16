@@ -1,0 +1,59 @@
+{
+  "slug": "constraint-bred-play",
+  "number": 57,
+  "stage": "Discover",
+  "title": "Let constraints breed play",
+  "principle": "Inventive interaction often comes from tight constraints—limited inputs, one sensor, one color—not from unlimited freedom.",
+  "procedure": [
+    "Impose a tight constraint (one input, one material, 3 seconds, monochrome).",
+    "Brainstorm only inside the constraint for a fixed timebox.",
+    "Pick the idea that feels inevitable given the limit.",
+    "Expand only after the constrained idea is strong.",
+    "Document the constraint so the team doesn’t ‘help’ by removing it early."
+  ],
+  "examplePrompts": [
+    "Run a constrained ideation.\n\nHard constraint: <…>\nTimebox: 25 minutes.\nProduce 5 ideas that obey the constraint.\nSelect one that feels inevitable.\nForbid removing the constraint to ‘make it easier’."
+  ],
+  "promptWhy": [
+    "Uses limits as a generative tool."
+  ],
+  "tips": [
+    "Creative technology practice (Dawes and peers) often thrives on limits.",
+    "Cite: brendandawes.com"
+  ],
+  "sourceUrls": [
+    "https://brendandawes.com/"
+  ],
+  "related": [
+    "data-as-playful-material",
+    "seed-strings"
+  ],
+  "pairsWellWith": [
+    "data-as-playful-material",
+    "seed-strings"
+  ],
+  "workedExamples": [
+    {
+      "title": "Blank-canvas sprawl",
+      "before": "Any sensor, any API, any style.",
+      "after": "One input + monochrome → sharper idea.",
+      "body": "Constraints focus invention."
+    },
+    {
+      "title": "Committee removes the fun limit",
+      "before": "‘Also add search, filters, themes…’",
+      "after": "Constraint held until core play works.",
+      "body": "Protect the limit."
+    }
+  ],
+  "antiPatterns": [
+    "Removing constraints too early.",
+    "Constraints with no timebox."
+  ],
+  "checklist": [
+    "Constraint written.",
+    "Timeboxed ideation.",
+    "Inevitable idea selected.",
+    "Constraint protected."
+  ]
+}

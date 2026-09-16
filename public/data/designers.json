@@ -70,6 +70,89 @@
     ]
   },
   {
+    "slug": "amelia-wattenberger",
+    "name": "Amelia Wattenberger",
+    "status": "partial",
+    "role": "Principal research engineer · GitHub · novel UIs",
+    "bio": "Amelia Wattenberger creates things on the web spanning data visualization, novel interfaces, and AI tooling. Public site wattenberger.com lists Principal Research Engineer work on a small R&D team within GitHub exploring novel UIs and ML. Earlier writing includes interactive D3 and React teaching materials.",
+    "links": [
+      {
+        "label": "Site",
+        "url": "https://wattenberger.com/"
+      },
+      {
+        "label": "X",
+        "url": "https://x.com/Wattenberger"
+      },
+      {
+        "label": "GitHub · Fullstack D3",
+        "url": "https://github.com/Wattenberger/Fullstack-D3-and-Data-Visualization"
+      }
+    ],
+    "techniqueSlugs": [
+      "explorable-explanations",
+      "show-the-path"
+    ],
+    "highlights": [
+      "Prefer explorables over static charts when understanding is the goal.",
+      "Show the path from data to visual so trust isn’t a black box."
+    ]
+  },
+  {
+    "slug": "andy-matuschak",
+    "name": "Andy Matuschak",
+    "status": "partial",
+    "role": "Applied researcher · tools that expand thought",
+    "bio": "Andy Matuschak is an applied researcher focused on user interfaces that expand what people can think and do. Public work includes Quantum Country and an augmented book that helps people understand and remember what they read. Previously helped build iOS at Apple and led R&D at Khan Academy.",
+    "links": [
+      {
+        "label": "Site",
+        "url": "https://andymatuschak.org/"
+      },
+      {
+        "label": "X",
+        "url": "https://x.com/andy_matuschak"
+      },
+      {
+        "label": "Notes",
+        "url": "https://notes.andymatuschak.org/"
+      }
+    ],
+    "techniqueSlugs": [
+      "evergreen-notes",
+      "mnemonic-medium-prompts"
+    ],
+    "highlights": [
+      "Evergreen notes: concept-oriented, linked, continuously refined.",
+      "Mnemonic medium: prompts that make memory part of the reading."
+    ]
+  },
+  {
+    "slug": "brendan-dawes",
+    "name": "Brendan Dawes",
+    "status": "partial",
+    "role": "Artist-designer · playful data & interaction",
+    "bio": "Brendan Dawes publishes playful, material-driven interaction and data work at brendandawes.com. Catalogued from public projects/writing—no endorsement.",
+    "links": [
+      {
+        "label": "Site",
+        "url": "https://brendandawes.com/"
+      },
+      {
+        "label": "X",
+        "url": "https://x.com/brendandawes"
+      }
+    ],
+    "techniqueSlugs": [
+      "data-as-playful-material",
+      "constraint-bred-play"
+    ],
+    "highlights": [
+      "Treat data as a material you can play with, not only chart.",
+      "Constraints breed inventive interaction."
+    ]
+  },
+  {
     "slug": "bret-victor",
     "name": "Bret Victor",
     "status": "partial",
@@ -145,12 +228,14 @@
       }
     ],
     "techniqueSlugs": [
-      "screens-want-honesty"
+      "screens-want-honesty",
+      "design-as-bridge"
     ],
     "highlights": [
       "Author of The Shape of Design; co-founder of Abstract.",
       "Catalogued screens-want-honesty from public essay What Screens Want.",
-      "Studio practice spans brand and product direction."
+      "Studio practice spans brand and product direction.",
+      "Design as a bridge between people and possibilities."
     ]
   },
   {
@@ -246,6 +331,127 @@
     ]
   },
   {
+    "slug": "jessica-hische",
+    "name": "Jessica Hische",
+    "status": "partial",
+    "role": "Lettering artist · author · procrastiworker",
+    "bio": "Jessica Hische is a lettering artist and New York Times best-selling author based in Oakland. Public site jessicahische.is documents client lettering, books, and the well-known Should I Work for Free flowchart. Practice centers on typographic craft and thoughtful freelance boundaries.",
+    "links": [
+      {
+        "label": "Site",
+        "url": "https://jessicahische.is/awesome"
+      },
+      {
+        "label": "X",
+        "url": "https://x.com/jessicahische"
+      }
+    ],
+    "techniqueSlugs": [
+      "lettering-process-passes",
+      "shoulders-of-type"
+    ],
+    "highlights": [
+      "Lettering improves through deliberate passes, not one magic flourish.",
+      "Study type anatomy before decorative execution."
+    ]
+  },
+  {
+    "slug": "jim-nielsen",
+    "name": "Jim Nielsen",
+    "status": "partial",
+    "role": "Design engineer · blog craft · browser-native thinking",
+    "bio": "Jim Nielsen writes extensively about design engineering, web craft, and building with the grain of the browser at blog.jim-nielsen.com. Catalogued from public posts—no endorsement.",
+    "links": [
+      {
+        "label": "Blog",
+        "url": "https://blog.jim-nielsen.com/"
+      },
+      {
+        "label": "X",
+        "url": "https://x.com/jimnielsen"
+      },
+      {
+        "label": "GitHub",
+        "url": "https://github.com/jimnielsen"
+      }
+    ],
+    "techniqueSlugs": [
+      "design-engineer-ownership",
+      "browser-native-first"
+    ],
+    "highlights": [
+      "Design engineers own the problem across design and implementation.",
+      "Prefer browser-native capabilities before heavy libraries."
+    ]
+  },
+  {
+    "slug": "josh-w-comeau",
+    "name": "Josh W. Comeau",
+    "status": "partial",
+    "role": "Educator · CSS & animation craft",
+    "bio": "Josh W. Comeau runs joshwcomeau.com, an interactive teaching site for CSS, animation, SVG, and layout. He previously held senior engineering roles at Gatsby, DigitalOcean, and Khan Academy and now focuses on indie developer education. Public tutorials emphasize feel, performance nuance, and principles like squash-and-stretch applied to UI.",
+    "links": [
+      {
+        "label": "Site",
+        "url": "https://www.joshwcomeau.com/"
+      },
+      {
+        "label": "X",
+        "url": "https://x.com/JoshWComeau"
+      },
+      {
+        "label": "Essay · Animating with CSS",
+        "url": "https://www.joshwcomeau.com/animation/css-transitions/"
+      }
+    ],
+    "techniqueSlugs": [
+      "teach-with-interactive-widgets",
+      "delight-in-the-details"
+    ],
+    "highlights": [
+      "Interactive widgets inside essays so readers feel the CSS.",
+      "Polish micro-details that make interfaces feel cared for."
+    ]
+  },
+  {
+    "slug": "linus-lee",
+    "name": "Linus Lee",
+    "status": "partial",
+    "role": "Researcher · tools for thought · thesephist",
+    "bio": "Linus Lee publishes as thesephist.com, documenting research and advising on AI interpretability interfaces. Public bio lists prior Research Engineer work at Notion, Researcher in Residence at Betaworks, and earlier roles at Replit and related labs. Most active publicly as @thesephist on X and GitHub.",
+    "links": [
+      {
+        "label": "Site",
+        "url": "https://thesephist.com/"
+      },
+      {
+        "label": "X",
+        "url": "https://x.com/thesephist"
+      },
+      {
+        "label": "GitHub",
+        "url": "https://github.com/thesephist"
+      },
+      {
+        "label": "Essay · Design with materials, not features",
+        "url": "https://thesephist.com/posts/materials/"
+      },
+      {
+        "label": "Essay · Imagining better interfaces to LMs",
+        "url": "https://thesephist.com/posts/latent/"
+      }
+    ],
+    "techniqueSlugs": [
+      "materials-not-features",
+      "invent-software-materials"
+    ],
+    "highlights": [
+      "Interfaces as materials + laws of physics, not bags of features.",
+      "N materials → N×N capabilities; invent materials when text/files are too low-level.",
+      "Public sources: thesephist materials + latent essays."
+    ]
+  },
+  {
     "slug": "maggie-appleton",
     "name": "Maggie Appleton",
     "status": "partial",
@@ -259,16 +465,51 @@
       {
         "label": "X",
         "url": "https://x.com/Mappletons"
+      },
+      {
+        "label": "Essay · Epistemic disclosure",
+        "url": "https://maggieappleton.com/epistemic-disclosure"
       }
     ],
     "techniqueSlugs": [
       "garden-status-labels",
-      "illustrate-the-invisible"
+      "illustrate-the-invisible",
+      "epistemic-disclosure"
     ],
     "highlights": [
       "Digital garden of essays on design and tools for thought.",
       "Catalogued techniques from garden ethos (status labels) and drawing invisible concepts (metaphor frames).",
-      "Public craft voice for anti-slop clarity in interface writing."
+      "Public craft voice for anti-slop clarity in interface writing.",
+      "Disclose epistemic status so certainty is readable."
+    ]
+  },
+  {
+    "slug": "meng-to",
+    "name": "Meng To",
+    "status": "partial",
+    "role": "Founder · Design+Code · designer/educator",
+    "bio": "Meng To is a designer and teacher in Singapore who founded Design+Code, teaching designers to code and developers to design. Public materials describe tens of thousands of paid customers and courses spanning design and implementation. His personal site also documents sketchbook work and AI-era education experiments around DesignCode.",
+    "links": [
+      {
+        "label": "Site",
+        "url": "https://mengto.com/"
+      },
+      {
+        "label": "Design+Code",
+        "url": "https://designcode.io/"
+      },
+      {
+        "label": "X",
+        "url": "https://x.com/MengTo"
+      }
+    ],
+    "techniqueSlugs": [
+      "learn-by-building-ui",
+      "systemize-repeating-ui"
+    ],
+    "highlights": [
+      "Learn UI by building end-to-end, not theory alone.",
+      "Systemize repeated patterns into components/tokens early."
     ]
   },
   {
@@ -337,6 +578,43 @@
     ]
   },
   {
+    "slug": "naz-hamid",
+    "name": "Naz Hamid",
+    "status": "partial",
+    "role": "Designer · Weightshift · Aphera",
+    "bio": "Naz Hamid is a San Francisco–based designer, photographer, and writer. He founded the design studio Weightshift (clients spanning Abstract, Dropbox, Intercom, and others), helped build design at VSCO, and co-founded Aphera, a Mac photo editor. Public essays on nazhamid.com argue for human craft against AI particle-board aesthetics.",
+    "links": [
+      {
+        "label": "Site",
+        "url": "https://nazhamid.com/"
+      },
+      {
+        "label": "Weightshift",
+        "url": "https://weightshift.com/"
+      },
+      {
+        "label": "GitHub",
+        "url": "https://github.com/nazhamid"
+      },
+      {
+        "label": "X",
+        "url": "https://x.com/weightshift"
+      },
+      {
+        "label": "Weight of Code",
+        "url": "https://weightofcode.com/"
+      }
+    ],
+    "techniqueSlugs": [
+      "weight-of-implementation",
+      "design-with-code-loop"
+    ],
+    "highlights": [
+      "Design decisions carry implementation weight—choose knowingly.",
+      "Close the design↔code loop instead of waterfall handoff."
+    ]
+  },
+  {
     "slug": "rauno-freiberg",
     "name": "Rauno Freiberg",
     "status": "partial",
@@ -354,16 +632,28 @@
       {
         "label": "GitHub",
         "url": "https://github.com/rauno"
+      },
+      {
+        "label": "Essay · Invisible details",
+        "url": "https://rauno.me/craft/interaction-design"
+      },
+      {
+        "label": "Essay · Novelty",
+        "url": "https://rauno.me/craft/novelty"
       }
     ],
     "techniqueSlugs": [
       "designing-depth",
-      "stagger-choreograph-motion"
+      "stagger-choreograph-motion",
+      "invisible-interaction-details",
+      "novelty-restraint"
     ],
     "highlights": [
       "Staff Design Engineer at Vercel; public craft site at rauno.me.",
       "Catalogued techniques from Designing Depth (layered composition + motion choreography).",
-      "Known for detail-obsessed interaction writing; projects include Field Notes and History of Software Design."
+      "Known for detail-obsessed interaction writing; projects include Field Notes and History of Software Design.",
+      "Novelty is seasoning—especially on high-frequency actions.",
+      "Deconstruct why interactions feel right (springs, metaphors, thresholds)."
     ]
   },
   {
@@ -395,6 +685,31 @@
       "Co-author of Refactoring UI with Adam Wathan.",
       "Catalogued techniques from public Refactoring UI tips (hierarchy, whitespace, borders).",
       "Known for public UI tips and refactor videos."
+    ]
+  },
+  {
+    "slug": "tobias-van-schneider",
+    "name": "Tobias van Schneider",
+    "status": "partial",
+    "role": "Designer & maker · vanschneider.com",
+    "bio": "Tobias van Schneider is a designer and maker whose public brand centers on independent product and studio craft. His X bio and site point to personal projects including tools and collections aimed at attention and making. Directory entry credits public presence only; no affiliation claimed.",
+    "links": [
+      {
+        "label": "Site",
+        "url": "https://vanschneider.com/"
+      },
+      {
+        "label": "X",
+        "url": "https://x.com/vanschneider"
+      }
+    ],
+    "techniqueSlugs": [
+      "taste-as-filter",
+      "protect-the-feeling"
+    ],
+    "highlights": [
+      "Taste is a filter you train—not a mood board you paste.",
+      "Protect the feeling of the work through shipping decisions."
     ]
   },
   {
@@ -473,52 +788,6 @@
       "Defensive CSS; Debugging CSS; RTL Styling 101.",
       "Layout Maestro course for building layouts with confidence.",
       "Public craft against brittle, AI-generated CSS."
-    ]
-  },
-  {
-    "slug": "amelia-wattenberger",
-    "name": "Amelia Wattenberger",
-    "status": "directory",
-    "role": "Principal research engineer · GitHub · novel UIs",
-    "bio": "Amelia Wattenberger creates things on the web spanning data visualization, novel interfaces, and AI tooling. Public site wattenberger.com lists Principal Research Engineer work on a small R&D team within GitHub exploring novel UIs and ML. Earlier writing includes interactive D3 and React teaching materials.",
-    "links": [
-      {
-        "label": "Site",
-        "url": "https://wattenberger.com/"
-      },
-      {
-        "label": "X",
-        "url": "https://x.com/Wattenberger"
-      }
-    ],
-    "techniqueSlugs": [],
-    "highlights": [
-      "GitHub R&D: novel UIs + ML; public research writing.",
-      "Known for interactive D3/React education essays.",
-      "Explores alternatives to chatbot-only AI interfaces."
-    ]
-  },
-  {
-    "slug": "andy-matuschak",
-    "name": "Andy Matuschak",
-    "status": "directory",
-    "role": "Applied researcher · tools that expand thought",
-    "bio": "Andy Matuschak is an applied researcher focused on user interfaces that expand what people can think and do. Public work includes Quantum Country and an augmented book that helps people understand and remember what they read. Previously helped build iOS at Apple and led R&D at Khan Academy.",
-    "links": [
-      {
-        "label": "Site",
-        "url": "https://andymatuschak.org/"
-      },
-      {
-        "label": "X",
-        "url": "https://x.com/andy_matuschak"
-      }
-    ],
-    "techniqueSlugs": [],
-    "highlights": [
-      "Quantum Country and memory-augmenting reading interfaces.",
-      "Prior Apple iOS and Khan Academy R&D leadership.",
-      "Public research ethos: more wonder, insight, and expression."
     ]
   },
   {
@@ -803,29 +1072,6 @@
     ]
   },
   {
-    "slug": "jessica-hische",
-    "name": "Jessica Hische",
-    "status": "directory",
-    "role": "Lettering artist · author · procrastiworker",
-    "bio": "Jessica Hische is a lettering artist and New York Times best-selling author based in Oakland. Public site jessicahische.is documents client lettering, books, and the well-known Should I Work for Free flowchart. Practice centers on typographic craft and thoughtful freelance boundaries.",
-    "links": [
-      {
-        "label": "Site",
-        "url": "https://jessicahische.is/awesome"
-      },
-      {
-        "label": "X",
-        "url": "https://x.com/jessicahische"
-      }
-    ],
-    "techniqueSlugs": [],
-    "highlights": [
-      "Lettering artist with widely taught freelance craft resources.",
-      "NYT best-selling author; Oakland-based practice.",
-      "Public teaching of typographic taste and client craft."
-    ]
-  },
-  {
     "slug": "jonnie-hallman",
     "name": "Jonnie Hallman",
     "status": "directory",
@@ -850,29 +1096,6 @@
       "Indie design engineer; ex-Stripe; Brooklyn practice.",
       "Public focus on polished landing pages and microsites.",
       "Process writing at destroytoday.com."
-    ]
-  },
-  {
-    "slug": "josh-w-comeau",
-    "name": "Josh W. Comeau",
-    "status": "directory",
-    "role": "Educator · CSS & animation craft",
-    "bio": "Josh W. Comeau runs joshwcomeau.com, an interactive teaching site for CSS, animation, SVG, and layout. He previously held senior engineering roles at Gatsby, DigitalOcean, and Khan Academy and now focuses on indie developer education. Public tutorials emphasize feel, performance nuance, and principles like squash-and-stretch applied to UI.",
-    "links": [
-      {
-        "label": "Site",
-        "url": "https://www.joshwcomeau.com/"
-      },
-      {
-        "label": "X",
-        "url": "https://x.com/JoshWComeau"
-      }
-    ],
-    "techniqueSlugs": [],
-    "highlights": [
-      "Interactive CSS/animation education without slop demos.",
-      "Prior Gatsby, DigitalOcean, Khan Academy engineering.",
-      "Open-source: use-sound, react-flip-move."
     ]
   },
   {
@@ -1022,33 +1245,6 @@
     ]
   },
   {
-    "slug": "linus-lee",
-    "name": "Linus Lee",
-    "status": "directory",
-    "role": "Researcher · tools for thought · thesephist",
-    "bio": "Linus Lee publishes as thesephist.com, documenting research and advising on AI interpretability interfaces. Public bio lists prior Research Engineer work at Notion, Researcher in Residence at Betaworks, and earlier roles at Replit and related labs. Most active publicly as @thesephist on X and GitHub.",
-    "links": [
-      {
-        "label": "Site",
-        "url": "https://thesephist.com/"
-      },
-      {
-        "label": "X",
-        "url": "https://x.com/thesephist"
-      },
-      {
-        "label": "GitHub",
-        "url": "https://github.com/thesephist"
-      }
-    ],
-    "techniqueSlugs": [],
-    "highlights": [
-      "Public tools-for-thought and AI interface research writing.",
-      "Prior Notion, Betaworks, Replit research/engineering roles.",
-      "Active as @thesephist across X and GitHub."
-    ]
-  },
-  {
     "slug": "luke-wroblewski",
     "name": "Luke Wroblewski",
     "status": "directory",
@@ -1096,64 +1292,6 @@
       "Public teaching on shaders and real-time 3D for the web.",
       "Craft blog aimed at builders leveling visual engineering taste.",
       "Portfolio of fast, designed frontend experiences."
-    ]
-  },
-  {
-    "slug": "meng-to",
-    "name": "Meng To",
-    "status": "directory",
-    "role": "Founder · Design+Code · designer/educator",
-    "bio": "Meng To is a designer and teacher in Singapore who founded Design+Code, teaching designers to code and developers to design. Public materials describe tens of thousands of paid customers and courses spanning design and implementation. His personal site also documents sketchbook work and AI-era education experiments around DesignCode.",
-    "links": [
-      {
-        "label": "Site",
-        "url": "https://mengto.com/"
-      },
-      {
-        "label": "Design+Code",
-        "url": "https://designcode.io/"
-      },
-      {
-        "label": "X",
-        "url": "https://x.com/MengTo"
-      }
-    ],
-    "techniqueSlugs": [],
-    "highlights": [
-      "Founder of Design+Code education platform.",
-      "Public stance: craft education stays relevant amid AI slop.",
-      "Personal site pairs product teaching with observational drawing."
-    ]
-  },
-  {
-    "slug": "naz-hamid",
-    "name": "Naz Hamid",
-    "status": "directory",
-    "role": "Designer · Weightshift · Aphera",
-    "bio": "Naz Hamid is a San Francisco–based designer, photographer, and writer. He founded the design studio Weightshift (clients spanning Abstract, Dropbox, Intercom, and others), helped build design at VSCO, and co-founded Aphera, a Mac photo editor. Public essays on nazhamid.com argue for human craft against AI particle-board aesthetics.",
-    "links": [
-      {
-        "label": "Site",
-        "url": "https://nazhamid.com/"
-      },
-      {
-        "label": "Weightshift",
-        "url": "https://weightshift.com/"
-      },
-      {
-        "label": "GitHub",
-        "url": "https://github.com/nazhamid"
-      },
-      {
-        "label": "X",
-        "url": "https://x.com/weightshift"
-      }
-    ],
-    "techniqueSlugs": [],
-    "highlights": [
-      "Founder of Weightshift; co-founder of Aphera.",
-      "Prior VSCO design leadership and long client craft practice.",
-      "Public essays: Craft Is Not Culture, Real Wood, The Drawing Hand."
     ]
   },
   {
@@ -1343,29 +1481,6 @@
       "Vercel: platform, Next.js, AI SDK, v0 craft.",
       "Public site documents creative coding and HCI interests.",
       "Designer-developer bridge for developer tools UX."
-    ]
-  },
-  {
-    "slug": "tobias-van-schneider",
-    "name": "Tobias van Schneider",
-    "status": "directory",
-    "role": "Designer & maker · vanschneider.com",
-    "bio": "Tobias van Schneider is a designer and maker whose public brand centers on independent product and studio craft. His X bio and site point to personal projects including tools and collections aimed at attention and making. Directory entry credits public presence only; no affiliation claimed.",
-    "links": [
-      {
-        "label": "Site",
-        "url": "https://vanschneider.com/"
-      },
-      {
-        "label": "X",
-        "url": "https://x.com/vanschneider"
-      }
-    ],
-    "techniqueSlugs": [],
-    "highlights": [
-      "Independent designer/maker with long public craft presence.",
-      "Site and X document products and studio work.",
-      "Cited here as a public craft voice—not an endorsement."
     ]
   },
   {

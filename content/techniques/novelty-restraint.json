@@ -1,0 +1,60 @@
+{
+  "slug": "novelty-restraint",
+  "number": 44,
+  "stage": "Deliver",
+  "title": "Season novelty by frequency",
+  "principle": "The more often an action is performed, the less rewarding novel motion becomes. Make most things familiar; do something unexpected where intent allows.",
+  "procedure": [
+    "Classify actions: high / medium / low frequency.",
+    "Strip novel motion from high-frequency paths.",
+    "Reserve novelty for moments users seek delight or first-run wonder.",
+    "Check intent: games tolerate more novelty than banking.",
+    "Re-review after launch—novelty decays with exposure."
+  ],
+  "examplePrompts": [
+    "Audit novelty vs frequency on this UI.\n\nList actions with frequency tags.\nRemove novel motion from high-frequency actions.\nKeep at most one unexpected moment where intent invites it.\nExplain cuts."
+  ],
+  "promptWhy": [
+    "Makes the frequency rule operational."
+  ],
+  "tips": [
+    "Rauno: novelty = exclamation mark; purple-as-vibe shows decay.",
+    "Make most things familiar, do something unexpected.",
+    "Cite: rauno.me/craft/novelty"
+  ],
+  "sourceUrls": [
+    "https://rauno.me/craft/novelty"
+  ],
+  "related": [
+    "invisible-interaction-details",
+    "cut-elements"
+  ],
+  "pairsWellWith": [
+    "delight-in-the-details",
+    "cut-elements"
+  ],
+  "workedExamples": [
+    {
+      "title": "Confetti on Save",
+      "before": "Full celebration every autosave.",
+      "after": "Quiet save; celebration only on rare milestone.",
+      "body": "High-frequency actions hate novelty. Cite novelty essay."
+    },
+    {
+      "title": "Vibe-shift purple",
+      "before": "Trendy accent on every surface.",
+      "after": "Restrained palette; novelty in one motif that fits intent.",
+      "body": "Rauno notes purple-as-vibe got watered down by overuse."
+    }
+  ],
+  "antiPatterns": [
+    "Novel chrome on the most-clicked control.",
+    "Ignoring audience intent."
+  ],
+  "checklist": [
+    "Frequency tags exist.",
+    "High-frequency novelty removed.",
+    "At most one intentional surprise.",
+    "Intent checked."
+  ]
+}

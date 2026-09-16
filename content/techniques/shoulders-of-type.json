@@ -1,0 +1,59 @@
+{
+  "slug": "shoulders-of-type",
+  "number": 46,
+  "stage": "Discover",
+  "title": "Stand on type’s shoulders",
+  "principle": "Before inventing decorative lettering, study existing type anatomy and historical forms so invention is informed—not accidental.",
+  "procedure": [
+    "Identify the genre (script, display sans, slab) and 3 historical references.",
+    "Trace or redraw a reference to learn its rhythm.",
+    "List non-negotiable anatomy rules for that genre.",
+    "Only then invent a twist that still obeys the rules.",
+    "Credit references in process docs."
+  ],
+  "examplePrompts": [
+    "Prepare a lettering brief grounded in type history.\n\nGenre: <…>\n3 references + what we learn from each.\nAnatomy rules we will not break.\nOne intentional twist.\n crediting note for process doc."
+  ],
+  "promptWhy": [
+    "Grounds invention in literacy."
+  ],
+  "tips": [
+    "Hische’s craft is rooted in deep type literacy made public.",
+    "Cite: jessicahische.is"
+  ],
+  "sourceUrls": [
+    "https://jessicahische.is/"
+  ],
+  "related": [
+    "lettering-process-passes",
+    "taste-as-filter"
+  ],
+  "pairsWellWith": [
+    "lettering-process-passes",
+    "taste-as-filter"
+  ],
+  "workedExamples": [
+    {
+      "title": "Invent from zero",
+      "before": "Draw fancy letters with no references.",
+      "after": "Three refs studied; twist after rules.",
+      "body": "Literacy before novelty."
+    },
+    {
+      "title": "Genre mash accident",
+      "before": "Script terminals on a slab skeleton.",
+      "after": "Pick a genre; obey its anatomy.",
+      "body": "Rules make twists readable."
+    }
+  ],
+  "antiPatterns": [
+    "Ignoring historical craft.",
+    "Twisting before understanding."
+  ],
+  "checklist": [
+    "References listed.",
+    "Anatomy rules written.",
+    "Twist is intentional.",
+    "Credits noted."
+  ]
+}

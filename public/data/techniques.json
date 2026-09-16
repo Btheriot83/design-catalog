@@ -2527,5 +2527,1443 @@
       "Empty/loading/error copy is honest.",
       "Nesting justified or removed."
     ]
+  },
+  {
+    "slug": "materials-not-features",
+    "number": 37,
+    "stage": "Define",
+    "title": "Design with materials, not features",
+    "principle": "For open-ended creative software, don’t ship a bag of buttons for N tasks. Present materials with consistent laws of physics so users compose N×N capabilities.",
+    "procedure": [
+      "Name the primary materials the user will manipulate (shapes, commits, clips, notes)—not the feature list.",
+      "Write the laws of physics: what can combine, collide, nest, or never occupy the same slot.",
+      "Prefer spatial/composable metaphors over deep menu hierarchies when tasks are open-ended.",
+      "Stress-test: can a user invent a workflow you didn’t design? If not, you still have a feature bag.",
+      "Cut features that don’t act on a material; fold them into tools that operate on materials."
+    ],
+    "examplePrompts": [
+      "Redesign this product as materials + laws of physics, not a feature menu.\n\nPrimary materials: <list>\nLaws of physics: <what can combine / collide / nest>\nTasks that must remain possible: <list>\nDo not add unrelated feature buttons. Show how each capability emerges from materials.",
+      "Compare two IA sketches: (A) feature-bag home with N buttons, (B) one canvas of materials with tools. Prefer B unless tasks are single-path. Explain tradeoffs in one paragraph."
+    ],
+    "promptWhy": [
+      "Forces the model to invent composable primitives instead of menu sprawl.",
+      "Makes the feature-bag failure mode explicit before pixels."
+    ],
+    "tips": [
+      "Linus: feature-bag apps fit well-defined paths (Uber, Search); material apps fit open creation (Figma, Notes, Git).",
+      "Git’s material is the commit—even without a spatial metaphor.",
+      "Cite: thesephist.com/posts/materials/"
+    ],
+    "sourceUrls": [
+      "https://thesephist.com/posts/materials/"
+    ],
+    "related": [
+      "invent-software-materials",
+      "ambitious-prompts",
+      "specify-the-look"
+    ],
+    "pairsWellWith": [
+      "invent-software-materials",
+      "seed-strings"
+    ],
+    "workedExamples": [
+      {
+        "title": "Figma vs Uber home",
+        "before": "Home is a grid of feature buttons for every job.",
+        "after": "Canvas of shapes/text with tools that operate on materials.",
+        "body": "Linus contrasts Uber/Google (clear paths → features) with Figma/Notes/file explorers (open tasks → materials + physics). Cite materials essay."
+      },
+      {
+        "title": "Git as material",
+        "before": "Version control as a menu of git commands.",
+        "after": "Commits as the material; branches/tags as compositions of commits with strict rules.",
+        "body": "Even without spatial UI, commits obey laws (order, diff, scope). Cite materials essay."
+      }
+    ],
+    "antiPatterns": [
+      "Adding another top-level button for every new workflow.",
+      "Static mockups that freeze materials before you learn their physics in the medium."
+    ],
+    "checklist": [
+      "Materials are named and few.",
+      "Laws of physics are written and consistent.",
+      "At least one unforeseen workflow is possible.",
+      "Feature buttons that don’t act on materials are cut or folded."
+    ]
+  },
+  {
+    "slug": "invent-software-materials",
+    "number": 38,
+    "stage": "Discover",
+    "title": "Invent new software materials",
+    "principle": "Powerful interface innovation comes from discovering new metaphors and reifying them as materials—especially when text and files are too low-level for the job.",
+    "procedure": [
+      "State the job that current materials (text spans, files) cannot express cleanly.",
+      "Ask: discrete or continuous? hierarchical? what weight/salience does each unit carry?",
+      "Borrow a proven metaphor from another medium (timeline clips, spatial boards) only if its physics transfer.",
+      "Prototype the material’s affordances before chrome or marketing.",
+      "Reject materials that are only labels on the same old feature bag."
+    ],
+    "examplePrompts": [
+      "Invent a software material for <domain>.\n\nCurrent weak abstraction: <e.g. flat URL history list>\nQuestions to answer: discrete vs continuous; hierarchy; weight; salience.\nPropose: name, laws of physics, 3 operations, 1 metaphor borrow (or none).\nDo not ship a feature list."
+    ],
+    "promptWhy": [
+      "Blocks feature-list answers; demands a reified material."
+    ],
+    "tips": [
+      "Linus sketches browsing history as a clips-and-timeline reel instead of a URL list.",
+      "Tools for thought may need materials above text but below files.",
+      "Cite: thesephist.com/posts/materials/ and latent essay for LM interfaces."
+    ],
+    "sourceUrls": [
+      "https://thesephist.com/posts/materials/",
+      "https://thesephist.com/posts/latent/"
+    ],
+    "related": [
+      "materials-not-features",
+      "ambitious-prompts"
+    ],
+    "pairsWellWith": [
+      "materials-not-features",
+      "thinking-before-prompt"
+    ],
+    "workedExamples": [
+      {
+        "title": "Browsing history as reel",
+        "before": "History = flat URL list; reopen closed tab is a special feature.",
+        "after": "History = timeline of page clips; reopen = select a span and restore.",
+        "body": "Linus’s sketch: visiting pages records clips; Enter starts a new track; edit/share sessions like video. Cite materials essay."
+      },
+      {
+        "title": "Latent handles for language",
+        "before": "Prompt → wait → retry chat loop.",
+        "after": "Direct manipulation of meaning (drag ‘less formal’, interpolate ideas) as a material interface to LMs.",
+        "body": "From the latent essay: tighter feedback than chat alone. Catalog paraphrases publicly; no endorsement."
+      }
+    ],
+    "antiPatterns": [
+      "Renaming screens without changing the underlying material.",
+      "Copying a metaphor’s chrome without its physics."
+    ],
+    "checklist": [
+      "Job that old materials fail is explicit.",
+      "New material has named operations and constraints.",
+      "At least one borrowed metaphor’s physics are checked for fit.",
+      "Prototype exercises the material, not the marketing page."
+    ]
+  },
+  {
+    "slug": "explorable-explanations",
+    "number": 39,
+    "stage": "Define",
+    "title": "Build explorable explanations",
+    "principle": "When the goal is understanding, let readers manipulate the model—sliders, scrubbers, linked views—instead of only reading a static takeaway chart.",
+    "procedure": [
+      "State the misconception or hard idea the explorable must correct.",
+      "Pick one interactive control that changes the underlying model (not cosmetic filters).",
+      "Link views so one action updates explanation + visual together.",
+      "Provide a default path for skim readers; depth for explorers.",
+      "Instrument failure: if interaction doesn’t change understanding, cut it."
+    ],
+    "examplePrompts": [
+      "Design an explorable for <concept>.\n\nMisconception to correct: <…>\nOne primary control: <slider/scrubber/toggle>\nLinked outputs: <chart + plain-language readout>\nStatic fallback summary for no-JS / reduced motion.\nDo not decorate; the control must change the model."
+    ],
+    "promptWhy": [
+      "Demands model-changing interaction, not decoration."
+    ],
+    "tips": [
+      "Amelia’s public work centers interactive essays and viz craft.",
+      "Explorables beat poster charts when the reader must build intuition.",
+      "Cite: wattenberger.com"
+    ],
+    "sourceUrls": [
+      "https://wattenberger.com/"
+    ],
+    "related": [
+      "show-the-path",
+      "make-it-alive"
+    ],
+    "pairsWellWith": [
+      "show-the-path",
+      "video-motion"
+    ],
+    "workedExamples": [
+      {
+        "title": "Poster chart → explorable",
+        "before": "One static bar chart + long caption.",
+        "after": "Slider on the key parameter; chart + sentence update together.",
+        "body": "Interaction teaches the model; caption alone often doesn’t."
+      },
+      {
+        "title": "Cosmetic filters",
+        "before": "Dropdown that only restyles colors.",
+        "after": "Control that changes the calculation readers must grasp.",
+        "body": "If the model doesn’t move, it’s chrome—not an explorable."
+      }
+    ],
+    "antiPatterns": [
+      "Interactivity that only toggles theme.",
+      "No static summary for accessibility / reduced motion."
+    ],
+    "checklist": [
+      "Misconception is named.",
+      "One control changes the model.",
+      "Views stay linked.",
+      "Static fallback exists."
+    ]
+  },
+  {
+    "slug": "show-the-path",
+    "number": 40,
+    "stage": "Deliver",
+    "title": "Show the path from data to ink",
+    "principle": "Make the transformation from raw data to visual marks legible so readers can trust—and critique—the representation.",
+    "procedure": [
+      "Expose intermediate steps (filter → aggregate → encode) in UI or adjacent annotation.",
+      "Label encodings: what position/color/size mean in plain language.",
+      "Offer a peek at a row of underlying data near the chart.",
+      "Call out what’s hidden by aggregation.",
+      "Invite critique: what would change the conclusion?"
+    ],
+    "examplePrompts": [
+      "Revise this visualization for trust.\n\nShow: encoding legend in plain language; one sample of raw rows; what aggregation hides.\nAdd a one-line ‘what would overturn this’ note.\nDo not rely on chart junk or unexplained color scales."
+    ],
+    "promptWhy": [
+      "Forces transparency of the visual argument."
+    ],
+    "tips": [
+      "Trust fails when viz is a black box.",
+      "Public viz craft from Amelia emphasizes clarity of representation.",
+      "Cite: wattenberger.com"
+    ],
+    "sourceUrls": [
+      "https://wattenberger.com/"
+    ],
+    "related": [
+      "explorable-explanations",
+      "epistemic-disclosure"
+    ],
+    "pairsWellWith": [
+      "explorable-explanations",
+      "epistemic-disclosure"
+    ],
+    "workedExamples": [
+      {
+        "title": "Mystery color scale",
+        "before": "Rainbow scale, no legend semantics.",
+        "after": "Legend states quantity; sample rows visible; aggregation noted.",
+        "body": "Path from data to ink is readable; critique becomes possible."
+      },
+      {
+        "title": "Aggregation hide",
+        "before": "Average line only.",
+        "after": "Average + note that outliers were clipped + link to distribution.",
+        "body": "Disclose what the summary erases."
+      }
+    ],
+    "antiPatterns": [
+      "Unexplained encodings.",
+      "No way to see underlying rows."
+    ],
+    "checklist": [
+      "Encodings are plain-language labeled.",
+      "Sample data is reachable.",
+      "Aggregation limits are stated.",
+      "A critique hook exists."
+    ]
+  },
+  {
+    "slug": "teach-with-interactive-widgets",
+    "number": 41,
+    "stage": "Define",
+    "title": "Teach with interactive widgets",
+    "principle": "When explaining visual systems (CSS, layout, motion), put a live control next to the prose so readers change values and see results—don’t only show static code screenshots.",
+    "procedure": [
+      "Pick the one property or concept that must be felt, not just read.",
+      "Build a minimal widget: control + live preview + readable output values.",
+      "Keep the widget’s scope tiny; one lesson per control cluster.",
+      "Sync code sample text with widget state when possible.",
+      "Provide reduced-motion / no-JS fallbacks for the same lesson."
+    ],
+    "examplePrompts": [
+      "Add an interactive teaching widget for <CSS concept>.\n\nControl(s): <sliders/toggles>\nLive preview requirement: updates within 100ms.\nShow current computed values as text.\nInclude a static before/after for reduced motion.\nDo not bury the lesson in a long code dump alone."
+    ],
+    "promptWhy": [
+      "Forces a learn-by-feeling artifact."
+    ],
+    "tips": [
+      "Josh’s essays are known for embedded interactive demos.",
+      "Feeling the property beats memorizing the property.",
+      "Cite: joshwcomeau.com"
+    ],
+    "sourceUrls": [
+      "https://www.joshwcomeau.com/"
+    ],
+    "related": [
+      "delight-in-the-details",
+      "explorable-explanations"
+    ],
+    "pairsWellWith": [
+      "delight-in-the-details",
+      "explorable-explanations"
+    ],
+    "workedExamples": [
+      {
+        "title": "Static code dump",
+        "before": "Long CSS block + screenshot.",
+        "after": "Slider for the key property + live box + synced snippet.",
+        "body": "Readers learn by tweaking; matches Comeau teaching craft."
+      },
+      {
+        "title": "Overloaded playground",
+        "before": "20 controls on one widget.",
+        "after": "One cluster teaching one idea; next idea on next widget.",
+        "body": "Scope the lesson; don’t recreate Figma inside the essay."
+      }
+    ],
+    "antiPatterns": [
+      "Screenshot-only explanations for dynamic ideas.",
+      "Widgets that ignore reduced motion."
+    ],
+    "checklist": [
+      "One concept per widget.",
+      "Live preview + readable values.",
+      "Fallback exists.",
+      "Code and widget stay in sync."
+    ]
+  },
+  {
+    "slug": "delight-in-the-details",
+    "number": 42,
+    "stage": "Deliver",
+    "title": "Delight in the details",
+    "principle": "Spend care on micro-interactions, focus states, and edge copy that most users only notice when missing—polish is a signal of respect.",
+    "procedure": [
+      "List five moments a careful user will touch (focus, empty, error, success, hover).",
+      "Design each moment intentionally; ban default browser leftovers where brand matters.",
+      "Add one surprise of restraint (not fireworks)—timing, easing, or copy.",
+      "Verify keyboard and reduced-motion paths feel equally considered.",
+      "Cut any delight that slows a frequent action (novelty vs frequency)."
+    ],
+    "examplePrompts": [
+      "Polish the five touch moments on this UI: focus, empty, error, success, hover.\n\nFor each: intended feel in 5 words; motion ≤200ms or none; copy rewrite.\nRespect prefers-reduced-motion.\nDo not add confetti to primary flows."
+    ],
+    "promptWhy": [
+      "Turns vague ‘make it nice’ into a checklist of moments."
+    ],
+    "tips": [
+      "Comeau’s public writing obsesses over CSS details that feel good in the hand.",
+      "Pair with Rauno’s novelty restraint for high-frequency actions.",
+      "Cite: joshwcomeau.com"
+    ],
+    "sourceUrls": [
+      "https://www.joshwcomeau.com/animation/css-transitions/",
+      "https://www.joshwcomeau.com/"
+    ],
+    "related": [
+      "novelty-restraint",
+      "hand-rewrite-copy"
+    ],
+    "pairsWellWith": [
+      "novelty-restraint",
+      "remove-ai-tells"
+    ],
+    "workedExamples": [
+      {
+        "title": "Default focus ring shame",
+        "before": "outline:none with no replacement.",
+        "after": "Visible, on-brand focus that still passes contrast.",
+        "body": "Detail users feel via keyboard."
+      },
+      {
+        "title": "Empty state shrug",
+        "before": "No items.",
+        "after": "One human sentence + one clear next action.",
+        "body": "Empty states are product moments, not absences."
+      }
+    ],
+    "antiPatterns": [
+      "outline:none without a replacement.",
+      "Delight on the most frequent action that needs speed."
+    ],
+    "checklist": [
+      "Five touch moments designed.",
+      "Focus visible.",
+      "Reduced motion honored.",
+      "No noisy delight on high-frequency actions."
+    ]
+  },
+  {
+    "slug": "invisible-interaction-details",
+    "number": 43,
+    "stage": "Define",
+    "title": "Hunt invisible interaction details",
+    "principle": "Great interaction design hides in thresholds, momentum, and metaphors. Slow-motion the everyday gestures and write down why they feel inevitable.",
+    "procedure": [
+      "Pick a common gesture (swipe dismiss, rubber-band, scrub).",
+      "Record or step through it slowly; note thresholds, easing, failure cases.",
+      "Name the metaphor (physical inertia, camera depth of field, etc.).",
+      "Replicate the why in your product—not a cargo-cult animation.",
+      "Document the rule so future features stay consistent."
+    ],
+    "examplePrompts": [
+      "Analyze this interaction like Rauno’s invisible-details practice.\n\nGesture: <…>\nThresholds / momentum / finger-up behavior:\nMetaphor:\nFailure cases:\nImplementation rule for our UI:\nDo not copy aesthetics without the underlying rule."
+    ],
+    "promptWhy": [
+      "Forces analysis before decoration."
+    ],
+    "tips": [
+      "Rauno: study obscure papers and slow-mo recordings; articulate why it feels right.",
+      "Cite: rauno.me/craft/interaction-design"
+    ],
+    "sourceUrls": [
+      "https://rauno.me/craft/interaction-design"
+    ],
+    "related": [
+      "novelty-restraint",
+      "designing-depth"
+    ],
+    "pairsWellWith": [
+      "novelty-restraint",
+      "make-it-alive"
+    ],
+    "workedExamples": [
+      {
+        "title": "Cargo-cult spring",
+        "before": "Random bounce on every tap.",
+        "after": "Spring only where momentum metaphor applies; documented threshold.",
+        "body": "Invisible details essay: articulate the why, don’t sprinkle motion."
+      },
+      {
+        "title": "Swipe without physics",
+        "before": "Binary dismiss at any drag.",
+        "after": "Distance + velocity thresholds; cancel restores with easing.",
+        "body": "Everyday iOS-like gestures teach threshold craft."
+      }
+    ],
+    "antiPatterns": [
+      "Animating without naming the metaphor.",
+      "Ignoring finger-up / cancel paths."
+    ],
+    "checklist": [
+      "Gesture dissected.",
+      "Metaphor named.",
+      "Rule documented.",
+      "Cancel path designed."
+    ]
+  },
+  {
+    "slug": "novelty-restraint",
+    "number": 44,
+    "stage": "Deliver",
+    "title": "Season novelty by frequency",
+    "principle": "The more often an action is performed, the less rewarding novel motion becomes. Make most things familiar; do something unexpected where intent allows.",
+    "procedure": [
+      "Classify actions: high / medium / low frequency.",
+      "Strip novel motion from high-frequency paths.",
+      "Reserve novelty for moments users seek delight or first-run wonder.",
+      "Check intent: games tolerate more novelty than banking.",
+      "Re-review after launch—novelty decays with exposure."
+    ],
+    "examplePrompts": [
+      "Audit novelty vs frequency on this UI.\n\nList actions with frequency tags.\nRemove novel motion from high-frequency actions.\nKeep at most one unexpected moment where intent invites it.\nExplain cuts."
+    ],
+    "promptWhy": [
+      "Makes the frequency rule operational."
+    ],
+    "tips": [
+      "Rauno: novelty = exclamation mark; purple-as-vibe shows decay.",
+      "Make most things familiar, do something unexpected.",
+      "Cite: rauno.me/craft/novelty"
+    ],
+    "sourceUrls": [
+      "https://rauno.me/craft/novelty"
+    ],
+    "related": [
+      "invisible-interaction-details",
+      "cut-elements"
+    ],
+    "pairsWellWith": [
+      "delight-in-the-details",
+      "cut-elements"
+    ],
+    "workedExamples": [
+      {
+        "title": "Confetti on Save",
+        "before": "Full celebration every autosave.",
+        "after": "Quiet save; celebration only on rare milestone.",
+        "body": "High-frequency actions hate novelty. Cite novelty essay."
+      },
+      {
+        "title": "Vibe-shift purple",
+        "before": "Trendy accent on every surface.",
+        "after": "Restrained palette; novelty in one motif that fits intent.",
+        "body": "Rauno notes purple-as-vibe got watered down by overuse."
+      }
+    ],
+    "antiPatterns": [
+      "Novel chrome on the most-clicked control.",
+      "Ignoring audience intent."
+    ],
+    "checklist": [
+      "Frequency tags exist.",
+      "High-frequency novelty removed.",
+      "At most one intentional surprise.",
+      "Intent checked."
+    ]
+  },
+  {
+    "slug": "lettering-process-passes",
+    "number": 45,
+    "stage": "Define",
+    "title": "Work lettering in deliberate passes",
+    "principle": "Custom lettering quality comes from staged passes—skeleton, weight, contrast, then flourish—not from polishing a weak skeleton.",
+    "procedure": [
+      "Pass 1: skeleton / structure only (no decoration).",
+      "Pass 2: weight and contrast consistency across letters.",
+      "Pass 3: optical corrections (overshoots, spacing).",
+      "Pass 4: flourishes only where structure already sings.",
+      "Stop when decoration starts hiding structure problems."
+    ],
+    "examplePrompts": [
+      "Critique this lettering in passes.\n\n1) Skeleton issues\n2) Weight/contrast issues\n3) Optical spacing\n4) Flourish keep/kill\nDo not add ornament until structure passes."
+    ],
+    "promptWhy": [
+      "Enforces staged craft."
+    ],
+    "tips": [
+      "Hische’s public teaching emphasizes process and craft of letterforms.",
+      "Cite: jessicahische.is"
+    ],
+    "sourceUrls": [
+      "https://jessicahische.is/"
+    ],
+    "related": [
+      "shoulders-of-type",
+      "hierarchy-before-decoration"
+    ],
+    "pairsWellWith": [
+      "shoulders-of-type",
+      "hierarchy-before-decoration"
+    ],
+    "workedExamples": [
+      {
+        "title": "Flourish-first",
+        "before": "Swashes on uneven skeleton.",
+        "after": "Fix skeleton/weight; fewer swashes.",
+        "body": "Decoration can’t rescue structure."
+      },
+      {
+        "title": "Optical miss",
+        "before": "Mathematically equal gaps look uneven.",
+        "after": "Optical spacing pass before shipping.",
+        "body": "Eyes over rulers."
+      }
+    ],
+    "antiPatterns": [
+      "Ornament before skeleton.",
+      "Skipping optical spacing."
+    ],
+    "checklist": [
+      "Skeleton pass done.",
+      "Weight consistent.",
+      "Optical pass done.",
+      "Flourishes justified."
+    ]
+  },
+  {
+    "slug": "shoulders-of-type",
+    "number": 46,
+    "stage": "Discover",
+    "title": "Stand on type’s shoulders",
+    "principle": "Before inventing decorative lettering, study existing type anatomy and historical forms so invention is informed—not accidental.",
+    "procedure": [
+      "Identify the genre (script, display sans, slab) and 3 historical references.",
+      "Trace or redraw a reference to learn its rhythm.",
+      "List non-negotiable anatomy rules for that genre.",
+      "Only then invent a twist that still obeys the rules.",
+      "Credit references in process docs."
+    ],
+    "examplePrompts": [
+      "Prepare a lettering brief grounded in type history.\n\nGenre: <…>\n3 references + what we learn from each.\nAnatomy rules we will not break.\nOne intentional twist.\n crediting note for process doc."
+    ],
+    "promptWhy": [
+      "Grounds invention in literacy."
+    ],
+    "tips": [
+      "Hische’s craft is rooted in deep type literacy made public.",
+      "Cite: jessicahische.is"
+    ],
+    "sourceUrls": [
+      "https://jessicahische.is/"
+    ],
+    "related": [
+      "lettering-process-passes",
+      "taste-as-filter"
+    ],
+    "pairsWellWith": [
+      "lettering-process-passes",
+      "taste-as-filter"
+    ],
+    "workedExamples": [
+      {
+        "title": "Invent from zero",
+        "before": "Draw fancy letters with no references.",
+        "after": "Three refs studied; twist after rules.",
+        "body": "Literacy before novelty."
+      },
+      {
+        "title": "Genre mash accident",
+        "before": "Script terminals on a slab skeleton.",
+        "after": "Pick a genre; obey its anatomy.",
+        "body": "Rules make twists readable."
+      }
+    ],
+    "antiPatterns": [
+      "Ignoring historical craft.",
+      "Twisting before understanding."
+    ],
+    "checklist": [
+      "References listed.",
+      "Anatomy rules written.",
+      "Twist is intentional.",
+      "Credits noted."
+    ]
+  },
+  {
+    "slug": "weight-of-implementation",
+    "number": 47,
+    "stage": "Define",
+    "title": "Account for implementation weight",
+    "principle": "Every visual choice has a cost in code, maintenance, and performance. Weigh delight against weight before committing.",
+    "procedure": [
+      "For each fancy idea, estimate implementation weight (S/M/L) and maintenance.",
+      "Ask what lighter alternative preserves 80% of the feeling.",
+      "Prefer system primitives over one-off snowflakes when weight is high.",
+      "Document accepted weight so future you doesn’t ‘simplify’ blindly.",
+      "Cut ideas whose weight exceeds their contribution to the thesis."
+    ],
+    "examplePrompts": [
+      "Score each proposed detail S/M/L for implementation weight.\n\nFeeling contribution (1–5):\nLighter alternative:\nKeep only if contribution ≥ weight class.\nPrefer system primitives over snowflakes."
+    ],
+    "promptWhy": [
+      "Makes cost of craft explicit."
+    ],
+    "tips": [
+      "Naz’s Weight of Code frames making with cost awareness.",
+      "Cite: weightofcode.com / nazhamid.com"
+    ],
+    "sourceUrls": [
+      "https://weightofcode.com/",
+      "https://nazhamid.com/"
+    ],
+    "related": [
+      "design-with-code-loop",
+      "novelty-restraint"
+    ],
+    "pairsWellWith": [
+      "design-with-code-loop",
+      "cut-elements"
+    ],
+    "workedExamples": [
+      {
+        "title": "Snowflake hero",
+        "before": "Custom WebGL for a minor flourish.",
+        "after": "CSS/system motion that keeps the feeling.",
+        "body": "Weight vs contribution."
+      },
+      {
+        "title": "Uncosted polish list",
+        "before": "20 polish tickets, no weights.",
+        "after": "Scored list; ship high contribution/low weight first.",
+        "body": "Operationalizes weight."
+      }
+    ],
+    "antiPatterns": [
+      "Ignoring maintenance cost.",
+      "Snowflakes by default."
+    ],
+    "checklist": [
+      "Weights estimated.",
+      "Alternatives considered.",
+      "Snowflakes justified.",
+      "Accepted weight documented."
+    ]
+  },
+  {
+    "slug": "design-with-code-loop",
+    "number": 48,
+    "stage": "Discover",
+    "title": "Design in a tight code loop",
+    "principle": "Prefer continuous adjust-in-medium over polished-static-then-implement waterfalls. Learn from the real material early.",
+    "procedure": [
+      "Spike the risky interaction in code/browser on day one.",
+      "Sit designer and implementer on the same artifact (or one design engineer).",
+      "Resize, break, and fix in the medium—don’t wait for a handoff deck.",
+      "Carry learnings back into the system tokens/components.",
+      "Only freeze specs after the medium taught you something."
+    ],
+    "examplePrompts": [
+      "Plan a design-with-code loop for <feature>.\n\nDay-one spike in browser:\nShared artifact owner:\nWhat we must learn from the medium:\nWhen we allow a freeze:\nNo waterfall mock-only path."
+    ],
+    "promptWhy": [
+      "Rejects waterfall by default."
+    ],
+    "tips": [
+      "Aligns with Naz’s design+code practice and Linus’s materials-in-medium stance.",
+      "Cite: nazhamid.com / weightofcode.com"
+    ],
+    "sourceUrls": [
+      "https://nazhamid.com/",
+      "https://weightofcode.com/"
+    ],
+    "related": [
+      "weight-of-implementation",
+      "materials-not-features"
+    ],
+    "pairsWellWith": [
+      "weight-of-implementation",
+      "materials-not-features"
+    ],
+    "workedExamples": [
+      {
+        "title": "Handoff theater",
+        "before": "Final Figma → ticket → surprises in QA.",
+        "after": "Day-one spike; shared artifact; freeze after learning.",
+        "body": "Loop beats waterfall."
+      },
+      {
+        "title": "Responsive guess",
+        "before": "Three static widths drawn.",
+        "after": "Live resize while designing spacing rules.",
+        "body": "Medium teaches."
+      }
+    ],
+    "antiPatterns": [
+      "Mock-only design for interactive risk.",
+      "Separate silos with no shared artifact."
+    ],
+    "checklist": [
+      "Spike scheduled.",
+      "Shared owner.",
+      "Learning goals named.",
+      "Freeze after medium lessons."
+    ]
+  },
+  {
+    "slug": "learn-by-building-ui",
+    "number": 49,
+    "stage": "Discover",
+    "title": "Learn UI by building end-to-end",
+    "principle": "Skill compounds when you ship small complete interfaces—layout, type, color, motion, code—rather than consuming tutorials without an artifact.",
+    "procedure": [
+      "Pick a tiny product surface you can finish in days, not months.",
+      "Implement layout → type → color → interaction in that order.",
+      "Publish or deploy something clickable; screenshots alone don’t count.",
+      "Write three lessons learned while the pain is fresh.",
+      "Repeat with a slightly harder surface; recycle the system."
+    ],
+    "examplePrompts": [
+      "Propose a 3–5 day learn-by-building project.\n\nScope that can ship:\nOrder: layout → type → color → interaction.\nDefinition of done: deployed URL.\nThree reflection prompts after ship.\nNo tutorial-only plan."
+    ],
+    "promptWhy": [
+      "Forces an artifact-based learning plan."
+    ],
+    "tips": [
+      "Meng’s Design+Code ethos: design and code learned together by making.",
+      "Cite: designcode.io"
+    ],
+    "sourceUrls": [
+      "https://designcode.io/"
+    ],
+    "related": [
+      "systemize-repeating-ui",
+      "design-with-code-loop"
+    ],
+    "pairsWellWith": [
+      "systemize-repeating-ui",
+      "design-with-code-loop"
+    ],
+    "workedExamples": [
+      {
+        "title": "Tutorial hoarding",
+        "before": "20 courses, 0 shipped UI.",
+        "after": "One tiny deployed surface + reflection.",
+        "body": "Building closes the loop."
+      },
+      {
+        "title": "Mock-only practice",
+        "before": "Pretty Figma, never in code.",
+        "after": "Same UI in production constraints.",
+        "body": "Medium teaches what boards hide."
+      }
+    ],
+    "antiPatterns": [
+      "Consuming without shipping.",
+      "Scope so large nothing ships."
+    ],
+    "checklist": [
+      "Scope finishable.",
+      "Deployed artifact.",
+      "Reflection written.",
+      "Next surface planned."
+    ]
+  },
+  {
+    "slug": "systemize-repeating-ui",
+    "number": 50,
+    "stage": "Define",
+    "title": "Systemize what repeats",
+    "principle": "When the same card/button/spacing appears thrice, extract tokens and components. Systems free attention for the non-repeating moments.",
+    "procedure": [
+      "Inventory repeated UI (3+ occurrences).",
+      "Extract tokens: space, type, color, radius.",
+      "Build components with clear variants—not one mega-prop soup.",
+      "Document do/don’t with screenshots.",
+      "Leave intentional one-offs outside the system with a note."
+    ],
+    "examplePrompts": [
+      "Build a mini system from this UI.\n\nRepeated elements (≥3):\nTokens to extract:\nComponents + variants:\nOne intentional one-off with justification:\nDo not systematize unique moments."
+    ],
+    "promptWhy": [
+      "Turns repetition into a system responsibly."
+    ],
+    "tips": [
+      "Design+Code teaching emphasizes reusable UI systems paired with code.",
+      "Cite: designcode.io"
+    ],
+    "sourceUrls": [
+      "https://designcode.io/"
+    ],
+    "related": [
+      "learn-by-building-ui",
+      "design-system-from-assets"
+    ],
+    "pairsWellWith": [
+      "learn-by-building-ui",
+      "design-system-from-assets"
+    ],
+    "workedExamples": [
+      {
+        "title": "Copy-paste cards",
+        "before": "Slightly different padding each time.",
+        "after": "Card component + space tokens.",
+        "body": "Repetition → system."
+      },
+      {
+        "title": "Mega-component",
+        "before": "One Button with 40 boolean props.",
+        "after": "Small variant set; compose.",
+        "body": "Systems stay usable."
+      }
+    ],
+    "antiPatterns": [
+      "Systematizing one-offs.",
+      "No documentation of variants."
+    ],
+    "checklist": [
+      "Inventory done.",
+      "Tokens exist.",
+      "Variants clear.",
+      "One-offs labeled."
+    ]
+  },
+  {
+    "slug": "evergreen-notes",
+    "number": 51,
+    "stage": "Define",
+    "title": "Write evergreen notes",
+    "principle": "Prefer concept-oriented notes that are atomically clear, densely linked, and refined over time—not dated daily dump files.",
+    "procedure": [
+      "Title notes as concepts (not ‘Tuesday meeting’).",
+      "One idea per note; split when a note smuggles two.",
+      "Link aggressively to related concepts; write the link context.",
+      "Revise notes when understanding improves; don’t freeze first drafts.",
+      "Prefer associational navigation over chronological logs for ideas."
+    ],
+    "examplePrompts": [
+      "Convert these raw notes into evergreen notes.\n\nRules: concept titles; atomic; contextual links; revise language for clarity.\nReject date-titled dumps.\nOutput 5 evergreen note outlines with links between them."
+    ],
+    "promptWhy": [
+      "Operationalizes evergreen rules."
+    ],
+    "tips": [
+      "Andy’s public notes define evergreen note practice.",
+      "Pairs with Maggie’s garden ethos.",
+      "Cite: notes.andymatuschak.org"
+    ],
+    "sourceUrls": [
+      "https://notes.andymatuschak.org/",
+      "https://andymatuschak.org/"
+    ],
+    "related": [
+      "mnemonic-medium-prompts",
+      "topography-over-timelines"
+    ],
+    "pairsWellWith": [
+      "mnemonic-medium-prompts",
+      "topography-over-timelines"
+    ],
+    "workedExamples": [
+      {
+        "title": "Daily dump",
+        "before": "2026-09-16.md wall of bullets.",
+        "after": "Concept notes linked; daily file only as inbox.",
+        "body": "Evergreen practice."
+      },
+      {
+        "title": "Essay monolith",
+        "before": "One 3k-word file mixing five ideas.",
+        "after": "Five atomic notes + links.",
+        "body": "Atomicity enables reuse."
+      }
+    ],
+    "antiPatterns": [
+      "Date-only knowledge base.",
+      "Never revising notes."
+    ],
+    "checklist": [
+      "Concept titles.",
+      "Atomic notes.",
+      "Contextual links.",
+      "Revision habit."
+    ]
+  },
+  {
+    "slug": "mnemonic-medium-prompts",
+    "number": 52,
+    "stage": "Deliver",
+    "title": "Embed mnemonic prompts in reading",
+    "principle": "If lasting understanding matters, put retrieval prompts in the medium itself—so memory practice is part of reading, not a separate chore.",
+    "procedure": [
+      "Identify the few ideas that must stick.",
+      "Write retrieval prompts (not recognition quizzes) near those ideas.",
+      "Schedule lightweight revisit affordances in the UI if possible.",
+      "Avoid prompt spam—only where forgetting is costly.",
+      "Measure whether people remember, not whether they scrolled."
+    ],
+    "examplePrompts": [
+      "Add mnemonic prompts to this explainer.\n\nIdeas that must stick (≤5):\nRetrieval prompts (question form, not multiple choice fluff):\nPlacement next to the idea:\nDo not quiz trivial facts."
+    ],
+    "promptWhy": [
+      "Makes memory a product requirement."
+    ],
+    "tips": [
+      "Andy’s mnemonic medium work (e.g. with Quantum Country collaborators) is public.",
+      "Cite: andymatuschak.org / notes"
+    ],
+    "sourceUrls": [
+      "https://andymatuschak.org/",
+      "https://notes.andymatuschak.org/"
+    ],
+    "related": [
+      "evergreen-notes",
+      "teach-with-interactive-widgets"
+    ],
+    "pairsWellWith": [
+      "evergreen-notes",
+      "teach-with-interactive-widgets"
+    ],
+    "workedExamples": [
+      {
+        "title": "Scroll amnesia",
+        "before": "Beautiful essay, nothing retained.",
+        "after": "Three retrieval prompts at key claims.",
+        "body": "Memory in the medium."
+      },
+      {
+        "title": "Trivia spam",
+        "before": "Quiz every paragraph.",
+        "after": "Only costly-to-forget ideas get prompts.",
+        "body": "Restraint keeps prompts meaningful."
+      }
+    ],
+    "antiPatterns": [
+      "No memory design when learning is the goal.",
+      "Recognition-only quizzes."
+    ],
+    "checklist": [
+      "≤5 sticky ideas.",
+      "Retrieval prompts written.",
+      "Placement intentional.",
+      "No trivia spam."
+    ]
+  },
+  {
+    "slug": "taste-as-filter",
+    "number": 53,
+    "stage": "Discover",
+    "title": "Train taste as a filter",
+    "principle": "Taste is curated judgment: collect references, articulate why they work, and use that filter to reject average options early—not after polish.",
+    "procedure": [
+      "Collect 10 references you respect; write one sentence why each works.",
+      "Extract 3 transferable rules (not ‘I like blue’).",
+      "Apply the filter to first drafts: kill anything that fails the rules.",
+      "Update the filter when a project teaches a new why.",
+      "Keep the filter personal and specific—avoid generic ‘clean modern’."
+    ],
+    "examplePrompts": [
+      "Build a taste filter for this project.\n\n10 references with one-sentence whys.\n3 rules we will obey.\nList of defaults we will reject on sight.\nDo not output a generic mood board without rules."
+    ],
+    "promptWhy": [
+      "Forces articulated taste, not vibes."
+    ],
+    "tips": [
+      "van Schneider’s public writing emphasizes personal taste and process.",
+      "Filters beat endless optioneering.",
+      "Cite: vanschneider.com"
+    ],
+    "sourceUrls": [
+      "https://www.vanschneider.com/",
+      "https://www.vanschneider.com/articles"
+    ],
+    "related": [
+      "protect-the-feeling",
+      "ambitious-prompts"
+    ],
+    "pairsWellWith": [
+      "protect-the-feeling",
+      "seed-strings"
+    ],
+    "workedExamples": [
+      {
+        "title": "Moodboard without why",
+        "before": "30 pretty screenshots, no rules.",
+        "after": "10 refs + why + 3 enforceable rules.",
+        "body": "Taste becomes operational."
+      },
+      {
+        "title": "Late regret",
+        "before": "Polish a direction you already dislike.",
+        "after": "Filter kills it at draft 1.",
+        "body": "Train judgment early."
+      }
+    ],
+    "antiPatterns": [
+      "Vague adjectives as a filter.",
+      "Copying references’ chrome without the why."
+    ],
+    "checklist": [
+      "Whys written.",
+      "Three rules enforceable.",
+      "Reject list exists.",
+      "Filter applied to drafts."
+    ]
+  },
+  {
+    "slug": "protect-the-feeling",
+    "number": 54,
+    "stage": "Deliver",
+    "title": "Protect the feeling when shipping",
+    "principle": "Every late addition can dilute the feeling you fought for. Ship decisions should defend the emotional thesis of the piece.",
+    "procedure": [
+      "Write the feeling in one sentence (calm authority, playful precision, etc.).",
+      "For each late request, ask: does this strengthen or dilute the feeling?",
+      "Cut or quarantine diluting requests into a later experiment.",
+      "Preserve silence/negative space that carries the feeling.",
+      "Final pass: remove one thing that doesn’t serve the sentence."
+    ],
+    "examplePrompts": [
+      "Feeling thesis: <one sentence>.\nAudit these late requests: <list>.\nKeep / cut / quarantine each with a one-line reason tied to the thesis.\nEnd by removing one non-serving element."
+    ],
+    "promptWhy": [
+      "Ties cuts to an emotional thesis."
+    ],
+    "tips": [
+      "Process essays from van Schneider stress intention through to shipping.",
+      "Cite: vanschneider.com"
+    ],
+    "sourceUrls": [
+      "https://www.vanschneider.com/"
+    ],
+    "related": [
+      "taste-as-filter",
+      "cut-elements"
+    ],
+    "pairsWellWith": [
+      "taste-as-filter",
+      "cut-elements"
+    ],
+    "workedExamples": [
+      {
+        "title": "Stakeholder sticker pack",
+        "before": "Add badges, banners, and a second CTA ‘just in case’.",
+        "after": "One CTA; extras quarantined; silence preserved.",
+        "body": "Feeling thesis decides."
+      },
+      {
+        "title": "Loud last mile",
+        "before": "Marketing overlay breaks the calm layout.",
+        "after": "Overlay redesigned to obey the thesis or cut.",
+        "body": "Protect the feeling at the finish."
+      }
+    ],
+    "antiPatterns": [
+      "Shipping every request.",
+      "Letting silence get filled by default."
+    ],
+    "checklist": [
+      "Feeling sentence exists.",
+      "Late requests audited.",
+      "At least one cut.",
+      "Silence preserved where intended."
+    ]
+  },
+  {
+    "slug": "epistemic-disclosure",
+    "number": 55,
+    "stage": "Deliver",
+    "title": "Disclose epistemic status",
+    "principle": "Tell readers how sure you are and what kind of claim you’re making. Metadata about validity builds trust in public knowledge work.",
+    "procedure": [
+      "Label claims: observation / hypothesis / established / contested.",
+      "Surface ‘planted’ and ‘last tended’ dates on living notes.",
+      "Separate speculation from cited fact in layout (not just prose hedges).",
+      "When AI assists, disclose assistance where it matters for trust.",
+      "Never present a seedling idea with evergreen typography."
+    ],
+    "examplePrompts": [
+      "Add epistemic disclosure to this page.\n\nFor each major claim, tag: observation | hypothesis | established | contested.\nShow planted/last-tended dates.\nVisually demote speculative sections.\nDo not make uncertain claims look canonical."
+    ],
+    "promptWhy": [
+      "Forces honest certainty labeling in the artifact itself."
+    ],
+    "tips": [
+      "Maggie’s Garden uses planted/tended language as a design pattern.",
+      "Epistemic disclosure is a named pattern in her garden.",
+      "Cite: maggieappleton.com/epistemic-disclosure"
+    ],
+    "sourceUrls": [
+      "https://maggieappleton.com/epistemic-disclosure",
+      "https://maggieappleton.com/garden-history"
+    ],
+    "related": [
+      "topography-over-timelines",
+      "hand-rewrite-copy"
+    ],
+    "pairsWellWith": [
+      "topography-over-timelines",
+      "remove-ai-tells"
+    ],
+    "workedExamples": [
+      {
+        "title": "Seedling dressed as doctrine",
+        "before": "Half-baked take set in authoritative H1 with no dates.",
+        "after": "Seedling badge + planted/tended + hypothesis tag.",
+        "body": "Matches Garden practice of growth states and epistemic honesty."
+      },
+      {
+        "title": "Speculation vs citation",
+        "before": "Mix of vibes and sources in one undifferentiated wall.",
+        "after": "Cited facts in body; speculation in a demoted ‘hypothesis’ block.",
+        "body": "Layout carries epistemic status, not only hedging words."
+      }
+    ],
+    "antiPatterns": [
+      "Authoritative chrome on uncertain claims.",
+      "Hiding last-updated on living documents."
+    ],
+    "checklist": [
+      "Major claims are tagged by certainty.",
+      "Dates of planting/tending are visible.",
+      "Speculation is visually demoted.",
+      "Typography doesn’t overclaim."
+    ]
+  },
+  {
+    "slug": "data-as-playful-material",
+    "number": 56,
+    "stage": "Define",
+    "title": "Treat data as playful material",
+    "principle": "Data can be a material for playful interaction—not only a solemn chart. Let people poke, rearrange, and feel the dataset.",
+    "procedure": [
+      "Name the human question the dataset answers.",
+      "Pick one playful verb (scatter, stack, sort, scrub) that reveals structure.",
+      "Prototype tactile feedback (motion/sound/haptics) lightly.",
+      "Keep accuracy honest while inviting play.",
+      "Cut play that obscures the question."
+    ],
+    "examplePrompts": [
+      "Design a playful data interaction.\n\nDataset question:\nPlayful verb:\nHow play reveals structure:\nAccuracy guardrails:\nKill criteria if play obscures."
+    ],
+    "promptWhy": [
+      "Binds play to insight."
+    ],
+    "tips": [
+      "Dawes’s public body of work explores inventive data/interaction materials.",
+      "Cite: brendandawes.com"
+    ],
+    "sourceUrls": [
+      "https://brendandawes.com/"
+    ],
+    "related": [
+      "constraint-bred-play",
+      "explorable-explanations"
+    ],
+    "pairsWellWith": [
+      "constraint-bred-play",
+      "explorable-explanations"
+    ],
+    "workedExamples": [
+      {
+        "title": "Solemn dashboard only",
+        "before": "Static KPI cards.",
+        "after": "Scrubable timeline that makes patterns felt.",
+        "body": "Play as understanding."
+      },
+      {
+        "title": "Play without question",
+        "before": "Particles for their own sake.",
+        "after": "Verb tied to the dataset question.",
+        "body": "Play must reveal."
+      }
+    ],
+    "antiPatterns": [
+      "Decoration disconnected from data.",
+      "Play that lies."
+    ],
+    "checklist": [
+      "Question named.",
+      "Verb chosen.",
+      "Accuracy guarded.",
+      "Obscuring play cut."
+    ]
+  },
+  {
+    "slug": "constraint-bred-play",
+    "number": 57,
+    "stage": "Discover",
+    "title": "Let constraints breed play",
+    "principle": "Inventive interaction often comes from tight constraints—limited inputs, one sensor, one color—not from unlimited freedom.",
+    "procedure": [
+      "Impose a tight constraint (one input, one material, 3 seconds, monochrome).",
+      "Brainstorm only inside the constraint for a fixed timebox.",
+      "Pick the idea that feels inevitable given the limit.",
+      "Expand only after the constrained idea is strong.",
+      "Document the constraint so the team doesn’t ‘help’ by removing it early."
+    ],
+    "examplePrompts": [
+      "Run a constrained ideation.\n\nHard constraint: <…>\nTimebox: 25 minutes.\nProduce 5 ideas that obey the constraint.\nSelect one that feels inevitable.\nForbid removing the constraint to ‘make it easier’."
+    ],
+    "promptWhy": [
+      "Uses limits as a generative tool."
+    ],
+    "tips": [
+      "Creative technology practice (Dawes and peers) often thrives on limits.",
+      "Cite: brendandawes.com"
+    ],
+    "sourceUrls": [
+      "https://brendandawes.com/"
+    ],
+    "related": [
+      "data-as-playful-material",
+      "seed-strings"
+    ],
+    "pairsWellWith": [
+      "data-as-playful-material",
+      "seed-strings"
+    ],
+    "workedExamples": [
+      {
+        "title": "Blank-canvas sprawl",
+        "before": "Any sensor, any API, any style.",
+        "after": "One input + monochrome → sharper idea.",
+        "body": "Constraints focus invention."
+      },
+      {
+        "title": "Committee removes the fun limit",
+        "before": "‘Also add search, filters, themes…’",
+        "after": "Constraint held until core play works.",
+        "body": "Protect the limit."
+      }
+    ],
+    "antiPatterns": [
+      "Removing constraints too early.",
+      "Constraints with no timebox."
+    ],
+    "checklist": [
+      "Constraint written.",
+      "Timeboxed ideation.",
+      "Inevitable idea selected.",
+      "Constraint protected."
+    ]
+  },
+  {
+    "slug": "design-engineer-ownership",
+    "number": 58,
+    "stage": "Define",
+    "title": "Own the problem as a design engineer",
+    "principle": "When quality matters, one person (or a tight pair) owns design and implementation of a surface—so details don’t die in handoff gaps.",
+    "procedure": [
+      "Assign a single owner for the risky surface.",
+      "Owner can change design in code without a ticket ping-pong.",
+      "Budget time for polish that only appears in the medium.",
+      "Review together on the deployed URL, not only in comps.",
+      "Write down decisions that comps would have missed."
+    ],
+    "examplePrompts": [
+      "Staff this surface with design-engineer ownership.\n\nOwner:\nDecisions they can make without handoff:\nReview happens on: deployed URL\nList details that comps would miss:\nNo pure throw-over-the-wall plan."
+    ],
+    "promptWhy": [
+      "Institutionalizes design-engineer ownership."
+    ],
+    "tips": [
+      "Jim writes about design engineers solving problems comps alone can’t.",
+      "Cite: blog.jim-nielsen.com"
+    ],
+    "sourceUrls": [
+      "https://blog.jim-nielsen.com/"
+    ],
+    "related": [
+      "browser-native-first",
+      "design-with-code-loop"
+    ],
+    "pairsWellWith": [
+      "browser-native-first",
+      "design-with-code-loop"
+    ],
+    "workedExamples": [
+      {
+        "title": "Handoff ping-pong",
+        "before": "Designer tickets every 2px change.",
+        "after": "Owner adjusts in code; review on URL.",
+        "body": "Ownership closes the gap."
+      },
+      {
+        "title": "Comp-perfect, web-wrong",
+        "before": "Signed-off images ignore focus/scroll.",
+        "after": "Owner responsible for real states.",
+        "body": "Medium-owned quality."
+      }
+    ],
+    "antiPatterns": [
+      "Throw-over-the-wall for detail-rich UI.",
+      "Review only in Figma."
+    ],
+    "checklist": [
+      "Owner named.",
+      "Authority clear.",
+      "URL review.",
+      "Missed-by-comps list exists."
+    ]
+  },
+  {
+    "slug": "browser-native-first",
+    "number": 59,
+    "stage": "Deliver",
+    "title": "Prefer browser-native first",
+    "principle": "Reach for native platform capabilities (HTML, CSS, built-in APIs) before heavy custom libraries—less weight, more resilience.",
+    "procedure": [
+      "List features that HTML/CSS/ARIA already provide.",
+      "Use native controls where accessible defaults are good enough.",
+      "Add libraries only when native can’t meet a measured need.",
+      "Document why each dependency earned its weight.",
+      "Revisit dependencies when browsers catch up."
+    ],
+    "examplePrompts": [
+      "Audit this UI for browser-native opportunities.\n\nReplace custom with native where possible.\nFor each remaining library: measured need + weight.\nPrefer progressive enhancement.\nCut vanity dependencies."
+    ],
+    "promptWhy": [
+      "Forces platform-first thinking."
+    ],
+    "tips": [
+      "Jim’s writing often champions working with the web platform.",
+      "Cite: blog.jim-nielsen.com"
+    ],
+    "sourceUrls": [
+      "https://blog.jim-nielsen.com/"
+    ],
+    "related": [
+      "design-engineer-ownership",
+      "weight-of-implementation"
+    ],
+    "pairsWellWith": [
+      "design-engineer-ownership",
+      "weight-of-implementation"
+    ],
+    "workedExamples": [
+      {
+        "title": "Custom date picker sprawl",
+        "before": "Heavy picker for no special need.",
+        "after": "input type=date + progressive enhancement.",
+        "body": "Native first."
+      },
+      {
+        "title": "Unearned dependency",
+        "before": "Animation library for one fade.",
+        "after": "CSS transition; library removed.",
+        "body": "Weight must earn its keep."
+      }
+    ],
+    "antiPatterns": [
+      "Libraries by habit.",
+      "Ignoring accessible native defaults."
+    ],
+    "checklist": [
+      "Native options considered.",
+      "Dependencies justified.",
+      "Progressive enhancement noted.",
+      "Vanity deps cut."
+    ]
+  },
+  {
+    "slug": "design-as-bridge",
+    "number": 60,
+    "stage": "Define",
+    "title": "Treat design as a bridge",
+    "principle": "Design connects people to possibilities. Clarity of the crossing matters more than ornament on the railing.",
+    "procedure": [
+      "Name who is crossing and what possibility waits on the other side.",
+      "Remove obstacles on the bridge (jargon, mystery controls, dead ends).",
+      "Make the next step obvious within one glance.",
+      "Ornament only if it helps orientation or trust.",
+      "Test with someone who wasn’t in the room."
+    ],
+    "examplePrompts": [
+      "Frame this flow as a bridge.\n\nWho crosses: <…>\nPossibility on the other side: <…>\nObstacles to remove: <…>\nOne-glance next step:\nOrnament allowed only if it aids orientation."
+    ],
+    "promptWhy": [
+      "Reframes UI as connection, not decoration."
+    ],
+    "tips": [
+      "Shape of Design frames design as connection/bridge work.",
+      "Cite: shapeofdesignbook.com / frankchimero.com"
+    ],
+    "sourceUrls": [
+      "https://shapeofdesignbook.com/",
+      "https://frankchimero.com/"
+    ],
+    "related": [
+      "what-screens-want",
+      "hand-rewrite-copy"
+    ],
+    "pairsWellWith": [
+      "what-screens-want",
+      "thinking-before-prompt"
+    ],
+    "workedExamples": [
+      {
+        "title": "Ornate dead end",
+        "before": "Beautiful landing, unclear next step.",
+        "after": "One obvious crossing; beauty supports wayfinding.",
+        "body": "Bridge first, railing second."
+      },
+      {
+        "title": "Jargon tollbooth",
+        "before": "Internal terms block newcomers.",
+        "after": "Plain language; terms revealed progressively.",
+        "body": "Remove tolls on the bridge."
+      }
+    ],
+    "antiPatterns": [
+      "Decorating instead of wayfinding.",
+      "Designing only for people in the room."
+    ],
+    "checklist": [
+      "Who/possibility named.",
+      "Obstacles cut.",
+      "Next step obvious.",
+      "Outsider tested."
+    ]
   }
 ]

@@ -1,0 +1,60 @@
+{
+  "slug": "design-as-bridge",
+  "number": 60,
+  "stage": "Define",
+  "title": "Treat design as a bridge",
+  "principle": "Design connects people to possibilities. Clarity of the crossing matters more than ornament on the railing.",
+  "procedure": [
+    "Name who is crossing and what possibility waits on the other side.",
+    "Remove obstacles on the bridge (jargon, mystery controls, dead ends).",
+    "Make the next step obvious within one glance.",
+    "Ornament only if it helps orientation or trust.",
+    "Test with someone who wasn’t in the room."
+  ],
+  "examplePrompts": [
+    "Frame this flow as a bridge.\n\nWho crosses: <…>\nPossibility on the other side: <…>\nObstacles to remove: <…>\nOne-glance next step:\nOrnament allowed only if it aids orientation."
+  ],
+  "promptWhy": [
+    "Reframes UI as connection, not decoration."
+  ],
+  "tips": [
+    "Shape of Design frames design as connection/bridge work.",
+    "Cite: shapeofdesignbook.com / frankchimero.com"
+  ],
+  "sourceUrls": [
+    "https://shapeofdesignbook.com/",
+    "https://frankchimero.com/"
+  ],
+  "related": [
+    "what-screens-want",
+    "hand-rewrite-copy"
+  ],
+  "pairsWellWith": [
+    "what-screens-want",
+    "thinking-before-prompt"
+  ],
+  "workedExamples": [
+    {
+      "title": "Ornate dead end",
+      "before": "Beautiful landing, unclear next step.",
+      "after": "One obvious crossing; beauty supports wayfinding.",
+      "body": "Bridge first, railing second."
+    },
+    {
+      "title": "Jargon tollbooth",
+      "before": "Internal terms block newcomers.",
+      "after": "Plain language; terms revealed progressively.",
+      "body": "Remove tolls on the bridge."
+    }
+  ],
+  "antiPatterns": [
+    "Decorating instead of wayfinding.",
+    "Designing only for people in the room."
+  ],
+  "checklist": [
+    "Who/possibility named.",
+    "Obstacles cut.",
+    "Next step obvious.",
+    "Outsider tested."
+  ]
+}

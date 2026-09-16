@@ -1,0 +1,29 @@
+{
+  "slug": "jim-nielsen",
+  "name": "Jim Nielsen",
+  "status": "partial",
+  "role": "Design engineer · blog craft · browser-native thinking",
+  "bio": "Jim Nielsen writes extensively about design engineering, web craft, and building with the grain of the browser at blog.jim-nielsen.com. Catalogued from public posts—no endorsement.",
+  "links": [
+    {
+      "label": "Blog",
+      "url": "https://blog.jim-nielsen.com/"
+    },
+    {
+      "label": "X",
+      "url": "https://x.com/jimnielsen"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/jimnielsen"
+    }
+  ],
+  "techniqueSlugs": [
+    "design-engineer-ownership",
+    "browser-native-first"
+  ],
+  "highlights": [
+    "Design engineers own the problem across design and implementation.",
+    "Prefer browser-native capabilities before heavy libraries."
+  ]
+}

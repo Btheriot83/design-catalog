@@ -1,0 +1,60 @@
+{
+  "slug": "design-with-code-loop",
+  "number": 48,
+  "stage": "Discover",
+  "title": "Design in a tight code loop",
+  "principle": "Prefer continuous adjust-in-medium over polished-static-then-implement waterfalls. Learn from the real material early.",
+  "procedure": [
+    "Spike the risky interaction in code/browser on day one.",
+    "Sit designer and implementer on the same artifact (or one design engineer).",
+    "Resize, break, and fix in the medium—don’t wait for a handoff deck.",
+    "Carry learnings back into the system tokens/components.",
+    "Only freeze specs after the medium taught you something."
+  ],
+  "examplePrompts": [
+    "Plan a design-with-code loop for <feature>.\n\nDay-one spike in browser:\nShared artifact owner:\nWhat we must learn from the medium:\nWhen we allow a freeze:\nNo waterfall mock-only path."
+  ],
+  "promptWhy": [
+    "Rejects waterfall by default."
+  ],
+  "tips": [
+    "Aligns with Naz’s design+code practice and Linus’s materials-in-medium stance.",
+    "Cite: nazhamid.com / weightofcode.com"
+  ],
+  "sourceUrls": [
+    "https://nazhamid.com/",
+    "https://weightofcode.com/"
+  ],
+  "related": [
+    "weight-of-implementation",
+    "materials-not-features"
+  ],
+  "pairsWellWith": [
+    "weight-of-implementation",
+    "materials-not-features"
+  ],
+  "workedExamples": [
+    {
+      "title": "Handoff theater",
+      "before": "Final Figma → ticket → surprises in QA.",
+      "after": "Day-one spike; shared artifact; freeze after learning.",
+      "body": "Loop beats waterfall."
+    },
+    {
+      "title": "Responsive guess",
+      "before": "Three static widths drawn.",
+      "after": "Live resize while designing spacing rules.",
+      "body": "Medium teaches."
+    }
+  ],
+  "antiPatterns": [
+    "Mock-only design for interactive risk.",
+    "Separate silos with no shared artifact."
+  ],
+  "checklist": [
+    "Spike scheduled.",
+    "Shared owner.",
+    "Learning goals named.",
+    "Freeze after medium lessons."
+  ]
+}
