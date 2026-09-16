@@ -1,7 +1,7 @@
 {
   "slug": "don-norman",
   "name": "Don Norman",
-  "status": "directory",
+  "status": "partial",
   "role": "Cognitive scientist \u00b7 The Design of Everyday Things",
   "bio": "Don Norman is a cognitive scientist and design researcher best known for The Design of Everyday Things. He co-founded the Nielsen Norman Group, helped establish UC San Diego\u2019s Design Lab, and publishes at jnd.org on humanity-centered design. Public work underpins modern usability and affordance vocabulary.",
   "links": [
@@ -18,10 +18,13 @@
       "url": "https://x.com/jnd1er"
     }
   ],
-  "techniqueSlugs": [],
+  "techniqueSlugs": [
+    "affordances-and-signifiers",
+    "design-for-error"
+  ],
   "highlights": [
     "Author of The Design of Everyday Things.",
     "Nielsen Norman Group co-founder; UCSD Design Lab.",
-    "Public advocacy for humanity-centered design."
+    "Affordances/signifiers + design-for-error from public DOET notes."
   ]
 }

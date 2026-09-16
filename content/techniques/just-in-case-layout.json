@@ -1,0 +1,60 @@
+{
+  "slug": "just-in-case-layout",
+  "stage": "Define",
+  "title": "Design the just-in-case layout states",
+  "principle": "Shadeed\u2019s public \u2018just in case\u2019 mindset: before coding, name empty, sparse, dense, error, and loading states so the system isn\u2019t a single happy screenshot. AI prompts that only describe the ideal state ship brittle UIs.",
+  "procedure": [
+    "For each primary view, list: empty, 1-item, typical, overflow, error, offline.",
+    "Sketch or prompt each state with the same tokens\u2014don\u2019t invent a second visual language.",
+    "Decide which states share layout chrome vs need dedicated illustration.",
+    "Wire copy for emptiness that teaches the next action (not \u2018Nothing here\u2019)."
+  ],
+  "examplePrompts": [
+    "Expand this screen into just-in-case states (Shadeed mindset):\nempty / single / dense / error / loading.\nKeep one token set. Return a state table + one prompt-ready description each.",
+    "Rewrite empty-state copy so it teaches the next useful action; kill cute-but-useless illustrations that block the CTA."
+  ],
+  "promptWhy": [
+    "State table stops single-screenshot syndrome.",
+    "Forces action-bearing empty copy\u2014common AI failure."
+  ],
+  "tips": [
+    "See defensivecss.dev introduction + Shadeed blog lineage.",
+    "Pairs with path-to-completion for forms.",
+    "No endorsement."
+  ],
+  "sourceUrls": [
+    "https://defensivecss.dev/",
+    "https://ishadeed.com/"
+  ],
+  "related": [
+    "defensive-css-mindset",
+    "wireframe-first",
+    "give-real-context"
+  ],
+  "pairsWellWith": [
+    "thinking-before-prompt",
+    "critic-subagents"
+  ],
+  "workedExamples": [
+    {
+      "title": "Inbox empty",
+      "before": "Blank white void.",
+      "after": "One sentence + primary \u2018Compose\u2019\u2014same chrome as full inbox.",
+      "body": "Just-in-case empty is still the product."
+    },
+    {
+      "title": "Dense table",
+      "body": "Define overflow: sticky header + scroll; don\u2019t pretend 10k rows fit the mock height."
+    }
+  ],
+  "antiPatterns": [
+    "Only designing the marketing screenshot state.",
+    "Empty states as orphan artboards with new colors."
+  ],
+  "checklist": [
+    "\u22655 states named per primary view.",
+    "Tokens shared across states.",
+    "Empty copy teaches next action."
+  ],
+  "number": 62
+}

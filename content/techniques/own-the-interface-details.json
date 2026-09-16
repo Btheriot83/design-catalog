@@ -1,0 +1,61 @@
+{
+  "slug": "own-the-interface-details",
+  "stage": "Deliver",
+  "title": "Own the interface details end-to-end",
+  "principle": "Paco Coursey\u2019s public craft (paco.me, cmdk, Linear/Vercel design-engineering lineage): interface quality lives in details\u2014focus states, scroll behavior, keyboard, timing. AI often gets the layout and misses the last mile of interaction ownership.",
+  "procedure": [
+    "List interaction details: focus rings, hit targets, scroll locking, escape/enter, reduced motion.",
+    "Implement or prompt each explicitly\u2014don\u2019t assume defaults are fine.",
+    "Test keyboard-only and touch.",
+    "Match product motion language; delete orphan transitions.",
+    "Record a 30s detail checklist in the PR."
+  ],
+  "examplePrompts": [
+    "Own interface details (Paco-style craft):\n- Focus order + visible focus\n- Keyboard (Esc/Enter/arrows)\n- Scroll/overscroll behavior\n- prefers-reduced-motion\n- Hit targets \u226544px where touch matters\nReturn a detail checklist with pass/fail.",
+    "This dialog looks fine on click\u2014make it excellent for keyboard users."
+  ],
+  "promptWhy": [
+    "Explicit detail list beats \u2018polish it\u2019.",
+    "Keyboard path is a common AI blind spot."
+  ],
+  "tips": [
+    "https://paco.me/ \u00b7 https://github.com/pacocoursey",
+    "No endorsement."
+  ],
+  "sourceUrls": [
+    "https://paco.me/",
+    "https://github.com/pacocoursey"
+  ],
+  "related": [
+    "invisible-interaction-details",
+    "delight-in-the-details",
+    "last-mile-manual"
+  ],
+  "pairsWellWith": [
+    "animation-restraint",
+    "browser-native-first"
+  ],
+  "workedExamples": [
+    {
+      "title": "Focus lost",
+      "before": "Modal opens; focus stays on background.",
+      "after": "Focus trap + restore on close.",
+      "body": "Detail ownership."
+    },
+    {
+      "title": "Scroll bleed",
+      "body": "Body scroll locked while sheet open\u2014small, decisive craft."
+    }
+  ],
+  "antiPatterns": [
+    "Mouse-only happy path.",
+    "Random easing not in the product language."
+  ],
+  "checklist": [
+    "Focus managed.",
+    "Keyboard paths work.",
+    "Reduced-motion respected.",
+    "PR detail checklist present."
+  ],
+  "number": 79
+}

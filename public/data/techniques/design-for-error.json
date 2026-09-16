@@ -1,0 +1,62 @@
+{
+  "slug": "design-for-error",
+  "stage": "Deliver",
+  "title": "Design for error, don’t blame the user",
+  "principle": "Norman’s public DOET theme (Human Error? No, Bad Design): treat slips and mistakes as design problems—constraints, undo, sensible defaults, clear confirmations. AI flows that only show the success path are incomplete.",
+  "procedure": [
+    "Enumerate likely slips (wrong click, mode errors) and mistakes (wrong goal).",
+    "Add forcing functions / constraints where cost of error is high.",
+    "Prefer undo over scary confirmations for reversible actions.",
+    "Write error copy that explains cause + next step, not blame.",
+    "Test the unhappy path in critic screenshots."
+  ],
+  "examplePrompts": [
+    "Add design-for-error (Norman / DOET public principles) to this flow:\n- List slips vs mistakes.\n- Reversible actions get undo; irreversible get plain-language confirm.\n- Error messages: cause + recovery.\n- Remove blame language (‘invalid user’).\nReturn changes.",
+    "Replace this ‘Are you sure?’ wall with undo toast where the delete is reversible."
+  ],
+  "promptWhy": [
+    "Splits slips/mistakes so fixes match the error type.",
+    "Undo vs confirm is an explicit policy models blur."
+  ],
+  "tips": [
+    "jnd.org DOET chapter outline covers Designing for Error.",
+    "No endorsement; paraphrase public principles only."
+  ],
+  "sourceUrls": [
+    "https://jnd.org/the-design-of-everyday-things-revised-and-expanded-edition/",
+    "https://jnd.org/"
+  ],
+  "related": [
+    "affordances-and-signifiers",
+    "remove-ai-tells",
+    "last-mile-manual"
+  ],
+  "pairsWellWith": [
+    "path-to-completion",
+    "just-in-case-layout"
+  ],
+  "workedExamples": [
+    {
+      "title": "Mode error",
+      "before": "Same gesture deletes or archives by silent mode.",
+      "after": "Mode signifier + undo; or separate gestures.",
+      "body": "Classic Norman slip class."
+    },
+    {
+      "title": "Blameful toast",
+      "before": "‘Invalid input’.",
+      "after": "‘Date needs YYYY-MM-DD—try 2026-09-16’.",
+      "body": "Recovery > blame."
+    }
+  ],
+  "antiPatterns": [
+    "Success-path-only prototypes.",
+    "Confirm dialogs for every trivial action."
+  ],
+  "checklist": [
+    "Unhappy paths listed.",
+    "Undo vs confirm policy set.",
+    "Error copy offers recovery."
+  ],
+  "number": 69
+}

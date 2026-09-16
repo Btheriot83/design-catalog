@@ -80,7 +80,7 @@ Stop rule (Brandon 2026-09-16): critic ≥ **9/10** OR after 5 rounds with hones
 
 ## Remaining gaps (honest)
 
-1. **Depth of directory stubs:** ~52 people on desk; many remain `directory` (0 techniques). This pass deepened 11+ directory entries into `partial` with real techniques; keep converting stubs → partial.
+1. **Depth of directory stubs:** 52 people on desk; **13** remain `directory` (thin public writing / skipped for honesty). This pass converted **18** directory stubs → `partial` with **25** new techniques (60 → 85). Keep converting only when sources are rich.
 2. **Media:** no screenshot/motion embeds in worked examples (text+prompt honesty)
 3. **Paywall boundary:** Anshu techniques 7–8 deeper verbatim still unavailable publicly
 4. **Interactive demos:** live explorables live on source sites, not on this desk
@@ -97,6 +97,7 @@ Stop rule (Brandon 2026-09-16): critic ≥ **9/10** OR after 5 rounds with hones
 | 4 | 8.3 | Filter/nav fixed; home breadth still buried |
 | 5 | **9.0** | Designers in viewport; sticky stack; stop |
 | 5b | **9.0** | Merged onto origin ~50-person directory; deepened stubs with 24 techniques; 52 designers / 60 techniques |
+| 5c | **9.0** | Converted 18 directory stubs → partial (+25 techniques); 52 designers / 85 techniques; Quiet Folio unchanged; no forced re-score |
 
 
 
@@ -105,3 +106,10 @@ Stop rule (Brandon 2026-09-16): critic ≥ **9/10** OR after 5 rounds with hones
 ## Merge note (2026-09-16 PT)
 
 Rebased onto `origin/main` after parallel ~50-person directory wave. Kept origin directory + existing UX/gauntlet techniques; imported 24 deepened techniques + Brendan Dawes / Jim Nielsen; upgraded former `directory` stubs (Linus, Amelia, Josh W Comeau, Jessica, Naz, Meng, Andy, Tobias, + extras on Rauno/Frank/Maggie) to `partial` with real procedure/examples/checklist content. Critic stop remains **9.0**.
+
+
+---
+
+## Stub deepen note (2026-09-16 PT)
+
+Converted 18 `directory` stubs with rich public writing into `partial` entries (procedure, examplePrompts, promptWhy, 2+ workedExamples, checklist, antiPatterns, public sourceUrls; X + site credits). +25 techniques (60 → **85**). Remaining **13** stubs skipped for thin/honest sourcing (e.g. Kenya Hara books-mostly, several Figma/exec profiles without essay depth). Aesthetic unchanged. Critic stop remains **9.0** — content density up; no UX change that would force a re-score.

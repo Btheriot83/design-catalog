@@ -189,5 +189,145 @@
     "kind": "Site",
     "note": "Naz Hamid",
     "designerSlug": "naz-hamid"
+  },
+  {
+    "title": "Defensive CSS",
+    "url": "https://defensivecss.dev/",
+    "kind": "Site",
+    "note": "Ahmad Shadeed",
+    "designerSlug": "ahmad-shadeed"
+  },
+  {
+    "title": "Defensive CSS (original essay)",
+    "url": "https://ishadeed.com/article/defensive-css/",
+    "kind": "Essay",
+    "note": "Ahmad Shadeed",
+    "designerSlug": "ahmad-shadeed"
+  },
+  {
+    "title": "Atomic Design",
+    "url": "https://atomicdesign.bradfrost.com/",
+    "kind": "Book (free online)",
+    "note": "Brad Frost",
+    "designerSlug": "brad-frost"
+  },
+  {
+    "title": "Open Props",
+    "url": "https://open-props.style/",
+    "kind": "Project",
+    "note": "Adam Argyle",
+    "designerSlug": "adam-argyle"
+  },
+  {
+    "title": "Shape Up",
+    "url": "https://basecamp.com/shapeup",
+    "kind": "Book (free online)",
+    "note": "Ryan Singer",
+    "designerSlug": "ryan-singer"
+  },
+  {
+    "title": "To Make a Book, Walk on a Book",
+    "url": "https://craigmod.com/essays/to_make_a_book_walk_on_a_book/",
+    "kind": "Essay",
+    "note": "Craig Mod",
+    "designerSlug": "craig-mod"
+  },
+  {
+    "title": "Just Enough Research",
+    "url": "https://www.mulebooks.com/just-enough-research",
+    "kind": "Book",
+    "note": "Erika Hall",
+    "designerSlug": "erika-hall"
+  },
+  {
+    "title": "Staff Design",
+    "url": "https://staff.design/",
+    "kind": "Interview series",
+    "note": "Brian Lovin",
+    "designerSlug": "brian-lovin"
+  },
+  {
+    "title": "Inter typeface",
+    "url": "https://rsms.me/inter/",
+    "kind": "Project",
+    "note": "Rasmus Andersson",
+    "designerSlug": "rasmus-andersson"
+  },
+  {
+    "title": "Luke W — lukew.com",
+    "url": "https://www.lukew.com/",
+    "kind": "Site",
+    "note": "Luke Wroblewski",
+    "designerSlug": "luke-wroblewski"
+  },
+  {
+    "title": "DOET notes on jnd.org",
+    "url": "https://jnd.org/the-design-of-everyday-things-revised-and-expanded-edition/",
+    "kind": "Book notes",
+    "note": "Don Norman",
+    "designerSlug": "don-norman"
+  },
+  {
+    "title": "nerdy.dev",
+    "url": "https://nerdy.dev/",
+    "kind": "Site",
+    "note": "Adam Argyle",
+    "designerSlug": "adam-argyle"
+  },
+  {
+    "title": "danmall.com",
+    "url": "https://danmall.com/",
+    "kind": "Site",
+    "note": "Dan Mall",
+    "designerSlug": "dan-mall"
+  },
+  {
+    "title": "Maxime Heckel blog",
+    "url": "https://blog.maximeheckel.com/",
+    "kind": "Blog",
+    "note": "Maxime Heckel",
+    "designerSlug": "maxime-heckel"
+  },
+  {
+    "title": "paco.me",
+    "url": "https://paco.me/",
+    "kind": "Site",
+    "note": "Paco Coursey",
+    "designerSlug": "paco-coursey"
+  },
+  {
+    "title": "subtraction.com",
+    "url": "https://www.subtraction.com/",
+    "kind": "Site",
+    "note": "Khoi Vinh",
+    "designerSlug": "khoi-vinh"
+  },
+  {
+    "title": "robinrendle.com",
+    "url": "https://robinrendle.com/",
+    "kind": "Site",
+    "note": "Robin Rendle",
+    "designerSlug": "robin-rendle"
+  },
+  {
+    "title": "shud.in",
+    "url": "https://shud.in/",
+    "kind": "Site",
+    "note": "Shu Ding",
+    "designerSlug": "shu-ding"
+  },
+  {
+    "title": "juliezhuo.com",
+    "url": "https://juliezhuo.com/",
+    "kind": "Site",
+    "note": "Julie Zhuo",
+    "designerSlug": "julie-zhuo"
+  },
+  {
+    "title": "Tailwind CSS",
+    "url": "https://tailwindcss.com/",
+    "kind": "Project",
+    "note": "Adam Wathan",
+    "designerSlug": "adam-wathan"
   }
 ]

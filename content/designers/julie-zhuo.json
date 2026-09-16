@@ -1,8 +1,8 @@
 {
   "slug": "julie-zhuo",
   "name": "Julie Zhuo",
-  "status": "directory",
-  "role": "Founder · Sundial · The Making of a Manager",
+  "status": "partial",
+  "role": "Founder \u00b7 Sundial \u00b7 The Making of a Manager",
   "bio": "Julie Zhuo is founder of Sundial, author of The Making of a Manager, and essayist at The Looking Glass. Public site lists writing and talks on product leadership, career craft, and how product development is changing. She posts as @joulee.",
   "links": [
     {
@@ -14,10 +14,12 @@
       "url": "https://x.com/joulee"
     }
   ],
-  "techniqueSlugs": [],
+  "techniqueSlugs": [
+    "design-the-feedback-loop"
+  ],
   "highlights": [
     "Author of The Making of a Manager; founder of Sundial.",
     "The Looking Glass essays on product and leadership craft.",
-    "Public voice for intentional management and product taste."
+    "Design-the-feedback-loop technique."
   ]
 }

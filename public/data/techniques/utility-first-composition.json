@@ -1,0 +1,61 @@
+{
+  "slug": "utility-first-composition",
+  "stage": "Define",
+  "title": "Compose UI from constrained utilities",
+  "principle": "Adam Wathan’s Tailwind/public teaching: style by composing a constrained utility vocabulary rather than inventing open-ended CSS per component. Distinct from Refactoring UI visual tips (already on Schoger)—this is about the composition model that keeps AI from emitting unbounded stylesheets.",
+  "procedure": [
+    "Give the agent your utility/token vocabulary (spacing scale, type scale, colors).",
+    "Require class/composition output inside that vocabulary—no arbitrary values unless justified.",
+    "Extract repeated compositions into components only after they stabilize.",
+    "Review diffs for arbitrary value creep ([13px], [#a1b2c3])."
+  ],
+  "examplePrompts": [
+    "Implement this card utility-first (Wathan / Tailwind public model):\n- Use only the project spacing/type/color scales.\n- No arbitrary values unless you justify with a one-line why.\n- Extract a component only if the composition repeats ≥3 times.\nReturn markup + any extraction.",
+    "Audit this AI stylesheet for arbitrary values; remap to the scale or delete."
+  ],
+  "promptWhy": [
+    "Vocabulary constraint is the whole point vs freehand CSS.",
+    "Arbitrary-value audit catches AI ‘close enough’ pixels."
+  ],
+  "tips": [
+    "https://tailwindcss.com/ · https://adamwathan.me/",
+    "Visual hierarchy tips live under Steve Schoger techniques—don’t duplicate.",
+    "No endorsement."
+  ],
+  "sourceUrls": [
+    "https://tailwindcss.com/",
+    "https://adamwathan.me/",
+    "https://refactoringui.com/"
+  ],
+  "related": [
+    "hierarchy-with-weight",
+    "open-props-tokens",
+    "systemize-repeating-ui"
+  ],
+  "pairsWellWith": [
+    "fewer-borders",
+    "start-with-whitespace"
+  ],
+  "workedExamples": [
+    {
+      "title": "Arbitrary creep",
+      "before": "p-[13px] text-[#6b7280] rounded-[7px]",
+      "after": "p-3 text-slate-500 rounded-md",
+      "body": "Stay on-scale."
+    },
+    {
+      "title": "Premature extract",
+      "body": "Two similar cards stay composed; third repeat earns a component."
+    }
+  ],
+  "antiPatterns": [
+    "Open-ended CSS beside a utility system.",
+    "Extracting components on first sight."
+  ],
+  "checklist": [
+    "Scale vocabulary provided to the agent.",
+    "Arbitrary values justified or removed.",
+    "Extraction threshold respected."
+  ],
+  "number": 67
+}

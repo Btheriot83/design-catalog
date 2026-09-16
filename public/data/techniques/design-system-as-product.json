@@ -1,0 +1,62 @@
+{
+  "slug": "design-system-as-product",
+  "stage": "Define",
+  "title": "Treat the design system as a product",
+  "principle": "Dan Mall’s public design-systems teaching: systems need users (designers/devs), roadmaps, support, and adoption—not just a component dump. When AI generates libraries, assign product ownership questions: who is this for, how do they succeed, what is versioned?",
+  "procedure": [
+    "Name system customers and their jobs-to-be-done.",
+    "Define success metrics (adoption, time-to-UI, a11y escapes).",
+    "Version changes; publish changelog humans read.",
+    "Support channel + contribution path.",
+    "Prefer fewer excellent patterns over a museum of variants."
+  ],
+  "examplePrompts": [
+    "Frame this library as a product (Dan Mall systems craft):\n- Customers + jobs\n- Success metrics\n- Versioning/changelog plan\n- Contribution/support path\n- Cut list of low-value variants\nReturn a one-page system brief.",
+    "Audit our 60 components—propose the 15 that earn keep based on usage."
+  ],
+  "promptWhy": [
+    "Product framing stops folder-as-system.",
+    "Cut list fights museum growth."
+  ],
+  "tips": [
+    "https://danmall.com/",
+    "Public talks/courses on systems; paraphrase.",
+    "No endorsement."
+  ],
+  "sourceUrls": [
+    "https://danmall.com/",
+    "https://bradfrost.com/"
+  ],
+  "related": [
+    "atomic-design-hierarchy",
+    "pattern-library-before-pages",
+    "systemize-repeating-ui"
+  ],
+  "pairsWellWith": [
+    "design-system-from-assets",
+    "weight-of-implementation"
+  ],
+  "workedExamples": [
+    {
+      "title": "Museum file",
+      "before": "200 components, 12 used.",
+      "after": "Core set versioned; rest archived.",
+      "body": "Product focus."
+    },
+    {
+      "title": "No changelog",
+      "body": "Breaking padding change with silent npm bump—add human changelog."
+    }
+  ],
+  "antiPatterns": [
+    "Components without customers.",
+    "Infinite variants ‘just in case’."
+  ],
+  "checklist": [
+    "Customers named.",
+    "Metrics defined.",
+    "Changelog process exists.",
+    "Cut list reviewed."
+  ],
+  "number": 77
+}

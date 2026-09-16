@@ -1,0 +1,59 @@
+{
+  "slug": "evaluate-every-question",
+  "stage": "Discover",
+  "title": "Evaluate every question you ask",
+  "principle": "Luke W’s public form organization rule: each question costs completion. Keep, cut, postpone, or explain—speak with one voice. Use this before AI generates a ‘comprehensive’ intake form.",
+  "procedure": [
+    "List every proposed field as a question.",
+    "Tag keep / cut / postpone / explain.",
+    "Merge duplicate asks; align voice across stakeholders.",
+    "Only then wireframe the form."
+  ],
+  "examplePrompts": [
+    "Run evaluate-every-question (Luke W):\nFor each field: keep | cut | postpone | explain why we ask.\nSpeak with one product voice.\nReturn the triage table before any UI.",
+    "Stakeholders want 20 fields. Cut to the minimum that unlocks the first successful outcome."
+  ],
+  "promptWhy": [
+    "Triage before UI stops comprehensive-by-default AI forms.",
+    "Explain tag surfaces creepy asks early."
+  ],
+  "tips": [
+    "Public Web Form Design practices from lukew.com materials.",
+    "No endorsement."
+  ],
+  "sourceUrls": [
+    "https://www.lukew.com/",
+    "http://static.lukew.com/ui12_lukew_webforms.pdf"
+  ],
+  "related": [
+    "path-to-completion",
+    "thinking-before-prompt",
+    "cut-elements"
+  ],
+  "pairsWellWith": [
+    "tc-ebc-task",
+    "ambitious-prompts"
+  ],
+  "workedExamples": [
+    {
+      "title": "Company size ask",
+      "before": "Required on signup.",
+      "after": "Postponed to billing—unlocks account first.",
+      "body": "Postpone is a valid outcome."
+    },
+    {
+      "title": "Two birthdays",
+      "body": "Duplicate stakeholder fields merged—one voice."
+    }
+  ],
+  "antiPatterns": [
+    "UI first, field justification never.",
+    "Required for analytics convenience."
+  ],
+  "checklist": [
+    "Triage table complete.",
+    "No unexplained required fields.",
+    "One voice across copy."
+  ],
+  "number": 71
+}

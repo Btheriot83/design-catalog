@@ -1,0 +1,61 @@
+{
+  "slug": "design-the-feedback-loop",
+  "stage": "Discover",
+  "title": "Design the feedback loop, not just the UI",
+  "principle": "Julie Zhuo’s public writing (The Looking Glass / Making of a Manager themes): product quality depends on how teams give feedback, set expectations, and grow judgment. For AI design ops, specify critique cadence and decision owners—not only screens.",
+  "procedure": [
+    "Name who decides vs who advises.",
+    "Set a critique format (goals, constraints, questions) before showing work.",
+    "Timebox feedback; end with explicit decisions.",
+    "Separate taste notes from blocking issues.",
+    "Log decisions so AI iterations don’t reopen settled calls."
+  ],
+  "examplePrompts": [
+    "Design the feedback loop (Zhuo / Looking Glass leadership craft):\n- Decision owner\n- Critique agenda template\n- Blocking vs non-blocking labels\n- Decision log format\nApply before the next AI visual pass.",
+    "Convert this sprawling Slack critique into decisions + owners; discard re-litigation."
+  ],
+  "promptWhy": [
+    "Owner + agenda prevent feedback chaos.",
+    "Decision log stops AI churn from reopening calls."
+  ],
+  "tips": [
+    "https://juliezhuo.com/",
+    "Public essays/talks; paraphrase leadership craft—not a full book reprint.",
+    "No endorsement."
+  ],
+  "sourceUrls": [
+    "https://juliezhuo.com/",
+    "https://x.com/joulee"
+  ],
+  "related": [
+    "critic-subagents",
+    "staff-design-ownership",
+    "taste-as-filter"
+  ],
+  "pairsWellWith": [
+    "thinking-before-prompt",
+    "keep-working-alongside"
+  ],
+  "workedExamples": [
+    {
+      "title": "Taste pile-on",
+      "before": "12 opinions, no owner.",
+      "after": "Owner decides; taste parked as non-blocking.",
+      "body": "Loop design."
+    },
+    {
+      "title": "Reopened pixel",
+      "body": "Decision log shows color already settled—agent doesn’t thrash."
+    }
+  ],
+  "antiPatterns": [
+    "Feedback without decisions.",
+    "Every opinion treated as blocking."
+  ],
+  "checklist": [
+    "Decision owner named.",
+    "Critique template used.",
+    "Decisions logged."
+  ],
+  "number": 82
+}

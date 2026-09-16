@@ -1,0 +1,60 @@
+{
+  "slug": "critique-with-specificity",
+  "stage": "Define",
+  "title": "Critique with specificity, not vibes",
+  "principle": "Khoi Vinh’s long-form design writing (subtraction.com) models precise critique: name the problem in the interface, the user impact, and a directional fix. Vague ‘make it pop’ feedback wastes AI cycles.",
+  "procedure": [
+    "Point to a specific element or flow step.",
+    "State user impact (confusion, trust, time).",
+    "Propose a directional fix or question—not a pixel micromanage unless needed.",
+    "Separate objective issues (a11y, hierarchy) from taste.",
+    "Ask AI to respond to the critique point-by-point."
+  ],
+  "examplePrompts": [
+    "Rewrite this feedback with specificity (Khoi Vinh critique craft):\n- Element\n- User impact\n- Directional fix\nThen have the agent answer each point. Ban ‘make it pop/cleaner/modern’.",
+    "Turn these vibe notes into a structured critique table."
+  ],
+  "promptWhy": [
+    "Specificity makes agent diffs checkable.",
+    "Bans empty adjectives."
+  ],
+  "tips": [
+    "https://www.subtraction.com/",
+    "No endorsement."
+  ],
+  "sourceUrls": [
+    "https://www.subtraction.com/",
+    "https://x.com/khoi"
+  ],
+  "related": [
+    "critic-subagents",
+    "design-the-feedback-loop",
+    "screens-want-honesty"
+  ],
+  "pairsWellWith": [
+    "hand-rewrite-copy",
+    "hierarchy-with-weight"
+  ],
+  "workedExamples": [
+    {
+      "title": "Vibe → impact",
+      "before": "‘Feels off’.",
+      "after": "‘Primary CTA competes with price—users hesitate; demote secondary.’",
+      "body": "Actionable critique."
+    },
+    {
+      "title": "Point-by-point",
+      "body": "Agent replies per row; nothing hand-waved."
+    }
+  ],
+  "antiPatterns": [
+    "Adjective-only feedback.",
+    "Pixel micromanage without user impact."
+  ],
+  "checklist": [
+    "Each note names an element.",
+    "Impact stated.",
+    "Directional fix or question present."
+  ],
+  "number": 83
+}

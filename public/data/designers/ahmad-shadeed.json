@@ -1,7 +1,7 @@
 {
   "slug": "ahmad-shadeed",
   "name": "Ahmad Shadeed",
-  "status": "directory",
+  "status": "partial",
   "role": "UX designer & front-end engineer · Defensive CSS",
   "bio": "Ahmad Shadeed is a senior UX designer and front-end engineer bridging design and development. He coined Defensive CSS, wrote Debugging CSS, and publishes deep guides such as RTL Styling 101 on ishadeed.com. Public courses and lab experiments focus on layout systems that stay robust when AI output breaks.",
   "links": [
@@ -12,12 +12,19 @@
     {
       "label": "X",
       "url": "https://x.com/shadeed9"
+    },
+    {
+      "label": "Defensive CSS",
+      "url": "https://defensivecss.dev/"
     }
   ],
-  "techniqueSlugs": [],
+  "techniqueSlugs": [
+    "defensive-css-mindset",
+    "just-in-case-layout"
+  ],
   "highlights": [
     "Defensive CSS; Debugging CSS; RTL Styling 101.",
     "Layout Maestro course for building layouts with confidence.",
-    "Public craft against brittle, AI-generated CSS."
+    "Catalogued Defensive CSS + just-in-case layout from public writing."
   ]
 }

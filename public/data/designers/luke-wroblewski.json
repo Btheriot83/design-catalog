@@ -1,7 +1,7 @@
 {
   "slug": "luke-wroblewski",
   "name": "Luke Wroblewski",
-  "status": "directory",
+  "status": "partial",
   "role": "Product leader · Mobile First · lukew.com",
   "bio": "Luke Wroblewski (LukeW) is a digital product leader and author of Mobile First, Web Form Design, and Site-Seeing. Public career includes Google product leadership after Polar’s acquisition, earlier Yahoo and eBay design roles, and ongoing writing at lukew.com. Known for pragmatic mobile and form design craft.",
   "links": [
@@ -14,10 +14,13 @@
       "url": "https://x.com/lukew"
     }
   ],
-  "techniqueSlugs": [],
+  "techniqueSlugs": [
+    "path-to-completion",
+    "evaluate-every-question"
+  ],
   "highlights": [
     "Author of Mobile First and Web Form Design.",
     "Public lukew.com essays on product and input craft.",
-    "Career spanning Google, Polar, Yahoo, eBay design/product."
+    "Path-to-completion + evaluate-every-question from public form craft."
   ]
 }

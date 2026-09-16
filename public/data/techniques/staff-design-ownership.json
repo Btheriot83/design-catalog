@@ -1,0 +1,61 @@
+{
+  "slug": "staff-design-ownership",
+  "stage": "Discover",
+  "title": "Own problems at staff altitude",
+  "principle": "Brian Lovin’s Staff Design project (staff.design) and reflection essay: senior IC designers own ambiguous, cross-cutting problems—not only tickets. When directing AI, frame work as problem ownership with narrative and leverage, not pixel chores.",
+  "procedure": [
+    "Write the problem brief: context, users, constraints, success.",
+    "Identify leverage (systems, narrative, prototypes) vs busywork.",
+    "Choose a communication artifact peers/execs can react to.",
+    "Use AI for exploration speed; keep judgment and storytelling human.",
+    "Capture what you learned for the next IC level-up."
+  ],
+  "examplePrompts": [
+    "Reframe this ticket as staff-altitude ownership (Staff Design / Lovin):\n- Problem brief\n- Leverage thesis\n- Artifacts to create\n- What AI can draft vs what I must decide\nReturn a one-page ownership plan.",
+    "Stop generating random screens—help me articulate the cross-team problem first."
+  ],
+  "promptWhy": [
+    "Problem brief elevates above ticket farming.",
+    "AI/human split keeps judgment central."
+  ],
+  "tips": [
+    "https://staff.design/ · https://brianlovin.com/writing/what-i-learned-from-staff-design-fdwXEj4",
+    "No endorsement."
+  ],
+  "sourceUrls": [
+    "https://staff.design/",
+    "https://brianlovin.com/writing/what-i-learned-from-staff-design-fdwXEj4",
+    "https://brianlovin.com/"
+  ],
+  "related": [
+    "thinking-before-prompt",
+    "design-engineer-ownership",
+    "weight-of-implementation"
+  ],
+  "pairsWellWith": [
+    "set-the-appetite",
+    "epistemic-disclosure"
+  ],
+  "workedExamples": [
+    {
+      "title": "Ticket tunnel",
+      "before": "AI churns icon variants.",
+      "after": "Ownership plan: alignment workshop + prototype narrative.",
+      "body": "Altitude shift."
+    },
+    {
+      "title": "Leverage pick",
+      "body": "One system fix beats twelve one-off screens."
+    }
+  ],
+  "antiPatterns": [
+    "Measuring IC value only in tickets closed.",
+    "Delegating judgment entirely to the model."
+  ],
+  "checklist": [
+    "Problem brief written.",
+    "Leverage thesis clear.",
+    "Human decisions identified."
+  ],
+  "number": 81
+}

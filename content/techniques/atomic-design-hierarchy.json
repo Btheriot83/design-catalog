@@ -1,0 +1,62 @@
+{
+  "slug": "atomic-design-hierarchy",
+  "stage": "Define",
+  "title": "Build UI with atomic hierarchy",
+  "principle": "Brad Frost\u2019s Atomic Design (public book at atomicdesign.bradfrost.com): interfaces are atoms \u2192 molecules \u2192 organisms \u2192 templates \u2192 pages working concurrently. For AI design, force the model to name the hierarchy instead of inventing one-off page snowflakes.",
+  "procedure": [
+    "Inventory existing atoms (type, color, inputs, icons) before new page work.",
+    "Compose molecules (label+input, search field) before organisms (header, card grid).",
+    "Templates define content structure; pages plug in real representative content.",
+    "Reject new components that duplicate an atom under a fresh name.",
+    "Review AI output by asking: which level is this change at?"
+  ],
+  "examplePrompts": [
+    "Refactor this page using Atomic Design (Frost, public book):\n- List atoms / molecules / organisms / template / page.\n- Promote duplicated one-offs into shared molecules.\n- Keep templates content-agnostic; pages carry real sample content.\nReturn the hierarchy map + diffs.",
+    "Stop inventing a new \u2018FancyCard\u2019. Show which existing organism it should extend."
+  ],
+  "promptWhy": [
+    "Hierarchy map prevents snowflake components.",
+    "Names the anti-pattern of renaming duplicates."
+  ],
+  "tips": [
+    "Read free: https://atomicdesign.bradfrost.com/chapter-2/",
+    "Concurrent levels\u2014not a waterfall you finish atoms before pages.",
+    "No endorsement."
+  ],
+  "sourceUrls": [
+    "https://atomicdesign.bradfrost.com/",
+    "https://atomicdesign.bradfrost.com/chapter-2/",
+    "https://bradfrost.com/"
+  ],
+  "related": [
+    "systemize-repeating-ui",
+    "design-system-from-assets",
+    "pattern-library-before-pages"
+  ],
+  "pairsWellWith": [
+    "specify-the-look",
+    "cut-elements"
+  ],
+  "workedExamples": [
+    {
+      "title": "Snowflake buttons",
+      "before": "Primary, CTA, HeroCTA, BigBlue\u2014four near-identical atoms.",
+      "after": "One button atom + variants (primary/secondary/tertiary).",
+      "body": "Atomic language makes duplication obvious."
+    },
+    {
+      "title": "Template vs page",
+      "body": "Template shows slots; page fills with real chore names\u2014catches content that breaks the system."
+    }
+  ],
+  "antiPatterns": [
+    "Designing pages as unique artboards with no shared parts.",
+    "Treating atomic design as a rigid waterfall."
+  ],
+  "checklist": [
+    "Hierarchy map exists for the view.",
+    "No duplicate atoms under new names.",
+    "Pages use representative real content."
+  ],
+  "number": 63
+}

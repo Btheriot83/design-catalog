@@ -1,0 +1,62 @@
+{
+  "slug": "path-to-completion",
+  "stage": "Deliver",
+  "title": "Illuminate a clear path to completion",
+  "principle": "Luke Wroblewski’s public form-design teaching (lukew.com / Web Form Design talks): every form’s primary job is completion—clear scan line, pacing, visible primary action, minimized pain. AI forms often look ‘designed’ but hide the finish line.",
+  "procedure": [
+    "Remove or postpone every field that isn’t required for the outcome.",
+    "Top-align labels; one primary action; demote secondary.",
+    "Show progress when multi-step; keep scope honest.",
+    "Inline validation that helps, not punishes on first focus.",
+    "Mobile: appropriate input types, targets, and keyboard-friendly actions."
+  ],
+  "examplePrompts": [
+    "Refactor this form for path-to-completion (Luke W public form practices):\n- Cut/postpone nonessential fields.\n- Top-aligned labels; one primary CTA.\n- Inline validation after input; helpful errors.\n- Mobile input types + 44px targets.\nReturn cut list + UI diff.",
+    "This checkout has two solid buttons—make hierarchy obvious and shorten the path."
+  ],
+  "promptWhy": [
+    "Cut list is the craft; visuals alone don’t finish forms.",
+    "Names mobile input-type specifics AI skips."
+  ],
+  "tips": [
+    "https://www.lukew.com/ · public PDFs/talks on web form design",
+    "Mobile First materials on lukew.com",
+    "No endorsement."
+  ],
+  "sourceUrls": [
+    "https://www.lukew.com/",
+    "https://static.lukew.com/WebForms_LukeW_101209.pdf",
+    "https://www.lukew.com/mobilefirst/08-chapter-6/index.html"
+  ],
+  "related": [
+    "evaluate-every-question",
+    "design-for-error",
+    "cut-elements"
+  ],
+  "pairsWellWith": [
+    "hand-rewrite-copy",
+    "just-in-case-layout"
+  ],
+  "workedExamples": [
+    {
+      "title": "Optional noise",
+      "before": "12 fields including ‘Fax’.",
+      "after": "5 required; fax gone; marketing prefs postponed.",
+      "body": "Completion > completeness."
+    },
+    {
+      "title": "Hidden primary",
+      "body": "Primary submit visually equals Cancel—fix hierarchy."
+    }
+  ],
+  "antiPatterns": [
+    "Multi-column desktop forms on mobile.",
+    "Punishing validation on blur of empty fields."
+  ],
+  "checklist": [
+    "Field cut list exists.",
+    "One clear primary action.",
+    "Mobile input types set."
+  ],
+  "number": 70
+}

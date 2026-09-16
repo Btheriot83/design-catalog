@@ -1,0 +1,59 @@
+{
+  "slug": "ship-primitives-first",
+  "stage": "Define",
+  "title": "Ship primitives before pages",
+  "principle": "Shu Ding’s public work (shud.in, Vercel/Next/v0 ecosystem): durable product speed comes from good primitives—components, APIs, AI building blocks—more than one-off pages. Prompt AI to extract primitives that unlock many screens.",
+  "procedure": [
+    "From a requested page, extract candidate primitives (input, list row, toolbar).",
+    "Spec primitive APIs (props/states) before composing the page.",
+    "Implement primitives with tests/stories; then assemble.",
+    "Reject page-only CSS that should be primitive API."
+  ],
+  "examplePrompts": [
+    "Extract primitives first (Shu Ding craft):\n- From this page brief, list primitives + props/states.\n- Implement primitives before the page composition.\n- Forbid page-only one-offs that belong in the primitive API.\nReturn primitive specs.",
+    "This AI page inlines five unique buttons—collapse to one primitive with variants."
+  ],
+  "promptWhy": [
+    "Primitive specs create leverage across screens.",
+    "Forbids page-only snowflakes."
+  ],
+  "tips": [
+    "https://shud.in/ · https://github.com/shuding",
+    "No endorsement of Vercel products."
+  ],
+  "sourceUrls": [
+    "https://shud.in/",
+    "https://github.com/shuding"
+  ],
+  "related": [
+    "pattern-library-before-pages",
+    "systemize-repeating-ui",
+    "invent-software-materials"
+  ],
+  "pairsWellWith": [
+    "utility-first-composition",
+    "design-system-from-assets"
+  ],
+  "workedExamples": [
+    {
+      "title": "Page snowflake",
+      "before": "Settings built as unique markup.",
+      "after": "ListRow + Section primitives reused in billing.",
+      "body": "Primitives first."
+    },
+    {
+      "title": "API gap",
+      "body": "Missing loading prop forced ad-hoc spinners—add to primitive."
+    }
+  ],
+  "antiPatterns": [
+    "Pages without shared primitives.",
+    "Primitive APIs that mirror a single page’s quirks only."
+  ],
+  "checklist": [
+    "Primitives listed before page build.",
+    "Props/states specified.",
+    "Page assembles from primitives."
+  ],
+  "number": 85
+}

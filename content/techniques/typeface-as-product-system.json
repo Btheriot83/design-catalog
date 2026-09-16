@@ -1,0 +1,60 @@
+{
+  "slug": "typeface-as-product-system",
+  "stage": "Define",
+  "title": "Treat the typeface as a product system",
+  "principle": "Rasmus Andersson\u2019s Inter (rsms.me / GitHub) shows type as engineered product: metrics, optical sizes, features, and UI intent documented publicly. When choosing or generating UI type, specify the system (features, tabular nums, weights) not just a font name.",
+  "procedure": [
+    "Pick a UI typeface with clear metrics for screens.",
+    "Define weight roles and size scale; enable font-feature-settings you need (tnum, ss##).",
+    "Test at small sizes; reject pretty display faces for dense UI.",
+    "Document loading strategy (subset, fallbacks) as part of design."
+  ],
+  "examplePrompts": [
+    "Specify type as a system (rsms / Inter craft mindset):\n- Family + fallbacks\n- Weight roles\n- Size scale\n- Features (tabular nums, etc.)\n- Loading/subset notes\nApply to this denser settings UI; reject decorative display fonts.",
+    "Replace this marketing font in the data table with a UI face + tnum."
+  ],
+  "promptWhy": [
+    "System spec beats \u2018use Inter\u2019 one-liner.",
+    "tnum/data UI is a concrete check."
+  ],
+  "tips": [
+    "https://rsms.me/inter/ \u00b7 https://rsms.me/",
+    "No endorsement of Inter as mandatory\u2014use as craft reference."
+  ],
+  "sourceUrls": [
+    "https://rsms.me/inter/",
+    "https://rsms.me/",
+    "https://github.com/rsms"
+  ],
+  "related": [
+    "hierarchy-with-weight",
+    "shoulders-of-type",
+    "specify-the-look"
+  ],
+  "pairsWellWith": [
+    "open-props-tokens",
+    "remove-ai-tells"
+  ],
+  "workedExamples": [
+    {
+      "title": "Display in a grid",
+      "before": "Fancy face; numbers misaligned.",
+      "after": "UI face + tabular nums.",
+      "body": "Type as system."
+    },
+    {
+      "title": "Weight soup",
+      "body": "Seven weights \u2192 three roles documented."
+    }
+  ],
+  "antiPatterns": [
+    "Font name only, no features/scale.",
+    "Display type in dense data UI."
+  ],
+  "checklist": [
+    "Weight roles defined.",
+    "Features specified.",
+    "Fallbacks/loading noted."
+  ],
+  "number": 80
+}

@@ -1,0 +1,60 @@
+{
+  "slug": "teach-by-rebuilding-effects",
+  "stage": "Discover",
+  "title": "Learn craft by rebuilding the effect",
+  "principle": "Maxime Heckel’s public blog ethos: write the articles you needed—rebuild shaders/motion/UI effects from first principles to understand them. For AI-assisted design, don’t paste a black-box snippet; reconstruct until you can explain every layer.",
+  "procedure": [
+    "Pick a target effect you admire.",
+    "Break it into layers (structure, motion, lighting/color, timing).",
+    "Rebuild minimally; delete anything you can’t explain.",
+    "Write a short note of what each layer does—future you / agents need it.",
+    "Only then integrate into the product."
+  ],
+  "examplePrompts": [
+    "Rebuild this effect from first principles (Heckel craft style):\n- Layer map\n- Minimal reproduction\n- Delete unexplained magic\n- 10-line teaching note\nNo copy-paste of opaque demos.",
+    "Explain this shader/UI motion in plain language; if you can’t, simplify until you can."
+  ],
+  "promptWhy": [
+    "Layer map defeats cargo-cult snippets.",
+    "Teaching note becomes agent memory."
+  ],
+  "tips": [
+    "https://blog.maximeheckel.com/ · https://maximeheckel.com/",
+    "No endorsement."
+  ],
+  "sourceUrls": [
+    "https://blog.maximeheckel.com/",
+    "https://maximeheckel.com/"
+  ],
+  "related": [
+    "explorable-explanations",
+    "purposeful-motion",
+    "invent-software-materials"
+  ],
+  "pairsWellWith": [
+    "animation-restraint",
+    "materials-not-features"
+  ],
+  "workedExamples": [
+    {
+      "title": "Copied glow",
+      "before": "AI dumps a 200-line glow.",
+      "after": "3 layers explained; 40 lines.",
+      "body": "Rebuild to understand."
+    },
+    {
+      "title": "Teaching note",
+      "body": "PR includes ‘how this works’—next agent doesn’t re-mystify."
+    }
+  ],
+  "antiPatterns": [
+    "Opaque snippet worship.",
+    "Effects nobody on the team can debug."
+  ],
+  "checklist": [
+    "Layer map exists.",
+    "Every line explainable.",
+    "Teaching note written."
+  ],
+  "number": 78
+}

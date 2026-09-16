@@ -1,8 +1,8 @@
 {
   "slug": "ryan-singer",
   "name": "Ryan Singer",
-  "status": "directory",
-  "role": "Product design · Shape Up · feltpresence",
+  "status": "partial",
+  "role": "Product design \u00b7 Shape Up \u00b7 feltpresence",
   "bio": "Ryan Singer is known for product design and process work at 37signals/Basecamp and for Shape Up, the public methodology for shaping work before building. His site feltpresence.com collects writing on product craft; historically active as @rjs. Directory entry reflects published process craft, not affiliation.",
   "links": [
     {
@@ -12,12 +12,19 @@
     {
       "label": "X",
       "url": "https://x.com/rjs"
+    },
+    {
+      "label": "Shape Up",
+      "url": "https://basecamp.com/shapeup"
     }
   ],
-  "techniqueSlugs": [],
+  "techniqueSlugs": [
+    "set-the-appetite",
+    "breadboard-before-pixels"
+  ],
   "highlights": [
     "Shape Up methodology; long Basecamp/37signals product craft.",
     "feltpresence.com writing on shaping and shipping.",
-    "Public teaching of appetite-bound product design."
+    "Appetite + breadboarding from public Shape Up."
   ]
 }

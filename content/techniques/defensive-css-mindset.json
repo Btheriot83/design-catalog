@@ -1,0 +1,71 @@
+{
+  "slug": "defensive-css-mindset",
+  "stage": "Deliver",
+  "title": "Ship defensive CSS for dynamic content",
+  "principle": "Ahmad Shadeed\u2019s Defensive CSS (ishadeed.com \u2192 defensivecss.dev): write CSS that survives unexpected content\u2014long titles, odd image ratios, extra flex items\u2014instead of styling only the happy-path mock. For AI UI work, treat every generated layout as hostile until proven robust.",
+  "procedure": [
+    "List failure modes: overflow text, missing images, 1 vs 12 items, RTL, zoom.",
+    "For each component, add a defensive rule (wrap, min/max, object-fit, gap, line-clamp with escape).",
+    "Prefer flex-wrap / auto-fit patterns over fixed counts assumed by the mock.",
+    "Add CSS variable fallbacks where tokens may be missing.",
+    "QA with ugly content fixtures, not lorem-perfect strings."
+  ],
+  "examplePrompts": [
+    "Apply Defensive CSS (Shadeed / defensivecss.dev) to this component set:\n- Long titles must wrap or truncate without breaking siblings.\n- Images: object-fit + fixed aspect so distortion can\u2019t wreck the card.\n- Flex/grid: wrap or scroll when item count exceeds the mock.\n- Provide CSS variable fallbacks.\nReturn before/after snippets + the failure mode each fix covers.",
+    "Generate three hostile content fixtures (emoji-heavy title, 2KB bio, 0.5\u00d7 image) and harden the CSS until the layout holds."
+  ],
+  "promptWhy": [
+    "Names concrete failure modes so the model doesn\u2019t \u2018prettify\u2019 only the screenshot case.",
+    "Fixtures force proof\u2014AI often claims robustness without testing."
+  ],
+  "tips": [
+    "Primary: https://defensivecss.dev/ and https://ishadeed.com/article/defensive-css/",
+    "Built on Shadeed\u2019s earlier \u2018just in case\u2019 mindset essays.",
+    "No endorsement; public tips paraphrased.",
+    "Quiet Folio: defense is craft, not chrome."
+  ],
+  "sourceUrls": [
+    "https://defensivecss.dev/",
+    "https://ishadeed.com/article/defensive-css/",
+    "https://css-tricks.com/defensive-css/"
+  ],
+  "related": [
+    "remove-ai-tells",
+    "last-mile-manual",
+    "browser-native-first"
+  ],
+  "pairsWellWith": [
+    "cut-elements",
+    "critic-subagents"
+  ],
+  "workedExamples": [
+    {
+      "title": "Card title nuke",
+      "before": "One-line title; AI CSS uses nowrap + fixed height\u2014long titles collide.",
+      "after": "Wrap with line-clamp(2) + min-height; siblings use gap not absolute offsets.",
+      "body": "Classic defensive tip: plan for long content."
+    },
+    {
+      "title": "Flex row of \u2018exactly 4\u2019",
+      "before": "Four equal columns; fifth item from CMS overflows off-screen.",
+      "after": "flex-wrap + min widths; or horizontal scroll with visible cue.",
+      "body": "Shadeed\u2019s flex wrapping / count-assumption defenses."
+    },
+    {
+      "title": "Broken hero image",
+      "body": "Unexpected aspect ratio: lock box with aspect-ratio + object-fit:cover so layout geometry stays."
+    }
+  ],
+  "antiPatterns": [
+    "Styling only the Figma-perfect string lengths.",
+    "Fixed pixel heights that clip real copy.",
+    "Assuming image dimensions match the mock forever."
+  ],
+  "checklist": [
+    "Hostile content fixtures exist.",
+    "Overflow/wrap strategy per text block.",
+    "Images can\u2019t distort the grid.",
+    "Variable count of children handled."
+  ],
+  "number": 61
+}

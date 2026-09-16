@@ -1,0 +1,60 @@
+{
+  "slug": "write-the-system-down",
+  "stage": "Define",
+  "title": "Write the system down in human prose",
+  "principle": "Robin Rendle’s public writing on design systems/culture argues that systems live in clear writing—principles, examples, and voice—not only tokens. If AI can’t read how you decide, it will invent a new system each time.",
+  "procedure": [
+    "Draft principles in plain sentences with do/don’t examples.",
+    "Document exceptions and who may grant them.",
+    "Keep the doc short enough agents and humans will read it.",
+    "Link principles to components; delete orphan rules.",
+    "Revise when real products force exceptions."
+  ],
+  "examplePrompts": [
+    "Write the system in prose (Rendle systems-writing craft):\n- 5 principles with do/don’t\n- Exception policy\n- Link each principle to a component example\nKeep under 400 words so agents load it every time.",
+    "Our token file has no voice—add human principles that constrain AI layout choices."
+  ],
+  "promptWhy": [
+    "Prose principles constrain better than tokens alone.",
+    "Length cap ensures the doc is actually used."
+  ],
+  "tips": [
+    "https://robinrendle.com/",
+    "No endorsement."
+  ],
+  "sourceUrls": [
+    "https://robinrendle.com/",
+    "https://github.com/robinrendle"
+  ],
+  "related": [
+    "design-system-as-product",
+    "epistemic-disclosure",
+    "specify-the-look"
+  ],
+  "pairsWellWith": [
+    "atomic-design-hierarchy",
+    "garden-status-labels"
+  ],
+  "workedExamples": [
+    {
+      "title": "Token-only chaos",
+      "before": "Colors exist; AI still invents new patterns.",
+      "after": "Principle: ‘One primary action per view’—enforced in prompts.",
+      "body": "Writing steers generation."
+    },
+    {
+      "title": "Exception path",
+      "body": "Marketing may break grid with design-lead signoff—documented."
+    }
+  ],
+  "antiPatterns": [
+    "Rules nobody reads.",
+    "Principles without examples."
+  ],
+  "checklist": [
+    "Principles have do/don’t.",
+    "Exceptions owned.",
+    "Doc short enough to load in prompts."
+  ],
+  "number": 84
+}

@@ -3965,5 +3965,1537 @@
       "Next step obvious.",
       "Outsider tested."
     ]
+  },
+  {
+    "slug": "defensive-css-mindset",
+    "stage": "Deliver",
+    "title": "Ship defensive CSS for dynamic content",
+    "principle": "Ahmad Shadeed’s Defensive CSS (ishadeed.com → defensivecss.dev): write CSS that survives unexpected content—long titles, odd image ratios, extra flex items—instead of styling only the happy-path mock. For AI UI work, treat every generated layout as hostile until proven robust.",
+    "procedure": [
+      "List failure modes: overflow text, missing images, 1 vs 12 items, RTL, zoom.",
+      "For each component, add a defensive rule (wrap, min/max, object-fit, gap, line-clamp with escape).",
+      "Prefer flex-wrap / auto-fit patterns over fixed counts assumed by the mock.",
+      "Add CSS variable fallbacks where tokens may be missing.",
+      "QA with ugly content fixtures, not lorem-perfect strings."
+    ],
+    "examplePrompts": [
+      "Apply Defensive CSS (Shadeed / defensivecss.dev) to this component set:\n- Long titles must wrap or truncate without breaking siblings.\n- Images: object-fit + fixed aspect so distortion can’t wreck the card.\n- Flex/grid: wrap or scroll when item count exceeds the mock.\n- Provide CSS variable fallbacks.\nReturn before/after snippets + the failure mode each fix covers.",
+      "Generate three hostile content fixtures (emoji-heavy title, 2KB bio, 0.5× image) and harden the CSS until the layout holds."
+    ],
+    "promptWhy": [
+      "Names concrete failure modes so the model doesn’t ‘prettify’ only the screenshot case.",
+      "Fixtures force proof—AI often claims robustness without testing."
+    ],
+    "tips": [
+      "Primary: https://defensivecss.dev/ and https://ishadeed.com/article/defensive-css/",
+      "Built on Shadeed’s earlier ‘just in case’ mindset essays.",
+      "No endorsement; public tips paraphrased.",
+      "Quiet Folio: defense is craft, not chrome."
+    ],
+    "sourceUrls": [
+      "https://defensivecss.dev/",
+      "https://ishadeed.com/article/defensive-css/",
+      "https://css-tricks.com/defensive-css/"
+    ],
+    "related": [
+      "remove-ai-tells",
+      "last-mile-manual",
+      "browser-native-first"
+    ],
+    "pairsWellWith": [
+      "cut-elements",
+      "critic-subagents"
+    ],
+    "workedExamples": [
+      {
+        "title": "Card title nuke",
+        "before": "One-line title; AI CSS uses nowrap + fixed height—long titles collide.",
+        "after": "Wrap with line-clamp(2) + min-height; siblings use gap not absolute offsets.",
+        "body": "Classic defensive tip: plan for long content."
+      },
+      {
+        "title": "Flex row of ‘exactly 4’",
+        "before": "Four equal columns; fifth item from CMS overflows off-screen.",
+        "after": "flex-wrap + min widths; or horizontal scroll with visible cue.",
+        "body": "Shadeed’s flex wrapping / count-assumption defenses."
+      },
+      {
+        "title": "Broken hero image",
+        "body": "Unexpected aspect ratio: lock box with aspect-ratio + object-fit:cover so layout geometry stays."
+      }
+    ],
+    "antiPatterns": [
+      "Styling only the Figma-perfect string lengths.",
+      "Fixed pixel heights that clip real copy.",
+      "Assuming image dimensions match the mock forever."
+    ],
+    "checklist": [
+      "Hostile content fixtures exist.",
+      "Overflow/wrap strategy per text block.",
+      "Images can’t distort the grid.",
+      "Variable count of children handled."
+    ],
+    "number": 61
+  },
+  {
+    "slug": "just-in-case-layout",
+    "stage": "Define",
+    "title": "Design the just-in-case layout states",
+    "principle": "Shadeed’s public ‘just in case’ mindset: before coding, name empty, sparse, dense, error, and loading states so the system isn’t a single happy screenshot. AI prompts that only describe the ideal state ship brittle UIs.",
+    "procedure": [
+      "For each primary view, list: empty, 1-item, typical, overflow, error, offline.",
+      "Sketch or prompt each state with the same tokens—don’t invent a second visual language.",
+      "Decide which states share layout chrome vs need dedicated illustration.",
+      "Wire copy for emptiness that teaches the next action (not ‘Nothing here’)."
+    ],
+    "examplePrompts": [
+      "Expand this screen into just-in-case states (Shadeed mindset):\nempty / single / dense / error / loading.\nKeep one token set. Return a state table + one prompt-ready description each.",
+      "Rewrite empty-state copy so it teaches the next useful action; kill cute-but-useless illustrations that block the CTA."
+    ],
+    "promptWhy": [
+      "State table stops single-screenshot syndrome.",
+      "Forces action-bearing empty copy—common AI failure."
+    ],
+    "tips": [
+      "See defensivecss.dev introduction + Shadeed blog lineage.",
+      "Pairs with path-to-completion for forms.",
+      "No endorsement."
+    ],
+    "sourceUrls": [
+      "https://defensivecss.dev/",
+      "https://ishadeed.com/"
+    ],
+    "related": [
+      "defensive-css-mindset",
+      "wireframe-first",
+      "give-real-context"
+    ],
+    "pairsWellWith": [
+      "thinking-before-prompt",
+      "critic-subagents"
+    ],
+    "workedExamples": [
+      {
+        "title": "Inbox empty",
+        "before": "Blank white void.",
+        "after": "One sentence + primary ‘Compose’—same chrome as full inbox.",
+        "body": "Just-in-case empty is still the product."
+      },
+      {
+        "title": "Dense table",
+        "body": "Define overflow: sticky header + scroll; don’t pretend 10k rows fit the mock height."
+      }
+    ],
+    "antiPatterns": [
+      "Only designing the marketing screenshot state.",
+      "Empty states as orphan artboards with new colors."
+    ],
+    "checklist": [
+      "≥5 states named per primary view.",
+      "Tokens shared across states.",
+      "Empty copy teaches next action."
+    ],
+    "number": 62
+  },
+  {
+    "slug": "atomic-design-hierarchy",
+    "stage": "Define",
+    "title": "Build UI with atomic hierarchy",
+    "principle": "Brad Frost’s Atomic Design (public book at atomicdesign.bradfrost.com): interfaces are atoms → molecules → organisms → templates → pages working concurrently. For AI design, force the model to name the hierarchy instead of inventing one-off page snowflakes.",
+    "procedure": [
+      "Inventory existing atoms (type, color, inputs, icons) before new page work.",
+      "Compose molecules (label+input, search field) before organisms (header, card grid).",
+      "Templates define content structure; pages plug in real representative content.",
+      "Reject new components that duplicate an atom under a fresh name.",
+      "Review AI output by asking: which level is this change at?"
+    ],
+    "examplePrompts": [
+      "Refactor this page using Atomic Design (Frost, public book):\n- List atoms / molecules / organisms / template / page.\n- Promote duplicated one-offs into shared molecules.\n- Keep templates content-agnostic; pages carry real sample content.\nReturn the hierarchy map + diffs.",
+      "Stop inventing a new ‘FancyCard’. Show which existing organism it should extend."
+    ],
+    "promptWhy": [
+      "Hierarchy map prevents snowflake components.",
+      "Names the anti-pattern of renaming duplicates."
+    ],
+    "tips": [
+      "Read free: https://atomicdesign.bradfrost.com/chapter-2/",
+      "Concurrent levels—not a waterfall you finish atoms before pages.",
+      "No endorsement."
+    ],
+    "sourceUrls": [
+      "https://atomicdesign.bradfrost.com/",
+      "https://atomicdesign.bradfrost.com/chapter-2/",
+      "https://bradfrost.com/"
+    ],
+    "related": [
+      "systemize-repeating-ui",
+      "design-system-from-assets",
+      "pattern-library-before-pages"
+    ],
+    "pairsWellWith": [
+      "specify-the-look",
+      "cut-elements"
+    ],
+    "workedExamples": [
+      {
+        "title": "Snowflake buttons",
+        "before": "Primary, CTA, HeroCTA, BigBlue—four near-identical atoms.",
+        "after": "One button atom + variants (primary/secondary/tertiary).",
+        "body": "Atomic language makes duplication obvious."
+      },
+      {
+        "title": "Template vs page",
+        "body": "Template shows slots; page fills with real chore names—catches content that breaks the system."
+      }
+    ],
+    "antiPatterns": [
+      "Designing pages as unique artboards with no shared parts.",
+      "Treating atomic design as a rigid waterfall."
+    ],
+    "checklist": [
+      "Hierarchy map exists for the view.",
+      "No duplicate atoms under new names.",
+      "Pages use representative real content."
+    ],
+    "number": 63
+  },
+  {
+    "slug": "pattern-library-before-pages",
+    "stage": "Discover",
+    "title": "Start from the pattern library, not the page",
+    "principle": "Frost’s Pattern Lab lineage (Atomic Design ch.3–4, public): effective systems expose patterns in isolation and in context. When prompting AI, seed with the library’s patterns first so pages inherit, rather than reverse-engineering a library from a pretty page.",
+    "procedure": [
+      "Open or sketch the pattern inventory before net-new screens.",
+      "Prompt AI to assemble from named patterns; forbid silent new primitives.",
+      "Toggle patterns through states (default/hover/disabled) in isolation.",
+      "Only then compose a page and note which patterns were missing—and promote them."
+    ],
+    "examplePrompts": [
+      "Assemble this screen ONLY from our pattern list: [paste]. If a need isn’t covered, propose a pattern addition—don’t silently invent. Cite Atomic Design / Pattern Lab workflow.",
+      "Generate isolation stories for Button / Field / Card (default, hover, error, disabled) before any marketing page."
+    ],
+    "promptWhy": [
+      "Forbids silent invention—the main AI systems failure.",
+      "Isolation stories catch state gaps early."
+    ],
+    "tips": [
+      "https://atomicdesign.bradfrost.com/chapter-3/",
+      "Tool-agnostic: Pattern Lab is illustrative, not required.",
+      "No endorsement."
+    ],
+    "sourceUrls": [
+      "https://atomicdesign.bradfrost.com/chapter-3/",
+      "https://atomicdesign.bradfrost.com/chapter-4/",
+      "https://bradfrost.com/"
+    ],
+    "related": [
+      "atomic-design-hierarchy",
+      "design-system-from-assets",
+      "ten-options-then-remix"
+    ],
+    "pairsWellWith": [
+      "wireframe-first",
+      "systemize-repeating-ui"
+    ],
+    "workedExamples": [
+      {
+        "title": "Page-first debt",
+        "before": "AI ships a gorgeous settings page with unique toggles.",
+        "after": "Extract Toggle pattern; rebuild page from library.",
+        "body": "Library-first reverses the debt."
+      },
+      {
+        "title": "Missing error state",
+        "body": "Isolation story reveals Field never had error—caught before QA."
+      }
+    ],
+    "antiPatterns": [
+      "Pretty page first, ‘we’ll systematize later’.",
+      "Pattern docs that omit interactive states."
+    ],
+    "checklist": [
+      "Pattern inventory referenced in the prompt.",
+      "Isolation states covered.",
+      "New needs proposed as patterns, not one-offs."
+    ],
+    "number": 64
+  },
+  {
+    "slug": "open-props-tokens",
+    "stage": "Define",
+    "title": "Design with shared CSS props, not magic numbers",
+    "principle": "Adam Argyle’s Open Props (open-props.style / GitHub): expose design decisions as CSS custom properties—colors, sizes, shadows, easings—so UI stays consistent and adaptable. For AI output, ban raw one-off px/rem/hex when a prop exists.",
+    "procedure": [
+      "Establish or import a prop set (spacing, type, color, radius, shadow, ease).",
+      "Rewrite AI CSS to reference props; delete orphan magic numbers.",
+      "Prefer prop packs you can theme (light/dark) over hardcoded values.",
+      "Document which props are allowed in prompts to agents."
+    ],
+    "examplePrompts": [
+      "Refactor this stylesheet to Open Props–style tokens (Argyle):\n- Replace magic spacing/color/radius/shadow with var(--…).\n- Add missing props sparingly; don’t explode the token set.\n- Show light/dark where color props need pairs.\nReturn prop map + diff.",
+      "Given these props [paste], generate the card component using ONLY those vars."
+    ],
+    "promptWhy": [
+      "Token constraint kills rainbow AI CSS.",
+      "Prop-only generation keeps themeability."
+    ],
+    "tips": [
+      "https://open-props.style/ · https://github.com/argyleink/open-props",
+      "nerdy.dev for ongoing CSS notes.",
+      "No endorsement."
+    ],
+    "sourceUrls": [
+      "https://open-props.style/",
+      "https://github.com/argyleink/open-props",
+      "https://nerdy.dev/"
+    ],
+    "related": [
+      "design-system-from-assets",
+      "specify-the-look",
+      "hierarchy-with-weight"
+    ],
+    "pairsWellWith": [
+      "defensive-css-mindset",
+      "remove-ai-tells"
+    ],
+    "workedExamples": [
+      {
+        "title": "14 unique radii",
+        "before": "AI picks 3px, 5px, 8px, 12px…",
+        "after": "--radius-2 / --radius-3 only.",
+        "body": "Props collapse chaos."
+      },
+      {
+        "title": "Dark mode rewrite",
+        "body": "Color props swap; components untouched—proof tokens worked."
+      }
+    ],
+    "antiPatterns": [
+      "Hex soup beside an unused token file.",
+      "Hundreds of one-off custom props."
+    ],
+    "checklist": [
+      "Prop allowlist in the prompt.",
+      "No unexplained magic numbers in final CSS.",
+      "Theme pairs considered."
+    ],
+    "number": 65
+  },
+  {
+    "slug": "css-as-adaptive-material",
+    "stage": "Deliver",
+    "title": "Treat modern CSS as adaptive material",
+    "principle": "Argyle’s public teaching (Chrome/CSS advocacy lineage, nerdy.dev): lean on native CSS capabilities—container queries, cascade layers, color functions, scroll-driven affordances—so interfaces adapt instead of depending on JS-heavy approximations. Prompt AI to prefer platform CSS before libraries.",
+    "procedure": [
+      "Ask: can container queries / :has / grid / color-mix solve this without JS?",
+      "Layer styles (reset → tokens → components → utilities) to control cascade fights.",
+      "Progressively enhance; keep a readable base without fancy features.",
+      "Document browser baselines honestly in the PR."
+    ],
+    "examplePrompts": [
+      "Rebuild this component with adaptive CSS (Argyle / modern CSS craft):\n- Prefer container queries over window resize JS.\n- Use color-mix / relative color where theming needs variants.\n- Cascade layers to isolate resets vs components.\n- Note progressive-enhancement fallback.\nNo endorsement of any tooling.",
+      "Delete the resize observer if a container query can express the same layout shift."
+    ],
+    "promptWhy": [
+      "Pushes platform CSS before dependency creep.",
+      "Forces an honest fallback note."
+    ],
+    "tips": [
+      "https://nerdy.dev/",
+      "Pair with Open Props for tokens.",
+      "No endorsement."
+    ],
+    "sourceUrls": [
+      "https://nerdy.dev/",
+      "https://open-props.style/"
+    ],
+    "related": [
+      "open-props-tokens",
+      "browser-native-first",
+      "defensive-css-mindset"
+    ],
+    "pairsWellWith": [
+      "animation-restraint",
+      "last-mile-manual"
+    ],
+    "workedExamples": [
+      {
+        "title": "Sidebar collapse",
+        "before": "JS measures width.",
+        "after": "@container switches layout at an inline-size.",
+        "body": "Adaptive material over observers."
+      },
+      {
+        "title": "Cascade fight",
+        "body": "Layers separate third-party CSS from app components—specificity calm."
+      }
+    ],
+    "antiPatterns": [
+      "JS for pure layout questions CSS can answer.",
+      "No fallback story for older clients you still claim to support."
+    ],
+    "checklist": [
+      "Native CSS option considered first.",
+      "Fallback noted.",
+      "Cascade strategy explicit."
+    ],
+    "number": 66
+  },
+  {
+    "slug": "utility-first-composition",
+    "stage": "Define",
+    "title": "Compose UI from constrained utilities",
+    "principle": "Adam Wathan’s Tailwind/public teaching: style by composing a constrained utility vocabulary rather than inventing open-ended CSS per component. Distinct from Refactoring UI visual tips (already on Schoger)—this is about the composition model that keeps AI from emitting unbounded stylesheets.",
+    "procedure": [
+      "Give the agent your utility/token vocabulary (spacing scale, type scale, colors).",
+      "Require class/composition output inside that vocabulary—no arbitrary values unless justified.",
+      "Extract repeated compositions into components only after they stabilize.",
+      "Review diffs for arbitrary value creep ([13px], [#a1b2c3])."
+    ],
+    "examplePrompts": [
+      "Implement this card utility-first (Wathan / Tailwind public model):\n- Use only the project spacing/type/color scales.\n- No arbitrary values unless you justify with a one-line why.\n- Extract a component only if the composition repeats ≥3 times.\nReturn markup + any extraction.",
+      "Audit this AI stylesheet for arbitrary values; remap to the scale or delete."
+    ],
+    "promptWhy": [
+      "Vocabulary constraint is the whole point vs freehand CSS.",
+      "Arbitrary-value audit catches AI ‘close enough’ pixels."
+    ],
+    "tips": [
+      "https://tailwindcss.com/ · https://adamwathan.me/",
+      "Visual hierarchy tips live under Steve Schoger techniques—don’t duplicate.",
+      "No endorsement."
+    ],
+    "sourceUrls": [
+      "https://tailwindcss.com/",
+      "https://adamwathan.me/",
+      "https://refactoringui.com/"
+    ],
+    "related": [
+      "hierarchy-with-weight",
+      "open-props-tokens",
+      "systemize-repeating-ui"
+    ],
+    "pairsWellWith": [
+      "fewer-borders",
+      "start-with-whitespace"
+    ],
+    "workedExamples": [
+      {
+        "title": "Arbitrary creep",
+        "before": "p-[13px] text-[#6b7280] rounded-[7px]",
+        "after": "p-3 text-slate-500 rounded-md",
+        "body": "Stay on-scale."
+      },
+      {
+        "title": "Premature extract",
+        "body": "Two similar cards stay composed; third repeat earns a component."
+      }
+    ],
+    "antiPatterns": [
+      "Open-ended CSS beside a utility system.",
+      "Extracting components on first sight."
+    ],
+    "checklist": [
+      "Scale vocabulary provided to the agent.",
+      "Arbitrary values justified or removed.",
+      "Extraction threshold respected."
+    ],
+    "number": 67
+  },
+  {
+    "slug": "affordances-and-signifiers",
+    "stage": "Define",
+    "title": "Separate affordances from signifiers",
+    "principle": "Don Norman (DOET revised, public TOC/notes on jnd.org): affordances are possible actions; signifiers communicate where the action is. AI UIs often decorate without clarifying action—fix for discoverability: can a new user tell what to do?",
+    "procedure": [
+      "List intended actions on the view.",
+      "For each, name the affordance (what’s possible) and the signifier (how it’s shown).",
+      "Remove decoration that looks actionable but isn’t; strengthen weak signifiers.",
+      "Check mapping: control layout should match cause→effect.",
+      "Provide feedback so the gulfs of execution/evaluation shrink."
+    ],
+    "examplePrompts": [
+      "Audit this UI with Norman’s affordances vs signifiers (DOET / jnd.org public notes):\n- Table: action → affordance → signifier → feedback.\n- Flag false affordances (looks clickable, isn’t).\n- Propose stronger signifiers without adding chrome noise.\nNo endorsement.",
+      "This icon row has no labels—add signifiers or remove icons that aren’t discoverable."
+    ],
+    "promptWhy": [
+      "Forces the affordance/signifier distinction models blur.",
+      "False-affordance hunt kills decorative buttons."
+    ],
+    "tips": [
+      "https://jnd.org/the-design-of-everyday-things-revised-and-expanded-edition/",
+      "Signifiers were emphasized in the revised edition.",
+      "Paraphrase only; book remains the full source.",
+      "No endorsement."
+    ],
+    "sourceUrls": [
+      "https://jnd.org/",
+      "https://jnd.org/the-design-of-everyday-things-revised-and-expanded-edition/"
+    ],
+    "related": [
+      "design-for-error",
+      "point-and-talk",
+      "invisible-interaction-details"
+    ],
+    "pairsWellWith": [
+      "critic-subagents",
+      "remove-ai-tells"
+    ],
+    "workedExamples": [
+      {
+        "title": "Grey text button",
+        "before": "Looks like body copy; is the only save action.",
+        "after": "Button signifier + clear label; feedback on save.",
+        "body": "Affordance existed; signifier failed."
+      },
+      {
+        "title": "Skeuomorphic trap",
+        "body": "Slider that doesn’t slide—false affordance. Either make it work or change the signifier."
+      }
+    ],
+    "antiPatterns": [
+      "Decoration that mimics controls.",
+      "Icon-only actions with no discoverability path."
+    ],
+    "checklist": [
+      "Action table filled.",
+      "False affordances removed or fixed.",
+      "Feedback exists for primary actions."
+    ],
+    "number": 68
+  },
+  {
+    "slug": "design-for-error",
+    "stage": "Deliver",
+    "title": "Design for error, don’t blame the user",
+    "principle": "Norman’s public DOET theme (Human Error? No, Bad Design): treat slips and mistakes as design problems—constraints, undo, sensible defaults, clear confirmations. AI flows that only show the success path are incomplete.",
+    "procedure": [
+      "Enumerate likely slips (wrong click, mode errors) and mistakes (wrong goal).",
+      "Add forcing functions / constraints where cost of error is high.",
+      "Prefer undo over scary confirmations for reversible actions.",
+      "Write error copy that explains cause + next step, not blame.",
+      "Test the unhappy path in critic screenshots."
+    ],
+    "examplePrompts": [
+      "Add design-for-error (Norman / DOET public principles) to this flow:\n- List slips vs mistakes.\n- Reversible actions get undo; irreversible get plain-language confirm.\n- Error messages: cause + recovery.\n- Remove blame language (‘invalid user’).\nReturn changes.",
+      "Replace this ‘Are you sure?’ wall with undo toast where the delete is reversible."
+    ],
+    "promptWhy": [
+      "Splits slips/mistakes so fixes match the error type.",
+      "Undo vs confirm is an explicit policy models blur."
+    ],
+    "tips": [
+      "jnd.org DOET chapter outline covers Designing for Error.",
+      "No endorsement; paraphrase public principles only."
+    ],
+    "sourceUrls": [
+      "https://jnd.org/the-design-of-everyday-things-revised-and-expanded-edition/",
+      "https://jnd.org/"
+    ],
+    "related": [
+      "affordances-and-signifiers",
+      "remove-ai-tells",
+      "last-mile-manual"
+    ],
+    "pairsWellWith": [
+      "path-to-completion",
+      "just-in-case-layout"
+    ],
+    "workedExamples": [
+      {
+        "title": "Mode error",
+        "before": "Same gesture deletes or archives by silent mode.",
+        "after": "Mode signifier + undo; or separate gestures.",
+        "body": "Classic Norman slip class."
+      },
+      {
+        "title": "Blameful toast",
+        "before": "‘Invalid input’.",
+        "after": "‘Date needs YYYY-MM-DD—try 2026-09-16’.",
+        "body": "Recovery > blame."
+      }
+    ],
+    "antiPatterns": [
+      "Success-path-only prototypes.",
+      "Confirm dialogs for every trivial action."
+    ],
+    "checklist": [
+      "Unhappy paths listed.",
+      "Undo vs confirm policy set.",
+      "Error copy offers recovery."
+    ],
+    "number": 69
+  },
+  {
+    "slug": "path-to-completion",
+    "stage": "Deliver",
+    "title": "Illuminate a clear path to completion",
+    "principle": "Luke Wroblewski’s public form-design teaching (lukew.com / Web Form Design talks): every form’s primary job is completion—clear scan line, pacing, visible primary action, minimized pain. AI forms often look ‘designed’ but hide the finish line.",
+    "procedure": [
+      "Remove or postpone every field that isn’t required for the outcome.",
+      "Top-align labels; one primary action; demote secondary.",
+      "Show progress when multi-step; keep scope honest.",
+      "Inline validation that helps, not punishes on first focus.",
+      "Mobile: appropriate input types, targets, and keyboard-friendly actions."
+    ],
+    "examplePrompts": [
+      "Refactor this form for path-to-completion (Luke W public form practices):\n- Cut/postpone nonessential fields.\n- Top-aligned labels; one primary CTA.\n- Inline validation after input; helpful errors.\n- Mobile input types + 44px targets.\nReturn cut list + UI diff.",
+      "This checkout has two solid buttons—make hierarchy obvious and shorten the path."
+    ],
+    "promptWhy": [
+      "Cut list is the craft; visuals alone don’t finish forms.",
+      "Names mobile input-type specifics AI skips."
+    ],
+    "tips": [
+      "https://www.lukew.com/ · public PDFs/talks on web form design",
+      "Mobile First materials on lukew.com",
+      "No endorsement."
+    ],
+    "sourceUrls": [
+      "https://www.lukew.com/",
+      "https://static.lukew.com/WebForms_LukeW_101209.pdf",
+      "https://www.lukew.com/mobilefirst/08-chapter-6/index.html"
+    ],
+    "related": [
+      "evaluate-every-question",
+      "design-for-error",
+      "cut-elements"
+    ],
+    "pairsWellWith": [
+      "hand-rewrite-copy",
+      "just-in-case-layout"
+    ],
+    "workedExamples": [
+      {
+        "title": "Optional noise",
+        "before": "12 fields including ‘Fax’.",
+        "after": "5 required; fax gone; marketing prefs postponed.",
+        "body": "Completion > completeness."
+      },
+      {
+        "title": "Hidden primary",
+        "body": "Primary submit visually equals Cancel—fix hierarchy."
+      }
+    ],
+    "antiPatterns": [
+      "Multi-column desktop forms on mobile.",
+      "Punishing validation on blur of empty fields."
+    ],
+    "checklist": [
+      "Field cut list exists.",
+      "One clear primary action.",
+      "Mobile input types set."
+    ],
+    "number": 70
+  },
+  {
+    "slug": "evaluate-every-question",
+    "stage": "Discover",
+    "title": "Evaluate every question you ask",
+    "principle": "Luke W’s public form organization rule: each question costs completion. Keep, cut, postpone, or explain—speak with one voice. Use this before AI generates a ‘comprehensive’ intake form.",
+    "procedure": [
+      "List every proposed field as a question.",
+      "Tag keep / cut / postpone / explain.",
+      "Merge duplicate asks; align voice across stakeholders.",
+      "Only then wireframe the form."
+    ],
+    "examplePrompts": [
+      "Run evaluate-every-question (Luke W):\nFor each field: keep | cut | postpone | explain why we ask.\nSpeak with one product voice.\nReturn the triage table before any UI.",
+      "Stakeholders want 20 fields. Cut to the minimum that unlocks the first successful outcome."
+    ],
+    "promptWhy": [
+      "Triage before UI stops comprehensive-by-default AI forms.",
+      "Explain tag surfaces creepy asks early."
+    ],
+    "tips": [
+      "Public Web Form Design practices from lukew.com materials.",
+      "No endorsement."
+    ],
+    "sourceUrls": [
+      "https://www.lukew.com/",
+      "http://static.lukew.com/ui12_lukew_webforms.pdf"
+    ],
+    "related": [
+      "path-to-completion",
+      "thinking-before-prompt",
+      "cut-elements"
+    ],
+    "pairsWellWith": [
+      "tc-ebc-task",
+      "ambitious-prompts"
+    ],
+    "workedExamples": [
+      {
+        "title": "Company size ask",
+        "before": "Required on signup.",
+        "after": "Postponed to billing—unlocks account first.",
+        "body": "Postpone is a valid outcome."
+      },
+      {
+        "title": "Two birthdays",
+        "body": "Duplicate stakeholder fields merged—one voice."
+      }
+    ],
+    "antiPatterns": [
+      "UI first, field justification never.",
+      "Required for analytics convenience."
+    ],
+    "checklist": [
+      "Triage table complete.",
+      "No unexplained required fields.",
+      "One voice across copy."
+    ],
+    "number": 71
+  },
+  {
+    "slug": "set-the-appetite",
+    "stage": "Discover",
+    "title": "Set appetite instead of estimating infinity",
+    "principle": "Ryan Singer’s Shape Up (public at basecamp.com/shapeup): decide how much time you’re willing to spend (appetite) before shaping a solution—fixed time, variable scope. Stops AI product chats from expanding into endless rebuilds.",
+    "procedure": [
+      "Name the raw idea and the problem it claims to solve.",
+      "Set an appetite (e.g., small/medium cycle)—not an estimate of ‘true’ size.",
+      "Shape only what fits; list no-gos and rabbit holes.",
+      "Bet consciously; circuit-break if the build blows the appetite."
+    ],
+    "examplePrompts": [
+      "Shape this idea with appetite (Singer / Shape Up public book):\n- Problem in one paragraph.\n- Appetite: [2 days | 2 weeks | 6 weeks].\n- Solution elements that fit; explicit no-gos.\n- Rabbit holes to avoid.\nReturn a pitch outline—not a backlog.",
+      "We keep estimating ‘how long’. Flip to appetite: what would we build if we only had one week?"
+    ],
+    "promptWhy": [
+      "Appetite constrains scope before UI fantasy.",
+      "No-gos prevent grab-bag pitches."
+    ],
+    "tips": [
+      "https://basecamp.com/shapeup",
+      "Later Singer writing adds Framing vs Shaping—use when helpful.",
+      "No endorsement of Basecamp process as universal law."
+    ],
+    "sourceUrls": [
+      "https://basecamp.com/shapeup",
+      "https://feltpresence.com/"
+    ],
+    "related": [
+      "breadboard-before-pixels",
+      "thinking-before-prompt",
+      "cut-elements"
+    ],
+    "pairsWellWith": [
+      "wireframe-first",
+      "tc-ebc-constraints"
+    ],
+    "workedExamples": [
+      {
+        "title": "Calendar grab-bag",
+        "before": "Full Google Calendar clone estimate: ∞",
+        "after": "6-week appetite → team availability only.",
+        "body": "Shape Up case pattern: narrow the problem."
+      },
+      {
+        "title": "Circuit breaker",
+        "body": "If mid-build scope explodes, stop—appetite was the contract."
+      }
+    ],
+    "antiPatterns": [
+      "Estimating then padding forever.",
+      "Pitches with no no-gos."
+    ],
+    "checklist": [
+      "Appetite stated.",
+      "No-gos listed.",
+      "Solution fits the appetite."
+    ],
+    "number": 72
+  },
+  {
+    "slug": "breadboard-before-pixels",
+    "stage": "Define",
+    "title": "Breadboard the places, actions, and connections",
+    "principle": "Shape Up breadboarding (public): map screens/places, affordances/actions, and connections at a fat-marker level before polished UI. Keeps AI from pixel-painting unsettled product shape.",
+    "procedure": [
+      "List places (where the user is).",
+      "List actions available in each place.",
+      "Draw connections (what leads where)—boxes and arrows, not mock chrome.",
+      "Only then add visual design or high-fidelity AI renders.",
+      "Update the breadboard when scope changes; don’t silently restyle past confusion."
+    ],
+    "examplePrompts": [
+      "Breadboard this feature (Singer / Shape Up):\n- Places\n- Actions\n- Connections\nASCII or nested lists fine—no colors, no typography.\nFlag rabbit holes. Then stop; wait for approval before pixels.",
+      "Convert this glossy mock back into a breadboard; identify unresolved connections."
+    ],
+    "promptWhy": [
+      "Bans chrome until structure is settled.",
+      "Reverse-breadboard reveals fake completeness."
+    ],
+    "tips": [
+      "basecamp.com/shapeup — Find the Elements / breadboarding",
+      "Fat marker sketches pair with breadboards.",
+      "No endorsement."
+    ],
+    "sourceUrls": [
+      "https://basecamp.com/shapeup",
+      "https://feltpresence.com/"
+    ],
+    "related": [
+      "set-the-appetite",
+      "wireframe-first",
+      "sketch-what-you-cant-describe"
+    ],
+    "pairsWellWith": [
+      "point-and-talk",
+      "tc-ebc-elements"
+    ],
+    "workedExamples": [
+      {
+        "title": "Pretty confusion",
+        "before": "AI dashboard with 9 widgets, unclear nav.",
+        "after": "Breadboard shows 3 places; 6 widgets cut.",
+        "body": "Structure first."
+      },
+      {
+        "title": "Missing connection",
+        "body": "Action ‘Invite’ had no place to land—caught on breadboard."
+      }
+    ],
+    "antiPatterns": [
+      "High-fidelity first.",
+      "Breadboards that are just tiny wireframe UIs."
+    ],
+    "checklist": [
+      "Places/actions/connections listed.",
+      "No visual styling in the breadboard step.",
+      "Rabbit holes flagged."
+    ],
+    "number": 73
+  },
+  {
+    "slug": "walk-on-the-artifact",
+    "stage": "Define",
+    "title": "Walk on the artifact to see the whole",
+    "principle": "Craig Mod’s essay To Make a Book, Walk on a Book: print/spread the work in physical space to see adjacencies a screen hides. For digital products, force a spatial review—spreads, storyboards, or wall printouts—before locking AI-generated flows.",
+    "procedure": [
+      "Export key screens/pages at readable size.",
+      "Lay them out in order on a large surface (or infinite canvas zoomed out).",
+      "Walk the sequence; note broken adjacencies, pacing, and repeats.",
+      "Rearrange before polishing individual screens.",
+      "Give the work time to sit—don’t rush the next AI iteration."
+    ],
+    "examplePrompts": [
+      "Prepare a walk-on-the-artifact review (Craig Mod):\n- Export the flow as a single contact sheet / storyboard.\n- Annotate adjacency problems and pacing issues.\n- Propose reorder/cuts before any visual polish.\nNo endorsement.",
+      "Zoom out: show all primary screens at once; list what feels redundant when seen together."
+    ],
+    "promptWhy": [
+      "Contact sheet forces whole-product sight.",
+      "Reorder-before-polish matches Mod’s floor process."
+    ],
+    "tips": [
+      "https://craigmod.com/essays/to_make_a_book_walk_on_a_book/",
+      "Physical print still best when possible.",
+      "No endorsement."
+    ],
+    "sourceUrls": [
+      "https://craigmod.com/essays/to_make_a_book_walk_on_a_book/",
+      "https://craigmod.com/"
+    ],
+    "related": [
+      "screens-want-honesty",
+      "cut-elements",
+      "taste-as-filter"
+    ],
+    "pairsWellWith": [
+      "critic-subagents",
+      "protect-the-feeling"
+    ],
+    "workedExamples": [
+      {
+        "title": "On-screen tunnel vision",
+        "before": "Each screen polished in isolation; flow repeats the same hero thrice.",
+        "after": "Contact sheet cut two heroes; pacing breathes.",
+        "body": "Adjacencies only appear in the spread."
+      },
+      {
+        "title": "Sit time",
+        "body": "Leave the sheet overnight; morning edit is sharper than another AI pass."
+      }
+    ],
+    "antiPatterns": [
+      "Pixel-polish one screen while the map is wrong.",
+      "Never viewing the product at overview scale."
+    ],
+    "checklist": [
+      "Overview sheet exists.",
+      "Adjacency notes captured.",
+      "Reorder/cuts before polish."
+    ],
+    "number": 74
+  },
+  {
+    "slug": "rigor-for-durable-pages",
+    "stage": "Deliver",
+    "title": "Reserve rigor for what must last",
+    "principle": "Mod’s Books in the Age of the iPad / publishing essays: disposable content can be light; durable artifacts deserve material rigor. In product UI, separate ephemeral experiment surfaces from canonical pages—and spend craft budget on what persists.",
+    "procedure": [
+      "Label surfaces: ephemeral vs durable.",
+      "Apply full typographic/spacing rigor to durable paths (settings, core workflows, public docs).",
+      "Allow faster, cheaper treatments for experiments—with an expiry.",
+      "When promoting ephemeral→durable, re-run craft (not just ship the prototype look)."
+    ],
+    "examplePrompts": [
+      "Classify each screen ephemeral vs durable (Craig Mod publishing rigor):\n- Durable: full typography, spacing, a11y pass.\n- Ephemeral: note expiry + lighter treatment.\n- Promotion checklist when an experiment graduates.\nReturn the classification table.",
+      "This prototype look leaked into billing—promote with a rigor pass or demote."
+    ],
+    "promptWhy": [
+      "Classification stops equal craft spend on junk paths.",
+      "Promotion checklist prevents prototype chrome in production."
+    ],
+    "tips": [
+      "https://craigmod.com/journal/ipad_and_books/",
+      "https://craigmod.com/journal/post_artifact/",
+      "No endorsement."
+    ],
+    "sourceUrls": [
+      "https://craigmod.com/journal/ipad_and_books/",
+      "https://craigmod.com/journal/post_artifact/",
+      "https://craigmod.com/"
+    ],
+    "related": [
+      "walk-on-the-artifact",
+      "last-mile-manual",
+      "taste-as-filter"
+    ],
+    "pairsWellWith": [
+      "hand-rewrite-copy",
+      "remove-ai-tells"
+    ],
+    "workedExamples": [
+      {
+        "title": "Marketing leftover",
+        "before": "Launch experiment font still on account deletion.",
+        "after": "Durable path restored to system type.",
+        "body": "Rigor follows durability."
+      },
+      {
+        "title": "Expiry tag",
+        "body": "Banner marked ephemeral with remove-by date—doesn’t silently become brand."
+      }
+    ],
+    "antiPatterns": [
+      "Same polish budget everywhere.",
+      "Promoting prototypes without a craft pass."
+    ],
+    "checklist": [
+      "Surfaces classified.",
+      "Durable paths got rigor.",
+      "Ephemeral expiry noted."
+    ],
+    "number": 75
+  },
+  {
+    "slug": "just-enough-research",
+    "stage": "Discover",
+    "title": "Do just enough research to decide",
+    "principle": "Erika Hall’s Just Enough Research (Mule): research exists to reduce uncertainty for a decision—not to perform process theater. Scale methods to the risk; ask better questions before collecting endless data. For AI product work, refuse fake personas invented without contact with reality.",
+    "procedure": [
+      "State the decision you need to make.",
+      "List critical unknowns that would change the decision.",
+      "Pick the lightest method that could answer them (interview, analytics check, usability test).",
+      "Timebox; synthesize into decision-ready notes.",
+      "Skip rituals that don’t change the decision."
+    ],
+    "examplePrompts": [
+      "Apply just-enough-research (Erika Hall / Mule public framing):\n- Decision at stake.\n- Critical unknowns.\n- Lightest method + timebox.\n- What would falsify our current plan?\nDo not invent users. Return a research plan ≤1 page.",
+      "We have three fake personas. Replace with questions we’d ask five real users this week."
+    ],
+    "promptWhy": [
+      "Decision-first framing kills research theater.",
+      "Bans invented personas—an AI specialty."
+    ],
+    "tips": [
+      "https://www.mulebooks.com/just-enough-research",
+      "https://muledesign.com/",
+      "Public essays discuss revising JER; paraphrase principles only.",
+      "No endorsement."
+    ],
+    "sourceUrls": [
+      "https://www.mulebooks.com/just-enough-research",
+      "https://muledesign.com/",
+      "https://medium.com/mule-design/why-i-decided-to-revise-just-enough-research-9aadebd03534"
+    ],
+    "related": [
+      "thinking-before-prompt",
+      "give-real-context",
+      "epistemic-disclosure"
+    ],
+    "pairsWellWith": [
+      "set-the-appetite",
+      "critic-subagents"
+    ],
+    "workedExamples": [
+      {
+        "title": "Persona cosplay",
+        "before": "AI writes ‘Busy Brenda, 34’.",
+        "after": "Five interview notes; decision = postpone feature.",
+        "body": "Enough to decide beats fiction."
+      },
+      {
+        "title": "Survey theater",
+        "body": "Risk was usability of one flow—five moderated tests beat a 40-question survey."
+      }
+    ],
+    "antiPatterns": [
+      "Research without a decision.",
+      "Invented users as evidence."
+    ],
+    "checklist": [
+      "Decision stated.",
+      "Unknowns listed.",
+      "Method timeboxed.",
+      "No invented users as fact."
+    ],
+    "number": 76
+  },
+  {
+    "slug": "design-system-as-product",
+    "stage": "Define",
+    "title": "Treat the design system as a product",
+    "principle": "Dan Mall’s public design-systems teaching: systems need users (designers/devs), roadmaps, support, and adoption—not just a component dump. When AI generates libraries, assign product ownership questions: who is this for, how do they succeed, what is versioned?",
+    "procedure": [
+      "Name system customers and their jobs-to-be-done.",
+      "Define success metrics (adoption, time-to-UI, a11y escapes).",
+      "Version changes; publish changelog humans read.",
+      "Support channel + contribution path.",
+      "Prefer fewer excellent patterns over a museum of variants."
+    ],
+    "examplePrompts": [
+      "Frame this library as a product (Dan Mall systems craft):\n- Customers + jobs\n- Success metrics\n- Versioning/changelog plan\n- Contribution/support path\n- Cut list of low-value variants\nReturn a one-page system brief.",
+      "Audit our 60 components—propose the 15 that earn keep based on usage."
+    ],
+    "promptWhy": [
+      "Product framing stops folder-as-system.",
+      "Cut list fights museum growth."
+    ],
+    "tips": [
+      "https://danmall.com/",
+      "Public talks/courses on systems; paraphrase.",
+      "No endorsement."
+    ],
+    "sourceUrls": [
+      "https://danmall.com/",
+      "https://bradfrost.com/"
+    ],
+    "related": [
+      "atomic-design-hierarchy",
+      "pattern-library-before-pages",
+      "systemize-repeating-ui"
+    ],
+    "pairsWellWith": [
+      "design-system-from-assets",
+      "weight-of-implementation"
+    ],
+    "workedExamples": [
+      {
+        "title": "Museum file",
+        "before": "200 components, 12 used.",
+        "after": "Core set versioned; rest archived.",
+        "body": "Product focus."
+      },
+      {
+        "title": "No changelog",
+        "body": "Breaking padding change with silent npm bump—add human changelog."
+      }
+    ],
+    "antiPatterns": [
+      "Components without customers.",
+      "Infinite variants ‘just in case’."
+    ],
+    "checklist": [
+      "Customers named.",
+      "Metrics defined.",
+      "Changelog process exists.",
+      "Cut list reviewed."
+    ],
+    "number": 77
+  },
+  {
+    "slug": "teach-by-rebuilding-effects",
+    "stage": "Discover",
+    "title": "Learn craft by rebuilding the effect",
+    "principle": "Maxime Heckel’s public blog ethos: write the articles you needed—rebuild shaders/motion/UI effects from first principles to understand them. For AI-assisted design, don’t paste a black-box snippet; reconstruct until you can explain every layer.",
+    "procedure": [
+      "Pick a target effect you admire.",
+      "Break it into layers (structure, motion, lighting/color, timing).",
+      "Rebuild minimally; delete anything you can’t explain.",
+      "Write a short note of what each layer does—future you / agents need it.",
+      "Only then integrate into the product."
+    ],
+    "examplePrompts": [
+      "Rebuild this effect from first principles (Heckel craft style):\n- Layer map\n- Minimal reproduction\n- Delete unexplained magic\n- 10-line teaching note\nNo copy-paste of opaque demos.",
+      "Explain this shader/UI motion in plain language; if you can’t, simplify until you can."
+    ],
+    "promptWhy": [
+      "Layer map defeats cargo-cult snippets.",
+      "Teaching note becomes agent memory."
+    ],
+    "tips": [
+      "https://blog.maximeheckel.com/ · https://maximeheckel.com/",
+      "No endorsement."
+    ],
+    "sourceUrls": [
+      "https://blog.maximeheckel.com/",
+      "https://maximeheckel.com/"
+    ],
+    "related": [
+      "explorable-explanations",
+      "purposeful-motion",
+      "invent-software-materials"
+    ],
+    "pairsWellWith": [
+      "animation-restraint",
+      "materials-not-features"
+    ],
+    "workedExamples": [
+      {
+        "title": "Copied glow",
+        "before": "AI dumps a 200-line glow.",
+        "after": "3 layers explained; 40 lines.",
+        "body": "Rebuild to understand."
+      },
+      {
+        "title": "Teaching note",
+        "body": "PR includes ‘how this works’—next agent doesn’t re-mystify."
+      }
+    ],
+    "antiPatterns": [
+      "Opaque snippet worship.",
+      "Effects nobody on the team can debug."
+    ],
+    "checklist": [
+      "Layer map exists.",
+      "Every line explainable.",
+      "Teaching note written."
+    ],
+    "number": 78
+  },
+  {
+    "slug": "own-the-interface-details",
+    "stage": "Deliver",
+    "title": "Own the interface details end-to-end",
+    "principle": "Paco Coursey’s public craft (paco.me, cmdk, Linear/Vercel design-engineering lineage): interface quality lives in details—focus states, scroll behavior, keyboard, timing. AI often gets the layout and misses the last mile of interaction ownership.",
+    "procedure": [
+      "List interaction details: focus rings, hit targets, scroll locking, escape/enter, reduced motion.",
+      "Implement or prompt each explicitly—don’t assume defaults are fine.",
+      "Test keyboard-only and touch.",
+      "Match product motion language; delete orphan transitions.",
+      "Record a 30s detail checklist in the PR."
+    ],
+    "examplePrompts": [
+      "Own interface details (Paco-style craft):\n- Focus order + visible focus\n- Keyboard (Esc/Enter/arrows)\n- Scroll/overscroll behavior\n- prefers-reduced-motion\n- Hit targets ≥44px where touch matters\nReturn a detail checklist with pass/fail.",
+      "This dialog looks fine on click—make it excellent for keyboard users."
+    ],
+    "promptWhy": [
+      "Explicit detail list beats ‘polish it’.",
+      "Keyboard path is a common AI blind spot."
+    ],
+    "tips": [
+      "https://paco.me/ · https://github.com/pacocoursey",
+      "No endorsement."
+    ],
+    "sourceUrls": [
+      "https://paco.me/",
+      "https://github.com/pacocoursey"
+    ],
+    "related": [
+      "invisible-interaction-details",
+      "delight-in-the-details",
+      "last-mile-manual"
+    ],
+    "pairsWellWith": [
+      "animation-restraint",
+      "browser-native-first"
+    ],
+    "workedExamples": [
+      {
+        "title": "Focus lost",
+        "before": "Modal opens; focus stays on background.",
+        "after": "Focus trap + restore on close.",
+        "body": "Detail ownership."
+      },
+      {
+        "title": "Scroll bleed",
+        "body": "Body scroll locked while sheet open—small, decisive craft."
+      }
+    ],
+    "antiPatterns": [
+      "Mouse-only happy path.",
+      "Random easing not in the product language."
+    ],
+    "checklist": [
+      "Focus managed.",
+      "Keyboard paths work.",
+      "Reduced-motion respected.",
+      "PR detail checklist present."
+    ],
+    "number": 79
+  },
+  {
+    "slug": "typeface-as-product-system",
+    "stage": "Define",
+    "title": "Treat the typeface as a product system",
+    "principle": "Rasmus Andersson’s Inter (rsms.me / GitHub) shows type as engineered product: metrics, optical sizes, features, and UI intent documented publicly. When choosing or generating UI type, specify the system (features, tabular nums, weights) not just a font name.",
+    "procedure": [
+      "Pick a UI typeface with clear metrics for screens.",
+      "Define weight roles and size scale; enable font-feature-settings you need (tnum, ss##).",
+      "Test at small sizes; reject pretty display faces for dense UI.",
+      "Document loading strategy (subset, fallbacks) as part of design."
+    ],
+    "examplePrompts": [
+      "Specify type as a system (rsms / Inter craft mindset):\n- Family + fallbacks\n- Weight roles\n- Size scale\n- Features (tabular nums, etc.)\n- Loading/subset notes\nApply to this denser settings UI; reject decorative display fonts.",
+      "Replace this marketing font in the data table with a UI face + tnum."
+    ],
+    "promptWhy": [
+      "System spec beats ‘use Inter’ one-liner.",
+      "tnum/data UI is a concrete check."
+    ],
+    "tips": [
+      "https://rsms.me/inter/ · https://rsms.me/",
+      "No endorsement of Inter as mandatory—use as craft reference."
+    ],
+    "sourceUrls": [
+      "https://rsms.me/inter/",
+      "https://rsms.me/",
+      "https://github.com/rsms"
+    ],
+    "related": [
+      "hierarchy-with-weight",
+      "shoulders-of-type",
+      "specify-the-look"
+    ],
+    "pairsWellWith": [
+      "open-props-tokens",
+      "remove-ai-tells"
+    ],
+    "workedExamples": [
+      {
+        "title": "Display in a grid",
+        "before": "Fancy face; numbers misaligned.",
+        "after": "UI face + tabular nums.",
+        "body": "Type as system."
+      },
+      {
+        "title": "Weight soup",
+        "body": "Seven weights → three roles documented."
+      }
+    ],
+    "antiPatterns": [
+      "Font name only, no features/scale.",
+      "Display type in dense data UI."
+    ],
+    "checklist": [
+      "Weight roles defined.",
+      "Features specified.",
+      "Fallbacks/loading noted."
+    ],
+    "number": 80
+  },
+  {
+    "slug": "staff-design-ownership",
+    "stage": "Discover",
+    "title": "Own problems at staff altitude",
+    "principle": "Brian Lovin’s Staff Design project (staff.design) and reflection essay: senior IC designers own ambiguous, cross-cutting problems—not only tickets. When directing AI, frame work as problem ownership with narrative and leverage, not pixel chores.",
+    "procedure": [
+      "Write the problem brief: context, users, constraints, success.",
+      "Identify leverage (systems, narrative, prototypes) vs busywork.",
+      "Choose a communication artifact peers/execs can react to.",
+      "Use AI for exploration speed; keep judgment and storytelling human.",
+      "Capture what you learned for the next IC level-up."
+    ],
+    "examplePrompts": [
+      "Reframe this ticket as staff-altitude ownership (Staff Design / Lovin):\n- Problem brief\n- Leverage thesis\n- Artifacts to create\n- What AI can draft vs what I must decide\nReturn a one-page ownership plan.",
+      "Stop generating random screens—help me articulate the cross-team problem first."
+    ],
+    "promptWhy": [
+      "Problem brief elevates above ticket farming.",
+      "AI/human split keeps judgment central."
+    ],
+    "tips": [
+      "https://staff.design/ · https://brianlovin.com/writing/what-i-learned-from-staff-design-fdwXEj4",
+      "No endorsement."
+    ],
+    "sourceUrls": [
+      "https://staff.design/",
+      "https://brianlovin.com/writing/what-i-learned-from-staff-design-fdwXEj4",
+      "https://brianlovin.com/"
+    ],
+    "related": [
+      "thinking-before-prompt",
+      "design-engineer-ownership",
+      "weight-of-implementation"
+    ],
+    "pairsWellWith": [
+      "set-the-appetite",
+      "epistemic-disclosure"
+    ],
+    "workedExamples": [
+      {
+        "title": "Ticket tunnel",
+        "before": "AI churns icon variants.",
+        "after": "Ownership plan: alignment workshop + prototype narrative.",
+        "body": "Altitude shift."
+      },
+      {
+        "title": "Leverage pick",
+        "body": "One system fix beats twelve one-off screens."
+      }
+    ],
+    "antiPatterns": [
+      "Measuring IC value only in tickets closed.",
+      "Delegating judgment entirely to the model."
+    ],
+    "checklist": [
+      "Problem brief written.",
+      "Leverage thesis clear.",
+      "Human decisions identified."
+    ],
+    "number": 81
+  },
+  {
+    "slug": "design-the-feedback-loop",
+    "stage": "Discover",
+    "title": "Design the feedback loop, not just the UI",
+    "principle": "Julie Zhuo’s public writing (The Looking Glass / Making of a Manager themes): product quality depends on how teams give feedback, set expectations, and grow judgment. For AI design ops, specify critique cadence and decision owners—not only screens.",
+    "procedure": [
+      "Name who decides vs who advises.",
+      "Set a critique format (goals, constraints, questions) before showing work.",
+      "Timebox feedback; end with explicit decisions.",
+      "Separate taste notes from blocking issues.",
+      "Log decisions so AI iterations don’t reopen settled calls."
+    ],
+    "examplePrompts": [
+      "Design the feedback loop (Zhuo / Looking Glass leadership craft):\n- Decision owner\n- Critique agenda template\n- Blocking vs non-blocking labels\n- Decision log format\nApply before the next AI visual pass.",
+      "Convert this sprawling Slack critique into decisions + owners; discard re-litigation."
+    ],
+    "promptWhy": [
+      "Owner + agenda prevent feedback chaos.",
+      "Decision log stops AI churn from reopening calls."
+    ],
+    "tips": [
+      "https://juliezhuo.com/",
+      "Public essays/talks; paraphrase leadership craft—not a full book reprint.",
+      "No endorsement."
+    ],
+    "sourceUrls": [
+      "https://juliezhuo.com/",
+      "https://x.com/joulee"
+    ],
+    "related": [
+      "critic-subagents",
+      "staff-design-ownership",
+      "taste-as-filter"
+    ],
+    "pairsWellWith": [
+      "thinking-before-prompt",
+      "keep-working-alongside"
+    ],
+    "workedExamples": [
+      {
+        "title": "Taste pile-on",
+        "before": "12 opinions, no owner.",
+        "after": "Owner decides; taste parked as non-blocking.",
+        "body": "Loop design."
+      },
+      {
+        "title": "Reopened pixel",
+        "body": "Decision log shows color already settled—agent doesn’t thrash."
+      }
+    ],
+    "antiPatterns": [
+      "Feedback without decisions.",
+      "Every opinion treated as blocking."
+    ],
+    "checklist": [
+      "Decision owner named.",
+      "Critique template used.",
+      "Decisions logged."
+    ],
+    "number": 82
+  },
+  {
+    "slug": "critique-with-specificity",
+    "stage": "Define",
+    "title": "Critique with specificity, not vibes",
+    "principle": "Khoi Vinh’s long-form design writing (subtraction.com) models precise critique: name the problem in the interface, the user impact, and a directional fix. Vague ‘make it pop’ feedback wastes AI cycles.",
+    "procedure": [
+      "Point to a specific element or flow step.",
+      "State user impact (confusion, trust, time).",
+      "Propose a directional fix or question—not a pixel micromanage unless needed.",
+      "Separate objective issues (a11y, hierarchy) from taste.",
+      "Ask AI to respond to the critique point-by-point."
+    ],
+    "examplePrompts": [
+      "Rewrite this feedback with specificity (Khoi Vinh critique craft):\n- Element\n- User impact\n- Directional fix\nThen have the agent answer each point. Ban ‘make it pop/cleaner/modern’.",
+      "Turn these vibe notes into a structured critique table."
+    ],
+    "promptWhy": [
+      "Specificity makes agent diffs checkable.",
+      "Bans empty adjectives."
+    ],
+    "tips": [
+      "https://www.subtraction.com/",
+      "No endorsement."
+    ],
+    "sourceUrls": [
+      "https://www.subtraction.com/",
+      "https://x.com/khoi"
+    ],
+    "related": [
+      "critic-subagents",
+      "design-the-feedback-loop",
+      "screens-want-honesty"
+    ],
+    "pairsWellWith": [
+      "hand-rewrite-copy",
+      "hierarchy-with-weight"
+    ],
+    "workedExamples": [
+      {
+        "title": "Vibe → impact",
+        "before": "‘Feels off’.",
+        "after": "‘Primary CTA competes with price—users hesitate; demote secondary.’",
+        "body": "Actionable critique."
+      },
+      {
+        "title": "Point-by-point",
+        "body": "Agent replies per row; nothing hand-waved."
+      }
+    ],
+    "antiPatterns": [
+      "Adjective-only feedback.",
+      "Pixel micromanage without user impact."
+    ],
+    "checklist": [
+      "Each note names an element.",
+      "Impact stated.",
+      "Directional fix or question present."
+    ],
+    "number": 83
+  },
+  {
+    "slug": "write-the-system-down",
+    "stage": "Define",
+    "title": "Write the system down in human prose",
+    "principle": "Robin Rendle’s public writing on design systems/culture argues that systems live in clear writing—principles, examples, and voice—not only tokens. If AI can’t read how you decide, it will invent a new system each time.",
+    "procedure": [
+      "Draft principles in plain sentences with do/don’t examples.",
+      "Document exceptions and who may grant them.",
+      "Keep the doc short enough agents and humans will read it.",
+      "Link principles to components; delete orphan rules.",
+      "Revise when real products force exceptions."
+    ],
+    "examplePrompts": [
+      "Write the system in prose (Rendle systems-writing craft):\n- 5 principles with do/don’t\n- Exception policy\n- Link each principle to a component example\nKeep under 400 words so agents load it every time.",
+      "Our token file has no voice—add human principles that constrain AI layout choices."
+    ],
+    "promptWhy": [
+      "Prose principles constrain better than tokens alone.",
+      "Length cap ensures the doc is actually used."
+    ],
+    "tips": [
+      "https://robinrendle.com/",
+      "No endorsement."
+    ],
+    "sourceUrls": [
+      "https://robinrendle.com/",
+      "https://github.com/robinrendle"
+    ],
+    "related": [
+      "design-system-as-product",
+      "epistemic-disclosure",
+      "specify-the-look"
+    ],
+    "pairsWellWith": [
+      "atomic-design-hierarchy",
+      "garden-status-labels"
+    ],
+    "workedExamples": [
+      {
+        "title": "Token-only chaos",
+        "before": "Colors exist; AI still invents new patterns.",
+        "after": "Principle: ‘One primary action per view’—enforced in prompts.",
+        "body": "Writing steers generation."
+      },
+      {
+        "title": "Exception path",
+        "body": "Marketing may break grid with design-lead signoff—documented."
+      }
+    ],
+    "antiPatterns": [
+      "Rules nobody reads.",
+      "Principles without examples."
+    ],
+    "checklist": [
+      "Principles have do/don’t.",
+      "Exceptions owned.",
+      "Doc short enough to load in prompts."
+    ],
+    "number": 84
+  },
+  {
+    "slug": "ship-primitives-first",
+    "stage": "Define",
+    "title": "Ship primitives before pages",
+    "principle": "Shu Ding’s public work (shud.in, Vercel/Next/v0 ecosystem): durable product speed comes from good primitives—components, APIs, AI building blocks—more than one-off pages. Prompt AI to extract primitives that unlock many screens.",
+    "procedure": [
+      "From a requested page, extract candidate primitives (input, list row, toolbar).",
+      "Spec primitive APIs (props/states) before composing the page.",
+      "Implement primitives with tests/stories; then assemble.",
+      "Reject page-only CSS that should be primitive API."
+    ],
+    "examplePrompts": [
+      "Extract primitives first (Shu Ding craft):\n- From this page brief, list primitives + props/states.\n- Implement primitives before the page composition.\n- Forbid page-only one-offs that belong in the primitive API.\nReturn primitive specs.",
+      "This AI page inlines five unique buttons—collapse to one primitive with variants."
+    ],
+    "promptWhy": [
+      "Primitive specs create leverage across screens.",
+      "Forbids page-only snowflakes."
+    ],
+    "tips": [
+      "https://shud.in/ · https://github.com/shuding",
+      "No endorsement of Vercel products."
+    ],
+    "sourceUrls": [
+      "https://shud.in/",
+      "https://github.com/shuding"
+    ],
+    "related": [
+      "pattern-library-before-pages",
+      "systemize-repeating-ui",
+      "invent-software-materials"
+    ],
+    "pairsWellWith": [
+      "utility-first-composition",
+      "design-system-from-assets"
+    ],
+    "workedExamples": [
+      {
+        "title": "Page snowflake",
+        "before": "Settings built as unique markup.",
+        "after": "ListRow + Section primitives reused in billing.",
+        "body": "Primitives first."
+      },
+      {
+        "title": "API gap",
+        "body": "Missing loading prop forced ad-hoc spinners—add to primitive."
+      }
+    ],
+    "antiPatterns": [
+      "Pages without shared primitives.",
+      "Primitive APIs that mirror a single page’s quirks only."
+    ],
+    "checklist": [
+      "Primitives listed before page build.",
+      "Props/states specified.",
+      "Page assembles from primitives."
+    ],
+    "number": 85
   }
 ]

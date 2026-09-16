@@ -1,9 +1,9 @@
 {
   "slug": "paco-coursey",
   "name": "Paco Coursey",
-  "status": "directory",
-  "role": "Design engineer · Linear · interface craft",
-  "bio": "Paco Coursey crafts interfaces at Linear (webmaster) and previously developed Vercel’s design system, website, and dashboard. His site paco.me documents polished UI details, projects like a composable command menu (⌘K), and writing on React hooks and dark mode. Public profile emphasizes typography, motion, and performance as craft.",
+  "status": "partial",
+  "role": "Design engineer \u00b7 Linear \u00b7 interface craft",
+  "bio": "Paco Coursey crafts interfaces at Linear (webmaster) and previously developed Vercel\u2019s design system, website, and dashboard. His site paco.me documents polished UI details, projects like a composable command menu (\u2318K), and writing on React hooks and dark mode. Public profile emphasizes typography, motion, and performance as craft.",
   "links": [
     {
       "label": "Site",
@@ -18,10 +18,12 @@
       "url": "https://github.com/pacocoursey"
     }
   ],
-  "techniqueSlugs": [],
+  "techniqueSlugs": [
+    "own-the-interface-details"
+  ],
   "highlights": [
     "Crafting interfaces at Linear; prior Vercel design system work.",
-    "Public projects include ⌘K and Writer (plain-text editor).",
-    "Site focuses on magical UI details without hype."
+    "Public projects include \u2318K and Writer (plain-text editor).",
+    "Own-the-interface-details technique."
   ]
 }

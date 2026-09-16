@@ -1,0 +1,64 @@
+{
+  "slug": "just-enough-research",
+  "stage": "Discover",
+  "title": "Do just enough research to decide",
+  "principle": "Erika Hall’s Just Enough Research (Mule): research exists to reduce uncertainty for a decision—not to perform process theater. Scale methods to the risk; ask better questions before collecting endless data. For AI product work, refuse fake personas invented without contact with reality.",
+  "procedure": [
+    "State the decision you need to make.",
+    "List critical unknowns that would change the decision.",
+    "Pick the lightest method that could answer them (interview, analytics check, usability test).",
+    "Timebox; synthesize into decision-ready notes.",
+    "Skip rituals that don’t change the decision."
+  ],
+  "examplePrompts": [
+    "Apply just-enough-research (Erika Hall / Mule public framing):\n- Decision at stake.\n- Critical unknowns.\n- Lightest method + timebox.\n- What would falsify our current plan?\nDo not invent users. Return a research plan ≤1 page.",
+    "We have three fake personas. Replace with questions we’d ask five real users this week."
+  ],
+  "promptWhy": [
+    "Decision-first framing kills research theater.",
+    "Bans invented personas—an AI specialty."
+  ],
+  "tips": [
+    "https://www.mulebooks.com/just-enough-research",
+    "https://muledesign.com/",
+    "Public essays discuss revising JER; paraphrase principles only.",
+    "No endorsement."
+  ],
+  "sourceUrls": [
+    "https://www.mulebooks.com/just-enough-research",
+    "https://muledesign.com/",
+    "https://medium.com/mule-design/why-i-decided-to-revise-just-enough-research-9aadebd03534"
+  ],
+  "related": [
+    "thinking-before-prompt",
+    "give-real-context",
+    "epistemic-disclosure"
+  ],
+  "pairsWellWith": [
+    "set-the-appetite",
+    "critic-subagents"
+  ],
+  "workedExamples": [
+    {
+      "title": "Persona cosplay",
+      "before": "AI writes ‘Busy Brenda, 34’.",
+      "after": "Five interview notes; decision = postpone feature.",
+      "body": "Enough to decide beats fiction."
+    },
+    {
+      "title": "Survey theater",
+      "body": "Risk was usability of one flow—five moderated tests beat a 40-question survey."
+    }
+  ],
+  "antiPatterns": [
+    "Research without a decision.",
+    "Invented users as evidence."
+  ],
+  "checklist": [
+    "Decision stated.",
+    "Unknowns listed.",
+    "Method timeboxed.",
+    "No invented users as fact."
+  ],
+  "number": 76
+}

@@ -1,0 +1,61 @@
+{
+  "slug": "open-props-tokens",
+  "stage": "Define",
+  "title": "Design with shared CSS props, not magic numbers",
+  "principle": "Adam Argyle\u2019s Open Props (open-props.style / GitHub): expose design decisions as CSS custom properties\u2014colors, sizes, shadows, easings\u2014so UI stays consistent and adaptable. For AI output, ban raw one-off px/rem/hex when a prop exists.",
+  "procedure": [
+    "Establish or import a prop set (spacing, type, color, radius, shadow, ease).",
+    "Rewrite AI CSS to reference props; delete orphan magic numbers.",
+    "Prefer prop packs you can theme (light/dark) over hardcoded values.",
+    "Document which props are allowed in prompts to agents."
+  ],
+  "examplePrompts": [
+    "Refactor this stylesheet to Open Props\u2013style tokens (Argyle):\n- Replace magic spacing/color/radius/shadow with var(--\u2026).\n- Add missing props sparingly; don\u2019t explode the token set.\n- Show light/dark where color props need pairs.\nReturn prop map + diff.",
+    "Given these props [paste], generate the card component using ONLY those vars."
+  ],
+  "promptWhy": [
+    "Token constraint kills rainbow AI CSS.",
+    "Prop-only generation keeps themeability."
+  ],
+  "tips": [
+    "https://open-props.style/ \u00b7 https://github.com/argyleink/open-props",
+    "nerdy.dev for ongoing CSS notes.",
+    "No endorsement."
+  ],
+  "sourceUrls": [
+    "https://open-props.style/",
+    "https://github.com/argyleink/open-props",
+    "https://nerdy.dev/"
+  ],
+  "related": [
+    "design-system-from-assets",
+    "specify-the-look",
+    "hierarchy-with-weight"
+  ],
+  "pairsWellWith": [
+    "defensive-css-mindset",
+    "remove-ai-tells"
+  ],
+  "workedExamples": [
+    {
+      "title": "14 unique radii",
+      "before": "AI picks 3px, 5px, 8px, 12px\u2026",
+      "after": "--radius-2 / --radius-3 only.",
+      "body": "Props collapse chaos."
+    },
+    {
+      "title": "Dark mode rewrite",
+      "body": "Color props swap; components untouched\u2014proof tokens worked."
+    }
+  ],
+  "antiPatterns": [
+    "Hex soup beside an unused token file.",
+    "Hundreds of one-off custom props."
+  ],
+  "checklist": [
+    "Prop allowlist in the prompt.",
+    "No unexplained magic numbers in final CSS.",
+    "Theme pairs considered."
+  ],
+  "number": 65
+}

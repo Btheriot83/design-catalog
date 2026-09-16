@@ -70,6 +70,99 @@
     ]
   },
   {
+    "slug": "adam-argyle",
+    "name": "Adam Argyle",
+    "status": "partial",
+    "role": "Design engineer · CSS/UI · nerdy.dev",
+    "bio": "Adam Argyle publishes design-engineering notes, CSS experiments, talks, and tools at nerdy.dev. Public materials identify him as a former Google Chrome/CSS advocate who continues teaching modern CSS and UI systems independently. Content spans defensive layout thinking and show-notes style craft posts.",
+    "links": [
+      {
+        "label": "Site",
+        "url": "https://nerdy.dev/"
+      },
+      {
+        "label": "X",
+        "url": "https://x.com/argyleink"
+      },
+      {
+        "label": "Open Props",
+        "url": "https://open-props.style/"
+      }
+    ],
+    "techniqueSlugs": [
+      "open-props-tokens",
+      "css-as-adaptive-material"
+    ],
+    "highlights": [
+      "nerdy.dev: CSS, UI, talks, and design-engineering notes.",
+      "Ex-Google CSS/UI education voice; still publishing publicly.",
+      "Open Props tokens + adaptive modern CSS techniques."
+    ]
+  },
+  {
+    "slug": "adam-wathan",
+    "name": "Adam Wathan",
+    "status": "partial",
+    "role": "Creator of Tailwind CSS · Refactoring UI",
+    "bio": "Adam Wathan is the creator of Tailwind CSS and co-author of Refactoring UI with Steve Schoger. His personal site describes full-stack teaching through articles, talks, and courses, with Tailwind as the primary focus since working on it full-time beginning in 2019. Public materials teach practical UI design from a developer’s point of view.",
+    "links": [
+      {
+        "label": "Site",
+        "url": "https://adamwathan.me/"
+      },
+      {
+        "label": "Tailwind CSS",
+        "url": "https://tailwindcss.com/"
+      },
+      {
+        "label": "Refactoring UI",
+        "url": "https://refactoringui.com/"
+      },
+      {
+        "label": "X",
+        "url": "https://x.com/adamwathan"
+      }
+    ],
+    "techniqueSlugs": [
+      "utility-first-composition"
+    ],
+    "highlights": [
+      "Creator of Tailwind CSS; co-author of Refactoring UI.",
+      "Public teaching via adamwathan.me articles and courses.",
+      "Utility-first composition technique (visual tips remain on Schoger)."
+    ]
+  },
+  {
+    "slug": "ahmad-shadeed",
+    "name": "Ahmad Shadeed",
+    "status": "partial",
+    "role": "UX designer & front-end engineer · Defensive CSS",
+    "bio": "Ahmad Shadeed is a senior UX designer and front-end engineer bridging design and development. He coined Defensive CSS, wrote Debugging CSS, and publishes deep guides such as RTL Styling 101 on ishadeed.com. Public courses and lab experiments focus on layout systems that stay robust when AI output breaks.",
+    "links": [
+      {
+        "label": "Site",
+        "url": "https://ishadeed.com/"
+      },
+      {
+        "label": "X",
+        "url": "https://x.com/shadeed9"
+      },
+      {
+        "label": "Defensive CSS",
+        "url": "https://defensivecss.dev/"
+      }
+    ],
+    "techniqueSlugs": [
+      "defensive-css-mindset",
+      "just-in-case-layout"
+    ],
+    "highlights": [
+      "Defensive CSS; Debugging CSS; RTL Styling 101.",
+      "Layout Maestro course for building layouts with confidence.",
+      "Catalogued Defensive CSS + just-in-case layout from public writing."
+    ]
+  },
+  {
     "slug": "amelia-wattenberger",
     "name": "Amelia Wattenberger",
     "status": "partial",
@@ -128,6 +221,36 @@
     ]
   },
   {
+    "slug": "brad-frost",
+    "name": "Brad Frost",
+    "status": "partial",
+    "role": "Design systems · Atomic Design",
+    "bio": "Brad Frost is a designer and consultant known for Atomic Design and long-form public writing at bradfrost.com. Work focuses on design systems, pattern libraries, and collaborative front-end craft between designers and engineers. Speaks widely on scaling interface quality without chaos.",
+    "links": [
+      {
+        "label": "Site",
+        "url": "https://bradfrost.com/"
+      },
+      {
+        "label": "X",
+        "url": "https://x.com/brad_frost"
+      },
+      {
+        "label": "Atomic Design (book)",
+        "url": "https://atomicdesign.bradfrost.com/"
+      }
+    ],
+    "techniqueSlugs": [
+      "atomic-design-hierarchy",
+      "pattern-library-before-pages"
+    ],
+    "highlights": [
+      "Author of Atomic Design; design-systems consultant.",
+      "Public writing on pattern libraries and collaborative craft.",
+      "Atomic Design hierarchy + pattern-library-first from the public book."
+    ]
+  },
+  {
     "slug": "brendan-dawes",
     "name": "Brendan Dawes",
     "status": "partial",
@@ -178,6 +301,128 @@
     ]
   },
   {
+    "slug": "brian-lovin",
+    "name": "Brian Lovin",
+    "status": "partial",
+    "role": "Product designer · Notion · Staff Design",
+    "bio": "Brian Lovin is a software designer in San Francisco currently making AI products at Notion. He co-founded Campsite, designed GitHub Mobile after Spectrum’s acquisition, and earlier designed payments at Facebook and was first product designer at Buffer. He co-hosted Design Details for years and created Staff Design, an interview project on IC career paths.",
+    "links": [
+      {
+        "label": "Site",
+        "url": "https://brianlovin.com/"
+      },
+      {
+        "label": "X",
+        "url": "https://x.com/brian_lovin"
+      },
+      {
+        "label": "GitHub",
+        "url": "https://github.com/brianlovin"
+      },
+      {
+        "label": "Staff Design",
+        "url": "https://staff.design/"
+      }
+    ],
+    "techniqueSlugs": [
+      "staff-design-ownership"
+    ],
+    "highlights": [
+      "Designing AI products at Notion; prior Campsite, GitHub Mobile, Spectrum.",
+      "Created Staff Design and long-running Design Details podcast co-host.",
+      "Staff-design-ownership from Staff Design."
+    ]
+  },
+  {
+    "slug": "craig-mod",
+    "name": "Craig Mod",
+    "status": "partial",
+    "role": "Writer · photographer · publishing craft",
+    "bio": "Craig Mod is a writer and photographer based in Japan whose public work explores walking, books, and careful digital publishing. Books include Kissa by Kissa and Things Become Other Things; essays appear on craigmod.com and in outlets such as The New York Times and The Atlantic. Practice emphasizes lightness, attention, and physical/digital book craft.",
+    "links": [
+      {
+        "label": "Site",
+        "url": "https://craigmod.com/"
+      },
+      {
+        "label": "About",
+        "url": "https://craigmod.com/about/"
+      },
+      {
+        "label": "X",
+        "url": "https://x.com/craigmod"
+      },
+      {
+        "label": "Essay · Walk on a Book",
+        "url": "https://craigmod.com/essays/to_make_a_book_walk_on_a_book/"
+      }
+    ],
+    "techniqueSlugs": [
+      "walk-on-the-artifact",
+      "rigor-for-durable-pages"
+    ],
+    "highlights": [
+      "Books and essays on walking Japan and publishing craft.",
+      "Special Projects / hand-bound editions as anti-slop making.",
+      "Walk-on-the-artifact + durable-page rigor from public essays."
+    ]
+  },
+  {
+    "slug": "dan-mall",
+    "name": "Dan Mall",
+    "status": "partial",
+    "role": "Design educator · systems · danmall.com",
+    "bio": "Dan Mall is a design educator and systems practitioner publishing at danmall.com / Dan Mall Teaches. Public work covers design systems, product design leadership, and teaching designers to ship better organizational craft. Long-running independent practice with courses and writing.",
+    "links": [
+      {
+        "label": "Site",
+        "url": "https://danmall.com/"
+      },
+      {
+        "label": "X",
+        "url": "https://x.com/danmall"
+      }
+    ],
+    "techniqueSlugs": [
+      "design-system-as-product"
+    ],
+    "highlights": [
+      "Dan Mall Teaches: systems and product design education.",
+      "Public emphasis on design systems that teams can actually run.",
+      "Design-system-as-product technique."
+    ]
+  },
+  {
+    "slug": "don-norman",
+    "name": "Don Norman",
+    "status": "partial",
+    "role": "Cognitive scientist · The Design of Everyday Things",
+    "bio": "Don Norman is a cognitive scientist and design researcher best known for The Design of Everyday Things. He co-founded the Nielsen Norman Group, helped establish UC San Diego’s Design Lab, and publishes at jnd.org on humanity-centered design. Public work underpins modern usability and affordance vocabulary.",
+    "links": [
+      {
+        "label": "Site",
+        "url": "https://jnd.org/"
+      },
+      {
+        "label": "Don Norman Design Award",
+        "url": "https://dnda.design/"
+      },
+      {
+        "label": "X",
+        "url": "https://x.com/jnd1er"
+      }
+    ],
+    "techniqueSlugs": [
+      "affordances-and-signifiers",
+      "design-for-error"
+    ],
+    "highlights": [
+      "Author of The Design of Everyday Things.",
+      "Nielsen Norman Group co-founder; UCSD Design Lab.",
+      "Affordances/signifiers + design-for-error from public DOET notes."
+    ]
+  },
+  {
     "slug": "emil-kowalski",
     "name": "Emil Kowalski",
     "status": "partial",
@@ -209,6 +454,35 @@
       "Design engineer at Linear; previously Vercel design team.",
       "Catalogued techniques from public essays on purposeful motion and animation restraint.",
       "Creator of Sonner and Vaul; course at animations.dev (course depth not reprinted here)."
+    ]
+  },
+  {
+    "slug": "erika-hall",
+    "name": "Erika Hall",
+    "status": "partial",
+    "role": "Co-founder · Mule Design · research craft",
+    "bio": "Erika Hall is co-founder of Mule Design Studio and author of Just Enough Research. Public work argues for grounded research, clear writing, and skepticism toward empty process theater. She writes and speaks on making digital products that respect users’ time and intelligence.",
+    "links": [
+      {
+        "label": "Mule Design",
+        "url": "https://muledesign.com/"
+      },
+      {
+        "label": "X",
+        "url": "https://x.com/mulegirl"
+      },
+      {
+        "label": "Just Enough Research",
+        "url": "https://www.mulebooks.com/just-enough-research"
+      }
+    ],
+    "techniqueSlugs": [
+      "just-enough-research"
+    ],
+    "highlights": [
+      "Author of Just Enough Research; Mule Design co-founder.",
+      "Public critique of empty UX theater and research theater.",
+      "Just-enough-research technique from Mule public framing."
     ]
   },
   {
@@ -414,6 +688,56 @@
     ]
   },
   {
+    "slug": "julie-zhuo",
+    "name": "Julie Zhuo",
+    "status": "partial",
+    "role": "Founder · Sundial · The Making of a Manager",
+    "bio": "Julie Zhuo is founder of Sundial, author of The Making of a Manager, and essayist at The Looking Glass. Public site lists writing and talks on product leadership, career craft, and how product development is changing. She posts as @joulee.",
+    "links": [
+      {
+        "label": "Site",
+        "url": "https://juliezhuo.com/"
+      },
+      {
+        "label": "X",
+        "url": "https://x.com/joulee"
+      }
+    ],
+    "techniqueSlugs": [
+      "design-the-feedback-loop"
+    ],
+    "highlights": [
+      "Author of The Making of a Manager; founder of Sundial.",
+      "The Looking Glass essays on product and leadership craft.",
+      "Design-the-feedback-loop technique."
+    ]
+  },
+  {
+    "slug": "khoi-vinh",
+    "name": "Khoi Vinh",
+    "status": "partial",
+    "role": "Designer · writer · subtraction.com",
+    "bio": "Khoi Vinh is a designer and long-time design blogger at subtraction.com. Public profiles have associated him with Adobe design work and the Wireframe podcast. Career history includes prominent digital design leadership and continued writing on product and editorial design craft.",
+    "links": [
+      {
+        "label": "Site",
+        "url": "https://www.subtraction.com/"
+      },
+      {
+        "label": "X",
+        "url": "https://x.com/khoi"
+      }
+    ],
+    "techniqueSlugs": [
+      "critique-with-specificity"
+    ],
+    "highlights": [
+      "Long-running subtraction.com design writing.",
+      "Public design leadership and Wireframe podcast hosting.",
+      "Critique-with-specificity technique."
+    ]
+  },
+  {
     "slug": "linus-lee",
     "name": "Linus Lee",
     "status": "partial",
@@ -452,6 +776,32 @@
     ]
   },
   {
+    "slug": "luke-wroblewski",
+    "name": "Luke Wroblewski",
+    "status": "partial",
+    "role": "Product leader · Mobile First · lukew.com",
+    "bio": "Luke Wroblewski (LukeW) is a digital product leader and author of Mobile First, Web Form Design, and Site-Seeing. Public career includes Google product leadership after Polar’s acquisition, earlier Yahoo and eBay design roles, and ongoing writing at lukew.com. Known for pragmatic mobile and form design craft.",
+    "links": [
+      {
+        "label": "Site",
+        "url": "https://www.lukew.com/"
+      },
+      {
+        "label": "X",
+        "url": "https://x.com/lukew"
+      }
+    ],
+    "techniqueSlugs": [
+      "path-to-completion",
+      "evaluate-every-question"
+    ],
+    "highlights": [
+      "Author of Mobile First and Web Form Design.",
+      "Public lukew.com essays on product and input craft.",
+      "Path-to-completion + evaluate-every-question from public form craft."
+    ]
+  },
+  {
     "slug": "maggie-appleton",
     "name": "Maggie Appleton",
     "status": "partial",
@@ -481,6 +831,35 @@
       "Catalogued techniques from garden ethos (status labels) and drawing invisible concepts (metaphor frames).",
       "Public craft voice for anti-slop clarity in interface writing.",
       "Disclose epistemic status so certainty is readable."
+    ]
+  },
+  {
+    "slug": "maxime-heckel",
+    "name": "Maxime Heckel",
+    "status": "partial",
+    "role": "Frontend engineer · shaders · craft writing",
+    "bio": "Maxime Heckel is a New York–based frontend engineer whose public site and blog cover web development, shaders, and real-time 3D. Writing aims to document the articles he wished he had while learning visual craft on the web. Portfolio emphasizes well-designed, fast, delightful experiences refined against evolving taste.",
+    "links": [
+      {
+        "label": "Site",
+        "url": "https://maximeheckel.com/"
+      },
+      {
+        "label": "Blog",
+        "url": "https://blog.maximeheckel.com/"
+      },
+      {
+        "label": "X",
+        "url": "https://x.com/MaximeHeckel"
+      }
+    ],
+    "techniqueSlugs": [
+      "teach-by-rebuilding-effects"
+    ],
+    "highlights": [
+      "Public teaching on shaders and real-time 3D for the web.",
+      "Craft blog aimed at builders leveling visual engineering taste.",
+      "Teach-by-rebuilding-effects craft technique."
     ]
   },
   {
@@ -615,6 +994,72 @@
     ]
   },
   {
+    "slug": "paco-coursey",
+    "name": "Paco Coursey",
+    "status": "partial",
+    "role": "Design engineer · Linear · interface craft",
+    "bio": "Paco Coursey crafts interfaces at Linear (webmaster) and previously developed Vercel’s design system, website, and dashboard. His site paco.me documents polished UI details, projects like a composable command menu (⌘K), and writing on React hooks and dark mode. Public profile emphasizes typography, motion, and performance as craft.",
+    "links": [
+      {
+        "label": "Site",
+        "url": "https://paco.me/"
+      },
+      {
+        "label": "X",
+        "url": "https://x.com/pacocoursey"
+      },
+      {
+        "label": "GitHub",
+        "url": "https://github.com/pacocoursey"
+      }
+    ],
+    "techniqueSlugs": [
+      "own-the-interface-details"
+    ],
+    "highlights": [
+      "Crafting interfaces at Linear; prior Vercel design system work.",
+      "Public projects include ⌘K and Writer (plain-text editor).",
+      "Own-the-interface-details technique."
+    ]
+  },
+  {
+    "slug": "rasmus-andersson",
+    "name": "Rasmus Andersson",
+    "status": "partial",
+    "role": "Designer & engineer · Inter · rsms.me",
+    "bio": "Rasmus Andersson is a Swedish designer and engineer in San Francisco publishing at rsms.me. Public work includes the Inter typeface and past roles spanning Figma, Facebook, and early Spotify. He frames software as a medium for expression across fonts, tools, and small art projects.",
+    "links": [
+      {
+        "label": "Site",
+        "url": "https://rsms.me/"
+      },
+      {
+        "label": "About",
+        "url": "https://rsms.me/about/"
+      },
+      {
+        "label": "X",
+        "url": "https://x.com/rsms"
+      },
+      {
+        "label": "GitHub",
+        "url": "https://github.com/rsms"
+      },
+      {
+        "label": "Inter",
+        "url": "https://rsms.me/inter/"
+      }
+    ],
+    "techniqueSlugs": [
+      "typeface-as-product-system"
+    ],
+    "highlights": [
+      "Creator of Inter; public design-engineering practice.",
+      "Past Figma, Facebook, founding-era Spotify craft.",
+      "Typeface-as-product-system (Inter craft reference)."
+    ]
+  },
+  {
     "slug": "rauno-freiberg",
     "name": "Rauno Freiberg",
     "status": "partial",
@@ -654,6 +1099,94 @@
       "Known for detail-obsessed interaction writing; projects include Field Notes and History of Software Design.",
       "Novelty is seasoning—especially on high-frequency actions.",
       "Deconstruct why interactions feel right (springs, metaphors, thresholds)."
+    ]
+  },
+  {
+    "slug": "robin-rendle",
+    "name": "Robin Rendle",
+    "status": "partial",
+    "role": "Designer · Apple · writing on systems",
+    "bio": "Robin Rendle is a designer currently at Apple per public LinkedIn. He maintains robinrendle.com and is known in the web community for writing on design systems, typography, and the culture of making websites carefully. Directory entry uses public career and site presence only.",
+    "links": [
+      {
+        "label": "Site",
+        "url": "https://robinrendle.com/"
+      },
+      {
+        "label": "GitHub",
+        "url": "https://github.com/robinrendle"
+      },
+      {
+        "label": "X",
+        "url": "https://x.com/robinrendle"
+      }
+    ],
+    "techniqueSlugs": [
+      "write-the-system-down"
+    ],
+    "highlights": [
+      "Public writing on design systems and web craft.",
+      "Personal site and GitHub document ongoing practice.",
+      "Write-the-system-down technique."
+    ]
+  },
+  {
+    "slug": "ryan-singer",
+    "name": "Ryan Singer",
+    "status": "partial",
+    "role": "Product design · Shape Up · feltpresence",
+    "bio": "Ryan Singer is known for product design and process work at 37signals/Basecamp and for Shape Up, the public methodology for shaping work before building. His site feltpresence.com collects writing on product craft; historically active as @rjs. Directory entry reflects published process craft, not affiliation.",
+    "links": [
+      {
+        "label": "Site",
+        "url": "https://feltpresence.com/"
+      },
+      {
+        "label": "X",
+        "url": "https://x.com/rjs"
+      },
+      {
+        "label": "Shape Up",
+        "url": "https://basecamp.com/shapeup"
+      }
+    ],
+    "techniqueSlugs": [
+      "set-the-appetite",
+      "breadboard-before-pixels"
+    ],
+    "highlights": [
+      "Shape Up methodology; long Basecamp/37signals product craft.",
+      "feltpresence.com writing on shaping and shipping.",
+      "Appetite + breadboarding from public Shape Up."
+    ]
+  },
+  {
+    "slug": "shu-ding",
+    "name": "Shu Ding",
+    "status": "partial",
+    "role": "Designer & developer · Vercel · Next.js / v0",
+    "bio": "Shu Ding is a designer and developer at Vercel. Public bio covers work on the Vercel platform, Next.js, AI SDK, and v0, after earlier algorithm competitions, web design, Microsoft engineering, and a CS degree from Fudan University. Interests span creative coding, game design, and HCI.",
+    "links": [
+      {
+        "label": "Site",
+        "url": "https://shud.in/"
+      },
+      {
+        "label": "GitHub",
+        "url": "https://github.com/shuding"
+      },
+      {
+        "label": "X",
+        "url": "https://x.com/shuding"
+      }
+    ],
+    "techniqueSlugs": [
+      "ship-primitives-first"
+    ],
+    "highlights": [
+      "Vercel: platform, Next.js, AI SDK, v0 craft.",
+      "Public site documents creative coding and HCI interests.",
+      "Ship-primitives-first technique."
     ]
   },
   {
@@ -710,134 +1243,6 @@
     "highlights": [
       "Taste is a filter you train—not a mood board you paste.",
       "Protect the feeling of the work through shipping decisions."
-    ]
-  },
-  {
-    "slug": "adam-argyle",
-    "name": "Adam Argyle",
-    "status": "directory",
-    "role": "Design engineer · CSS/UI · nerdy.dev",
-    "bio": "Adam Argyle publishes design-engineering notes, CSS experiments, talks, and tools at nerdy.dev. Public materials identify him as a former Google Chrome/CSS advocate who continues teaching modern CSS and UI systems independently. Content spans defensive layout thinking and show-notes style craft posts.",
-    "links": [
-      {
-        "label": "Site",
-        "url": "https://nerdy.dev/"
-      },
-      {
-        "label": "X",
-        "url": "https://x.com/argyleink"
-      }
-    ],
-    "techniqueSlugs": [],
-    "highlights": [
-      "nerdy.dev: CSS, UI, talks, and design-engineering notes.",
-      "Ex-Google CSS/UI education voice; still publishing publicly.",
-      "Emphasizes modern CSS as craft infrastructure."
-    ]
-  },
-  {
-    "slug": "adam-wathan",
-    "name": "Adam Wathan",
-    "status": "directory",
-    "role": "Creator of Tailwind CSS · Refactoring UI",
-    "bio": "Adam Wathan is the creator of Tailwind CSS and co-author of Refactoring UI with Steve Schoger. His personal site describes full-stack teaching through articles, talks, and courses, with Tailwind as the primary focus since working on it full-time beginning in 2019. Public materials teach practical UI design from a developer’s point of view.",
-    "links": [
-      {
-        "label": "Site",
-        "url": "https://adamwathan.me/"
-      },
-      {
-        "label": "Tailwind CSS",
-        "url": "https://tailwindcss.com/"
-      },
-      {
-        "label": "Refactoring UI",
-        "url": "https://refactoringui.com/"
-      },
-      {
-        "label": "X",
-        "url": "https://x.com/adamwathan"
-      }
-    ],
-    "techniqueSlugs": [],
-    "highlights": [
-      "Creator of Tailwind CSS; co-author of Refactoring UI.",
-      "Public teaching via adamwathan.me articles and courses.",
-      "Utility-first CSS as a craft tool for custom interfaces.",
-      "Co-author of Refactoring UI; public tips co-sourced on hierarchy/whitespace/borders techniques (see Steve Schoger entries)."
-    ]
-  },
-  {
-    "slug": "ahmad-shadeed",
-    "name": "Ahmad Shadeed",
-    "status": "directory",
-    "role": "UX designer & front-end engineer · Defensive CSS",
-    "bio": "Ahmad Shadeed is a senior UX designer and front-end engineer bridging design and development. He coined Defensive CSS, wrote Debugging CSS, and publishes deep guides such as RTL Styling 101 on ishadeed.com. Public courses and lab experiments focus on layout systems that stay robust when AI output breaks.",
-    "links": [
-      {
-        "label": "Site",
-        "url": "https://ishadeed.com/"
-      },
-      {
-        "label": "X",
-        "url": "https://x.com/shadeed9"
-      }
-    ],
-    "techniqueSlugs": [],
-    "highlights": [
-      "Defensive CSS; Debugging CSS; RTL Styling 101.",
-      "Layout Maestro course for building layouts with confidence.",
-      "Public craft against brittle, AI-generated CSS."
-    ]
-  },
-  {
-    "slug": "brad-frost",
-    "name": "Brad Frost",
-    "status": "directory",
-    "role": "Design systems · Atomic Design",
-    "bio": "Brad Frost is a designer and consultant known for Atomic Design and long-form public writing at bradfrost.com. Work focuses on design systems, pattern libraries, and collaborative front-end craft between designers and engineers. Speaks widely on scaling interface quality without chaos.",
-    "links": [
-      {
-        "label": "Site",
-        "url": "https://bradfrost.com/"
-      },
-      {
-        "label": "X",
-        "url": "https://x.com/brad_frost"
-      }
-    ],
-    "techniqueSlugs": [],
-    "highlights": [
-      "Author of Atomic Design; design-systems consultant.",
-      "Public writing on pattern libraries and collaborative craft.",
-      "Advocate for systematic interface quality."
-    ]
-  },
-  {
-    "slug": "brian-lovin",
-    "name": "Brian Lovin",
-    "status": "directory",
-    "role": "Product designer · Notion · Staff Design",
-    "bio": "Brian Lovin is a software designer in San Francisco currently making AI products at Notion. He co-founded Campsite, designed GitHub Mobile after Spectrum’s acquisition, and earlier designed payments at Facebook and was first product designer at Buffer. He co-hosted Design Details for years and created Staff Design, an interview project on IC career paths.",
-    "links": [
-      {
-        "label": "Site",
-        "url": "https://brianlovin.com/"
-      },
-      {
-        "label": "X",
-        "url": "https://x.com/brian_lovin"
-      },
-      {
-        "label": "GitHub",
-        "url": "https://github.com/brianlovin"
-      }
-    ],
-    "techniqueSlugs": [],
-    "highlights": [
-      "Designing AI products at Notion; prior Campsite, GitHub Mobile, Spectrum.",
-      "Created Staff Design and long-running Design Details podcast co-host.",
-      "Public site briOS collects writing, app dissections, and curated sites."
     ]
   },
   {
@@ -899,56 +1304,6 @@
     ]
   },
   {
-    "slug": "craig-mod",
-    "name": "Craig Mod",
-    "status": "directory",
-    "role": "Writer · photographer · publishing craft",
-    "bio": "Craig Mod is a writer and photographer based in Japan whose public work explores walking, books, and careful digital publishing. Books include Kissa by Kissa and Things Become Other Things; essays appear on craigmod.com and in outlets such as The New York Times and The Atlantic. Practice emphasizes lightness, attention, and physical/digital book craft.",
-    "links": [
-      {
-        "label": "Site",
-        "url": "https://craigmod.com/"
-      },
-      {
-        "label": "About",
-        "url": "https://craigmod.com/about/"
-      },
-      {
-        "label": "X",
-        "url": "https://x.com/craigmod"
-      }
-    ],
-    "techniqueSlugs": [],
-    "highlights": [
-      "Books and essays on walking Japan and publishing craft.",
-      "Special Projects / hand-bound editions as anti-slop making.",
-      "Public rules: elevate everyone you encounter; quality of care."
-    ]
-  },
-  {
-    "slug": "dan-mall",
-    "name": "Dan Mall",
-    "status": "directory",
-    "role": "Design educator · systems · danmall.com",
-    "bio": "Dan Mall is a design educator and systems practitioner publishing at danmall.com / Dan Mall Teaches. Public work covers design systems, product design leadership, and teaching designers to ship better organizational craft. Long-running independent practice with courses and writing.",
-    "links": [
-      {
-        "label": "Site",
-        "url": "https://danmall.com/"
-      },
-      {
-        "label": "X",
-        "url": "https://x.com/danmall"
-      }
-    ],
-    "techniqueSlugs": [],
-    "highlights": [
-      "Dan Mall Teaches: systems and product design education.",
-      "Public emphasis on design systems that teams can actually run.",
-      "Independent practice spanning consulting and courses."
-    ]
-  },
-  {
     "slug": "david-hoang",
     "name": "David Hoang",
     "status": "directory",
@@ -969,56 +1324,6 @@
       "Leads design for Atlassian Rovo & AI initiatives.",
       "Alum: Replit, Webflow, One Medical design leadership.",
       "Proof of Concept newsletter for design GMs."
-    ]
-  },
-  {
-    "slug": "don-norman",
-    "name": "Don Norman",
-    "status": "directory",
-    "role": "Cognitive scientist · The Design of Everyday Things",
-    "bio": "Don Norman is a cognitive scientist and design researcher best known for The Design of Everyday Things. He co-founded the Nielsen Norman Group, helped establish UC San Diego’s Design Lab, and publishes at jnd.org on humanity-centered design. Public work underpins modern usability and affordance vocabulary.",
-    "links": [
-      {
-        "label": "Site",
-        "url": "https://jnd.org/"
-      },
-      {
-        "label": "Don Norman Design Award",
-        "url": "https://dnda.design/"
-      },
-      {
-        "label": "X",
-        "url": "https://x.com/jnd1er"
-      }
-    ],
-    "techniqueSlugs": [],
-    "highlights": [
-      "Author of The Design of Everyday Things.",
-      "Nielsen Norman Group co-founder; UCSD Design Lab.",
-      "Public advocacy for humanity-centered design."
-    ]
-  },
-  {
-    "slug": "erika-hall",
-    "name": "Erika Hall",
-    "status": "directory",
-    "role": "Co-founder · Mule Design · research craft",
-    "bio": "Erika Hall is co-founder of Mule Design Studio and author of Just Enough Research. Public work argues for grounded research, clear writing, and skepticism toward empty process theater. She writes and speaks on making digital products that respect users’ time and intelligence.",
-    "links": [
-      {
-        "label": "Mule Design",
-        "url": "https://muledesign.com/"
-      },
-      {
-        "label": "X",
-        "url": "https://x.com/mulegirl"
-      }
-    ],
-    "techniqueSlugs": [],
-    "highlights": [
-      "Author of Just Enough Research; Mule Design co-founder.",
-      "Public critique of empty UX theater and research theater.",
-      "Craft stance: clear writing and evidence over slides."
     ]
   },
   {
@@ -1099,29 +1404,6 @@
     ]
   },
   {
-    "slug": "julie-zhuo",
-    "name": "Julie Zhuo",
-    "status": "directory",
-    "role": "Founder · Sundial · The Making of a Manager",
-    "bio": "Julie Zhuo is founder of Sundial, author of The Making of a Manager, and essayist at The Looking Glass. Public site lists writing and talks on product leadership, career craft, and how product development is changing. She posts as @joulee.",
-    "links": [
-      {
-        "label": "Site",
-        "url": "https://juliezhuo.com/"
-      },
-      {
-        "label": "X",
-        "url": "https://x.com/joulee"
-      }
-    ],
-    "techniqueSlugs": [],
-    "highlights": [
-      "Author of The Making of a Manager; founder of Sundial.",
-      "The Looking Glass essays on product and leadership craft.",
-      "Public voice for intentional management and product taste."
-    ]
-  },
-  {
     "slug": "karri-saarinen",
     "name": "Karri Saarinen",
     "status": "directory",
@@ -1195,29 +1477,6 @@
     ]
   },
   {
-    "slug": "khoi-vinh",
-    "name": "Khoi Vinh",
-    "status": "directory",
-    "role": "Designer · writer · subtraction.com",
-    "bio": "Khoi Vinh is a designer and long-time design blogger at subtraction.com. Public profiles have associated him with Adobe design work and the Wireframe podcast. Career history includes prominent digital design leadership and continued writing on product and editorial design craft.",
-    "links": [
-      {
-        "label": "Site",
-        "url": "https://www.subtraction.com/"
-      },
-      {
-        "label": "X",
-        "url": "https://x.com/khoi"
-      }
-    ],
-    "techniqueSlugs": [],
-    "highlights": [
-      "Long-running subtraction.com design writing.",
-      "Public design leadership and Wireframe podcast hosting.",
-      "Cited for editorial and product design clarity."
-    ]
-  },
-  {
     "slug": "linda-dong",
     "name": "Linda Dong",
     "status": "directory",
@@ -1242,56 +1501,6 @@
       "Apple Design Evangelist; ships public design kits and HIG principles talks.",
       "Prior Apple prototyping work across platforms.",
       "Public posts announce design resources for developers."
-    ]
-  },
-  {
-    "slug": "luke-wroblewski",
-    "name": "Luke Wroblewski",
-    "status": "directory",
-    "role": "Product leader · Mobile First · lukew.com",
-    "bio": "Luke Wroblewski (LukeW) is a digital product leader and author of Mobile First, Web Form Design, and Site-Seeing. Public career includes Google product leadership after Polar’s acquisition, earlier Yahoo and eBay design roles, and ongoing writing at lukew.com. Known for pragmatic mobile and form design craft.",
-    "links": [
-      {
-        "label": "Site",
-        "url": "https://www.lukew.com/"
-      },
-      {
-        "label": "X",
-        "url": "https://x.com/lukew"
-      }
-    ],
-    "techniqueSlugs": [],
-    "highlights": [
-      "Author of Mobile First and Web Form Design.",
-      "Public lukew.com essays on product and input craft.",
-      "Career spanning Google, Polar, Yahoo, eBay design/product."
-    ]
-  },
-  {
-    "slug": "maxime-heckel",
-    "name": "Maxime Heckel",
-    "status": "directory",
-    "role": "Frontend engineer · shaders · craft writing",
-    "bio": "Maxime Heckel is a New York–based frontend engineer whose public site and blog cover web development, shaders, and real-time 3D. Writing aims to document the articles he wished he had while learning visual craft on the web. Portfolio emphasizes well-designed, fast, delightful experiences refined against evolving taste.",
-    "links": [
-      {
-        "label": "Site",
-        "url": "https://maximeheckel.com/"
-      },
-      {
-        "label": "Blog",
-        "url": "https://blog.maximeheckel.com/"
-      },
-      {
-        "label": "X",
-        "url": "https://x.com/MaximeHeckel"
-      }
-    ],
-    "techniqueSlugs": [],
-    "highlights": [
-      "Public teaching on shaders and real-time 3D for the web.",
-      "Craft blog aimed at builders leveling visual engineering taste.",
-      "Portfolio of fast, designed frontend experiences."
     ]
   },
   {
@@ -1346,141 +1555,6 @@
       "Design at Vercel v0; prior Lummi and Blush co-founder.",
       "Open illustration systems used across products.",
       "Teaches UI craft publicly via courses and Substack."
-    ]
-  },
-  {
-    "slug": "paco-coursey",
-    "name": "Paco Coursey",
-    "status": "directory",
-    "role": "Design engineer · Linear · interface craft",
-    "bio": "Paco Coursey crafts interfaces at Linear (webmaster) and previously developed Vercel’s design system, website, and dashboard. His site paco.me documents polished UI details, projects like a composable command menu (⌘K), and writing on React hooks and dark mode. Public profile emphasizes typography, motion, and performance as craft.",
-    "links": [
-      {
-        "label": "Site",
-        "url": "https://paco.me/"
-      },
-      {
-        "label": "X",
-        "url": "https://x.com/pacocoursey"
-      },
-      {
-        "label": "GitHub",
-        "url": "https://github.com/pacocoursey"
-      }
-    ],
-    "techniqueSlugs": [],
-    "highlights": [
-      "Crafting interfaces at Linear; prior Vercel design system work.",
-      "Public projects include ⌘K and Writer (plain-text editor).",
-      "Site focuses on magical UI details without hype."
-    ]
-  },
-  {
-    "slug": "rasmus-andersson",
-    "name": "Rasmus Andersson",
-    "status": "directory",
-    "role": "Designer & engineer · Inter · rsms.me",
-    "bio": "Rasmus Andersson is a Swedish designer and engineer in San Francisco publishing at rsms.me. Public work includes the Inter typeface and past roles spanning Figma, Facebook, and early Spotify. He frames software as a medium for expression across fonts, tools, and small art projects.",
-    "links": [
-      {
-        "label": "Site",
-        "url": "https://rsms.me/"
-      },
-      {
-        "label": "About",
-        "url": "https://rsms.me/about/"
-      },
-      {
-        "label": "X",
-        "url": "https://x.com/rsms"
-      },
-      {
-        "label": "GitHub",
-        "url": "https://github.com/rsms"
-      }
-    ],
-    "techniqueSlugs": [],
-    "highlights": [
-      "Creator of Inter; public design-engineering practice.",
-      "Past Figma, Facebook, founding-era Spotify craft.",
-      "rsms.me documents fonts, tools, and software-as-medium."
-    ]
-  },
-  {
-    "slug": "robin-rendle",
-    "name": "Robin Rendle",
-    "status": "directory",
-    "role": "Designer · Apple · writing on systems",
-    "bio": "Robin Rendle is a designer currently at Apple per public LinkedIn. He maintains robinrendle.com and is known in the web community for writing on design systems, typography, and the culture of making websites carefully. Directory entry uses public career and site presence only.",
-    "links": [
-      {
-        "label": "Site",
-        "url": "https://robinrendle.com/"
-      },
-      {
-        "label": "GitHub",
-        "url": "https://github.com/robinrendle"
-      },
-      {
-        "label": "X",
-        "url": "https://x.com/robinrendle"
-      }
-    ],
-    "techniqueSlugs": [],
-    "highlights": [
-      "Public writing on design systems and web craft.",
-      "Personal site and GitHub document ongoing practice.",
-      "Listed as Apple designer from public LinkedIn only."
-    ]
-  },
-  {
-    "slug": "ryan-singer",
-    "name": "Ryan Singer",
-    "status": "directory",
-    "role": "Product design · Shape Up · feltpresence",
-    "bio": "Ryan Singer is known for product design and process work at 37signals/Basecamp and for Shape Up, the public methodology for shaping work before building. His site feltpresence.com collects writing on product craft; historically active as @rjs. Directory entry reflects published process craft, not affiliation.",
-    "links": [
-      {
-        "label": "Site",
-        "url": "https://feltpresence.com/"
-      },
-      {
-        "label": "X",
-        "url": "https://x.com/rjs"
-      }
-    ],
-    "techniqueSlugs": [],
-    "highlights": [
-      "Shape Up methodology; long Basecamp/37signals product craft.",
-      "feltpresence.com writing on shaping and shipping.",
-      "Public teaching of appetite-bound product design."
-    ]
-  },
-  {
-    "slug": "shu-ding",
-    "name": "Shu Ding",
-    "status": "directory",
-    "role": "Designer & developer · Vercel · Next.js / v0",
-    "bio": "Shu Ding is a designer and developer at Vercel. Public bio covers work on the Vercel platform, Next.js, AI SDK, and v0, after earlier algorithm competitions, web design, Microsoft engineering, and a CS degree from Fudan University. Interests span creative coding, game design, and HCI.",
-    "links": [
-      {
-        "label": "Site",
-        "url": "https://shud.in/"
-      },
-      {
-        "label": "GitHub",
-        "url": "https://github.com/shuding"
-      },
-      {
-        "label": "X",
-        "url": "https://x.com/shuding"
-      }
-    ],
-    "techniqueSlugs": [],
-    "highlights": [
-      "Vercel: platform, Next.js, AI SDK, v0 craft.",
-      "Public site documents creative coding and HCI interests.",
-      "Designer-developer bridge for developer tools UX."
     ]
   },
   {

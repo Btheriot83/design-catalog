@@ -1,0 +1,61 @@
+{
+  "slug": "breadboard-before-pixels",
+  "stage": "Define",
+  "title": "Breadboard the places, actions, and connections",
+  "principle": "Shape Up breadboarding (public): map screens/places, affordances/actions, and connections at a fat-marker level before polished UI. Keeps AI from pixel-painting unsettled product shape.",
+  "procedure": [
+    "List places (where the user is).",
+    "List actions available in each place.",
+    "Draw connections (what leads where)—boxes and arrows, not mock chrome.",
+    "Only then add visual design or high-fidelity AI renders.",
+    "Update the breadboard when scope changes; don’t silently restyle past confusion."
+  ],
+  "examplePrompts": [
+    "Breadboard this feature (Singer / Shape Up):\n- Places\n- Actions\n- Connections\nASCII or nested lists fine—no colors, no typography.\nFlag rabbit holes. Then stop; wait for approval before pixels.",
+    "Convert this glossy mock back into a breadboard; identify unresolved connections."
+  ],
+  "promptWhy": [
+    "Bans chrome until structure is settled.",
+    "Reverse-breadboard reveals fake completeness."
+  ],
+  "tips": [
+    "basecamp.com/shapeup — Find the Elements / breadboarding",
+    "Fat marker sketches pair with breadboards.",
+    "No endorsement."
+  ],
+  "sourceUrls": [
+    "https://basecamp.com/shapeup",
+    "https://feltpresence.com/"
+  ],
+  "related": [
+    "set-the-appetite",
+    "wireframe-first",
+    "sketch-what-you-cant-describe"
+  ],
+  "pairsWellWith": [
+    "point-and-talk",
+    "tc-ebc-elements"
+  ],
+  "workedExamples": [
+    {
+      "title": "Pretty confusion",
+      "before": "AI dashboard with 9 widgets, unclear nav.",
+      "after": "Breadboard shows 3 places; 6 widgets cut.",
+      "body": "Structure first."
+    },
+    {
+      "title": "Missing connection",
+      "body": "Action ‘Invite’ had no place to land—caught on breadboard."
+    }
+  ],
+  "antiPatterns": [
+    "High-fidelity first.",
+    "Breadboards that are just tiny wireframe UIs."
+  ],
+  "checklist": [
+    "Places/actions/connections listed.",
+    "No visual styling in the breadboard step.",
+    "Rabbit holes flagged."
+  ],
+  "number": 73
+}

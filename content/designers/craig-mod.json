@@ -1,7 +1,7 @@
 {
   "slug": "craig-mod",
   "name": "Craig Mod",
-  "status": "directory",
+  "status": "partial",
   "role": "Writer \u00b7 photographer \u00b7 publishing craft",
   "bio": "Craig Mod is a writer and photographer based in Japan whose public work explores walking, books, and careful digital publishing. Books include Kissa by Kissa and Things Become Other Things; essays appear on craigmod.com and in outlets such as The New York Times and The Atlantic. Practice emphasizes lightness, attention, and physical/digital book craft.",
   "links": [
@@ -16,12 +16,19 @@
     {
       "label": "X",
       "url": "https://x.com/craigmod"
+    },
+    {
+      "label": "Essay \u00b7 Walk on a Book",
+      "url": "https://craigmod.com/essays/to_make_a_book_walk_on_a_book/"
     }
   ],
-  "techniqueSlugs": [],
+  "techniqueSlugs": [
+    "walk-on-the-artifact",
+    "rigor-for-durable-pages"
+  ],
   "highlights": [
     "Books and essays on walking Japan and publishing craft.",
     "Special Projects / hand-bound editions as anti-slop making.",
-    "Public rules: elevate everyone you encounter; quality of care."
+    "Walk-on-the-artifact + durable-page rigor from public essays."
   ]
 }

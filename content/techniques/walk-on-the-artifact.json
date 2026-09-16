@@ -1,0 +1,61 @@
+{
+  "slug": "walk-on-the-artifact",
+  "stage": "Define",
+  "title": "Walk on the artifact to see the whole",
+  "principle": "Craig Mod\u2019s essay To Make a Book, Walk on a Book: print/spread the work in physical space to see adjacencies a screen hides. For digital products, force a spatial review\u2014spreads, storyboards, or wall printouts\u2014before locking AI-generated flows.",
+  "procedure": [
+    "Export key screens/pages at readable size.",
+    "Lay them out in order on a large surface (or infinite canvas zoomed out).",
+    "Walk the sequence; note broken adjacencies, pacing, and repeats.",
+    "Rearrange before polishing individual screens.",
+    "Give the work time to sit\u2014don\u2019t rush the next AI iteration."
+  ],
+  "examplePrompts": [
+    "Prepare a walk-on-the-artifact review (Craig Mod):\n- Export the flow as a single contact sheet / storyboard.\n- Annotate adjacency problems and pacing issues.\n- Propose reorder/cuts before any visual polish.\nNo endorsement.",
+    "Zoom out: show all primary screens at once; list what feels redundant when seen together."
+  ],
+  "promptWhy": [
+    "Contact sheet forces whole-product sight.",
+    "Reorder-before-polish matches Mod\u2019s floor process."
+  ],
+  "tips": [
+    "https://craigmod.com/essays/to_make_a_book_walk_on_a_book/",
+    "Physical print still best when possible.",
+    "No endorsement."
+  ],
+  "sourceUrls": [
+    "https://craigmod.com/essays/to_make_a_book_walk_on_a_book/",
+    "https://craigmod.com/"
+  ],
+  "related": [
+    "screens-want-honesty",
+    "cut-elements",
+    "taste-as-filter"
+  ],
+  "pairsWellWith": [
+    "critic-subagents",
+    "protect-the-feeling"
+  ],
+  "workedExamples": [
+    {
+      "title": "On-screen tunnel vision",
+      "before": "Each screen polished in isolation; flow repeats the same hero thrice.",
+      "after": "Contact sheet cut two heroes; pacing breathes.",
+      "body": "Adjacencies only appear in the spread."
+    },
+    {
+      "title": "Sit time",
+      "body": "Leave the sheet overnight; morning edit is sharper than another AI pass."
+    }
+  ],
+  "antiPatterns": [
+    "Pixel-polish one screen while the map is wrong.",
+    "Never viewing the product at overview scale."
+  ],
+  "checklist": [
+    "Overview sheet exists.",
+    "Adjacency notes captured.",
+    "Reorder/cuts before polish."
+  ],
+  "number": 74
+}

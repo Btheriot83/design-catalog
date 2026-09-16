@@ -1,0 +1,60 @@
+{
+  "slug": "set-the-appetite",
+  "stage": "Discover",
+  "title": "Set appetite instead of estimating infinity",
+  "principle": "Ryan Singer’s Shape Up (public at basecamp.com/shapeup): decide how much time you’re willing to spend (appetite) before shaping a solution—fixed time, variable scope. Stops AI product chats from expanding into endless rebuilds.",
+  "procedure": [
+    "Name the raw idea and the problem it claims to solve.",
+    "Set an appetite (e.g., small/medium cycle)—not an estimate of ‘true’ size.",
+    "Shape only what fits; list no-gos and rabbit holes.",
+    "Bet consciously; circuit-break if the build blows the appetite."
+  ],
+  "examplePrompts": [
+    "Shape this idea with appetite (Singer / Shape Up public book):\n- Problem in one paragraph.\n- Appetite: [2 days | 2 weeks | 6 weeks].\n- Solution elements that fit; explicit no-gos.\n- Rabbit holes to avoid.\nReturn a pitch outline—not a backlog.",
+    "We keep estimating ‘how long’. Flip to appetite: what would we build if we only had one week?"
+  ],
+  "promptWhy": [
+    "Appetite constrains scope before UI fantasy.",
+    "No-gos prevent grab-bag pitches."
+  ],
+  "tips": [
+    "https://basecamp.com/shapeup",
+    "Later Singer writing adds Framing vs Shaping—use when helpful.",
+    "No endorsement of Basecamp process as universal law."
+  ],
+  "sourceUrls": [
+    "https://basecamp.com/shapeup",
+    "https://feltpresence.com/"
+  ],
+  "related": [
+    "breadboard-before-pixels",
+    "thinking-before-prompt",
+    "cut-elements"
+  ],
+  "pairsWellWith": [
+    "wireframe-first",
+    "tc-ebc-constraints"
+  ],
+  "workedExamples": [
+    {
+      "title": "Calendar grab-bag",
+      "before": "Full Google Calendar clone estimate: ∞",
+      "after": "6-week appetite → team availability only.",
+      "body": "Shape Up case pattern: narrow the problem."
+    },
+    {
+      "title": "Circuit breaker",
+      "body": "If mid-build scope explodes, stop—appetite was the contract."
+    }
+  ],
+  "antiPatterns": [
+    "Estimating then padding forever.",
+    "Pitches with no no-gos."
+  ],
+  "checklist": [
+    "Appetite stated.",
+    "No-gos listed.",
+    "Solution fits the appetite."
+  ],
+  "number": 72
+}

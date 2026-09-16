@@ -1,7 +1,7 @@
 {
   "slug": "adam-argyle",
   "name": "Adam Argyle",
-  "status": "directory",
+  "status": "partial",
   "role": "Design engineer \u00b7 CSS/UI \u00b7 nerdy.dev",
   "bio": "Adam Argyle publishes design-engineering notes, CSS experiments, talks, and tools at nerdy.dev. Public materials identify him as a former Google Chrome/CSS advocate who continues teaching modern CSS and UI systems independently. Content spans defensive layout thinking and show-notes style craft posts.",
   "links": [
@@ -12,12 +12,19 @@
     {
       "label": "X",
       "url": "https://x.com/argyleink"
+    },
+    {
+      "label": "Open Props",
+      "url": "https://open-props.style/"
     }
   ],
-  "techniqueSlugs": [],
+  "techniqueSlugs": [
+    "open-props-tokens",
+    "css-as-adaptive-material"
+  ],
   "highlights": [
     "nerdy.dev: CSS, UI, talks, and design-engineering notes.",
     "Ex-Google CSS/UI education voice; still publishing publicly.",
-    "Emphasizes modern CSS as craft infrastructure."
+    "Open Props tokens + adaptive modern CSS techniques."
   ]
 }

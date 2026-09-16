@@ -1,7 +1,7 @@
 {
   "slug": "adam-wathan",
   "name": "Adam Wathan",
-  "status": "directory",
+  "status": "partial",
   "role": "Creator of Tailwind CSS · Refactoring UI",
   "bio": "Adam Wathan is the creator of Tailwind CSS and co-author of Refactoring UI with Steve Schoger. His personal site describes full-stack teaching through articles, talks, and courses, with Tailwind as the primary focus since working on it full-time beginning in 2019. Public materials teach practical UI design from a developer’s point of view.",
   "links": [
@@ -22,11 +22,12 @@
       "url": "https://x.com/adamwathan"
     }
   ],
-  "techniqueSlugs": [],
+  "techniqueSlugs": [
+    "utility-first-composition"
+  ],
   "highlights": [
     "Creator of Tailwind CSS; co-author of Refactoring UI.",
     "Public teaching via adamwathan.me articles and courses.",
-    "Utility-first CSS as a craft tool for custom interfaces.",
-    "Co-author of Refactoring UI; public tips co-sourced on hierarchy/whitespace/borders techniques (see Steve Schoger entries)."
+    "Utility-first composition technique (visual tips remain on Schoger)."
   ]
 }

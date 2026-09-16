@@ -1,0 +1,61 @@
+{
+  "slug": "pattern-library-before-pages",
+  "stage": "Discover",
+  "title": "Start from the pattern library, not the page",
+  "principle": "Frost’s Pattern Lab lineage (Atomic Design ch.3–4, public): effective systems expose patterns in isolation and in context. When prompting AI, seed with the library’s patterns first so pages inherit, rather than reverse-engineering a library from a pretty page.",
+  "procedure": [
+    "Open or sketch the pattern inventory before net-new screens.",
+    "Prompt AI to assemble from named patterns; forbid silent new primitives.",
+    "Toggle patterns through states (default/hover/disabled) in isolation.",
+    "Only then compose a page and note which patterns were missing—and promote them."
+  ],
+  "examplePrompts": [
+    "Assemble this screen ONLY from our pattern list: [paste]. If a need isn’t covered, propose a pattern addition—don’t silently invent. Cite Atomic Design / Pattern Lab workflow.",
+    "Generate isolation stories for Button / Field / Card (default, hover, error, disabled) before any marketing page."
+  ],
+  "promptWhy": [
+    "Forbids silent invention—the main AI systems failure.",
+    "Isolation stories catch state gaps early."
+  ],
+  "tips": [
+    "https://atomicdesign.bradfrost.com/chapter-3/",
+    "Tool-agnostic: Pattern Lab is illustrative, not required.",
+    "No endorsement."
+  ],
+  "sourceUrls": [
+    "https://atomicdesign.bradfrost.com/chapter-3/",
+    "https://atomicdesign.bradfrost.com/chapter-4/",
+    "https://bradfrost.com/"
+  ],
+  "related": [
+    "atomic-design-hierarchy",
+    "design-system-from-assets",
+    "ten-options-then-remix"
+  ],
+  "pairsWellWith": [
+    "wireframe-first",
+    "systemize-repeating-ui"
+  ],
+  "workedExamples": [
+    {
+      "title": "Page-first debt",
+      "before": "AI ships a gorgeous settings page with unique toggles.",
+      "after": "Extract Toggle pattern; rebuild page from library.",
+      "body": "Library-first reverses the debt."
+    },
+    {
+      "title": "Missing error state",
+      "body": "Isolation story reveals Field never had error—caught before QA."
+    }
+  ],
+  "antiPatterns": [
+    "Pretty page first, ‘we’ll systematize later’.",
+    "Pattern docs that omit interactive states."
+  ],
+  "checklist": [
+    "Pattern inventory referenced in the prompt.",
+    "Isolation states covered.",
+    "New needs proposed as patterns, not one-offs."
+  ],
+  "number": 64
+}

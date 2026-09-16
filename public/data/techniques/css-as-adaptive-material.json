@@ -1,0 +1,60 @@
+{
+  "slug": "css-as-adaptive-material",
+  "stage": "Deliver",
+  "title": "Treat modern CSS as adaptive material",
+  "principle": "Argyle’s public teaching (Chrome/CSS advocacy lineage, nerdy.dev): lean on native CSS capabilities—container queries, cascade layers, color functions, scroll-driven affordances—so interfaces adapt instead of depending on JS-heavy approximations. Prompt AI to prefer platform CSS before libraries.",
+  "procedure": [
+    "Ask: can container queries / :has / grid / color-mix solve this without JS?",
+    "Layer styles (reset → tokens → components → utilities) to control cascade fights.",
+    "Progressively enhance; keep a readable base without fancy features.",
+    "Document browser baselines honestly in the PR."
+  ],
+  "examplePrompts": [
+    "Rebuild this component with adaptive CSS (Argyle / modern CSS craft):\n- Prefer container queries over window resize JS.\n- Use color-mix / relative color where theming needs variants.\n- Cascade layers to isolate resets vs components.\n- Note progressive-enhancement fallback.\nNo endorsement of any tooling.",
+    "Delete the resize observer if a container query can express the same layout shift."
+  ],
+  "promptWhy": [
+    "Pushes platform CSS before dependency creep.",
+    "Forces an honest fallback note."
+  ],
+  "tips": [
+    "https://nerdy.dev/",
+    "Pair with Open Props for tokens.",
+    "No endorsement."
+  ],
+  "sourceUrls": [
+    "https://nerdy.dev/",
+    "https://open-props.style/"
+  ],
+  "related": [
+    "open-props-tokens",
+    "browser-native-first",
+    "defensive-css-mindset"
+  ],
+  "pairsWellWith": [
+    "animation-restraint",
+    "last-mile-manual"
+  ],
+  "workedExamples": [
+    {
+      "title": "Sidebar collapse",
+      "before": "JS measures width.",
+      "after": "@container switches layout at an inline-size.",
+      "body": "Adaptive material over observers."
+    },
+    {
+      "title": "Cascade fight",
+      "body": "Layers separate third-party CSS from app components—specificity calm."
+    }
+  ],
+  "antiPatterns": [
+    "JS for pure layout questions CSS can answer.",
+    "No fallback story for older clients you still claim to support."
+  ],
+  "checklist": [
+    "Native CSS option considered first.",
+    "Fallback noted.",
+    "Cascade strategy explicit."
+  ],
+  "number": 66
+}

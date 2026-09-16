@@ -1,0 +1,62 @@
+{
+  "slug": "affordances-and-signifiers",
+  "stage": "Define",
+  "title": "Separate affordances from signifiers",
+  "principle": "Don Norman (DOET revised, public TOC/notes on jnd.org): affordances are possible actions; signifiers communicate where the action is. AI UIs often decorate without clarifying action\u2014fix for discoverability: can a new user tell what to do?",
+  "procedure": [
+    "List intended actions on the view.",
+    "For each, name the affordance (what\u2019s possible) and the signifier (how it\u2019s shown).",
+    "Remove decoration that looks actionable but isn\u2019t; strengthen weak signifiers.",
+    "Check mapping: control layout should match cause\u2192effect.",
+    "Provide feedback so the gulfs of execution/evaluation shrink."
+  ],
+  "examplePrompts": [
+    "Audit this UI with Norman\u2019s affordances vs signifiers (DOET / jnd.org public notes):\n- Table: action \u2192 affordance \u2192 signifier \u2192 feedback.\n- Flag false affordances (looks clickable, isn\u2019t).\n- Propose stronger signifiers without adding chrome noise.\nNo endorsement.",
+    "This icon row has no labels\u2014add signifiers or remove icons that aren\u2019t discoverable."
+  ],
+  "promptWhy": [
+    "Forces the affordance/signifier distinction models blur.",
+    "False-affordance hunt kills decorative buttons."
+  ],
+  "tips": [
+    "https://jnd.org/the-design-of-everyday-things-revised-and-expanded-edition/",
+    "Signifiers were emphasized in the revised edition.",
+    "Paraphrase only; book remains the full source.",
+    "No endorsement."
+  ],
+  "sourceUrls": [
+    "https://jnd.org/",
+    "https://jnd.org/the-design-of-everyday-things-revised-and-expanded-edition/"
+  ],
+  "related": [
+    "design-for-error",
+    "point-and-talk",
+    "invisible-interaction-details"
+  ],
+  "pairsWellWith": [
+    "critic-subagents",
+    "remove-ai-tells"
+  ],
+  "workedExamples": [
+    {
+      "title": "Grey text button",
+      "before": "Looks like body copy; is the only save action.",
+      "after": "Button signifier + clear label; feedback on save.",
+      "body": "Affordance existed; signifier failed."
+    },
+    {
+      "title": "Skeuomorphic trap",
+      "body": "Slider that doesn\u2019t slide\u2014false affordance. Either make it work or change the signifier."
+    }
+  ],
+  "antiPatterns": [
+    "Decoration that mimics controls.",
+    "Icon-only actions with no discoverability path."
+  ],
+  "checklist": [
+    "Action table filled.",
+    "False affordances removed or fixed.",
+    "Feedback exists for primary actions."
+  ],
+  "number": 68
+}
