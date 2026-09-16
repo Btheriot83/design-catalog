@@ -18,6 +18,7 @@ const files = [
   { label: "prompts.json", href: "/data/prompts.json", note: "Flattened prompt library" },
   { label: "designers.json", href: "/data/designers.json", note: "Designer entries" },
   { label: "sources.json", href: "/data/sources.json", note: "Citations" },
+  { label: "resources.json", href: "/data/resources.json", note: "Free craft resources desk" },
   {
     label: "technique.schema.json",
     href: "/schema/technique.schema.json",
@@ -61,9 +62,35 @@ export default function AgentsPage() {
           <code className="font-mono text-xs text-ink">/api/techniques</code>,{" "}
           <code className="font-mono text-xs text-ink">/api/designers</code>,{" "}
           <code className="font-mono text-xs text-ink">/api/prompts</code>,{" "}
-          <code className="font-mono text-xs text-ink">/api/sources</code>
+          <code className="font-mono text-xs text-ink">/api/sources</code>,{" "}
+          <code className="font-mono text-xs text-ink">/api/resources</code>
           {" "}(prefer static <code className="font-mono text-xs text-ink">/data/</code> for CDN).
         </p>
+      </section>
+
+      <section className="mb-12">
+        <h2 className="font-serif text-2xl text-ink">Free craft resources</h2>
+        <hr className="rule-double mt-4 mb-5 max-w-[10rem]" />
+        <p className="font-sans text-sm leading-relaxed text-studio-ink">
+          Curated free-first links for transitions, shaders, easing, examples, and textures.
+          Prefer JSON over scraping.
+        </p>
+        <ul className="mt-4 space-y-2 font-sans text-sm text-studio-ink">
+          <li>
+            <Link href="/resources" className="text-ink underline decoration-hairline hover:decoration-ink">
+              /resources
+            </Link>
+            {" — human filter desk"}
+          </li>
+          <li>
+            <a
+              href="/data/resources.json"
+              className="font-mono text-xs text-ink underline decoration-hairline hover:decoration-ink"
+            >
+              /data/resources.json
+            </a>
+          </li>
+        </ul>
       </section>
 
       <section className="mb-12">

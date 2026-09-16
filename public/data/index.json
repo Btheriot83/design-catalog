@@ -2,10 +2,11 @@
   "name": "Design Catalog",
   "description": "Letterpress study desk of AI design techniques (Anshu, Nate, Greg + craft directory voices). Public sources only; no endorsement.",
   "baseUrl": "https://design-catalog-three.vercel.app",
-  "lastUpdated": "2026-09-16T14:52:25.354Z",
+  "lastUpdated": "2026-09-16T23:20:29.921Z",
   "techniqueCount": 85,
   "designerCount": 52,
   "sourceCount": 45,
+  "resourceCount": 35,
   "stages": [
     {
       "id": "Discover",
@@ -1389,6 +1390,7 @@
       "compare": "https://design-catalog-three.vercel.app/compare",
       "designers": "https://design-catalog-three.vercel.app/designers",
       "sources": "https://design-catalog-three.vercel.app/sources",
+      "resources": "https://design-catalog-three.vercel.app/resources",
       "agents": "https://design-catalog-three.vercel.app/agents",
       "about": "https://design-catalog-three.vercel.app/about",
       "motion": "https://design-catalog-three.vercel.app/motion"
@@ -1401,6 +1403,7 @@
       "designers": "https://design-catalog-three.vercel.app/data/designers.json",
       "prompts": "https://design-catalog-three.vercel.app/data/prompts.json",
       "sources": "https://design-catalog-three.vercel.app/data/sources.json",
+      "resources": "https://design-catalog-three.vercel.app/data/resources.json",
       "techniqueSchema": "https://design-catalog-three.vercel.app/schema/technique.schema.json",
       "designerSchema": "https://design-catalog-three.vercel.app/schema/designer.schema.json",
       "forAgentsMd": "https://raw.githubusercontent.com/Btheriot83/design-catalog/main/docs/FOR_AGENTS.md",
@@ -1409,7 +1412,8 @@
         "techniques": "https://design-catalog-three.vercel.app/api/techniques",
         "designers": "https://design-catalog-three.vercel.app/api/designers",
         "prompts": "https://design-catalog-three.vercel.app/api/prompts",
-        "sources": "https://design-catalog-three.vercel.app/api/sources"
+        "sources": "https://design-catalog-three.vercel.app/api/sources",
+        "resources": "https://design-catalog-three.vercel.app/api/resources"
       }
     }
   },

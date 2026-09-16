@@ -1,6 +1,6 @@
 import { readFileSync, readdirSync } from "fs";
 import { join } from "path";
-import type { Designer, Source, Technique } from "./types";
+import type { CraftResource, Designer, Source, Technique } from "./types";
 
 const root = join(process.cwd(), "content");
 
@@ -76,4 +76,8 @@ export function getAllExamplePrompts() {
       designerName: designer?.name,
     }));
   });
+}
+
+export function getResources(): CraftResource[] {
+  return readJson<CraftResource[]>(join(root, "resources.json"));
 }

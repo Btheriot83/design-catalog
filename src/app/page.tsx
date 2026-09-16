@@ -129,6 +129,13 @@ export default function HomePage() {
           >
             examples &amp; checklists
           </Link>
+          {" · "}
+          <Link
+            href="/resources"
+            className="text-studio-ink underline decoration-hairline hover:text-ink hover:decoration-ink"
+          >
+            free craft resources
+          </Link>
           .
         </p>
         <p className="mt-4 font-sans text-sm text-studio-ink">

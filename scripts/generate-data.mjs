@@ -56,6 +56,7 @@ function resetDir(dir) {
 const techniques = loadTechniques();
 const designers = loadDesigners();
 const sources = readJson(join(contentRoot, "sources.json"));
+const resources = readJson(join(contentRoot, "resources.json"));
 const lastUpdated = new Date().toISOString();
 
 resetDir(join(publicData, "techniques"));
@@ -71,6 +72,7 @@ const index = {
   techniqueCount: techniques.length,
   designerCount: designers.length,
   sourceCount: sources.length,
+  resourceCount: resources.length,
   stages: stages.map((stage) => ({
     id: stage,
     techniqueCount: techniques.filter((t) => t.stage === stage).length,
@@ -105,6 +107,7 @@ const index = {
       compare: `${baseUrl}/compare`,
       designers: `${baseUrl}/designers`,
       sources: `${baseUrl}/sources`,
+      resources: `${baseUrl}/resources`,
       agents: `${baseUrl}/agents`,
       about: `${baseUrl}/about`,
       motion: `${baseUrl}/motion`,
@@ -117,6 +120,7 @@ const index = {
       designers: `${baseUrl}/data/designers.json`,
       prompts: `${baseUrl}/data/prompts.json`,
       sources: `${baseUrl}/data/sources.json`,
+      resources: `${baseUrl}/data/resources.json`,
       techniqueSchema: `${baseUrl}/schema/technique.schema.json`,
       designerSchema: `${baseUrl}/schema/designer.schema.json`,
       forAgentsMd:
@@ -127,6 +131,7 @@ const index = {
         designers: `${baseUrl}/api/designers`,
         prompts: `${baseUrl}/api/prompts`,
         sources: `${baseUrl}/api/sources`,
+        resources: `${baseUrl}/api/resources`,
       },
     },
   },
@@ -167,6 +172,7 @@ writeJson(join(publicData, "index.json"), index);
 writeJson(join(publicData, "techniques.json"), techniques);
 writeJson(join(publicData, "designers.json"), designers);
 writeJson(join(publicData, "sources.json"), sources);
+writeJson(join(publicData, "resources.json"), resources);
 
 for (const t of techniques) {
   writeJson(join(publicData, "techniques", `${t.slug}.json`), t);
@@ -194,5 +200,5 @@ const prompts = techniques.flatMap((t) => {
 writeJson(join(publicData, "prompts.json"), prompts);
 
 console.log(
-  `generate:data → ${techniques.length} techniques, ${designers.length} designers, ${prompts.length} prompts, ${sources.length} sources`
+  `generate:data → ${techniques.length} techniques, ${designers.length} designers, ${prompts.length} prompts, ${sources.length} sources, ${resources.length} resources`
 );

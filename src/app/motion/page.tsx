@@ -33,6 +33,10 @@ export default function MotionPage() {
         <Link href="/techniques/video-motion" className="text-ink underline decoration-hairline">
           Video motion
         </Link>
+        . Broader free craft links:{" "}
+        <Link href="/resources" className="text-ink underline decoration-hairline">
+          /resources
+        </Link>
         .
       </p>
       <MotionLab />

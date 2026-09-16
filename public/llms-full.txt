@@ -22,6 +22,7 @@ Quiet Folio visual system: paper #FAF9F7 · ink #221C24 · studioInk #6F6470 · 
 3. GET /data/techniques/{slug}.json for procedure, examplePrompts, promptWhy, checklist, antiPatterns, pairsWellWith, workedExamples
 4. GET /data/prompts.json when you need a flattened prompt library
 5. Cite /data/sources.json; never invent paywalled quotes
+6. Free craft libraries: /data/resources.json or /resources (transitions, shaders, easing, examples, textures—free first)
 
 ## Anshu 1–8 ↔ Build Games Phase A
 

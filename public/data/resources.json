@@ -1,0 +1,560 @@
+[
+  {
+    "id": "transitions-dev",
+    "slug": "transitions-dev",
+    "title": "transitions.dev",
+    "url": "https://transitions.dev/",
+    "categories": [
+      "transitions",
+      "animation"
+    ],
+    "freeNote": "Free essential UI transition recipes (CSS/React + agent skills). Pro shimmer/recipes require paid tier—do not use without explicit approval.",
+    "agentUse": "Pick a named free recipe (texts-reveal, number-pop-in, tabs-sliding, card-tilt, skeleton-reveal, success-check), adapt to product tokens, and always wire prefers-reduced-motion.",
+    "tags": [
+      "jakub-antalik",
+      "copy-paste",
+      "agent-skills"
+    ]
+  },
+  {
+    "id": "easings-net",
+    "slug": "easings-net",
+    "title": "easings.net",
+    "url": "https://easings.net/",
+    "categories": [
+      "easing",
+      "animation"
+    ],
+    "freeNote": "Fully free visual catalog of CSS/JS easing curves with copyable functions.",
+    "agentUse": "Look up a named ease (easeOutCubic, easeInOutQuint, etc.) and paste the cubic-bezier or JS function instead of inventing timing curves.",
+    "tags": [
+      "curves",
+      "reference"
+    ]
+  },
+  {
+    "id": "cubic-bezier",
+    "slug": "cubic-bezier",
+    "title": "cubic-bezier.com",
+    "url": "https://cubic-bezier.com/",
+    "categories": [
+      "easing"
+    ],
+    "freeNote": "Free interactive cubic-bezier playground; compare against CSS presets.",
+    "agentUse": "Tune a custom cubic-bezier visually, then copy the four values into CSS transition-timing-function or Motion configs.",
+    "tags": [
+      "playground"
+    ]
+  },
+  {
+    "id": "animista",
+    "slug": "animista",
+    "title": "Animista",
+    "url": "https://animista.net/",
+    "categories": [
+      "animation",
+      "transitions"
+    ],
+    "freeNote": "Free CSS animation playground with copyable keyframes; attribution appreciated, no paywall for basic export.",
+    "agentUse": "Generate a small CSS @keyframes snippet for entrance/exit/attention, then simplify durations and respect reduced-motion.",
+    "tags": [
+      "keyframes",
+      "css"
+    ]
+  },
+  {
+    "id": "motion-dev-docs",
+    "slug": "motion-dev-docs",
+    "title": "Motion docs",
+    "url": "https://motion.dev/docs",
+    "categories": [
+      "animation",
+      "transitions"
+    ],
+    "freeNote": "Open documentation for Motion (formerly Framer Motion). Library is free/open-source for standard use; check license for commercial edge cases.",
+    "agentUse": "Read layout/animation/gesture APIs and copy idiomatic React Motion patterns rather than hand-rolling RAF loops.",
+    "tags": [
+      "react",
+      "framer-motion"
+    ]
+  },
+  {
+    "id": "animations-dev",
+    "slug": "animations-dev",
+    "title": "animations.dev",
+    "url": "https://animations.dev/",
+    "categories": [
+      "animation",
+      "reference"
+    ],
+    "freeNote": "Public teaching site on web animation craft (Emil Kowalski). Course/paid material may exist elsewhere—use only free public pages.",
+    "agentUse": "Study free essays on timing, easing, and restraint; translate principles into shorter product motion—not decorative loops.",
+    "tags": [
+      "emil-kowalski",
+      "craft"
+    ]
+  },
+  {
+    "id": "josh-comeau-css-transitions",
+    "slug": "josh-comeau-css-transitions",
+    "title": "Josh Comeau — CSS Transitions",
+    "url": "https://www.joshwcomeau.com/animation/css-transitions/",
+    "categories": [
+      "animation",
+      "easing",
+      "reference"
+    ],
+    "freeNote": "Free long-form tutorial on CSS transitions; some other Comeau courses are paid.",
+    "agentUse": "Use as a mental model for transition properties, stacking context, and why duration/easing matter before adding JS animation libraries.",
+    "tags": [
+      "css",
+      "teaching"
+    ]
+  },
+  {
+    "id": "mdn-easing",
+    "slug": "mdn-easing",
+    "title": "MDN — easing-function",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/easing-function",
+    "categories": [
+      "easing",
+      "reference"
+    ],
+    "freeNote": "Fully free MDN reference for CSS easing functions including linear() and steps().",
+    "agentUse": "Confirm syntax and browser support when emitting CSS timing functions; prefer MDN over blog folklore.",
+    "tags": [
+      "mdn",
+      "spec"
+    ]
+  },
+  {
+    "id": "lenis",
+    "slug": "lenis",
+    "title": "Lenis",
+    "url": "https://lenis.darkroom.engineering/",
+    "categories": [
+      "animation"
+    ],
+    "freeNote": "Open-source smooth scroll library; free to use under its published license.",
+    "agentUse": "Only adopt when product intentionally wants smoothed scroll; otherwise skip—native scroll is often clearer and more accessible.",
+    "tags": [
+      "scroll",
+      "oss"
+    ]
+  },
+  {
+    "id": "paper-shaders",
+    "slug": "paper-shaders",
+    "title": "Paper Shaders",
+    "url": "https://shaders.paper.design/",
+    "categories": [
+      "shaders",
+      "textures"
+    ],
+    "freeNote": "Apache-2.0 open-source WebGL shaders (@paper-design/shaders). Free for commercial end products; pin versions (0.0.x may break).",
+    "agentUse": "Install the React or vanilla package for mesh gradients, noise, halftone, etc.—prefer copy-friendly libs over inventing GLSL from scratch.",
+    "tags": [
+      "webgl",
+      "npm",
+      "apache-2"
+    ]
+  },
+  {
+    "id": "maxime-heckel-shaders",
+    "slug": "maxime-heckel-shaders",
+    "title": "Maxime Heckel — shaders & craft blog",
+    "url": "https://blog.maximeheckel.com/",
+    "categories": [
+      "shaders",
+      "3d",
+      "reference"
+    ],
+    "freeNote": "Public teaching articles on shaders and real-time 3D for the web.",
+    "agentUse": "Read a relevant post when implementing WebGL/R3F effects; extract patterns and cite—do not paste entire essays into prompts.",
+    "tags": [
+      "webgl",
+      "r3f"
+    ]
+  },
+  {
+    "id": "threejs-examples",
+    "slug": "threejs-examples",
+    "title": "three.js examples",
+    "url": "https://threejs.org/examples/",
+    "categories": [
+      "3d",
+      "examples",
+      "shaders"
+    ],
+    "freeNote": "Official free examples; MIT-licensed three.js. Study and adapt—do not dump entire demos into product UI.",
+    "agentUse": "Find the closest official example for a 3D/shader need, then strip it to the minimal scene that serves the product job.",
+    "tags": [
+      "webgl",
+      "mit"
+    ]
+  },
+  {
+    "id": "codrops",
+    "slug": "codrops",
+    "title": "Codrops",
+    "url": "https://tympanus.net/codrops/",
+    "categories": [
+      "examples",
+      "animation",
+      "shaders"
+    ],
+    "freeNote": "Free demos and tutorials for study; check each article’s license before shipping code. Inspiration-first.",
+    "agentUse": "Browse demos for interaction/motion ideas, then rebuild a restrained product version—do not clone decorative Codrops chrome wholesale.",
+    "tags": [
+      "demos",
+      "inspiration"
+    ]
+  },
+  {
+    "id": "open-props",
+    "slug": "open-props",
+    "title": "Open Props",
+    "url": "https://open-props.style/",
+    "categories": [
+      "reference",
+      "examples"
+    ],
+    "freeNote": "Free CSS custom-property design tokens (eases, shadows, sizes, gradients).",
+    "agentUse": "Pull token names (e.g. --ease-spring-3, --shadow-3) into product CSS instead of inventing one-off values.",
+    "tags": [
+      "tokens",
+      "css",
+      "adam-argyle"
+    ]
+  },
+  {
+    "id": "21st-dev",
+    "slug": "21st-dev",
+    "title": "21st.dev",
+    "url": "https://21st.dev/",
+    "categories": [
+      "examples"
+    ],
+    "freeNote": "Browseable component/community gallery; treat as study material. Verify each component’s license before shipping.",
+    "agentUse": "Search for a pattern (dialog, command palette, bento), study structure, then reimplement in the product’s design system—not copy-paste unknown license blobs.",
+    "tags": [
+      "components",
+      "gallery"
+    ]
+  },
+  {
+    "id": "magic-ui",
+    "slug": "magic-ui",
+    "title": "Magic UI",
+    "url": "https://magicui.design/",
+    "categories": [
+      "examples",
+      "animation"
+    ],
+    "freeNote": "Some components are free/open; Pro packs are paid—use only clearly free/open components unless approved.",
+    "agentUse": "Prefer free open components as structural references; skip Pro-only shimmer dumps and rebuild with Quiet Folio tokens.",
+    "tags": [
+      "react",
+      "shadcn-adjacent"
+    ]
+  },
+  {
+    "id": "animata",
+    "slug": "animata",
+    "title": "Animata",
+    "url": "https://animata.design/",
+    "categories": [
+      "examples",
+      "animation"
+    ],
+    "freeNote": "Free open hand-crafted interactive React components for study and reuse under project license.",
+    "agentUse": "Lift a small interaction pattern (text effects, cards) and adapt tokens—keep motion short and reduced-motion safe.",
+    "tags": [
+      "react",
+      "oss"
+    ]
+  },
+  {
+    "id": "hover-dev",
+    "slug": "hover-dev",
+    "title": "Hover.dev components",
+    "url": "https://www.hover.dev/components",
+    "categories": [
+      "examples",
+      "animation",
+      "transitions"
+    ],
+    "freeNote": "Public free demos of UI interactions; product/course offers may be paid—use demos as study only unless license is clear.",
+    "agentUse": "Watch free demos for micro-interaction ideas, then recreate with product tokens instead of embedding their marketing UI.",
+    "tags": [
+      "demos",
+      "micro-interaction"
+    ]
+  },
+  {
+    "id": "aceternity-ui",
+    "slug": "aceternity-ui",
+    "title": "Aceternity UI",
+    "url": "https://ui.aceternity.com/",
+    "categories": [
+      "examples",
+      "animation"
+    ],
+    "freeNote": "Many components free to copy; Pro tiers exist—stick to free listings and check license notes per component.",
+    "agentUse": "Use free components as inspiration for layout/motion; strip decorative glow and re-theme to paper/ink before shipping.",
+    "tags": [
+      "react",
+      "tailwind"
+    ]
+  },
+  {
+    "id": "react-bits",
+    "slug": "react-bits",
+    "title": "React Bits",
+    "url": "https://www.reactbits.dev/",
+    "categories": [
+      "examples",
+      "animation"
+    ],
+    "freeNote": "Free animated React component gallery; verify license on each snippet before production use.",
+    "agentUse": "Grab a minimal animated pattern as a starting point, then reduce intensity for product chrome.",
+    "tags": [
+      "react",
+      "gallery"
+    ]
+  },
+  {
+    "id": "uiverse",
+    "slug": "uiverse",
+    "title": "Uiverse",
+    "url": "https://uiverse.io/",
+    "categories": [
+      "examples"
+    ],
+    "freeNote": "Community CSS/HTML elements; mostly free to use—check individual element terms.",
+    "agentUse": "Mine for button/card hover CSS ideas; rewrite into the design system rather than pasting unscoped community CSS.",
+    "tags": [
+      "css",
+      "community"
+    ]
+  },
+  {
+    "id": "origin-ui",
+    "slug": "origin-ui",
+    "title": "Origin UI",
+    "url": "https://originui.com/",
+    "categories": [
+      "examples"
+    ],
+    "freeNote": "Free open React/Tailwind component patterns (shadcn-style). Confirm MIT/project license before shipping.",
+    "agentUse": "Copy structure for forms, inputs, and layouts; restyle to catalog/product tokens.",
+    "tags": [
+      "react",
+      "tailwind",
+      "shadcn-adjacent"
+    ]
+  },
+  {
+    "id": "lottiefiles",
+    "slug": "lottiefiles",
+    "title": "LottieFiles",
+    "url": "https://lottiefiles.com/",
+    "categories": [
+      "animation",
+      "icons-illustration"
+    ],
+    "freeNote": "Large free animation library with license filters; paid assets exist—filter to Free and read each file’s license.",
+    "agentUse": "Search free Lotties for micro-delight (success, empty states); prefer short loops and provide a static fallback for reduced-motion.",
+    "tags": [
+      "lottie",
+      "after-effects"
+    ]
+  },
+  {
+    "id": "lucide",
+    "slug": "lucide",
+    "title": "Lucide",
+    "url": "https://lucide.dev/",
+    "categories": [
+      "icons-illustration"
+    ],
+    "freeNote": "ISC-licensed open icon set; free for commercial use.",
+    "agentUse": "Prefer a consistent open icon set over random SVGs; import only needed icons to keep bundles small.",
+    "tags": [
+      "icons",
+      "oss"
+    ]
+  },
+  {
+    "id": "heroicons",
+    "slug": "heroicons",
+    "title": "Heroicons",
+    "url": "https://heroicons.com/",
+    "categories": [
+      "icons-illustration"
+    ],
+    "freeNote": "MIT-licensed icons from the Tailwind team; free for commercial use.",
+    "agentUse": "Use outline/solid pairs for UI chrome; keep stroke weight consistent with the product type system.",
+    "tags": [
+      "icons",
+      "mit"
+    ]
+  },
+  {
+    "id": "phosphor-icons",
+    "slug": "phosphor-icons",
+    "title": "Phosphor Icons",
+    "url": "https://phosphoricons.com/",
+    "categories": [
+      "icons-illustration"
+    ],
+    "freeNote": "MIT-licensed flexible icon family; free for commercial use.",
+    "agentUse": "Pick one weight (regular/duotone) and stick to it across the product to avoid icon soup.",
+    "tags": [
+      "icons",
+      "mit"
+    ]
+  },
+  {
+    "id": "undraw",
+    "slug": "undraw",
+    "title": "unDraw",
+    "url": "https://undraw.co/illustrations",
+    "categories": [
+      "icons-illustration"
+    ],
+    "freeNote": "Free MIT illustrations; recolorable. No attribution required but appreciated.",
+    "agentUse": "Use for empty states/onboarding only when illustration helps; recolor to brand and avoid generic stock-illustration sprawl.",
+    "tags": [
+      "illustration",
+      "mit"
+    ]
+  },
+  {
+    "id": "haikei",
+    "slug": "haikei",
+    "title": "Haikei",
+    "url": "https://haikei.app/",
+    "categories": [
+      "textures",
+      "icons-illustration"
+    ],
+    "freeNote": "Free SVG blob/wave/pattern generators for local craft; account features may vary—export free SVGs for backgrounds.",
+    "agentUse": "Generate a restrained SVG background or divider, then inline or optimize; keep opacity low so content stays primary.",
+    "tags": [
+      "svg",
+      "generator"
+    ]
+  },
+  {
+    "id": "fffuel-nnnoise",
+    "slug": "fffuel-nnnoise",
+    "title": "fffuel — nnnoise",
+    "url": "https://fffuel.co/nnnoise/",
+    "categories": [
+      "textures"
+    ],
+    "freeNote": "Free noise SVG/PNG generator on fffuel; other fffuel tools similarly free for local craft.",
+    "agentUse": "Export a subtle grain/noise texture for paper-like surfaces; prefer CSS/SVG overlays over heavy image files.",
+    "tags": [
+      "noise",
+      "grain",
+      "generator"
+    ]
+  },
+  {
+    "id": "hero-patterns",
+    "slug": "hero-patterns",
+    "title": "Hero Patterns",
+    "url": "https://www.heropatterns.com/",
+    "categories": [
+      "textures"
+    ],
+    "freeNote": "Free SVG background patterns; CC BY 4.0—attribute when required.",
+    "agentUse": "Pick a light pattern, tint to paper/ink, and use sparingly as section texture—not full-page wallpaper.",
+    "tags": [
+      "svg",
+      "patterns",
+      "cc-by"
+    ]
+  },
+  {
+    "id": "polyhaven-textures",
+    "slug": "polyhaven-textures",
+    "title": "Poly Haven Textures",
+    "url": "https://polyhaven.com/textures",
+    "categories": [
+      "textures",
+      "3d"
+    ],
+    "freeNote": "CC0 PBR textures—free for any use including commercial.",
+    "agentUse": "Download CC0 maps (albedo/roughness/normal) for 3D or UI material experiments without license anxiety.",
+    "tags": [
+      "cc0",
+      "pbr"
+    ]
+  },
+  {
+    "id": "ambientcg",
+    "slug": "ambientcg",
+    "title": "AmbientCG",
+    "url": "https://ambientcg.com/",
+    "categories": [
+      "textures",
+      "3d"
+    ],
+    "freeNote": "CC0 PBR materials and HDRIs; free for any use.",
+    "agentUse": "Source seamless materials or HDRIs for local 3D/shader craft when product needs tangible surface detail.",
+    "tags": [
+      "cc0",
+      "pbr",
+      "hdri"
+    ]
+  },
+  {
+    "id": "design-slop-cop",
+    "slug": "design-slop-cop",
+    "title": "design-slop-cop",
+    "url": "https://github.com/AdrianKrebs/design-slop-cop",
+    "categories": [
+      "reference"
+    ],
+    "freeNote": "Public open-source kill-list tooling for common AI design tells. Citation only—no endorsement.",
+    "agentUse": "Run as a second-pass checklist after taste review (vibe purple, glass, emoji grids); do not treat it as a substitute for craft judgment.",
+    "tags": [
+      "anti-slop",
+      "lint"
+    ]
+  },
+  {
+    "id": "rauno-craft",
+    "slug": "rauno-craft",
+    "title": "Rauno — craft notes",
+    "url": "https://rauno.me/craft",
+    "categories": [
+      "reference"
+    ],
+    "freeNote": "Public craft essays (interaction, depth, novelty). Free to read; not a component dump.",
+    "agentUse": "Read for interaction/restraint principles when refining UI; cite publicly available notes—do not invent quotes.",
+    "tags": [
+      "craft",
+      "interaction"
+    ]
+  },
+  {
+    "id": "emil-great-animations",
+    "slug": "emil-great-animations",
+    "title": "Emil Kowalski — Great animations",
+    "url": "https://emilkowal.ski/ui/great-animations",
+    "categories": [
+      "animation",
+      "reference"
+    ],
+    "freeNote": "Free public essay on what makes UI animation feel great; sibling posts cover restraint.",
+    "agentUse": "Internalize timing/feel guidance before adding motion; pair with animation-restraint techniques in this catalog.",
+    "tags": [
+      "emil-kowalski",
+      "craft"
+    ]
+  }
+]

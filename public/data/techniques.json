@@ -227,7 +227,8 @@
     "tips": [
       "Built-in image tools are underused until you explicitly tell the agent to use them.",
       "Use a separate API key with a tight spend limit so costs stay bounded if the agent misuses it.",
-      "CSS blobs and gradients alone are a giveaway—prefer real imagery."
+      "CSS blobs and gradients alone are a giveaway—prefer real imagery.",
+      "Free craft libraries for shaders/textures/examples: https://design-catalog-three.vercel.app/resources (and /data/resources.json)—prefer open packages over inventing GLSL; no endorsement."
     ],
     "sourceUrls": [
       "https://www.lennysnewsletter.com/p/how-to-turn-your-ai-into-a-world"
@@ -292,7 +293,8 @@
       "Matted loops beat CSS animation for caustics, refraction, and physical motion.",
       "Scroll-scrubbed keyframe transitions make users want to keep reading.",
       "Model quality changes fast—aggregators reduce integration churn.",
-      "Product motion craft (free recipes by Jakub Antalik): https://transitions.dev/ — supplement to Technique 5 imagery/video, not a substitute; honor prefers-reduced-motion; no Pro shimmer without approval."
+      "Product motion craft (free recipes by Jakub Antalik): https://transitions.dev/ — supplement to Technique 5 imagery/video, not a substitute; honor prefers-reduced-motion; no Pro shimmer without approval.",
+      "More free motion/easing/shader sources for agents: https://design-catalog-three.vercel.app/resources — free first; no Pro dumps without approval."
     ],
     "sourceUrls": [
       "https://www.lennysnewsletter.com/p/how-to-turn-your-ai-into-a-world",

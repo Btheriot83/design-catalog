@@ -15,6 +15,8 @@ Returns: designers[], technique summaries, stages, `routes`, `anshuMapping`, `ca
 
 Also: `/llms.txt` (short) · `/llms-full.txt` (full briefing).
 
+Free craft desk: `/resources` · `/data/resources.json` (transitions, shaders, easing, examples, textures—free first, no endorsement).
+
 Schemas: `/schema/technique.schema.json` · `/schema/designer.schema.json`.
 
 ## (b) Pick a technique by stage / job
@@ -63,7 +65,7 @@ Write artifacts in the target repo (Build Games Phase A pattern):
 - Anti-slop / kill-list cleared (`remove-ai-tells`; related: design-slop-cop)
 - Hand-rewritten key strings (before → after)
 
-Optional API aliases (same payloads; prefer static `/data/` for CDN): `/api/index`, `/api/techniques`, `/api/designers`, `/api/prompts`, `/api/sources`.
+Optional API aliases (same payloads; prefer static `/data/` for CDN): `/api/index`, `/api/techniques`, `/api/designers`, `/api/prompts`, `/api/sources`, `/api/resources`.
 
 ## Anshu 1–8 ↔ Build Games
 
@@ -95,7 +97,7 @@ Also in `index.json` → `canonicalApps.tileboard`.
 
 ## Quiet Folio / motion
 
-Keep paper/ink desk. Free motion recipes: [transitions.dev](https://transitions.dev/) (Jakub Antalik) — texts-reveal, number-pop-in, tabs-sliding, card-tilt, success-check; honor `prefers-reduced-motion`. No Pro shimmer without explicit approval.
+Keep paper/ink desk. Free motion recipes: [transitions.dev](https://transitions.dev/) (Jakub Antalik) — texts-reveal, number-pop-in, tabs-sliding, card-tilt, success-check; honor `prefers-reduced-motion`. No Pro shimmer without explicit approval. Broader free craft links: [/resources](https://design-catalog-three.vercel.app/resources).
 
 ## Disclaimer
 

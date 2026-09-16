@@ -58,3 +58,25 @@ export interface Source {
   /** Optional person slug for provenance UI */
   designerSlug?: string;
 }
+
+export type ResourceCategory =
+  | "transitions"
+  | "shaders"
+  | "animation"
+  | "examples"
+  | "easing"
+  | "icons-illustration"
+  | "textures"
+  | "3d"
+  | "reference";
+
+export interface CraftResource {
+  id: string;
+  slug: string;
+  title: string;
+  url: string;
+  categories: ResourceCategory[];
+  freeNote: string;
+  agentUse: string;
+  tags?: string[];
+}

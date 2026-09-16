@@ -13,16 +13,17 @@ Repo: https://github.com/Btheriot83/design-catalog
 - Designers: https://design-catalog-three.vercel.app/data/designers.json
 - Prompts library: https://design-catalog-three.vercel.app/data/prompts.json
 - Sources: https://design-catalog-three.vercel.app/data/sources.json
+- Free craft resources: https://design-catalog-three.vercel.app/data/resources.json
 - Schemas: https://design-catalog-three.vercel.app/schema/technique.schema.json · designer.schema.json
 - Full agent guide: https://raw.githubusercontent.com/Btheriot83/design-catalog/main/docs/FOR_AGENTS.md
 - This file (full): https://design-catalog-three.vercel.app/llms-full.txt
 
 Optional API aliases (same JSON; prefer /data/ for CDN cache):
-- /api/index · /api/techniques · /api/designers · /api/prompts · /api/sources
+- /api/index · /api/techniques · /api/designers · /api/prompts · /api/sources · /api/resources
 
 ## Key human routes
 
-- /techniques · /prompts · /compare (field guide) · /designers · /sources · /agents · /about · /motion
+- /techniques · /prompts · /compare (field guide) · /designers · /sources · /resources · /agents · /about · /motion
 
 ## How to use (short)
 
