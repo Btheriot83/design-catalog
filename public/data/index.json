@@ -2,11 +2,11 @@
   "name": "Design Catalog",
   "description": "Letterpress study desk of AI design techniques (Anshu, Nate, Greg + craft directory voices). Public sources only; no endorsement.",
   "baseUrl": "https://design-catalog-three.vercel.app",
-  "lastUpdated": "2026-09-16T23:20:29.921Z",
+  "lastUpdated": "2026-09-17T02:42:30.688Z",
   "techniqueCount": 85,
   "designerCount": 52,
   "sourceCount": 45,
-  "resourceCount": 35,
+  "resourceCount": 36,
   "stages": [
     {
       "id": "Discover",

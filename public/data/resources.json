@@ -79,6 +79,25 @@
     ]
   },
   {
+    "id": "motionsites-ai",
+    "slug": "motionsites-ai",
+    "title": "MotionSites AI",
+    "url": "https://motionsites.ai",
+    "categories": [
+      "examples",
+      "animation",
+      "3d"
+    ],
+    "freeNote": "Public gallery of AI website / hero / section prompt examples and animated-background demos. Much of the library is premium (“Go Unlimited”); use only free visible drops and free academy samples unless Brandon approves paid access. No endorsement.",
+    "agentUse": "Browse free-visible landing/hero/section examples for motion and layout inspiration; steal structure and restraint ideas, not paywalled prompt packs. Prefer free transitions.dev recipes for production motion code.",
+    "tags": [
+      "ai-prompts",
+      "landing",
+      "inspiration",
+      "premium-gated"
+    ]
+  },
+  {
     "id": "animations-dev",
     "slug": "animations-dev",
     "title": "animations.dev",
