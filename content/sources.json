@@ -3,8 +3,8 @@
     "title": "How to turn your AI into a world-class designer",
     "url": "https://www.lennysnewsletter.com/p/how-to-turn-your-ai-into-a-world",
     "kind": "Primary essay",
-    "note": "Anshu Chimala guest post in Lenny\u2019s Newsletter, Sep 2026. Primary source for techniques 1\u20138.",
-    "coverage": "Free preview covers Discover + Define through technique 6 (cut elements) with worked examples (productivity landings, critic loops, image/video, calorie-tracker cuts). Technique 7 (Remove AI tells) and 8 (hand-rewrite copy) are named at the paywall boundary\u2014deeper verbatim tips are paid. This catalog paraphrases Deliver-stage practice honestly and does not invent paywalled quotes.",
+    "note": "Anshu Chimala guest post in Lenny’s Newsletter, Sep 2026. Primary source for techniques 1–8.",
+    "coverage": "Free preview covers Discover + Define through technique 6 (cut elements) with worked examples (productivity landings, critic loops, image/video, calorie-tracker cuts). Technique 7 (Remove AI tells) and 8 (hand-rewrite copy) are named at the paywall boundary—deeper verbatim tips are paid. This catalog paraphrases Deliver-stage practice honestly and does not invent paywalled quotes.",
     "designerSlug": "anshu-chimala"
   },
   {
@@ -16,18 +16,18 @@
     "designerSlug": "anshu-chimala"
   },
   {
-    "title": "Sakana AI \u2014 String Seed of Thought",
+    "title": "Sakana AI — String Seed of Thought",
     "url": "https://sakana.ai/ssot/",
     "kind": "Referenced method",
-    "note": "Sakana AI \u2014 String Seed of Thought (SSoT). Cited by Anshu as inspiration for seed-string variety injection; also useful as distribution-faithful diversity prompting. No endorsement.",
-    "coverage": "Method reference (https://sakana.ai/ssot/); not a full technique reprint. Anshu\u2019s catalog adaptation uses external shell entropy rather than in-model string generation."
+    "note": "Sakana AI — String Seed of Thought (SSoT). Cited by Anshu as inspiration for seed-string variety injection; also useful as distribution-faithful diversity prompting. No endorsement.",
+    "coverage": "Method reference (https://sakana.ai/ssot/); not a full technique reprint. Anshu’s catalog adaptation uses external shell entropy rather than in-model string generation."
   },
   {
     "title": "design-slop-cop",
     "url": "https://github.com/AdrianKrebs/design-slop-cop",
     "kind": "Related tooling",
-    "note": "Adrian Krebs \u2014 independent public tooling for spotting design slop. Cited alongside remove-ai-tells / Build Games anti-slop practice; not a full designer entry (tooling depth only). No endorsement.",
-    "coverage": "Lineage citation only\u2014no endorsement."
+    "note": "Adrian Krebs — independent public tooling for spotting design slop. Cited alongside remove-ai-tells / Build Games anti-slop practice; not a full designer entry (tooling depth only). No endorsement.",
+    "coverage": "Lineage citation only—no endorsement."
   },
   {
     "title": "How the product designer who built Claude Design uses it to explore ideas before building them",
@@ -38,11 +38,11 @@
     "designerSlug": "nate-parrott"
   },
   {
-    "title": "Cooking with constraints: A designer\u2019s framework for better AI prompts",
+    "title": "Cooking with constraints: A designer’s framework for better AI prompts",
     "url": "https://www.figma.com/blog/designer-framework-for-better-ai-prompts/",
     "kind": "Primary essay",
-    "note": "Greg Huntoon, Figma Blog (Jan 2026). Public source for TC-EBC. Earlier catalog stub mis-attributed this lineage to David Kossnick\u2014corrected.",
-    "coverage": "Full public post: mise en place framing; TC-EBC definitions; pantry-app and feature-copy before/after; revision + model-choice notes. Catalogued as five partial techniques (Task\u2026Constraints). No endorsement.",
+    "note": "Greg Huntoon, Figma Blog (Jan 2026). Public source for TC-EBC. Earlier catalog stub mis-attributed this lineage to David Kossnick—corrected.",
+    "coverage": "Full public post: mise en place framing; TC-EBC definitions; pantry-app and feature-copy before/after; revision + model-choice notes. Catalogued as five partial techniques (Task…Constraints). No endorsement.",
     "designerSlug": "greg-huntoon"
   },
   {
@@ -54,7 +54,7 @@
     "designerSlug": "greg-huntoon"
   },
   {
-    "title": "Transitions.dev \u2014 free UI transitions for agents",
+    "title": "Transitions.dev — free UI transitions for agents",
     "url": "https://transitions.dev/",
     "kind": "Motion craft",
     "note": "Jakub Antalik. Free copy-paste transition recipes used for Quiet Folio motion (texts-reveal, number-pop-in, tabs-sliding, restrained card-tilt, success-check, skeleton-reveal). No Pro recipes.",
@@ -62,15 +62,15 @@
     "designerSlug": "jakub-antalik"
   },
   {
-    "title": "Bret Victor \u2014 Stop Drawing Dead Fish",
+    "title": "Bret Victor — Stop Drawing Dead Fish",
     "url": "https://www.youtube.com/watch?v=ZfytHvgHybA",
     "kind": "Craft citation",
-    "note": "Public talk cited by Nate Parrott as the north star for \u201cmake it alive\u201d: everything we draw should be alive by default. No endorsement.",
-    "coverage": "Talk citation only \u2014 used on make-it-alive; not a full technique catalog.",
+    "note": "Public talk cited by Nate Parrott as the north star for “make it alive”: everything we draw should be alive by default. No endorsement.",
+    "coverage": "Talk citation only — used on make-it-alive; not a full technique catalog.",
     "designerSlug": "nate-parrott"
   },
   {
-    "title": "Designing Depth \u2014 Rauno Freiberg",
+    "title": "Designing Depth — Rauno Freiberg",
     "url": "https://rauno.me/craft/depth",
     "kind": "Craft essay",
     "note": "Rauno Freiberg (July 2024). Public craft essay on layered composition, blurred backdrops, motion choreography and stagger. Source for designing-depth and stagger-choreograph-motion. No endorsement.",
@@ -78,7 +78,7 @@
     "designerSlug": "rauno-freiberg"
   },
   {
-    "title": "Great Animations \u2014 Emil Kowalski",
+    "title": "Great Animations — Emil Kowalski",
     "url": "https://emilkowal.ski/ui/great-animations",
     "kind": "Craft essay",
     "note": "Public principles: natural, fast, purposeful, performant, interruptible, accessible, cohesive. Source for purposeful-motion. No endorsement.",
@@ -86,7 +86,7 @@
     "designerSlug": "emil-kowalski"
   },
   {
-    "title": "You Don't Need Animations \u2014 Emil Kowalski",
+    "title": "You Don't Need Animations — Emil Kowalski",
     "url": "https://emilkowal.ski/ui/you-dont-need-animations",
     "kind": "Craft essay",
     "note": "Public essay on purpose, frequency, and when no animation is best. Source for animation-restraint. No endorsement.",
@@ -94,7 +94,7 @@
     "designerSlug": "emil-kowalski"
   },
   {
-    "title": "A Brief History & Ethos of the Digital Garden \u2014 Maggie Appleton",
+    "title": "A Brief History & Ethos of the Digital Garden — Maggie Appleton",
     "url": "https://maggieappleton.com/garden-history",
     "kind": "Craft essay",
     "note": "Public essay on garden patterns including imperfection/status disclosure. Source for garden-status-labels. No endorsement.",
@@ -102,15 +102,15 @@
     "designerSlug": "maggie-appleton"
   },
   {
-    "title": "How to Draw Invisible Programming Concepts: Part I \u2014 Maggie Appleton",
+    "title": "How to Draw Invisible Programming Concepts: Part I — Maggie Appleton",
     "url": "https://maggieappleton.com/drawinginvisibles1",
     "kind": "Craft essay",
-    "note": "Public essay on source\u2192target metaphors for abstract concepts. Source for illustrate-the-invisible. No endorsement.",
+    "note": "Public essay on source→target metaphors for abstract concepts. Source for illustrate-the-invisible. No endorsement.",
     "coverage": "Full public essay paraphrased; illustrations not copied.",
     "designerSlug": "maggie-appleton"
   },
   {
-    "title": "7 Practical Tips for Cheating at Design \u2014 Refactoring UI",
+    "title": "7 Practical Tips for Cheating at Design — Refactoring UI",
     "url": "https://medium.com/refactoring-ui/7-practical-tips-for-cheating-at-design-40c736799886",
     "kind": "Craft essay",
     "note": "Public Medium tip list (Wathan/Schoger). Source for hierarchy-with-weight, start-with-whitespace, fewer-borders. No endorsement; paid book not quoted.",
@@ -118,7 +118,7 @@
     "designerSlug": "steve-schoger"
   },
   {
-    "title": "Refactoring UI \u2014 public site / previews",
+    "title": "Refactoring UI — public site / previews",
     "url": "https://refactoringui.com/",
     "kind": "Craft citation",
     "note": "Marketing site and free previews (e.g. color palette). Cited for public tip lineage. No endorsement.",
@@ -126,15 +126,15 @@
     "designerSlug": "steve-schoger"
   },
   {
-    "title": "What Screens Want \u2014 Frank Chimero",
+    "title": "What Screens Want — Frank Chimero",
     "url": "https://frankchimero.com/blog/2013/what-screens-want/",
     "kind": "Craft essay",
-    "note": "Frank Chimero (2013). Public essay: screens\u2019 grain is flux. Source for screens-want-honesty. No endorsement.",
+    "note": "Frank Chimero (2013). Public essay: screens’ grain is flux. Source for screens-want-honesty. No endorsement.",
     "coverage": "Full public essay paraphrased.",
     "designerSlug": "frank-chimero"
   },
   {
-    "title": "The Web\u2019s Grain \u2014 Frank Chimero",
+    "title": "The Web’s Grain — Frank Chimero",
     "url": "https://frankchimero.com/blog/2015/the-webs-grain/",
     "kind": "Craft essay",
     "note": "Companion to What Screens Want; web-native humility. Cited on screens-want-honesty. No endorsement.",
@@ -254,7 +254,7 @@
     "designerSlug": "rasmus-andersson"
   },
   {
-    "title": "Luke W \u2014 lukew.com",
+    "title": "Luke W — lukew.com",
     "url": "https://www.lukew.com/",
     "kind": "Site",
     "note": "Luke Wroblewski",
@@ -329,5 +329,12 @@
     "kind": "Project",
     "note": "Adam Wathan",
     "designerSlug": "adam-wathan"
+  },
+  {
+    "title": "Google AI Studio — Learn: AI UI Design",
+    "url": "https://aistudio.google.com/learn/ai-ui-design-google-ai-studio",
+    "kind": "Learn path",
+    "note": "Google AI Studio public teaching page on AI UI design. Cited as a free workflow/examples entry point for agents; independent catalog, no endorsement.",
+    "coverage": "Public learn route on aistudio.google.com. Studio account may be required to run demos inside the product. We do not invent unpublished Studio content beyond what this page exposes."
   }
 ]

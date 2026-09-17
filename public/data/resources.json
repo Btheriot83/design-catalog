@@ -98,6 +98,25 @@
     ]
   },
   {
+    "id": "google-ai-studio-ui-design",
+    "slug": "google-ai-studio-ui-design",
+    "title": "Google AI Studio — AI UI Design",
+    "url": "https://aistudio.google.com/learn/ai-ui-design-google-ai-studio",
+    "categories": [
+      "examples",
+      "reference",
+      "animation"
+    ],
+    "freeNote": "Public Google AI Studio learn path on AI-assisted UI design. Free with a Google account for Studio; no endorsement. Do not invent unpublished studio recipes from this citation alone.",
+    "agentUse": "Use as a high-level Google-authored example path for AI UI workflows in Studio (prompts, iteration, UI generation). Prefer catalog techniques + free craft resources for production code; treat this as workflow inspiration and official Studio teaching, not a dump of copy-paste proprietary demos.",
+    "tags": [
+      "google",
+      "ai-studio",
+      "ui-design",
+      "learn"
+    ]
+  },
+  {
     "id": "animations-dev",
     "slug": "animations-dev",
     "title": "animations.dev",

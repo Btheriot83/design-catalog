@@ -329,5 +329,12 @@
     "kind": "Project",
     "note": "Adam Wathan",
     "designerSlug": "adam-wathan"
+  },
+  {
+    "title": "Google AI Studio — Learn: AI UI Design",
+    "url": "https://aistudio.google.com/learn/ai-ui-design-google-ai-studio",
+    "kind": "Learn path",
+    "note": "Google AI Studio public teaching page on AI UI design. Cited as a free workflow/examples entry point for agents; independent catalog, no endorsement.",
+    "coverage": "Public learn route on aistudio.google.com. Studio account may be required to run demos inside the product. We do not invent unpublished Studio content beyond what this page exposes."
   }
 ]
