@@ -23,6 +23,7 @@ Quiet Folio visual system: paper #FAF9F7 · ink #221C24 · studioInk #6F6470 · 
 4. GET /data/prompts.json when you need a flattened prompt library
 5. Cite /data/sources.json; never invent paywalled quotes
 6. Free craft libraries: /data/resources.json or /resources (transitions, shaders, easing, examples, textures—free first)
+7. Shipaton 2025 winners catalog: /data/shipaton-2025.json or /shipaton-2025 (store previews; public sources; no endorsement)
 
 ## Anshu 1–8 ↔ Build Games Phase A
 
@@ -36,6 +37,12 @@ Quiet Folio visual system: paper #FAF9F7 · ink #221C24 · studioInk #6F6470 · 
 | 6 | cut-elements | Deliver | docs/DELIVER.md |
 | 7 | remove-ai-tells | Deliver | docs/DELIVER.md |
 | 8 | hand-rewrite-copy | Deliver | docs/DELIVER.md |
+
+## Shipaton 2025
+
+- Human: /shipaton-2025 · /shipaton-2025/budget-trip
+- JSON: /data/shipaton-2025.json (alias /api/shipaton-2025)
+- Store gallery previews only — not live device captures
 
 ## Tileboard (chore-app) path
 
