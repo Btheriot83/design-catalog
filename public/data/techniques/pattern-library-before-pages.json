@@ -57,5 +57,61 @@
     "Isolation states covered.",
     "New needs proposed as patterns, not one-offs."
   ],
-  "number": 64
+  "number": 64,
+  "agentContract": {
+    "version": "1.0.0",
+    "provenance": {
+      "kind": "editorial-synthesis",
+      "statement": "Design Catalog editorial synthesis of the cited public sources; contracts and decision paths are our implementation guidance, not quotations or author endorsements.",
+      "sources": [
+        "https://atomicdesign.bradfrost.com/chapter-3/",
+        "https://atomicdesign.bradfrost.com/chapter-4/",
+        "https://bradfrost.com/"
+      ]
+    },
+    "decisionPath": null,
+    "useWhen": [
+      "The current discover task needs this specific principle: Frost’s Pattern Lab lineage (Atomic Design ch.3–4, public): effective systems expose patterns in isolation and in context. When prompting AI, seed with the library’s patterns first so pages inherit, rather than reverse-engineering a library from a pretty page."
+    ],
+    "avoidWhen": [
+      "Pretty page first, ‘we’ll systematize later’."
+    ],
+    "inputs": [
+      "A concrete user problem and the current artifact",
+      "Constraints, existing behavior and source attribution to preserve"
+    ],
+    "output": "A bounded application of “Start from the pattern library, not the page” with before/after evidence and remaining limitations.",
+    "recipe": "1. Open or sketch the pattern inventory before net-new screens.\n2. Prompt AI to assemble from named patterns; forbid silent new primitives.\n3. Toggle patterns through states (default/hover/disabled) in isolation.\n4. Only then compose a page and note which patterns were missing—and promote them.",
+    "acceptance": [
+      "Show the before/after artifact and explain how “Start from the pattern library, not the page” improves the named user task.",
+      "Pattern inventory referenced in the prompt.",
+      "Isolation states covered.",
+      "New needs proposed as patterns, not one-offs."
+    ],
+    "stateRequirements": {
+      "responsive": "Check 390px and desktop plus 200% zoom; preserve reading order, wrap long text and keep actions reachable.",
+      "accessibility": "Use semantic headings and native controls, visible labels and focus; normal text contrast at least 4.5:1.",
+      "keyboard": "Complete the primary action using Tab, Shift+Tab, Enter and Space; no pointer-only information or focus trap.",
+      "reducedMotion": "Remove nonessential movement; preserve all state and information without waiting for animation.",
+      "loading": "Show pending feedback only during real work; retain context and allow navigation away.",
+      "empty": "Distinguish no content from no matching results; explain how to proceed or reset filters.",
+      "error": "Explain the failed action, retain user input and offer recovery; never claim success on failure.",
+      "interruption": "A newer action wins; cancel or ignore stale results and keep controls responsive.",
+      "stateChange": "Announce important results politely without moving focus unexpectedly."
+    },
+    "compatibility": {
+      "candidates": [
+        "wireframe-first",
+        "systemize-repeating-ui"
+      ],
+      "rule": "Start with one technique. Add at most one companion for a distinct unsolved problem; candidates are suggestions, not verified compatibility.",
+      "conflicts": [
+        "Two techniques changing the same visual role require an explicit winner.",
+        "Do not combine multiple entrance or attention effects on one target.",
+        "Aesthetic subtraction must not remove semantics, feedback or attribution."
+      ],
+      "stop": "Stop when the named task is clearer and acceptance evidence is recorded; do not add polish without a problem."
+    },
+    "comparison": null
+  }
 }

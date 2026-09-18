@@ -76,5 +76,66 @@
     "No content glued to container edges.",
     "Critic OK on breathing room.",
     "Ambiguous equal gaps between unlike groups removed."
-  ]
+  ],
+  "agentContract": {
+    "version": "1.0.0",
+    "provenance": {
+      "kind": "editorial-synthesis",
+      "statement": "Design Catalog editorial synthesis of the cited public sources; contracts and decision paths are our implementation guidance, not quotations or author endorsements.",
+      "sources": [
+        "https://medium.com/refactoring-ui/7-practical-tips-for-cheating-at-design-40c736799886",
+        "https://refactoringui.com/",
+        "https://www.youtube.com/watch?v=7Z9rrryIOC4"
+      ]
+    },
+    "decisionPath": "hierarchy",
+    "useWhen": [
+      "Can someone find the next action without reading every label?"
+    ],
+    "avoidWhen": [
+      "Do not add a new visual hierarchy to a screen whose real problem is missing information."
+    ],
+    "inputs": [
+      "A concrete user problem and the current artifact",
+      "Constraints, existing behavior and source attribution to preserve"
+    ],
+    "output": "A bounded application of “Start with too much whitespace” with before/after evidence and remaining limitations.",
+    "recipe": "/* Emphasis follows the task, not DOM position. */\n.primary { font-weight: 600; color: #221c24; }\n.supporting { font-weight: 400; color: #6f6470; }\n.actions { display: flex; flex-wrap: wrap; gap: .75rem; }",
+    "acceptance": [
+      "At 390px and 1280px, identify the primary action without scrolling past decorative material; preserve text contrast and the same reading order.",
+      "Excess-air pass happened before tighten.",
+      "Spacing scale declared and applied.",
+      "No content glued to container edges."
+    ],
+    "stateRequirements": {
+      "responsive": "Check 390px and desktop plus 200% zoom; preserve reading order, wrap long text and keep actions reachable.",
+      "accessibility": "Use semantic headings and native controls, visible labels and focus; normal text contrast at least 4.5:1.",
+      "keyboard": "Complete the primary action using Tab, Shift+Tab, Enter and Space; no pointer-only information or focus trap.",
+      "reducedMotion": "Remove nonessential movement; preserve all state and information without waiting for animation.",
+      "loading": "Show pending feedback only during real work; retain context and allow navigation away.",
+      "empty": "Distinguish no content from no matching results; explain how to proceed or reset filters.",
+      "error": "Explain the failed action, retain user input and offer recovery; never claim success on failure.",
+      "interruption": "A newer action wins; cancel or ignore stale results and keep controls responsive.",
+      "stateChange": "Announce important results politely without moving focus unexpectedly."
+    },
+    "compatibility": {
+      "candidates": [
+        "fewer-borders",
+        "hierarchy-with-weight",
+        "cut-elements"
+      ],
+      "rule": "Start with one technique. Add at most one companion for a distinct unsolved problem; candidates are suggestions, not verified compatibility.",
+      "conflicts": [
+        "Two techniques changing the same visual role require an explicit winner.",
+        "Do not combine multiple entrance or attention effects on one target.",
+        "Aesthetic subtraction must not remove semantics, feedback or attribution."
+      ],
+      "stop": "One action leads; supporting information is still readable."
+    },
+    "comparison": {
+      "bad": "Six equally prominent buttons make the reader compare every option before acting.",
+      "good": "One clear next step, quieter alternatives, and nearby context make the choice legible.",
+      "impact": "One action leads; supporting information is still readable."
+    }
+  }
 }

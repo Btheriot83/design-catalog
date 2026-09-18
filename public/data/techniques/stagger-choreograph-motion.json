@@ -66,5 +66,61 @@
     "Motion starts near the trigger.",
     "Sibling stagger is subtle and timed under a responsive budget.",
     "Reduced-motion path verified."
-  ]
+  ],
+  "agentContract": {
+    "version": "1.0.0",
+    "provenance": {
+      "kind": "editorial-synthesis",
+      "statement": "Design Catalog editorial synthesis of the cited public sources; contracts and decision paths are our implementation guidance, not quotations or author endorsements.",
+      "sources": [
+        "https://rauno.me/craft/depth",
+        "https://rauno.me/craft"
+      ]
+    },
+    "decisionPath": null,
+    "useWhen": [
+      "The current define task needs this specific principle: Nature rarely moves in perfect synchrony—schools of fish and flocks of birds have slight timing differences. Rauno Freiberg’s Designing Depth extends this to UI: choreograph discrete states over a gesture, stagger sibling reveals, and reverse choreography based on where the trigger sits so motion teaches layering instead of feeling like a single keyframed pop."
+    ],
+    "avoidWhen": [
+      "One keyframed pop for every enter, ignoring gesture origin."
+    ],
+    "inputs": [
+      "A concrete user problem and the current artifact",
+      "Constraints, existing behavior and source attribution to preserve"
+    ],
+    "output": "A bounded application of “Stagger and choreograph motion like nature” with before/after evidence and remaining limitations.",
+    "recipe": "1. Deconstruct the interaction into discrete states tied to the gesture (not one monolithic keyframe).\n2. Prioritize motion near the trigger location first so the interface feels like it heard the user.\n3. Stagger sibling items that look alike (grids, icon rows) with slight delays—enough to read as depth, not enough to feel slow.\n4. When the same overlay can open from different triggers, reverse or retune choreography to match each origin.\n5. Honor prefers-reduced-motion: collapse stagger to opacity-only or instant.",
+    "acceptance": [
+      "Show the before/after artifact and explain how “Stagger and choreograph motion like nature” improves the named user task.",
+      "Interaction broken into named states, not one blob animation.",
+      "Motion starts near the trigger.",
+      "Sibling stagger is subtle and timed under a responsive budget."
+    ],
+    "stateRequirements": {
+      "responsive": "Check 390px and desktop plus 200% zoom; preserve reading order, wrap long text and keep actions reachable.",
+      "accessibility": "Use semantic headings and native controls, visible labels and focus; normal text contrast at least 4.5:1.",
+      "keyboard": "Complete the primary action using Tab, Shift+Tab, Enter and Space; no pointer-only information or focus trap.",
+      "reducedMotion": "Remove nonessential movement; preserve all state and information without waiting for animation.",
+      "loading": "Show pending feedback only during real work; retain context and allow navigation away.",
+      "empty": "Distinguish no content from no matching results; explain how to proceed or reset filters.",
+      "error": "Explain the failed action, retain user input and offer recovery; never claim success on failure.",
+      "interruption": "A newer action wins; cancel or ignore stale results and keep controls responsive.",
+      "stateChange": "Announce important results politely without moving focus unexpectedly."
+    },
+    "compatibility": {
+      "candidates": [
+        "designing-depth",
+        "animation-restraint",
+        "transition-recipes-as-skills"
+      ],
+      "rule": "Start with one technique. Add at most one companion for a distinct unsolved problem; candidates are suggestions, not verified compatibility.",
+      "conflicts": [
+        "Two techniques changing the same visual role require an explicit winner.",
+        "Do not combine multiple entrance or attention effects on one target.",
+        "Aesthetic subtraction must not remove semantics, feedback or attribution."
+      ],
+      "stop": "Stop when the named task is clearer and acceptance evidence is recorded; do not add polish without a problem."
+    },
+    "comparison": null
+  }
 }

@@ -68,5 +68,62 @@
     "Metaphor chosen for structural fit.",
     "Three teaching frames described.",
     "UI maps to frames; gloss badges removed."
-  ]
+  ],
+  "agentContract": {
+    "version": "1.0.0",
+    "provenance": {
+      "kind": "editorial-synthesis",
+      "statement": "Design Catalog editorial synthesis of the cited public sources; contracts and decision paths are our implementation guidance, not quotations or author endorsements.",
+      "sources": [
+        "https://maggieappleton.com/drawinginvisibles1",
+        "https://maggieappleton.com/garden-history",
+        "https://maggieappleton.com/"
+      ]
+    },
+    "decisionPath": null,
+    "useWhen": [
+      "The current discover task needs this specific principle: Maggie Appleton’s How to Draw Invisible Programming Concepts: abstract ideas become drawable when you pick a concrete source metaphor for a target concept (source → target), encoding relationships—not mascots. Agents default to buzzword gloss; a metaphor brief with teaching frames forces specificity before UI chrome."
+    ],
+    "avoidWhen": [
+      "Jumping to UI polish with only adjective briefs."
+    ],
+    "inputs": [
+      "A concrete user problem and the current artifact",
+      "Constraints, existing behavior and source attribution to preserve"
+    ],
+    "output": "A bounded application of “Illustrate invisible concepts before you prompt polish” with before/after evidence and remaining limitations.",
+    "recipe": "1. Name the target concept in plain language (one sentence, no product nouns).\n2. Brainstorm source metaphors; keep ones whose relationships map (containers, flows, hierarchies)—reject cute mascots that could advertise any product.\n3. Label source vs target explicitly (Appleton’s fountain/target pattern) for each mapping.\n4. Describe 1–3 teaching frames (setup → change → result) before prompting UI.\n5. Only then bind components to those frames; kill gloss badges.",
+    "acceptance": [
+      "Show the before/after artifact and explain how “Illustrate invisible concepts before you prompt polish” improves the named user task.",
+      "Plain-language concept sentence exists.",
+      "Metaphor chosen for structural fit.",
+      "Three teaching frames described."
+    ],
+    "stateRequirements": {
+      "responsive": "Check 390px and desktop plus 200% zoom; preserve reading order, wrap long text and keep actions reachable.",
+      "accessibility": "Use semantic headings and native controls, visible labels and focus; normal text contrast at least 4.5:1.",
+      "keyboard": "Complete the primary action using Tab, Shift+Tab, Enter and Space; no pointer-only information or focus trap.",
+      "reducedMotion": "Remove nonessential movement; preserve all state and information without waiting for animation.",
+      "loading": "Show pending feedback only during real work; retain context and allow navigation away.",
+      "empty": "Distinguish no content from no matching results; explain how to proceed or reset filters.",
+      "error": "Explain the failed action, retain user input and offer recovery; never claim success on failure.",
+      "interruption": "A newer action wins; cancel or ignore stale results and keep controls responsive.",
+      "stateChange": "Announce important results politely without moving focus unexpectedly."
+    },
+    "compatibility": {
+      "candidates": [
+        "sketch-what-you-cant-describe",
+        "wireframe-first",
+        "seed-strings"
+      ],
+      "rule": "Start with one technique. Add at most one companion for a distinct unsolved problem; candidates are suggestions, not verified compatibility.",
+      "conflicts": [
+        "Two techniques changing the same visual role require an explicit winner.",
+        "Do not combine multiple entrance or attention effects on one target.",
+        "Aesthetic subtraction must not remove semantics, feedback or attribution."
+      ],
+      "stop": "Stop when the named task is clearer and acceptance evidence is recorded; do not add polish without a problem."
+    },
+    "comparison": null
+  }
 }

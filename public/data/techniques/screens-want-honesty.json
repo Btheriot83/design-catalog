@@ -68,5 +68,62 @@
     "No fake-material chrome.",
     "Empty/loading/error copy is honest.",
     "Nesting justified or removed."
-  ]
+  ],
+  "agentContract": {
+    "version": "1.0.0",
+    "provenance": {
+      "kind": "editorial-synthesis",
+      "statement": "Design Catalog editorial synthesis of the cited public sources; contracts and decision paths are our implementation guidance, not quotations or author endorsements.",
+      "sources": [
+        "https://frankchimero.com/blog/2013/what-screens-want/",
+        "https://frankchimero.com/blog/2015/the-webs-grain/",
+        "https://frankchimero.com/"
+      ]
+    },
+    "decisionPath": null,
+    "useWhen": [
+      "The current define task needs this specific principle: Frank Chimero’s What Screens Want: screens are a material whose grain is flux—the capacity for change. Native screen craft manages movement, transformation, and changing data rather than dressing interfaces in skeuomorphic costumes. Designing for screens is choreography of change as much as composition of layouts."
+    ],
+    "avoidWhen": [
+      "Skeuomorphic costumes without state clarity."
+    ],
+    "inputs": [
+      "A concrete user problem and the current artifact",
+      "Constraints, existing behavior and source attribution to preserve"
+    ],
+    "output": "A bounded application of “Design for what screens want” with before/after evidence and remaining limitations.",
+    "recipe": "1. Name the flux: what must change on this screen (data, state, navigation, time)?\n2. Center the design on expressing that change clearly—animation only when it communicates relationships.\n3. Treat the screen as a soft material: prefer flexible type and layout over fake physical objects.\n4. Cut skeuomorphic/AI chrome that fights flux (static costumes, glass toys, fake paper).\n5. Cross-check with The Web’s Grain: choices should swing with what HTML/CSS make easy and resilient.",
+    "acceptance": [
+      "Show the before/after artifact and explain how “Design for what screens want” improves the named user task.",
+      "State/change map is the center.",
+      "No fake-material chrome.",
+      "Empty/loading/error copy is honest."
+    ],
+    "stateRequirements": {
+      "responsive": "Check 390px and desktop plus 200% zoom; preserve reading order, wrap long text and keep actions reachable.",
+      "accessibility": "Use semantic headings and native controls, visible labels and focus; normal text contrast at least 4.5:1.",
+      "keyboard": "Complete the primary action using Tab, Shift+Tab, Enter and Space; no pointer-only information or focus trap.",
+      "reducedMotion": "Remove nonessential movement; preserve all state and information without waiting for animation.",
+      "loading": "Show pending feedback only during real work; retain context and allow navigation away.",
+      "empty": "Distinguish no content from no matching results; explain how to proceed or reset filters.",
+      "error": "Explain the failed action, retain user input and offer recovery; never claim success on failure.",
+      "interruption": "A newer action wins; cancel or ignore stale results and keep controls responsive.",
+      "stateChange": "Announce important results politely without moving focus unexpectedly."
+    },
+    "compatibility": {
+      "candidates": [
+        "remove-ai-tells",
+        "cut-elements",
+        "garden-status-labels"
+      ],
+      "rule": "Start with one technique. Add at most one companion for a distinct unsolved problem; candidates are suggestions, not verified compatibility.",
+      "conflicts": [
+        "Two techniques changing the same visual role require an explicit winner.",
+        "Do not combine multiple entrance or attention effects on one target.",
+        "Aesthetic subtraction must not remove semantics, feedback or attribution."
+      ],
+      "stop": "Stop when the named task is clearer and acceptance evidence is recorded; do not add polish without a problem."
+    },
+    "comparison": null
+  }
 }

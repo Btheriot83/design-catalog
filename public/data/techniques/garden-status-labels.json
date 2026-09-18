@@ -67,5 +67,61 @@
     "Public craft pages show status + dates.",
     "Coverage/paywall honesty matches sources notes.",
     "Agents forbidden from silent evergreen upgrades."
-  ]
+  ],
+  "agentContract": {
+    "version": "1.0.0",
+    "provenance": {
+      "kind": "editorial-synthesis",
+      "statement": "Design Catalog editorial synthesis of the cited public sources; contracts and decision paths are our implementation guidance, not quotations or author endorsements.",
+      "sources": [
+        "https://maggieappleton.com/garden-history",
+        "https://maggieappleton.com/"
+      ]
+    },
+    "decisionPath": null,
+    "useWhen": [
+      "The current deliver task needs this specific principle: Maggie Appleton’s digital-garden ethos: publish imperfect work, but make incompleteness legible. Seedling / budding / evergreen (or draft / certainty / effort tags à la Gwern and Devon Zuegel) tell readers how done a note is. For AI craft desks, status labels stop agents and humans from treating a half-formed prompt pack like canon."
+    ],
+    "avoidWhen": [
+      "Shipping unfinished prompt packs with authoritative tone and no status."
+    ],
+    "inputs": [
+      "A concrete user problem and the current artifact",
+      "Constraints, existing behavior and source attribution to preserve"
+    ],
+    "output": "A bounded application of “Label epistemic status in public” with before/after evidence and remaining limitations.",
+    "recipe": "1. Pick a small status vocabulary (e.g. seedling / budding / evergreen) and define each in one line.\n2. Put status + planted/last-tended dates on every public craft note, technique draft, or prompt pack.\n3. Optionally add certainty or effort tags when claims could be over-read as settled truth.\n4. Update status when you tend the note—growth is visible, not hidden behind a silent edit.\n5. Teach agents: never upgrade a seedling to evergreen without human or critic review.",
+    "acceptance": [
+      "Show the before/after artifact and explain how “Label epistemic status in public” improves the named user task.",
+      "Status vocabulary defined on the desk.",
+      "Public craft pages show status + dates.",
+      "Coverage/paywall honesty matches sources notes."
+    ],
+    "stateRequirements": {
+      "responsive": "Check 390px and desktop plus 200% zoom; preserve reading order, wrap long text and keep actions reachable.",
+      "accessibility": "Use semantic headings and native controls, visible labels and focus; normal text contrast at least 4.5:1.",
+      "keyboard": "Complete the primary action using Tab, Shift+Tab, Enter and Space; no pointer-only information or focus trap.",
+      "reducedMotion": "Remove nonessential movement; preserve all state and information without waiting for animation.",
+      "loading": "Show pending feedback only during real work; retain context and allow navigation away.",
+      "empty": "Distinguish no content from no matching results; explain how to proceed or reset filters.",
+      "error": "Explain the failed action, retain user input and offer recovery; never claim success on failure.",
+      "interruption": "A newer action wins; cancel or ignore stale results and keep controls responsive.",
+      "stateChange": "Announce important results politely without moving focus unexpectedly."
+    },
+    "compatibility": {
+      "candidates": [
+        "hand-rewrite-copy",
+        "last-mile-manual",
+        "critic-subagents"
+      ],
+      "rule": "Start with one technique. Add at most one companion for a distinct unsolved problem; candidates are suggestions, not verified compatibility.",
+      "conflicts": [
+        "Two techniques changing the same visual role require an explicit winner.",
+        "Do not combine multiple entrance or attention effects on one target.",
+        "Aesthetic subtraction must not remove semantics, feedback or attribution."
+      ],
+      "stop": "Stop when the named task is clearer and acceptance evidence is recorded; do not add polish without a problem."
+    },
+    "comparison": null
+  }
 }

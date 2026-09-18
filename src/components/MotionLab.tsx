@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { CardTilt } from "@/components/motion/CardTilt";
 import { FolioNumber } from "@/components/motion/FolioNumber";
 import { SkeletonReveal } from "@/components/motion/SkeletonReveal";
@@ -119,10 +120,10 @@ export function MotionLab() {
       </section>
 
       <p className="font-sans text-xs text-faint">
-        Stage filter (tabs-sliding) on{" "}
-        <a href="/techniques" className="underline decoration-hairline">
+        Search and stage filters on{" "}
+        <Link href="/techniques" className="underline decoration-hairline">
           /techniques
-        </a>
+        </Link>
         . Copy confirmation on every prompt block. Free recipes only.
       </p>
     </div>

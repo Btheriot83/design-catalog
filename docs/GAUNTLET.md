@@ -1,5 +1,21 @@
 # Gauntlet Loop — Design Catalog craft desk
 
+Local QA helper closed: owner Codex task `01a0a3ae-4de5-7502-aac5-661d011be3fb`; `next-server` PID `27628`; ran Fri Sep 18 13:16:59 2026 through browser QA; stopped cleanly and port 3000 was confirmed closed.
+
+## Current handoff · 2026-09-18
+
+Current truth: the three-round implementation is complete on branch `codex/agent-tool-self-redesign` from base `9700e8567d0acbf8d6bb6dcea1fbee6366e61050`. The final round repaired the transparent phone Explore menu and removed the slow blurred Agents-page entrance found during browser QA. No implementation-agent verification was accepted as evidence; all gates below were run by the coordinator.
+
+Owner: Brandon. Coordinator: Codex task `01a0a3ae-4de5-7502-aac5-661d011be3fb`. Implementer: the single reused GPT-6 Astra low-reasoning agent. Checkout `/Users/brandontheriot/projects/design-catalog`; branch and base SHA verified above.
+
+Authorized scope delivered: compact agent contracts and one coherent Quiet Folio product redesign. Shared contract synthesis, six curated decision paths, stable release metadata/hash, deterministic validator, problem-first home/finder, two-entry comparison, illustrative hierarchy specimen, contract details, native navigation/controls, and explicit route/clipboard feedback are implemented.
+
+Coordinator checks passed after the final implementation round: `npm run validate:data`, `npm run lint`, `npx tsc --noEmit`, `npm run build` (192 static pages), and `git diff --check`. The validator generated twice in isolated temporary directories and byte-compared the exports while checking schemas, slugs, references, contracts, and agent briefings for all 85 techniques.
+
+Observed browser QA passed at desktop and 390×844: home problem paths, search, combined filters, empty state, two-technique comparison, detailed agent contract, successful clipboard feedback, native Explore menu, and no horizontal overflow. Keyboard entry focused the skip link and moved from the expanded Explore summary into its first link. Reduced-motion emulation matched and left no spatial or blocking animation (only the 150 ms opacity hover on the decorative logo). The repaired phone menu is opaque, bounded, scrollable, and overflow-free; Agents primary content is legible immediately.
+
+Next: coordinator commits, pushes, opens and merges the PR after required checks, then verifies the exact production revision and repeats production smoke QA. No editorial media publication or paid provider authority inferred.
+
 **Goal:** Dense anti-slop craft desk — more techniques, more example prompts (+ why), stronger field guides. Public sources only; no endorsement; no invented paywalled quotes.
 
 **Bar (critic inspects real files/pages):**

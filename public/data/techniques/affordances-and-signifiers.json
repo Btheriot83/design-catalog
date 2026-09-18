@@ -58,5 +58,60 @@
     "False affordances removed or fixed.",
     "Feedback exists for primary actions."
   ],
-  "number": 68
+  "number": 68,
+  "agentContract": {
+    "version": "1.0.0",
+    "provenance": {
+      "kind": "editorial-synthesis",
+      "statement": "Design Catalog editorial synthesis of the cited public sources; contracts and decision paths are our implementation guidance, not quotations or author endorsements.",
+      "sources": [
+        "https://jnd.org/",
+        "https://jnd.org/the-design-of-everyday-things-revised-and-expanded-edition/"
+      ]
+    },
+    "decisionPath": null,
+    "useWhen": [
+      "The current define task needs this specific principle: Don Norman (DOET revised, public TOC/notes on jnd.org): affordances are possible actions; signifiers communicate where the action is. AI UIs often decorate without clarifying action—fix for discoverability: can a new user tell what to do?"
+    ],
+    "avoidWhen": [
+      "Decoration that mimics controls."
+    ],
+    "inputs": [
+      "A concrete user problem and the current artifact",
+      "Constraints, existing behavior and source attribution to preserve"
+    ],
+    "output": "A bounded application of “Separate affordances from signifiers” with before/after evidence and remaining limitations.",
+    "recipe": "1. List intended actions on the view.\n2. For each, name the affordance (what’s possible) and the signifier (how it’s shown).\n3. Remove decoration that looks actionable but isn’t; strengthen weak signifiers.\n4. Check mapping: control layout should match cause→effect.\n5. Provide feedback so the gulfs of execution/evaluation shrink.",
+    "acceptance": [
+      "Show the before/after artifact and explain how “Separate affordances from signifiers” improves the named user task.",
+      "Action table filled.",
+      "False affordances removed or fixed.",
+      "Feedback exists for primary actions."
+    ],
+    "stateRequirements": {
+      "responsive": "Check 390px and desktop plus 200% zoom; preserve reading order, wrap long text and keep actions reachable.",
+      "accessibility": "Use semantic headings and native controls, visible labels and focus; normal text contrast at least 4.5:1.",
+      "keyboard": "Complete the primary action using Tab, Shift+Tab, Enter and Space; no pointer-only information or focus trap.",
+      "reducedMotion": "Remove nonessential movement; preserve all state and information without waiting for animation.",
+      "loading": "Show pending feedback only during real work; retain context and allow navigation away.",
+      "empty": "Distinguish no content from no matching results; explain how to proceed or reset filters.",
+      "error": "Explain the failed action, retain user input and offer recovery; never claim success on failure.",
+      "interruption": "A newer action wins; cancel or ignore stale results and keep controls responsive.",
+      "stateChange": "Announce important results politely without moving focus unexpectedly."
+    },
+    "compatibility": {
+      "candidates": [
+        "critic-subagents",
+        "remove-ai-tells"
+      ],
+      "rule": "Start with one technique. Add at most one companion for a distinct unsolved problem; candidates are suggestions, not verified compatibility.",
+      "conflicts": [
+        "Two techniques changing the same visual role require an explicit winner.",
+        "Do not combine multiple entrance or attention effects on one target.",
+        "Aesthetic subtraction must not remove semantics, feedback or attribution."
+      ],
+      "stop": "Stop when the named task is clearer and acceptance evidence is recorded; do not add polish without a problem."
+    },
+    "comparison": null
+  }
 }

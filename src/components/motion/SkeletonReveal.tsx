@@ -1,6 +1,15 @@
 "use client";
 
-import { useEffect, useState, type ReactNode } from "react";
+import { useEffect, useState, useSyncExternalStore, type ReactNode } from "react";
+
+const motionQuery = "(prefers-reduced-motion: reduce)";
+function subscribeToMotion(onChange: () => void) {
+  const media = window.matchMedia(motionQuery);
+  media.addEventListener("change", onChange);
+  return () => media.removeEventListener("change", onChange);
+}
+const getReducedMotion = () => window.matchMedia(motionQuery).matches;
+const getServerReducedMotion = () => false;
 
 /** Pulse placeholder then cross-fade to children (transitions.dev free recipe). */
 export function SkeletonReveal({
@@ -13,18 +22,15 @@ export function SkeletonReveal({
   bars?: number;
 }) {
   const [revealed, setRevealed] = useState(false);
+  const reducedMotion = useSyncExternalStore(subscribeToMotion, getReducedMotion, getServerReducedMotion);
 
   useEffect(() => {
-    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    if (reduce) {
-      setRevealed(true);
-      return;
-    }
+    if (reducedMotion) return;
     const t = window.setTimeout(() => setRevealed(true), delayMs);
     return () => window.clearTimeout(t);
-  }, [delayMs]);
+  }, [delayMs, reducedMotion]);
 
-  if (revealed) {
+  if (revealed || reducedMotion) {
     return <>{children}</>;
   }
 

@@ -68,5 +68,62 @@
     "Primary demos are interactive or honestly simulated.",
     "Decoration that never responds removed.",
     "Reduced-motion path still shows state change."
-  ]
+  ],
+  "agentContract": {
+    "version": "1.0.0",
+    "provenance": {
+      "kind": "editorial-synthesis",
+      "statement": "Design Catalog editorial synthesis of the cited public sources; contracts and decision paths are our implementation guidance, not quotations or author endorsements.",
+      "sources": [
+        "https://www.youtube.com/watch?v=ZfytHvgHybA",
+        "https://worrydream.com/",
+        "https://claude.com/blog/how-the-product-designer-who-built-claude-design-uses-it-to-explore-ideas-before-building-them"
+      ]
+    },
+    "decisionPath": null,
+    "useWhen": [
+      "The current discover task needs this specific principle: Bret Victor’s Stop Drawing Dead Fish (public talk), cited by Nate Parrott as the north star for make-it-alive: everything we draw should be alive by default—responsive to input, showing dynamics, not static corpses of ideas. For AI design, refuse frozen mock energy: controls should behave, numbers should react, demos should move meaning."
+    ],
+    "avoidWhen": [
+      "Static comps of interactive systems."
+    ],
+    "inputs": [
+      "A concrete user problem and the current artifact",
+      "Constraints, existing behavior and source attribution to preserve"
+    ],
+    "output": "A bounded application of “Draw things alive by default” with before/after evidence and remaining limitations.",
+    "recipe": "1. List every meaningful object on the screen and ask: what dynamic would prove it is alive?\n2. Prefer interactive sketches over static comps when exploring (sliders that drive the picture, not captions that claim they do).\n3. Surface intermediate state (hover, drag, partial progress) so the system feels continuous.\n4. Kill dead decoration: illustrations that never respond are fish on ice.\n5. Pair with inventing-on-principle: aliveness should serve a principle you can name.",
+    "acceptance": [
+      "Show the before/after artifact and explain how “Draw things alive by default” improves the named user task.",
+      "Object→dynamic map exists.",
+      "Primary demos are interactive or honestly simulated.",
+      "Decoration that never responds removed."
+    ],
+    "stateRequirements": {
+      "responsive": "Check 390px and desktop plus 200% zoom; preserve reading order, wrap long text and keep actions reachable.",
+      "accessibility": "Use semantic headings and native controls, visible labels and focus; normal text contrast at least 4.5:1.",
+      "keyboard": "Complete the primary action using Tab, Shift+Tab, Enter and Space; no pointer-only information or focus trap.",
+      "reducedMotion": "Remove nonessential movement; preserve all state and information without waiting for animation.",
+      "loading": "Show pending feedback only during real work; retain context and allow navigation away.",
+      "empty": "Distinguish no content from no matching results; explain how to proceed or reset filters.",
+      "error": "Explain the failed action, retain user input and offer recovery; never claim success on failure.",
+      "interruption": "A newer action wins; cancel or ignore stale results and keep controls responsive.",
+      "stateChange": "Announce important results politely without moving focus unexpectedly."
+    },
+    "compatibility": {
+      "candidates": [
+        "make-it-alive",
+        "purposeful-motion",
+        "critic-subagents"
+      ],
+      "rule": "Start with one technique. Add at most one companion for a distinct unsolved problem; candidates are suggestions, not verified compatibility.",
+      "conflicts": [
+        "Two techniques changing the same visual role require an explicit winner.",
+        "Do not combine multiple entrance or attention effects on one target.",
+        "Aesthetic subtraction must not remove semantics, feedback or attribution."
+      ],
+      "stop": "Stop when the named task is clearer and acceptance evidence is recorded; do not add polish without a problem."
+    },
+    "comparison": null
+  }
 }

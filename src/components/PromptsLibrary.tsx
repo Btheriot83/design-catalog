@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 import { FolioNumber } from "@/components/motion/FolioNumber";
 import { SkeletonReveal } from "@/components/motion/SkeletonReveal";
 import { PromptBlock } from "./PromptBlock";
@@ -28,7 +28,7 @@ export function PromptsLibrary({
   const [q, setQ] = useState("");
   const [stage, setStage] = useState<string>("All");
   const [designer, setDesigner] = useState<string>("All");
-  const [revealKey, setRevealKey] = useState(0);
+  const revealKey = JSON.stringify([q, stage, designer]);
 
   const filtered = useMemo(() => {
     const needle = q.trim().toLowerCase();
@@ -44,10 +44,6 @@ export function PromptsLibrary({
       );
     });
   }, [prompts, q, stage, designer]);
-
-  useEffect(() => {
-    setRevealKey((k) => k + 1);
-  }, [q, stage, designer]);
 
   return (
     <div>

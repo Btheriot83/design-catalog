@@ -66,5 +66,60 @@
     "wireframe-first",
     "thinking-before-prompt",
     "critic-subagents"
-  ]
+  ],
+  "agentContract": {
+    "version": "1.0.0",
+    "provenance": {
+      "kind": "editorial-synthesis",
+      "statement": "Design Catalog editorial synthesis of the cited public sources; contracts and decision paths are our implementation guidance, not quotations or author endorsements.",
+      "sources": [
+        "https://claude.com/blog/how-the-product-designer-who-built-claude-design-uses-it-to-explore-ideas-before-building-them"
+      ]
+    },
+    "decisionPath": null,
+    "useWhen": [
+      "The current discover task needs this specific principle: Ask for many options; most won’t be good, and that’s fine—one or two will be. Then remix: pick favorites and ask for riffs that combine them. Claude creates options and starting points so you don’t stare at a blank canvas; you choose what’s good alone or as a combination of versions."
+    ],
+    "avoidWhen": [
+      "Polishing one weak default instead of sampling."
+    ],
+    "inputs": [
+      "A concrete user problem and the current artifact",
+      "Constraints, existing behavior and source attribution to preserve"
+    ],
+    "output": "A bounded application of “Ask for ten options, then remix” with before/after evidence and remaining limitations.",
+    "recipe": "1. Ask for a large batch (e.g. ten) with deliberate variation.\n2. Expect most to miss; keep one or two.\n3. Name what works across favorites (layout from B, type from D).\n4. Ask for several riffs that combine those pieces; repeat if needed.\n5. Use volume specifically when collecting colleague feedback on flows.",
+    "acceptance": [
+      "Show the before/after artifact and explain how “Ask for ten options, then remix” improves the named user task.",
+      "Batch size is large enough to explore.",
+      "Remix cites specific options.",
+      "Feedback round uses multiple flow versions when needed."
+    ],
+    "stateRequirements": {
+      "responsive": "Check 390px and desktop plus 200% zoom; preserve reading order, wrap long text and keep actions reachable.",
+      "accessibility": "Use semantic headings and native controls, visible labels and focus; normal text contrast at least 4.5:1.",
+      "keyboard": "Complete the primary action using Tab, Shift+Tab, Enter and Space; no pointer-only information or focus trap.",
+      "reducedMotion": "Remove nonessential movement; preserve all state and information without waiting for animation.",
+      "loading": "Show pending feedback only during real work; retain context and allow navigation away.",
+      "empty": "Distinguish no content from no matching results; explain how to proceed or reset filters.",
+      "error": "Explain the failed action, retain user input and offer recovery; never claim success on failure.",
+      "interruption": "A newer action wins; cancel or ignore stale results and keep controls responsive.",
+      "stateChange": "Announce important results politely without moving focus unexpectedly."
+    },
+    "compatibility": {
+      "candidates": [
+        "wireframe-first",
+        "thinking-before-prompt",
+        "critic-subagents"
+      ],
+      "rule": "Start with one technique. Add at most one companion for a distinct unsolved problem; candidates are suggestions, not verified compatibility.",
+      "conflicts": [
+        "Two techniques changing the same visual role require an explicit winner.",
+        "Do not combine multiple entrance or attention effects on one target.",
+        "Aesthetic subtraction must not remove semantics, feedback or attribution."
+      ],
+      "stop": "Stop when the named task is clearer and acceptance evidence is recorded; do not add polish without a problem."
+    },
+    "comparison": null
+  }
 }

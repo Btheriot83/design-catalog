@@ -66,5 +66,61 @@
     "Overlays de-emphasize backdrop (dim/blur) when backdrop is not actionable.",
     "At least one depth cue reuses a primary subject, not a random ornament.",
     "Screenshot critic no longer tags the layout as flat stickers."
-  ]
+  ],
+  "agentContract": {
+    "version": "1.0.0",
+    "provenance": {
+      "kind": "editorial-synthesis",
+      "statement": "Design Catalog editorial synthesis of the cited public sources; contracts and decision paths are our implementation guidance, not quotations or author endorsements.",
+      "sources": [
+        "https://rauno.me/craft/depth",
+        "https://rauno.me/craft"
+      ]
+    },
+    "decisionPath": null,
+    "useWhen": [
+      "The current define task needs this specific principle: Interfaces are flat canvases pretending to be rooms. Rauno Freiberg’s Designing Depth argues you convey story and dimensionality the way film does: dirty the frame with layered foreground/background, blur backdrops to drop Z-axis, choreograph motion so layers read as stacked surfaces—not decorative chrome."
+    ],
+    "avoidWhen": [
+      "Adding glassmorphism / glow orbs and calling it depth."
+    ],
+    "inputs": [
+      "A concrete user problem and the current artifact",
+      "Constraints, existing behavior and source attribution to preserve"
+    ],
+    "output": "A bounded application of “Design depth into flat frames” with before/after evidence and remaining limitations.",
+    "recipe": "1. Name the focal subject and the ambient layers that should sit in front of / behind it (props, out-of-focus objects, offset frames).\n2. Lower non-focal surfaces on the Z-axis with blur, dim, or fade-to-infinite edges—especially when an overlay claims focus.\n3. When revealing overlays, decide which backdrop layers stay interactive vs must de-emphasize (blur/dim signals not actionable).\n4. Prefer reusing primary subjects as depth cues (e.g. offset browser frames that also communicate product abundance) over gimmick decorations.\n5. Verify with a screenshot critic: does the composition feel layered, or still like stickers on a flat board?",
+    "acceptance": [
+      "Show the before/after artifact and explain how “Design depth into flat frames” improves the named user task.",
+      "Focal vs ambient layers named in the brief or PR.",
+      "Overlays de-emphasize backdrop (dim/blur) when backdrop is not actionable.",
+      "At least one depth cue reuses a primary subject, not a random ornament."
+    ],
+    "stateRequirements": {
+      "responsive": "Check 390px and desktop plus 200% zoom; preserve reading order, wrap long text and keep actions reachable.",
+      "accessibility": "Use semantic headings and native controls, visible labels and focus; normal text contrast at least 4.5:1.",
+      "keyboard": "Complete the primary action using Tab, Shift+Tab, Enter and Space; no pointer-only information or focus trap.",
+      "reducedMotion": "Remove nonessential movement; preserve all state and information without waiting for animation.",
+      "loading": "Show pending feedback only during real work; retain context and allow navigation away.",
+      "empty": "Distinguish no content from no matching results; explain how to proceed or reset filters.",
+      "error": "Explain the failed action, retain user input and offer recovery; never claim success on failure.",
+      "interruption": "A newer action wins; cancel or ignore stale results and keep controls responsive.",
+      "stateChange": "Announce important results politely without moving focus unexpectedly."
+    },
+    "compatibility": {
+      "candidates": [
+        "stagger-choreograph-motion",
+        "critic-subagents",
+        "cut-elements"
+      ],
+      "rule": "Start with one technique. Add at most one companion for a distinct unsolved problem; candidates are suggestions, not verified compatibility.",
+      "conflicts": [
+        "Two techniques changing the same visual role require an explicit winner.",
+        "Do not combine multiple entrance or attention effects on one target.",
+        "Aesthetic subtraction must not remove semantics, feedback or attribution."
+      ],
+      "stop": "Stop when the named task is clearer and acceptance evidence is recorded; do not add polish without a problem."
+    },
+    "comparison": null
+  }
 }

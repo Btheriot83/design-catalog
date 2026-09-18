@@ -1,5 +1,8 @@
 import { readFileSync, readdirSync } from "fs";
 import { join } from "path";
+import paths from "../../content/decision-paths.json";
+import release from "../../content/catalog-release.json";
+import { contractFor } from "./contracts.mjs";
 import type { CraftResource, Designer, ShipatonCatalog, ShipatonWinner, Source, Technique } from "./types";
 
 const root = join(process.cwd(), "content");
@@ -21,6 +24,7 @@ export function getAllTechniques(): Technique[] {
   return readdirSync(dir)
     .filter((f) => f.endsWith(".json"))
     .map((f) => readJson<Technique>(join(dir, f)))
+    .map((t) => ({ ...t, agentContract: contractFor(t, paths, release) }))
     .sort((a, b) => a.number - b.number);
 }
 

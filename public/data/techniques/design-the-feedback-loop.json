@@ -57,5 +57,60 @@
     "Critique template used.",
     "Decisions logged."
   ],
-  "number": 82
+  "number": 82,
+  "agentContract": {
+    "version": "1.0.0",
+    "provenance": {
+      "kind": "editorial-synthesis",
+      "statement": "Design Catalog editorial synthesis of the cited public sources; contracts and decision paths are our implementation guidance, not quotations or author endorsements.",
+      "sources": [
+        "https://juliezhuo.com/",
+        "https://x.com/joulee"
+      ]
+    },
+    "decisionPath": null,
+    "useWhen": [
+      "The current discover task needs this specific principle: Julie Zhuo’s public writing (The Looking Glass / Making of a Manager themes): product quality depends on how teams give feedback, set expectations, and grow judgment. For AI design ops, specify critique cadence and decision owners—not only screens."
+    ],
+    "avoidWhen": [
+      "Feedback without decisions."
+    ],
+    "inputs": [
+      "A concrete user problem and the current artifact",
+      "Constraints, existing behavior and source attribution to preserve"
+    ],
+    "output": "A bounded application of “Design the feedback loop, not just the UI” with before/after evidence and remaining limitations.",
+    "recipe": "1. Name who decides vs who advises.\n2. Set a critique format (goals, constraints, questions) before showing work.\n3. Timebox feedback; end with explicit decisions.\n4. Separate taste notes from blocking issues.\n5. Log decisions so AI iterations don’t reopen settled calls.",
+    "acceptance": [
+      "Show the before/after artifact and explain how “Design the feedback loop, not just the UI” improves the named user task.",
+      "Decision owner named.",
+      "Critique template used.",
+      "Decisions logged."
+    ],
+    "stateRequirements": {
+      "responsive": "Check 390px and desktop plus 200% zoom; preserve reading order, wrap long text and keep actions reachable.",
+      "accessibility": "Use semantic headings and native controls, visible labels and focus; normal text contrast at least 4.5:1.",
+      "keyboard": "Complete the primary action using Tab, Shift+Tab, Enter and Space; no pointer-only information or focus trap.",
+      "reducedMotion": "Remove nonessential movement; preserve all state and information without waiting for animation.",
+      "loading": "Show pending feedback only during real work; retain context and allow navigation away.",
+      "empty": "Distinguish no content from no matching results; explain how to proceed or reset filters.",
+      "error": "Explain the failed action, retain user input and offer recovery; never claim success on failure.",
+      "interruption": "A newer action wins; cancel or ignore stale results and keep controls responsive.",
+      "stateChange": "Announce important results politely without moving focus unexpectedly."
+    },
+    "compatibility": {
+      "candidates": [
+        "thinking-before-prompt",
+        "keep-working-alongside"
+      ],
+      "rule": "Start with one technique. Add at most one companion for a distinct unsolved problem; candidates are suggestions, not verified compatibility.",
+      "conflicts": [
+        "Two techniques changing the same visual role require an explicit winner.",
+        "Do not combine multiple entrance or attention effects on one target.",
+        "Aesthetic subtraction must not remove semantics, feedback or attribution."
+      ],
+      "stop": "Stop when the named task is clearer and acceptance evidence is recorded; do not add polish without a problem."
+    },
+    "comparison": null
+  }
 }

@@ -8,6 +8,7 @@ export interface WorkedExample {
 }
 
 export interface Technique {
+  agentContract?: TechniqueContract;
   slug: string;
   number: number;
   stage: Stage;
@@ -25,6 +26,21 @@ export interface Technique {
   workedExamples?: WorkedExample[];
   antiPatterns?: string[];
   checklist?: string[];
+}
+
+export interface DecisionPath {
+  id: string; title: string; question: string; start: string; support: string;
+  stop: string; avoid: string; acceptance: string; bad: string; good: string; recipe: string;
+}
+
+export interface TechniqueContract {
+  version: string;
+  provenance: { kind: string; statement: string; sources: string[] };
+  decisionPath: string | null;
+  useWhen: string[]; avoidWhen: string[]; inputs: string[]; output: string;
+  recipe: string; acceptance: string[]; stateRequirements: Record<string, string>;
+  compatibility: { candidates: string[]; rule: string; conflicts: string[]; stop: string };
+  comparison: { bad: string; good: string; impact: string } | null;
 }
 
 export type DesignerStatus =

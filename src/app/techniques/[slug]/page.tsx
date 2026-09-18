@@ -1,10 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { NumberPopIn } from "@/components/NumberPopIn";
 import { PromptBlock } from "@/components/PromptBlock";
-import { TextsReveal } from "@/components/TextsReveal";
 import { StageBadge } from "@/components/StageBadge";
+import { AgentContract } from "@/components/AgentContract";
 import {
   getAllTechniques,
   getDesignerForTechnique,
@@ -51,6 +50,7 @@ export default async function TechniquePage({ params }: Props) {
   const hasSources = technique.sourceUrls.length > 0;
 
   const jumpLinks = [
+    { href: "#agent-contract", label: "Agent contract", show: true },
     { href: "#procedure", label: "Procedure", show: technique.procedure.length > 0 },
     { href: "#prompts", label: "Example prompts", show: hasPrompts },
     { href: "#worked-examples", label: "Worked examples", show: hasExamples },
@@ -68,19 +68,19 @@ export default async function TechniquePage({ params }: Props) {
           <StageBadge stage={technique.stage} />
         </div>
         <span className="folio-num text-7xl text-ink/25 sm:text-8xl" aria-hidden>
-          <NumberPopIn value={technique.number} pad={2} />
+          {num}
         </span>
       </div>
 
-      <TextsReveal>
+      <div>
         <h1
-          className="t-stagger-line t-stagger-line--1 max-w-2xl font-serif text-4xl leading-[1.1] tracking-tight text-ink sm:text-[2.75rem]"
+          className="max-w-2xl font-serif text-4xl leading-[1.1] tracking-tight text-ink sm:text-[2.75rem]"
           style={{ viewTransitionName: `tech-${technique.slug}` }}
         >
           {technique.title}
         </h1>
-        <p className="pull-principle t-stagger-line t-stagger-line--2">{technique.principle}</p>
-      </TextsReveal>
+        <p className="pull-principle">{technique.principle}</p>
+      </div>
 
       {jumpLinks.length > 0 ? (
         <nav
@@ -105,6 +105,7 @@ export default async function TechniquePage({ params }: Props) {
         </nav>
       ) : null}
 
+      {technique.agentContract && <AgentContract contract={technique.agentContract} slug={technique.slug} />}
       <section id="procedure" className="mt-14 scroll-mt-24">
         <h2 className="eyebrow mb-5 text-ink">Procedure</h2>
         <ol className="space-y-5 border-t border-ink pt-6">

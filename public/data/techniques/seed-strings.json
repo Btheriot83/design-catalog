@@ -61,5 +61,61 @@
     "ambitious-prompts",
     "remove-ai-tells",
     "critic-subagents"
-  ]
+  ],
+  "agentContract": {
+    "version": "1.0.0",
+    "provenance": {
+      "kind": "editorial-synthesis",
+      "statement": "Design Catalog editorial synthesis of the cited public sources; contracts and decision paths are our implementation guidance, not quotations or author endorsements.",
+      "sources": [
+        "https://www.lennysnewsletter.com/p/how-to-turn-your-ai-into-a-world",
+        "https://sakana.ai/ssot/"
+      ]
+    },
+    "decisionPath": null,
+    "useWhen": [
+      "The current discover task needs this specific principle: Models can’t truly act random—they predict the most likely token. Bring randomness from outside the model. Sakana AI’s String Seed of Thought: generate a long random alphanumeric string, then derive creative direction from subpatterns in that string so every run lands somewhere new."
+    ],
+    "avoidWhen": [
+      "Prompting “make it unique / random” with no external entropy—still collapses to familiar slop."
+    ],
+    "inputs": [
+      "A concrete user problem and the current artifact",
+      "Constraints, existing behavior and source attribution to preserve"
+    ],
+    "output": "A bounded application of “Use seed strings to inject variety” with before/after evidence and remaining limitations.",
+    "recipe": "1. Ask the agent to generate a long, random alphanumeric string via a shell script (outside the model’s token priors).\n2. Have it define creative direction—color, layout, typography—from that string, looking past the surface for subpatterns, special numbers, or other sparks.\n3. Instruct it to bring that direction to life with judgment, and never reveal the string in the UI—it’s inspiration only.",
+    "acceptance": [
+      "Show the before/after artifact and explain how “Use seed strings to inject variety” improves the named user task.",
+      "Agent generated entropy outside the model (shell / crypto), not “imagine a random string.”",
+      "Creative direction cites subpatterns in that string (color, type, layout).",
+      "Seed is not visible in the shipped UI."
+    ],
+    "stateRequirements": {
+      "responsive": "Check 390px and desktop plus 200% zoom; preserve reading order, wrap long text and keep actions reachable.",
+      "accessibility": "Use semantic headings and native controls, visible labels and focus; normal text contrast at least 4.5:1.",
+      "keyboard": "Complete the primary action using Tab, Shift+Tab, Enter and Space; no pointer-only information or focus trap.",
+      "reducedMotion": "Remove nonessential movement; preserve all state and information without waiting for animation.",
+      "loading": "Show pending feedback only during real work; retain context and allow navigation away.",
+      "empty": "Distinguish no content from no matching results; explain how to proceed or reset filters.",
+      "error": "Explain the failed action, retain user input and offer recovery; never claim success on failure.",
+      "interruption": "A newer action wins; cancel or ignore stale results and keep controls responsive.",
+      "stateChange": "Announce important results politely without moving focus unexpectedly."
+    },
+    "compatibility": {
+      "candidates": [
+        "ambitious-prompts",
+        "remove-ai-tells",
+        "critic-subagents"
+      ],
+      "rule": "Start with one technique. Add at most one companion for a distinct unsolved problem; candidates are suggestions, not verified compatibility.",
+      "conflicts": [
+        "Two techniques changing the same visual role require an explicit winner.",
+        "Do not combine multiple entrance or attention effects on one target.",
+        "Aesthetic subtraction must not remove semantics, feedback or attribution."
+      ],
+      "stop": "Stop when the named task is clearer and acceptance evidence is recorded; do not add polish without a problem."
+    },
+    "comparison": null
+  }
 }

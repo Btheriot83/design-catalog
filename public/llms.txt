@@ -29,9 +29,12 @@ Optional API aliases (same JSON; prefer /data/ for CDN cache):
 ## How to use (short)
 
 1. Fetch /data/index.json
-2. Pick technique(s) by stage or Anshu 1–8 mapping in the index
-3. Copy prompts from /data/prompts.json or technique JSON
-4. Run Discover → Define → Deliver; write docs/DISCOVER.md, DEFINE.md, DELIVER.md
+2. Match the concrete user problem to index.decisionPaths; start with one technique.
+3. Read its agentContract: useWhen, avoidWhen, recipe, acceptance, stateRequirements, compatibility and provenance. Add at most one companion for a distinct unmet need. Pair suggestions do not certify compatibility.
+4. Apply the bounded change; collect before/after evidence. Report failures and justified N/A states. Stop at compatibility.stop. Prompts and checklists are not proof.
+
+Contract version: index.contractVersion. Content identity: index.contentHash. lastUpdated is the editorial release date, not generation time. Contracts are Design Catalog editorial synthesis of public sources, not source quotations or author endorsements.
+Decision paths: https://design-catalog-three.vercel.app/data/decision-paths.json
 
 Canonical improvement path (Tileboard / chore-app): see index.canonicalApps.tileboard and docs/FOR_AGENTS.md.
 

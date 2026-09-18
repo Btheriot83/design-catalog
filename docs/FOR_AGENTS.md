@@ -11,7 +11,17 @@ Machine-readable surfaces live under `/data/` and `/llms.txt`. Prefer JSON over 
 GET https://design-catalog-three.vercel.app/data/index.json
 ```
 
-Returns: designers[], technique summaries, stages, `routes`, `anshuMapping`, `canonicalApps`, `lastUpdated`.
+Returns: designers[], technique summaries, stages, `routes`, `anshuMapping`, `canonicalApps`, `lastUpdated`, `decisionPaths`, `contractVersion` and `contentHash`. `lastUpdated` is the explicit editorial release date; generation does not change it. `contentHash` identifies the exported input content.
+
+## Compact protocol (default)
+
+1. Name a concrete user problem. Match `index.decisionPaths` (also `/data/decision-paths.json`) and start with one technique. The six curated paths cover hierarchy, vague briefs, feedback, motion, responsive layout and restraint; they do not claim to classify the entire catalog.
+2. Read the technique's `agentContract`: use/avoid, inputs, output, framework-neutral recipe, acceptance and provenance. Contracts are Catalog editorial synthesis of cited public material, not quotations or author-endorsed specifications. Entries outside the six paths derive their recipe/checks from the existing procedure/checklist.
+3. Add at most one companion for a distinct remaining problem. Candidate pairings are suggestions, not verified compatibility. Choose an explicit winner when two methods alter the same role; never stack attention effects.
+4. Collect before/after evidence against `acceptance` and each applicable `stateRequirements` entry: responsive, accessibility, keyboard, reducedMotion, loading, empty, error, interruption and stateChange. For non-interface work, record N/A with a reason. Never turn missing evidence into a pass.
+5. Report the result and remaining failures; stop at `compatibility.stop`. Existing prompts, source attribution, slugs and APIs remain available.
+
+The human finder at `/techniques` supports shareable `q`, `problem`, `stage` and `designer` query parameters. Search matches all entered words against title, slug, principle and use guidance. Filters intersect and apply on Find. Comparing at most two entries is local to the current result set; navigation resets the comparison. Reset removes all filters.
 
 Also: `/llms.txt` (short) · `/llms-full.txt` (full briefing).
 
@@ -46,7 +56,9 @@ Each row: `techniqueSlug`, `designer`, `stage`, `prompt`, `why`.
 
 Or take `examplePrompts` + `promptWhy` from a technique JSON.
 
-## (d) Run Discover → Define → Deliver
+## (d) Optional full-project Discover → Define → Deliver
+
+Use this historical workflow only when the project needs all three stages. A bounded repair does not require a full reseed, generated media or a critic loop.
 
 Write artifacts in the target repo (Build Games Phase A pattern):
 
@@ -98,6 +110,12 @@ Also in `index.json` → `canonicalApps.tileboard`.
 ## Quiet Folio / motion
 
 Keep paper/ink desk. Free motion recipes: [transitions.dev](https://transitions.dev/) (Jakub Antalik) — texts-reveal, number-pop-in, tabs-sliding, card-tilt, success-check; honor `prefers-reduced-motion`. No Pro shimmer without explicit approval. Broader free craft links: [/resources](https://design-catalog-three.vercel.app/resources).
+
+## Maintaining contracts
+
+Edit `content/decision-paths.json` and `content/catalog-release.json`; the shared `src/lib/contracts.mjs` produces the same contracts for server pages and static JSON. Advance the release date intentionally when content changes; change the semantic contract version when its meaning changes. Existing technique fields remain unchanged, with additive `agentContract`.
+
+`npm run generate:data` refreshes public exports. `npm run validate:data` generates twice in isolated temporary directories, compares bytes, checks contracts, source parity, slug references, prompt explanations and machine briefing links without network requests or tracked-file writes. This validates the data contract, not design quality or browser behavior. The technique schema allows legacy source documents without a contract; exports must contain one.
 
 ## Disclaimer
 
