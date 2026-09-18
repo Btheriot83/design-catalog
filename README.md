@@ -21,7 +21,9 @@ Do **not** scrape HTML. Fetch static JSON:
 
 Human page: [/agents](https://design-catalog-three.vercel.app/agents). Directory: [/designers](https://design-catalog-three.vercel.app/designers). Field guide: [/compare](https://design-catalog-three.vercel.app/compare). Guides: [/guides](https://design-catalog-three.vercel.app/guides). Gauntlet log: `docs/GAUNTLET.md`.
 
-**Workflow:** (a) fetch index → (b) pick technique by stage/job → (c) copy prompts → (d) run Discover→Define→Deliver with `DISCOVER.md` / `DEFINE.md` / `DELIVER.md`.
+**Workflow:** fetch index → match `decisionPaths` to a concrete problem → inspect one `agentContract` → apply its recipe → record acceptance/state evidence → stop. Add at most one companion for a distinct need. Contracts are Catalog editorial guidance with explicit source provenance. The original Discover→Define→Deliver mapping remains available for full-project work.
+
+The human finder supports search, problem/stage/author filters and a two-technique comparison. Home provides six problem doors and an illustrative before/after hierarchy specimen. All previous routes remain available through the compact navigation and Explore menu.
 
 **Build Games / Anshu 1–8** and **Tileboard** (chore-app) canonical URLs are in `docs/FOR_AGENTS.md` and `data/index.json` → `anshuMapping` / `canonicalApps`.
 
@@ -38,6 +40,7 @@ Human page: [/agents](https://design-catalog-three.vercel.app/agents). Directory
 ```bash
 npm install
 npm run generate:data   # writes public/data/*.json
+npm run validate:data   # deterministic generation + contract/briefing checks; no network
 npm run dev
 ```
 

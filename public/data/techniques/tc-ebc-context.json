@@ -68,5 +68,60 @@
     "Every clause earns its tokens.",
     "Stable across revision prompts unless audience changed.",
     "Example prompt includes observable detail, not adjectives only."
-  ]
+  ],
+  "agentContract": {
+    "version": "1.0.0",
+    "provenance": {
+      "kind": "editorial-synthesis",
+      "statement": "Design Catalog editorial synthesis of the cited public sources; contracts and decision paths are our implementation guidance, not quotations or author endorsements.",
+      "sources": [
+        "https://www.figma.com/blog/designer-framework-for-better-ai-prompts/",
+        "https://github.com/greghuntoon-figma/tc-ebc"
+      ]
+    },
+    "decisionPath": null,
+    "useWhen": [
+      "The current discover task needs this specific principle: Context frames why and for whom. It prevents drift. Ask what context the model needs to succeed—then remove everything else. Elegance is subtraction."
+    ],
+    "avoidWhen": [
+      "Novel-length backstory."
+    ],
+    "inputs": [
+      "A concrete user problem and the current artifact",
+      "Constraints, existing behavior and source attribution to preserve"
+    ],
+    "output": "A bounded application of “TC-EBC · Context” with before/after evidence and remaining limitations.",
+    "recipe": "1. Add a Context line: audience, setting, and job-to-be-done.\n2. Include only facts that change the output if omitted.\n3. Drop narrative fluff that forces the model to decipher meaning.\n4. For revisions, keep Context stable unless the audience actually changed.",
+    "acceptance": [
+      "Show the before/after artifact and explain how “TC-EBC · Context” improves the named user task.",
+      "Why/for whom is one tight line.",
+      "Every clause earns its tokens.",
+      "Stable across revision prompts unless audience changed."
+    ],
+    "stateRequirements": {
+      "responsive": "Check 390px and desktop plus 200% zoom; preserve reading order, wrap long text and keep actions reachable.",
+      "accessibility": "Use semantic headings and native controls, visible labels and focus; normal text contrast at least 4.5:1.",
+      "keyboard": "Complete the primary action using Tab, Shift+Tab, Enter and Space; no pointer-only information or focus trap.",
+      "reducedMotion": "Remove nonessential movement; preserve all state and information without waiting for animation.",
+      "loading": "Show pending feedback only during real work; retain context and allow navigation away.",
+      "empty": "Distinguish no content from no matching results; explain how to proceed or reset filters.",
+      "error": "Explain the failed action, retain user input and offer recovery; never claim success on failure.",
+      "interruption": "A newer action wins; cancel or ignore stale results and keep controls responsive.",
+      "stateChange": "Announce important results politely without moving focus unexpectedly."
+    },
+    "compatibility": {
+      "candidates": [
+        "give-real-context",
+        "thinking-before-prompt"
+      ],
+      "rule": "Start with one technique. Add at most one companion for a distinct unsolved problem; candidates are suggestions, not verified compatibility.",
+      "conflicts": [
+        "Two techniques changing the same visual role require an explicit winner.",
+        "Do not combine multiple entrance or attention effects on one target.",
+        "Aesthetic subtraction must not remove semantics, feedback or attribution."
+      ],
+      "stop": "Stop when the named task is clearer and acceptance evidence is recorded; do not add polish without a problem."
+    },
+    "comparison": null
+  }
 }

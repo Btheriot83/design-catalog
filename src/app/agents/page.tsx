@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { PageHeader } from "@/components/PageHeader";
+import { CopyButton } from "@/components/CopyButton";
 
 export const metadata: Metadata = {
   title: "For agents",
@@ -34,12 +35,15 @@ const files = [
 
 export default function AgentsPage() {
   return (
-    <div className="max-w-xl">
+    <div>
       <PageHeader
+        animate={false}
         eyebrow="Machine-readable"
-        title="For agents"
-        description="Fetch JSON and llms.txt — do not scrape HTML. Quiet Folio desk, no AI chrome."
+        title="A smaller, sharper working set."
+        description="Choose by problem. Read the contract. Apply one method, collect evidence, and stop when the task is clearer."
       />
+
+      <section className="agent-contract mb-12"><p className="eyebrow">Protocol / v1.0.0</p><ol className="protocol-steps"><li><strong>01 · Choose</strong><p>Fetch <a className="text-link" href="/data/index.json">index.json</a>. Match the user problem to <code>decisionPaths</code>; start with its first technique.</p></li><li><strong>02 · Inspect</strong><p>Fetch the technique JSON. Read <code>agentContract.useWhen</code>, <code>avoidWhen</code>, the recipe and cited sources. Guidance is editorial synthesis, not an author endorsement.</p></li><li><strong>03 · Combine carefully</strong><p>Add at most one companion for a distinct problem. Candidate pairings are suggestions; resolve competing visual roles before implementation.</p></li><li><strong>04 · Verify &amp; stop</strong><p>Record before/after evidence against acceptance and each applicable state requirement. Report failures and N/A reasons. A checklist is not proof.</p></li></ol><div className="recipe-heading"><h2>Copy a bounded instruction</h2><CopyButton text="Fetch https://design-catalog-three.vercel.app/data/index.json. Select the decisionPath matching my stated user problem. Fetch its starting technique JSON and inspect agentContract. Preserve existing truth and attribution. Apply one technique, adding at most one companion only for a distinct unmet need. Capture before/after evidence against acceptance and applicable stateRequirements. Report failures and N/A reasons. Stop at compatibility.stop; do not claim verification without evidence." /></div><p className="lab-caption">Version identifies contract semantics. contentHash identifies the exact exported content. lastUpdated is the editorial release date, never the generation clock.</p></section>
 
       <section className="mb-12">
         <h2 className="font-serif text-2xl text-ink">Surfaces</h2>

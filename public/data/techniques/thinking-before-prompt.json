@@ -64,5 +64,64 @@
     "specify-the-look",
     "ten-options-then-remix",
     "tc-ebc-task"
-  ]
+  ],
+  "agentContract": {
+    "version": "1.0.0",
+    "provenance": {
+      "kind": "editorial-synthesis",
+      "statement": "Design Catalog editorial synthesis of the cited public sources; contracts and decision paths are our implementation guidance, not quotations or author endorsements.",
+      "sources": [
+        "https://claude.com/blog/how-the-product-designer-who-built-claude-design-uses-it-to-explore-ideas-before-building-them"
+      ]
+    },
+    "decisionPath": "clarity",
+    "useWhen": [
+      "What can the person do after this change that they cannot do now?"
+    ],
+    "avoidWhen": [
+      "Do not restart discovery when the owner has already fixed the problem and direction."
+    ],
+    "inputs": [
+      "A concrete user problem and the current artifact",
+      "Constraints, existing behavior and source attribution to preserve"
+    ],
+    "output": "A bounded application of “Do the thinking before you prompt” with before/after evidence and remaining limitations.",
+    "recipe": "User: [specific person]\nProblem: [observable obstacle]\nOutcome: [action they can complete]\nPreserve: [truth, routes, constraints]\nEvidence: [before/after task, not a taste score]",
+    "acceptance": [
+      "Write one user/action/outcome sentence, one non-goal and a before/after example; another reader can tell whether the outcome occurred.",
+      "Brief exists before visuals.",
+      "Constraints and must-avoids are explicit.",
+      "Capture method doesn’t matter—completeness does."
+    ],
+    "stateRequirements": {
+      "responsive": "Check 390px and desktop plus 200% zoom; preserve reading order, wrap long text and keep actions reachable.",
+      "accessibility": "Use semantic headings and native controls, visible labels and focus; normal text contrast at least 4.5:1.",
+      "keyboard": "Complete the primary action using Tab, Shift+Tab, Enter and Space; no pointer-only information or focus trap.",
+      "reducedMotion": "Remove nonessential movement; preserve all state and information without waiting for animation.",
+      "loading": "Show pending feedback only during real work; retain context and allow navigation away.",
+      "empty": "Distinguish no content from no matching results; explain how to proceed or reset filters.",
+      "error": "Explain the failed action, retain user input and offer recovery; never claim success on failure.",
+      "interruption": "A newer action wins; cancel or ignore stale results and keep controls responsive.",
+      "stateChange": "Announce important results politely without moving focus unexpectedly."
+    },
+    "compatibility": {
+      "candidates": [
+        "specify-the-look",
+        "ten-options-then-remix",
+        "tc-ebc-task"
+      ],
+      "rule": "Start with one technique. Add at most one companion for a distinct unsolved problem; candidates are suggestions, not verified compatibility.",
+      "conflicts": [
+        "Two techniques changing the same visual role require an explicit winner.",
+        "Do not combine multiple entrance or attention effects on one target.",
+        "Aesthetic subtraction must not remove semantics, feedback or attribution."
+      ],
+      "stop": "A single user, action and observable outcome are named."
+    },
+    "comparison": {
+      "bad": "Make the dashboard premium leaves the agent guessing what should improve.",
+      "good": "Help a dispatcher find the next unassigned job names a person, an action and a result.",
+      "impact": "A single user, action and observable outcome are named."
+    }
+  }
 }

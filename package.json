@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "eslint",
     "generate:data": "node scripts/generate-data.mjs",
+    "validate:data": "node scripts/validate-data.mjs",
     "prebuild": "npm run generate:data"
   },
   "dependencies": {

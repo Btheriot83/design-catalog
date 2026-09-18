@@ -4,8 +4,8 @@ import { NavLinks } from "./NavLinks";
 
 export function Header() {
   return (
-    <header className="border-b border-hairline bg-paper/80 backdrop-blur-[2px]">
-      <div className="mx-auto flex max-w-3xl items-center justify-between gap-6 px-5 py-5 sm:px-8">
+    <header className="site-header border-b border-hairline bg-paper">
+      <div className="mx-auto flex max-w-5xl flex-wrap items-center justify-between gap-x-6 gap-y-3 px-5 py-4 sm:px-8">
         <Link href="/" className="group flex items-center gap-3">
           <Image
             src="/ink-mark-sm.png"

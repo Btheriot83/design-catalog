@@ -56,5 +56,63 @@
     "Sample data is reachable.",
     "Aggregation limits are stated.",
     "A critique hook exists."
-  ]
+  ],
+  "agentContract": {
+    "version": "1.0.0",
+    "provenance": {
+      "kind": "editorial-synthesis",
+      "statement": "Design Catalog editorial synthesis of the cited public sources; contracts and decision paths are our implementation guidance, not quotations or author endorsements.",
+      "sources": [
+        "https://wattenberger.com/"
+      ]
+    },
+    "decisionPath": "feedback",
+    "useWhen": [
+      "Does the interface explain what happened and what can happen next?"
+    ],
+    "avoidWhen": [
+      "Do not simulate a loading delay or show success before the operation succeeds."
+    ],
+    "inputs": [
+      "A concrete user problem and the current artifact",
+      "Constraints, existing behavior and source attribution to preserve"
+    ],
+    "output": "A bounded application of “Show the path from data to ink” with before/after evidence and remaining limitations.",
+    "recipe": "on action: retain input; mark pending\non success: commit result; announce completion\non error: retain input; show retry\non newer action: cancel or ignore stale response\nEmpty results: explain active filters; offer reset",
+    "acceptance": [
+      "Force a failed operation, retry it, and interrupt it with a newer action; preserve input and never let an older response replace the latest result.",
+      "Encodings are plain-language labeled.",
+      "Sample data is reachable.",
+      "Aggregation limits are stated."
+    ],
+    "stateRequirements": {
+      "responsive": "Check 390px and desktop plus 200% zoom; preserve reading order, wrap long text and keep actions reachable.",
+      "accessibility": "Use semantic headings and native controls, visible labels and focus; normal text contrast at least 4.5:1.",
+      "keyboard": "Complete the primary action using Tab, Shift+Tab, Enter and Space; no pointer-only information or focus trap.",
+      "reducedMotion": "Remove nonessential movement; preserve all state and information without waiting for animation.",
+      "loading": "Show pending feedback only during real work; retain context and allow navigation away.",
+      "empty": "Distinguish no content from no matching results; explain how to proceed or reset filters.",
+      "error": "Explain the failed action, retain user input and offer recovery; never claim success on failure.",
+      "interruption": "A newer action wins; cancel or ignore stale results and keep controls responsive.",
+      "stateChange": "Announce important results politely without moving focus unexpectedly."
+    },
+    "compatibility": {
+      "candidates": [
+        "explorable-explanations",
+        "epistemic-disclosure"
+      ],
+      "rule": "Start with one technique. Add at most one companion for a distinct unsolved problem; candidates are suggestions, not verified compatibility.",
+      "conflicts": [
+        "Two techniques changing the same visual role require an explicit winner.",
+        "Do not combine multiple entrance or attention effects on one target.",
+        "Aesthetic subtraction must not remove semantics, feedback or attribution."
+      ],
+      "stop": "Loading, empty, error and recovery states each explain the next action."
+    },
+    "comparison": {
+      "bad": "A silent failure makes the person repeat an action and wonder whether it worked.",
+      "good": "An inline explanation preserves their input and offers a specific retry.",
+      "impact": "Loading, empty, error and recovery states each explain the next action."
+    }
+  }
 }

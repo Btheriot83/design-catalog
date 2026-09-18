@@ -17,6 +17,24 @@
     "related"
   ],
   "properties": {
+    "agentContract": {
+      "type": "object",
+      "required": ["version", "provenance", "decisionPath", "useWhen", "avoidWhen", "inputs", "output", "recipe", "acceptance", "stateRequirements", "compatibility", "comparison"],
+      "properties": {
+        "version": {"type":"string", "pattern":"^[0-9]+\\.[0-9]+\\.[0-9]+$"},
+        "provenance": {"type":"object", "required":["kind","statement","sources"], "properties":{"kind":{"const":"editorial-synthesis"},"statement":{"type":"string"},"sources":{"type":"array","items":{"type":"string","format":"uri"}}}},
+        "decisionPath": {"type":["string","null"]},
+        "useWhen": {"type":"array","minItems":1,"items":{"type":"string"}},
+        "avoidWhen": {"type":"array","minItems":1,"items":{"type":"string"}},
+        "inputs": {"type":"array","minItems":1,"items":{"type":"string"}},
+        "output": {"type":"string","minLength":1},
+        "recipe": {"type":"string","minLength":1},
+        "acceptance": {"type":"array","minItems":1,"items":{"type":"string"}},
+        "stateRequirements": {"type":"object","required":["responsive","accessibility","keyboard","reducedMotion","loading","empty","error","interruption","stateChange"],"additionalProperties":{"type":"string"}},
+        "compatibility": {"type":"object","required":["candidates","rule","conflicts","stop"],"properties":{"candidates":{"type":"array","items":{"type":"string"}},"rule":{"type":"string"},"conflicts":{"type":"array","items":{"type":"string"}},"stop":{"type":"string"}}},
+        "comparison": {"type":["object","null"],"properties":{"bad":{"type":"string"},"good":{"type":"string"},"impact":{"type":"string"}}}
+      }
+    },
     "slug": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
     "number": { "type": "integer", "minimum": 1 },
     "stage": { "type": "string", "enum": ["Discover", "Define", "Deliver"] },

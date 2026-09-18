@@ -70,5 +70,60 @@
     "seed-strings",
     "critic-subagents",
     "ten-options-then-remix"
-  ]
+  ],
+  "agentContract": {
+    "version": "1.0.0",
+    "provenance": {
+      "kind": "editorial-synthesis",
+      "statement": "Design Catalog editorial synthesis of the cited public sources; contracts and decision paths are our implementation guidance, not quotations or author endorsements.",
+      "sources": [
+        "https://www.lennysnewsletter.com/p/how-to-turn-your-ai-into-a-world"
+      ]
+    },
+    "decisionPath": null,
+    "useWhen": [
+      "The current discover task needs this specific principle: Vague prompts let the model invent bland defaults. Specific, wild briefs give it a vision to execute. Bring your taste: name an inspiration (game, interior trend, installation) and say how it should shape the output. Prefer ideas that make you think “this might not work.”"
+    ],
+    "avoidWhen": [
+      "Pasting AI-generated idea lists back into AI unchanged—anyone else gets the same average."
+    ],
+    "inputs": [
+      "A concrete user problem and the current artifact",
+      "Constraints, existing behavior and source attribution to preserve"
+    ],
+    "output": "A bounded application of “Be much more ambitious with your prompts” with before/after evidence and remaining limitations.",
+    "recipe": "1. Ask AI for a broad, short list of bold design-language ideas—high-level only, go wide not deep.\n2. Pick favorites; write human feel notes (what feels tacky, what to keep, texture vs. gradient boredom).\n3. Ask AI to sharpen one direction based on those notes.\n4. Iterate until satisfied, then ask AI to write a concise build prompt for an agent POC.",
+    "acceptance": [
+      "Show the before/after artifact and explain how “Be much more ambitious with your prompts” improves the named user task.",
+      "Brief names a concrete inspiration (game, interior, installation) and how it shapes UI.",
+      "You wrote feel notes before asking AI to sharpen.",
+      "Build prompt is concise enough for an agent POC."
+    ],
+    "stateRequirements": {
+      "responsive": "Check 390px and desktop plus 200% zoom; preserve reading order, wrap long text and keep actions reachable.",
+      "accessibility": "Use semantic headings and native controls, visible labels and focus; normal text contrast at least 4.5:1.",
+      "keyboard": "Complete the primary action using Tab, Shift+Tab, Enter and Space; no pointer-only information or focus trap.",
+      "reducedMotion": "Remove nonessential movement; preserve all state and information without waiting for animation.",
+      "loading": "Show pending feedback only during real work; retain context and allow navigation away.",
+      "empty": "Distinguish no content from no matching results; explain how to proceed or reset filters.",
+      "error": "Explain the failed action, retain user input and offer recovery; never claim success on failure.",
+      "interruption": "A newer action wins; cancel or ignore stale results and keep controls responsive.",
+      "stateChange": "Announce important results politely without moving focus unexpectedly."
+    },
+    "compatibility": {
+      "candidates": [
+        "seed-strings",
+        "critic-subagents",
+        "ten-options-then-remix"
+      ],
+      "rule": "Start with one technique. Add at most one companion for a distinct unsolved problem; candidates are suggestions, not verified compatibility.",
+      "conflicts": [
+        "Two techniques changing the same visual role require an explicit winner.",
+        "Do not combine multiple entrance or attention effects on one target.",
+        "Aesthetic subtraction must not remove semantics, feedback or attribution."
+      ],
+      "stop": "Stop when the named task is clearer and acceptance evidence is recorded; do not add polish without a problem."
+    },
+    "comparison": null
+  }
 }

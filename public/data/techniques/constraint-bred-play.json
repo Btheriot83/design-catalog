@@ -55,5 +55,59 @@
     "Timeboxed ideation.",
     "Inevitable idea selected.",
     "Constraint protected."
-  ]
+  ],
+  "agentContract": {
+    "version": "1.0.0",
+    "provenance": {
+      "kind": "editorial-synthesis",
+      "statement": "Design Catalog editorial synthesis of the cited public sources; contracts and decision paths are our implementation guidance, not quotations or author endorsements.",
+      "sources": [
+        "https://brendandawes.com/"
+      ]
+    },
+    "decisionPath": null,
+    "useWhen": [
+      "The current discover task needs this specific principle: Inventive interaction often comes from tight constraints—limited inputs, one sensor, one color—not from unlimited freedom."
+    ],
+    "avoidWhen": [
+      "Removing constraints too early."
+    ],
+    "inputs": [
+      "A concrete user problem and the current artifact",
+      "Constraints, existing behavior and source attribution to preserve"
+    ],
+    "output": "A bounded application of “Let constraints breed play” with before/after evidence and remaining limitations.",
+    "recipe": "1. Impose a tight constraint (one input, one material, 3 seconds, monochrome).\n2. Brainstorm only inside the constraint for a fixed timebox.\n3. Pick the idea that feels inevitable given the limit.\n4. Expand only after the constrained idea is strong.\n5. Document the constraint so the team doesn’t ‘help’ by removing it early.",
+    "acceptance": [
+      "Show the before/after artifact and explain how “Let constraints breed play” improves the named user task.",
+      "Constraint written.",
+      "Timeboxed ideation.",
+      "Inevitable idea selected."
+    ],
+    "stateRequirements": {
+      "responsive": "Check 390px and desktop plus 200% zoom; preserve reading order, wrap long text and keep actions reachable.",
+      "accessibility": "Use semantic headings and native controls, visible labels and focus; normal text contrast at least 4.5:1.",
+      "keyboard": "Complete the primary action using Tab, Shift+Tab, Enter and Space; no pointer-only information or focus trap.",
+      "reducedMotion": "Remove nonessential movement; preserve all state and information without waiting for animation.",
+      "loading": "Show pending feedback only during real work; retain context and allow navigation away.",
+      "empty": "Distinguish no content from no matching results; explain how to proceed or reset filters.",
+      "error": "Explain the failed action, retain user input and offer recovery; never claim success on failure.",
+      "interruption": "A newer action wins; cancel or ignore stale results and keep controls responsive.",
+      "stateChange": "Announce important results politely without moving focus unexpectedly."
+    },
+    "compatibility": {
+      "candidates": [
+        "data-as-playful-material",
+        "seed-strings"
+      ],
+      "rule": "Start with one technique. Add at most one companion for a distinct unsolved problem; candidates are suggestions, not verified compatibility.",
+      "conflicts": [
+        "Two techniques changing the same visual role require an explicit winner.",
+        "Do not combine multiple entrance or attention effects on one target.",
+        "Aesthetic subtraction must not remove semantics, feedback or attribution."
+      ],
+      "stop": "Stop when the named task is clearer and acceptance evidence is recorded; do not add polish without a problem."
+    },
+    "comparison": null
+  }
 }

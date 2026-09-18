@@ -6,11 +6,13 @@
 import { readFileSync, writeFileSync, mkdirSync, readdirSync, rmSync } from "fs";
 import { join, dirname } from "path";
 import { fileURLToPath } from "url";
+import { createHash } from "crypto";
+import { contractFor } from "../src/lib/contracts.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const root = join(__dirname, "..");
 const contentRoot = join(root, "content");
-const publicData = join(root, "public", "data");
+const publicData = process.env.CATALOG_OUTPUT_DIR || join(root, "public", "data");
 const baseUrl = "https://design-catalog-three.vercel.app";
 
 function readJson(path) {
@@ -53,12 +55,15 @@ function resetDir(dir) {
   mkdirSync(dir, { recursive: true });
 }
 
-const techniques = loadTechniques();
+const paths = readJson(join(contentRoot, "decision-paths.json"));
+const release = readJson(join(contentRoot, "catalog-release.json"));
+const techniques = loadTechniques().map((t) => ({ ...t, agentContract: contractFor(t, paths, release) }));
 const designers = loadDesigners();
 const sources = readJson(join(contentRoot, "sources.json"));
 const resources = readJson(join(contentRoot, "resources.json"));
 const shipaton2025 = readJson(join(contentRoot, "shipaton-2025.json"));
-const lastUpdated = new Date().toISOString();
+const lastUpdated = release.contentUpdated;
+const contentHash = createHash("sha256").update(JSON.stringify({ techniques, designers, sources, resources, shipaton2025, paths, release })).digest("hex");
 
 resetDir(join(publicData, "techniques"));
 resetDir(join(publicData, "designers"));
@@ -70,6 +75,10 @@ const index = {
     "Letterpress study desk of AI design techniques (Anshu, Nate, Greg + craft directory voices). Public sources only; no endorsement.",
   baseUrl,
   lastUpdated,
+  contractVersion: release.contractVersion,
+  contentHash,
+  provenance: release.provenance,
+  decisionPaths: paths,
   techniqueCount: techniques.length,
   designerCount: designers.length,
   sourceCount: sources.length,
@@ -95,6 +104,8 @@ const index = {
       number: t.number,
       title: t.title,
       stage: t.stage,
+      decisionPath: t.agentContract.decisionPath,
+      contractVersion: t.agentContract.version,
       designerSlug: d?.slug ?? null,
       designerName: d?.name ?? null,
       url: `${baseUrl}/techniques/${t.slug}`,
@@ -175,6 +186,7 @@ const index = {
 };
 
 writeJson(join(publicData, "index.json"), index);
+writeJson(join(publicData, "decision-paths.json"), paths);
 writeJson(join(publicData, "techniques.json"), techniques);
 writeJson(join(publicData, "designers.json"), designers);
 writeJson(join(publicData, "sources.json"), sources);

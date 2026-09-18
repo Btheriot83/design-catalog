@@ -58,5 +58,61 @@
     "No duplicate atoms under new names.",
     "Pages use representative real content."
   ],
-  "number": 63
+  "number": 63,
+  "agentContract": {
+    "version": "1.0.0",
+    "provenance": {
+      "kind": "editorial-synthesis",
+      "statement": "Design Catalog editorial synthesis of the cited public sources; contracts and decision paths are our implementation guidance, not quotations or author endorsements.",
+      "sources": [
+        "https://atomicdesign.bradfrost.com/",
+        "https://atomicdesign.bradfrost.com/chapter-2/",
+        "https://bradfrost.com/"
+      ]
+    },
+    "decisionPath": null,
+    "useWhen": [
+      "The current define task needs this specific principle: Brad Frost’s Atomic Design (public book at atomicdesign.bradfrost.com): interfaces are atoms → molecules → organisms → templates → pages working concurrently. For AI design, force the model to name the hierarchy instead of inventing one-off page snowflakes."
+    ],
+    "avoidWhen": [
+      "Designing pages as unique artboards with no shared parts."
+    ],
+    "inputs": [
+      "A concrete user problem and the current artifact",
+      "Constraints, existing behavior and source attribution to preserve"
+    ],
+    "output": "A bounded application of “Build UI with atomic hierarchy” with before/after evidence and remaining limitations.",
+    "recipe": "1. Inventory existing atoms (type, color, inputs, icons) before new page work.\n2. Compose molecules (label+input, search field) before organisms (header, card grid).\n3. Templates define content structure; pages plug in real representative content.\n4. Reject new components that duplicate an atom under a fresh name.\n5. Review AI output by asking: which level is this change at?",
+    "acceptance": [
+      "Show the before/after artifact and explain how “Build UI with atomic hierarchy” improves the named user task.",
+      "Hierarchy map exists for the view.",
+      "No duplicate atoms under new names.",
+      "Pages use representative real content."
+    ],
+    "stateRequirements": {
+      "responsive": "Check 390px and desktop plus 200% zoom; preserve reading order, wrap long text and keep actions reachable.",
+      "accessibility": "Use semantic headings and native controls, visible labels and focus; normal text contrast at least 4.5:1.",
+      "keyboard": "Complete the primary action using Tab, Shift+Tab, Enter and Space; no pointer-only information or focus trap.",
+      "reducedMotion": "Remove nonessential movement; preserve all state and information without waiting for animation.",
+      "loading": "Show pending feedback only during real work; retain context and allow navigation away.",
+      "empty": "Distinguish no content from no matching results; explain how to proceed or reset filters.",
+      "error": "Explain the failed action, retain user input and offer recovery; never claim success on failure.",
+      "interruption": "A newer action wins; cancel or ignore stale results and keep controls responsive.",
+      "stateChange": "Announce important results politely without moving focus unexpectedly."
+    },
+    "compatibility": {
+      "candidates": [
+        "specify-the-look",
+        "cut-elements"
+      ],
+      "rule": "Start with one technique. Add at most one companion for a distinct unsolved problem; candidates are suggestions, not verified compatibility.",
+      "conflicts": [
+        "Two techniques changing the same visual role require an explicit winner.",
+        "Do not combine multiple entrance or attention effects on one target.",
+        "Aesthetic subtraction must not remove semantics, feedback or attribution."
+      ],
+      "stop": "Stop when the named task is clearer and acceptance evidence is recorded; do not add polish without a problem."
+    },
+    "comparison": null
+  }
 }

@@ -57,5 +57,60 @@
     "Focus visible.",
     "Reduced motion honored.",
     "No noisy delight on high-frequency actions."
-  ]
+  ],
+  "agentContract": {
+    "version": "1.0.0",
+    "provenance": {
+      "kind": "editorial-synthesis",
+      "statement": "Design Catalog editorial synthesis of the cited public sources; contracts and decision paths are our implementation guidance, not quotations or author endorsements.",
+      "sources": [
+        "https://www.joshwcomeau.com/animation/css-transitions/",
+        "https://www.joshwcomeau.com/"
+      ]
+    },
+    "decisionPath": null,
+    "useWhen": [
+      "The current deliver task needs this specific principle: Spend care on micro-interactions, focus states, and edge copy that most users only notice when missing—polish is a signal of respect."
+    ],
+    "avoidWhen": [
+      "outline:none without a replacement."
+    ],
+    "inputs": [
+      "A concrete user problem and the current artifact",
+      "Constraints, existing behavior and source attribution to preserve"
+    ],
+    "output": "A bounded application of “Delight in the details” with before/after evidence and remaining limitations.",
+    "recipe": "1. List five moments a careful user will touch (focus, empty, error, success, hover).\n2. Design each moment intentionally; ban default browser leftovers where brand matters.\n3. Add one surprise of restraint (not fireworks)—timing, easing, or copy.\n4. Verify keyboard and reduced-motion paths feel equally considered.\n5. Cut any delight that slows a frequent action (novelty vs frequency).",
+    "acceptance": [
+      "Show the before/after artifact and explain how “Delight in the details” improves the named user task.",
+      "Five touch moments designed.",
+      "Focus visible.",
+      "Reduced motion honored."
+    ],
+    "stateRequirements": {
+      "responsive": "Check 390px and desktop plus 200% zoom; preserve reading order, wrap long text and keep actions reachable.",
+      "accessibility": "Use semantic headings and native controls, visible labels and focus; normal text contrast at least 4.5:1.",
+      "keyboard": "Complete the primary action using Tab, Shift+Tab, Enter and Space; no pointer-only information or focus trap.",
+      "reducedMotion": "Remove nonessential movement; preserve all state and information without waiting for animation.",
+      "loading": "Show pending feedback only during real work; retain context and allow navigation away.",
+      "empty": "Distinguish no content from no matching results; explain how to proceed or reset filters.",
+      "error": "Explain the failed action, retain user input and offer recovery; never claim success on failure.",
+      "interruption": "A newer action wins; cancel or ignore stale results and keep controls responsive.",
+      "stateChange": "Announce important results politely without moving focus unexpectedly."
+    },
+    "compatibility": {
+      "candidates": [
+        "novelty-restraint",
+        "remove-ai-tells"
+      ],
+      "rule": "Start with one technique. Add at most one companion for a distinct unsolved problem; candidates are suggestions, not verified compatibility.",
+      "conflicts": [
+        "Two techniques changing the same visual role require an explicit winner.",
+        "Do not combine multiple entrance or attention effects on one target.",
+        "Aesthetic subtraction must not remove semantics, feedback or attribution."
+      ],
+      "stop": "Stop when the named task is clearer and acceptance evidence is recorded; do not add polish without a problem."
+    },
+    "comparison": null
+  }
 }

@@ -1,0 +1,80 @@
+[
+  {
+    "id": "hierarchy",
+    "title": "Everything competes",
+    "question": "Can someone find the next action without reading every label?",
+    "start": "hierarchy-with-weight",
+    "support": "start-with-whitespace",
+    "stop": "One action leads; supporting information is still readable.",
+    "avoid": "Do not add a new visual hierarchy to a screen whose real problem is missing information.",
+    "acceptance": "At 390px and 1280px, identify the primary action without scrolling past decorative material; preserve text contrast and the same reading order.",
+    "bad": "Six equally prominent buttons make the reader compare every option before acting.",
+    "good": "One clear next step, quieter alternatives, and nearby context make the choice legible.",
+    "recipe": "/* Emphasis follows the task, not DOM position. */\n.primary { font-weight: 600; color: #221c24; }\n.supporting { font-weight: 400; color: #6f6470; }\n.actions { display: flex; flex-wrap: wrap; gap: .75rem; }"
+  },
+  {
+    "id": "clarity",
+    "title": "The brief is vague",
+    "question": "What can the person do after this change that they cannot do now?",
+    "start": "thinking-before-prompt",
+    "support": "tc-ebc-task",
+    "stop": "A single user, action and observable outcome are named.",
+    "avoid": "Do not restart discovery when the owner has already fixed the problem and direction.",
+    "acceptance": "Write one user/action/outcome sentence, one non-goal and a before/after example; another reader can tell whether the outcome occurred.",
+    "bad": "Make the dashboard premium leaves the agent guessing what should improve.",
+    "good": "Help a dispatcher find the next unassigned job names a person, an action and a result.",
+    "recipe": "User: [specific person]\nProblem: [observable obstacle]\nOutcome: [action they can complete]\nPreserve: [truth, routes, constraints]\nEvidence: [before/after task, not a taste score]"
+  },
+  {
+    "id": "feedback",
+    "title": "State changes are unclear",
+    "question": "Does the interface explain what happened and what can happen next?",
+    "start": "design-for-error",
+    "support": "show-the-path",
+    "stop": "Loading, empty, error and recovery states each explain the next action.",
+    "avoid": "Do not simulate a loading delay or show success before the operation succeeds.",
+    "acceptance": "Force a failed operation, retry it, and interrupt it with a newer action; preserve input and never let an older response replace the latest result.",
+    "bad": "A silent failure makes the person repeat an action and wonder whether it worked.",
+    "good": "An inline explanation preserves their input and offers a specific retry.",
+    "recipe": "on action: retain input; mark pending\non success: commit result; announce completion\non error: retain input; show retry\non newer action: cancel or ignore stale response\nEmpty results: explain active filters; offer reset"
+  },
+  {
+    "id": "motion",
+    "title": "Motion gets in the way",
+    "question": "Which change would be harder to understand without movement?",
+    "start": "purposeful-motion",
+    "support": "animation-restraint",
+    "stop": "Only state or spatial continuity needs motion; repeated actions stay immediate.",
+    "avoid": "Do not stack stagger, tilt, blur and entrance effects on the same element.",
+    "acceptance": "Toggle twice before a transition ends: the latest state wins. With reduced motion, all information and controls remain available immediately.",
+    "bad": "Every result animates in after each keystroke, delaying comparison.",
+    "good": "Results update immediately; a brief emphasis on selection confirms only the changed state.",
+    "recipe": ".choice { transition: background-color 120ms ease-out; }\n.choice[aria-pressed=\"true\"] { background: #efeaee; }\n@media (prefers-reduced-motion: reduce) {\n  .choice { transition: none; }\n}\n/* Never delay state updates until animation completes. */"
+  },
+  {
+    "id": "responsive",
+    "title": "The layout breaks",
+    "question": "Does the same task survive narrow screens and longer content?",
+    "start": "defensive-css-mindset",
+    "support": "browser-native-first",
+    "stop": "Content reflows without hiding essential actions or changing reading order.",
+    "avoid": "Do not fix one screenshot with a fixed height or a device-specific offset.",
+    "acceptance": "At 320px, 390px and 1280px, and at 200% zoom, long titles wrap; controls remain reachable; only intrinsically wide content scrolls horizontally.",
+    "bad": "A fixed three-column grid clips labels and pushes the final action off screen.",
+    "good": "A content-sized grid stacks in source order and lets long labels wrap.",
+    "recipe": ".grid { display: grid; gap: 1.5rem;\n  grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr)); }\n.grid > * { min-width: 0; overflow-wrap: anywhere; }\nbutton, input, select { min-height: 44px; }"
+  },
+  {
+    "id": "restraint",
+    "title": "It feels generic",
+    "question": "What can be removed without making the task harder?",
+    "start": "cut-elements",
+    "support": "hand-rewrite-copy",
+    "stop": "Each remaining element explains content, action or identity.",
+    "avoid": "Never remove labels, focus indicators, error explanations or source attribution for visual quiet.",
+    "acceptance": "Remove one ornamental layer; complete the same task with keyboard and pointer; confirm the primary action and necessary context remain explicit.",
+    "bad": "Nested boxes, generic badges and repeated headings obscure the actual content.",
+    "good": "A clear title, a useful sentence and a shared rule expose the content hierarchy.",
+    "recipe": "For each element:\n1. Name the task or meaning it supports.\n2. If none, remove it.\n3. Keep semantics, attribution and feedback.\n4. Repeat the original task; restore anything necessary."
+  }
+]

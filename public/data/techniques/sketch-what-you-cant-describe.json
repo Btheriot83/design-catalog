@@ -65,5 +65,60 @@
     "wireframe-first",
     "point-and-talk",
     "thinking-before-prompt"
-  ]
+  ],
+  "agentContract": {
+    "version": "1.0.0",
+    "provenance": {
+      "kind": "editorial-synthesis",
+      "statement": "Design Catalog editorial synthesis of the cited public sources; contracts and decision paths are our implementation guidance, not quotations or author endorsements.",
+      "sources": [
+        "https://claude.com/blog/how-the-product-designer-who-built-claude-design-uses-it-to-explore-ideas-before-building-them"
+      ]
+    },
+    "decisionPath": null,
+    "useWhen": [
+      "The current discover task needs this specific principle: If you have a layout in your head and no words for it, draw it on paper and upload a photo. Visual intent that resists language still transfers when Claude can see the sketch."
+    ],
+    "avoidWhen": [
+      "Paragraphs of spatial scavenger-hunt prose."
+    ],
+    "inputs": [
+      "A concrete user problem and the current artifact",
+      "Constraints, existing behavior and source attribution to preserve"
+    ],
+    "output": "A bounded application of “Sketch what you can’t describe” with before/after evidence and remaining limitations.",
+    "recipe": "1. When layout is clear in your head but not in words, draw it on paper (boxes + labels are enough).\n2. Photograph in even light; crop to the sketch; upload.\n3. Ask the model to recreate structure/hierarchy/proportions—not invent a new composition.\n4. Gate structural changes behind a question; allow only spacing/type polish without asking.\n5. If the recreation drifts, point-and-talk with a markup on the sketch photo rather than rewriting prose.",
+    "acceptance": [
+      "Show the before/after artifact and explain how “Sketch what you can’t describe” improves the named user task.",
+      "Sketch uploaded.",
+      "Prompt protects structure.",
+      "Changes require ask-first."
+    ],
+    "stateRequirements": {
+      "responsive": "Check 390px and desktop plus 200% zoom; preserve reading order, wrap long text and keep actions reachable.",
+      "accessibility": "Use semantic headings and native controls, visible labels and focus; normal text contrast at least 4.5:1.",
+      "keyboard": "Complete the primary action using Tab, Shift+Tab, Enter and Space; no pointer-only information or focus trap.",
+      "reducedMotion": "Remove nonessential movement; preserve all state and information without waiting for animation.",
+      "loading": "Show pending feedback only during real work; retain context and allow navigation away.",
+      "empty": "Distinguish no content from no matching results; explain how to proceed or reset filters.",
+      "error": "Explain the failed action, retain user input and offer recovery; never claim success on failure.",
+      "interruption": "A newer action wins; cancel or ignore stale results and keep controls responsive.",
+      "stateChange": "Announce important results politely without moving focus unexpectedly."
+    },
+    "compatibility": {
+      "candidates": [
+        "wireframe-first",
+        "point-and-talk",
+        "thinking-before-prompt"
+      ],
+      "rule": "Start with one technique. Add at most one companion for a distinct unsolved problem; candidates are suggestions, not verified compatibility.",
+      "conflicts": [
+        "Two techniques changing the same visual role require an explicit winner.",
+        "Do not combine multiple entrance or attention effects on one target.",
+        "Aesthetic subtraction must not remove semantics, feedback or attribution."
+      ],
+      "stop": "Stop when the named task is clearer and acceptance evidence is recorded; do not add polish without a problem."
+    },
+    "comparison": null
+  }
 }

@@ -58,5 +58,61 @@
     "One clear primary action.",
     "Mobile input types set."
   ],
-  "number": 70
+  "number": 70,
+  "agentContract": {
+    "version": "1.0.0",
+    "provenance": {
+      "kind": "editorial-synthesis",
+      "statement": "Design Catalog editorial synthesis of the cited public sources; contracts and decision paths are our implementation guidance, not quotations or author endorsements.",
+      "sources": [
+        "https://www.lukew.com/",
+        "https://static.lukew.com/WebForms_LukeW_101209.pdf",
+        "https://www.lukew.com/mobilefirst/08-chapter-6/index.html"
+      ]
+    },
+    "decisionPath": null,
+    "useWhen": [
+      "The current deliver task needs this specific principle: Luke Wroblewski’s public form-design teaching (lukew.com / Web Form Design talks): every form’s primary job is completion—clear scan line, pacing, visible primary action, minimized pain. AI forms often look ‘designed’ but hide the finish line."
+    ],
+    "avoidWhen": [
+      "Multi-column desktop forms on mobile."
+    ],
+    "inputs": [
+      "A concrete user problem and the current artifact",
+      "Constraints, existing behavior and source attribution to preserve"
+    ],
+    "output": "A bounded application of “Illuminate a clear path to completion” with before/after evidence and remaining limitations.",
+    "recipe": "1. Remove or postpone every field that isn’t required for the outcome.\n2. Top-align labels; one primary action; demote secondary.\n3. Show progress when multi-step; keep scope honest.\n4. Inline validation that helps, not punishes on first focus.\n5. Mobile: appropriate input types, targets, and keyboard-friendly actions.",
+    "acceptance": [
+      "Show the before/after artifact and explain how “Illuminate a clear path to completion” improves the named user task.",
+      "Field cut list exists.",
+      "One clear primary action.",
+      "Mobile input types set."
+    ],
+    "stateRequirements": {
+      "responsive": "Check 390px and desktop plus 200% zoom; preserve reading order, wrap long text and keep actions reachable.",
+      "accessibility": "Use semantic headings and native controls, visible labels and focus; normal text contrast at least 4.5:1.",
+      "keyboard": "Complete the primary action using Tab, Shift+Tab, Enter and Space; no pointer-only information or focus trap.",
+      "reducedMotion": "Remove nonessential movement; preserve all state and information without waiting for animation.",
+      "loading": "Show pending feedback only during real work; retain context and allow navigation away.",
+      "empty": "Distinguish no content from no matching results; explain how to proceed or reset filters.",
+      "error": "Explain the failed action, retain user input and offer recovery; never claim success on failure.",
+      "interruption": "A newer action wins; cancel or ignore stale results and keep controls responsive.",
+      "stateChange": "Announce important results politely without moving focus unexpectedly."
+    },
+    "compatibility": {
+      "candidates": [
+        "hand-rewrite-copy",
+        "just-in-case-layout"
+      ],
+      "rule": "Start with one technique. Add at most one companion for a distinct unsolved problem; candidates are suggestions, not verified compatibility.",
+      "conflicts": [
+        "Two techniques changing the same visual role require an explicit winner.",
+        "Do not combine multiple entrance or attention effects on one target.",
+        "Aesthetic subtraction must not remove semantics, feedback or attribution."
+      ],
+      "stop": "Stop when the named task is clearer and acceptance evidence is recorded; do not add polish without a problem."
+    },
+    "comparison": null
+  }
 }

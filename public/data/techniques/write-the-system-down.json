@@ -56,5 +56,60 @@
     "Exceptions owned.",
     "Doc short enough to load in prompts."
   ],
-  "number": 84
+  "number": 84,
+  "agentContract": {
+    "version": "1.0.0",
+    "provenance": {
+      "kind": "editorial-synthesis",
+      "statement": "Design Catalog editorial synthesis of the cited public sources; contracts and decision paths are our implementation guidance, not quotations or author endorsements.",
+      "sources": [
+        "https://robinrendle.com/",
+        "https://github.com/robinrendle"
+      ]
+    },
+    "decisionPath": null,
+    "useWhen": [
+      "The current define task needs this specific principle: Robin Rendle’s public writing on design systems/culture argues that systems live in clear writing—principles, examples, and voice—not only tokens. If AI can’t read how you decide, it will invent a new system each time."
+    ],
+    "avoidWhen": [
+      "Rules nobody reads."
+    ],
+    "inputs": [
+      "A concrete user problem and the current artifact",
+      "Constraints, existing behavior and source attribution to preserve"
+    ],
+    "output": "A bounded application of “Write the system down in human prose” with before/after evidence and remaining limitations.",
+    "recipe": "1. Draft principles in plain sentences with do/don’t examples.\n2. Document exceptions and who may grant them.\n3. Keep the doc short enough agents and humans will read it.\n4. Link principles to components; delete orphan rules.\n5. Revise when real products force exceptions.",
+    "acceptance": [
+      "Show the before/after artifact and explain how “Write the system down in human prose” improves the named user task.",
+      "Principles have do/don’t.",
+      "Exceptions owned.",
+      "Doc short enough to load in prompts."
+    ],
+    "stateRequirements": {
+      "responsive": "Check 390px and desktop plus 200% zoom; preserve reading order, wrap long text and keep actions reachable.",
+      "accessibility": "Use semantic headings and native controls, visible labels and focus; normal text contrast at least 4.5:1.",
+      "keyboard": "Complete the primary action using Tab, Shift+Tab, Enter and Space; no pointer-only information or focus trap.",
+      "reducedMotion": "Remove nonessential movement; preserve all state and information without waiting for animation.",
+      "loading": "Show pending feedback only during real work; retain context and allow navigation away.",
+      "empty": "Distinguish no content from no matching results; explain how to proceed or reset filters.",
+      "error": "Explain the failed action, retain user input and offer recovery; never claim success on failure.",
+      "interruption": "A newer action wins; cancel or ignore stale results and keep controls responsive.",
+      "stateChange": "Announce important results politely without moving focus unexpectedly."
+    },
+    "compatibility": {
+      "candidates": [
+        "atomic-design-hierarchy",
+        "garden-status-labels"
+      ],
+      "rule": "Start with one technique. Add at most one companion for a distinct unsolved problem; candidates are suggestions, not verified compatibility.",
+      "conflicts": [
+        "Two techniques changing the same visual role require an explicit winner.",
+        "Do not combine multiple entrance or attention effects on one target.",
+        "Aesthetic subtraction must not remove semantics, feedback or attribution."
+      ],
+      "stop": "Stop when the named task is clearer and acceptance evidence is recorded; do not add polish without a problem."
+    },
+    "comparison": null
+  }
 }

@@ -68,5 +68,66 @@
     "High-frequency UI has no decorative motion.",
     "Kept motions have purpose sentences.",
     "Decisions documented for future agents."
-  ]
+  ],
+  "agentContract": {
+    "version": "1.0.0",
+    "provenance": {
+      "kind": "editorial-synthesis",
+      "statement": "Design Catalog editorial synthesis of the cited public sources; contracts and decision paths are our implementation guidance, not quotations or author endorsements.",
+      "sources": [
+        "https://emilkowal.ski/ui/you-dont-need-animations",
+        "https://emilkowal.ski/ui/great-animations",
+        "https://emilkowal.ski/"
+      ]
+    },
+    "decisionPath": "motion",
+    "useWhen": [
+      "Which change would be harder to understand without movement?"
+    ],
+    "avoidWhen": [
+      "Do not stack stagger, tilt, blur and entrance effects on the same element."
+    ],
+    "inputs": [
+      "A concrete user problem and the current artifact",
+      "Constraints, existing behavior and source attribution to preserve"
+    ],
+    "output": "A bounded application of “Default to no animation” with before/after evidence and remaining limitations.",
+    "recipe": ".choice { transition: background-color 120ms ease-out; }\n.choice[aria-pressed=\"true\"] { background: #efeaee; }\n@media (prefers-reduced-motion: reduce) {\n  .choice { transition: none; }\n}\n/* Never delay state updates until animation completes. */",
+    "acceptance": [
+      "Toggle twice before a transition ends: the latest state wins. With reduced motion, all information and controls remain available immediately.",
+      "Frequency inventory exists for animated surfaces.",
+      "Keyboard paths are instant.",
+      "High-frequency UI has no decorative motion."
+    ],
+    "stateRequirements": {
+      "responsive": "Check 390px and desktop plus 200% zoom; preserve reading order, wrap long text and keep actions reachable.",
+      "accessibility": "Use semantic headings and native controls, visible labels and focus; normal text contrast at least 4.5:1.",
+      "keyboard": "Complete the primary action using Tab, Shift+Tab, Enter and Space; no pointer-only information or focus trap.",
+      "reducedMotion": "Remove nonessential movement; preserve all state and information without waiting for animation.",
+      "loading": "Show pending feedback only during real work; retain context and allow navigation away.",
+      "empty": "Distinguish no content from no matching results; explain how to proceed or reset filters.",
+      "error": "Explain the failed action, retain user input and offer recovery; never claim success on failure.",
+      "interruption": "A newer action wins; cancel or ignore stale results and keep controls responsive.",
+      "stateChange": "Announce important results politely without moving focus unexpectedly."
+    },
+    "compatibility": {
+      "candidates": [
+        "purposeful-motion",
+        "remove-ai-tells",
+        "critic-subagents"
+      ],
+      "rule": "Start with one technique. Add at most one companion for a distinct unsolved problem; candidates are suggestions, not verified compatibility.",
+      "conflicts": [
+        "Two techniques changing the same visual role require an explicit winner.",
+        "Do not combine multiple entrance or attention effects on one target.",
+        "Aesthetic subtraction must not remove semantics, feedback or attribution."
+      ],
+      "stop": "Only state or spatial continuity needs motion; repeated actions stay immediate."
+    },
+    "comparison": {
+      "bad": "Every result animates in after each keystroke, delaying comparison.",
+      "good": "Results update immediately; a brief emphasis on selection confirms only the changed state.",
+      "impact": "Only state or spatial continuity needs motion; repeated actions stay immediate."
+    }
+  }
 }

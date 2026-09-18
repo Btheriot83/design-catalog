@@ -18,14 +18,28 @@ Quiet Folio visual system: paper #FAF9F7 · ink #221C24 · studioInk #6F6470 · 
 ## Fetch order
 
 1. GET /data/index.json — overview, routes, anshuMapping, canonicalApps
-2. Filter techniques by stage or slug list
-3. GET /data/techniques/{slug}.json for procedure, examplePrompts, promptWhy, checklist, antiPatterns, pairsWellWith, workedExamples
+2. Match the user problem to index.decisionPaths. Start with one technique; use stage or slug filters for other problems.
+3. GET /data/techniques/{slug}.json for agentContract plus the existing procedure, examplePrompts, promptWhy, checklist, antiPatterns, pairsWellWith, workedExamples
 4. GET /data/prompts.json when you need a flattened prompt library
 5. Cite /data/sources.json; never invent paywalled quotes
 6. Free craft libraries: /data/resources.json or /resources (transitions, shaders, easing, examples, textures—free first)
 7. Shipaton 2025 winners catalog: /data/shipaton-2025.json or /shipaton-2025 (store previews; public sources; no endorsement)
 
 ## Anshu 1–8 ↔ Build Games Phase A
+
+The mapping below preserves the original full-project workflow. It is optional for a bounded repair; do not run all eight techniques by default.
+
+## Compact contract protocol
+
+Read agentContract.useWhen and avoidWhen before implementing. Bring the named inputs, adapt the framework-neutral recipe, and produce the stated output. Add at most one companion for a distinct unmet need. compatibility.candidates are suggestions, not certified pairings. Resolve two techniques that alter the same role before applying either; never stack multiple attention effects on one target.
+
+Collect observable evidence against acceptance and stateRequirements: responsive, accessibility, keyboard, reducedMotion, loading, empty, error, interruption and stateChange. Non-interface states may be N/A with a reason. An unchecked checklist is not a passed test. Report failures separately and stop when compatibility.stop is satisfied.
+
+index.contractVersion identifies semantics; index.contentHash is a deterministic SHA-256 of exported content inputs; lastUpdated is the explicit editorial release date. Contract provenance is Catalog editorial synthesis, separate from source-author attribution. Public sources only; no paywalled reconstruction or endorsement.
+
+Decision paths: https://design-catalog-three.vercel.app/data/decision-paths.json
+
+### Historical mapping
 
 | # | Slug | Stage | Artifact |
 |---|------|-------|----------|

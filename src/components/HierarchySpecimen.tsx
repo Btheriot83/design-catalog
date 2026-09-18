@@ -1,0 +1,7 @@
+"use client";
+import { useState } from "react";
+import Link from "next/link";
+export function HierarchySpecimen() {
+  const [clear, setClear] = useState(true);
+  return <div className="specimen"><div className="specimen-notes"><p className="eyebrow">Interactive specimen · illustrative content</p><h3>One task deserves<br />the strongest ink.</h3><p>The same words, with a different hierarchy. Equal emphasis asks the reader to rank everything. A clear primary action does that work for them.</p><div className="specimen-switch" role="group" aria-label="Compare action hierarchy"><button type="button" aria-pressed={!clear} onClick={() => setClear(false)}>Before</button><button type="button" aria-pressed={clear} onClick={() => setClear(true)}>After</button></div><Link className="text-link" href="/techniques/hierarchy-with-weight">Inspect the technique ↗</Link></div><div className={`specimen-sheet ${clear ? "is-clear" : ""}`}><p className="specimen-meta">Field notes / 04</p><h4>Ready for review</h4><p>Three observations. One next step.</p><div className="specimen-actions" aria-hidden="true"><span>Review notes ↗</span><span>Save for later</span><span>Archive</span></div><p className="specimen-verdict" role="status">{clear ? "After: review leads; saving and archiving remain available." : "Before: three equal actions compete for attention."}</p><small>Visual sample only; the actions above are not live controls.</small></div></div>;
+}

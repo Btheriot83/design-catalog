@@ -18,14 +18,13 @@ export function FolioNumber({
     const el = ref.current;
     if (!el) return;
     const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    if (reduce) {
-      setAnimating(true);
-      return;
-    }
+    if (reduce) return;
+
+    let frame = 0;
 
     const play = () => {
       setAnimating(false);
-      requestAnimationFrame(() => {
+      frame = requestAnimationFrame(() => {
         void el.offsetHeight;
         setAnimating(true);
       });
@@ -41,7 +40,10 @@ export function FolioNumber({
       { threshold: 0.35 },
     );
     io.observe(el);
-    return () => io.disconnect();
+    return () => {
+      io.disconnect();
+      cancelAnimationFrame(frame);
+    };
   }, [str]);
 
   return (
