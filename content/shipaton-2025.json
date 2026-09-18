@@ -753,7 +753,7 @@
       ],
       "marketingScreenshotTodo": {
         "url": "https://moodhaven.com",
-        "note": "Marketing site capture pending (parent/computerUse)"
+        "note": "moodhaven.com returned HTTP 404 Site Not Found (no fake screenshot)."
       },
       "sources": {
         "revenueCat": "https://www.revenuecat.com/blog/company/shipaton-2025-winners/",
@@ -1108,12 +1108,15 @@
           "kind": "store-preview",
           "label": "App Store preview 4",
           "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/camp-notes/marketing-site.png",
+          "kind": "marketing-site",
+          "label": "Marketing site (mobile)",
+          "widthNote": "~390"
         }
       ],
-      "marketingScreenshotTodo": {
-        "url": "https://campnotes.app/",
-        "note": "Marketing site capture pending (parent/computerUse)"
-      },
+      "marketingScreenshotTodo": null,
       "sources": {
         "revenueCat": "https://www.revenuecat.com/blog/company/shipaton-2025-winners/",
         "showcase": "https://apps.shipaton.com/app/camp-notes"
@@ -1207,7 +1210,7 @@
       ],
       "marketingScreenshotTodo": {
         "url": "https://www.posturely.app",
-        "note": "Marketing site capture pending (parent/computerUse)"
+        "note": "www.posturely.app failed with ERR_TUNNEL_CONNECTION_FAILED after retries."
       },
       "sources": {
         "revenueCat": "https://www.revenuecat.com/blog/company/shipaton-2025-winners/",
@@ -1384,12 +1387,15 @@
           "kind": "store-preview",
           "label": "App Store preview 4",
           "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/crystal-abyss/marketing-site.png",
+          "kind": "marketing-site",
+          "label": "Marketing site (mobile)",
+          "widthNote": "~390"
         }
       ],
-      "marketingScreenshotTodo": {
-        "url": "https://crystal-abyss.com",
-        "note": "Marketing site capture pending (parent/computerUse)"
-      },
+      "marketingScreenshotTodo": null,
       "sources": {
         "revenueCat": "https://www.revenuecat.com/blog/company/shipaton-2025-winners/",
         "showcase": "https://apps.shipaton.com/app/crystal-abyss"
