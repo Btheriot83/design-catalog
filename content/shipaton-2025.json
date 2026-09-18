@@ -1034,12 +1034,15 @@
           "kind": "store-preview",
           "label": "App Store preview 4",
           "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/friendy/marketing-site.png",
+          "kind": "marketing-site",
+          "label": "Marketing site (mobile)",
+          "widthNote": "~390"
         }
       ],
-      "marketingScreenshotTodo": {
-        "url": "https://friendy-web.pages.dev",
-        "note": "Marketing site capture pending (parent/computerUse)"
-      },
+      "marketingScreenshotTodo": null,
       "sources": {
         "revenueCat": "https://www.revenuecat.com/blog/company/shipaton-2025-winners/",
         "showcase": "https://apps.shipaton.com/app/friendy"
