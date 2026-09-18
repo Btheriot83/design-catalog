@@ -1,6 +1,6 @@
 import { readFileSync, readdirSync } from "fs";
 import { join } from "path";
-import type { CraftResource, Designer, Source, Technique } from "./types";
+import type { CraftResource, Designer, ShipatonCatalog, ShipatonWinner, Source, Technique } from "./types";
 
 const root = join(process.cwd(), "content");
 
@@ -80,4 +80,37 @@ export function getAllExamplePrompts() {
 
 export function getResources(): CraftResource[] {
   return readJson<CraftResource[]>(join(root, "resources.json"));
+}
+
+
+export function getShipaton2025(): ShipatonCatalog {
+  return readJson<ShipatonCatalog>(join(root, "shipaton-2025.json"));
+}
+
+export function getShipatonWinner(slug: string): ShipatonWinner | undefined {
+  return getShipaton2025().winners.find((w) => w.slug === slug);
+}
+
+export function getShipatonByCategory() {
+  const catalog = getShipaton2025();
+  const order = [
+    "Grand Prize",
+    "#BuildInPublic",
+    "Design",
+    "Launch",
+    "HAMM",
+    "Peace",
+    "Vibe Coding",
+    "OneSignal",
+    "Kotlin Multiplatform",
+    "Internal",
+  ];
+  return order
+    .map((category) => ({
+      category,
+      winners: catalog.winners
+        .filter((w) => w.category === category)
+        .sort((a, b) => a.place - b.place),
+    }))
+    .filter((g) => g.winners.length > 0);
 }

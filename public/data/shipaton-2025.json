@@ -1,0 +1,1390 @@
+{
+  "year": 2025,
+  "title": "Shipaton 2025 winners",
+  "description": "Catalog of Shipaton 2025 award winners for design study. Public sources only; no endorsement.",
+  "sources": [
+    "https://www.revenuecat.com/blog/company/shipaton-2025-winners/",
+    "https://apps.shipaton.com/winners"
+  ],
+  "disclaimer": "Independent design study desk. Citations and store previews do not imply affiliation or endorsement.",
+  "winnerCount": 30,
+  "winners": [
+    {
+      "name": "Payout",
+      "slug": "payout",
+      "category": "Grand Prize",
+      "place": 1,
+      "oneLiner": "Discover class-action settlements you may already qualify for — transparent, automated, and accessible.",
+      "showcaseSlug": "payout",
+      "appStoreUrl": "https://apps.apple.com/us/app/payout-claim-class-actions/id6748968935?uo=4",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.payout.app&amp;hl=en&amp;gl=us",
+      "showcaseUrl": "https://apps.shipaton.com/app/payout",
+      "marketingSiteUrl": "https://trypayout.app",
+      "screenshots": [
+        {
+          "path": "/shipaton-2025/payout/store-preview-1.png",
+          "kind": "store-preview",
+          "label": "App Store preview 1",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/payout/store-preview-2.png",
+          "kind": "store-preview",
+          "label": "App Store preview 2",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/payout/store-preview-3.png",
+          "kind": "store-preview",
+          "label": "App Store preview 3",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/payout/store-preview-4.png",
+          "kind": "store-preview",
+          "label": "App Store preview 4",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        }
+      ],
+      "marketingScreenshotTodo": {
+        "url": "https://trypayout.app",
+        "note": "Marketing site capture pending (parent/computerUse)"
+      },
+      "sources": {
+        "revenueCat": "https://www.revenuecat.com/blog/company/shipaton-2025-winners/",
+        "showcase": "https://apps.shipaton.com/app/payout"
+      }
+    },
+    {
+      "name": "Gurwi",
+      "slug": "gurwi",
+      "category": "#BuildInPublic",
+      "place": 1,
+      "oneLiner": "Learn anything in an easy, visual, interactive way — short modules with images, animations, and questions.",
+      "showcaseSlug": "gurwi-learn-anything",
+      "appStoreUrl": "https://apps.apple.com/us/app/gurwi-learn-anything/id6737016341?uo=4",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.gurwi&hl=en&gl=us",
+      "showcaseUrl": "https://apps.shipaton.com/app/gurwi-learn-anything",
+      "marketingSiteUrl": "https://gurwi.com",
+      "screenshots": [
+        {
+          "path": "/shipaton-2025/gurwi/store-preview-1.png",
+          "kind": "store-preview",
+          "label": "App Store preview 1",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/gurwi/store-preview-2.png",
+          "kind": "store-preview",
+          "label": "App Store preview 2",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/gurwi/store-preview-3.png",
+          "kind": "store-preview",
+          "label": "App Store preview 3",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/gurwi/store-preview-4.png",
+          "kind": "store-preview",
+          "label": "App Store preview 4",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        }
+      ],
+      "marketingScreenshotTodo": {
+        "url": "https://gurwi.com",
+        "note": "Marketing site capture pending (parent/computerUse)"
+      },
+      "sources": {
+        "revenueCat": "https://www.revenuecat.com/blog/company/shipaton-2025-winners/",
+        "showcase": "https://apps.shipaton.com/app/gurwi-learn-anything"
+      }
+    },
+    {
+      "name": "Echo Reminder",
+      "slug": "echo-reminder",
+      "category": "#BuildInPublic",
+      "place": 2,
+      "oneLiner": "Speak to capture reminders — voice parsed into titles, times, and repeat schedules.",
+      "showcaseSlug": "echo-reminder",
+      "appStoreUrl": "https://apps.apple.com/us/app/voice-reminder-planner-echo/id6752544263?uo=4",
+      "playStoreUrl": null,
+      "showcaseUrl": "https://apps.shipaton.com/app/echo-reminder",
+      "marketingSiteUrl": "https://echoreminder.com",
+      "screenshots": [
+        {
+          "path": "/shipaton-2025/echo-reminder/store-preview-1.jpg",
+          "kind": "store-preview",
+          "label": "App Store preview 1",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/echo-reminder/store-preview-2.jpg",
+          "kind": "store-preview",
+          "label": "App Store preview 2",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/echo-reminder/store-preview-3.jpg",
+          "kind": "store-preview",
+          "label": "App Store preview 3",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/echo-reminder/store-preview-4.jpg",
+          "kind": "store-preview",
+          "label": "App Store preview 4",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        }
+      ],
+      "marketingScreenshotTodo": {
+        "url": "https://echoreminder.com",
+        "note": "Marketing site capture pending (parent/computerUse)"
+      },
+      "sources": {
+        "revenueCat": "https://www.revenuecat.com/blog/company/shipaton-2025-winners/",
+        "showcase": "https://apps.shipaton.com/app/echo-reminder"
+      }
+    },
+    {
+      "name": "Tomo Japan",
+      "slug": "tomo-japan",
+      "category": "#BuildInPublic",
+      "place": 3,
+      "oneLiner": "A friendly, curated Japan travel companion with destinations, city guides, and local gems.",
+      "showcaseSlug": "tomo-japan",
+      "appStoreUrl": "https://apps.apple.com/us/app/tomo-japan/id6752227712?uo=4",
+      "playStoreUrl": null,
+      "showcaseUrl": "https://apps.shipaton.com/app/tomo-japan",
+      "marketingSiteUrl": null,
+      "screenshots": [
+        {
+          "path": "/shipaton-2025/tomo-japan/store-preview-1.png",
+          "kind": "store-preview",
+          "label": "App Store preview 1",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/tomo-japan/store-preview-2.png",
+          "kind": "store-preview",
+          "label": "App Store preview 2",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/tomo-japan/store-preview-3.png",
+          "kind": "store-preview",
+          "label": "App Store preview 3",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/tomo-japan/store-preview-4.png",
+          "kind": "store-preview",
+          "label": "App Store preview 4",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        }
+      ],
+      "marketingScreenshotTodo": null,
+      "sources": {
+        "revenueCat": "https://www.revenuecat.com/blog/company/shipaton-2025-winners/",
+        "showcase": "https://apps.shipaton.com/app/tomo-japan"
+      }
+    },
+    {
+      "name": "Dayloop",
+      "slug": "dayloop",
+      "category": "Design",
+      "place": 1,
+      "oneLiner": "Turn everyday moments into cinematic timelapse videos with auto face alignment — no editing skills required.",
+      "showcaseSlug": "dayloop-everyday-timelapse",
+      "appStoreUrl": "https://apps.apple.com/us/app/dayloop-photo-journal/id6740197860?uo=4",
+      "playStoreUrl": null,
+      "showcaseUrl": "https://apps.shipaton.com/app/dayloop-everyday-timelapse",
+      "marketingSiteUrl": null,
+      "screenshots": [
+        {
+          "path": "/shipaton-2025/dayloop/store-preview-1.jpg",
+          "kind": "store-preview",
+          "label": "App Store preview 1",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/dayloop/store-preview-2.jpg",
+          "kind": "store-preview",
+          "label": "App Store preview 2",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/dayloop/store-preview-3.jpg",
+          "kind": "store-preview",
+          "label": "App Store preview 3",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/dayloop/store-preview-4.jpg",
+          "kind": "store-preview",
+          "label": "App Store preview 4",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        }
+      ],
+      "marketingScreenshotTodo": null,
+      "sources": {
+        "revenueCat": "https://www.revenuecat.com/blog/company/shipaton-2025-winners/",
+        "showcase": "https://apps.shipaton.com/app/dayloop-everyday-timelapse"
+      }
+    },
+    {
+      "name": "SkillMe",
+      "slug": "skillme",
+      "category": "Design",
+      "place": 2,
+      "oneLiner": "Learn any skill one daily challenge at a time — personalized plans powered by AI.",
+      "showcaseSlug": "skillme",
+      "appStoreUrl": "https://apps.apple.com/us/app/skillme-learn-any-skill/id6749891663?uo=4",
+      "playStoreUrl": null,
+      "showcaseUrl": "https://apps.shipaton.com/app/skillme",
+      "marketingSiteUrl": "https://www.getskillme.app",
+      "screenshots": [
+        {
+          "path": "/shipaton-2025/skillme/store-preview-1.png",
+          "kind": "store-preview",
+          "label": "App Store preview 1",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/skillme/store-preview-2.png",
+          "kind": "store-preview",
+          "label": "App Store preview 2",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/skillme/store-preview-3.png",
+          "kind": "store-preview",
+          "label": "App Store preview 3",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/skillme/store-preview-4.png",
+          "kind": "store-preview",
+          "label": "App Store preview 4",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        }
+      ],
+      "marketingScreenshotTodo": {
+        "url": "https://www.getskillme.app",
+        "note": "Marketing site capture pending (parent/computerUse)"
+      },
+      "sources": {
+        "revenueCat": "https://www.revenuecat.com/blog/company/shipaton-2025-winners/",
+        "showcase": "https://apps.shipaton.com/app/skillme"
+      }
+    },
+    {
+      "name": "PitchLab",
+      "slug": "pitchlab",
+      "category": "Design",
+      "place": 3,
+      "oneLiner": "Professional-grade baseball pitch tracking from a single iPhone camera — velocity, spin, and break.",
+      "showcaseSlug": "pitchlab-professional-grade-baseball-pitch-tracking",
+      "appStoreUrl": "https://apps.apple.com/us/app/pitchlab-baseball-softball/id6738223162?uo=4",
+      "playStoreUrl": null,
+      "showcaseUrl": "https://apps.shipaton.com/app/pitchlab-professional-grade-baseball-pitch-tracking",
+      "marketingSiteUrl": "https://pitchlab.app",
+      "screenshots": [
+        {
+          "path": "/shipaton-2025/pitchlab/store-preview-1.png",
+          "kind": "store-preview",
+          "label": "App Store preview 1",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/pitchlab/store-preview-2.png",
+          "kind": "store-preview",
+          "label": "App Store preview 2",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/pitchlab/store-preview-3.png",
+          "kind": "store-preview",
+          "label": "App Store preview 3",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        }
+      ],
+      "marketingScreenshotTodo": {
+        "url": "https://pitchlab.app",
+        "note": "Marketing site capture pending (parent/computerUse)"
+      },
+      "sources": {
+        "revenueCat": "https://www.revenuecat.com/blog/company/shipaton-2025-winners/",
+        "showcase": "https://apps.shipaton.com/app/pitchlab-professional-grade-baseball-pitch-tracking"
+      }
+    },
+    {
+      "name": "ReadHim",
+      "slug": "readhim",
+      "category": "Launch",
+      "place": 1,
+      "oneLiner": "Decode romantic text conversations with data-driven reports on tone, patterns, and red flags.",
+      "showcaseSlug": "readhim",
+      "appStoreUrl": "https://apps.apple.com/us/app/readhim/id6751736922?uo=4",
+      "playStoreUrl": null,
+      "showcaseUrl": "https://apps.shipaton.com/app/readhim",
+      "marketingSiteUrl": "https://www.readhim.app",
+      "screenshots": [
+        {
+          "path": "/shipaton-2025/readhim/store-preview-1.png",
+          "kind": "store-preview",
+          "label": "App Store preview 1",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/readhim/store-preview-2.png",
+          "kind": "store-preview",
+          "label": "App Store preview 2",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/readhim/store-preview-3.png",
+          "kind": "store-preview",
+          "label": "App Store preview 3",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/readhim/store-preview-4.png",
+          "kind": "store-preview",
+          "label": "App Store preview 4",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        }
+      ],
+      "marketingScreenshotTodo": {
+        "url": "https://www.readhim.app",
+        "note": "Marketing site capture pending (parent/computerUse)"
+      },
+      "sources": {
+        "revenueCat": "https://www.revenuecat.com/blog/company/shipaton-2025-winners/",
+        "showcase": "https://apps.shipaton.com/app/readhim"
+      }
+    },
+    {
+      "name": "Shutter Declutter",
+      "slug": "shutter-declutter",
+      "category": "Launch",
+      "place": 2,
+      "oneLiner": "Photo cleanup as a daily ritual — swipe through photos from this date in past years.",
+      "showcaseSlug": "shutter-declutter-photo-cleaner",
+      "appStoreUrl": "https://apps.apple.com/us/app/shutter-declutter-pic-cleaner/id6745152835?uo=4",
+      "playStoreUrl": null,
+      "showcaseUrl": "https://apps.shipaton.com/app/shutter-declutter-photo-cleaner",
+      "marketingSiteUrl": null,
+      "screenshots": [
+        {
+          "path": "/shipaton-2025/shutter-declutter/store-preview-1.png",
+          "kind": "store-preview",
+          "label": "App Store preview 1",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/shutter-declutter/store-preview-2.png",
+          "kind": "store-preview",
+          "label": "App Store preview 2",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/shutter-declutter/store-preview-3.png",
+          "kind": "store-preview",
+          "label": "App Store preview 3",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/shutter-declutter/store-preview-4.png",
+          "kind": "store-preview",
+          "label": "App Store preview 4",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        }
+      ],
+      "marketingScreenshotTodo": null,
+      "sources": {
+        "revenueCat": "https://www.revenuecat.com/blog/company/shipaton-2025-winners/",
+        "showcase": "https://apps.shipaton.com/app/shutter-declutter-photo-cleaner"
+      }
+    },
+    {
+      "name": "MemoLune",
+      "slug": "memo-lune",
+      "category": "Launch",
+      "place": 3,
+      "oneLiner": "Jot thoughts as naturally as sending a message — voice, OCR, and chat-like memos.",
+      "showcaseSlug": "memolune",
+      "appStoreUrl": "https://apps.apple.com/us/app/memolune-chat-speak-and-pics/id6752797808?uo=4",
+      "playStoreUrl": null,
+      "showcaseUrl": "https://apps.shipaton.com/app/memolune",
+      "marketingSiteUrl": "https://hundreds.co.jp/memolu",
+      "screenshots": [
+        {
+          "path": "/shipaton-2025/memo-lune/store-preview-1.png",
+          "kind": "store-preview",
+          "label": "App Store preview 1",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/memo-lune/store-preview-2.png",
+          "kind": "store-preview",
+          "label": "App Store preview 2",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/memo-lune/store-preview-3.png",
+          "kind": "store-preview",
+          "label": "App Store preview 3",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/memo-lune/store-preview-4.png",
+          "kind": "store-preview",
+          "label": "App Store preview 4",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        }
+      ],
+      "marketingScreenshotTodo": {
+        "url": "https://hundreds.co.jp/memolu",
+        "note": "Marketing site capture pending (parent/computerUse)"
+      },
+      "sources": {
+        "revenueCat": "https://www.revenuecat.com/blog/company/shipaton-2025-winners/",
+        "showcase": "https://apps.shipaton.com/app/memolune"
+      }
+    },
+    {
+      "name": "Vector Guard",
+      "slug": "vector-guard",
+      "category": "HAMM",
+      "place": 1,
+      "oneLiner": "Identify disease-carrying ticks and mosquitoes with offline CDC data — and fund free access in high-risk ZIPs.",
+      "showcaseSlug": "vector-guard",
+      "appStoreUrl": "https://apps.apple.com/us/app/vector-guard-bug-identifier/id6749871217?uo=4",
+      "playStoreUrl": null,
+      "showcaseUrl": "https://apps.shipaton.com/app/vector-guard",
+      "marketingSiteUrl": "https://vectorguard.app",
+      "screenshots": [
+        {
+          "path": "/shipaton-2025/vector-guard/store-preview-1.png",
+          "kind": "store-preview",
+          "label": "App Store preview 1",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/vector-guard/store-preview-2.png",
+          "kind": "store-preview",
+          "label": "App Store preview 2",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/vector-guard/store-preview-3.png",
+          "kind": "store-preview",
+          "label": "App Store preview 3",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/vector-guard/store-preview-4.png",
+          "kind": "store-preview",
+          "label": "App Store preview 4",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        }
+      ],
+      "marketingScreenshotTodo": {
+        "url": "https://vectorguard.app",
+        "note": "Marketing site capture pending (parent/computerUse)"
+      },
+      "sources": {
+        "revenueCat": "https://www.revenuecat.com/blog/company/shipaton-2025-winners/",
+        "showcase": "https://apps.shipaton.com/app/vector-guard"
+      }
+    },
+    {
+      "name": "Napkinmatic AI3D",
+      "slug": "napkinmatic",
+      "category": "HAMM",
+      "place": 2,
+      "oneLiner": "Snap a napkin doodle and turn it into digital art, 3D models, and animated videos.",
+      "showcaseSlug": "napkinmatic-ai3d",
+      "appStoreUrl": "https://apps.apple.com/us/app/napkinmatic-ai3d/id6590601686",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.ai3d.napkinmatic&hl=en&gl=us",
+      "showcaseUrl": "https://apps.shipaton.com/app/napkinmatic-ai3d",
+      "marketingSiteUrl": null,
+      "screenshots": [
+        {
+          "path": "/shipaton-2025/napkinmatic/store-preview-1.jpg",
+          "kind": "store-preview",
+          "label": "Play Store preview 1",
+          "widthNote": "Play Store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/napkinmatic/store-preview-2.jpg",
+          "kind": "store-preview",
+          "label": "Play Store preview 2",
+          "widthNote": "Play Store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/napkinmatic/store-preview-3.jpg",
+          "kind": "store-preview",
+          "label": "Play Store preview 3",
+          "widthNote": "Play Store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/napkinmatic/store-preview-4.jpg",
+          "kind": "store-preview",
+          "label": "Play Store preview 4",
+          "widthNote": "Play Store gallery (not live device)"
+        }
+      ],
+      "marketingScreenshotTodo": null,
+      "sources": {
+        "revenueCat": "https://www.revenuecat.com/blog/company/shipaton-2025-winners/",
+        "showcase": "https://apps.shipaton.com/app/napkinmatic-ai3d"
+      }
+    },
+    {
+      "name": "Kigaru Talks",
+      "slug": "kigaru-talks",
+      "category": "HAMM",
+      "place": 3,
+      "oneLiner": "Speak Japanese with confidence through real AI conversation — judgment-free fluency practice.",
+      "showcaseSlug": "kigaru-talks",
+      "appStoreUrl": "https://apps.apple.com/us/app/speak-japanese-kigaru-talks/id6749827005?uo=4",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.kigarutalks.conversations&amp;hl=en&amp;gl=us",
+      "showcaseUrl": "https://apps.shipaton.com/app/kigaru-talks",
+      "marketingSiteUrl": "https://kigarutalks.com",
+      "screenshots": [
+        {
+          "path": "/shipaton-2025/kigaru-talks/store-preview-1.png",
+          "kind": "store-preview",
+          "label": "App Store preview 1",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/kigaru-talks/store-preview-2.png",
+          "kind": "store-preview",
+          "label": "App Store preview 2",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/kigaru-talks/store-preview-3.png",
+          "kind": "store-preview",
+          "label": "App Store preview 3",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/kigaru-talks/store-preview-4.png",
+          "kind": "store-preview",
+          "label": "App Store preview 4",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        }
+      ],
+      "marketingScreenshotTodo": {
+        "url": "https://kigarutalks.com",
+        "note": "Marketing site capture pending (parent/computerUse)"
+      },
+      "sources": {
+        "revenueCat": "https://www.revenuecat.com/blog/company/shipaton-2025-winners/",
+        "showcase": "https://apps.shipaton.com/app/kigaru-talks"
+      }
+    },
+    {
+      "name": "Heartbeat Hero",
+      "slug": "heartbeat-hero",
+      "category": "Peace",
+      "place": 1,
+      "oneLiner": "CPR coach on iPhone/iPad — rhythm, depth, AI call simulation, and AED map, mostly offline.",
+      "showcaseSlug": "heartbeat-hero",
+      "appStoreUrl": "https://apps.apple.com/gb/app/heartbeat-hero-cpr-education/id6736655661?uo=4",
+      "playStoreUrl": null,
+      "showcaseUrl": "https://apps.shipaton.com/app/heartbeat-hero",
+      "marketingSiteUrl": "https://forres.tech/heartbeat-hero",
+      "screenshots": [
+        {
+          "path": "/shipaton-2025/heartbeat-hero/store-preview-1.png",
+          "kind": "store-preview",
+          "label": "App Store preview 1",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/heartbeat-hero/store-preview-2.png",
+          "kind": "store-preview",
+          "label": "App Store preview 2",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/heartbeat-hero/store-preview-3.png",
+          "kind": "store-preview",
+          "label": "App Store preview 3",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/heartbeat-hero/store-preview-4.png",
+          "kind": "store-preview",
+          "label": "App Store preview 4",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        }
+      ],
+      "marketingScreenshotTodo": {
+        "url": "https://forres.tech/heartbeat-hero",
+        "note": "Marketing site capture pending (parent/computerUse)"
+      },
+      "sources": {
+        "revenueCat": "https://www.revenuecat.com/blog/company/shipaton-2025-winners/",
+        "showcase": "https://apps.shipaton.com/app/heartbeat-hero"
+      }
+    },
+    {
+      "name": "Hearing Buddy",
+      "slug": "hearing-buddy",
+      "category": "Peace",
+      "place": 2,
+      "oneLiner": "Real-time private captions for conversations — on-device speech recognition for hearing challenges.",
+      "showcaseSlug": "hearing-buddy",
+      "appStoreUrl": "https://apps.apple.com/us/app/hearing-buddy-speech-to-text/id6747363502?uo=4",
+      "playStoreUrl": null,
+      "showcaseUrl": "https://apps.shipaton.com/app/hearing-buddy",
+      "marketingSiteUrl": "https://hearingbuddyapp.com",
+      "screenshots": [
+        {
+          "path": "/shipaton-2025/hearing-buddy/store-preview-1.png",
+          "kind": "store-preview",
+          "label": "App Store preview 1",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/hearing-buddy/store-preview-2.png",
+          "kind": "store-preview",
+          "label": "App Store preview 2",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/hearing-buddy/store-preview-3.png",
+          "kind": "store-preview",
+          "label": "App Store preview 3",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/hearing-buddy/store-preview-4.png",
+          "kind": "store-preview",
+          "label": "App Store preview 4",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        }
+      ],
+      "marketingScreenshotTodo": {
+        "url": "https://hearingbuddyapp.com",
+        "note": "Marketing site capture pending (parent/computerUse)"
+      },
+      "sources": {
+        "revenueCat": "https://www.revenuecat.com/blog/company/shipaton-2025-winners/",
+        "showcase": "https://apps.shipaton.com/app/hearing-buddy"
+      }
+    },
+    {
+      "name": "MoodHaven",
+      "slug": "moodhaven",
+      "category": "Peace",
+      "place": 3,
+      "oneLiner": "Help parents track a child’s moods, sleep, medication, and incidents into clear patterns.",
+      "showcaseSlug": "moodhaven",
+      "appStoreUrl": "https://apps.apple.com/us/app/moodhaven-mood-tracker/id6752584907?uo=4",
+      "playStoreUrl": null,
+      "showcaseUrl": "https://apps.shipaton.com/app/moodhaven",
+      "marketingSiteUrl": "https://moodhaven.com",
+      "screenshots": [
+        {
+          "path": "/shipaton-2025/moodhaven/store-preview-1.jpg",
+          "kind": "store-preview",
+          "label": "App Store preview 1",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/moodhaven/store-preview-2.jpg",
+          "kind": "store-preview",
+          "label": "App Store preview 2",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/moodhaven/store-preview-3.jpg",
+          "kind": "store-preview",
+          "label": "App Store preview 3",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/moodhaven/store-preview-4.jpg",
+          "kind": "store-preview",
+          "label": "App Store preview 4",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        }
+      ],
+      "marketingScreenshotTodo": {
+        "url": "https://moodhaven.com",
+        "note": "Marketing site capture pending (parent/computerUse)"
+      },
+      "sources": {
+        "revenueCat": "https://www.revenuecat.com/blog/company/shipaton-2025-winners/",
+        "showcase": "https://apps.shipaton.com/app/moodhaven"
+      }
+    },
+    {
+      "name": "Otter Day",
+      "slug": "otter-day",
+      "category": "Vibe Coding",
+      "place": 1,
+      "oneLiner": "Learn to name the weekday of any date in history — a story-driven calendar logic game.",
+      "showcaseSlug": "otter-day-weekday-guesser",
+      "appStoreUrl": "https://apps.apple.com/us/app/otterday-calendar-logic-game/id6747994124?uo=4",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=fpdigitallabs.otter&hl=en&gl=us",
+      "showcaseUrl": "https://apps.shipaton.com/app/otter-day-weekday-guesser",
+      "marketingSiteUrl": "https://felixplagge.dev/",
+      "screenshots": [
+        {
+          "path": "/shipaton-2025/otter-day/store-preview-1.png",
+          "kind": "store-preview",
+          "label": "App Store preview 1",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/otter-day/store-preview-2.png",
+          "kind": "store-preview",
+          "label": "App Store preview 2",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/otter-day/store-preview-3.png",
+          "kind": "store-preview",
+          "label": "App Store preview 3",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/otter-day/store-preview-4.png",
+          "kind": "store-preview",
+          "label": "App Store preview 4",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        }
+      ],
+      "marketingScreenshotTodo": {
+        "url": "https://felixplagge.dev/",
+        "note": "Marketing site capture pending (parent/computerUse)"
+      },
+      "sources": {
+        "revenueCat": "https://www.revenuecat.com/blog/company/shipaton-2025-winners/",
+        "showcase": "https://apps.shipaton.com/app/otter-day-weekday-guesser"
+      }
+    },
+    {
+      "name": "Dripped",
+      "slug": "dripped",
+      "category": "Vibe Coding",
+      "place": 2,
+      "oneLiner": "AI stylist for your wardrobe — answer “what should I wear today?” with outfit suggestions.",
+      "showcaseSlug": "dripped",
+      "appStoreUrl": "https://apps.apple.com/us/app/outfit-closet-fits-dripped/id6749790183?uo=4",
+      "playStoreUrl": null,
+      "showcaseUrl": "https://apps.shipaton.com/app/dripped",
+      "marketingSiteUrl": "https://dripped.app",
+      "screenshots": [
+        {
+          "path": "/shipaton-2025/dripped/store-preview-1.jpg",
+          "kind": "store-preview",
+          "label": "App Store preview 1",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/dripped/store-preview-2.jpg",
+          "kind": "store-preview",
+          "label": "App Store preview 2",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/dripped/store-preview-3.jpg",
+          "kind": "store-preview",
+          "label": "App Store preview 3",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/dripped/store-preview-4.jpg",
+          "kind": "store-preview",
+          "label": "App Store preview 4",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        }
+      ],
+      "marketingScreenshotTodo": {
+        "url": "https://dripped.app",
+        "note": "Marketing site capture pending (parent/computerUse)"
+      },
+      "sources": {
+        "revenueCat": "https://www.revenuecat.com/blog/company/shipaton-2025-winners/",
+        "showcase": "https://apps.shipaton.com/app/dripped"
+      }
+    },
+    {
+      "name": "MaestLog",
+      "slug": "maestlog",
+      "category": "Vibe Coding",
+      "place": 3,
+      "oneLiner": "An elegant concert diary for classical music lovers — venues, programs, reflections, ratings.",
+      "showcaseSlug": "maestlog-your-personal-symphony-journal",
+      "appStoreUrl": "https://apps.apple.com/us/app/maestlog-classical-diary/id6752569728?uo=4",
+      "playStoreUrl": null,
+      "showcaseUrl": "https://apps.shipaton.com/app/maestlog-your-personal-symphony-journal",
+      "marketingSiteUrl": "https://maestlog.app/",
+      "screenshots": [
+        {
+          "path": "/shipaton-2025/maestlog/store-preview-1.png",
+          "kind": "store-preview",
+          "label": "App Store preview 1",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/maestlog/store-preview-2.png",
+          "kind": "store-preview",
+          "label": "App Store preview 2",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/maestlog/store-preview-3.png",
+          "kind": "store-preview",
+          "label": "App Store preview 3",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/maestlog/store-preview-4.png",
+          "kind": "store-preview",
+          "label": "App Store preview 4",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        }
+      ],
+      "marketingScreenshotTodo": {
+        "url": "https://maestlog.app/",
+        "note": "Marketing site capture pending (parent/computerUse)"
+      },
+      "sources": {
+        "revenueCat": "https://www.revenuecat.com/blog/company/shipaton-2025-winners/",
+        "showcase": "https://apps.shipaton.com/app/maestlog-your-personal-symphony-journal"
+      }
+    },
+    {
+      "name": "Cooked This",
+      "slug": "cooked-this",
+      "category": "OneSignal",
+      "place": 1,
+      "oneLiner": "Cooking diary and tracker — log meals, track variety, and celebrate kitchen streaks.",
+      "showcaseSlug": "cooked-this-cooking-diary-and-tracker",
+      "appStoreUrl": "https://apps.apple.com/us/app/cookedthis-cooking-journal/id6749899791?uo=4",
+      "playStoreUrl": null,
+      "showcaseUrl": "https://apps.shipaton.com/app/cooked-this-cooking-diary-and-tracker",
+      "marketingSiteUrl": null,
+      "screenshots": [
+        {
+          "path": "/shipaton-2025/cooked-this/store-preview-1.png",
+          "kind": "store-preview",
+          "label": "App Store preview 1",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/cooked-this/store-preview-2.png",
+          "kind": "store-preview",
+          "label": "App Store preview 2",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/cooked-this/store-preview-3.png",
+          "kind": "store-preview",
+          "label": "App Store preview 3",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/cooked-this/store-preview-4.png",
+          "kind": "store-preview",
+          "label": "App Store preview 4",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        }
+      ],
+      "marketingScreenshotTodo": null,
+      "sources": {
+        "revenueCat": "https://www.revenuecat.com/blog/company/shipaton-2025-winners/",
+        "showcase": "https://apps.shipaton.com/app/cooked-this-cooking-diary-and-tracker"
+      }
+    },
+    {
+      "name": "Voicetree",
+      "slug": "voicetree",
+      "category": "OneSignal",
+      "place": 2,
+      "oneLiner": "AI meeting notes for work and study — record, transcribe, summarize, and chat with transcripts.",
+      "showcaseSlug": "voicetree-ai-meeting-notes-for-work-study",
+      "appStoreUrl": "https://apps.apple.com/us/app/voicetree-record-transcribe/id6747253996?uo=4",
+      "playStoreUrl": null,
+      "showcaseUrl": "https://apps.shipaton.com/app/voicetree-ai-meeting-notes-for-work-study",
+      "marketingSiteUrl": "https://voicetree.app",
+      "screenshots": [
+        {
+          "path": "/shipaton-2025/voicetree/store-preview-1.jpg",
+          "kind": "store-preview",
+          "label": "App Store preview 1",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/voicetree/store-preview-2.jpg",
+          "kind": "store-preview",
+          "label": "App Store preview 2",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/voicetree/store-preview-3.jpg",
+          "kind": "store-preview",
+          "label": "App Store preview 3",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/voicetree/store-preview-4.jpg",
+          "kind": "store-preview",
+          "label": "App Store preview 4",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        }
+      ],
+      "marketingScreenshotTodo": {
+        "url": "https://voicetree.app",
+        "note": "Marketing site capture pending (parent/computerUse)"
+      },
+      "sources": {
+        "revenueCat": "https://www.revenuecat.com/blog/company/shipaton-2025-winners/",
+        "showcase": "https://apps.shipaton.com/app/voicetree-ai-meeting-notes-for-work-study"
+      }
+    },
+    {
+      "name": "Friendy+",
+      "slug": "friendy",
+      "category": "OneSignal",
+      "place": 3,
+      "oneLiner": "Capture new contacts and stay in touch — a personal relationship assistant for weak ties.",
+      "showcaseSlug": "friendy",
+      "appStoreUrl": "https://apps.apple.com/us/app/friendy/id6752370787?uo=4",
+      "playStoreUrl": null,
+      "showcaseUrl": "https://apps.shipaton.com/app/friendy",
+      "marketingSiteUrl": "https://friendy-web.pages.dev",
+      "screenshots": [
+        {
+          "path": "/shipaton-2025/friendy/store-preview-1.png",
+          "kind": "store-preview",
+          "label": "App Store preview 1",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/friendy/store-preview-2.png",
+          "kind": "store-preview",
+          "label": "App Store preview 2",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/friendy/store-preview-3.png",
+          "kind": "store-preview",
+          "label": "App Store preview 3",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/friendy/store-preview-4.png",
+          "kind": "store-preview",
+          "label": "App Store preview 4",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        }
+      ],
+      "marketingScreenshotTodo": {
+        "url": "https://friendy-web.pages.dev",
+        "note": "Marketing site capture pending (parent/computerUse)"
+      },
+      "sources": {
+        "revenueCat": "https://www.revenuecat.com/blog/company/shipaton-2025-winners/",
+        "showcase": "https://apps.shipaton.com/app/friendy"
+      }
+    },
+    {
+      "name": "Studient",
+      "slug": "studient",
+      "category": "OneSignal",
+      "place": 4,
+      "oneLiner": "Turn any PDF into flashcards, quizzes, and summaries — an AI study companion.",
+      "showcaseSlug": "studient",
+      "appStoreUrl": "https://apps.apple.com/us/app/studient-ai/id6751546811?uo=4",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.daya.studient&hl=en&gl=us",
+      "showcaseUrl": "https://apps.shipaton.com/app/studient",
+      "marketingSiteUrl": null,
+      "screenshots": [
+        {
+          "path": "/shipaton-2025/studient/store-preview-1.png",
+          "kind": "store-preview",
+          "label": "App Store preview 1",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        }
+      ],
+      "marketingScreenshotTodo": null,
+      "sources": {
+        "revenueCat": "https://www.revenuecat.com/blog/company/shipaton-2025-winners/",
+        "showcase": "https://apps.shipaton.com/app/studient"
+      }
+    },
+    {
+      "name": "Camp Notes",
+      "slug": "camp-notes",
+      "category": "OneSignal",
+      "place": 5,
+      "oneLiner": "Camping journal for site-level notes, photos, ratings, and a crowdsourced campground database.",
+      "showcaseSlug": "camp-notes",
+      "appStoreUrl": "https://apps.apple.com/us/app/camp-notes-camping-journal/id6749878726?uo=4",
+      "playStoreUrl": null,
+      "showcaseUrl": "https://apps.shipaton.com/app/camp-notes",
+      "marketingSiteUrl": "https://campnotes.app/",
+      "screenshots": [
+        {
+          "path": "/shipaton-2025/camp-notes/store-preview-1.png",
+          "kind": "store-preview",
+          "label": "App Store preview 1",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/camp-notes/store-preview-2.png",
+          "kind": "store-preview",
+          "label": "App Store preview 2",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/camp-notes/store-preview-3.png",
+          "kind": "store-preview",
+          "label": "App Store preview 3",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/camp-notes/store-preview-4.png",
+          "kind": "store-preview",
+          "label": "App Store preview 4",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        }
+      ],
+      "marketingScreenshotTodo": {
+        "url": "https://campnotes.app/",
+        "note": "Marketing site capture pending (parent/computerUse)"
+      },
+      "sources": {
+        "revenueCat": "https://www.revenuecat.com/blog/company/shipaton-2025-winners/",
+        "showcase": "https://apps.shipaton.com/app/camp-notes"
+      }
+    },
+    {
+      "name": "Momental",
+      "slug": "momental",
+      "category": "Kotlin Multiplatform",
+      "place": 1,
+      "oneLiner": "Minimalist meditation and focus — one page, one tap, customizable soundscapes. No login, no ads.",
+      "showcaseSlug": "momental-meditate-sleep-focus",
+      "appStoreUrl": "https://apps.apple.com/us/app/momental-relax-sleep-sounds/id6749689590?uo=4",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=ai.momental&hl=en&gl=us",
+      "showcaseUrl": "https://apps.shipaton.com/app/momental-meditate-sleep-focus",
+      "marketingSiteUrl": "https://momental.ai",
+      "screenshots": [
+        {
+          "path": "/shipaton-2025/momental/store-preview-1.jpg",
+          "kind": "store-preview",
+          "label": "App Store preview 1",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/momental/store-preview-2.jpg",
+          "kind": "store-preview",
+          "label": "App Store preview 2",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/momental/store-preview-3.jpg",
+          "kind": "store-preview",
+          "label": "App Store preview 3",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/momental/store-preview-4.jpg",
+          "kind": "store-preview",
+          "label": "App Store preview 4",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        }
+      ],
+      "marketingScreenshotTodo": {
+        "url": "https://momental.ai",
+        "note": "Marketing site capture pending (parent/computerUse)"
+      },
+      "sources": {
+        "revenueCat": "https://www.revenuecat.com/blog/company/shipaton-2025-winners/",
+        "showcase": "https://apps.shipaton.com/app/momental-meditate-sleep-focus"
+      }
+    },
+    {
+      "name": "Posturely",
+      "slug": "posturely",
+      "category": "Kotlin Multiplatform",
+      "place": 2,
+      "oneLiner": "Real-time posture coaching via camera and sensors — friendly giraffe mascot, privacy-first.",
+      "showcaseSlug": "posturely",
+      "appStoreUrl": "https://apps.apple.com/us/app/posturely-sit-straight/id6752023992?uo=4",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.mobil80.posturely",
+      "showcaseUrl": "https://apps.shipaton.com/app/posturely",
+      "marketingSiteUrl": "https://www.posturely.app",
+      "screenshots": [
+        {
+          "path": "/shipaton-2025/posturely/store-preview-1.png",
+          "kind": "store-preview",
+          "label": "App Store preview 1",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/posturely/store-preview-2.png",
+          "kind": "store-preview",
+          "label": "App Store preview 2",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/posturely/store-preview-3.png",
+          "kind": "store-preview",
+          "label": "App Store preview 3",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/posturely/store-preview-4.png",
+          "kind": "store-preview",
+          "label": "App Store preview 4",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        }
+      ],
+      "marketingScreenshotTodo": {
+        "url": "https://www.posturely.app",
+        "note": "Marketing site capture pending (parent/computerUse)"
+      },
+      "sources": {
+        "revenueCat": "https://www.revenuecat.com/blog/company/shipaton-2025-winners/",
+        "showcase": "https://apps.shipaton.com/app/posturely"
+      }
+    },
+    {
+      "name": "Steps Share",
+      "slug": "steps-share",
+      "category": "Kotlin Multiplatform",
+      "place": 3,
+      "oneLiner": "Shared step tracking with live rings and friend duels — fitness that stays social.",
+      "showcaseSlug": "steps-share",
+      "appStoreUrl": "https://apps.apple.com/us/app/steps-share-pedometer/id6751459595?uo=4",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.itdeveapps.stepsshare&amp;hl=en&amp;gl=us",
+      "showcaseUrl": "https://apps.shipaton.com/app/steps-share",
+      "marketingSiteUrl": null,
+      "screenshots": [
+        {
+          "path": "/shipaton-2025/steps-share/store-preview-1.jpg",
+          "kind": "store-preview",
+          "label": "App Store preview 1",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/steps-share/store-preview-2.jpg",
+          "kind": "store-preview",
+          "label": "App Store preview 2",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/steps-share/store-preview-3.jpg",
+          "kind": "store-preview",
+          "label": "App Store preview 3",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/steps-share/store-preview-4.jpg",
+          "kind": "store-preview",
+          "label": "App Store preview 4",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        }
+      ],
+      "marketingScreenshotTodo": null,
+      "sources": {
+        "revenueCat": "https://www.revenuecat.com/blog/company/shipaton-2025-winners/",
+        "showcase": "https://apps.shipaton.com/app/steps-share"
+      }
+    },
+    {
+      "name": "DrawIt",
+      "slug": "draw-it",
+      "category": "Kotlin Multiplatform",
+      "place": 4,
+      "oneLiner": "Multiplatform draw-and-guess party game with real-time rooms and leaderboards.",
+      "showcaseSlug": "drawit-a-multiplatform-draw-guess-game",
+      "appStoreUrl": "https://apps.apple.com/us/app/draw-it/id6751777472?uo=4",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.guessink.game&hl=en&gl=us",
+      "showcaseUrl": "https://apps.shipaton.com/app/drawit-a-multiplatform-draw-guess-game",
+      "marketingSiteUrl": null,
+      "screenshots": [
+        {
+          "path": "/shipaton-2025/draw-it/store-preview-1.png",
+          "kind": "store-preview",
+          "label": "App Store preview 1",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/draw-it/store-preview-2.png",
+          "kind": "store-preview",
+          "label": "App Store preview 2",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/draw-it/store-preview-3.png",
+          "kind": "store-preview",
+          "label": "App Store preview 3",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/draw-it/store-preview-4.png",
+          "kind": "store-preview",
+          "label": "App Store preview 4",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        }
+      ],
+      "marketingScreenshotTodo": null,
+      "sources": {
+        "revenueCat": "https://www.revenuecat.com/blog/company/shipaton-2025-winners/",
+        "showcase": "https://apps.shipaton.com/app/drawit-a-multiplatform-draw-guess-game"
+      }
+    },
+    {
+      "name": "ClipUGC",
+      "slug": "clipugc",
+      "category": "Kotlin Multiplatform",
+      "place": 5,
+      "oneLiner": "Create authentic influencer-style hook videos — AI influencers for indie marketing.",
+      "showcaseSlug": "clipugc",
+      "appStoreUrl": "https://apps.apple.com/us/app/clipugc-ai-influencer-video/id6752866581?uo=4",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.measify.clipugc&amp;hl=en&amp;gl=us",
+      "showcaseUrl": "https://apps.shipaton.com/app/clipugc",
+      "marketingSiteUrl": "https://clipugc.com",
+      "screenshots": [
+        {
+          "path": "/shipaton-2025/clipugc/store-preview-1.png",
+          "kind": "store-preview",
+          "label": "App Store preview 1",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/clipugc/store-preview-2.png",
+          "kind": "store-preview",
+          "label": "App Store preview 2",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/clipugc/store-preview-3.png",
+          "kind": "store-preview",
+          "label": "App Store preview 3",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/clipugc/store-preview-4.png",
+          "kind": "store-preview",
+          "label": "App Store preview 4",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        }
+      ],
+      "marketingScreenshotTodo": {
+        "url": "https://clipugc.com",
+        "note": "Marketing site capture pending (parent/computerUse)"
+      },
+      "sources": {
+        "revenueCat": "https://www.revenuecat.com/blog/company/shipaton-2025-winners/",
+        "showcase": "https://apps.shipaton.com/app/clipugc"
+      }
+    },
+    {
+      "name": "Crystal Abyss",
+      "slug": "crystal-abyss",
+      "category": "Internal",
+      "place": 1,
+      "oneLiner": "Columns-like puzzle through Dante’s nine circles — serene minimalism meets jewel cascades.",
+      "showcaseSlug": "crystal-abyss",
+      "appStoreUrl": "https://apps.apple.com/us/app/crystal-abyss/id6751184987?uo=4",
+      "playStoreUrl": null,
+      "showcaseUrl": "https://apps.shipaton.com/app/crystal-abyss",
+      "marketingSiteUrl": "https://crystal-abyss.com",
+      "screenshots": [
+        {
+          "path": "/shipaton-2025/crystal-abyss/store-preview-1.png",
+          "kind": "store-preview",
+          "label": "App Store preview 1",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/crystal-abyss/store-preview-2.png",
+          "kind": "store-preview",
+          "label": "App Store preview 2",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/crystal-abyss/store-preview-3.png",
+          "kind": "store-preview",
+          "label": "App Store preview 3",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/crystal-abyss/store-preview-4.png",
+          "kind": "store-preview",
+          "label": "App Store preview 4",
+          "widthNote": "~390 mobile store gallery (not live device)"
+        }
+      ],
+      "marketingScreenshotTodo": {
+        "url": "https://crystal-abyss.com",
+        "note": "Marketing site capture pending (parent/computerUse)"
+      },
+      "sources": {
+        "revenueCat": "https://www.revenuecat.com/blog/company/shipaton-2025-winners/",
+        "showcase": "https://apps.shipaton.com/app/crystal-abyss"
+      }
+    }
+  ],
+  "budgetTripMockups": {
+    "sectionTitle": "Budget trip mockups",
+    "note": "Concept mockups only — not a shipped Shipaton product. Craft patterns borrowed from winners (clarity, modules, itinerary, confidence, report cards) without cloning brands.",
+    "nameProposals": [
+      {
+        "name": "Outlay",
+        "why": "Spend-first framing — budget is the constraint, not an afterthought."
+      },
+      {
+        "name": "Nearfar",
+        "why": "Equal weight for local get-out-of-house and farther trips."
+      },
+      {
+        "name": "Leaveby",
+        "why": "Date window as the second axis — leave by when, spend at most."
+      }
+    ],
+    "screens": [
+      {
+        "id": "intake",
+        "title": "Budget + date intake",
+        "path": "/shipaton-2025/budget-trip#intake"
+      },
+      {
+        "id": "results",
+        "title": "Trips vs local experiences",
+        "path": "/shipaton-2025/budget-trip#results"
+      },
+      {
+        "id": "trip-detail",
+        "title": "Trip detail",
+        "path": "/shipaton-2025/budget-trip#trip-detail"
+      },
+      {
+        "id": "local-detail",
+        "title": "Local experience detail",
+        "path": "/shipaton-2025/budget-trip#local-detail"
+      },
+      {
+        "id": "breakdown",
+        "title": "Budget breakdown honesty",
+        "path": "/shipaton-2025/budget-trip#breakdown"
+      }
+    ]
+  }
+}

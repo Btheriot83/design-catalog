@@ -80,3 +80,42 @@ export interface CraftResource {
   agentUse: string;
   tags?: string[];
 }
+
+export interface ShipatonScreenshot {
+  path: string;
+  kind: "store-preview" | "marketing-site" | "mockup";
+  label: string;
+  widthNote?: string;
+}
+
+export interface ShipatonWinner {
+  name: string;
+  slug: string;
+  category: string;
+  place: number;
+  oneLiner: string;
+  showcaseSlug: string;
+  appStoreUrl: string | null;
+  playStoreUrl: string | null;
+  showcaseUrl: string;
+  marketingSiteUrl: string | null;
+  screenshots: ShipatonScreenshot[];
+  marketingScreenshotTodo?: { url: string; note: string } | null;
+  sources?: { revenueCat: string; showcase: string };
+}
+
+export interface ShipatonCatalog {
+  year: number;
+  title: string;
+  description: string;
+  sources: string[];
+  disclaimer: string;
+  winnerCount: number;
+  winners: ShipatonWinner[];
+  budgetTripMockups: {
+    sectionTitle: string;
+    note: string;
+    nameProposals: { name: string; why: string }[];
+    screens: { id: string; title: string; path: string }[];
+  };
+}

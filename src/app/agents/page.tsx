@@ -19,6 +19,7 @@ const files = [
   { label: "designers.json", href: "/data/designers.json", note: "Designer entries" },
   { label: "sources.json", href: "/data/sources.json", note: "Citations" },
   { label: "resources.json", href: "/data/resources.json", note: "Free craft resources desk" },
+  { label: "shipaton-2025.json", href: "/data/shipaton-2025.json", note: "Shipaton 2025 winners catalog" },
   {
     label: "technique.schema.json",
     href: "/schema/technique.schema.json",
@@ -63,9 +64,35 @@ export default function AgentsPage() {
           <code className="font-mono text-xs text-ink">/api/designers</code>,{" "}
           <code className="font-mono text-xs text-ink">/api/prompts</code>,{" "}
           <code className="font-mono text-xs text-ink">/api/sources</code>,{" "}
-          <code className="font-mono text-xs text-ink">/api/resources</code>
+          <code className="font-mono text-xs text-ink">/api/resources</code>,{" "}
+          <code className="font-mono text-xs text-ink">/api/shipaton-2025</code>
           {" "}(prefer static <code className="font-mono text-xs text-ink">/data/</code> for CDN).
         </p>
+      </section>
+
+      <section className="mb-12">
+        <h2 className="font-serif text-2xl text-ink">Shipaton 2025</h2>
+        <hr className="rule-double mt-4 mb-5 max-w-[10rem]" />
+        <p className="font-sans text-sm leading-relaxed text-studio-ink">
+          Award winners catalog with store-preview screenshots and showcase links.
+          Public sources only; no endorsement. Prefer JSON over scraping.
+        </p>
+        <ul className="mt-4 space-y-2 font-sans text-sm text-studio-ink">
+          <li>
+            <Link href="/shipaton-2025" className="text-ink underline decoration-hairline hover:decoration-ink">
+              /shipaton-2025
+            </Link>
+            {" — human catalog + budget-trip mockups"}
+          </li>
+          <li>
+            <a
+              href="/data/shipaton-2025.json"
+              className="font-mono text-xs text-ink underline decoration-hairline hover:decoration-ink"
+            >
+              /data/shipaton-2025.json
+            </a>
+          </li>
+        </ul>
       </section>
 
       <section className="mb-12">

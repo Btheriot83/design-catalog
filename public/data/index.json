@@ -2,11 +2,12 @@
   "name": "Design Catalog",
   "description": "Letterpress study desk of AI design techniques (Anshu, Nate, Greg + craft directory voices). Public sources only; no endorsement.",
   "baseUrl": "https://design-catalog-three.vercel.app",
-  "lastUpdated": "2026-09-17T18:10:34.949Z",
+  "lastUpdated": "2026-09-18T00:52:36.922Z",
   "techniqueCount": 85,
   "designerCount": 52,
   "sourceCount": 46,
   "resourceCount": 37,
+  "shipaton2025WinnerCount": 30,
   "stages": [
     {
       "id": "Discover",
@@ -1391,6 +1392,8 @@
       "designers": "https://design-catalog-three.vercel.app/designers",
       "sources": "https://design-catalog-three.vercel.app/sources",
       "resources": "https://design-catalog-three.vercel.app/resources",
+      "shipaton2025": "https://design-catalog-three.vercel.app/shipaton-2025",
+      "shipaton2025BudgetTrip": "https://design-catalog-three.vercel.app/shipaton-2025/budget-trip",
       "agents": "https://design-catalog-three.vercel.app/agents",
       "about": "https://design-catalog-three.vercel.app/about",
       "motion": "https://design-catalog-three.vercel.app/motion"
@@ -1404,6 +1407,7 @@
       "prompts": "https://design-catalog-three.vercel.app/data/prompts.json",
       "sources": "https://design-catalog-three.vercel.app/data/sources.json",
       "resources": "https://design-catalog-three.vercel.app/data/resources.json",
+      "shipaton2025": "https://design-catalog-three.vercel.app/data/shipaton-2025.json",
       "techniqueSchema": "https://design-catalog-three.vercel.app/schema/technique.schema.json",
       "designerSchema": "https://design-catalog-three.vercel.app/schema/designer.schema.json",
       "forAgentsMd": "https://raw.githubusercontent.com/Btheriot83/design-catalog/main/docs/FOR_AGENTS.md",
@@ -1413,7 +1417,8 @@
         "designers": "https://design-catalog-three.vercel.app/api/designers",
         "prompts": "https://design-catalog-three.vercel.app/api/prompts",
         "sources": "https://design-catalog-three.vercel.app/api/sources",
-        "resources": "https://design-catalog-three.vercel.app/api/resources"
+        "resources": "https://design-catalog-three.vercel.app/api/resources",
+        "shipaton2025": "https://design-catalog-three.vercel.app/api/shipaton-2025"
       }
     }
   },

@@ -57,6 +57,7 @@ const techniques = loadTechniques();
 const designers = loadDesigners();
 const sources = readJson(join(contentRoot, "sources.json"));
 const resources = readJson(join(contentRoot, "resources.json"));
+const shipaton2025 = readJson(join(contentRoot, "shipaton-2025.json"));
 const lastUpdated = new Date().toISOString();
 
 resetDir(join(publicData, "techniques"));
@@ -73,6 +74,7 @@ const index = {
   designerCount: designers.length,
   sourceCount: sources.length,
   resourceCount: resources.length,
+  shipaton2025WinnerCount: shipaton2025.winnerCount ?? shipaton2025.winners?.length ?? 0,
   stages: stages.map((stage) => ({
     id: stage,
     techniqueCount: techniques.filter((t) => t.stage === stage).length,
@@ -108,6 +110,8 @@ const index = {
       designers: `${baseUrl}/designers`,
       sources: `${baseUrl}/sources`,
       resources: `${baseUrl}/resources`,
+      shipaton2025: `${baseUrl}/shipaton-2025`,
+      shipaton2025BudgetTrip: `${baseUrl}/shipaton-2025/budget-trip`,
       agents: `${baseUrl}/agents`,
       about: `${baseUrl}/about`,
       motion: `${baseUrl}/motion`,
@@ -121,6 +125,7 @@ const index = {
       prompts: `${baseUrl}/data/prompts.json`,
       sources: `${baseUrl}/data/sources.json`,
       resources: `${baseUrl}/data/resources.json`,
+      shipaton2025: `${baseUrl}/data/shipaton-2025.json`,
       techniqueSchema: `${baseUrl}/schema/technique.schema.json`,
       designerSchema: `${baseUrl}/schema/designer.schema.json`,
       forAgentsMd:
@@ -132,6 +137,7 @@ const index = {
         prompts: `${baseUrl}/api/prompts`,
         sources: `${baseUrl}/api/sources`,
         resources: `${baseUrl}/api/resources`,
+        shipaton2025: `${baseUrl}/api/shipaton-2025`,
       },
     },
   },
@@ -173,6 +179,7 @@ writeJson(join(publicData, "techniques.json"), techniques);
 writeJson(join(publicData, "designers.json"), designers);
 writeJson(join(publicData, "sources.json"), sources);
 writeJson(join(publicData, "resources.json"), resources);
+writeJson(join(publicData, "shipaton-2025.json"), shipaton2025);
 
 for (const t of techniques) {
   writeJson(join(publicData, "techniques", `${t.slug}.json`), t);
@@ -200,5 +207,5 @@ const prompts = techniques.flatMap((t) => {
 writeJson(join(publicData, "prompts.json"), prompts);
 
 console.log(
-  `generate:data → ${techniques.length} techniques, ${designers.length} designers, ${prompts.length} prompts, ${sources.length} sources, ${resources.length} resources`
+  `generate:data → ${techniques.length} techniques, ${designers.length} designers, ${prompts.length} prompts, ${sources.length} sources, ${resources.length} resources, ${shipaton2025.winners?.length ?? 0} shipaton-2025 winners`
 );
