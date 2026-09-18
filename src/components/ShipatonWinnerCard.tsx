@@ -10,7 +10,9 @@ function placeLabel(place: number) {
 }
 
 export function ShipatonWinnerCard({ winner }: { winner: ShipatonWinner }) {
-  const thumb = winner.screenshots[0];
+  const thumb =
+    winner.screenshots.find((s) => s.kind === "store-preview") ??
+    winner.screenshots[0];
 
   return (
     <CardTilt className="border-b border-hairline last:border-0">

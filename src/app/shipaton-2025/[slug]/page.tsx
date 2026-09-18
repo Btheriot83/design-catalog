@@ -38,6 +38,9 @@ export default async function ShipatonWinnerPage({
   const w = getShipatonWinner(slug);
   if (!w) notFound();
 
+  const storePreviews = w.screenshots.filter((s) => s.kind === "store-preview");
+  const marketingSites = w.screenshots.filter((s) => s.kind === "marketing-site");
+
   return (
     <div>
       <p className="mb-6 font-sans text-sm text-studio-ink">
@@ -81,11 +84,11 @@ export default async function ShipatonWinnerPage({
         <p className="mb-6 font-sans text-sm leading-relaxed text-studio-ink">
           Official store gallery images — labeled as store preview, not live device UI.
         </p>
-        {w.screenshots.length === 0 ? (
+        {storePreviews.length === 0 ? (
           <p className="font-sans text-sm text-faint">No store previews captured yet.</p>
         ) : (
           <ul className="grid grid-cols-2 gap-4 sm:grid-cols-4">
-            {w.screenshots.map((s) => (
+            {storePreviews.map((s) => (
               <li key={s.path} className="overflow-hidden rounded-[1.25rem] border border-hairline bg-ghost press-shadow">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src={s.path} alt={s.label} className="w-full object-cover object-top" />
@@ -97,6 +100,28 @@ export default async function ShipatonWinnerPage({
           </ul>
         )}
       </section>
+
+      {marketingSites.length > 0 ? (
+        <section className="mb-12">
+          <h2 className="font-serif text-2xl text-ink">Marketing site</h2>
+          <hr className="rule-double mt-4 mb-5 max-w-[10rem]" />
+          <p className="mb-6 font-sans text-sm leading-relaxed text-studio-ink">
+            Mobile-width capture of the public marketing site (~390).
+          </p>
+          <ul className="grid max-w-2xl grid-cols-1 gap-4 sm:grid-cols-2">
+            {marketingSites.map((s) => (
+              <li key={s.path} className="overflow-hidden rounded-[1.25rem] border border-hairline bg-ghost press-shadow">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src={s.path} alt={s.label} className="w-full object-cover object-top" />
+                <p className="border-t border-hairline px-2 py-2 font-sans text-[10px] tracking-wide text-faint">
+                  {s.label}
+                  {s.widthNote ? ` · ${s.widthNote}` : ""}
+                </p>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ) : null}
 
       {w.marketingScreenshotTodo ? (
         <aside className="mb-10 border border-dashed border-hairline p-4">

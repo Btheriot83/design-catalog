@@ -44,12 +44,15 @@
           "kind": "store-preview",
           "label": "App Store preview 4",
           "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/payout/marketing-site.png",
+          "kind": "marketing-site",
+          "label": "Marketing site (mobile)",
+          "widthNote": "~390"
         }
       ],
-      "marketingScreenshotTodo": {
-        "url": "https://trypayout.app",
-        "note": "Marketing site capture pending (parent/computerUse)"
-      },
+      "marketingScreenshotTodo": null,
       "sources": {
         "revenueCat": "https://www.revenuecat.com/blog/company/shipaton-2025-winners/",
         "showcase": "https://apps.shipaton.com/app/payout"
@@ -90,12 +93,15 @@
           "kind": "store-preview",
           "label": "App Store preview 4",
           "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/gurwi/marketing-site.png",
+          "kind": "marketing-site",
+          "label": "Marketing site (mobile)",
+          "widthNote": "~390"
         }
       ],
-      "marketingScreenshotTodo": {
-        "url": "https://gurwi.com",
-        "note": "Marketing site capture pending (parent/computerUse)"
-      },
+      "marketingScreenshotTodo": null,
       "sources": {
         "revenueCat": "https://www.revenuecat.com/blog/company/shipaton-2025-winners/",
         "showcase": "https://apps.shipaton.com/app/gurwi-learn-anything"
@@ -136,12 +142,15 @@
           "kind": "store-preview",
           "label": "App Store preview 4",
           "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/echo-reminder/marketing-site.png",
+          "kind": "marketing-site",
+          "label": "Marketing site (mobile)",
+          "widthNote": "~390"
         }
       ],
-      "marketingScreenshotTodo": {
-        "url": "https://echoreminder.com",
-        "note": "Marketing site capture pending (parent/computerUse)"
-      },
+      "marketingScreenshotTodo": null,
       "sources": {
         "revenueCat": "https://www.revenuecat.com/blog/company/shipaton-2025-winners/",
         "showcase": "https://apps.shipaton.com/app/echo-reminder"
@@ -268,12 +277,15 @@
           "kind": "store-preview",
           "label": "App Store preview 4",
           "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/skillme/marketing-site.png",
+          "kind": "marketing-site",
+          "label": "Marketing site (mobile)",
+          "widthNote": "~390"
         }
       ],
-      "marketingScreenshotTodo": {
-        "url": "https://www.getskillme.app",
-        "note": "Marketing site capture pending (parent/computerUse)"
-      },
+      "marketingScreenshotTodo": null,
       "sources": {
         "revenueCat": "https://www.revenuecat.com/blog/company/shipaton-2025-winners/",
         "showcase": "https://apps.shipaton.com/app/skillme"
@@ -308,12 +320,15 @@
           "kind": "store-preview",
           "label": "App Store preview 3",
           "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/pitchlab/marketing-site.png",
+          "kind": "marketing-site",
+          "label": "Marketing site (mobile)",
+          "widthNote": "~390"
         }
       ],
-      "marketingScreenshotTodo": {
-        "url": "https://pitchlab.app",
-        "note": "Marketing site capture pending (parent/computerUse)"
-      },
+      "marketingScreenshotTodo": null,
       "sources": {
         "revenueCat": "https://www.revenuecat.com/blog/company/shipaton-2025-winners/",
         "showcase": "https://apps.shipaton.com/app/pitchlab-professional-grade-baseball-pitch-tracking"
@@ -354,12 +369,15 @@
           "kind": "store-preview",
           "label": "App Store preview 4",
           "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/readhim/marketing-site.png",
+          "kind": "marketing-site",
+          "label": "Marketing site (mobile)",
+          "widthNote": "~390"
         }
       ],
-      "marketingScreenshotTodo": {
-        "url": "https://www.readhim.app",
-        "note": "Marketing site capture pending (parent/computerUse)"
-      },
+      "marketingScreenshotTodo": null,
       "sources": {
         "revenueCat": "https://www.revenuecat.com/blog/company/shipaton-2025-winners/",
         "showcase": "https://apps.shipaton.com/app/readhim"
@@ -443,12 +461,15 @@
           "kind": "store-preview",
           "label": "App Store preview 4",
           "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/memo-lune/marketing-site.png",
+          "kind": "marketing-site",
+          "label": "Marketing site (mobile)",
+          "widthNote": "~390"
         }
       ],
-      "marketingScreenshotTodo": {
-        "url": "https://hundreds.co.jp/memolu",
-        "note": "Marketing site capture pending (parent/computerUse)"
-      },
+      "marketingScreenshotTodo": null,
       "sources": {
         "revenueCat": "https://www.revenuecat.com/blog/company/shipaton-2025-winners/",
         "showcase": "https://apps.shipaton.com/app/memolune"
@@ -489,12 +510,15 @@
           "kind": "store-preview",
           "label": "App Store preview 4",
           "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/vector-guard/marketing-site.png",
+          "kind": "marketing-site",
+          "label": "Marketing site (mobile)",
+          "widthNote": "~390"
         }
       ],
-      "marketingScreenshotTodo": {
-        "url": "https://vectorguard.app",
-        "note": "Marketing site capture pending (parent/computerUse)"
-      },
+      "marketingScreenshotTodo": null,
       "sources": {
         "revenueCat": "https://www.revenuecat.com/blog/company/shipaton-2025-winners/",
         "showcase": "https://apps.shipaton.com/app/vector-guard"
@@ -578,12 +602,15 @@
           "kind": "store-preview",
           "label": "App Store preview 4",
           "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/kigaru-talks/marketing-site.png",
+          "kind": "marketing-site",
+          "label": "Marketing site (mobile)",
+          "widthNote": "~390"
         }
       ],
-      "marketingScreenshotTodo": {
-        "url": "https://kigarutalks.com",
-        "note": "Marketing site capture pending (parent/computerUse)"
-      },
+      "marketingScreenshotTodo": null,
       "sources": {
         "revenueCat": "https://www.revenuecat.com/blog/company/shipaton-2025-winners/",
         "showcase": "https://apps.shipaton.com/app/kigaru-talks"
@@ -624,12 +651,15 @@
           "kind": "store-preview",
           "label": "App Store preview 4",
           "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/heartbeat-hero/marketing-site.png",
+          "kind": "marketing-site",
+          "label": "Marketing site (mobile)",
+          "widthNote": "~390"
         }
       ],
-      "marketingScreenshotTodo": {
-        "url": "https://forres.tech/heartbeat-hero",
-        "note": "Marketing site capture pending (parent/computerUse)"
-      },
+      "marketingScreenshotTodo": null,
       "sources": {
         "revenueCat": "https://www.revenuecat.com/blog/company/shipaton-2025-winners/",
         "showcase": "https://apps.shipaton.com/app/heartbeat-hero"
@@ -670,12 +700,15 @@
           "kind": "store-preview",
           "label": "App Store preview 4",
           "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/hearing-buddy/marketing-site.png",
+          "kind": "marketing-site",
+          "label": "Marketing site (mobile)",
+          "widthNote": "~390"
         }
       ],
-      "marketingScreenshotTodo": {
-        "url": "https://hearingbuddyapp.com",
-        "note": "Marketing site capture pending (parent/computerUse)"
-      },
+      "marketingScreenshotTodo": null,
       "sources": {
         "revenueCat": "https://www.revenuecat.com/blog/company/shipaton-2025-winners/",
         "showcase": "https://apps.shipaton.com/app/hearing-buddy"
@@ -808,12 +841,15 @@
           "kind": "store-preview",
           "label": "App Store preview 4",
           "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/dripped/marketing-site.png",
+          "kind": "marketing-site",
+          "label": "Marketing site (mobile)",
+          "widthNote": "~390"
         }
       ],
-      "marketingScreenshotTodo": {
-        "url": "https://dripped.app",
-        "note": "Marketing site capture pending (parent/computerUse)"
-      },
+      "marketingScreenshotTodo": null,
       "sources": {
         "revenueCat": "https://www.revenuecat.com/blog/company/shipaton-2025-winners/",
         "showcase": "https://apps.shipaton.com/app/dripped"
@@ -943,12 +979,15 @@
           "kind": "store-preview",
           "label": "App Store preview 4",
           "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/voicetree/marketing-site.png",
+          "kind": "marketing-site",
+          "label": "Marketing site (mobile)",
+          "widthNote": "~390"
         }
       ],
-      "marketingScreenshotTodo": {
-        "url": "https://voicetree.app",
-        "note": "Marketing site capture pending (parent/computerUse)"
-      },
+      "marketingScreenshotTodo": null,
       "sources": {
         "revenueCat": "https://www.revenuecat.com/blog/company/shipaton-2025-winners/",
         "showcase": "https://apps.shipaton.com/app/voicetree-ai-meeting-notes-for-work-study"
@@ -1106,12 +1145,15 @@
           "kind": "store-preview",
           "label": "App Store preview 4",
           "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/momental/marketing-site.png",
+          "kind": "marketing-site",
+          "label": "Marketing site (mobile)",
+          "widthNote": "~390"
         }
       ],
-      "marketingScreenshotTodo": {
-        "url": "https://momental.ai",
-        "note": "Marketing site capture pending (parent/computerUse)"
-      },
+      "marketingScreenshotTodo": null,
       "sources": {
         "revenueCat": "https://www.revenuecat.com/blog/company/shipaton-2025-winners/",
         "showcase": "https://apps.shipaton.com/app/momental-meditate-sleep-focus"
@@ -1284,12 +1326,15 @@
           "kind": "store-preview",
           "label": "App Store preview 4",
           "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/clipugc/marketing-site.png",
+          "kind": "marketing-site",
+          "label": "Marketing site (mobile)",
+          "widthNote": "~390"
         }
       ],
-      "marketingScreenshotTodo": {
-        "url": "https://clipugc.com",
-        "note": "Marketing site capture pending (parent/computerUse)"
-      },
+      "marketingScreenshotTodo": null,
       "sources": {
         "revenueCat": "https://www.revenuecat.com/blog/company/shipaton-2025-winners/",
         "showcase": "https://apps.shipaton.com/app/clipugc"
