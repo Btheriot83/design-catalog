@@ -795,12 +795,15 @@
           "kind": "store-preview",
           "label": "App Store preview 4",
           "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/otter-day/marketing-site.png",
+          "kind": "marketing-site",
+          "label": "Marketing site (mobile)",
+          "widthNote": "~390"
         }
       ],
-      "marketingScreenshotTodo": {
-        "url": "https://felixplagge.dev/",
-        "note": "Marketing site capture pending (parent/computerUse)"
-      },
+      "marketingScreenshotTodo": null,
       "sources": {
         "revenueCat": "https://www.revenuecat.com/blog/company/shipaton-2025-winners/",
         "showcase": "https://apps.shipaton.com/app/otter-day-weekday-guesser"
@@ -890,12 +893,15 @@
           "kind": "store-preview",
           "label": "App Store preview 4",
           "widthNote": "~390 mobile store gallery (not live device)"
+        },
+        {
+          "path": "/shipaton-2025/maestlog/marketing-site.png",
+          "kind": "marketing-site",
+          "label": "Marketing site (mobile)",
+          "widthNote": "~390"
         }
       ],
-      "marketingScreenshotTodo": {
-        "url": "https://maestlog.app/",
-        "note": "Marketing site capture pending (parent/computerUse)"
-      },
+      "marketingScreenshotTodo": null,
       "sources": {
         "revenueCat": "https://www.revenuecat.com/blog/company/shipaton-2025-winners/",
         "showcase": "https://apps.shipaton.com/app/maestlog-your-personal-symphony-journal"
