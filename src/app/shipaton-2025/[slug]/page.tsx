@@ -125,9 +125,9 @@ export default async function ShipatonWinnerPage({
 
       {w.marketingScreenshotTodo ? (
         <aside className="mb-10 border border-dashed border-hairline p-4">
-          <p className="eyebrow text-ink">Marketing capture TODO</p>
+          <p className="eyebrow text-ink">Historical capture note · Sept 2026</p>
           <p className="mt-2 font-sans text-sm text-studio-ink">
-            {w.marketingScreenshotTodo.note}:{" "}
+            Not a live re-check. {w.marketingScreenshotTodo.note}{" "}
             <a href={w.marketingScreenshotTodo.url} className="font-mono text-xs text-ink underline decoration-hairline" target="_blank" rel="noopener noreferrer">
               {w.marketingScreenshotTodo.url}
             </a>

@@ -4,6 +4,8 @@ A craft / anti-slop **designer directory** plus a letterpress study desk of AI d
 
 **Live:** https://design-catalog-three.vercel.app
 
+**Maintenance is paused** (preservation audit 2026-11-07). Last editorial content: 2026-09-18. Keep the site and assets up. No redesign, new mockups, subscriptions, or harvest. Durable record: [docs/HANDOFF.md](docs/HANDOFF.md). Craft gate: [docs/TECHNIQUES.md](docs/TECHNIQUES.md) — before any future mock/UI is READY, each screen cites concrete catalog techniques with source/implementation detail; no generic phone shells or brand cloning.
+
 ## For agents (start here)
 
 Do **not** scrape HTML. Fetch static JSON:
@@ -19,7 +21,7 @@ Do **not** scrape HTML. Fetch static JSON:
 | llms.txt | https://design-catalog-three.vercel.app/llms.txt |
 | Agent guide | [docs/FOR_AGENTS.md](docs/FOR_AGENTS.md) (also [GitHub raw](https://raw.githubusercontent.com/Btheriot83/design-catalog/main/docs/FOR_AGENTS.md)) |
 
-Human page: [/agents](https://design-catalog-three.vercel.app/agents). Directory: [/designers](https://design-catalog-three.vercel.app/designers). Field guide: [/compare](https://design-catalog-three.vercel.app/compare). Guides: [/guides](https://design-catalog-three.vercel.app/guides). Gauntlet log: `docs/GAUNTLET.md`.
+Human page: [/agents](https://design-catalog-three.vercel.app/agents). Directory: [/designers](https://design-catalog-three.vercel.app/designers). Field guide: [/compare](https://design-catalog-three.vercel.app/compare). Guides: [/guides](https://design-catalog-three.vercel.app/guides). Examples: [/examples](https://design-catalog-three.vercel.app/examples). Gauntlet log: `docs/GAUNTLET.md`. Final handoff: [docs/HANDOFF.md](docs/HANDOFF.md).
 
 **Workflow:** fetch index → match `decisionPaths` to a concrete problem → inspect one `agentContract` → apply its recipe → record acceptance/state evidence → stop. Add at most one companion for a distinct need. Contracts are Catalog editorial guidance with explicit source provenance. The original Discover→Define→Deliver mapping remains available for full-project work.
 
@@ -54,7 +56,7 @@ npm run build   # runs prebuild → generate:data, then next build
 
 Typed JSON under `content/` — designers (technique authors + directory credits), techniques, sources. Do not invent unpublished Substack posts or paywalled quotes. No endorsement implied by any citation.
 
-Also see `docs/REDESIGN.md` and `docs/CRITIC_LOOP.md`.
+Also see `docs/HANDOFF.md`, `docs/TECHNIQUES.md`, `docs/REDESIGN.md` and `docs/CRITIC_LOOP.md`.
 
 ## Disclaimer
 

@@ -20,7 +20,7 @@ export default function Shipaton2025Page() {
       <PageHeader
         eyebrow="Hackathon study desk · 2025"
         title="Shipaton 2025 winners"
-        description="Craft catalog of RevenueCat Shipaton 2025 award winners — store previews, showcase links, and a budget-trip mockup study. Public sources only; no endorsement."
+        description="Craft catalog of RevenueCat Shipaton 2025 award winners — store previews, showcase links, and an archived budget-trip concept. Public sources only; no endorsement."
       />
 
       <aside className="mb-10 border border-hairline bg-ghost/80 p-5 press-shadow">
@@ -58,13 +58,19 @@ export default function Shipaton2025Page() {
           .
         </p>
         <p className="mt-3 font-sans text-sm text-studio-ink">
+          Marketing-site gaps are{" "}
+          <strong className="font-medium text-ink">September 2026 capture notes</strong>, not a
+          live re-check: MoodHaven returned 404, Posturely failed to load, eight apps had no
+          marketing URL found.
+        </p>
+        <p className="mt-3 font-sans text-sm text-studio-ink">
           <Link
             href="/shipaton-2025/budget-trip"
             className="text-ink underline decoration-hairline hover:decoration-ink"
           >
             Budget trip mockups
           </Link>
-          {" — concept only (Outlay / Nearfar / Leaveby)."}
+          {" — archived concept, parked and unapproved (Outlay / Nearfar / Leaveby). Not a recommended craft reference."}
         </p>
       </aside>
 
@@ -83,7 +89,7 @@ export default function Shipaton2025Page() {
       ))}
 
       <section className="mb-6 border border-hairline bg-card/40 p-6 press-shadow">
-        <p className="eyebrow text-ink">Also in this section</p>
+        <p className="eyebrow text-ink">Archived · not READY</p>
         <h2 className="mt-3 font-serif text-2xl text-ink">Budget trip mockups</h2>
         <p className="mt-3 max-w-xl font-sans text-sm leading-relaxed text-studio-ink">
           {catalog.budgetTripMockups.note}
@@ -101,7 +107,7 @@ export default function Shipaton2025Page() {
           href="/shipaton-2025/budget-trip"
           className="mt-5 inline-block font-sans text-sm text-ink underline decoration-hairline hover:decoration-ink"
         >
-          Open mockup frames →
+          Open archived frames →
         </Link>
       </section>
     </div>

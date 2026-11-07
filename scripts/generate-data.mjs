@@ -63,6 +63,8 @@ const sources = readJson(join(contentRoot, "sources.json"));
 const resources = readJson(join(contentRoot, "resources.json"));
 const shipaton2025 = readJson(join(contentRoot, "shipaton-2025.json"));
 const lastUpdated = release.contentUpdated;
+const preservationAudit = release.preservationAudit ?? null;
+const maintenance = release.maintenance ?? null;
 const contentHash = createHash("sha256").update(JSON.stringify({ techniques, designers, sources, resources, shipaton2025, paths, release })).digest("hex");
 
 resetDir(join(publicData, "techniques"));
@@ -75,6 +77,8 @@ const index = {
     "Letterpress study desk of AI design techniques (Anshu, Nate, Greg + craft directory voices). Public sources only; no endorsement.",
   baseUrl,
   lastUpdated,
+  preservationAudit,
+  maintenance,
   contractVersion: release.contractVersion,
   contentHash,
   provenance: release.provenance,
@@ -118,6 +122,8 @@ const index = {
       techniques: `${baseUrl}/techniques`,
       prompts: `${baseUrl}/prompts`,
       compare: `${baseUrl}/compare`,
+      examples: `${baseUrl}/examples`,
+      guides: `${baseUrl}/guides`,
       designers: `${baseUrl}/designers`,
       sources: `${baseUrl}/sources`,
       resources: `${baseUrl}/resources`,
@@ -141,6 +147,8 @@ const index = {
       designerSchema: `${baseUrl}/schema/designer.schema.json`,
       forAgentsMd:
         "https://raw.githubusercontent.com/Btheriot83/design-catalog/main/docs/FOR_AGENTS.md",
+      handoffMd:
+        "https://raw.githubusercontent.com/Btheriot83/design-catalog/main/docs/HANDOFF.md",
       api: {
         index: `${baseUrl}/api/index`,
         techniques: `${baseUrl}/api/techniques`,
