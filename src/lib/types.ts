@@ -128,9 +128,20 @@ export interface ShipatonCatalog {
   disclaimer: string;
   winnerCount: number;
   winners: ShipatonWinner[];
+  captureNotes?: {
+    capturedAt: string;
+    notReverifiedAtAudit: string;
+    storePreviewsAreNotLiveDeviceUi: boolean;
+    marketingSiteHttp404: string[];
+    marketingSiteLoadFailed: string[];
+    noMarketingUrlFound: string[];
+  };
   budgetTripMockups: {
     sectionTitle: string;
     note: string;
+    status?: "archived" | "active";
+    approved?: boolean;
+    recommendedCraftReference?: boolean;
     nameProposals: { name: string; why: string }[];
     screens: { id: string; title: string; path: string }[];
   };

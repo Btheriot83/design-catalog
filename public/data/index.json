@@ -3,8 +3,10 @@
   "description": "Letterpress study desk of AI design techniques (Anshu, Nate, Greg + craft directory voices). Public sources only; no endorsement.",
   "baseUrl": "https://design-catalog-three.vercel.app",
   "lastUpdated": "2026-09-18T00:00:00.000Z",
+  "preservationAudit": "2026-11-07",
+  "maintenance": "paused",
   "contractVersion": "1.0.0",
-  "contentHash": "628ed847b55d5fdc1be5d2a115dd3327c5e9956635d65bea698f4bccf18fb33e",
+  "contentHash": "1fadb1795f4aed9380f2b76cc9774e9a24520582ddca420ede99e207fd59881e",
   "provenance": "Design Catalog editorial synthesis of the cited public sources; contracts and decision paths are our implementation guidance, not quotations or author endorsements.",
   "decisionPaths": [
     {
@@ -1642,6 +1644,8 @@
       "techniques": "https://design-catalog-three.vercel.app/techniques",
       "prompts": "https://design-catalog-three.vercel.app/prompts",
       "compare": "https://design-catalog-three.vercel.app/compare",
+      "examples": "https://design-catalog-three.vercel.app/examples",
+      "guides": "https://design-catalog-three.vercel.app/guides",
       "designers": "https://design-catalog-three.vercel.app/designers",
       "sources": "https://design-catalog-three.vercel.app/sources",
       "resources": "https://design-catalog-three.vercel.app/resources",
@@ -1664,6 +1668,7 @@
       "techniqueSchema": "https://design-catalog-three.vercel.app/schema/technique.schema.json",
       "designerSchema": "https://design-catalog-three.vercel.app/schema/designer.schema.json",
       "forAgentsMd": "https://raw.githubusercontent.com/Btheriot83/design-catalog/main/docs/FOR_AGENTS.md",
+      "handoffMd": "https://raw.githubusercontent.com/Btheriot83/design-catalog/main/docs/HANDOFF.md",
       "api": {
         "index": "https://design-catalog-three.vercel.app/api/index",
         "techniques": "https://design-catalog-three.vercel.app/api/techniques",

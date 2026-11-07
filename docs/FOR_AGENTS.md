@@ -3,7 +3,8 @@
 Machine-readable surfaces live under `/data/` and `/llms.txt`. Prefer JSON over HTML scraping.
 
 **Base URL:** https://design-catalog-three.vercel.app  
-**Repo:** https://github.com/Btheriot83/design-catalog
+**Repo:** https://github.com/Btheriot83/design-catalog  
+**Maintenance:** paused. Last editorial content **2026-09-18**; preservation audit **2026-11-07** (not new research). See [HANDOFF.md](HANDOFF.md). Craft gate: [TECHNIQUES.md](TECHNIQUES.md). `/shipaton-2025/budget-trip` is archived and unapproved — not a recommended craft reference.
 
 ## (a) Fetch the index
 

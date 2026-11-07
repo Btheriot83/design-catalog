@@ -17,7 +17,7 @@
       "oneLiner": "Discover class-action settlements you may already qualify for — transparent, automated, and accessible.",
       "showcaseSlug": "payout",
       "appStoreUrl": "https://apps.apple.com/us/app/payout-claim-class-actions/id6748968935?uo=4",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.payout.app&amp;hl=en&amp;gl=us",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.payout.app&hl=en&gl=us",
       "showcaseUrl": "https://apps.shipaton.com/app/payout",
       "marketingSiteUrl": "https://trypayout.app",
       "screenshots": [
@@ -575,7 +575,7 @@
       "oneLiner": "Speak Japanese with confidence through real AI conversation — judgment-free fluency practice.",
       "showcaseSlug": "kigaru-talks",
       "appStoreUrl": "https://apps.apple.com/us/app/speak-japanese-kigaru-talks/id6749827005?uo=4",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.kigarutalks.conversations&amp;hl=en&amp;gl=us",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.kigarutalks.conversations&hl=en&gl=us",
       "showcaseUrl": "https://apps.shipaton.com/app/kigaru-talks",
       "marketingSiteUrl": "https://kigarutalks.com",
       "screenshots": [
@@ -1225,7 +1225,7 @@
       "oneLiner": "Shared step tracking with live rings and friend duels — fitness that stays social.",
       "showcaseSlug": "steps-share",
       "appStoreUrl": "https://apps.apple.com/us/app/steps-share-pedometer/id6751459595?uo=4",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.itdeveapps.stepsshare&amp;hl=en&amp;gl=us",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.itdeveapps.stepsshare&hl=en&gl=us",
       "showcaseUrl": "https://apps.shipaton.com/app/steps-share",
       "marketingSiteUrl": null,
       "screenshots": [
@@ -1311,7 +1311,7 @@
       "oneLiner": "Create authentic influencer-style hook videos — AI influencers for indie marketing.",
       "showcaseSlug": "clipugc",
       "appStoreUrl": "https://apps.apple.com/us/app/clipugc-ai-influencer-video/id6752866581?uo=4",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.measify.clipugc&amp;hl=en&amp;gl=us",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.measify.clipugc&hl=en&gl=us",
       "showcaseUrl": "https://apps.shipaton.com/app/clipugc",
       "marketingSiteUrl": "https://clipugc.com",
       "screenshots": [
@@ -1402,9 +1402,33 @@
       }
     }
   ],
+  "captureNotes": {
+    "capturedAt": "2026-09-18",
+    "notReverifiedAtAudit": "2026-11-07",
+    "storePreviewsAreNotLiveDeviceUi": true,
+    "marketingSiteHttp404": [
+      "moodhaven"
+    ],
+    "marketingSiteLoadFailed": [
+      "posturely"
+    ],
+    "noMarketingUrlFound": [
+      "tomo-japan",
+      "dayloop",
+      "shutter-declutter",
+      "napkinmatic",
+      "cooked-this",
+      "studient",
+      "steps-share",
+      "draw-it"
+    ]
+  },
   "budgetTripMockups": {
     "sectionTitle": "Budget trip mockups",
-    "note": "Concept mockups only — not a shipped Shipaton product. Craft patterns borrowed from winners (clarity, modules, itinerary, confidence, report cards) without cloning brands.",
+    "status": "archived",
+    "approved": false,
+    "recommendedCraftReference": false,
+    "note": "Archived concept — parked and unapproved. Kept for the record; not a recommended craft reference. HTML frames only. Not a shipped Shipaton product. Craft patterns were studied from winners (clarity, modules, itinerary, confidence, report cards) without cloning brands. Does not meet the catalog craft gate.",
     "nameProposals": [
       {
         "name": "Outlay",

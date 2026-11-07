@@ -17,6 +17,8 @@ Repo: https://github.com/Btheriot83/design-catalog
 - Shipaton 2025 winners: https://design-catalog-three.vercel.app/data/shipaton-2025.json
 - Schemas: https://design-catalog-three.vercel.app/schema/technique.schema.json · designer.schema.json
 - Full agent guide: https://raw.githubusercontent.com/Btheriot83/design-catalog/main/docs/FOR_AGENTS.md
+- Preservation handoff: https://raw.githubusercontent.com/Btheriot83/design-catalog/main/docs/HANDOFF.md
+- Craft gate: https://raw.githubusercontent.com/Btheriot83/design-catalog/main/docs/TECHNIQUES.md
 - This file (full): https://design-catalog-three.vercel.app/llms-full.txt
 
 Optional API aliases (same JSON; prefer /data/ for CDN cache):
@@ -24,7 +26,7 @@ Optional API aliases (same JSON; prefer /data/ for CDN cache):
 
 ## Key human routes
 
-- /techniques · /prompts · /compare (field guide) · /designers · /sources · /resources · /shipaton-2025 · /agents · /about · /motion
+- /techniques · /prompts · /compare (field guide) · /examples · /guides · /designers · /sources · /resources · /shipaton-2025 · /shipaton-2025/budget-trip (archived, not a craft reference) · /agents · /about · /motion
 
 ## How to use (short)
 
@@ -33,7 +35,7 @@ Optional API aliases (same JSON; prefer /data/ for CDN cache):
 3. Read its agentContract: useWhen, avoidWhen, recipe, acceptance, stateRequirements, compatibility and provenance. Add at most one companion for a distinct unmet need. Pair suggestions do not certify compatibility.
 4. Apply the bounded change; collect before/after evidence. Report failures and justified N/A states. Stop at compatibility.stop. Prompts and checklists are not proof.
 
-Contract version: index.contractVersion. Content identity: index.contentHash. lastUpdated is the editorial release date, not generation time. Contracts are Design Catalog editorial synthesis of public sources, not source quotations or author endorsements.
+Contract version: index.contractVersion. Content identity: index.contentHash. lastUpdated is the editorial release date (2026-09-18), not generation time and not the 2026-11-07 preservation audit. index.maintenance is paused. Contracts are Design Catalog editorial synthesis of public sources, not source quotations or author endorsements.
 Decision paths: https://design-catalog-three.vercel.app/data/decision-paths.json
 
 Canonical improvement path (Tileboard / chore-app): see index.canonicalApps.tileboard and docs/FOR_AGENTS.md.

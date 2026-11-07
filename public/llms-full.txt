@@ -23,7 +23,8 @@ Quiet Folio visual system: paper #FAF9F7 · ink #221C24 · studioInk #6F6470 · 
 4. GET /data/prompts.json when you need a flattened prompt library
 5. Cite /data/sources.json; never invent paywalled quotes
 6. Free craft libraries: /data/resources.json or /resources (transitions, shaders, easing, examples, textures—free first)
-7. Shipaton 2025 winners catalog: /data/shipaton-2025.json or /shipaton-2025 (store previews; public sources; no endorsement)
+7. Shipaton 2025 winners catalog: /data/shipaton-2025.json or /shipaton-2025 (store previews; public sources; no endorsement). Marketing-site gaps in that JSON are September 2026 capture notes, not a live re-check. /shipaton-2025/budget-trip is archived and unapproved — not a recommended craft reference.
+8. Preservation handoff: https://raw.githubusercontent.com/Btheriot83/design-catalog/main/docs/HANDOFF.md — maintenance paused; last editorial content 2026-09-18 vs audit 2026-11-07. Craft gate: docs/TECHNIQUES.md.
 
 ## Anshu 1–8 ↔ Build Games Phase A
 
@@ -35,7 +36,7 @@ Read agentContract.useWhen and avoidWhen before implementing. Bring the named in
 
 Collect observable evidence against acceptance and stateRequirements: responsive, accessibility, keyboard, reducedMotion, loading, empty, error, interruption and stateChange. Non-interface states may be N/A with a reason. An unchecked checklist is not a passed test. Report failures separately and stop when compatibility.stop is satisfied.
 
-index.contractVersion identifies semantics; index.contentHash is a deterministic SHA-256 of exported content inputs; lastUpdated is the explicit editorial release date. Contract provenance is Catalog editorial synthesis, separate from source-author attribution. Public sources only; no paywalled reconstruction or endorsement.
+index.contractVersion identifies semantics; index.contentHash is a deterministic SHA-256 of exported content inputs; lastUpdated is the explicit editorial release date (2026-09-18), not the 2026-11-07 preservation audit. index.maintenance is paused. Human routes also include /examples and /guides. Contract provenance is Catalog editorial synthesis, separate from source-author attribution. Public sources only; no paywalled reconstruction or endorsement.
 
 Decision paths: https://design-catalog-three.vercel.app/data/decision-paths.json
 
@@ -54,9 +55,10 @@ Decision paths: https://design-catalog-three.vercel.app/data/decision-paths.json
 
 ## Shipaton 2025
 
-- Human: /shipaton-2025 · /shipaton-2025/budget-trip
+- Human: /shipaton-2025 · /shipaton-2025/budget-trip (archived concept, parked, unapproved; not a craft reference)
 - JSON: /data/shipaton-2025.json (alias /api/shipaton-2025)
 - Store gallery previews only — not live device captures
+- Capture gaps (Sept 2026, not re-verified): MoodHaven marketing 404; Posturely failed to load; eight apps had no marketing URL found
 
 ## Tileboard (chore-app) path
 

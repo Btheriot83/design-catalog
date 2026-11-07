@@ -43,7 +43,7 @@ export default function AgentsPage() {
         description="Choose by problem. Read the contract. Apply one method, collect evidence, and stop when the task is clearer."
       />
 
-      <section className="agent-contract mb-12"><p className="eyebrow">Protocol / v1.0.0</p><ol className="protocol-steps"><li><strong>01 · Choose</strong><p>Fetch <a className="text-link" href="/data/index.json">index.json</a>. Match the user problem to <code>decisionPaths</code>; start with its first technique.</p></li><li><strong>02 · Inspect</strong><p>Fetch the technique JSON. Read <code>agentContract.useWhen</code>, <code>avoidWhen</code>, the recipe and cited sources. Guidance is editorial synthesis, not an author endorsement.</p></li><li><strong>03 · Combine carefully</strong><p>Add at most one companion for a distinct problem. Candidate pairings are suggestions; resolve competing visual roles before implementation.</p></li><li><strong>04 · Verify &amp; stop</strong><p>Record before/after evidence against acceptance and each applicable state requirement. Report failures and N/A reasons. A checklist is not proof.</p></li></ol><div className="recipe-heading"><h2>Copy a bounded instruction</h2><CopyButton text="Fetch https://design-catalog-three.vercel.app/data/index.json. Select the decisionPath matching my stated user problem. Fetch its starting technique JSON and inspect agentContract. Preserve existing truth and attribution. Apply one technique, adding at most one companion only for a distinct unmet need. Capture before/after evidence against acceptance and applicable stateRequirements. Report failures and N/A reasons. Stop at compatibility.stop; do not claim verification without evidence." /></div><p className="lab-caption">Version identifies contract semantics. contentHash identifies the exact exported content. lastUpdated is the editorial release date, never the generation clock.</p></section>
+      <section className="agent-contract mb-12"><p className="eyebrow">Protocol / v1.0.0</p><ol className="protocol-steps"><li><strong>01 · Choose</strong><p>Fetch <a className="text-link" href="/data/index.json">index.json</a>. Match the user problem to <code>decisionPaths</code>; start with its first technique.</p></li><li><strong>02 · Inspect</strong><p>Fetch the technique JSON. Read <code>agentContract.useWhen</code>, <code>avoidWhen</code>, the recipe and cited sources. Guidance is editorial synthesis, not an author endorsement.</p></li><li><strong>03 · Combine carefully</strong><p>Add at most one companion for a distinct problem. Candidate pairings are suggestions; resolve competing visual roles before implementation.</p></li><li><strong>04 · Verify &amp; stop</strong><p>Record before/after evidence against acceptance and each applicable state requirement. Report failures and N/A reasons. A checklist is not proof.</p></li></ol><div className="recipe-heading"><h2>Copy a bounded instruction</h2><CopyButton text="Fetch https://design-catalog-three.vercel.app/data/index.json. Select the decisionPath matching my stated user problem. Fetch its starting technique JSON and inspect agentContract. Preserve existing truth and attribution. Apply one technique, adding at most one companion only for a distinct unmet need. Capture before/after evidence against acceptance and applicable stateRequirements. Report failures and N/A reasons. Stop at compatibility.stop; do not claim verification without evidence." /></div><p className="lab-caption">Version identifies contract semantics. contentHash identifies the exact exported content. lastUpdated is the editorial release date (2026-09-18), never the generation clock or the 2026-11-07 preservation audit.</p></section>
 
       <section className="mb-12">
         <h2 className="font-serif text-2xl text-ink">Surfaces</h2>
@@ -75,6 +75,37 @@ export default function AgentsPage() {
       </section>
 
       <section className="mb-12">
+        <h2 className="font-serif text-2xl text-ink">Preservation handoff</h2>
+        <hr className="rule-double mt-4 mb-5 max-w-[10rem]" />
+        <p className="font-sans text-sm leading-relaxed text-studio-ink">
+          Maintenance is paused. Last editorial content is{" "}
+          <strong className="font-medium text-ink">2026-09-18</strong>; this preservation
+          audit is <strong className="font-medium text-ink">2026-11-07</strong>. That is not
+          new research. Site and assets stay up. No redesign, new mockups, or routine
+          harvest. Durable record:{" "}
+          <a
+            href="https://raw.githubusercontent.com/Btheriot83/design-catalog/main/docs/HANDOFF.md"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-ink underline decoration-hairline hover:decoration-ink"
+          >
+            docs/HANDOFF.md
+          </a>
+          {" "}· craft gate:{" "}
+          <a
+            href="https://raw.githubusercontent.com/Btheriot83/design-catalog/main/docs/TECHNIQUES.md"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-ink underline decoration-hairline hover:decoration-ink"
+          >
+            docs/TECHNIQUES.md
+          </a>
+          . Nearfar budget-trip frames are archived and unapproved — not a recommended
+          craft reference.
+        </p>
+      </section>
+
+      <section className="mb-12">
         <h2 className="font-serif text-2xl text-ink">Shipaton 2025</h2>
         <hr className="rule-double mt-4 mb-5 max-w-[10rem]" />
         <p className="font-sans text-sm leading-relaxed text-studio-ink">
@@ -86,7 +117,7 @@ export default function AgentsPage() {
             <Link href="/shipaton-2025" className="text-ink underline decoration-hairline hover:decoration-ink">
               /shipaton-2025
             </Link>
-            {" — human catalog + budget-trip mockups"}
+            {" — human catalog; budget-trip mock is archived / not a craft reference"}
           </li>
           <li>
             <a

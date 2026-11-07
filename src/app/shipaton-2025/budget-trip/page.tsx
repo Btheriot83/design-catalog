@@ -5,9 +5,9 @@ import { PageHeader } from "@/components/PageHeader";
 import { getShipaton2025 } from "@/lib/content";
 
 export const metadata: Metadata = {
-  title: "Budget trip mockups · Shipaton 2025",
+  title: "Budget trip mockups (archived) · Shipaton 2025",
   description:
-    "Concept mockups for a budget-first travel + local get-out-of-house app. Not a shipped product. Craft patterns studied from Shipaton 2025 winners.",
+    "Archived concept mockups — parked and unapproved. Not a recommended craft reference. Not a shipped product.",
 };
 
 function Phone({
@@ -87,8 +87,20 @@ export default function BudgetTripMockupsPage() {
         </Link>
       </p>
 
+      <aside className="mb-10 border border-hairline bg-ghost/80 p-5 press-shadow">
+        <p className="eyebrow text-ink">Archived concept</p>
+        <p className="mt-3 font-sans text-sm leading-relaxed text-studio-ink">
+          Parked and unapproved. Kept for the record;{" "}
+          <strong className="font-medium text-ink">not a recommended craft reference</strong>.
+          HTML frames only — not READY, not a shipped product. Future mocks still need the
+          catalog craft gate (
+          <span className="font-mono text-xs text-ink">docs/TECHNIQUES.md</span>
+          {" "}or an on-page citation). Brands were not cloned.
+        </p>
+      </aside>
+
       <PageHeader
-        eyebrow="Concept mockups · not shipped"
+        eyebrow="Archived · parked · unapproved"
         title="Budget trip mockups"
         description="Budget-first travel and local get-out-of-house. Enter spend + when you can leave → ranked trips and nearby experiences that fit. HTML frames only — craft cues from Dayloop clarity, Gurwi modules, Tomo itinerary, PitchLab confidence, ReadHim report cards. Brands not cloned."
       />
@@ -327,7 +339,7 @@ export default function BudgetTripMockupsPage() {
           <li>ReadHim — report-card honesty sheet</li>
         </ul>
         <p className="mt-3 font-sans text-xs text-faint">
-          Mockups only. Not a Shipaton submission or shipped product.
+          Archived concept. Not a Shipaton submission, shipped product, or READY craft example.
         </p>
       </aside>
     </div>

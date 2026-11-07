@@ -1,0 +1,505 @@
+{
+  "payout": [
+    {
+      "path": "/workspace/design-catalog-shipaton/payout/store-preview-1.png",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/36/88/cc/3688cce8-3f2c-0e86-b1f2-c0a9fba10f64/2067.png/320x480bb.jpg",
+      "bytes": 40749
+    },
+    {
+      "path": "/workspace/design-catalog-shipaton/payout/store-preview-2.png",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/64/00/83/640083b8-04e2-1b86-fda5-80af946a92b6/2065.png/320x480bb.jpg",
+      "bytes": 36480
+    },
+    {
+      "path": "/workspace/design-catalog-shipaton/payout/store-preview-3.png",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/86/c6/01/86c60180-fbd7-85f3-586d-195de5c63821/2066.png/320x480bb.jpg",
+      "bytes": 37531
+    },
+    {
+      "path": "/workspace/design-catalog-shipaton/payout/store-preview-4.png",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/4b/91/af/4b91afa1-1dce-bf25-9b91-1716570ad5a0/2064.png/320x480bb.jpg",
+      "bytes": 33372
+    },
+    {
+      "path": "/workspace/design-catalog-shipaton/payout/icon-512.jpg",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/aa/d0/81/aad0811d-9116-444f-63ba-13fe2c0aed5c/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+      "bytes": 60542,
+      "kind": "icon"
+    }
+  ],
+  "tomo-japan": [
+    {
+      "path": "/workspace/design-catalog-shipaton/tomo-japan/store-preview-1.png",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/e2/48/0c/e2480ce4-5efd-4dcd-0fbb-25ed2933e4e4/01.png/320x480bb.jpg",
+      "bytes": 36873
+    },
+    {
+      "path": "/workspace/design-catalog-shipaton/tomo-japan/store-preview-2.png",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/40/4a/57/404a57f4-c613-4be4-1522-0800a5c851f2/02.png/320x480bb.jpg",
+      "bytes": 32477
+    },
+    {
+      "path": "/workspace/design-catalog-shipaton/tomo-japan/store-preview-3.png",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/70/d6/ed/70d6ed4d-7617-780f-0701-81f270cdb957/03.png/320x480bb.jpg",
+      "bytes": 34264
+    },
+    {
+      "path": "/workspace/design-catalog-shipaton/tomo-japan/store-preview-4.png",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/1f/69/53/1f6953a3-c53b-09c7-0b56-56f4efaf0986/04.png/320x480bb.jpg",
+      "bytes": 33068
+    },
+    {
+      "path": "/workspace/design-catalog-shipaton/tomo-japan/icon-512.jpg",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/28/63/a3/2863a3ac-bf25-d59d-2ac8-6ec1d590d5f9/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+      "bytes": 39095,
+      "kind": "icon"
+    }
+  ],
+  "skillme": [
+    {
+      "path": "/workspace/design-catalog-shipaton/skillme/store-preview-1.png",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/35/88/8b/35888b15-62b7-2678-efac-a88f48dc9564/Screen_1.png/320x480bb.jpg",
+      "bytes": 28658
+    },
+    {
+      "path": "/workspace/design-catalog-shipaton/skillme/store-preview-2.png",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/55/20/ee/5520ee52-f1bd-c25a-b42c-d92aaea72643/Screen_2.png/320x480bb.jpg",
+      "bytes": 16454
+    },
+    {
+      "path": "/workspace/design-catalog-shipaton/skillme/store-preview-3.png",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/4d/d2/7a/4dd27a26-2645-2288-e983-97d99b3f76f1/Screen_3.png/320x480bb.jpg",
+      "bytes": 27578
+    },
+    {
+      "path": "/workspace/design-catalog-shipaton/skillme/store-preview-4.png",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/b4/71/bd/b471bdde-a732-e0da-5c3b-a5e092906ff3/Screen_4.png/320x480bb.jpg",
+      "bytes": 23104
+    },
+    {
+      "path": "/workspace/design-catalog-shipaton/skillme/icon-512.jpg",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/83/cd/fe/83cdfed1-f9df-7cd8-874d-90610cc3af98/AppIcon-1x_U007emarketing-0-11-0-85-220-0.png/512x512bb.jpg",
+      "bytes": 24076,
+      "kind": "icon"
+    }
+  ],
+  "readhim": [
+    {
+      "path": "/workspace/design-catalog-shipaton/readhim/store-preview-1.png",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/a3/9a/12/a39a1213-5708-5b26-9dc2-6463bb27c3dd/01.png/320x480bb.jpg",
+      "bytes": 20681
+    },
+    {
+      "path": "/workspace/design-catalog-shipaton/readhim/store-preview-2.png",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/4f/65/a9/4f65a923-bd49-2bfc-e174-cbc2076d9cb7/02.png/320x480bb.jpg",
+      "bytes": 29708
+    },
+    {
+      "path": "/workspace/design-catalog-shipaton/readhim/store-preview-3.png",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/f5/37/67/f53767e8-70f2-f023-9cbe-0082599020c2/03.png/320x480bb.jpg",
+      "bytes": 31432
+    },
+    {
+      "path": "/workspace/design-catalog-shipaton/readhim/store-preview-4.png",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/01/98/93/019893b7-0141-c9d2-4ef5-4ee255b9848d/04.png/320x480bb.jpg",
+      "bytes": 26087
+    },
+    {
+      "path": "/workspace/design-catalog-shipaton/readhim/icon-512.jpg",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/1b/ff/82/1bff82fc-c7ce-c95c-1fcb-2fdaff76d5a1/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "bytes": 17642,
+      "kind": "icon"
+    }
+  ],
+  "heartbeat-hero": [
+    {
+      "path": "/workspace/design-catalog-shipaton/heartbeat-hero/store-preview-1.png",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/17/d4/14/17d41470-9800-b76d-efca-82b607ae106d/01.png/320x480bb.jpg",
+      "bytes": 14874
+    },
+    {
+      "path": "/workspace/design-catalog-shipaton/heartbeat-hero/store-preview-2.png",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/b0/29/d7/b029d7f6-c53a-dab2-749f-8ca35479f583/02.png/320x480bb.jpg",
+      "bytes": 25646
+    },
+    {
+      "path": "/workspace/design-catalog-shipaton/heartbeat-hero/store-preview-3.png",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/44/96/6a/44966a9b-2361-509b-3708-8781f1fc0f58/03.png/320x480bb.jpg",
+      "bytes": 25221
+    },
+    {
+      "path": "/workspace/design-catalog-shipaton/heartbeat-hero/store-preview-4.png",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c7/d0/24/c7d024a2-6d75-4fdb-9817-8b422a9df0ed/04.png/320x480bb.jpg",
+      "bytes": 22905
+    }
+  ],
+  "clipugc": [
+    {
+      "path": "/workspace/design-catalog-shipaton/clipugc/store-preview-1.png",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/e7/e0/c4/e7e0c46f-690a-63eb-7cfa-7bbf36b1c37a/01_iphone65_en-US.png/320x480bb.jpg",
+      "bytes": 38351
+    },
+    {
+      "path": "/workspace/design-catalog-shipaton/clipugc/store-preview-2.png",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/71/28/0f/71280ffb-ff96-20e6-a698-564e9b879920/02_iphone65_en-US.png/320x480bb.jpg",
+      "bytes": 37000
+    },
+    {
+      "path": "/workspace/design-catalog-shipaton/clipugc/store-preview-3.png",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/cb/d6/92/cbd69261-90b9-4dbe-f718-1e9906c24667/03_iphone65_en-US.png/320x480bb.jpg",
+      "bytes": 29525
+    },
+    {
+      "path": "/workspace/design-catalog-shipaton/clipugc/store-preview-4.png",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/41/6d/19/416d19bf-f7ae-0404-6235-248e0430d16e/04_iphone65_en-US.png/320x480bb.jpg",
+      "bytes": 28549
+    },
+    {
+      "path": "/workspace/design-catalog-shipaton/clipugc/icon-512.jpg",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/dd/11/e1/dd11e1f9-27e3-c2e5-2ec3-c4c1341179a3/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
+      "bytes": 58864,
+      "kind": "icon"
+    }
+  ],
+  "dripped": [
+    {
+      "path": "/workspace/design-catalog-shipaton/dripped/store-preview-1.jpg",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/6b/6e/ed/6b6eed45-631f-c7f2-8940-940cf1dfd1a3/52.jpg/320x480bb.jpg",
+      "bytes": 30968
+    },
+    {
+      "path": "/workspace/design-catalog-shipaton/dripped/store-preview-2.jpg",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/e4/ad/ec/e4adec9b-5961-5221-b60e-294a4356a551/53.jpg/320x480bb.jpg",
+      "bytes": 33796
+    },
+    {
+      "path": "/workspace/design-catalog-shipaton/dripped/store-preview-3.jpg",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/74/9f/e6/749fe640-122b-3ce3-213f-14d972dc4777/49.jpg/320x480bb.jpg",
+      "bytes": 29239
+    },
+    {
+      "path": "/workspace/design-catalog-shipaton/dripped/store-preview-4.jpg",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/43/80/da/4380daf3-4e63-a9ee-a840-786037728a37/47.jpg/320x480bb.jpg",
+      "bytes": 30024
+    },
+    {
+      "path": "/workspace/design-catalog-shipaton/dripped/icon-512.jpg",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/45/67/fd/4567fd8b-feb1-c665-e8e0-4b05a3016150/DrippedIcon-0-1x_U007ephone-0-1-85-220-0.png/512x512bb.jpg",
+      "bytes": 46071,
+      "kind": "icon"
+    }
+  ],
+  "friendy": [
+    {
+      "path": "/workspace/design-catalog-shipaton/friendy/store-preview-1.png",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/66/f0/ad/66f0ad47-63d8-4615-77bc-ab2e67ba9320/01.png/320x480bb.jpg",
+      "bytes": 22065
+    },
+    {
+      "path": "/workspace/design-catalog-shipaton/friendy/store-preview-2.png",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/43/e5/18/43e5181a-783f-7f28-cf96-6f35f751d8e9/02.png/320x480bb.jpg",
+      "bytes": 28427
+    },
+    {
+      "path": "/workspace/design-catalog-shipaton/friendy/store-preview-3.png",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/72/91/68/7291680b-1c12-13ce-47be-d15b71ce7a27/03.png/320x480bb.jpg",
+      "bytes": 27127
+    },
+    {
+      "path": "/workspace/design-catalog-shipaton/friendy/store-preview-4.png",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/66/8e/43/668e43be-7f38-92c4-05ce-a45f5f7a8e12/04.png/320x480bb.jpg",
+      "bytes": 27865
+    },
+    {
+      "path": "/workspace/design-catalog-shipaton/friendy/icon-512.jpg",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/3e/d0/3d/3ed03db3-4814-62e9-e949-0bbf9a2ee5d5/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+      "bytes": 28256,
+      "kind": "icon"
+    }
+  ],
+  "vector-guard": [
+    {
+      "path": "/workspace/design-catalog-shipaton/vector-guard/store-preview-1.png",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/48/a4/a8/48a4a8ad-d838-45bb-f2fa-f8af15247c1b/iOS_Phones__6.9-01.png/320x480bb.jpg",
+      "bytes": 41794
+    },
+    {
+      "path": "/workspace/design-catalog-shipaton/vector-guard/store-preview-2.png",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/9a/f3/16/9af3162d-3b84-bea8-9ac9-61f1dae3eaad/iOS_Phones__6.9-02.png/320x480bb.jpg",
+      "bytes": 26506
+    },
+    {
+      "path": "/workspace/design-catalog-shipaton/vector-guard/store-preview-3.png",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/b1/22/3e/b1223ea0-50bd-e95a-a15e-9beca843f66b/iOS_Phones__6.9-03.png/320x480bb.jpg",
+      "bytes": 31160
+    },
+    {
+      "path": "/workspace/design-catalog-shipaton/vector-guard/store-preview-4.png",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ed/56/9b/ed569b7f-d8b4-3758-9703-eda7d7240b58/iOS_Phones__6.9-04.png/320x480bb.jpg",
+      "bytes": 21782
+    },
+    {
+      "path": "/workspace/design-catalog-shipaton/vector-guard/icon-512.jpg",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/67/41/af/6741afb7-b9bd-a4b2-df4a-3e7f60c7c089/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg",
+      "bytes": 22747,
+      "kind": "icon"
+    }
+  ],
+  "kigaru-talks": [
+    {
+      "path": "/workspace/design-catalog-shipaton/kigaru-talks/store-preview-1.png",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/8d/17/83/8d178302-680a-da25-c5d8-d5d445639159/kgapp.png/320x480bb.jpg",
+      "bytes": 37523
+    },
+    {
+      "path": "/workspace/design-catalog-shipaton/kigaru-talks/store-preview-2.png",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/88/81/90/888190be-6e38-2397-812b-23f99402fb0c/2.png/320x480bb.jpg",
+      "bytes": 33849
+    },
+    {
+      "path": "/workspace/design-catalog-shipaton/kigaru-talks/store-preview-3.png",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/75/01/0a/75010a8c-03c9-00da-e438-09589cc5f4b2/3.png/320x480bb.jpg",
+      "bytes": 24627
+    },
+    {
+      "path": "/workspace/design-catalog-shipaton/kigaru-talks/store-preview-4.png",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/93/72/4c/93724ceb-059c-47aa-78f5-42d8b1687736/4.png/320x480bb.jpg",
+      "bytes": 26009
+    },
+    {
+      "path": "/workspace/design-catalog-shipaton/kigaru-talks/icon-512.jpg",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/91/22/d1/9122d166-3e4c-11c9-a957-26de8d57ea2a/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
+      "bytes": 21887,
+      "kind": "icon"
+    }
+  ],
+  "hearing-buddy": [
+    {
+      "path": "/workspace/design-catalog-shipaton/hearing-buddy/store-preview-1.png",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/7e/6f/d6/7e6fd655-af74-3458-9c3b-928b05ed493d/Artboard_1_8.png/320x480bb.jpg",
+      "bytes": 28129
+    },
+    {
+      "path": "/workspace/design-catalog-shipaton/hearing-buddy/store-preview-2.png",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/b7/19/20/b719200d-b34b-36ab-be6f-08596d22a94a/Artboard_1.png/320x480bb.jpg",
+      "bytes": 31130
+    },
+    {
+      "path": "/workspace/design-catalog-shipaton/hearing-buddy/store-preview-3.png",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/a4/f9/e2/a4f9e21f-8167-0a55-23d7-0bbf366bc4b0/Artboard_1_1.png/320x480bb.jpg",
+      "bytes": 31548
+    },
+    {
+      "path": "/workspace/design-catalog-shipaton/hearing-buddy/store-preview-4.png",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/b1/73/32/b173326b-2f5b-5fd0-2472-249e0497cf17/Artboard_1_2.png/320x480bb.jpg",
+      "bytes": 32958
+    },
+    {
+      "path": "/workspace/design-catalog-shipaton/hearing-buddy/icon-512.jpg",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/cb/3c/19/cb3c1990-b056-05ea-dc87-390da08376fc/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "bytes": 30290,
+      "kind": "icon"
+    }
+  ],
+  "moodhaven": [
+    {
+      "path": "/workspace/design-catalog-shipaton/moodhaven/store-preview-1.jpg",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/2e/5b/d5/2e5bd59f-6365-c264-1c40-b08bafeed1a4/Screenshot1.jpg/320x480bb.jpg",
+      "bytes": 23008
+    },
+    {
+      "path": "/workspace/design-catalog-shipaton/moodhaven/store-preview-2.jpg",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/d8/3c/08/d83c08b5-f2a1-60a4-c689-aa8d5c237da6/Screenshot02.jpg/320x480bb.jpg",
+      "bytes": 17764
+    },
+    {
+      "path": "/workspace/design-catalog-shipaton/moodhaven/store-preview-3.jpg",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/0f/1e/70/0f1e70fa-a084-ccf0-216e-575a5ec7316b/Screenshot03.jpg/320x480bb.jpg",
+      "bytes": 19281
+    },
+    {
+      "path": "/workspace/design-catalog-shipaton/moodhaven/store-preview-4.jpg",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/3d/6d/4e/3d6d4e47-8e27-5dd7-69ce-0374afc21a28/Screenshot04.jpg/320x480bb.jpg",
+      "bytes": 19943
+    },
+    {
+      "path": "/workspace/design-catalog-shipaton/moodhaven/icon-512.jpg",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/b2/d2/77/b2d27733-e12c-dbd6-2462-30fe4aecae04/AppIcon-0-0-1x_U007emarketing-0-8-0-sRGB-85-220.png/512x512bb.jpg",
+      "bytes": 23276,
+      "kind": "icon"
+    }
+  ],
+  "camp-notes": [
+    {
+      "path": "/workspace/design-catalog-shipaton/camp-notes/store-preview-1.png",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/68/3c/13/683c1329-badf-979e-f9bd-1200ae852e39/1.png/320x480bb.jpg",
+      "bytes": 32882
+    },
+    {
+      "path": "/workspace/design-catalog-shipaton/camp-notes/store-preview-2.png",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/f3/65/02/f36502b8-d6cd-4d03-afba-be783c67e448/2.png/320x480bb.jpg",
+      "bytes": 32321
+    },
+    {
+      "path": "/workspace/design-catalog-shipaton/camp-notes/store-preview-3.png",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/35/e9/cd/35e9cd6a-c042-5758-5ae0-95ff12efbf64/4.png/320x480bb.jpg",
+      "bytes": 28263
+    },
+    {
+      "path": "/workspace/design-catalog-shipaton/camp-notes/store-preview-4.png",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/9a/f8/79/9af879bd-3c59-d0c0-a8ab-9f6c6200912f/3.png/320x480bb.jpg",
+      "bytes": 28303
+    },
+    {
+      "path": "/workspace/design-catalog-shipaton/camp-notes/icon-512.jpg",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/72/59/0f/72590fca-5d48-d8d3-ed79-a1089dddbbe2/AppIcon-0-1x_U007ephone-0-1-85-220-0.png/512x512bb.jpg",
+      "bytes": 25055,
+      "kind": "icon"
+    }
+  ],
+  "posturely": [
+    {
+      "path": "/workspace/design-catalog-shipaton/posturely/store-preview-1.png",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/2a/de/9d/2ade9d47-b022-8e90-fde6-ed66685a641d/1.png/320x480bb.jpg",
+      "bytes": 26210
+    },
+    {
+      "path": "/workspace/design-catalog-shipaton/posturely/store-preview-2.png",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ef/f9/cc/eff9ccdc-ecdc-05a7-723a-a9a19f49b213/2.png/320x480bb.jpg",
+      "bytes": 26617
+    },
+    {
+      "path": "/workspace/design-catalog-shipaton/posturely/store-preview-3.png",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/69/01/4e/69014e18-85bd-43fb-3ee8-446c9e6dec7c/5.png/320x480bb.jpg",
+      "bytes": 26315
+    },
+    {
+      "path": "/workspace/design-catalog-shipaton/posturely/store-preview-4.png",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/8d/9f/92/8d9f92e8-f713-552c-7b30-e54db1191033/3.png/320x480bb.jpg",
+      "bytes": 30862
+    },
+    {
+      "path": "/workspace/design-catalog-shipaton/posturely/icon-512.jpg",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/53/30/05/53300597-ca7e-ffd2-6b49-4bbc41212637/AppIcon-0-0-1x_U007emarketing-0-7-0-85-220.png/512x512bb.jpg",
+      "bytes": 34654,
+      "kind": "icon"
+    }
+  ],
+  "steps-share": [
+    {
+      "path": "/workspace/design-catalog-shipaton/steps-share/store-preview-1.jpg",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/1e/d2/ba/1ed2ba48-4b1f-eec7-ba5d-83f8dddeefa3/6_U002c9_01.jpg/320x480bb.jpg",
+      "bytes": 38208
+    },
+    {
+      "path": "/workspace/design-catalog-shipaton/steps-share/store-preview-2.jpg",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/64/10/7a/64107aab-c4a4-841c-12ce-46e58254225f/6_U002c9_02.jpg/320x480bb.jpg",
+      "bytes": 29141
+    },
+    {
+      "path": "/workspace/design-catalog-shipaton/steps-share/store-preview-3.jpg",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/c6/66/66/c6666603-276c-81b7-82eb-ef708a0875fe/6_U002c9_03.jpg/320x480bb.jpg",
+      "bytes": 24872
+    },
+    {
+      "path": "/workspace/design-catalog-shipaton/steps-share/store-preview-4.jpg",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/43/f5/89/43f58949-ba84-3097-4c6a-afaf341e5f86/6_U002c9_06.jpg/320x480bb.jpg",
+      "bytes": 27330
+    },
+    {
+      "path": "/workspace/design-catalog-shipaton/steps-share/icon-512.jpg",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c1/6b/25/c16b2547-9007-2a0d-de32-66e6f1ccc650/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+      "bytes": 44405,
+      "kind": "icon"
+    }
+  ],
+  "crystal-abyss": [
+    {
+      "path": "/workspace/design-catalog-shipaton/crystal-abyss/store-preview-1.png",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/ae/ba/dd/aebadddf-a121-c21b-5bb6-d96d50ba2333/menu.png/320x480bb.jpg",
+      "bytes": 17425
+    },
+    {
+      "path": "/workspace/design-catalog-shipaton/crystal-abyss/store-preview-2.png",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/1b/66/ad/1b66ad3b-4fd5-77d2-97f4-2145d37dfffa/level-1.png/320x480bb.jpg",
+      "bytes": 20502
+    },
+    {
+      "path": "/workspace/design-catalog-shipaton/crystal-abyss/store-preview-3.png",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/02/5c/79/025c7993-e6f3-6eb9-a57c-a194dc320985/level-2.png/320x480bb.jpg",
+      "bytes": 15787
+    },
+    {
+      "path": "/workspace/design-catalog-shipaton/crystal-abyss/store-preview-4.png",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/80/c2/9b/80c29b42-36f5-2607-5f11-4ba21568a2c8/level-7.png/320x480bb.jpg",
+      "bytes": 16785
+    },
+    {
+      "path": "/workspace/design-catalog-shipaton/crystal-abyss/icon-512.jpg",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/e2/a0/a9/e2a0a947-b94a-28b4-e612-dfe41190efff/AppIcon-0-0-1x_U007ephone-0-1-0-85-220.png/512x512bb.jpg",
+      "bytes": 39719,
+      "kind": "icon"
+    }
+  ],
+  "gurwi": [
+    {
+      "path": "/workspace/design-catalog-shipaton/gurwi/store-preview-1.png",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/f3/dd/b0/f3ddb066-221b-4d17-c453-acd5c5d73eff/01_2d333a2b-8577-4d48-9df8-56f132d41ae0_01_877c853c-3117-4bbe-859b-bbf748bf561d_Shot_142.png/320x480bb.jpg",
+      "bytes": 39866
+    },
+    {
+      "path": "/workspace/design-catalog-shipaton/gurwi/store-preview-2.png",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/93/52/6f/93526f44-c804-aea6-c8f4-8da4abb00590/02_54643829-4416-43e5-86f8-c3728cd4024f_02_08f8470a-bef5-46fd-9282-2ff3c8a8a721_Shot_143.png/320x480bb.jpg",
+      "bytes": 37097
+    },
+    {
+      "path": "/workspace/design-catalog-shipaton/gurwi/store-preview-3.png",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/96/c1/53/96c1534c-6e23-30a1-c213-639ab4a9093e/03_477e11fd-7589-4d2b-813b-2d00ca0ad2fe_03_7eb01eaa-5d00-4221-926f-c3d79f3a148c_Shot_144.png/320x480bb.jpg",
+      "bytes": 40927
+    },
+    {
+      "path": "/workspace/design-catalog-shipaton/gurwi/store-preview-4.png",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/4f/d3/fc/4fd3fc0a-d692-c96a-1bc9-a9cc824c716e/04_b716f7b0-53b9-4921-a3e7-13103eef3d69_04_8a75a6f2-7de0-42f7-8975-a2b070f93ea9_Shot_145.png/320x480bb.jpg",
+      "bytes": 46319
+    }
+  ],
+  "dayloop": [
+    {
+      "path": "/workspace/design-catalog-shipaton/dayloop/store-preview-1.jpg",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/83/09/3b/83093b98-efee-831a-b86f-06132e443263/en-US-1.jpg/320x480bb.jpg",
+      "bytes": 37739
+    },
+    {
+      "path": "/workspace/design-catalog-shipaton/dayloop/store-preview-2.jpg",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ef/ec/d0/efecd0e4-fda6-780d-1676-cf8ee9279adb/en-US-2.jpg/320x480bb.jpg",
+      "bytes": 43825
+    },
+    {
+      "path": "/workspace/design-catalog-shipaton/dayloop/store-preview-3.jpg",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/bf/d3/f8/bfd3f81e-ab5d-487e-d287-0cb6ef89b471/en-US-3.jpg/320x480bb.jpg",
+      "bytes": 32321
+    },
+    {
+      "path": "/workspace/design-catalog-shipaton/dayloop/store-preview-4.jpg",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/de/8a/b2/de8ab20b-400b-f445-8db7-4b58ab5a9d0a/en-US-4.jpg/320x480bb.jpg",
+      "bytes": 27292
+    }
+  ],
+  "pitchlab": [
+    {
+      "path": "/workspace/design-catalog-shipaton/pitchlab/store-preview-1.png",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/fb/a2/a7/fba2a709-f32a-6039-eaba-6095e972d4fa/01.png/320x480bb.jpg",
+      "bytes": 23743
+    },
+    {
+      "path": "/workspace/design-catalog-shipaton/pitchlab/store-preview-2.png",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/77/a8/cd/77a8cd56-a67d-4cfe-63cd-6e809b860de3/02.png/320x480bb.jpg",
+      "bytes": 23668
+    },
+    {
+      "path": "/workspace/design-catalog-shipaton/pitchlab/store-preview-3.png",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/35/d2/4e/35d24e9f-3f8e-8424-699d-1ebc6f574e75/03.png/320x480bb.jpg",
+      "bytes": 30410
+    }
+  ]
+}
